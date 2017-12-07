@@ -1,4 +1,8 @@
-docwhat.org web site
-====================
+# gatsby-starter-blog
+Gatsby starter for creating a blog
 
-This is experimental code that may someday run [my website](https://docwhat.org).
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+
+## Running in development
+`gatsby develop`
