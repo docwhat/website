@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
+  "jshintConfig": {
+    "esversion": 6
+  },
   "dependencies": {
     "gatsby": "^1.9.118",
     "gatsby-link": "^1.6.28",
