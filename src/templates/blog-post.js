@@ -9,17 +9,25 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const helmetTitle = post.frontmatter.title | siteTitle
 
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <Helmet title={helmetTitle} />
+        <h1
+          style={{
+            borderBottom: 'none',
+          }}
+        >
+          {post.frontmatter.title}
+        </h1>
         <p
           style={{
             ...scale(-1 / 5),
             display: 'block',
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
+            textAlign: 'right',
           }}
         >
           {post.frontmatter.date}

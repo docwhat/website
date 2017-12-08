@@ -6,6 +6,31 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
+const PostTitle = props => (
+  <h3
+    style={{
+      marginBottom: 0,
+    }}
+  >
+    <Link style={{ boxShadow: 'none' }} to={props.to}>
+      {props.children}
+    </Link>
+  </h3>
+)
+
+const PostMeta = props => (
+  <small
+    style={{
+      display: 'block',
+      lineHeight: 1,
+      marginBottom: rhythm(1 / 4),
+      textAlign: 'right',
+    }}
+  >
+    {props.children}
+  </small>
+)
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -19,16 +44,8 @@ class BlogIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
+              <PostTitle to={node.fields.slug}>{title}</PostTitle>
+              <PostMeta>{node.frontmatter.date}</PostMeta>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
@@ -55,7 +72,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }
