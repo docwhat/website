@@ -28,6 +28,10 @@
     "gatsby-transformer-remark": "^1.7.23",
     "gatsby-transformer-sharp": "^1.6.14",
     "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
     "typography-theme-github": "^0.15.10"
   },
   "devDependencies": {
