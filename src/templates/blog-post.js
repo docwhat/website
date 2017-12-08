@@ -9,7 +9,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const helmetTitle = post.frontmatter.title | siteTitle
+    const helmetTitle = post.frontmatter.title || siteTitle
 
     return (
       <div>
@@ -51,7 +51,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
