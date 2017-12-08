@@ -5,7 +5,7 @@ date: 2015-02-04T13:38:51-05:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1576
-permalink: /chef-puppet-heat-juju-docker-etc/
+slug: /chef-puppet-heat-juju-docker-etc/
 openid_comments:
   - 'a:3:{i:0;i:17072;i:1;i:17073;i:2;i:17077;}'
 image: /files/2015/02/8466596628_d41523b3fe_k-e1423075090864-250x250.jpg

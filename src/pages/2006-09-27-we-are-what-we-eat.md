@@ -5,7 +5,7 @@ date: 2006-09-27T22:11:10+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2006/09/we-are-what-we-eat/
-permalink: /we-are-what-we-eat/
+slug: /we-are-what-we-eat/
 categories:
   - docwhat
 tags:

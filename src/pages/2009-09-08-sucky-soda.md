@@ -5,7 +5,7 @@ date: 2009-09-08T17:23:40+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=446
-permalink: /sucky-soda/
+slug: /sucky-soda/
 categories:
   - docwhat
 tags:

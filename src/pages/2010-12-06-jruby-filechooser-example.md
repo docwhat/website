@@ -5,7 +5,7 @@ date: 2010-12-06T17:05:56-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=638
-permalink: /jruby-filechooser-example/
+slug: /jruby-filechooser-example/
 openid_comments:
   - 'a:5:{i:0;s:4:"7095";i:1;s:4:"7099";i:2;s:4:"7100";i:3;s:4:"7115";i:4;s:4:"7124";}'
 image: /files/2010/12/Screen-shot-2010-12-06-at-3.07.18-AM-250x199.png

@@ -7,7 +7,7 @@ date: '2008-07-22T17:26:05+00:00'
 guid: 'http://docwhat.gerf.org/?p=113'
 id: 113
 layout: post
-permalink: '/36-hours-in-pittsburgh/'
+slug: '/36-hours-in-pittsburgh/'
 tags:
 - nytimes
 - Pittsburgh

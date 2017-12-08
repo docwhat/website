@@ -5,7 +5,7 @@ date: 2009-08-07T17:14:53+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=429
-permalink: /bobby-mcferrin-messes-with-your-mind/
+slug: /bobby-mcferrin-messes-with-your-mind/
 categories:
   - docwhat
 tags:

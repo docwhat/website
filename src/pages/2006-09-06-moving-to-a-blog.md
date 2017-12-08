@@ -6,7 +6,7 @@ date: '2006-09-06T23:15:30+00:00'
 guid: 'http://docwhat.gerf.org/2006/09/moving-to-a-blog/'
 id: 3
 layout: post
-permalink: '/moving-to-a-blog/'
+slug: '/moving-to-a-blog/'
 title: Moving to a blog
 ---
 

@@ -5,7 +5,7 @@ date: 2012-06-22T12:12:05-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=1093
-permalink: /vim-preserve-your-cursor-and-window-state/
+slug: /vim-preserve-your-cursor-and-window-state/
 image: /files/2012/04/356023245659.png
 categories:
   - docwhat

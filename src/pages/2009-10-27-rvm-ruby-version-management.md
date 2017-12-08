@@ -5,7 +5,7 @@ date: 2009-10-27T17:23:08+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=471
-permalink: /rvm-ruby-version-management/
+slug: /rvm-ruby-version-management/
 openid_comments:
   - 'a:1:{i:0;s:4:"6396";}'
 categories:

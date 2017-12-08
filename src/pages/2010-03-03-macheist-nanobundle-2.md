@@ -5,7 +5,7 @@ date: 2010-03-03T07:59:59+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/2010/03/macheist-nanobundle-2/
-permalink: /macheist-nanobundle-2/
+slug: /macheist-nanobundle-2/
 categories:
   - docwhat
 tags:

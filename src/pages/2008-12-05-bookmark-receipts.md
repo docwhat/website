@@ -5,7 +5,7 @@ date: 2008-12-05T13:27:40+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=228
-permalink: /bookmark-receipts/
+slug: /bookmark-receipts/
 title_tag:
   - 'Idea: Bookmark receipts'
 categories:

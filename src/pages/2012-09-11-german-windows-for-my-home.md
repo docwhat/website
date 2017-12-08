@@ -5,7 +5,7 @@ date: 2012-09-11T19:54:21-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=1172
-permalink: /german-windows-for-my-home/
+slug: /german-windows-for-my-home/
 image: /files/2012/09/7967171110_8703fa19b7-250x187.jpg
 categories:
   - docwhat

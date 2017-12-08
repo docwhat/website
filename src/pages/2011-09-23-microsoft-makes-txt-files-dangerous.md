@@ -5,7 +5,7 @@ date: 2011-09-23T09:02:39-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=780
-permalink: /microsoft-makes-txt-files-dangerous/
+slug: /microsoft-makes-txt-files-dangerous/
 image: /files/2011/09/derp.png
 categories:
   - docwhat

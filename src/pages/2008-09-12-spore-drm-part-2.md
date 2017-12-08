@@ -6,7 +6,7 @@ date: '2008-09-12T12:23:54+00:00'
 guid: 'http://docwhat.gerf.org/?p=190'
 id: 190
 layout: post
-permalink: '/spore-drm-part-2/'
+slug: '/spore-drm-part-2/'
 tags:
 - DRM
 - macbook pro

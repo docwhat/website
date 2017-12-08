@@ -5,7 +5,7 @@ date: 2012-01-20T23:17:15-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=822
-permalink: /chocolatatum-meum-butyro-vecordi-tuo-contaminavisti/
+slug: /chocolatatum-meum-butyro-vecordi-tuo-contaminavisti/
 image: /files/2012/01/pbcups.png
 categories:
   - docwhat

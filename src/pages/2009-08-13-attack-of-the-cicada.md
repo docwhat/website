@@ -6,7 +6,7 @@ date: '2009-08-13T17:13:51+00:00'
 guid: 'http://docwhat.org/?p=432'
 id: 432
 layout: post
-permalink: '/attack-of-the-cicada/'
+slug: '/attack-of-the-cicada/'
 tags:
 - bugs
 - cicadas

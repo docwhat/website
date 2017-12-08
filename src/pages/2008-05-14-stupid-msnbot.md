@@ -5,7 +5,7 @@ date: 2008-05-14T17:12:29+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=91
-permalink: /stupid-msnbot/
+slug: /stupid-msnbot/
 title_tag:
   - ""
 categories:

@@ -5,7 +5,7 @@ date: 2010-07-16T17:23:06-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=563
-permalink: /bash-checking-a-port-number/
+slug: /bash-checking-a-port-number/
 categories:
   - docwhat
 tags:

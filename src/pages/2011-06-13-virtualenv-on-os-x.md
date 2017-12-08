@@ -5,7 +5,7 @@ date: 2011-06-13T17:19:06-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=716
-permalink: /virtualenv-on-os-x/
+slug: /virtualenv-on-os-x/
 image: /files/2011/06/xcode.png
 categories:
   - docwhat

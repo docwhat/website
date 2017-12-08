@@ -5,7 +5,7 @@ date: 2013-02-26T08:02:12-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=1239
-permalink: /re-all-https-all-the-time/
+slug: /re-all-https-all-the-time/
 categories:
   - docwhat
 tags:

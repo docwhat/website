@@ -5,7 +5,7 @@ date: 2008-12-18T11:02:51+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=232
-permalink: /you-can-see-my-desk-from-here/
+slug: /you-can-see-my-desk-from-here/
 categories:
   - docwhat
   - Pittsburgh

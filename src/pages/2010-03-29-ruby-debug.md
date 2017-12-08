@@ -5,7 +5,7 @@ date: 2010-03-29T17:29:39+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=526
-permalink: /ruby-debug/
+slug: /ruby-debug/
 enclosure:
   - |
     http://cardero.textdrive.com/~eventualbuddha/ruby-debug-1-basics.mov

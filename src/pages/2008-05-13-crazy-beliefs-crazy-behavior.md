@@ -5,7 +5,7 @@ date: 2008-05-13T17:21:34+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=92
-permalink: /crazy-beliefs-crazy-behavior/
+slug: /crazy-beliefs-crazy-behavior/
 title_tag:
   - ""
 categories:

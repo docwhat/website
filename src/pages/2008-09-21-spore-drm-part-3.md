@@ -5,7 +5,7 @@ date: 2008-09-21T17:41:52+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2008/09/spore-drm-part-3/
-permalink: /spore-drm-part-3/
+slug: /spore-drm-part-3/
 categories:
   - docwhat
 tags:

@@ -5,7 +5,7 @@ date: 2010-01-23T18:53:57+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=491
-permalink: /its-all-text-1-4-ff3-6-compatible/
+slug: /its-all-text-1-4-ff3-6-compatible/
 openid_comments:
   - 'a:5:{i:0;s:4:"6435";i:1;s:4:"6438";i:2;s:4:"6439";i:3;s:4:"6446";i:4;s:4:"6447";}'
 categories:

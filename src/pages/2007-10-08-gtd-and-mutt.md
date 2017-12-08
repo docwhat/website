@@ -5,7 +5,7 @@ date: 2007-10-08T00:30:13+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/10/gtd-and-mutt/
-permalink: /gtd-and-mutt/
+slug: /gtd-and-mutt/
 title_tag:
   - ""
 openid_comments:

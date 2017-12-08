@@ -5,7 +5,7 @@ date: 2008-08-08T17:44:36+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=142
-permalink: /xen-networking/
+slug: /xen-networking/
 title_tag:
   - ""
 openid_comments:

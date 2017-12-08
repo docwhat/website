@@ -5,7 +5,7 @@ date: 2008-07-22T11:54:35+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2008/07/designed-for-reliability/
-permalink: /designed-for-reliability/
+slug: /designed-for-reliability/
 title_tag:
   - ""
 categories:

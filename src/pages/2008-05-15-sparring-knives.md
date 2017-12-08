@@ -6,7 +6,7 @@ date: '2008-05-15T17:03:54+00:00'
 guid: 'http://docwhat.gerf.org/?p=89'
 id: 89
 layout: post
-permalink: '/sparring-knives/'
+slug: '/sparring-knives/'
 tags:
 - aegis
 - fighting

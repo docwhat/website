@@ -5,7 +5,7 @@ date: 2007-08-13T23:05:38+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/08/a-visit-from-sister-claire/
-permalink: /a-visit-from-sister-claire/
+slug: /a-visit-from-sister-claire/
 title_tag:
   - ""
 categories:

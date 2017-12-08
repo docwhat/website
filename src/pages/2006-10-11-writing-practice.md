@@ -5,7 +5,7 @@ date: 2006-10-11T10:13:40+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2006/10/writing-practice/
-permalink: /writing-practice/
+slug: /writing-practice/
 title_tag:
   - ""
 categories:

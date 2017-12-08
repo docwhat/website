@@ -5,7 +5,7 @@ date: 2008-09-02T17:15:21+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=176
-permalink: /google-chrome/
+slug: /google-chrome/
 title_tag:
   - 'Google Chrome -- A brand-new browser'
 openid_comments:

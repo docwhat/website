@@ -5,7 +5,7 @@ date: 2013-04-18T17:31:50-04:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1274
-permalink: /busting-cached-301-redirects-in-chrome/
+slug: /busting-cached-301-redirects-in-chrome/
 openid_comments:
   - 'a:1:{i:0;i:13763;}'
 image: /files/2013/04/geeklatte-chrome-yukop-250x250.png

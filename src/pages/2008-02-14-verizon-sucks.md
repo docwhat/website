@@ -5,7 +5,7 @@ date: 2008-02-14T10:04:13+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2008/02/verizon-sucks/
-permalink: /verizon-sucks/
+slug: /verizon-sucks/
 title_tag:
   - ""
 categories:

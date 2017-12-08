@@ -5,7 +5,7 @@ date: 2013-02-28T17:33:50-05:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1250
-permalink: /40days-simple-isnt-easy/
+slug: /40days-simple-isnt-easy/
 image: /files/2013/02/40days-250x250.png
 categories:
   - docwhat

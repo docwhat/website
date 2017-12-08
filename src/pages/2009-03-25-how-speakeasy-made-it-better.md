@@ -5,7 +5,7 @@ date: 2009-03-25T12:05:57+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=341
-permalink: /how-speakeasy-made-it-better/
+slug: /how-speakeasy-made-it-better/
 categories:
   - docwhat
 tags:

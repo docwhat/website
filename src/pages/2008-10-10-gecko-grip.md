@@ -5,7 +5,7 @@ date: 2008-10-10T10:53:45+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2008/10/gecko-grip/
-permalink: /gecko-grip/
+slug: /gecko-grip/
 categories:
   - docwhat
 tags:

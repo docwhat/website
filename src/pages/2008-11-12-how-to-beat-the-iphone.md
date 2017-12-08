@@ -5,7 +5,7 @@ date: 2008-11-12T17:43:07+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=221
-permalink: /how-to-beat-the-iphone/
+slug: /how-to-beat-the-iphone/
 openid_comments:
   - 'a:2:{i:0;s:4:"5938";i:1;s:4:"5946";}'
 categories:

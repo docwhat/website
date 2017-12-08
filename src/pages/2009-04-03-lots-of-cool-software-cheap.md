@@ -5,7 +5,7 @@ date: 2009-04-03T10:36:03+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=355
-permalink: /lots-of-cool-software-cheap/
+slug: /lots-of-cool-software-cheap/
 categories:
   - docwhat
 tags:

@@ -5,7 +5,7 @@ date: 2014-07-29T13:47:22-04:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1449
-permalink: /unindenting-heredocs-ruby/
+slug: /unindenting-heredocs-ruby/
 image: /files/2011/08/ruby.png
 categories:
   - docwhat

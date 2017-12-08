@@ -5,7 +5,7 @@ date: 2008-08-04T17:41:36+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=137
-permalink: /an-anthropological-introduction-to-youtube/
+slug: /an-anthropological-introduction-to-youtube/
 title_tag:
   - ""
 categories:

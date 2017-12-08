@@ -5,7 +5,7 @@ date: 2014-04-28T09:51:50-04:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1435
-permalink: /rename-chef-node/
+slug: /rename-chef-node/
 openid_comments:
   - 'a:1:{i:0;i:19395;}'
 image: /files/2014/04/knife-250x250.png

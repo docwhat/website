@@ -5,7 +5,7 @@ date: 2007-03-26T18:36:10+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/03/its_all_text_v06/
-permalink: /its_all_text_v06/
+slug: /its_all_text_v06/
 title_tag:
   - ""
 categories:

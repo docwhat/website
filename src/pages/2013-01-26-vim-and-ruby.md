@@ -5,7 +5,7 @@ date: 2013-01-26T16:13:42-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=1222
-permalink: /vim-and-ruby/
+slug: /vim-and-ruby/
 openid_comments:
   - 'a:1:{i:0;i:9927;}'
 image: /files/2012/04/356023245659.png

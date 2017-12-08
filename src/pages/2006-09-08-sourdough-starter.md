@@ -5,7 +5,7 @@ date: 2006-09-08T18:00:01+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2006/09/sourdough-starter/
-permalink: /sourdough-starter/
+slug: /sourdough-starter/
 title_tag:
   - ""
 openid_comments:

@@ -5,7 +5,7 @@ date: 2010-08-30T17:20:37-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=574
-permalink: /cedet-ecb-for-aquamacs/
+slug: /cedet-ecb-for-aquamacs/
 openid_comments:
   - 'a:2:{i:0;s:4:"6991";i:1;s:4:"7599";}'
 image: /files/2010/08/Emacs-ECB-250x232.png

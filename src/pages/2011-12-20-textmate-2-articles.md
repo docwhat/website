@@ -5,7 +5,7 @@ date: 2011-12-20T10:05:21-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=801
-permalink: /textmate-2-articles/
+slug: /textmate-2-articles/
 image: /files/2011/12/tm2-icon-250x250.jpg
 categories:
   - docwhat

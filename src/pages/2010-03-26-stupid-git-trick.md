@@ -5,7 +5,7 @@ date: 2010-03-26T22:29:08+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=523
-permalink: /stupid-git-trick/
+slug: /stupid-git-trick/
 categories:
   - docwhat
 tags:

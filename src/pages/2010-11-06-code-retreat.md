@@ -5,7 +5,7 @@ date: 2010-11-06T21:52:20-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=631
-permalink: /code-retreat/
+slug: /code-retreat/
 openid_comments:
   - 'a:1:{i:0;s:4:"7647";}'
 image: /files/2010/11/foo.png

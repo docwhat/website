@@ -5,7 +5,7 @@ date: 2008-08-01T17:35:14+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=127
-permalink: /unappealing-taxs-part-2/
+slug: /unappealing-taxs-part-2/
 title_tag:
   - ""
 categories:

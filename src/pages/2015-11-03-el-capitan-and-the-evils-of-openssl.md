@@ -5,7 +5,7 @@ date: 2015-11-03T10:48:52-05:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1709
-permalink: /el-capitan-and-the-evils-of-openssl/
+slug: /el-capitan-and-the-evils-of-openssl/
 openid_comments:
   - 'a:2:{i:0;i:20639;i:1;i:21876;}'
 image: /files/2011/09/derp.png

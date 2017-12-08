@@ -5,7 +5,7 @@ date: 2009-07-26T17:25:01+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=417
-permalink: /sir-paul-mccartney/
+slug: /sir-paul-mccartney/
 categories:
   - docwhat
 tags:

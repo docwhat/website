@@ -5,7 +5,7 @@ date: 2012-01-14T22:06:22-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=813
-permalink: /getting-started-with-2-step-verification-accounts-help/
+slug: /getting-started-with-2-step-verification-accounts-help/
 image: /files/2012/01/guard-lock-e1326596625843.jpg
 categories:
   - docwhat

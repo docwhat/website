@@ -5,7 +5,7 @@ date: 2009-06-09T17:41:39+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=383
-permalink: /scripting-on-android/
+slug: /scripting-on-android/
 categories:
   - docwhat
 tags:

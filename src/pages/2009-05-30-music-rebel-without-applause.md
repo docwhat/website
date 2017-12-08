@@ -5,7 +5,7 @@ date: 2009-05-30T21:20:00+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=372
-permalink: /music-rebel-without-applause/
+slug: /music-rebel-without-applause/
 categories:
   - docwhat
 tags:

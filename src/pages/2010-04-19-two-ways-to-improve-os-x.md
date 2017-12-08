@@ -5,7 +5,7 @@ date: 2010-04-19T17:33:49+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=542
-permalink: /two-ways-to-improve-os-x/
+slug: /two-ways-to-improve-os-x/
 openid_comments:
   - 'a:1:{i:0;s:4:"6986";}'
 categories:

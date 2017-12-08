@@ -5,7 +5,7 @@ date: 2013-06-29T09:05:33-04:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1300
-permalink: /tracebacks-in-bash/
+slug: /tracebacks-in-bash/
 openid_comments:
   - 'a:1:{i:0;i:9945;}'
 image: /files/2013/06/argonaut_shell-250x187.jpg

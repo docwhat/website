@@ -5,7 +5,7 @@ date: 2007-04-02T22:09:35+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/04/hair-yesterday/
-permalink: /hair-yesterday/
+slug: /hair-yesterday/
 title_tag:
   - ""
 categories:

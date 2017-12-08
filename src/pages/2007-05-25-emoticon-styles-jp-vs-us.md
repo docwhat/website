@@ -5,7 +5,7 @@ date: 2007-05-25T17:23:19+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/05/emoticon-styles-jp-vs-us/
-permalink: /emoticon-styles-jp-vs-us/
+slug: /emoticon-styles-jp-vs-us/
 title_tag:
   - ""
 categories:

@@ -5,7 +5,7 @@ date: 2007-06-28T15:52:39+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/06/simcity-ds-landmark-unlock-codes/
-permalink: /simcity-ds-landmark-unlock-codes/
+slug: /simcity-ds-landmark-unlock-codes/
 title_tag:
   - ""
 openid_comments:

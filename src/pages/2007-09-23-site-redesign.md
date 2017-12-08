@@ -5,7 +5,7 @@ date: 2007-09-23T21:36:44+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/09/site-redesign/
-permalink: /site-redesign/
+slug: /site-redesign/
 title_tag:
   - ""
 categories:

@@ -5,7 +5,7 @@ date: 2009-01-22T17:48:30+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=238
-permalink: /learning-java/
+slug: /learning-java/
 categories:
   - docwhat
 tags:

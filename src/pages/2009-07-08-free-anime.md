@@ -5,7 +5,7 @@ date: 2009-07-08T17:17:12+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=409
-permalink: /free-anime/
+slug: /free-anime/
 categories:
   - docwhat
 tags:

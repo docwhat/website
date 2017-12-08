@@ -5,7 +5,7 @@ date: 2009-01-12T22:43:00+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=234
-permalink: /googlephone/
+slug: /googlephone/
 categories:
   - docwhat
 tags:

@@ -5,7 +5,7 @@ date: 2006-11-19T16:17:45+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2006/11/href-friendly-popups/
-permalink: /href-friendly-popups/
+slug: /href-friendly-popups/
 title_tag:
   - ""
 categories:

@@ -6,7 +6,7 @@ date: '2007-03-17T20:53:09+00:00'
 guid: 'http://docwhat.gerf.org/2007/03/scott-adams-bullshit-detector-broken/'
 id: 38
 layout: post
-permalink: '/scott-adams-bullshit-detector-broken/'
+slug: '/scott-adams-bullshit-detector-broken/'
 tags:
 - dilbert
 - evolution

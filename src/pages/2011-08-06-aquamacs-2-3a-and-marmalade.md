@@ -5,7 +5,7 @@ date: 2011-08-06T00:22:38-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=740
-permalink: /aquamacs-2-3a-and-marmalade/
+slug: /aquamacs-2-3a-and-marmalade/
 image: /files/2011/08/2190102002_e56bb311b9_o-192x250.jpg
 categories:
   - docwhat

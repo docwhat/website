@@ -5,7 +5,7 @@ date: 2006-11-07T18:58:06+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2006/11/getting-an-ipod/
-permalink: /getting-an-ipod/
+slug: /getting-an-ipod/
 title_tag:
   - ""
 categories:

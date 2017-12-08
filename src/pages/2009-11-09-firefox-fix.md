@@ -5,7 +5,7 @@ date: 2009-11-09T12:29:02+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=475
-permalink: /firefox-fix/
+slug: /firefox-fix/
 openid_comments:
   - 'a:2:{i:0;s:4:"6388";i:1;s:4:"6392";}'
 categories:

@@ -5,7 +5,7 @@ date: 2014-10-15T16:36:48-04:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1559
-permalink: /setting-environment-test-kitchen/
+slug: /setting-environment-test-kitchen/
 openid_comments:
   - 'a:2:{i:0;i:17980;i:1;i:20103;}'
 image: /files/2014/10/Chef_Software_Inc._company_logo-228x250.png

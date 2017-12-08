@@ -5,7 +5,7 @@ date: 2011-03-30T10:44:23-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=673
-permalink: /gerrit-rename-a-project/
+slug: /gerrit-rename-a-project/
 image: /files/2011/03/diffy-250x232.png
 categories:
   - docwhat

@@ -5,7 +5,7 @@ date: 2010-02-25T11:45:43+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=511
-permalink: /logging-while-monitoring-a-shell-script/
+slug: /logging-while-monitoring-a-shell-script/
 categories:
   - docwhat
 tags:

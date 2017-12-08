@@ -5,7 +5,7 @@ date: 2010-01-22T20:43:24+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=489
-permalink: /an-idea-for-an-iphone-app/
+slug: /an-idea-for-an-iphone-app/
 categories:
   - docwhat
 tags:

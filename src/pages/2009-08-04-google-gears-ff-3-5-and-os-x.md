@@ -5,7 +5,7 @@ date: 2009-08-04T19:11:06+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=426
-permalink: /google-gears-ff-3-5-and-os-x/
+slug: /google-gears-ff-3-5-and-os-x/
 categories:
   - docwhat
 tags:

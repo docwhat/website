@@ -5,7 +5,7 @@ date: 2012-03-06T10:28:53-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=837
-permalink: /git-gc-for-a-bunch-of-directories/
+slug: /git-gc-for-a-bunch-of-directories/
 image: /files/2012/03/view_git-logo-250x250.png
 categories:
   - docwhat

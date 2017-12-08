@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Container } from 'react-responsive-grid'
 
 import { rhythm, scale } from '../utils/typography'
 
-require("prismjs/themes/prism.css");
+require('prismjs/themes/prism.css')
 
 class Template extends React.Component {
   render() {
@@ -22,6 +21,8 @@ class Template extends React.Component {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          borderBottomWidth: rhythm( 1 / 2 ),
+          borderBottomColor: '#d8ff66',
         }}
       >
         <Link
@@ -32,20 +33,21 @@ class Template extends React.Component {
           }}
           to={'/'}
         >
-          docwhat blog
+          {"docwhat's blog"}
         </Link>
       </h1>
     )
     return (
-      <Container
+      <div
         style={{
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          margin: `0 auto`,
         }}
       >
         {header}
         {children()}
-      </Container>
+      </div>
     )
   }
 }

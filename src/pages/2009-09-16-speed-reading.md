@@ -5,7 +5,7 @@ date: 2009-09-16T17:25:22+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=452
-permalink: /speed-reading/
+slug: /speed-reading/
 categories:
   - docwhat
 ---

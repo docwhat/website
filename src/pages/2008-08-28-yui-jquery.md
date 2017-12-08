@@ -5,7 +5,7 @@ date: 2008-08-28T23:22:20+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=171
-permalink: /yui-jquery/
+slug: /yui-jquery/
 title_tag:
   - Switched from YUI to jQuery
 categories:

@@ -5,7 +5,7 @@ date: 2011-08-16T18:01:02-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=752
-permalink: /ruby-crashing-on-lion/
+slug: /ruby-crashing-on-lion/
 image: /files/2011/08/ruby.png
 categories:
   - docwhat

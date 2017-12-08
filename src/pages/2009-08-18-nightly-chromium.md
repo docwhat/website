@@ -5,7 +5,7 @@ date: 2009-08-18T17:41:36+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=441
-permalink: /nightly-chromium/
+slug: /nightly-chromium/
 openid_comments:
   - 'a:1:{i:0;s:4:"7015";}'
 categories:

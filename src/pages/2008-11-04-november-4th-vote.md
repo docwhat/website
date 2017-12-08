@@ -5,7 +5,7 @@ date: 2008-11-04T15:10:29+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2008/11/november-4th-vote/
-permalink: /november-4th-vote/
+slug: /november-4th-vote/
 categories:
   - docwhat
 tags:

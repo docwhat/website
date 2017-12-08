@@ -8,7 +8,7 @@ id: 121
 layout: post
 openid_comments:
 - 'a:1:{i:0;s:4:"5879";}'
-permalink: '/xpath-has-a-lousy-equality-operator/'
+slug: '/xpath-has-a-lousy-equality-operator/'
 tags:
 - programming
 - xpath

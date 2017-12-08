@@ -5,7 +5,7 @@ date: 2010-08-31T17:00:07-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=589
-permalink: /thematic-featured-images/
+slug: /thematic-featured-images/
 openid_comments:
   - 'a:1:{i:0;s:4:"7627";}'
 image: /files/2010/08/Screen-shot-2010-08-31-at-1.29.20-AM-250x250.png

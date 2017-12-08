@@ -5,7 +5,7 @@ date: 2015-04-01T12:25:49-04:00
 author: docwhat
 layout: post
 guid: https://docwhat.org/?p=1603
-permalink: /spread-your-knowledge/
+slug: /spread-your-knowledge/
 image: /files/2015/04/share_knowledge-250x250.png
 categories:
   - docwhat

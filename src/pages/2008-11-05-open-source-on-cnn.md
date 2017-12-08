@@ -6,7 +6,7 @@ date: '2008-11-05T14:29:26+00:00'
 guid: 'http://docwhat.gerf.org/?p=214'
 id: 214
 layout: post
-permalink: '/open-source-on-cnn/'
+slug: '/open-source-on-cnn/'
 tags:
 - open source
 - politics

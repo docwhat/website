@@ -5,7 +5,7 @@ date: 2006-09-11T18:00:44+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2006/09/sourdough-bread/
-permalink: /sourdough-bread/
+slug: /sourdough-bread/
 title_tag:
   - ""
 categories:

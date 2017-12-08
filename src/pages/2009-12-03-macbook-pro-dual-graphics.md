@@ -6,7 +6,7 @@ date: '2009-12-03T17:23:29+00:00'
 guid: 'http://docwhat.org/?p=478'
 id: 478
 layout: post
-permalink: '/macbook-pro-dual-graphics/'
+slug: '/macbook-pro-dual-graphics/'
 tags:
 - hardware
 - macbook pro

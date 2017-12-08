@@ -5,7 +5,7 @@ date: 2009-03-18T22:37:59+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=310
-permalink: /my-yo-yo-site/
+slug: /my-yo-yo-site/
 categories:
   - docwhat
 tags:

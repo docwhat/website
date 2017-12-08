@@ -5,7 +5,7 @@ date: 2007-06-20T20:12:01+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/06/what-language-would-you-like-it-in/
-permalink: /what-language-would-you-like-it-in/
+slug: /what-language-would-you-like-it-in/
 title_tag:
   - ""
 categories:

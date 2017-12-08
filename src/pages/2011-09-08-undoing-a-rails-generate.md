@@ -5,7 +5,7 @@ date: 2011-09-08T11:29:58-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=769
-permalink: /undoing-a-rails-generate/
+slug: /undoing-a-rails-generate/
 image: /files/2011/09/rails.png
 categories:
   - docwhat

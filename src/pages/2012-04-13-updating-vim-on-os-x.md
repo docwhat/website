@@ -5,7 +5,7 @@ date: 2012-04-13T09:03:12-04:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=841
-permalink: /updating-vim-on-os-x/
+slug: /updating-vim-on-os-x/
 openid_comments:
   - 'a:3:{i:0;s:4:"9121";i:1;i:9934;i:2;i:9936;}'
 image: /files/2012/04/356023245659.png

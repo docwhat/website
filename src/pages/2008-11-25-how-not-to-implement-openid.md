@@ -5,7 +5,7 @@ date: 2008-11-25T17:35:29+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=224
-permalink: /how-not-to-implement-openid/
+slug: /how-not-to-implement-openid/
 title_tag:
   - 'SourceForge: How not to implement OpenID'
 openid_comments:

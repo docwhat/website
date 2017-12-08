@@ -5,7 +5,7 @@ date: 2007-03-21T21:43:55+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/03/a-bug-report-from-japan/
-permalink: /a-bug-report-from-japan/
+slug: /a-bug-report-from-japan/
 title_tag:
   - ""
 categories:

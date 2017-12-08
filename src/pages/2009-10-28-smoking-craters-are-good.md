@@ -5,7 +5,7 @@ date: 2009-10-28T17:01:43+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=473
-permalink: /smoking-craters-are-good/
+slug: /smoking-craters-are-good/
 openid_comments:
   - 'a:2:{i:0;s:4:"6450";i:1;s:4:"6451";}'
 categories:

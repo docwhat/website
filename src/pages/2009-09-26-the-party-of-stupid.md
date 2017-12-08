@@ -5,7 +5,7 @@ date: 2009-09-26T22:16:59+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=456
-permalink: /the-party-of-stupid/
+slug: /the-party-of-stupid/
 categories:
   - docwhat
 tags:

@@ -5,7 +5,7 @@ date: 2009-05-28T15:53:14+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=367
-permalink: /useless-error-messages/
+slug: /useless-error-messages/
 openid_comments:
   - 'a:1:{i:0;s:4:"6244";}'
 categories:

@@ -5,7 +5,7 @@ date: 2011-12-02T11:23:16-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=791
-permalink: /fix-git-guis-spell-checking-is-unavailable-dialog/
+slug: /fix-git-guis-spell-checking-is-unavailable-dialog/
 image: /files/2011/12/missing-aspell-300x139-250x115.png
 categories:
   - docwhat

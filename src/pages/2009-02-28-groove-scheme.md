@@ -5,7 +5,7 @@ date: 2009-02-28T15:16:39+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/?p=263
-permalink: /groove-scheme/
+slug: /groove-scheme/
 categories:
   - docwhat
 tags:

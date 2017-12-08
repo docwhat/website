@@ -5,7 +5,7 @@ date: 2010-12-07T17:18:21-05:00
 author: docwhat
 layout: post
 guid: http://docwhat.org/?p=646
-permalink: /git-tip-empty-branch/
+slug: /git-tip-empty-branch/
 openid_comments:
   - 'a:1:{i:0;s:4:"9432";}'
 image: /files/2010/12/got_git_tshirt-250x250.jpg

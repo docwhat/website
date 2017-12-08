@@ -5,7 +5,7 @@ date: 2007-01-12T01:02:35+00:00
 author: docwhat
 layout: post
 guid: http://docwhat.gerf.org/2007/01/its-all-text/
-permalink: /its-all-text/
+slug: /its-all-text/
 title_tag:
   - ""
 categories:
