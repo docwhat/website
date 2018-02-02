@@ -13,8 +13,8 @@ tags:
   - programming
   - shell
 ---
-[![Nucella lapillus](/files/2010/07/nucella_lapillus1-e1279315138571.jpg "Nucella lapillus. Image by Manfred Heyde. Licensed under the Creative Commons Attribution ShareAlike 3.0
-License.)](/files/2010/07/nucella_lapillus1.jpg")
+
+![Nucella lapillus](nucella_lapillus1.jpg "Nucella lapil lus. Image by Manfred Heyde. Licensed under the Creative Commons Attribution ShareAlike 3.0 -License.")
 
 Ever needed to check if a given port number is valid in bash? It's
 harder than it looks because if you accept any input from the user, you
