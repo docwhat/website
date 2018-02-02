@@ -31,14 +31,17 @@ const PostMeta = props => (
   </small>
 )
 
-class BlogIndex extends React.Component {
+class SiteIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={siteTitle}>
+          <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
+          <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48" />
+        </Helmet>
         <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
@@ -55,7 +58,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default SiteIndex
 
 export const pageQuery = graphql`
   query IndexQuery {
