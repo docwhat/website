@@ -11,7 +11,7 @@
     "asi": true
   },
   "dependencies": {
-    "gatsby": "^1.9.128",
+    "gatsby": "^1.9.177",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-feed": "^1.3.13",
     "gatsby-plugin-google-analytics": "^1.0.12",

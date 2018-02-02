@@ -4,5 +4,7 @@ public
 .DS_Store
 .intermediate-representation/
 .cache/
-yarn.lock
 .tern-port
+
+# We use yarn
+package-lock.json
