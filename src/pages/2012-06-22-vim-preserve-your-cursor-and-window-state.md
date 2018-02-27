@@ -20,39 +20,10 @@ I found the post [_Preserve: A Vim function that keeps your state_](http://techn
 
 I have come up with a better `Preserve`:
 
-``` viml
-" A wrapper function to restore the cursor position, window position,
-" and last search after running a command.
-function! Preserve(command)
-  " Save the last search
-  let last_search=@/
-  " Save the current cursor position
-  let save_cursor = getpos(".")
-  " Save the window position
-  normal H
-  let save_window = getpos(".")
-  call setpos('.', save_cursor)
-
-  " Do the business:
-  execute a:command
-
-  " Restore the last_search
-  let @/=last_search
-  " Restore the window position
-  call setpos('.', save_window)
-  normal zt
-  " Restore the cursor position
-  call setpos('.', save_cursor)
-endfunction
-```
+<Gist id=2973488 file=function.vim></Gist>
 
 This is super useful, for example:
 
-``` viml
-" Re-indents buffer.
-nmap <silent> <Leader>g :call Preserve("normal gg=G")<CR>
-" Removes all trailing whitespace in buffer.
-nmap <silent> <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
-```
+<Gist id=2973488 file=example1.vim></Gist>
 
 Ciao!

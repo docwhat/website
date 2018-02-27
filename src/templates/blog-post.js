@@ -1,9 +1,21 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-
-import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
+import rehypeReact from "rehype-react"
+
+// Components
+import Bio from '../components/Bio.js'
+// import Gist from '../components/Gist'
+import Gist from 'react-gist'
+
+// Part of gatsby-remark-component
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: {
+    "gist": Gist,
+  }
+}).Compiler
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -32,7 +44,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div>{renderAst(post.htmlAst)}</div>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -55,7 +67,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
