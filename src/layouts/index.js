@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
+import { heroColor } from '../utils/colors.js'
 
 require('prismjs/themes/prism.css')
 
@@ -22,7 +23,7 @@ class Template extends React.Component {
           marginBottom: rhythm(1.5),
           marginTop: 0,
           borderBottomWidth: rhythm( 1 / 2 ),
-          borderBottomColor: '#d8ff66',
+          borderBottomColor: heroColor.string(),
         }}
       >
         <Link

@@ -11,6 +11,8 @@
     "asi": true
   },
   "dependencies": {
+    "color": "^3.0.0",
+    "compass-vertical-rhythm": "^1.4.0",
     "gatsby": "1.9.215",
     "gatsby-cli": "^1.1.44",
     "gatsby-link": "1.6.37",
@@ -37,6 +39,8 @@
     "react-gist": "^1.2.1",
     "react-icons": "2.2.7",
     "rehype-react": "^3.0.2",
+    "typography-breakpoint-constants": "^0.15.10",
+    "typography-theme-fairy-gates": "^0.15.11",
     "typography-theme-github": "^0.15.10"
   },
   "devDependencies": {
