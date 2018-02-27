@@ -11,7 +11,7 @@ FROM builder AS lint
 RUN yarn run lint
 
 ###################
-FROM builder AS build
+FROM lint AS build
 RUN yarn run build
 
 #################################
