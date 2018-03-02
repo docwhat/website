@@ -3,7 +3,7 @@ module.exports = {
     title: 'docwhat blog',
     author: 'Christian Höltje',
     description: 'Personal blog of Christian Höltje',
-    siteUrl: 'https://docwhat.org/',
+    siteUrl: 'https://docwhat.org',
   },
   plugins: [
     {
@@ -56,6 +56,10 @@ module.exports = {
       options: {
         pathToConfigModule: 'src/utils/typography'
       },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {},
     },
   ],
 };
