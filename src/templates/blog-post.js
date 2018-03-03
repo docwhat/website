@@ -23,8 +23,16 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const helmetTitle = post.frontmatter.title || siteTitle
-    const slug = this.props.data.markdownRemark.fields.slug
-    const url = `${window.location.origin}${location.pathname}`
+    const data = this.props.data
+    const slug = data.markdownRemark.fields.slug
+    const calculateUrl = () => {
+      if (typeof window === 'undefined' || typeof location === 'undefined') {
+        return `${data.site.siteMetadata.siteUrl}{slug}`
+      } else {
+        return `${window.location.origin}${location.pathname}`
+      }
+    }
+    const url = calculateUrl()
 
     return (
       <div>
@@ -67,6 +75,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
