@@ -15,19 +15,19 @@ comments:
   # request.
   branch: "master"
 
-  # (*) REQUIRED
-  #
-  # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "entry{@timestamp}"
+  # The format of the generated data files. Accepted values are "json", "yaml"
+  # or "frontmatter"
+  format: "yaml"
 
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
   path: "src/comments/{options.slug}"
 
-  # The format of the generated data files. Accepted values are "json", "yaml"
-  # or "frontmatter"
-  format: "yaml"
+  # (*) REQUIRED
+  #
+  # Destination path (filename) for the data files. Accepts placeholders.
+  filename: "entry{@timestamp}"
 
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
@@ -108,3 +108,5 @@ comments:
     #
     # Encrypted Secret for your reCAPTCHA site registration
     secret: "cZU2NrPL+mlqy13La6fsGGNqOljXD2Cc6AWxggth9bSx6wOWCYW1zy/3nd47rQG6dMfmVKVk/2vLoyNo3H7J3jCTCfX/eW5/zGUZ8Cx1e52BhwdIpDujGIQdtrnJ4Smx/CdhS5yoh4FBIuScKjYNT/GCV/WywrXiNZXrp8GOe9Q="
+
+# EOF
