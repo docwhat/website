@@ -6,6 +6,7 @@ import rehypeReact from "rehype-react"
 
 // Components
 import Bio from '../components/Bio.js'
+import SubmitComment from '../components/SubmitComment.js'
 // import Gist from '../components/Gist'
 import Gist from 'react-gist'
 
@@ -22,6 +23,8 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const helmetTitle = post.frontmatter.title || siteTitle
+    const slug = this.props.data.markdownRemark.fields.slug
+    const url = `${window.location.origin}${location.pathname}`
 
     return (
       <div>
@@ -50,6 +53,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
+        <SubmitComment slug={slug} url={url} />
         <Bio />
       </div>
     )
@@ -68,6 +72,9 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       htmlAst
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
