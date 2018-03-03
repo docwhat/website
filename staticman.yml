@@ -23,7 +23,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "_data/comments/{options.slug}"
+  path: "src/comments/{options.slug}"
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
