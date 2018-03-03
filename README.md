@@ -2,11 +2,16 @@
 [![Docker Image
 Layers](https://images.microbadger.com/badges/image/docwhat/docwhat.svg)](https://microbadger.com/images/docwhat/docwhat)
 
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# Source for docwhat.org
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+This is the static site source code for
+[docwhat.org](https://docwhat.org).
 
-## Running in development
-`gatsby develop`
+It is powered by [Gatsby](https://gatsbyjs.org).
+
+## Developing
+
+``` console
+yarn install
+gatsby develop
+```
