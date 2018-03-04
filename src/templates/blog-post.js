@@ -11,6 +11,14 @@ import Comments from '../components/Comments.js'
 // import Gist from '../components/Gist'
 import Gist from 'react-gist'
 
+import avatarPic from '../components/avatar.png'
+import {
+  siteUrl,
+  siteTitle,
+  authorUrl,
+  authorJsonLd
+} from '../utils/constants.js'
+
 // Part of gatsby-remark-component
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -19,85 +27,110 @@ const renderAst = new rehypeReact({
   }
 }).Compiler
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const {
-      data: {
-        site: { siteMetadata: {
-          siteUrl: siteUrl,
-          title: siteTitle,
-        } },
-        post: {
-          fields: {
-            slug: slug,
-          },
-          frontmatter: {
-            title: postTitle,
-            date: postDate,
-          },
-          htmlAst: postHtmlAst,
-        },
-        comments: comments,
+const BlogPostMicroData = props => {
+  const {
+    postTitle,
+    postUrl,
+    ymdDate,
+  } = props
+
+  const jsonObject = {
+    "@context":"http://schema.org",
+    "@type":"BlogPosting",
+    "headline": postTitle,
+    // "genre":"",
+    // "keywords":"",
+    // "wordCount":"{{ wordcount }}",
+    "url": postUrl,
+    "datePublished": ymdDate,
+    "author": authorJsonLd,
+    "publisher":{
+      ...authorJsonLd,
+      "logo": {
+        "@type": "ImageObject",
+        "contentUrl": avatarPic,
+        "url": authorUrl
       }
-    } = this.props
-
-    const helmetTitle = postTitle || siteTitle
-    const calculateUrl = () => {
-      if (typeof window === 'undefined' || typeof location === 'undefined') {
-        return `${siteUrl}${slug}`
-      } else {
-        return `${window.location.origin}${location.pathname}`
-      }
-    }
-    const url = calculateUrl()
-
-    return (
-      <div>
-        <Helmet title={helmetTitle} />
-        <h1
-          style={{
-            borderBottom: 'none',
-          }}
-        >
-          {postTitle}
-        </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-            textAlign: 'right',
-          }}
-        >
-          {postDate}
-        </p>
-        <div>{renderAst(postHtmlAst)}</div>
-        <h2>
-          Comments
-        </h2>
-        <Comments comments={this.props.data.comments} />
-        <SubmitComment slug={slug} url={url} />
-
-        <hr style={{
-          marginBottom: rhythm(1),
-        }} />
-        <Bio />
-      </div>
-    )
+    },
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id": postUrl,
+    },
+    // "articleBody":""
   }
+
+  return (
+    <script type="application/ld+json">{JSON.stringify(jsonObject)}</script>
+  )
+}
+
+const BlogPostTemplate = (props) => {
+  console.log("NARF", props)
+  const {
+    data: {
+      post: {
+        fields: {
+          slug: slug,
+        },
+        frontmatter: {
+          title: postTitle,
+          date: postDate,
+          ymdDate: ymdDate,
+        },
+        htmlAst: postHtmlAst,
+      },
+      comments: comments,
+    }
+  } = props
+
+  const helmetTitle = postTitle || siteTitle
+  const postUrl = `${siteUrl}${slug}`
+
+  return (
+    <div>
+      <Helmet title={helmetTitle} />
+      <h1
+        style={{
+          borderBottom: 'none',
+        }}
+      >
+        {postTitle}
+      </h1>
+      <p
+        style={{
+          ...scale(-1 / 5),
+          display: 'block',
+          marginBottom: rhythm(1),
+          marginTop: rhythm(-1),
+          textAlign: 'right',
+        }}
+      >
+        {postDate}
+      </p>
+      <div>{renderAst(postHtmlAst)}</div>
+      <h2>
+        Comments
+      </h2>
+      <Comments comments={comments} />
+      <SubmitComment slug={slug} url={postUrl} />
+
+      <hr style={{
+        marginBottom: rhythm(1),
+      }} />
+      <Bio />
+      <BlogPostMicroData
+        postTitle={helmetTitle}
+        postUrl={postUrl}
+        ymdDate={ymdDate}
+      />
+    </div>
+  )
 }
 
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-      }
-    }
     post: markdownRemark(
       fields: { slug: { eq: $slug } },
       frontmatter: { layout: { eq: "post" } }
@@ -109,6 +142,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        ymdDate: date(formatString: "YYYY-MM-DD"),
         date(formatString: "MMMM DD, YYYY")
       }
     }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'docwhat blog',
+    title: "docwhat's blog",
     author: 'Christian Höltje',
     description: 'Personal blog of Christian Höltje',
     siteUrl: 'https://docwhat.org',

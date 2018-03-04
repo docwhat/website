@@ -7,9 +7,12 @@ const Comment = (props) => {
     name,
     url,
     email,
-    date,
+    friendlyDate,
+    iso8601Date,
     children
   } = props
+
+  console.log("NARF", props, friendlyDate, iso8601Date)
 
   return (
     <article style={{
@@ -45,17 +48,19 @@ const Comment = (props) => {
               fontSize: rhythm( 9 / 8 ),
               lineHeight: 1,
             }}
+            className="h-card"
             href={url}>
             {name}
           </a>
-          <div
+          <time
             style={{
               fontSize: rhythm( 2 / 3 ),
               position: "absolute",
               top: "0",
-              right: "0"
+              right: "0",
             }}
-          >{date}</div>
+            dateTime={iso8601Date}
+          >{friendlyDate}</time>
       </header>
 
       {children}
@@ -65,3 +70,19 @@ const Comment = (props) => {
 }
 
 export default Comment
+
+export const query = graphql`
+  fragment commentAttributesFragment on MarkdownRemark {
+    fields {
+      slug
+    }
+    frontmatter {
+      name
+      url
+      email
+      friendlyDate: date(formatString: "MMMM DD, YYYY")
+      iso8601Date: date
+    }
+    html
+  }
+`

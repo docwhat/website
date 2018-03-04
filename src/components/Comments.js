@@ -13,7 +13,8 @@ const Comments = (data) => {
         name,
         url,
         email,
-        date
+        friendlyDate,
+        iso8601Date,
       },
       html
     } = node
@@ -23,7 +24,8 @@ const Comments = (data) => {
         key={index}
         name={name}
         url={url}
-        date={date}
+        friendlyDate={friendlyDate}
+        iso8601Date={iso8601Date}
         email={email} >
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Comment>
@@ -37,19 +39,6 @@ const Comments = (data) => {
 export default Comments
 
 export const CommentsBySlug = graphql`
-  fragment commentAttributesFragment on MarkdownRemark {
-    fields {
-      slug
-    }
-    frontmatter {
-      name
-      url
-      email
-      date(formatString: "MMMM DD, YYYY")
-    }
-    html
-  }
-
   fragment commentsQueryFragment on RootQueryType {
     comments: allMarkdownRemark(
       filter: {

@@ -5,6 +5,32 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
+import {
+  authorUrl,
+  authorJsonLd
+} from '../utils/constants.js'
+
+const BlogMicroData = props => {
+  const {
+    siteTitle
+  } = props
+
+  const jsonObject = {
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "keywords": "software engineering agile devops ruby golang javascript refactoring",
+    "url": authorUrl,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": authorUrl,
+    },
+    "author": authorJsonLd
+  }
+
+  return (
+    <script type="application/ld+json">{JSON.stringify(jsonObject)}</script>
+  )
+}
 
 const PostTitle = props => (
   <h3
@@ -43,16 +69,19 @@ class SiteIndex extends React.Component {
           <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48" />
         </Helmet>
         <Bio />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <PostTitle to={node.fields.slug}>{title}</PostTitle>
-              <PostMeta>{node.frontmatter.date}</PostMeta>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        <div>
+          {posts.map(({ node }) => {
+            const title = get(node, 'frontmatter.title') || node.fields.slug
+            return (
+              <section key={node.fields.slug}>
+                <PostTitle to={node.fields.slug}>{title}</PostTitle>
+                <PostMeta>{node.frontmatter.date}</PostMeta>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </section>
+            )
+          })}
+        </div>
+        <BlogMicroData siteTitle={siteTitle} />
       </div>
     )
   }
