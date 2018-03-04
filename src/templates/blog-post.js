@@ -65,7 +65,6 @@ const BlogPostMicroData = props => {
 }
 
 const BlogPostTemplate = (props) => {
-  console.log("NARF", props)
   const {
     data: {
       post: {

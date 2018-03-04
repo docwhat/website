@@ -12,8 +12,6 @@ const Comment = (props) => {
     children
   } = props
 
-  console.log("NARF", props, friendlyDate, iso8601Date)
-
   return (
     <article style={{
       position: "relative",
