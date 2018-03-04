@@ -5,6 +5,7 @@ services:
 
 script:
   - docker build --target=lint .
+  - docker build --target=build .
 
 notifications:
   email:
