@@ -8,8 +8,8 @@ import rehypeReact from "rehype-react"
 import Bio from '../components/Bio.js'
 import SubmitComment from '../components/SubmitComment.js'
 import Comments from '../components/Comments.js'
-// import Gist from '../components/Gist'
 import Gist from 'react-gist'
+// TODO: Calendar icons https://www.sitepoint.com/create-calendar-icon-html5-css3/
 
 import avatarPic from '../components/avatar.png'
 import {
