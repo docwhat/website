@@ -82,14 +82,14 @@ class SubmitComment extends React.Component {
 
           <LabelledInput
             label="Name"
-            name="field[name]"
+            name="fields[name]"
             type="text"
             placeholder="Joe Cool"
             required />
 
           <LabelledInput
             label="E-mail"
-            name="field[email]"
+            name="fields[email]"
             type="email"
             placeholder="joe.cool@example.com"
             required />
