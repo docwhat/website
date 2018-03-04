@@ -13,6 +13,8 @@ comments:
   # empty, an error will be thrown.
   requiredFields: ["name", "email", "message"]
 
+  commitMessage: "New comment by {fields.name}"
+
   # (*) REQUIRED
   #
   # Name of the branch being used. Must match the one sent in the URL of the
@@ -21,17 +23,11 @@ comments:
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
-  format: "yaml"
+  format: "frontmatter"
 
-  # (*) REQUIRED
-  #
-  # Destination path (directory) for the data files. Accepts placeholders.
-  path: "src/comments/{options.slug}"
-
-  # (*) REQUIRED
-  #
-  # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "entry{@timestamp}"
+  path: "src/comments/"
+  filename: "comment-{@id}"
+  extension: "md"
 
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
@@ -41,7 +37,7 @@ comments:
     date:
       type: date
       options:
-        format: "timestamp-seconds"
+        format: "iso8601"
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your
@@ -74,18 +70,19 @@ comments:
   # the name of the field and values are possible transformation types.
   transforms:
     email: md5
+    message: frontmatterContent
 
-  reCaptcha:
-    # Set to true to force reCAPTCHA validation, set to false to accept
-    # comments without reCAPTCHA.
-    enabled: true
+  # reCaptcha:
+  #   # Set to true to force reCAPTCHA validation, set to false to accept
+  #   # comments without reCAPTCHA.
+  #   enabled: true
 
-    # Site Key for your reCAPTCHA site registration
-    siteKey: "6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P"
+  #   # Site Key for your reCAPTCHA site registration
+  #   siteKey: "6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P"
 
-    # 🔐 RSA encrypted field
-    #
-    # Encrypted Secret for your reCAPTCHA site registration
-    secret: "HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dvqJopL1jhByo="
+  #   # 🔐 RSA encrypted field
+  #   #
+  #   # Encrypted Secret for your reCAPTCHA site registration
+  #   secret: "HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dvqJopL1jhByo="
 
 # EOF

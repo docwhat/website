@@ -7,6 +7,7 @@ import rehypeReact from "rehype-react"
 // Components
 import Bio from '../components/Bio.js'
 import SubmitComment from '../components/SubmitComment.js'
+import Comments from '../components/Comments.js'
 // import Gist from '../components/Gist'
 import Gist from 'react-gist'
 
@@ -20,11 +21,11 @@ const renderAst = new rehypeReact({
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const helmetTitle = post.frontmatter.title || siteTitle
     const data = this.props.data
-    const slug = data.markdownRemark.fields.slug
+    const post = data.post
+    const siteTitle = data.site.siteMetadata.title
+    const helmetTitle = post.frontmatter.title || siteTitle
+    const slug = post.fields.slug
     const calculateUrl = () => {
       if (typeof window === 'undefined' || typeof location === 'undefined') {
         return `${data.site.siteMetadata.siteUrl}{slug}`
@@ -56,12 +57,15 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div>{renderAst(post.htmlAst)}</div>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <h2>
+          Comments
+        </h2>
+        <Comments comments={data.comments} />
         <SubmitComment slug={slug} url={url} />
+
+        <hr style={{
+          marginBottom: rhythm(1),
+        }} />
         <Bio />
       </div>
     )
@@ -78,7 +82,10 @@ export const pageQuery = graphql`
         siteUrl
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    post: markdownRemark(
+      fields: { slug: { eq: $slug } },
+      frontmatter: { layout: { eq: "post" } }
+    ) {
       id
       htmlAst
       fields {
@@ -89,5 +96,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
       }
     }
+    ...commentsQueryFragment
   }
 `

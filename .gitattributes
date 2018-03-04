@@ -1,0 +1,12 @@
+# Force text files to have unix eols, so Windows/Cygwin does not break them
+* text=auto eol=lf
+
+# Images
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.png  binary
+*.ico  binary
+
+# Detect (Programming) Language
+src/* linguist-vendored

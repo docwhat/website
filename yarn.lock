@@ -4271,6 +4271,15 @@ gatsby-transformer-sharp@^1.6.14:
     fs-extra "^4.0.2"
     probe-image-size "^3.2.0"
 
+gatsby-transformer-yaml@^1.5.16:
+  version "1.5.16"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-1.5.16.tgz#24459e8d0cc235e51b6eeaf7843912f990c10c68"
+  dependencies:
+    babel-runtime "^6.26.0"
+    js-yaml "3.7.0"
+    lodash "^4.17.4"
+    unist-util-select "^1.5.0"
+
 gatsby@1.9.215:
   version "1.9.215"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.215.tgz#c918c782ceeba013d484322a179b38bcb5b1402d"
@@ -5626,6 +5635,10 @@ is-resolvable@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-resolvable/-/is-resolvable-1.1.0.tgz#fb18f87ce1feb925169c9a407c19318a3206ed88"
 
+is-retina@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-retina/-/is-retina-1.0.3.tgz#d7401b286bea2ae37f62477588de504d0b8647e3"
+
 is-retry-allowed@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
@@ -5829,19 +5842,19 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
+js-yaml@3.7.0, js-yaml@~3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.7.0.tgz#5c967ddd837a9bfdca5f2de84253abe8a1c03b80"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^2.6.0"
+
 js-yaml@^3.10.0, js-yaml@^3.5.2, js-yaml@^3.9.1:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
-
-js-yaml@~3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.7.0.tgz#5c967ddd837a9bfdca5f2de84253abe8a1c03b80"
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^2.6.0"
 
 jsan@^3.1.0, jsan@^3.1.5:
   version "3.1.9"
@@ -6503,7 +6516,7 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-md5@^2.0.0, md5@^2.2.1:
+md5@^2.0.0, md5@^2.1.0, md5@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
   dependencies:
@@ -8323,7 +8336,7 @@ qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-query-string@^4.1.0:
+query-string@^4.1.0, query-string@^4.2.2:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
   dependencies:
@@ -8446,6 +8459,14 @@ react-gist@^1.2.1:
   resolved "https://registry.yarnpkg.com/react-gist/-/react-gist-1.2.1.tgz#969ceb706b5503d84f398c5953818ee631a05fd0"
   dependencies:
     prop-types "^15.6.0"
+
+react-gravatar@^2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/react-gravatar/-/react-gravatar-2.6.3.tgz#5407eb6ac87e830e2a34deb760d2a4c404eb1dac"
+  dependencies:
+    is-retina "^1.0.3"
+    md5 "^2.1.0"
+    query-string "^4.2.2"
 
 react-helmet@^5.1.3:
   version "5.2.0"
