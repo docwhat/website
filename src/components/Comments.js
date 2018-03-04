@@ -13,6 +13,7 @@ const Comments = (data) => {
         name,
         url,
         email,
+        uuid,
         friendlyDate,
         iso8601Date,
       },
@@ -21,7 +22,7 @@ const Comments = (data) => {
 
     return (
       <Comment
-        key={index}
+        key={uuid}
         name={name}
         url={url}
         friendlyDate={friendlyDate}
