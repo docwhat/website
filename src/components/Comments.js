@@ -13,44 +13,55 @@ const Comment = (props) => {
   } = props
 
   return (
-    <div>
-      <header style={{
-        position: "relative",
-        marginTop: rhythm( 1 ),
-        borderBottomWidth: rhythm( 1 / 4 ),
-        borderBottomStyle: "solid",
-        borderBottomColor: heroColor.darken(0.2).string(),
+    <article style={{
+      position: "relative",
+      marginBottom: rhythm( 2 ),
+      marginTop: rhythm( 1 ),
+    }}>
+      <div style={{
+        width: '60px',
+        position: 'absolute',
+        top: 0,
+        left: 0,
       }}>
         <Gravatar
           style={{
-            verticalAlign: "text-top",
-            margin: 0,
+            width: '100%',
+            borderRadius: '50%',
           }}
-          size="60"
+          size={60}
           md5={email}
           default="mm"
           rating="pg" />
-        <a
-          style={{
-            background: '#efd',
-            marginLeft: rhythm( 1 / 2 ),
-            marginRight: rhythm( 1 / 2 ),
-          }}
-          href={url}>
-          {name}
-        </a>
-        <div
-          style={{
-            fontSize: rhythm( 1 / 2 ),
-            position: "absolute",
-            top: "0",
-            right: "0"
-          }}
-        >{date}</div>
-    </header>
+      </div>
+      <div style={{
+        paddingLeft: '80px',
+      }}>
+        <header style={{
+          marginTop: rhythm( 1 / 4 ),
+          marginBottom: rhythm( 1 / 2 ),
+        }}>
+          <a
+            style={{
+              fontSize: rhythm( 9 / 8 ),
+              lineHeight: 1,
+            }}
+            href={url}>
+            {name}
+          </a>
+          <div
+            style={{
+              fontSize: rhythm( 2 / 3 ),
+              position: "absolute",
+              top: "0",
+              right: "0"
+            }}
+          >{date}</div>
+      </header>
 
-    {children}
-  </div>
+      {children}
+    </div>
+  </article>
   )
 }
 
