@@ -21,14 +21,30 @@ const renderAst = new rehypeReact({
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const data = this.props.data
-    const post = data.post
-    const siteTitle = data.site.siteMetadata.title
-    const helmetTitle = post.frontmatter.title || siteTitle
-    const slug = post.fields.slug
+    const {
+      data: {
+        site: { siteMetadata: {
+          siteUrl: siteUrl,
+          title: siteTitle,
+        } },
+        post: {
+          fields: {
+            slug: slug,
+          },
+          frontmatter: {
+            title: postTitle,
+            date: postDate,
+          },
+          htmlAst: postHtmlAst,
+        },
+        comments: comments,
+      }
+    } = this.props
+
+    const helmetTitle = postTitle || siteTitle
     const calculateUrl = () => {
       if (typeof window === 'undefined' || typeof location === 'undefined') {
-        return `${data.site.siteMetadata.siteUrl}{slug}`
+        return `${siteUrl}${slug}`
       } else {
         return `${window.location.origin}${location.pathname}`
       }
@@ -43,7 +59,7 @@ class BlogPostTemplate extends React.Component {
             borderBottom: 'none',
           }}
         >
-          {post.frontmatter.title}
+          {postTitle}
         </h1>
         <p
           style={{
@@ -54,13 +70,13 @@ class BlogPostTemplate extends React.Component {
             textAlign: 'right',
           }}
         >
-          {post.frontmatter.date}
+          {postDate}
         </p>
-        <div>{renderAst(post.htmlAst)}</div>
+        <div>{renderAst(postHtmlAst)}</div>
         <h2>
           Comments
         </h2>
-        <Comments comments={data.comments} />
+        <Comments comments={this.props.data.comments} />
         <SubmitComment slug={slug} url={url} />
 
         <hr style={{
