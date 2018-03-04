@@ -4,6 +4,8 @@ import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
 import { FaGithub, FaTwitter } from 'react-icons/lib/fa'
 
+// TODO: Pull docwhat.org from siteUrl
+
 const makeProfileLink = (icon, url, username) => {
   return (
     <span
@@ -11,6 +13,8 @@ const makeProfileLink = (icon, url, username) => {
         whiteSpace: 'nowrap',
         margin: '0 0.2em',
       }}
+      className="u-url"
+      rel="me"
     >
       {React.createElement(icon, {
         style: {
@@ -43,19 +47,33 @@ class Bio extends React.Component {
           display: 'flex',
           marginBottom: rhythm(2.5),
         }}
+        className="h-card"
+        rel="me"
       >
-        <img
-          src={avatarPic}
-          alt={`Christian Höltje`}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-          }}
-        />
+        <a style={{
+
+        }}
+        className="u-url"
+        rel="me"
+        href="https://docwhat.org/" >
+          <img
+            className="u-photo p-nickname"
+            rel="me"
+            src={avatarPic}
+            alt="docwhat"
+            style={{
+              borderRadius: "50%",
+              marginRight: rhythm(1 / 2),
+              marginBottom: 0,
+              width: rhythm(2),
+              height: rhythm(2),
+            }}
+          />
+        </a>
         <p>
-          The personal blog of <strong>Christian Höltje</strong>.
+          The personal blog of <strong rel="me" className="p-name">
+            Christian Höltje
+          </strong>.
           <br />
           {GithubBio}
           {TwitterBio}
