@@ -1,14 +1,10 @@
 ---
-author: docwhat
-categories:
-- Squirrel Hill
 date: '2012-09-14T17:16:41-04:00'
-guid: 'http://docwhat.org/?p=1084'
 id: 1084
-template: post
 slug: '/dr-ross-o-d/'
 tags:
 - Squirrel Hill
+template: post
 title: 'Dr. Ross, O.D.'
 ---
 
@@ -16,23 +12,21 @@ title: 'Dr. Ross, O.D.'
 his staff are awesome and let me tell you why.
 
 He's a very practical guy. He'll get the job done quickly and
-efficiently. And, he'll answer any and all questions. Something
-that not all doctors do well. His staff is awesome and helpful as
-well.
+efficiently. And, he'll answer any and all questions. Something that
+not all doctors do well. His staff is awesome and helpful as well.
 
 I've been getting glasses from him for a while and the assistant
 mentioned daily wear contacts. So I made an appointment to try them
 out (when I last wore contacts, daily wear contacts had just come
 out and cost a fortune, now they are pretty darn cheap!).
 
-![Glasses at Dr. Ross's office](glasses.jpg)
+![Glasses at Dr. Ross's office](glasses.jpg)
 
 I wore them, but I had some of the eye-drying problems I had before
-at work (I'm a software engineer...I stare at a screen all day).
-So I borrowed a friends "computer glasses" (yellow tinted, with a
-+0.25 magnification) and they helped. Dr. Ross measured the
-magnification, since the glasses didn't say what their
-magnification was.
+at work (I'm a software engineer...I stare at a screen all day). So
+I borrowed a friends "computer glasses" (yellow tinted, with a +0.25
+magnification) and they helped. Dr. Ross measured the magnification,
+since the glasses didn't say what their magnification was.
 
 Being scientific minded, I wanted to see if unmagnified, untinted
 glasses were just as good. Dr. Ross let me borrow a pair of display
