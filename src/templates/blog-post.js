@@ -8,6 +8,7 @@ import rehypeReact from "rehype-react"
 import Bio from '../components/Bio.js'
 import SubmitComment from '../components/SubmitComment.js'
 import Comments from '../components/Comments.js'
+import CalendarPage from '../components/CalandarPage.js'
 import Gist from 'react-gist'
 // TODO: Calendar icons https://www.sitepoint.com/create-calendar-icon-html5-css3/
 
@@ -73,7 +74,9 @@ const BlogPostTemplate = (props) => {
         },
         frontmatter: {
           title: postTitle,
-          date: postDate,
+          monthName: monthName,
+          dayName: dayName,
+          dayOfMonth: dayOfMonth,
           ymdDate: ymdDate,
         },
         htmlAst: postHtmlAst,
@@ -86,26 +89,34 @@ const BlogPostTemplate = (props) => {
   const postUrl = `${siteUrl}${slug}`
 
   return (
-    <div>
+    <article>
       <Helmet title={helmetTitle} />
-      <h1
-        style={{
+      <header style={{
+        position: "relative",
+        border: "1px solid hsla(0, 0%, 0%, 0)",
+      }}>
+        <h1 style={{
+          marginTop: 0,
+          marginRight: rhythm( 3 ),
           borderBottom: 'none',
-        }}
-      >
-        {postTitle}
-      </h1>
-      <p
-        style={{
-          ...scale(-1 / 5),
-          display: 'block',
-          marginBottom: rhythm(1),
-          marginTop: rhythm(-1),
-          textAlign: 'right',
-        }}
-      >
-        {postDate}
-      </p>
+        }} >
+          {postTitle}
+        </h1>
+
+        <div style={{
+          position: "absolute",
+          margin: 0,
+          top: 0,
+          right: 0,
+        }}>
+          <CalendarPage
+            monthName={monthName}
+            dayName={dayName}
+            dayOfMonth={dayOfMonth}
+            ymdDate={ymdDate} />
+        </div>
+      </header>
+
       <div>{renderAst(postHtmlAst)}</div>
       <h2>
         Comments
@@ -122,7 +133,7 @@ const BlogPostTemplate = (props) => {
         postUrl={postUrl}
         ymdDate={ymdDate}
       />
-    </div>
+    </article>
   )
 }
 
@@ -142,9 +153,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         ymdDate: date(formatString: "YYYY-MM-DD"),
-        date(formatString: "MMMM DD, YYYY")
+        monthName: date(formatString: "MMMM"),
+        dayName: date(formatString: "dddd"),
+        dayOfMonth: date(formatString: "D")
       }
     }
-    ...commentsQueryFragment
+      ...commentsQueryFragment
   }
-`
+  `
