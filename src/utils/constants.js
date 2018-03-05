@@ -12,10 +12,5 @@ export const authorJsonLd = {
   "sameAs": authorSameAs,
 }
 
-
-
-var tmpSiteUrl = authorUrl
-if (typeof window !== undefined) { tmpSiteUrl = window.location.origin }
-
 export const siteTitle = "docwhat's blog"
-export const siteUrl = tmpSiteUrl
+export const siteUrl = (typeof window === 'undefined') ? authorUrl : window.location.origin
