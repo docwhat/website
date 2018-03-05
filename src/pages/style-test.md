@@ -1,7 +1,8 @@
 ---
 layout: page
-slug: '/theme/'
+slug: '/style-test/'
 title: Style and Layout test
+draft: false
 ---
 
 HEADER 1

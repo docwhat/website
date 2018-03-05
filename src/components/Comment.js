@@ -79,7 +79,7 @@ export const query = graphql`
       url
       email
       uuid: _id
-      friendlyDate: date(formatString: "MMMM DD, YYYY")
+      friendlyDate: date(formatString: "YYYY MMM D")
       iso8601Date: date
     }
     html

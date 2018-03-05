@@ -94,6 +94,7 @@ const BlogPostTemplate = (props) => {
       <header style={{
         position: "relative",
         border: "1px solid hsla(0, 0%, 0%, 0)",
+        minHeight: rhythm( 7 / 2 ),
       }}>
         <h1 style={{
           marginTop: 0,
