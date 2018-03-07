@@ -17,7 +17,7 @@ tags:
 He who is destined to defeat first fights and afterwards looks for victory.
 
 - Sun Tsu, The Art of War</blockquote>
-<!--more-->The Republican party is not just the party of "no", it's the party of "stupid".
+The Republican party is not just the party of "no", it's the party of "stupid".
 
 You can trace the "party of stupid" trend back to Ronald Regan, an Altzheimer's patient who Dave Barry described as "napping towards glory". But it got <span style="text-decoration: underline;">bad</span> under the man who put the "duh" in W.
 

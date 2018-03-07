@@ -19,7 +19,7 @@ I've been on vacation in Bar Harbor, Maine and have enlarged my portable toy col
 I used to carry around a Leatherman (AKA the Pocket Survival Tool) but I eventually stopped.  One reason is because it would become too easy or too hard to open and shut. The version I have (not all do) has knobs for changing the tightness but I could never get it to be the right firmness for opening. I wanted it hard enough to open that it doesn't flop open randomly if I put it down or drop it in a pocket but easy enough to open that I don't have drop everything and use both hands to open or shut it. Or worse, needing so much force to open and shut that it became a hazard.
 
 In addition, it had <em>no</em> locks for the blades.  I scared myself silly a bunch of times trying to use the knife and it would lurch half shut.  Fortunately, the other half of the handle prevented it from shutting completely and I didn't have anything valuable in the way.  The Leatherman was an attractive idea, but a lousy product. I've long since stopped carrying it.
-<!--more-->
+
 
 Now <a href="http://www.swissarmy.com/">Victorinox</a> has the awesome <a href="http://www.amazon.com/gp/product/B000FNIL8K/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B000FNIL8K">SwissTool Spirit Plus Ratchet</a>, which is what the Leatherman should have been to begin with. It has locks for the blades and other tools. You don't have to open the pliers to get at the tools. And it has a detent for the blades so they don't flop open and once they are open, they move easily.  I can open most (not all) of the tools with one hand and shut them too (though I can't do that fast).
 

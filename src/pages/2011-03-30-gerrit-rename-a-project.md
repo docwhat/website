@@ -17,7 +17,7 @@ At work we've been trying out Gerrit. It is awesome in many ways, and yet in oth
 
 One of the more obvious problems is the lack of administration functionality. For example, there is no administration interface for deleting or renaming a project.
 
-However, I needed to rename a project and here is how I did it.<!--more-->
+However, I needed to rename a project and here is how I did it.
 
 **WARNING: This was done against `schema_version` 47. I make no promises it works for other versions.**
 

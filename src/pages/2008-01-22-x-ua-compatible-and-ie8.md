@@ -22,7 +22,7 @@ This is a flag for browsers to change how they render the web page, not by stand
 The header looks like this:
 <pre>&lt;meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4" /&gt;</pre>
 
-If a browser is newer that the version shown to be compatible, then the browser should pretend to be the older version.<!-- more -->
+If a browser is newer that the version shown to be compatible, then the browser should pretend to be the older version.
 
 This was thought up specifically to target the problem caused by all the web sites designed for IE6 which broke when IE7 came out.  These sites broke because they worked around the fact that IE6 didn't support standards and they didn't try to detect the version of IE but just assumed IE would be broken forever.  Not an unreasonable assumption since IE7 took over 5 years to come out which is pretty much forever in computer terms.
 

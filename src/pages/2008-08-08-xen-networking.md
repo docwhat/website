@@ -23,7 +23,7 @@ So it became time to upgrade to some new hardware.  Xen was a natural choice bec
 
 One of the challenges for switching to Xen has been setting up the networking. Even though I read Bill <a title="Bill von Hagen's web site" href="http://www.vonhagen.org/">Von Hagen</a>'s excellent "<a name="evtst|a|0470138114" href="http://www.amazon.com/Professional-Xen-Virtualization-William-Hagen/dp/0470138114%3FSubscriptionId%3D02E5W5871AJF7PMMMS82%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0470138114">Professional Xen Virtualization</a>".
 
-<!--more-->Of course, it's not really his fault.  Xen 3.0 hit beta right before he published it;  The new networking stuff wasn't really in place yet and certainly wasn't ready for release yet.
+Of course, it's not really his fault.  Xen 3.0 hit beta right before he published it;  The new networking stuff wasn't really in place yet and certainly wasn't ready for release yet.
 
 Anyway, the <a href="http://wiki.xensource.com/xenwiki/XenNetworking">Xen Wiki</a> doesn't help much either; it doesn't give any examples and makes things that should be simple, complicated.
 

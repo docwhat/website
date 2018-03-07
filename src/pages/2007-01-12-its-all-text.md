@@ -24,7 +24,7 @@ I've seen some solutions that embed a JavaScript editor into a textarea on deman
 
 So when I discovered the [Firefox](http://mozilla.com/) extension [MozEx](http://mozex.mozdev.org/) I was a very happy hacker indeed. But as time went on I didn't like the way the extension was going. It was trying to solve a problem I didn't have; it wanted to add handlers for things like ssh://, etc. and I didn't need that. I needed an external editor!
 
-<!--more-->
+
 
 When [Firefox](http://mozilla.com/) 2.0 came out, MozEx didn't work. I waited for an update and it didn't come out. Since my new job used a lot of editing stuff via web forms, I really really needed an editor. So I reached for External Editor. It seems to have gone since then, replaced with [Editus Externus](http://addons.mozilla.org/firefox/1195/) which seems to be an improved version by someone else.
 

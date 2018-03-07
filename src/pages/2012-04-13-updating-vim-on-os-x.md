@@ -21,7 +21,7 @@ tags:
 <p>The version of <a href="http://www.vim.org/">Vim</a> that comes with OS X is a little old, but more importantly, it doesn't have all the bells and whistles enabled.</p>
 
 <p>Specifically, it doesn't come with ruby and python support compiled in. Which is a shame, because some plugins for Vim need it.
-<!--more--></p>
+</p>
 
 <p>I've been playing with vim since a couple months ago when I was pair programming with a co-worker, Shawn. Shawn prefers Vim and he is very good at it.</p>
 

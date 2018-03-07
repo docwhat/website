@@ -19,7 +19,7 @@ Currently, they tour with a huge band performing their grooves around the world 
 
 Here's where it gets interesting.
 
-<!--more-->When their contract expired with their record label, they declined to sign back up.  Instead, they signed up for a one year deal with <a href="http://www.bliveshare.com/share/jl2ymuK4yMy8jg91gF0t/docwhat">b-live-share</a>, a music sharing site  run by <a href="http://www.bacardi.com/">Bacardi</a> (yup, the booze guys).
+When their contract expired with their record label, they declined to sign back up.  Instead, they signed up for a one year deal with <a href="http://www.bliveshare.com/share/jl2ymuK4yMy8jg91gF0t/docwhat">b-live-share</a>, a music sharing site  run by <a href="http://www.bacardi.com/">Bacardi</a> (yup, the booze guys).
 
 This site entices you to sign up to get one free song.  You then get another free song after getting more friends to sign up.
 

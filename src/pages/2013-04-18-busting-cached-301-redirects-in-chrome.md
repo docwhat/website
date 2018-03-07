@@ -26,7 +26,7 @@ tags:
 
 <p>This causes Chrome to recheck the page and will update any cached 301 rules.</p>
 
-<p>Ciao!<!--more--></p>
+<p>Ciao!</p>
 
 <p>Additional Links:</p>
 

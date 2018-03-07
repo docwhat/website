@@ -21,6 +21,6 @@ tags:
 ---
 For those that are fans of <a rel="tag" href="http://whedonesque.com/">Joss Whedon</a>, he has started releasing his mini/limited-time/videopod/series, "<a href="http://drhorrible.com/">Dr. Horrible's sing-along blog</a>".
 
-<!--more-->It stars Neil Patrick Harris, Nathan Fillion, and Felicia Day.  Neil Patrick Harris was <a title="Wikipedia Article for Doogie Howser" href="http://en.wikipedia.org/wiki/Doogie_Howser,_M.D.">Doogie Howser, M.D.</a> of course.  Nathan Fillion was "Mal" from <a title="Wikipedia article for Firefly" href="http://en.wikipedia.org/wiki/Firefly_(TV_series)">Firefly</a>, the cult favorite sci-fi show that somehow bombed on T.V.  Felicia Day I had only seen before on <a href="http://www.watchtheguild.com/">The Guild</a> which was so-so.
+It stars Neil Patrick Harris, Nathan Fillion, and Felicia Day.  Neil Patrick Harris was <a title="Wikipedia Article for Doogie Howser" href="http://en.wikipedia.org/wiki/Doogie_Howser,_M.D.">Doogie Howser, M.D.</a> of course.  Nathan Fillion was "Mal" from <a title="Wikipedia article for Firefly" href="http://en.wikipedia.org/wiki/Firefly_(TV_series)">Firefly</a>, the cult favorite sci-fi show that somehow bombed on T.V.  Felicia Day I had only seen before on <a href="http://www.watchtheguild.com/">The Guild</a> which was so-so.
 
 Each episode will be released every two days after July 15th.

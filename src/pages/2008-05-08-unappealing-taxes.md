@@ -29,7 +29,7 @@ The City of Pittsburgh appealed my taxes to the County of Allegheny (yes, <a tit
 
 My job was to fight the appeal.
 
-<!--more-->Quick description of property taxes in Allegheny County: Taxes are based on what your property would probably have been worth in January of 2002.  Since most houses are not the same as they were in 2002, we can only guess what the assessment might have been in 2002.  So what they do is collect some comparable houses that were sold in 1999, 2000 and 2001 and use that to estimate your assessment, which they then tax you on.
+Quick description of property taxes in Allegheny County: Taxes are based on what your property would probably have been worth in January of 2002.  Since most houses are not the same as they were in 2002, we can only guess what the assessment might have been in 2002.  So what they do is collect some comparable houses that were sold in 1999, 2000 and 2001 and use that to estimate your assessment, which they then tax you on.
 
 Yes, this is really stupid.  Yes, it doesn't produce anything like a fair assessment of value for the county or the owner.  Yes, it seems to boil down to who can do the most research via the <a title="Allegheny County Proprety Tax Assessment" href="http://www2.county.allegheny.pa.us/RealEstate/">really crappy website</a>. Yes, it leads to a lot of people doing lots of work for no real gain.
 

@@ -23,7 +23,7 @@ I've come to realize that part of the reason for this is high fructose corn syru
 
 And things like this video from <a href="http://chow.com/"> pretty much prove that the big US sodas are crap.
 
-<!--more-->Does anyone know of a store in Pittsburgh like </a><a href="http://www.sodapopstop.com/">Soda Pop Stop</a>?  Wandering around the store would be more informative (and fun) than ordering online, I think.
+Does anyone know of a store in Pittsburgh like </a><a href="http://www.sodapopstop.com/">Soda Pop Stop</a>?  Wandering around the store would be more informative (and fun) than ordering online, I think.
 
 <object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/gPbh6Ru7VVM&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/gPbh6Ru7VVM&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>
 
