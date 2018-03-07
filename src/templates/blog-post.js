@@ -140,12 +140,9 @@ const BlogPostTemplate = (props) => {
 
 export default BlogPostTemplate
 
-export const pageQuery = graphql`
+export const blogPostQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    post: markdownRemark(
-      fields: { slug: { eq: $slug } },
-      frontmatter: { layout: { eq: "post" } }
-    ) {
+    post: markdownRemark( fields: { slug: { eq: $slug } }) {
       id
       htmlAst
       fields {

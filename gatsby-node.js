@@ -12,12 +12,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
           {
-            allMarkdownRemark(
-              limit: 1000,
-              filter: {
-                frontmatter: { layout: { ne: "comment" } }
-              }
-            ) {
+            allMarkdownRemark(limit: 1000) {
               edges {
                 node {
                   fields {
@@ -36,15 +31,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
-          const { node: {
-            fields: { slug },
-          } } = edge
+          const { node: { fields: { slug, layout } } } = edge
 
-          createPage({
-            path: slug,
-            component: blogPost,
-            context: { slug: slug },
-          })
+          if (layout !== 'comment') {
+            createPage({
+              path: slug,
+              component: blogPost,
+              context: { slug: slug },
+            })
+          }
         })
       })
     )
@@ -55,11 +50,20 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = node.frontmatter.slug ? node.frontmatter.slug : createFilePath({ node, getNode })
+    // Calculate the slug iff not set.
+    const slugValue = node.frontmatter.slug ? node.frontmatter.slug : createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
-      node,
-      value,
+      node: node,
+      value: slugValue,
+    })
+
+    // Calculate the layout (not the page.layout, which is always index).
+    const layoutValue = node.frontmatter.layout ? node.frontmatter.layout : 'post'
+    createNodeField({
+      name: `layout`,
+      node: node,
+      value: layoutValue,
     })
   }
 }
