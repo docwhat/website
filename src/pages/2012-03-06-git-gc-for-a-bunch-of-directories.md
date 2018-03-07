@@ -3,7 +3,7 @@ id: 837
 title: git gc for a bunch of directories
 date: 2012-03-06T10:28:53-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=837
 slug: /git-gc-for-a-bunch-of-directories/
 image: /files/2012/03/view_git-logo-250x250.png

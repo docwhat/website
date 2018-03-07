@@ -3,7 +3,7 @@ id: 199
 title: "XKCD: you're a copyright criminal either way"
 date: 2008-10-13T17:41:58+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=199
 slug: /xkcd-youre-a-copyright-criminal-either-way/
 categories:

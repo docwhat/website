@@ -7,42 +7,49 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
-    resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(limit: 1000) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                }
-              }
-            }
+    graphql(
+      `
+        {
+          pages: allMarkdownRemark( filter: { fields: { template: { eq: "page" } } }) {
+            edges { node { fields { slug } } }
           }
-        `
-      ).then(result => {
+          posts: allMarkdownRemark( filter: { fields: { template: { eq: "post" } } } ) {
+            edges { node { fields { slug } } }
+          }
+        }
+      `
+    )
+      .then(result => {
         if (result.errors) {
           console.log(result.errors)
           reject(result.errors)
         }
 
-        // Create blog posts pages.
-        _.each(result.data.allMarkdownRemark.edges, edge => {
-          const { node: { fields: { slug, layout } } } = edge
+        const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-          if (layout !== 'comment') {
-            createPage({
-              path: slug,
-              component: blogPost,
-              context: { slug: slug },
-            })
-          }
+        _.each(result.data.pages.edges, edge => {
+          const { node: { fields: { slug } } } = edge
+
+          createPage({
+            path: slug,
+            component: pageTemplate,
+            context: { slug: slug, },
+          })
         })
+
+        const postTemplate = path.resolve(`./src/templates/post.js`)
+
+        _.each(result.data.posts.edges, edge => {
+          const { node: { fields: { slug } } } = edge
+
+          createPage({
+            path: slug,
+            component: postTemplate,
+            context: { slug: slug },
+          })
+        })
+        resolve()
       })
-    )
   })
 }
 
@@ -58,12 +65,12 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       value: slugValue,
     })
 
-    // Calculate the layout (not the page.layout, which is always index).
-    const layoutValue = node.frontmatter.layout ? node.frontmatter.layout : 'post'
+    // Calculate the template.
+    const templateValue = node.frontmatter.template ? node.frontmatter.template : 'post'
     createNodeField({
-      name: `layout`,
+      name: `template`,
       node: node,
-      value: layoutValue,
+      value: templateValue,
     })
   }
 }

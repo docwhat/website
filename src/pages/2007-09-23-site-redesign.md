@@ -3,7 +3,7 @@ id: 65
 title: Site Redesign
 date: 2007-09-23T21:36:44+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2007/09/site-redesign/
 slug: /site-redesign/
 title_tag:

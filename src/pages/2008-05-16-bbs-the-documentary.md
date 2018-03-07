@@ -5,7 +5,7 @@ categories:
 date: '2008-05-16T22:15:43+00:00'
 guid: 'http://docwhat.gerf.org/?p=95'
 id: 95
-layout: post
+template: post
 slug: '/bbs-the-documentary/'
 tags:
 - BBS

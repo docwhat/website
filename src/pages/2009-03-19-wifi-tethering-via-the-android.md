@@ -5,7 +5,7 @@ categories:
 date: '2009-03-19T17:23:18+00:00'
 guid: 'http://docwhat.gerf.org/?p=313'
 id: 313
-layout: post
+template: post
 slug: '/wifi-tethering-via-the-android/'
 tags:
 - Android

@@ -3,7 +3,7 @@ id: 97
 title: 'OS X: Make an ISO'
 date: 2008-06-18T17:26:53+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=97
 slug: /os-x-make-an-iso/
 title_tag:

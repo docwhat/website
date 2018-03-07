@@ -3,7 +3,7 @@ id: 1709
 title: El Capitan and the evils of OpenSSL
 date: 2015-11-03T10:48:52-05:00
 author: docwhat
-layout: post
+template: post
 guid: https://docwhat.org/?p=1709
 slug: /el-capitan-and-the-evils-of-openssl/
 openid_comments:

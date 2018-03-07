@@ -3,7 +3,7 @@ id: 589
 title: Thematic featured images
 date: 2010-08-31T17:00:07-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=589
 slug: /thematic-featured-images/
 openid_comments:

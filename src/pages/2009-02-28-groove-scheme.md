@@ -3,7 +3,7 @@ id: 263
 title: Groove Scheme
 date: 2009-02-28T15:16:39+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=263
 slug: /groove-scheme/
 categories:

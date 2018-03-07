@@ -3,7 +3,7 @@ id: 62
 title: Auf Wiedersehen, Oma
 date: 2007-08-05T21:25:00+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2007/08/auf-wiedersehen-oma/
 slug: /auf-wiedersehen-oma/
 title_tag:
@@ -17,6 +17,7 @@ tags:
   - oma
   - sad
 ---
+
 When I was little, my dad and mom would take me to Germany to see my Dad's mother.  I called her "Oma" (which is German for grandma or granny).  She lived in an apartment in Hannover.  The apartment was filled with old people stuff.  And old people, too.  My Uroma and Uropa (great grandma and grandpa) both lived with her.  I remember being chased by my Oma, telling me in her broken English to quit stomping around.
 
 In the back of the apartment, there were black cherry trees.  Me and my brother would go down there and practically strip the trees clean.  The back yard was communal, so we really shouldn't have been doing that, but we were silly kids.  The rest of the back yard was divided into plots for each tenet to use for gardens and stuff.

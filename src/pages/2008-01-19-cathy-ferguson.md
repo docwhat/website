@@ -3,7 +3,7 @@ id: 84
 title: Cathy Ferguson
 date: 2008-01-19T23:03:56+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2008/01/cathy-ferguson/
 slug: /cathy-ferguson/
 title_tag:

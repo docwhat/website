@@ -3,7 +3,7 @@ id: 446
 title: Sucky soda
 date: 2009-09-08T17:23:40+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=446
 slug: /sucky-soda/
 categories:

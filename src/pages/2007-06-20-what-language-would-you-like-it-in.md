@@ -5,7 +5,7 @@ categories:
 date: '2007-06-20T20:12:01+00:00'
 guid: 'http://docwhat.gerf.org/2007/06/what-language-would-you-like-it-in/'
 id: 60
-layout: post
+template: post
 slug: '/what-language-would-you-like-it-in/'
 tags:
 - 'It''s All Text!'

@@ -3,7 +3,7 @@ categories:
 - docwhat
 changefreq: monthly
 date: '2006-09-05T12:18:17-04:00'
-layout: page
+template: page
 permalink: '/pubkey/'
 priority: '0.4'
 title: Public Key

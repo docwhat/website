@@ -3,7 +3,7 @@ id: 523
 title: Stupid Git Trick
 date: 2010-03-26T22:29:08+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=523
 slug: /stupid-git-trick/
 categories:

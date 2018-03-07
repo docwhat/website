@@ -3,7 +3,7 @@ id: 631
 title: Code Retreat
 date: 2010-11-06T21:52:20-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=631
 slug: /code-retreat/
 openid_comments:

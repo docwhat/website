@@ -3,7 +3,7 @@ id: 91
 title: 'msnbot: the stupid bot'
 date: 2008-05-14T17:12:29+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=91
 slug: /stupid-msnbot/
 title_tag:

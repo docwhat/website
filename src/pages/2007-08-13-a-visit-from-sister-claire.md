@@ -3,7 +3,7 @@ id: 63
 title: A visit from sister Claire
 date: 2007-08-13T23:05:38+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2007/08/a-visit-from-sister-claire/
 slug: /a-visit-from-sister-claire/
 title_tag:

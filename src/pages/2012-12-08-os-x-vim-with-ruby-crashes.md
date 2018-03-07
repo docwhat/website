@@ -3,7 +3,7 @@ id: 1202
 title: OS X Vim with Ruby crashes
 date: 2012-12-08T17:48:42-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=1202
 slug: /os-x-vim-with-ruby-crashes/
 image: /files/2012/04/356023245659.png

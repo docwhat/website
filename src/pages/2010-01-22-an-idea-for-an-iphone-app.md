@@ -3,7 +3,7 @@ id: 489
 title: An idea for an iPhone app
 date: 2010-01-22T20:43:24+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=489
 slug: /an-idea-for-an-iphone-app/
 categories:

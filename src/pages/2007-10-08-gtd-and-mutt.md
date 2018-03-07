@@ -3,7 +3,7 @@ id: 75
 title: GTD and Mutt
 date: 2007-10-08T00:30:13+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2007/10/gtd-and-mutt/
 slug: /gtd-and-mutt/
 title_tag:

@@ -3,7 +3,7 @@ id: 1559
 title: Setting your environment in test-kitchen
 date: 2014-10-15T16:36:48-04:00
 author: docwhat
-layout: post
+template: post
 guid: https://docwhat.org/?p=1559
 slug: /setting-environment-test-kitchen/
 openid_comments:

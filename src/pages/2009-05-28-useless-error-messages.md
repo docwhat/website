@@ -3,7 +3,7 @@ id: 367
 title: Useless Error Messages
 date: 2009-05-28T15:53:14+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=367
 slug: /useless-error-messages/
 openid_comments:

@@ -6,7 +6,7 @@ categories:
 date: '2007-11-08T15:18:42+00:00'
 guid: 'http://docwhat.gerf.org/2007/11/first-house/'
 id: 79
-layout: post
+template: post
 slug: '/first-house/'
 tags:
 - 15217

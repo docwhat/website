@@ -3,7 +3,7 @@ id: 409
 title: Free Anime!
 date: 2009-07-08T17:17:12+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=409
 slug: /free-anime/
 categories:

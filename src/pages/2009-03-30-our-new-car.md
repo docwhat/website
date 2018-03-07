@@ -5,7 +5,7 @@ categories:
 date: '2009-03-30T20:50:08+00:00'
 guid: 'http://docwhat.gerf.org/?p=350'
 id: 350
-layout: post
+template: post
 slug: '/our-new-car/'
 tags:
 - car

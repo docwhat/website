@@ -3,7 +3,7 @@ id: 245
 title: Aquamacs vs. Dvorak-Qwerty layout
 date: 2009-01-29T01:17:20+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=245
 slug: /aquamacs-vs-dvorak-qwerty-layout/
 openid_comments:

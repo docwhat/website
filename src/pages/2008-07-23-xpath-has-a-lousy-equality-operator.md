@@ -5,7 +5,7 @@ categories:
 date: '2008-07-23T17:19:54+00:00'
 guid: 'http://docwhat.gerf.org/?p=121'
 id: 121
-layout: post
+template: post
 openid_comments:
 - 'a:1:{i:0;s:4:"5879";}'
 slug: '/xpath-has-a-lousy-equality-operator/'

@@ -3,7 +3,7 @@ id: 780
 title: Microsoft makes .txt files dangerous
 date: 2011-09-23T09:02:39-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=780
 slug: /microsoft-makes-txt-files-dangerous/
 image: /files/2011/09/derp.png

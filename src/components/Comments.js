@@ -45,7 +45,7 @@ export const CommentsBySlug = graphql`
       filter: {
         fields: {
             slug: {eq: $slug}
-            layout: {eq: "comment"}
+            template: {eq: "comment"}
           }
         },
       sort: {

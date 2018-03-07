@@ -7,7 +7,7 @@ categories:
 date: '2009-09-28T08:00:49+00:00'
 guid: 'http://docwhat.org/?p=462'
 id: 462
-layout: post
+template: post
 slug: '/another-one-bites-the-dust/'
 tags:
 - 15217

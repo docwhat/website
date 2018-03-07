@@ -3,7 +3,7 @@ id: 673
 title: 'Gerrit: Rename a Project'
 date: 2011-03-30T10:44:23-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=673
 slug: /gerrit-rename-a-project/
 image: /files/2011/03/diffy-250x232.png

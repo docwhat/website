@@ -3,7 +3,7 @@ id: 182
 title: IAT made Network World
 date: 2008-09-05T16:21:01+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2008/09/iat-made-network-world/
 slug: /iat-made-network-world/
 openid_comments:

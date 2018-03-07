@@ -3,7 +3,7 @@ id: 127
 title: unappealing taxs, part 2
 date: 2008-08-01T17:35:14+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=127
 slug: /unappealing-taxs-part-2/
 title_tag:

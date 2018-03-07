@@ -5,7 +5,7 @@ categories:
 date: '2006-09-19T20:36:31+00:00'
 guid: 'http://docwhat.gerf.org/2006/09/python-25-and-im-sick/'
 id: 26
-layout: post
+template: post
 slug: '/python-25-and-im-sick/'
 tags:
 - cool

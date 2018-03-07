@@ -1,5 +1,5 @@
 ---
-layout: page
+template: page
 slug: '/style-test/'
 title: Style and Layout test
 draft: false

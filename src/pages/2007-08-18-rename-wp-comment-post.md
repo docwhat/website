@@ -3,7 +3,7 @@ id: 64
 title: WordPress anti-spam recipe
 date: 2007-08-18T16:30:06+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2007/08/rename-wp-comment-post/
 slug: /rename-wp-comment-post/
 title_tag:

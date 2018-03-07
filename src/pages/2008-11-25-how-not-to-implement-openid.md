@@ -3,7 +3,7 @@ id: 224
 title: How not to implement OpenID
 date: 2008-11-25T17:35:29+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=224
 slug: /how-not-to-implement-openid/
 title_tag:

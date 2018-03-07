@@ -3,7 +3,7 @@ id: 638
 title: jRuby FileChooser example
 date: 2010-12-06T17:05:56-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=638
 slug: /jruby-filechooser-example/
 openid_comments:

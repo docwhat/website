@@ -3,7 +3,7 @@ id: 392
 title: Happiness is a warm SCM
 date: 2009-06-18T14:40:01+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=392
 slug: /happiness-is-a-warm-scm/
 categories:

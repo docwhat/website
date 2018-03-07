@@ -3,7 +3,7 @@ id: 1250
 title: "40days - Simple isn't easy"
 date: 2013-02-28T17:33:50-05:00
 author: docwhat
-layout: post
+template: post
 guid: https://docwhat.org/?p=1250
 slug: /40days-simple-isnt-easy/
 wasimage: /files/2013/02/40days-250x250.png

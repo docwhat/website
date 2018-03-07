@@ -3,7 +3,7 @@ id: 471
 title: 'RVM: ruby version management'
 date: 2009-10-27T17:23:08+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=471
 slug: /rvm-ruby-version-management/
 openid_comments:

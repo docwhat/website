@@ -3,7 +3,7 @@ id: 698
 title: New Toys
 date: 2011-05-16T17:23:40-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=698
 slug: /new-toys-on-vacation/
 image: /files/2011/05/swisstool-spirit-plus-ratchet-250x250.jpg

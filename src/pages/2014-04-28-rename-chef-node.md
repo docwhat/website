@@ -6,7 +6,7 @@ date: '2014-04-28T09:51:50-04:00'
 guid: 'https://docwhat.org/?p=1435'
 id: 1435
 image: '/files/2014/04/knife-250x250.png'
-layout: post
+template: post
 openid_comments:
 - 'a:1:{i:0;i:19395;}'
 slug: '/rename-chef-node/'

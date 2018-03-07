@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import * as PropTypes from "prop-types"
 
 import { rhythm, scale } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 
 require('prismjs/themes/prism.css')
 
-class Template extends React.Component {
+class DefaultLayout extends React.Component {
   render() {
     const { location, children } = this.props
     let header
@@ -53,4 +54,9 @@ class Template extends React.Component {
   }
 }
 
-export default Template
+DefaultLayout.propTypes = {
+  location: PropTypes.object.isRequired,
+  children: PropTypes.func.isRequired,
+}
+
+export default DefaultLayout

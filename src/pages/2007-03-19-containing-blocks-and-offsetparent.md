@@ -3,7 +3,7 @@ id: 39
 title: 'Containing blocks and offsetParent: the secret of position absolute'
 date: 2007-03-19T08:00:40+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2007/03/containing-blocks-and-offsetparent/
 slug: /containing-blocks-and-offsetparent/
 title_tag:

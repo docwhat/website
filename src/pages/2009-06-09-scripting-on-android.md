@@ -3,7 +3,7 @@ id: 383
 title: Scripting on Android
 date: 2009-06-09T17:41:39+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=383
 slug: /scripting-on-android/
 categories:

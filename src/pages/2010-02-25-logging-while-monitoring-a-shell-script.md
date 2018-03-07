@@ -3,7 +3,7 @@ id: 511
 title: Logging while monitoring a shell script
 date: 2010-02-25T11:45:43+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=511
 slug: /logging-while-monitoring-a-shell-script/
 categories:

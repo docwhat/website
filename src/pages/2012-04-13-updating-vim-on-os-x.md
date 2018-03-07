@@ -3,7 +3,7 @@ id: 841
 title: Updating VIM on OS X
 date: 2012-04-13T09:03:12-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=841
 slug: /updating-vim-on-os-x/
 openid_comments:

@@ -3,7 +3,7 @@ id: 1222
 title: More on Vim with ruby crashing
 date: 2013-01-26T16:13:42-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=1222
 slug: /vim-and-ruby/
 openid_comments:

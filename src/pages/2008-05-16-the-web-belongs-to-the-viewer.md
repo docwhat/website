@@ -3,7 +3,7 @@ id: 94
 title: The web belongs to the viewer
 date: 2008-05-16T17:18:24+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=94
 slug: /the-web-belongs-to-the-viewer/
 title_tag:

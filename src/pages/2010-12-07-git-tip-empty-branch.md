@@ -3,7 +3,7 @@ id: 646
 title: 'Git Tip: empty branch'
 date: 2010-12-07T17:18:21-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=646
 slug: /git-tip-empty-branch/
 openid_comments:

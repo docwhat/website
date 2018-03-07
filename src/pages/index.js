@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 import {
+  siteTitle,
   authorUrl,
   authorJsonLd
 } from '../utils/constants.js'
@@ -59,7 +60,6 @@ const PostMeta = props => (
 
 class SiteIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
@@ -91,22 +91,17 @@ export default SiteIndex
 
 export const pageQuery = graphql`
 query IndexQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {layout: {eq: "post"}}}) {
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fields: {template: {eq: "post"}}}) {
     edges {
       node {
         excerpt
         fields {
           slug
+          template
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
-          layout
         }
       }
     }

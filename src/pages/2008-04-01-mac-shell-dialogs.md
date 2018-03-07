@@ -4,7 +4,7 @@ title: 'Mac Tricks: Shell Script Dialogs'
 date: 2008-04-01T23:21:32+00:00
 author: docwhat
 excerpt: A mini-HOWTO showing how to create pop-up dialogs and get the results back from a shell script (or anything that can run a command) in Mac OS X.
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=88
 slug: /mac-shell-dialogs/
 title_tag:

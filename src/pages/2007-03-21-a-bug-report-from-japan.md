@@ -5,7 +5,7 @@ categories:
 date: '2007-03-21T21:43:55+00:00'
 guid: 'http://docwhat.gerf.org/2007/03/a-bug-report-from-japan/'
 id: 41
-layout: post
+template: post
 slug: '/a-bug-report-from-japan/'
 tags:
 - bugs

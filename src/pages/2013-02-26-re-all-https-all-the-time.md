@@ -3,7 +3,7 @@ id: 1239
 title: 'Re: All https, all the time'
 date: 2013-02-26T08:02:12-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=1239
 slug: /re-all-https-all-the-time/
 categories:

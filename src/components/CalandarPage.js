@@ -74,3 +74,14 @@ const CalendarPage = (props) => {
 }
 
 export default CalendarPage
+
+export const query = graphql`
+  fragment calendarPageDatesFragment on MarkdownRemark {
+      frontmatter {
+      ymdDate: date(formatString: "YYYY-MM-DD"),
+      monthName: date(formatString: "MMMM"),
+      dayName: date(formatString: "dddd"),
+      dayOfMonth: date(formatString: "D")
+    }
+  }
+`

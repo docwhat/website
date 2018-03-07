@@ -5,7 +5,7 @@ categories:
 date: '2010-04-09T13:36:33+00:00'
 guid: 'http://docwhat.org/?p=533'
 id: 533
-layout: post
+template: post
 slug: '/we-haz-ferrets/'
 tags:
 - animals

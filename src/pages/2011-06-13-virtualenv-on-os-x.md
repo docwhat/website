@@ -3,7 +3,7 @@ id: 716
 title: Virtualenv on OS X
 date: 2011-06-13T17:19:06-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=716
 slug: /virtualenv-on-os-x/
 image: /files/2011/06/xcode.png

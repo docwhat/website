@@ -3,7 +3,7 @@ id: 560
 title: IAT on Cygwin
 date: 2010-07-03T16:21:30+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=560
 slug: /iat-on-cygwin/
 image: /files/2010/07/4925197_fbce48f177_z-250x187.jpg

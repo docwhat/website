@@ -3,7 +3,7 @@ id: 386
 title: IAT in LJ
 date: 2009-06-10T13:31:51+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=386
 slug: /iat-in-linux-journal/
 categories:

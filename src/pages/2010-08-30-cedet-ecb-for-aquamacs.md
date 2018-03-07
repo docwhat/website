@@ -3,7 +3,7 @@ id: 574
 title: Setting up CEDET/ECB for Aquamacs
 date: 2010-08-30T17:20:37-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=574
 slug: /cedet-ecb-for-aquamacs/
 openid_comments:

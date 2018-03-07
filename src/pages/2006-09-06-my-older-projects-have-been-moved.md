@@ -3,7 +3,7 @@ id: 14
 title: My older projects have been moved.
 date: 2006-09-06T23:24:35+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/2006/09/my-older-projects-have-been-moved/
 slug: /my-older-projects-have-been-moved/
 title_tag:

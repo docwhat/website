@@ -3,7 +3,7 @@ id: 1274
 title: Busting cached 301 redirects in Chrome.
 date: 2013-04-18T17:31:50-04:00
 author: docwhat
-layout: post
+template: post
 guid: https://docwhat.org/?p=1274
 slug: /busting-cached-301-redirects-in-chrome/
 openid_comments:

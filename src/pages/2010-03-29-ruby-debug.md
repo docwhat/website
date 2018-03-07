@@ -3,7 +3,7 @@ id: 526
 title: Ruby Debugging
 date: 2010-03-29T17:29:39+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=526
 slug: /ruby-debug/
 enclosure:

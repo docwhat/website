@@ -3,7 +3,7 @@ id: 171
 title: 'YUI -> jQuery'
 date: 2008-08-28T23:22:20+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=171
 slug: /yui-jquery/
 title_tag:

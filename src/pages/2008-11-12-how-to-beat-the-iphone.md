@@ -3,7 +3,7 @@ id: 221
 title: How to beat the iPhone
 date: 2008-11-12T17:43:07+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=221
 slug: /how-to-beat-the-iphone/
 openid_comments:

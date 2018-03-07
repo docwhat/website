@@ -3,7 +3,7 @@ id: 491
 title: "It's All Text! 1.4 (FF3.6 compatible)"
 date: 2010-01-23T18:53:57+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=491
 slug: /its-all-text-1-4-ff3-6-compatible/
 openid_comments:

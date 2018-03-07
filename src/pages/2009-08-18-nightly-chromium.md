@@ -3,7 +3,7 @@ id: 441
 title: Nightly Chromium
 date: 2009-08-18T17:41:36+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=441
 slug: /nightly-chromium/
 openid_comments:

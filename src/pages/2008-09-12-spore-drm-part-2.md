@@ -5,7 +5,7 @@ categories:
 date: '2008-09-12T12:23:54+00:00'
 guid: 'http://docwhat.gerf.org/?p=190'
 id: 190
-layout: post
+template: post
 slug: '/spore-drm-part-2/'
 tags:
 - DRM

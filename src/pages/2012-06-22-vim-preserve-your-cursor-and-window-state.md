@@ -3,7 +3,7 @@ id: 1093
 title: 'vim - preserve your cursor and window state'
 date: 2012-06-22T12:12:05-04:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=1093
 slug: /vim-preserve-your-cursor-and-window-state/
 image: /files/2012/04/356023245659.png

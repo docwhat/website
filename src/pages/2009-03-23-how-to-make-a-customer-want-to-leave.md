@@ -3,7 +3,7 @@ id: 335
 title: How to make a customer want to leave
 date: 2009-03-23T18:51:58+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=335
 slug: /how-to-make-a-customer-want-to-leave/
 openid_comments:

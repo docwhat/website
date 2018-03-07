@@ -3,7 +3,7 @@ id: 426
 title: Google Gears, FF 3.5, and OS-X
 date: 2009-08-04T19:11:06+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=426
 slug: /google-gears-ff-3-5-and-os-x/
 categories:

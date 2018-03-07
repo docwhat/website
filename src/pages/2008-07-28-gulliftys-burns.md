@@ -3,7 +3,7 @@ id: 124
 title: "Gullifty's burns!"
 date: 2008-07-28T13:37:45+00:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.gerf.org/?p=124
 slug: /gulliftys-burns/
 title_tag:

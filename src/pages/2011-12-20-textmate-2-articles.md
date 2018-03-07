@@ -3,7 +3,7 @@ id: 801
 title: TextMate 2 Articles
 date: 2011-12-20T10:05:21-05:00
 author: docwhat
-layout: post
+template: post
 guid: http://docwhat.org/?p=801
 slug: /textmate-2-articles/
 image: /files/2011/12/tm2-icon-250x250.jpg
