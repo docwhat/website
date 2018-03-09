@@ -38,11 +38,15 @@ const Comment = (props) => {
         paddingLeft: '80px',
       }}>
         <header style={{
+          display: 'flex',
+          flexDirection: 'row',
           marginTop: rhythm( 1 / 4 ),
           marginBottom: rhythm( 1 / 2 ),
         }}>
           <a
             style={{
+              alignSelf: 'flex-start',
+              marginRight: 'auto',
               fontSize: rhythm( 9 / 8 ),
               lineHeight: 1,
             }}
@@ -52,10 +56,11 @@ const Comment = (props) => {
           </a>
           <time
             style={{
+              display: 'block',
+              marginLeft: 'auto',
+              whiteSpace: 'nowrap',
+              alignSelf: 'flex-end',
               fontSize: rhythm( 2 / 3 ),
-              position: "absolute",
-              top: "0",
-              right: "0",
             }}
             dateTime={iso8601Date}
           >{friendlyDate}</time>
