@@ -5,15 +5,11 @@ import { rhythm } from "../utils/typography"
 
 const PageHeader = (props) => {
   const {
-    markdownRemark: {
-      frontmatter: {
-        title: postTitle,
-        monthName: monthName,
-        dayName: dayName,
-        dayOfMonth: dayOfMonth,
-        ymdDate: ymdDate,
-      }
-    }
+    title,
+    monthName,
+    dayName,
+    dayOfMonth,
+    ymdDate,
   } = props
 
   var calendarIcon = ''
@@ -40,10 +36,10 @@ const PageHeader = (props) => {
     }}>
       <h1 style={{
         marginTop: 0,
-        marginRight: rhythm( 3 ),
+        marginRight: (calendarIcon === '') ? 0 : rhythm( 3 ),
         borderBottom: 'none',
       }} >
-        {postTitle}
+        {title}
       </h1>
       {calendarIcon}
 
@@ -52,7 +48,11 @@ const PageHeader = (props) => {
 }
 
 PageHeader.propTypes = {
-  markdownRemark: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired,
+  monthName: PropTypes.string.isRequired,
+  dayName: PropTypes.string.isRequired,
+  dayOfMonth: PropTypes.string.isRequired,
+  ymdDate: PropTypes.string.isRequired,
 }
 
 export default PageHeader

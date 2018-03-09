@@ -16,7 +16,6 @@ import BlogPostMicroData from '../components/BlogPostMicroData.js'
 import renderAst from '../utils/renderAst.js'
 
 const PostTemplate = (props) => {
-  const currentPage = props.data.markdownRemark
   const {
     data: {
       markdownRemark: {
@@ -42,7 +41,13 @@ const PostTemplate = (props) => {
   return (
     <article>
       <Helmet title={helmetTitle} />
-      <PageHeader markdownRemark={currentPage} />
+      <PageHeader
+        title={pageTitle}
+        monthName={monthName}
+        dayName={dayName}
+        dayOfMonth={dayOfMonth}
+        ymdDate={ymdDate}
+        />
 
       <div>{renderAst(pageHtmlAst)}</div>
 
