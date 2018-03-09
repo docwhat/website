@@ -5,6 +5,9 @@ title: Style and Layout test
 draft: false
 ---
 
+This page is here to test the various styles and elements to make
+sure they look correct.
+
 HEADER 1
 ========
 

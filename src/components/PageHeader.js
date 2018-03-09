@@ -28,7 +28,7 @@ const PageHeader = (props) => {
     <header style={{
       display: "flex",
       border: "1px solid hsla(0, 0%, 0%, 0)",
-      minHeight: rhythm( 7 / 2 ),
+      minHeight: (calendarIcon === '') ? 'unset' : rhythm( 7 / 2 ),
       marginBottom: rhythm( 1 ),
     }}>
       <h1 style={{
