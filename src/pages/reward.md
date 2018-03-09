@@ -1,6 +1,6 @@
 ---
 changefreq: monthly
-layout: page
+template: page
 permalink: '/reward/'
 priority: '0.3'
 title: 'Reward/Donate'
