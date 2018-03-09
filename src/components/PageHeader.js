@@ -15,10 +15,6 @@ const PageHeader = (props) => {
   var calendarIcon = ''
   if (ymdDate) {
     calendarIcon = <div style={{
-      position: "absolute",
-      margin: 0,
-      top: 0,
-      right: 0,
     }}>
       <CalendarPage
         monthName={monthName}
@@ -30,13 +26,17 @@ const PageHeader = (props) => {
 
   return(
     <header style={{
-      position: "relative",
+      display: "flex",
       border: "1px solid hsla(0, 0%, 0%, 0)",
       minHeight: rhythm( 7 / 2 ),
+      marginBottom: rhythm( 1 ),
     }}>
       <h1 style={{
         marginTop: 0,
-        marginRight: (calendarIcon === '') ? 0 : rhythm( 3 ),
+        marginRight: 'auto',
+        marginLeft: 0,
+        marginBottom: 0,
+        paddingRight: rhythm( 1 / 5 ),
         borderBottom: 'none',
       }} >
         {title}

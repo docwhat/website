@@ -30,9 +30,10 @@ const CalendarPage = (props) => {
   return (
     <time
       style={{
-        fontSize: rhythm( rmult ), /* change icon size */
         display: "block",
-        position: "relative",
+        margin: 0,
+        position: 'relative',
+        fontSize: rhythm( rmult ), /* change icon size */
         width: rhythm( 7 * rmult ),
         height: rhythm( 7 * rmult ),
         backgroundColor: "#ffffff",
