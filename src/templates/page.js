@@ -52,7 +52,10 @@ export default PageTemplate
 
 export const pageQuery = graphql`
   query currentPageQuery($slug: String!) {
-    markdownRemark( fields: { slug: { eq: $slug } }) {
+    markdownRemark( fields: {
+      slug: { eq: $slug },
+      template: { eq: "page" }
+    }) {
       htmlAst
       fields {
         slug

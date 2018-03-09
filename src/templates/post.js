@@ -73,7 +73,10 @@ export default PostTemplate
 
 export const postQuery = graphql`
   query currentPostQuery($slug: String!) {
-    markdownRemark( fields: { slug: { eq: $slug } }) {
+    markdownRemark( fields: {
+      slug: { eq: $slug },
+      template: { eq: "post" }
+    }) {
       htmlAst
       fields {
         slug
