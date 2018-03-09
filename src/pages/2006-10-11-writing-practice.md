@@ -17,7 +17,7 @@ I started this blog for a [couple of reasons](http://docwhat.gerf.org/2006/09/mo
 
 IRL[^1], I'm not very good at explaining thoughts as they pop up. I tend to think about stuff faster than I can talk or I jump from subject to subject, I get sidetracked, forget what I've already talked about or I forget who I'm talking to and what they know or don't know already. Obviously, talking to me can be exacerbating though occasionally amusing.
 
-
+<!-- more -->
 
 The (primary) reason I have these problems is that my brain is usually zooming off sideways while I'm trying to talk forward thanks to the miracle of [ADD](http://en.wikipedia.org/wiki/Attention-deficit_disorder).
 

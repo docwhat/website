@@ -28,6 +28,7 @@ This causes Chrome to recheck the page and will update any cached
 301 rules.
 
 Ciao!
+<!-- more -->
 
 Additional Links:
 

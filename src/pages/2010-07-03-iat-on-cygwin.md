@@ -16,7 +16,7 @@ tags:
 ---
 For those that use [Cygwin](http://www.cygwin.com/ "Cygwin") on Windows, Mike Hostetler has a [post detailing how to use Cygwin editors](http://mike.hostetlerhome.com/2010/03/04/getting-its-all-text-to-play-with-cygwin/ "Getting It's All Text to play with Cygwin") with It's All Text!
 
-
+<!-- more -->
 
 He's using it to play with emacs and emacsclient, but it'll probably work for using the Cygwin vim.  I bet it also works with [Cygwin/X](http://x.cygwin.com/ "Cygwin/X").
 

@@ -22,7 +22,7 @@ I found this <a href="http://video.google.com/videoplay?docid=452089494323007214
 
 He proposes a solution involving what he calls <em>vats</em>; a self contained JavaScript interpreter with limited communication to the page.  The JavaScript in the page would be the only trusted code running and the code in the various vats would not be trusted.
 
-He mentioned there should be an interface such that the user would be prompted with intelligent (and decidable) questions, such as "Do you want to give web site X $5.00 from your pay-pal account?" or "Select the contacts you want to give FaceBook from your GMail account."
+<!-- more -->He mentioned there should be an interface such that the user would be prompted with intelligent (and decidable) questions, such as "Do you want to give web site X $5.00 from your pay-pal account?" or "Select the contacts you want to give FaceBook from your GMail account."
 
 He specifically mentions that <a href="http://gears.google.com/">Google Gears</a> has a vat in it already and that they should expand on it to give this extra abilities.  Which I'm sure is true, even if the lecture was at Google's campus.
 

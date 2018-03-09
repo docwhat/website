@@ -27,7 +27,7 @@ Have you ever been on a page and you try to control-click or right-click on a li
 javascript:window.open(‘http://someurl/’);
 ```
 
-The underlying HTML for this looks like so:
+<!-- more -->The underlying HTML for this looks like so:
 
 ``` html
 You should click on this:

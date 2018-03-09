@@ -19,7 +19,7 @@ I've been looking around for something like <a href="http://diveintopython.org/"
 
 Any recommendations would be very welcome.
 
-A friend who does work on an <a href="http://www.eclipse.org/">Eclipse</a> plugin/extension recommended the <a href="http://java.sun.com/docs/books/tutorial/">Sun Java tutorials</a> but says:
+<!-- more -->A friend who does work on an <a href="http://www.eclipse.org/">Eclipse</a> plugin/extension recommended the <a href="http://java.sun.com/docs/books/tutorial/">Sun Java tutorials</a> but says:
 <blockquote>I never really used it as a "course".  I.e. I didn't start from the beginning and go chapter by chapter. I think I like it because it is organized by subject, so you can just jump down to whatever you are interested in.  I never really found an actual physical book that I liked.</blockquote>
 Another friend has loaned me <a href="http://www.amazon.com/Learning-Java-3rd-Patrick-Niemeyer/dp/1600330010%3FSubscriptionId%3D02E5W5871AJF7PMMMS82%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1600330010">Learning Java</a> and <a href="http://www.amazon.com/Java-Nutshell-5th-David-Flanagan/dp/0596007736%3FSubscriptionId%3D02E5W5871AJF7PMMMS82%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0596007736">Java In A Nutshell</a>.
 

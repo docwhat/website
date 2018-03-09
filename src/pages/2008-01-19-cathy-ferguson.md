@@ -19,7 +19,7 @@ I had this idea of this <em>huge</em> post I'd write about how I went about gett
 
 Well, it turns out I really don't want to write that.  Instead, I'm going to write about one of the people that I can really recommend; Cathy Ferguson our "mortgage advisor."  I think mortgage advisor is a fancy word for mortgage broker.  Not sure, though.
 
-We wanted to know about our mortgage options before we started looking at houses.  We knew what we wanted in most ways, just not in money terms.
+We wanted to know about our mortgage options before we started looking at houses.  We knew what we wanted in most ways, just not in money terms.<!-- more -->
 
 First off, we tried going to our local bank. The guy we talked to was very ... unprofessional.  It's not that we wanted a guy dressed in an impeccable suit, etc.  I mean, I wore flip flops and shorts.  But he had stains.  He tried working through numbers on a pad of paper (the computer was down or something).  He gave us numbers in an estimate that didn't jib with what we talked about and it was missing details.  It had incorrect numbers in it, after we had given him the correct numbers.
 

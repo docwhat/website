@@ -22,7 +22,7 @@ I have redesigned my whole site.  While a lot changes are visual, there are even
 
 Previously, I had a modified copy of the default WP 2.x theme (which is based on Kubric theme).  It was reasonable markup, but I spent a lot of time modifying the  classes and adding containers to hang my CSS off of.  In addition, tracking the changes to the default theme was a pain.
 
-As I read through <a title="CSS Mastery: : Advanced Web Standards Solutions by Andy Budd" href="http://www.amazon.com/gp/redirect.html%3FASIN=1590596145%26tag=thedocwha-20%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/o/ASIN/1590596145%253FSubscriptionId=0EMV44A9A5YT1RVDGZ82">CSS Mastery</a> I realized that there were significantly better ways to do the markup that would allow even more powerul CSS.
+<!-- more -->As I read through <a title="CSS Mastery: : Advanced Web Standards Solutions by Andy Budd" href="http://www.amazon.com/gp/redirect.html%3FASIN=1590596145%26tag=thedocwha-20%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/o/ASIN/1590596145%253FSubscriptionId=0EMV44A9A5YT1RVDGZ82">CSS Mastery</a> I realized that there were significantly better ways to do the markup that would allow even more powerul CSS.
 
 About the same time I discovered the <a href="http://www.plaintxt.org/themes/sandbox/">Sandbox Theme</a>.  This had a lot of the same kind of design ideas as CSS Mastery; the body element was given tags based on what page it is and everything had classes that help the CSS know where it is being applied.
 

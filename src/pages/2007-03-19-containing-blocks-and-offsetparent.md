@@ -19,7 +19,7 @@ Ever used `position: absolute` in CSS or JavaScript? You probably got it to work
 
 But when I tried to use it with [It's All Text!](https://addons.mozilla.org/firefox/4125) for the gumdrop edit button which in injected into any web page that has a textarea, I kept having problems. It was driving me batty. I found something that worked on my simplistic test cases, but it wouldn't work on gmail. I got it to work on [gmail](http://gmail.com/), but it stopped working on [trac](http://trac.edgewall.org/) installations, or [Wikipedia](http://wikipedia.com). Or if I got it to work on one of those, it'd fail to work on my simplistic test cases.
 
-
+<!-- more -->
 
 So I did what any sane developer would do after the umpteenth attempt to fix the same problem.
 

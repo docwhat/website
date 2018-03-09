@@ -94,7 +94,7 @@ query IndexQuery {
   allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fields: {template: {eq: "post"}}}) {
     edges {
       node {
-        excerpt
+        excerpt(pruneLength: 280)
         fields {
           slug
           template

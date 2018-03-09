@@ -16,7 +16,7 @@ tags:
 So I decided to try to install [virtualenvwrapper](http://www.doughellmann.com/projects/virtualenvwrapper/)
 (and virtualenv) on my Mac Book Pro. Virtualenv was explained to me as being python's version of Wayne E. Seguin's RVM (Ruby Version Manager).
 
-I've tried installing virtualenv/wrapper twice before and failed miserably. But this time I decided to actually do it.
+I've tried installing virtualenv/wrapper twice before and failed miserably. But this time I decided to actually do it.<!-- more -->
 
 Some quick background:  I've been a very active python programmer up to and including 2.5 series.  I've implemented large python-based systems at several of the companies I've worked for; including two very successful web applications. I've implemented two ORMs in python and even grokked meta-programming in python.
 

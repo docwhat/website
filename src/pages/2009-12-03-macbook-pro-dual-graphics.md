@@ -23,7 +23,7 @@ for a couple months and I had the slower GPU enabled the whole time.
 Apparently, you need to go into "System Preferences" -&gt; "Energy
 Saver" and turn on "Graphics" -&gt; "Higher Performance"[^1].
 
-
+<!-- more -->
 I am annoyed, because I thought the problems with [Sims
 3](http://www.thesims3.com/game/thesims3) was because it was having
 trouble, not because I was using the slow GPU.
