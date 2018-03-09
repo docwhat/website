@@ -1,42 +1,59 @@
 ---
+date: '2012-04-13T09:03:12-04:00'
+guid: 'http://docwhat.org/?p=841'
 id: 841
-title: Updating VIM on OS X
-date: 2012-04-13T09:03:12-04:00
-author: docwhat
-template: post
-guid: http://docwhat.org/?p=841
-slug: /updating-vim-on-os-x/
-openid_comments:
-  - 'a:3:{i:0;s:4:"9121";i:1;i:9934;i:2;i:9936;}'
-image: /files/2012/04/356023245659.png
-categories:
-  - docwhat
+image: '/files/2012/04/356023245659.png'
+slug: '/updating-vim-on-os-x/'
 tags:
-  - editors
-  - OS X
-  - Python
-  - Ruby
-  - vim
+- editors
+- OS X
+- Python
+- Ruby
+- vim
+template: post
+title: Updating VIM on OS X
 ---
-<p>The version of <a href="http://www.vim.org/">Vim</a> that comes with OS X is a little old, but more importantly, it doesn't have all the bells and whistles enabled.</p>
 
-<p>Specifically, it doesn't come with ruby and python support compiled in. Which is a shame, because some plugins for Vim need it.
-</p>
+The version of [Vim](http://www.vim.org/) that comes with OS X is a
+little old, but more importantly, it doesn't have all the bells and
+whistles enabled.
 
-<p>I've been playing with vim since a couple months ago when I was pair programming with a co-worker, Shawn. Shawn prefers Vim and he is very good at it.</p>
+Specifically, it doesn't come with ruby and python support compiled
+in. Which is a shame, because some plugins for Vim need it.
 
-<p>To make pair programming easier, I decided to improve my very basic Vim skills.  As part of that, I created a new <code>.vimrc</code> based on Shawn's.  I then went further and included <a href="https://github.com/gmarik/vundle">Vundle</a> and started looking at various packages.</p>
+I've been playing with Vim since a couple months ago when I was pair
+programming with a co-worker, Shawn. Shawn prefers Vim and he is
+very good at it.
 
-<p>We used this <code>.vimrc</code> during our pair programming and pushed it up as a <a href="http://github.com/docwhat/homedir">Homedir</a> package at <a href="http://github.com/docwhat/homedir-vim">http://github.com/docwhat/homedir-vim</a>.  I've successfully used this .vimrc on Windows (via Cygwin) and Centos version 5.6 and 6.2, as well as on the Mac.  You can bypass <a href="http://github.com/docwhat/homedir">Homedir</a> entirely and just download the <a href="https://raw.github.com/docwhat/homedir-vim/master/vimrc/.vimrc"><code>.vimrc</code></a> directly.</p>
+To make pair programming easier, I decided to improve my very basic
+Vim skills. As part of that, I created a new `.vimrc` based on
+Shawn's. I then went further and included
+[Vundle](https://github.com/gmarik/vundle) and started looking at
+various packages.
 
-<p>However, to use some of the spiffy bits of my <code>.vimrc</code> on my Mac, I needed a vim with all the extras.  Here's how you do it easily:</p>
+We used this `.vimrc` during our pair programming and pushed it up
+as a [Homedir](http://github.com/docwhat/homedir) package at
+<http://github.com/docwhat/homedir-vim>. I've successfully used this
+`.vimrc` on Windows (via Cygwin) and Centos version 5.6 and 6.2, as
+well as on the Mac. You can bypass
+[Homedir](http://github.com/docwhat/homedir) entirely and just
+download the
+[`.vimrc`](https://raw.github.com/docwhat/homedir-vim/master/vimrc/.vimrc)
+directly.
 
-<ol>
-<li>Install <a href="http://mxcl.github.com/homebrew/">Homebrew</a>.</li>
-<li>Add the <a href="https://github.com/Homebrew/homebrew-dupes">duplicates "tap"</a>. This adds formulas for apps that duplicate the build-in OS X functionality: <code>brew tap homebrew/dupes</code></li>
-<li>Install vim: <code>brew install homebrew/dupes/vim</code></li>
-</ol>
+However, to use some of the spiffy bits of my `.vimrc` on my Mac, I
+needed a Vim with all the extras. Here's how you do it easily:
 
-<p>That's it. Easy-peasy!</p>
+1.  Install [Homebrew](http://mxcl.github.com/homebrew/).
+2.  Add the [duplicates
+    "tap"](https://github.com/Homebrew/homebrew-dupes). This adds
+    formulas for apps that duplicate the build-in OS X
+    functionality: `brew tap homebrew/dupes`
+3.  Install Vim: `brew install homebrew/dupes/vim`
 
-<p>Ciao!</p>
+That's it. Easy-peasy!
+
+Ciao!
+
+**UPDATE 2016/02/29**: My `.vimrc` has been moved into my
+[dotfiles](https://github.com/docwhat/dotfiles) repository.

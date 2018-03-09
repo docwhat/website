@@ -13,16 +13,25 @@ categories:
 tags:
   - home
 ---
-<p>I'm looking to replace the windows in my home.  I'm very fond of the German style windows, known in the U.S.A. as tilt-turn windows.</p>
 
-<p>I've found a couple places that look decent, and wanted to record them here for future use.  If you have any suggestions or recommendations, I'd appreciate it.  I'm also looking for someone to install them (and remove the existing ones) in the Pittsburgh, PA area.</p>
+I'm looking to replace the windows in my home. I'm very fond of
+the German style windows, known in the U.S.A. as tilt-turn windows.
 
-<p>I'm probably looking to add a ductless AC system (my house is old with no central air) at the same time, since I don't want to put in nice windows and re-install my window-mounted AC units (assuming I could make them work in tilt-turn windows).</p>
+I've found a couple places that look decent, and wanted to record
+them here for future use. If you have any suggestions or
+recommendations, I'd appreciate it. I'm also looking for someone
+to install them (and remove the existing ones) in the Pittsburgh, PA
+area.
 
-<ul>
-<li><a href="http://www.kolbe-kolbe.com/products/index.cfm?pcID=4&amp;pID=51&amp;pCat=7&amp;pSubCat=0&amp;pSeries=2&amp;pl=64#top">Kolbe Heritage Series</a> (<a href="http://www.youtube.com/watch?v=46fxYSt47lI">video</a>)</li>
-<li><a href="http://hhwindows.com/windows-2/tilt-turn-windows/">HH Windows</a></li>
-<li><a href="http://www.viking.ee/en/windows/tiltandturnwindows">Viking</a></li>
-</ul>
+I'm probably looking to add a ductless AC system (my house is old
+with no central air) at the same time, since I don't want to put in
+nice windows and re-install my window-mounted AC units (assuming I
+could make them work in tilt-turn windows).
 
-<p>Ciao!</p>
+-   [Kolbe Heritage
+    Series](http://www.kolbe-kolbe.com/products/index.cfm?pcID=4&pID=51&pCat=7&pSubCat=0&pSeries=2&pl=64#top)
+    ([video](http://www.youtube.com/watch?v=46fxYSt47lI))
+-   [HH Windows](http://hhwindows.com/windows-2/tilt-turn-windows/)
+-   [Viking](http://www.viking.ee/en/windows/tiltandturnwindows)
+
+Ciao!
