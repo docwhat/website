@@ -49,8 +49,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             context: { slug: slug },
           })
         })
-        resolve()
       })
+    resolve()
   })
 }
 
