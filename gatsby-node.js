@@ -2,6 +2,7 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const slash = require(`slash`)
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -32,7 +33,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
           createPage({
             path: slug,
-            component: pageTemplate,
+            component: slash(pageTemplate),
             context: { slug: slug, },
           })
         })
@@ -44,7 +45,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
           createPage({
             path: slug,
-            component: postTemplate,
+            component: slash(postTemplate),
             context: { slug: slug },
           })
         })
