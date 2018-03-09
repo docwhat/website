@@ -13,6 +13,7 @@
   "dependencies": {
     "babel-eslint": "^8.0.3",
     "broken-link-checker": "^0.7.6",
+    "caniuse-db": "^1.0.30000813",
     "color": "^3.0.0",
     "compass-vertical-rhythm": "^1.4.0",
     "eslint": "^4.11.0",
