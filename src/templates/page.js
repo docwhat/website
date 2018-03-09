@@ -10,7 +10,6 @@ import PageHeader from "../components/PageHeader.js"
 import Bio from '../components/Bio.js'
 
 const PageTemplate = (props) => {
-  const currentPage = props.data.markdownRemark
   const {
     data: {
       markdownRemark: {
@@ -23,8 +22,8 @@ const PageTemplate = (props) => {
   } = props
 
   var pageHeader = ''
-  if (pageTitle) {
-    pageHeader = <PageHeader markdownRemark={currentPage} />
+  if (pageTitle && pageTitle !== '') {
+    pageHeader = <PageHeader title={pageTitle} />
   }
 
   const helmetTitle = pageTitle || siteTitle
