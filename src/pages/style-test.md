@@ -1,8 +1,8 @@
 ---
-template: page
-slug: '/style-test/'
-title: Style and Layout test
 draft: false
+slug: '/style-test/'
+template: page
+title: Style and Layout test
 ---
 
 This page is here to test the various styles and elements to make
@@ -153,6 +153,64 @@ Tables
 | `git diff`   | Show file differences that **haven't been** staged |
 | `git diff`   | Show file differences that **haven't been** staged |
 | `git status` | List all *new or modified* files                   |
+
+Code
+----
+
+``` js
+var fish = 123;
+var cat = 'meow';
+```
+
+``` bash{1,7}
+#!/bin/sh
+
+set -eux
+
+# do something
+
+echo "Done"
+```
+
+``` terminal
+$ pwd
+/Users/docwhat/bin
+# ls -l --color=always | aha -b -n | pbcopy
+$ ls -l
+total 65356
+lrwxr-xr-x 1 docwhat staff       44 Feb 26 19:01 <span style="color:aqua;font-weight:bold;">24-bit-color.sh</span> -&gt; <span style="color:lime;font-weight:bold;">/Users/docwhat/.dotfiles/bin/24-bit-color.sh</span>*
+-rwxr-xr-x 1 docwhat staff     1574 Oct 31  2013 <span style="color:lime;font-weight:bold;">256-xterm-colors</span>*
+lrwxr-xr-x 1 docwhat staff       59 Mar  1 23:22 <span style="color:aqua;font-weight:bold;">add-nodejs-cli-tool</span> -&gt; <span style="color:lime;font-weight:bold;">/Users/docwhat/.dotfiles/tag-nodejs/bin/add-nodejs-cli-tool</span>*
+lrwxr-xr-x 1 docwhat staff       44 Mar  2 00:45 <span style="color:aqua;font-weight:bold;">alex</span> -&gt; <span style="color:lime;font-weight:bold;">/Users/docwhat/.dotfiles/tag-nodejs/bin/alex</span>*
+-rwxr-xr-x 1 docwhat staff    13570 Jul 13  2013 <span style="color:lime;font-weight:bold;">asciiio</span>*
+lrwxr-xr-x 1 docwhat staff       43 Feb 26 19:01 <span style="color:aqua;font-weight:bold;">check-http-304</span> -&gt; <span style="color:lime;font-weight:bold;">/Users/docwhat/.dotfiles/bin/check-http-304</span>*
+lrwxr-xr-x 1 docwhat staff       40 Feb 26 19:01 <span style="color:aqua;font-weight:bold;">check-terms</span> -&gt; <span style="color:lime;font-weight:bold;">/Users/docwhat/.dotfiles/bin/check-terms</span>*
+-rwxr-xr-x 1 docwhat staff      427 Nov  2  2016 <span style="color:lime;font-weight:bold;">check-well-known.sh</span>*
+-rwxr-xr-x 1 docwhat staff     1330 Mar 24  2016 <span style="color:lime;font-weight:bold;">chronic-</span>*
+-rw-r--r-- 1 docwhat staff      254 Apr 21  2017 <span>codeclimate</span>
+lrwxr-xr-x 1 docwhat staff       33 Feb 26 19:01 <span style="color:aqua;font-weight:bold;">codi</span> -&gt; <span style="color:lime;font-weight:bold;">/Users/docwhat/.dotfiles/bin/codi</span>*
+```
+
+``` git
+$ git log -3
+commit 16f940dcc0fecec62e8f0e0b8527f0068c6436cb (HEAD -> master)
+Author: Christian Höltje <docwhat@gerf.org>
+Date:   Thu Mar 15 14:12:12 2018 -0400
+
+    add wordcount to microdata
+
+commit b20894634d77257728e07c9bdfa4afa8e238a077 (origin/master, origin/HEAD)
+Author: Christian Höltje <docwhat@gerf.org>
+Date:   Thu Mar 15 13:56:21 2018 -0400
+
+    add 404 page
+
+commit 53e8a2e9be4a0b55b624cd44cf79baad6f40602f
+Author: Christian Höltje <docwhat@gerf.org>
+Date:   Thu Mar 15 13:45:09 2018 -0400
+
+    dates are not required for PageHeader
+```
 
 Components
 ----------
