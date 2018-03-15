@@ -67,6 +67,7 @@ const PostTemplate = (props) => {
         postTitle={helmetTitle}
         postUrl={pageUrl}
         ymdDate={ymdDate}
+        wordCount={words}
       />
     </article>
   )
