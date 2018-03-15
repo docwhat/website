@@ -91,13 +91,15 @@ export default SiteIndex
 
 export const pageQuery = graphql`
 query IndexQuery {
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fields: {template: {eq: "post"}}}) {
+  allMarkdownRemark(
+    sort: {fields: [frontmatter___date], order: DESC},
+    filter: {fields: {template: {eq: "post"}}}
+  ) {
     edges {
       node {
         excerpt(pruneLength: 280)
         fields {
           slug
-          template
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
