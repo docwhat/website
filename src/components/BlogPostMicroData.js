@@ -11,6 +11,7 @@ const BlogPostMicroData = props => {
     postTitle,
     postUrl,
     ymdDate,
+    wordCount,
   } = props
 
   const jsonObject = {
@@ -19,7 +20,7 @@ const BlogPostMicroData = props => {
     "headline": postTitle,
     // "genre":"",
     // "keywords":"",
-    // "wordCount":"{{ wordcount }}",
+    "wordCount": wordCount,
     "url": postUrl,
     "datePublished": ymdDate,
     "author": authorJsonLd,
@@ -47,6 +48,7 @@ BlogPostMicroData.propTypes = {
   postTitle: PropTypes.string.isRequired,
   postUrl: PropTypes.string.isRequired,
   ymdDate: PropTypes.string.isRequired,
+  wordCount: PropTypes.number.isRequired,
 }
 
 export default BlogPostMicroData
