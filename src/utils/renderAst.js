@@ -1,6 +1,7 @@
 import React from 'react'
-import Gist from 'react-gist'
 import rehypeReact from "rehype-react"
+
+import Gist from 'react-gist'
 
 // Part of gatsby-remark-component
 const renderAst = new rehypeReact({

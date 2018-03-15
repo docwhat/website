@@ -85,6 +85,14 @@ const typography = new Typography({
       'a:hover,a:active': {
         textDecoration: 'underline',
       },
+      '.gatsby-highlight-code-line': {
+        backgroundColor: heroColor.string(),
+        display: 'block',
+        marginRight: '-1em',
+        marginLeft: '-1em',
+        paddingRight: '1em',
+        paddingLeft: '0.75em',
+      },
       // blockquote: {
       //   borderLeft: `4px solid ${gray(87)}`,
       //   color: gray(47),
