@@ -22,6 +22,9 @@ const PostTemplate = (props) => {
         fields: {
           slug: slug,
         },
+        wordCount: {
+          words
+        },
         frontmatter: {
           title: pageTitle,
           monthName: monthName,
@@ -85,6 +88,9 @@ export const postQuery = graphql`
       htmlAst
       fields {
         slug
+      }
+      wordCount {
+        words
       }
       frontmatter {
         title
