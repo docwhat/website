@@ -1,4 +1,5 @@
 import React from 'react'
+import g from 'glamorous'
 import PropTypes from "prop-types"
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
@@ -60,7 +61,7 @@ const PostTemplate = (props) => {
       <Comments comments={comments} />
       <SubmitComment slug={slug} url={pageUrl} />
 
-      <hr style={{ marginBottom: rhythm(1), }} />
+      <g.Hr css={{ marginBottom: rhythm(1), }} />
       <Bio />
       <BlogPostMicroData
         postTitle={helmetTitle}

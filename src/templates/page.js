@@ -1,4 +1,5 @@
 import React from "react"
+import g from 'glamorous'
 import PropTypes from "prop-types"
 import renderAst from '../utils/renderAst.js'
 
@@ -29,15 +30,15 @@ const PageTemplate = (props) => {
   const helmetTitle = pageTitle || siteTitle
 
   return (
-    <div>
+    <article>
       <Helmet title={helmetTitle} />
       {pageHeader}
 
       <div>{renderAst(pageHtmlAst)}</div>
 
-      <hr style={{ marginBottom: rhythm(1), }} />
+      <g.Hr css={{ marginBottom: rhythm(1), }} />
       <Bio />
-    </div>
+    </article>
   )
 }
 

@@ -1,3 +1,4 @@
+import g, { Header, H1, Div } from 'glamorous'
 import React from 'react'
 import PropTypes from "prop-types"
 import CalendarPage from '../components/CalandarPage.js'
@@ -14,24 +15,23 @@ const PageHeader = (props) => {
 
   var calendarIcon = ''
   if (ymdDate) {
-    calendarIcon = <div style={{
-    }}>
+    calendarIcon = <Div>
       <CalendarPage
         monthName={monthName}
         dayName={dayName}
         dayOfMonth={dayOfMonth}
         ymdDate={ymdDate} />
-    </div>
+    </Div>
   }
 
   return(
-    <header style={{
+    <Header css={{
       display: "flex",
       border: "1px solid hsla(0, 0%, 0%, 0)",
       minHeight: (calendarIcon === '') ? 'unset' : rhythm( 7 / 2 ),
       marginBottom: rhythm( 1 ),
     }}>
-      <h1 style={{
+      <H1 css={{
         marginTop: 0,
         marginRight: 'auto',
         marginLeft: 0,
@@ -40,10 +40,9 @@ const PageHeader = (props) => {
         borderBottom: 'none',
       }} >
         {title}
-      </h1>
+      </H1>
       {calendarIcon}
-
-    </header>
+    </Header>
   )
 }
 

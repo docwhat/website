@@ -1,6 +1,11 @@
+import g, { Article, Div, Header, A, Time } from 'glamorous'
 import React from 'react'
 import { rhythm } from '../utils/typography'
 import Gravatar from 'react-gravatar'
+const MyGravatar = g(Gravatar)({
+  width: '100%',
+  borderRadius: '50%',
+})
 
 const Comment = (props) => {
   const {
@@ -13,38 +18,35 @@ const Comment = (props) => {
   } = props
 
   return (
-    <article style={{
+    <Article css={{
       position: "relative",
       marginBottom: rhythm( 2 ),
       marginTop: rhythm( 1 ),
     }}>
-      <div style={{
+      <Div css={{
         width: '60px',
         position: 'absolute',
         top: 0,
         left: 0,
       }}>
-        <Gravatar
-          style={{
-            width: '100%',
-            borderRadius: '50%',
-          }}
+        <MyGravatar
           size={60}
           md5={email}
+          email={name}
           default="mm"
           rating="pg" />
-      </div>
-      <div style={{
+      </Div>
+      <Div css={{
         paddingLeft: '80px',
       }}>
-        <header style={{
+        <Header css={{
           display: 'flex',
           flexDirection: 'row',
           marginTop: rhythm( 1 / 4 ),
           marginBottom: rhythm( 1 / 2 ),
         }}>
-          <a
-            style={{
+          <A
+            css={{
               alignSelf: 'flex-start',
               marginRight: 'auto',
               fontSize: rhythm( 9 / 8 ),
@@ -53,9 +55,9 @@ const Comment = (props) => {
             className="h-card"
             href={url}>
             {name}
-          </a>
-          <time
-            style={{
+          </A>
+          <Time
+            css={{
               display: 'block',
               marginLeft: 'auto',
               whiteSpace: 'nowrap',
@@ -63,12 +65,11 @@ const Comment = (props) => {
               fontSize: rhythm( 2 / 3 ),
             }}
             dateTime={iso8601Date}
-          >{friendlyDate}</time>
-      </header>
-
+          >{friendlyDate}</Time>
+      </Header>
       {children}
-    </div>
-  </article>
+    </Div>
+  </Article>
   )
 }
 

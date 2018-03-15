@@ -1,4 +1,5 @@
 import React from 'react'
+import g from 'glamorous'
 
 import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
@@ -8,8 +9,8 @@ import { FaGithub, FaTwitter } from 'react-icons/lib/fa'
 
 const makeProfileLink = (icon, url, username) => {
   return (
-    <span
-      style={{
+    <g.Span
+      css={{
         whiteSpace: 'nowrap',
         margin: '0 0.2em',
       }}
@@ -24,7 +25,7 @@ const makeProfileLink = (icon, url, username) => {
         },
       })}
       <a href={url}>{username}</a>
-    </span>
+    </g.Span>
   )
 }
 
@@ -42,26 +43,26 @@ const TwitterBio = makeProfileLink(
 class Bio extends React.Component {
   render() {
     return (
-      <div
-        style={{
+      <g.Div
+        css={{
           display: 'flex',
           marginBottom: rhythm(2.5),
         }}
         className="h-card"
         rel="me"
       >
-        <a style={{
+        <g.A css={{
 
         }}
         className="u-url"
         rel="me"
         href="https://docwhat.org/" >
-          <img
+          <g.Img
             className="u-photo p-nickname"
             rel="me"
             src={avatarPic}
             alt="docwhat"
-            style={{
+            css={{
               borderRadius: "50%",
               marginRight: rhythm(1 / 2),
               marginBottom: 0,
@@ -69,7 +70,7 @@ class Bio extends React.Component {
               height: rhythm(2),
             }}
           />
-        </a>
+        </g.A>
         <p>
           The personal blog of <strong rel="me" className="p-name">
             Christian Höltje
@@ -78,7 +79,7 @@ class Bio extends React.Component {
           {GithubBio}
           {TwitterBio}
         </p>
-      </div>
+      </g.Div>
     )
   }
 }

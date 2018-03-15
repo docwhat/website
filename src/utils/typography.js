@@ -93,6 +93,16 @@ const typography = new Typography({
         paddingRight: '1em',
         paddingLeft: '0.75em',
       },
+      '.gatsby-highlight pre.language-console': {
+        background: '#222',
+        color: '#eee',
+        textShadow: '0 1px #888',
+      },
+      '.gatsby-highlight pre.language-terminal': {
+        background: '#222',
+        color: '#eee',
+        textShadow: '0 1px #888',
+      },
       // blockquote: {
       //   borderLeft: `4px solid ${gray(87)}`,
       //   color: gray(47),
