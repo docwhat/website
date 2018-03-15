@@ -49,10 +49,10 @@ const PageHeader = (props) => {
 
 PageHeader.propTypes = {
   title: PropTypes.string.isRequired,
-  monthName: PropTypes.string.isRequired,
-  dayName: PropTypes.string.isRequired,
-  dayOfMonth: PropTypes.string.isRequired,
-  ymdDate: PropTypes.string.isRequired,
+  monthName: PropTypes.string,
+  dayName: PropTypes.string,
+  dayOfMonth: PropTypes.string,
+  ymdDate: PropTypes.string,
 }
 
 export default PageHeader
