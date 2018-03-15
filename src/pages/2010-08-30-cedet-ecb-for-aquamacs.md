@@ -1,68 +1,68 @@
 ---
+date: '2010-08-30T17:20:37-04:00'
+guid: 'http://docwhat.org/?p=574'
 id: 574
-title: Setting up CEDET/ECB for Aquamacs
-date: 2010-08-30T17:20:37-04:00
-author: docwhat
-template: post
-guid: http://docwhat.org/?p=574
-slug: /cedet-ecb-for-aquamacs/
-openid_comments:
-  - 'a:2:{i:0;s:4:"6991";i:1;s:4:"7599";}'
-image: /files/2010/08/Emacs-ECB-250x232.png
-categories:
-  - docwhat
+image: '/files/2010/08/Emacs-ECB-250x232.png'
+slug: '/cedet-ecb-for-aquamacs/'
 tags:
-  - aquamacs
-  - cedet
-  - ecb
-  - emacs
-  - OS X
+- aquamacs
+- cedet
+- ecb
+- emacs
+- OS X
+template: post
+title: 'Setting up CEDET/ECB for Aquamacs'
 ---
+
 [Aquamacs 2.1](http://aquamacs.org/) is now out.
 
-> **UPDATE \[2011/08/04\]: Aquamacs 2.3a (the latest at this time) has
-> CEDET already in it; skip the part about installing CEDET. I still
-> recommend creating the `site-start.el` file for CEDET but beware the
-> differences between CEDET shipped with Emacs and the stand-alone
-> version. When you get ECB, you need a version newer than 2.40, which
-> at this time means getting the CVS version.**
+**UPDATE \[2011/08/04\]**:
+
+> Aquamacs 2.3a (the latest at this time) has CEDET already in it;
+> skip the part about installing CEDET. I still recommend creating
+> the `site-start.el` file for CEDET but beware the differences
+> between CEDET shipped with Emacs and the stand-alone version. When
+> you get ECB, you need a version newer than 2.40, which at this
+> time means getting the CVS version.
 
 The new 2.x series no longer requires the [Dvorak
-hack](/aquamacs-vs-dvorak-qwerty-layout) I posted about earlier (yay!)
+hack](/aquamacs-vs-dvorak-qwerty-layout) I posted about earlier
+(yay!)
 
-2.1 has a nice new mechanism for plugins, so here are instructions for
-making CEDET and ECB work with Aquamacs.
+2.1 has a nice new mechanism for plugins, so here are instructions
+for making CEDET and ECB work with Aquamacs.
 
 **Note before continuing:** I'm using the version numbers I got
-installing these packages. If there are newer ones, use them. I also am
-assuming you installed `Aquamacs.app` into `/Applications/`
+installing these packages. If there are newer ones, use them. I also
+am assuming you installed `Aquamacs.app` into `/Applications/`
 
 ### CEDET
 
-[CEDET](http://cedet.sourceforge.net/) is a collection of emacs tools to
-make your life easier. I don't fully grok them all, but some are
-nice. Semantic is in-language completion, for example.
+[CEDET](http://cedet.sourceforge.net/) is a collection of emacs
+tools to make your life easier. I don't fully grok them all, but
+some are nice. Semantic is in-language completion, for example.
 
-A full install of CEDET is required for ECB and Aquamacs doesn't come
-with that (yet?!) so you need to install it yourself.
+A full install of CEDET is required for ECB and Aquamacs doesn't
+come with that (yet?!) so you need to install it yourself.
 
 1.  Download the latest [CEDET from
     sourceforge](https://sourceforge.net/projects/cedet/files/)
-2.  Untar the file in `~/Library/Application Support/Aquamacs Emacs`:
+2.  Untar the file in
+    `~/Library/Application Support/Aquamacs Emacs`:
 
-    ``` shell_session
-    $ cd ~/Library/Application Support/Aquamacs Emacs
-    $ tar xf ~/Downloads/cedet-1.0.tar.gz
+    ``` bash
+    cd ~/Library/Application Support/Aquamacs Emacs
+    tar xf ~/Downloads/cedet-1.0.tar.gz
     ```
 
 3.  Run `make`:
 
-    ``` shell_session
-    $ make EMACS=/Applications/Aquamacs.app/Contents/MacOS/Aquamacs
+    ``` bash
+    make EMACS=/Applications/Aquamacs.app/Contents/MacOS/Aquamacs
     ```
 
-4.  Create a `site-start.el` file. This will be loaded automagically by
-    Aquamacs. It should look like this. You should replace
+4.  Create a `site-start.el` file. This will be loaded automagically
+    by Aquamacs. It should look like this. You should replace
     `YOUR USERNAME` with your OS X username.
 
     ``` elisp
@@ -78,10 +78,15 @@ with that (yet?!) so you need to install it yourself.
     `info` with a `dir` file. Aquamacs is smart enough to figure out
     this is plugin specific info files, and will use it.
 
-    ``` console
-    $ mkdir info
-    $ cd info
-    $ find .. -type f -name '*.info' | while read i; do j="$(basename $i)"; ln -s "$i" "$j"; install-info --info-dir="$(pwd)" "$j"; done
+    ``` bash
+    mkdir info
+    cd info
+    find .. -type f -name '*.info' \
+      | while read i; do \
+        j="$(basename $i)"; \
+        ln -s "$i" "$j"; \
+        install-info --info-dir="$(pwd)" "$j"; \
+        done
     ```
 
 6.  Restart Aquamacs and you should have the full CEDET available,
@@ -97,15 +102,18 @@ basically turns Emacs into a full IDE like XCode.
     **WARNING:** *If you're using Aquamacs 2.3, then you'll need the
     latest version via CVS:*
 
-    ``` shell_session
-    $ cvs -z3 -d:pserver:anonymous@ecb.cvs.sourceforge.net:/cvsroot/ecb co -P ecb
+    ``` bash
+    cvs -z3 \
+      -d:pserver:anonymous@ecb.cvs.sourceforge.net:/cvsroot/ecb \
+      co -P ecb
     ```
 
-2.  Untar the file in `~/Library/Application Support/Aquamacs Emacs`:
+2.  Untar the file in
+    `~/Library/Application Support/Aquamacs Emacs`:
 
-    ``` shell_session
-    $ cd ~/Library/Application Support/Aquamacs Emacs
-    $ tar xf ~/Downloads/ecb-2.40.tar.gz
+    ``` bash
+    cd ~/Library/Application Support/Aquamacs Emacs
+    tar xf ~/Downloads/ecb-2.40.tar.gz
     ```
 
 3.  Create a `site-start.el` file to load up ECB on startup:
@@ -131,15 +139,17 @@ basically turns Emacs into a full IDE like XCode.
     ;(require 'ecb-autoloads)
     ```
 
-4.  Symlink the `info-help` directory to `info` and create a `dir` file.
-5.  Restart aquamacs and you should have ECB available, including docs.
+4.  Symlink the `info-help` directory to `info` and create a `dir`
+    file.
+5.  Restart aquamacs and you should have ECB available, including
+    docs.
 
-### You're Done!
+### You're done
 
 I suggest you sit down and read some of the docs for ECB and CEDET.
 Especially [A Gentle Introduction to
-Cedet](http://alexott.net/en/writings/emacs-devenv/EmacsCedet.html) and
-reading the info docs for ECB by using `M-x info` or the HTML version in
-the ECB directory we created.
+Cedet](http://alexott.net/en/writings/emacs-devenv/EmacsCedet.html)
+and reading the info docs for ECB by using `M-x info` or the HTML
+version in the ECB directory we created.
 
 Ciao!
