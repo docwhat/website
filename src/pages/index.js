@@ -1,3 +1,5 @@
+import g, { H3, Small, Div } from 'glamorous'
+import glamor from 'glamor'
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
@@ -34,28 +36,24 @@ const BlogMicroData = props => {
 }
 
 const PostTitle = props => (
-  <h3
-    style={{
-      marginBottom: 0,
-    }}
-  >
+  <H3 css={{
+    marginBottom: 0,
+  }} >
     <Link style={{ boxShadow: 'none' }} to={props.to}>
       {props.children}
     </Link>
-  </h3>
+  </H3>
 )
 
 const PostMeta = props => (
-  <small
-    style={{
-      display: 'block',
-      lineHeight: 1,
-      marginBottom: rhythm(1 / 4),
-      textAlign: 'right',
-    }}
-  >
+  <Small css={{
+    display: 'block',
+    lineHeight: 1,
+    marginBottom: rhythm(1 / 4),
+    textAlign: 'right',
+  }} >
     {props.children}
-  </small>
+  </Small>
 )
 
 class SiteIndex extends React.Component {
@@ -63,13 +61,13 @@ class SiteIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <Div>
         <Helmet title={siteTitle}>
           <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
           <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48" />
         </Helmet>
         <Bio />
-        <div>
+        <Div>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             return (
@@ -80,9 +78,9 @@ class SiteIndex extends React.Component {
               </section>
             )
           })}
-        </div>
+        </Div>
         <BlogMicroData siteTitle={siteTitle} />
-      </div>
+      </Div>
     )
   }
 }

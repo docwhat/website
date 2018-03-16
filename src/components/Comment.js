@@ -2,10 +2,6 @@ import g, { Article, Div, Header, A, Time } from 'glamorous'
 import React from 'react'
 import { rhythm } from '../utils/typography'
 import Gravatar from 'react-gravatar'
-const MyGravatar = g(Gravatar)({
-  width: '100%',
-  borderRadius: '50%',
-})
 
 const Comment = (props) => {
   const {
@@ -29,7 +25,11 @@ const Comment = (props) => {
         top: 0,
         left: 0,
       }}>
-        <MyGravatar
+        <Gravatar
+          style={{
+            width: '100%',
+            borderRadius: '50%',
+          }}
           size={60}
           md5={email}
           email={name}

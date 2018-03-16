@@ -1,4 +1,5 @@
 import React from 'react'
+import g, { H1, Div } from 'glamorous'
 import Link from 'gatsby-link'
 import * as PropTypes from "prop-types"
 
@@ -18,15 +19,13 @@ class DefaultLayout extends React.Component {
     }
 
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-          borderBottomWidth: rhythm( 1 / 2 ),
-          borderBottomColor: heroColor.string(),
-        }}
-      >
+      <H1 css={{
+        ...scale(1.5),
+        marginBottom: rhythm(1.5),
+        marginTop: 0,
+        borderBottomWidth: rhythm( 1 / 2 ),
+        borderBottomColor: heroColor.string(),
+      }} >
         <Link
           style={{
             boxShadow: 'none',
@@ -37,19 +36,17 @@ class DefaultLayout extends React.Component {
         >
           {"docwhat's blog"}
         </Link>
-      </h1>
+      </H1>
     )
     return (
-      <div
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          margin: `0 auto`,
-        }}
-      >
+      <Div css={{
+        maxWidth: rhythm(24),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        margin: `0 auto`,
+      }} >
         {header}
         {children()}
-      </div>
+      </Div>
     )
   }
 }
