@@ -43,9 +43,21 @@ module.exports = {
           'gatsby-remark-component',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-emoji',
-          'gatsby-remark-prismjs',
           'gatsby-remark-smartypants',
           `gatsby-remark-autolink-headers`,
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+            }
+          },
+          {
+            resolve: 'gatsby-remark-embed-snippet',
+            options: {
+              classPrefix: 'language-',
+              directory: `${__dirname}/examples/`,
+            }
+          },
         ],
       },
     },

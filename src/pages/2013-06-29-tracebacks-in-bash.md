@@ -35,7 +35,7 @@ Check out the gist below. It is both a demonstration of the traceback as
 well as a template; grab the bits between the "cut here" and paste it
 into your own program.
 
-<Gist id=5889193></Gist>
+`embed:gist-5889193/traceback_example.bash`
 
 The gist (pun intended) of it that it traps `ERR` and `EXIT` interrupts
 in the shell. It then walks the `FUNCNAME`, `BASH_SOURCE`, and

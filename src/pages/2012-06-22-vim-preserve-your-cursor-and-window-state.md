@@ -20,10 +20,10 @@ I found the post [_Preserve: A Vim function that keeps your state_](http://techn
 
 I have come up with a better `Preserve`:
 
-<Gist id=2973488 file=function.vim></Gist>
+`embed:gist-2973488/function.vim`
 
 This is super useful, for example:
 
-<Gist id=2973488 file=example1.vim></Gist>
+`embed:gist-2973488/example1.vim`
 
 Ciao!
