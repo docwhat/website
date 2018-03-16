@@ -71,6 +71,7 @@ const typography = new Typography({
         marginBottom: rhythm(1 / 2),
         marginTop: rhythm(1),
       },
+
       'ol,ul': {
         marginLeft: rhythm(1.25),
       },
@@ -78,6 +79,7 @@ const typography = new Typography({
       'li>ol,li>ul': {
         marginLeft: rhythm(1.25),
       },
+
       a: {
         color: '#4078c0',
         textDecoration: 'none',
@@ -85,6 +87,7 @@ const typography = new Typography({
       'a:hover,a:active': {
         textDecoration: 'underline',
       },
+
       '.gatsby-highlight-code-line': {
         backgroundColor: heroColor.string(),
         display: 'block',
@@ -103,14 +106,7 @@ const typography = new Typography({
         color: '#eee',
         textShadow: '0 1px #888',
       },
-      // blockquote: {
-      //   borderLeft: `4px solid ${gray(87)}`,
-      //   color: gray(47),
-      //   marginTop: 0,
-      //   marginRight: 0,
-      //   marginLeft: 0,
-      //   paddingLeft: `calc(${rhythm(1 / 2)} - 1px)`,
-      // },
+
       blockquote: {
         ...scale(1 / 5),
         color: gray(45),
@@ -120,8 +116,6 @@ const typography = new Typography({
         paddingTop: rhythm(1 / 2),
         paddingBottom: rhythm(1 / 2),
         marginLeft: 0,
-        // borderLeft: `${rhythm(6 / 16)} solid`,
-        // borderColor: gray(96),
         position: 'relative',
       },
       'blockquote:before': {
@@ -140,22 +134,6 @@ const typography = new Typography({
       'blockquote > blockquote:before': {
         content: 'none',
       },
-      // 'blockquote:after': {
-      //   ...scale(2),
-      //   lineHeight: 1,
-      //   padding:0,
-      //   margin:0,
-      //   content: '"”"',
-      //   // content: '"❞"',
-      //   // fontFamily: 'Quattrocento',
-      //   position: 'absolute',
-      //   right: '-0.25ex',
-      //   bottom: '-0.5ex',
-      //   color: heroColor.darken(0.5).string(),
-      // },
-      // 'blockquote > blockquote:after': {
-      //   content: 'none',
-      // },
       'blockquote > :last-child': {
         marginBottom: 0,
       },
@@ -168,6 +146,7 @@ const typography = new Typography({
       'blockquote cite:before': {
         content: '"— "',
       },
+
       [MOBILE_MEDIA_QUERY]: {
         blockquote: {
           marginLeft: rhythm(-3 / 4),
