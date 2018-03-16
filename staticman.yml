@@ -25,7 +25,7 @@ comments:
   # or "frontmatter"
   format: "frontmatter"
 
-  path: "src/comments/"
+  path: "comments/"
   filename: "comment-{@id}"
   extension: "md"
 
