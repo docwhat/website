@@ -1,5 +1,5 @@
 import React from 'react'
-import g from 'glamorous'
+import g, { Div, Img } from 'glamorous'
 
 import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
@@ -9,8 +9,8 @@ import { FaGithub, FaTwitter } from 'react-icons/lib/fa'
 
 const makeProfileLink = (icon, url, username) => {
   return (
-    <g.Span
-      css={{
+    <span
+      style={{
         whiteSpace: 'nowrap',
         margin: '0 0.2em',
       }}
@@ -25,7 +25,7 @@ const makeProfileLink = (icon, url, username) => {
         },
       })}
       <a href={url}>{username}</a>
-    </g.Span>
+    </span>
   )
 }
 
@@ -43,45 +43,40 @@ const TwitterBio = makeProfileLink(
 class Bio extends React.Component {
   render() {
     return (
-      <g.Div
-        css={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
-        }}
-        className="h-card"
-        rel="me"
-      >
-        <g.A css={{
-
-        }}
+      <Div css={{
+        display: 'flex',
+        marginBottom: rhythm(2.5),
+      }}
+      className="h-card"
+      rel="me" >
+      <a
         className="u-url"
         rel="me"
         href="https://docwhat.org/" >
-          <g.Img
-            className="u-photo p-nickname"
-            rel="me"
-            src={avatarPic}
-            alt="docwhat"
-            css={{
-              borderRadius: "50%",
-              marginRight: rhythm(1 / 2),
-              marginBottom: 0,
-              width: rhythm(2),
-              height: rhythm(2),
-            }}
-          />
-        </g.A>
-        <p>
-          The personal blog of <strong rel="me" className="p-name">
-            Christian Höltje
-          </strong>.
-          <br />
-          {GithubBio}
-          {TwitterBio}
-        </p>
-      </g.Div>
-    )
-  }
+        <Img
+          className="u-photo p-nickname"
+          rel="me"
+          src={avatarPic}
+          alt="docwhat"
+          css={{
+            borderRadius: "50%",
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            width: rhythm(2),
+            height: rhythm(2),
+          }} />
+      </a>
+      <p>
+        The personal blog of <strong rel="me" className="p-name">
+          Christian Höltje
+        </strong>.
+        <br />
+        {GithubBio}
+        {TwitterBio}
+      </p>
+    </Div>
+  )
+}
 }
 
 export default Bio
