@@ -1,7 +1,6 @@
 import React from "react"
 import g from 'glamorous'
 import PropTypes from "prop-types"
-import renderAst from '../utils/renderAst.js'
 
 import { rhythm } from "../utils/typography"
 
@@ -17,7 +16,7 @@ const PageTemplate = (props) => {
         frontmatter: {
           title: pageTitle,
         },
-        htmlAst: pageHtmlAst,
+        html: pageHtml,
       }
     }
   } = props
@@ -34,7 +33,7 @@ const PageTemplate = (props) => {
       <Helmet title={helmetTitle} />
       {pageHeader}
 
-      <div>{renderAst(pageHtmlAst)}</div>
+      <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
       <g.Hr css={{ marginBottom: rhythm(1), }} />
       <Bio />
@@ -56,7 +55,7 @@ export const pageQuery = graphql`
       slug: { eq: $slug },
       template: { eq: "page" }
     }) {
-      htmlAst
+      html
       fields {
         slug
       }

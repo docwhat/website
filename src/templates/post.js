@@ -14,8 +14,6 @@ import Comments from '../components/Comments.js'
 import { siteUrl, siteTitle, } from '../utils/constants.js'
 import BlogPostMicroData from '../components/BlogPostMicroData.js'
 
-import renderAst from '../utils/renderAst.js'
-
 const PostTemplate = (props) => {
   const {
     data: {
@@ -33,7 +31,7 @@ const PostTemplate = (props) => {
           dayOfMonth: dayOfMonth,
           ymdDate: ymdDate,
         },
-        htmlAst: pageHtmlAst,
+        html: pageHtml,
       },
       comments: comments,
     }
@@ -53,7 +51,7 @@ const PostTemplate = (props) => {
         ymdDate={ymdDate}
         />
 
-      <div>{renderAst(pageHtmlAst)}</div>
+      <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
       <h2>
         Comments
@@ -87,7 +85,7 @@ export const postQuery = graphql`
       slug: { eq: $slug },
       template: { eq: "post" }
     }) {
-      htmlAst
+      html
       fields {
         slug
       }
