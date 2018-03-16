@@ -4,7 +4,7 @@ title: Verizon ineptitude
 date: 2008-02-14T10:04:13+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2008/02/verizon-sucks/
+guid: http://docwhat.org/2008/02/verizon-sucks/
 slug: /verizon-sucks/
 title_tag:
   - ""

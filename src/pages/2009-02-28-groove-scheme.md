@@ -4,7 +4,7 @@ title: Groove Scheme
 date: 2009-02-28T15:16:39+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=263
+guid: http://docwhat.org/?p=263
 slug: /groove-scheme/
 categories:
   - docwhat

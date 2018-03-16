@@ -4,7 +4,7 @@ title: 'Music: Rebel without Applause'
 date: 2009-05-30T21:20:00+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=372
+guid: http://docwhat.org/?p=372
 slug: /music-rebel-without-applause/
 categories:
   - docwhat

@@ -3,7 +3,7 @@ author: docwhat
 categories:
 - docwhat
 date: '2008-09-12T12:23:54+00:00'
-guid: 'http://docwhat.gerf.org/?p=190'
+guid: 'http://docwhat.org/?p=190'
 id: 190
 template: post
 slug: '/spore-drm-part-2/'

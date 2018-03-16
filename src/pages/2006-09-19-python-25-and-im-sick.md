@@ -3,7 +3,7 @@ author: docwhat
 categories:
 - docwhat
 date: '2006-09-19T20:36:31+00:00'
-guid: 'http://docwhat.gerf.org/2006/09/python-25-and-im-sick/'
+guid: 'http://docwhat.org/2006/09/python-25-and-im-sick/'
 id: 26
 template: post
 slug: '/python-25-and-im-sick/'

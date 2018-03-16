@@ -4,7 +4,7 @@ title: X-UA-Compatible and IE8
 date: 2008-01-22T13:18:02+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2008/01/x-ua-compatible-and-ie8/
+guid: http://docwhat.org/2008/01/x-ua-compatible-and-ie8/
 slug: /x-ua-compatible-and-ie8/
 title_tag:
   - 'X-UA-Compatible and IE8: Extending the MS monopoly'

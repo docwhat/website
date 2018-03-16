@@ -4,7 +4,7 @@ title: Google Phone
 date: 2009-01-12T22:43:00+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=234
+guid: http://docwhat.org/?p=234
 slug: /googlephone/
 categories:
   - docwhat

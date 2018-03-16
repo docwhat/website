@@ -3,7 +3,7 @@ author: docwhat
 categories:
 - docwhat
 date: '2008-07-23T17:19:54+00:00'
-guid: 'http://docwhat.gerf.org/?p=121'
+guid: 'http://docwhat.org/?p=121'
 id: 121
 template: post
 openid_comments:

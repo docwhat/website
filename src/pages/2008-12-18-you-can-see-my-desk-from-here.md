@@ -4,7 +4,7 @@ title: You can see my desk from here!
 date: 2008-12-18T11:02:51+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=232
+guid: http://docwhat.org/?p=232
 slug: /you-can-see-my-desk-from-here/
 categories:
   - docwhat

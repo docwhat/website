@@ -4,7 +4,7 @@ title: Hair yesterday, gone today.
 date: 2007-04-02T22:09:35+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/04/hair-yesterday/
+guid: http://docwhat.org/2007/04/hair-yesterday/
 slug: /hair-yesterday/
 title_tag:
   - ""

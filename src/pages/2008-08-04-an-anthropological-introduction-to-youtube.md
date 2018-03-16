@@ -4,7 +4,7 @@ title: An anthropological introduction to YouTube
 date: 2008-08-04T17:41:36+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=137
+guid: http://docwhat.org/?p=137
 slug: /an-anthropological-introduction-to-youtube/
 title_tag:
   - ""

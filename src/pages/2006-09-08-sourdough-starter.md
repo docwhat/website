@@ -1,6 +1,6 @@
 ---
 date: '2006-09-08T18:00:01+00:00'
-guid: 'http://docwhat.gerf.org/2006/09/sourdough-starter/'
+guid: 'http://docwhat.org/2006/09/sourdough-starter/'
 id: 11
 slug: '/sourdough-starter/'
 tags:
@@ -114,6 +114,6 @@ Tips for sourdough happiness:
 That's all; happy yeasting!
 
 Next time: What to do with that yeast (hint: [make
-bread](http://docwhat.gerf.org/2006/09/sourdough-bread/))!
+bread](http://docwhat.org/2006/09/sourdough-bread/))!
 
 Ciao!

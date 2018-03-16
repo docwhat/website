@@ -4,7 +4,7 @@ title: Auf Wiedersehen, Oma
 date: 2007-08-05T21:25:00+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/08/auf-wiedersehen-oma/
+guid: http://docwhat.org/2007/08/auf-wiedersehen-oma/
 slug: /auf-wiedersehen-oma/
 title_tag:
   - Erika Höltje dies, just shy of age 94

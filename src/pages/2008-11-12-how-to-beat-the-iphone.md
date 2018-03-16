@@ -4,7 +4,7 @@ title: How to beat the iPhone
 date: 2008-11-12T17:43:07+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=221
+guid: http://docwhat.org/?p=221
 slug: /how-to-beat-the-iphone/
 openid_comments:
   - 'a:2:{i:0;s:4:"5938";i:1;s:4:"5946";}'

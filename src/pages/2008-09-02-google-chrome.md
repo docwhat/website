@@ -4,7 +4,7 @@ title: Google Chrome
 date: 2008-09-02T17:15:21+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=176
+guid: http://docwhat.org/?p=176
 slug: /google-chrome/
 title_tag:
   - 'Google Chrome -- A brand-new browser'

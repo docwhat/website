@@ -4,7 +4,7 @@ title: Crazy beliefs means crazy behavior
 date: 2008-05-13T17:21:34+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=92
+guid: http://docwhat.org/?p=92
 slug: /crazy-beliefs-crazy-behavior/
 title_tag:
   - ""

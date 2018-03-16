@@ -4,7 +4,7 @@ title: Gecko-grip
 date: 2008-10-10T10:53:45+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2008/10/gecko-grip/
+guid: http://docwhat.org/2008/10/gecko-grip/
 slug: /gecko-grip/
 categories:
   - docwhat

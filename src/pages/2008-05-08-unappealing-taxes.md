@@ -4,7 +4,7 @@ title: unappealing taxes
 date: 2008-05-08T17:43:00+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=90
+guid: http://docwhat.org/?p=90
 slug: /unappealing-taxes/
 title_tag:
   - ""

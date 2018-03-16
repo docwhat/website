@@ -4,7 +4,7 @@ title: SPORE DRM part 3
 date: 2008-09-21T17:41:52+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2008/09/spore-drm-part-3/
+guid: http://docwhat.org/2008/09/spore-drm-part-3/
 slug: /spore-drm-part-3/
 categories:
   - docwhat

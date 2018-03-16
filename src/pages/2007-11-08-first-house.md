@@ -4,7 +4,7 @@ categories:
 - docwhat
 - Squirrel Hill
 date: '2007-11-08T15:18:42+00:00'
-guid: 'http://docwhat.gerf.org/2007/11/first-house/'
+guid: 'http://docwhat.org/2007/11/first-house/'
 id: 79
 template: post
 slug: '/first-house/'

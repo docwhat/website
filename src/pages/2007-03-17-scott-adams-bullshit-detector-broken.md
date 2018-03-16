@@ -3,7 +3,7 @@ author: docwhat
 categories:
 - docwhat
 date: '2007-03-17T20:53:09+00:00'
-guid: 'http://docwhat.gerf.org/2007/03/scott-adams-bullshit-detector-broken/'
+guid: 'http://docwhat.org/2007/03/scott-adams-bullshit-detector-broken/'
 id: 38
 template: post
 slug: '/scott-adams-bullshit-detector-broken/'

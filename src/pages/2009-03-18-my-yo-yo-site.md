@@ -4,7 +4,7 @@ title: My Site, the Yo-Yo
 date: 2009-03-18T22:37:59+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=310
+guid: http://docwhat.org/?p=310
 slug: /my-yo-yo-site/
 categories:
   - docwhat

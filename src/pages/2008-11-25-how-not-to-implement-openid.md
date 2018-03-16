@@ -4,7 +4,7 @@ title: How not to implement OpenID
 date: 2008-11-25T17:35:29+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=224
+guid: http://docwhat.org/?p=224
 slug: /how-not-to-implement-openid/
 title_tag:
   - 'SourceForge: How not to implement OpenID'
@@ -24,7 +24,7 @@ tags:
 
 ~~In the past, it never worked because it's delegation support was broken.~~
 
-~~Delegation is the handy feature that lets you use one host name (such as docwhat.gerf.org) as your id, but the provider could be someplace else (like myopenid.com). Or even multiple places!~~
+~~Delegation is the handy feature that lets you use one host name (such as docwhat.org) as your id, but the provider could be someplace else (like myopenid.com). Or even multiple places!~~
 
 ~~I reported that [bug](https://sourceforge.net/tracker2/?func=detail&aid=1955438&group_id=1&atid=200001) but it was never fixed.  The original part of the problem was that it's HTML parsing was broken.  I **know** that none of the open source libraries have had this problem.~~
 

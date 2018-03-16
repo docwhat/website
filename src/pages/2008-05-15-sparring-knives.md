@@ -3,7 +3,7 @@ author: docwhat
 categories:
 - docwhat
 date: '2008-05-15T17:03:54+00:00'
-guid: 'http://docwhat.gerf.org/?p=89'
+guid: 'http://docwhat.org/?p=89'
 id: 89
 template: post
 slug: '/sparring-knives/'

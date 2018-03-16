@@ -4,7 +4,7 @@ title: How to make a customer want to leave
 date: 2009-03-23T18:51:58+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=335
+guid: http://docwhat.org/?p=335
 slug: /how-to-make-a-customer-want-to-leave/
 openid_comments:
   - 'a:1:{i:0;s:4:"6988";}'
@@ -16,11 +16,11 @@ tags:
   - network
   - speakeasy
 ---
-[<strong>UPDATE</strong>: <a href="http://docwhat.gerf.org/2009/03/how-speakeasy-made-it-better">I have been made happy. Yay!</a>]
+[<strong>UPDATE</strong>: <a href="http://docwhat.org/2009/03/how-speakeasy-made-it-better">I have been made happy. Yay!</a>]
 
 Do ISPs just dislike me?  I can't think why; I do virtually nothing outrageous.  I normally don't rack up much, if any, support costs.  What isn't there to like?
 
-Yet here I am, a little past a year since the <a href="http://docwhat.gerf.org/2008/02/verizon-sucks/">last time</a> I had ISP problems, and Speakeasy is giving me grief.
+Yet here I am, a little past a year since the <a href="http://docwhat.org/2008/02/verizon-sucks/">last time</a> I had ISP problems, and Speakeasy is giving me grief.
 
 <strong>The situation:</strong>
 

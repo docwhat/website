@@ -4,7 +4,7 @@ categories:
 - docwhat
 - Squirrel Hill
 date: '2006-09-12T22:09:28+00:00'
-guid: 'http://docwhat.gerf.org/2006/09/coolest-comic-shop-in-squirrel-hill/'
+guid: 'http://docwhat.org/2006/09/coolest-comic-shop-in-squirrel-hill/'
 id: 20
 template: post
 slug: '/coolest-comic-shop-in-squirrel-hill/'

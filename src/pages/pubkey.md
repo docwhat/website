@@ -17,4 +17,4 @@ should be compatible with PGP.
     Key ID = 1024D/720D3195
     Key fingerprint = 23BC 0F41 9DB5 A70B B43C  3BE1 9090 E4B3 720D 3195
 
-[My public key](http://docwhat.gerf.org/publickey.txt)
+[My public key](http://docwhat.org/publickey.txt)

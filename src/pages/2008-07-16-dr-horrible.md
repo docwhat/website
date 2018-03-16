@@ -4,7 +4,7 @@ title: Dr. Horrible
 date: 2008-07-16T21:41:13+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=99
+guid: http://docwhat.org/?p=99
 slug: /dr-horrible/
 title_tag:
   - "Dr. Horrible's sing-along blog"

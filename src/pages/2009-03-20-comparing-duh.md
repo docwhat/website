@@ -3,7 +3,7 @@ author: docwhat
 categories:
 - docwhat
 date: '2009-03-20T17:37:39+00:00'
-guid: 'http://docwhat.gerf.org/?p=316'
+guid: 'http://docwhat.org/?p=316'
 id: 316
 template: post
 slug: '/comparing-duh/'

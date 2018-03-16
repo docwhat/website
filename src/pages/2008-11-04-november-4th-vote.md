@@ -4,7 +4,7 @@ title: 'November 4th: Vote!'
 date: 2008-11-04T15:10:29+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2008/11/november-4th-vote/
+guid: http://docwhat.org/2008/11/november-4th-vote/
 slug: /november-4th-vote/
 categories:
   - docwhat

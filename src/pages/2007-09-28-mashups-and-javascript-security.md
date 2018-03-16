@@ -4,7 +4,7 @@ title: Mashups and JavaScript Security
 date: 2007-09-28T15:28:03+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/09/mashups-and-javascript-security/
+guid: http://docwhat.org/2007/09/mashups-and-javascript-security/
 slug: /mashups-and-javascript-security/
 title_tag:
   - ""

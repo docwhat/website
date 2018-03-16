@@ -4,7 +4,7 @@ title: SimCity DS Landmark unlock codes
 date: 2007-06-28T15:52:39+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/06/simcity-ds-landmark-unlock-codes/
+guid: http://docwhat.org/2007/06/simcity-ds-landmark-unlock-codes/
 slug: /simcity-ds-landmark-unlock-codes/
 title_tag:
   - ""

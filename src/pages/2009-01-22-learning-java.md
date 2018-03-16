@@ -4,7 +4,7 @@ title: Learning Java
 date: 2009-01-22T17:48:30+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=238
+guid: http://docwhat.org/?p=238
 slug: /learning-java/
 categories:
   - docwhat

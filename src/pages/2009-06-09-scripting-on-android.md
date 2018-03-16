@@ -4,7 +4,7 @@ title: Scripting on Android
 date: 2009-06-09T17:41:39+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=383
+guid: http://docwhat.org/?p=383
 slug: /scripting-on-android/
 categories:
   - docwhat

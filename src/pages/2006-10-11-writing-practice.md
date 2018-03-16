@@ -4,7 +4,7 @@ title: Writing Practice
 date: 2006-10-11T10:13:40+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2006/10/writing-practice/
+guid: http://docwhat.org/2006/10/writing-practice/
 slug: /writing-practice/
 title_tag:
   - ""
@@ -13,7 +13,7 @@ categories:
 tags:
   - Writing
 ---
-I started this blog for a [couple of reasons](http://docwhat.gerf.org/2006/09/moving-to-a-blog/). One of the reasons is that I wanted to get better at writing.
+I started this blog for a [couple of reasons](http://docwhat.org/2006/09/moving-to-a-blog/). One of the reasons is that I wanted to get better at writing.
 
 IRL[^1], I'm not very good at explaining thoughts as they pop up. I tend to think about stuff faster than I can talk or I jump from subject to subject, I get sidetracked, forget what I've already talked about or I forget who I'm talking to and what they know or don't know already. Obviously, talking to me can be exacerbating though occasionally amusing.
 

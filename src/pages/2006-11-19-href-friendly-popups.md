@@ -4,7 +4,7 @@ title: Making JavaScript transparent
 date: 2006-11-19T16:17:45+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2006/11/href-friendly-popups/
+guid: http://docwhat.org/2006/11/href-friendly-popups/
 slug: /href-friendly-popups/
 title_tag:
   - ""

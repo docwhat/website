@@ -4,7 +4,7 @@ title: GTD and Mutt
 date: 2007-10-08T00:30:13+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/10/gtd-and-mutt/
+guid: http://docwhat.org/2007/10/gtd-and-mutt/
 slug: /gtd-and-mutt/
 title_tag:
   - ""
@@ -19,7 +19,7 @@ tags:
 ---
 I found this article about [Getting things done with mutt](http://blogs.techrepublic.com.com/opensource/?p=106&tag=nl.e011). It talks about using the techniques from David Allen's productivity book "[Getting Things Done: The Art of Stress-Free Productivity](http://amzn.com/0142000280?tag=thedocwha-20). I've been reading GTD for a week now (taking my time, you know) and think it's pretty interesting.
 
-Since [Mutt](http://mutt.org/) is my favorite email client, I spent a little playing with it and making changes. I'm using a different [editlabel](http://docwhat.gerf.org/files/2007/10/editlabel) script and my way doesn't require patching and recompiling mutt.
+Since [Mutt](http://mutt.org/) is my favorite email client, I spent a little playing with it and making changes. I'm using a different [editlabel](http://docwhat.org/files/2007/10/editlabel) script and my way doesn't require patching and recompiling mutt.
 
 Here are my `muttrc` changes:
 

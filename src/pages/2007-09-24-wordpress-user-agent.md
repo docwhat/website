@@ -4,7 +4,7 @@ title: Wordpress User-Agent
 date: 2007-09-24T01:30:25+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/09/wordpress-user-agent/
+guid: http://docwhat.org/2007/09/wordpress-user-agent/
 slug: /wordpress-user-agent/
 title_tag:
   - ""

@@ -4,7 +4,7 @@ title: My older projects have been moved.
 date: 2006-09-06T23:24:35+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2006/09/my-older-projects-have-been-moved/
+guid: http://docwhat.org/2006/09/my-older-projects-have-been-moved/
 slug: /my-older-projects-have-been-moved/
 title_tag:
   - ""
@@ -17,7 +17,7 @@ tags:
   - SVN
   - Wordpress
 ---
-This is really just administrata, due to my recent [move to wordpress](http://docwhat.gerf.org/2006/09/moving-to-a-blog/).
+This is really just administrata, due to my recent [move to wordpress](http://docwhat.org/2006/09/moving-to-a-blog/).
 
 I had been moving my stuff over, bit by bit into a [Trac](http://trac.edgewall.org/) installation ([linky](http://trac.gerf.org/)) but some things didn't really fit into it. One of these days I might make a Trac for all my miscellaneous projects. Meanwhile, till then, here is some links to these old unloved projects.
 

@@ -4,7 +4,7 @@ title: Useless Error Messages
 date: 2009-05-28T15:53:14+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=367
+guid: http://docwhat.org/?p=367
 slug: /useless-error-messages/
 openid_comments:
   - 'a:1:{i:0;s:4:"6244";}'

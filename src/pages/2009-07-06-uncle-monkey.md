@@ -4,7 +4,7 @@ title: Uncle Monkey
 date: 2009-07-06T11:16:56+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=396
+guid: http://docwhat.org/?p=396
 slug: /uncle-monkey/
 categories:
   - docwhat

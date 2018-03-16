@@ -4,7 +4,7 @@ title: unappealing taxs, part 2
 date: 2008-08-01T17:35:14+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/?p=127
+guid: http://docwhat.org/?p=127
 slug: /unappealing-taxs-part-2/
 title_tag:
   - ""

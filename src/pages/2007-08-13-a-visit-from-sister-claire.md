@@ -4,7 +4,7 @@ title: A visit from sister Claire
 date: 2007-08-13T23:05:38+00:00
 author: docwhat
 template: post
-guid: http://docwhat.gerf.org/2007/08/a-visit-from-sister-claire/
+guid: http://docwhat.org/2007/08/a-visit-from-sister-claire/
 slug: /a-visit-from-sister-claire/
 title_tag:
   - ""
@@ -14,7 +14,7 @@ tags:
   - family
   - pottery
 ---
-My little sister, <a href="http://www.myspace.com/clairewillis/">Claire</a> came to visit.  I wasn't able to make as much time as I like because of <a href="http://docwhat.gerf.org/2007/08/auf-wiedersehen-oma/">other events</a>, but I was able to arrange for her to stay over Thursday and Friday night.  She was in town to help a friend do pottery and just hang out at the <a href="http://www.pennsicwar.org/penn36/">Pennsic War</a>, north of Pittsburgh, and to catch a ride to Alabama.
+My little sister, <a href="http://www.myspace.com/clairewillis/">Claire</a> came to visit.  I wasn't able to make as much time as I like because of <a href="http://docwhat.org/2007/08/auf-wiedersehen-oma/">other events</a>, but I was able to arrange for her to stay over Thursday and Friday night.  She was in town to help a friend do pottery and just hang out at the <a href="http://www.pennsicwar.org/penn36/">Pennsic War</a>, north of Pittsburgh, and to catch a ride to Alabama.
 
 We went to <a href="http://www.neighborsinthestrip.com/thestrip/thestrip.html">the Strip</a> on Saturday (I recommend it!) and had a good time.  She found a cool pottery place there (she does pottery, in a serious way) and we took her out for breakfast and lunch there. I was a bit tired from the week as a whole, but I stayed relatively engaged.
 
