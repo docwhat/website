@@ -144,10 +144,8 @@ const typography = new Typography({
 
       [MOBILE_MEDIA_QUERY]: {
         blockquote: {
-          marginLeft: rhythm(-3 / 4),
+          marginLeft: 0,
           marginRight: 0,
-          borderLeft: `${rhythm(3 / 16)} solid`,
-          borderColor: gray(90),
           paddingLeft: rhythm(9 / 16),
         },
       },
