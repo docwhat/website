@@ -127,9 +127,9 @@ acorn@^3.0.0, acorn@^3.0.4:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
-acorn@^5.4.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.5.0.tgz#1abb587fbf051f94e3de20e6b26ef910b1828298"
+acorn@^5.5.0:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.5.3.tgz#f473dd47e0277a08e28e9bec5aeeb04751f0b8c9"
 
 address@1.0.3, address@^1.0.1:
   version "1.0.3"
@@ -2070,8 +2070,8 @@ chunk-manifest-webpack-plugin@0.1.0:
     webpack-core "^0.4.8"
 
 ci-info@^1.0.0:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.1.2.tgz#03561259db48d0474c8bdc90f5b47b068b6bbfb4"
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.1.3.tgz#710193264bb05c77b8c90d02f5aaf22216a667b2"
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
@@ -3430,8 +3430,8 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
 eslint@^4.11.0:
-  version "4.18.2"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.18.2.tgz#0f81267ad1012e7d2051e186a9004cc2267b8d45"
+  version "4.19.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.19.0.tgz#9e900efb5506812ac374557034ef6f5c3642fc4c"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -3442,7 +3442,7 @@ eslint@^4.11.0:
     doctrine "^2.1.0"
     eslint-scope "^3.7.1"
     eslint-visitor-keys "^1.0.0"
-    espree "^3.5.2"
+    espree "^3.5.4"
     esquery "^1.0.0"
     esutils "^2.0.2"
     file-entry-cache "^2.0.0"
@@ -3464,6 +3464,7 @@ eslint@^4.11.0:
     path-is-inside "^1.0.2"
     pluralize "^7.0.0"
     progress "^2.0.0"
+    regexpp "^1.0.1"
     require-uncached "^1.0.3"
     semver "^5.3.0"
     strip-ansi "^4.0.0"
@@ -3478,11 +3479,11 @@ esniff@^1.1:
     d "1"
     es5-ext "^0.10.12"
 
-espree@^3.5.2:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.3.tgz#931e0af64e7fbbed26b050a29daad1fc64799fa6"
+espree@^3.5.4:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.4.tgz#b0f447187c8a8bed944b815a660bddf5deb5d1a7"
   dependencies:
-    acorn "^5.4.0"
+    acorn "^5.5.0"
     acorn-jsx "^3.0.0"
 
 esprima@^2.6.0:
@@ -4218,8 +4219,8 @@ gatsby-1-config-css-modules@^1.0.10:
     babel-runtime "^6.26.0"
 
 gatsby-cli@^1.1.45:
-  version "1.1.45"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.45.tgz#d68f780bc861130c9afe7dae7cd5bdb665b0f05a"
+  version "1.1.46"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.46.tgz#ebbca830805c63f6ef5be0a0c4d308dd597ad10b"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-runtime "^6.26.0"
@@ -4360,8 +4361,8 @@ gatsby-remark-copy-linked-files@^1.5.30:
     unist-util-visit "^1.1.1"
 
 gatsby-remark-embed-snippet@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.12.tgz#d37a335cc3a6caf5a2cb0d37f18d05d2cb99eecb"
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.13.tgz#b09ae88253c6788b8495b0f0d16f172d8ed99043"
   dependencies:
     babel-runtime "^6.26.0"
     gatsby-remark-prismjs "^1.2.18"
@@ -5292,13 +5293,9 @@ homedir-polyfill@^1.0.0, homedir-polyfill@^1.0.1:
   dependencies:
     parse-passwd "^1.0.0"
 
-hosted-git-info@^2.1.4:
+hosted-git-info@^2.1.4, hosted-git-info@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.6.0.tgz#23235b29ab230c576aab0d4f13fc046b0b038222"
-
-hosted-git-info@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
 
 html-comment-regex@^1.1.0:
   version "1.1.1"
@@ -5528,7 +5525,13 @@ interpret@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
 
-invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2:
+invariant@^2.2.0:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
+  dependencies:
+    loose-envify "^1.0.0"
+
+invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.3.tgz#1a827dfde7dcbd7c323f0ca826be8fa7c5e9d688"
   dependencies:
@@ -6099,14 +6102,14 @@ js-yaml@3.7.0, js-yaml@~3.7.0:
     argparse "^1.0.7"
     esprima "^2.6.0"
 
-js-yaml@^3.10.0:
+js-yaml@^3.10.0, js-yaml@^3.9.1:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.5.2, js-yaml@^3.9.1:
+js-yaml@^3.5.2:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
   dependencies:
@@ -7897,7 +7900,7 @@ pify@^3.0.0:
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
-  resolved "http://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
+  resolved "https://registry.yarnpkg.com/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
   dependencies:
     pinkie "^2.0.0"
 
@@ -8729,18 +8732,18 @@ raw-loader@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
 
-rc@^1.0.1, rc@^1.1.7:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.5.tgz#275cd687f6e3b36cc756baa26dfee80a790301fd"
+rc@^1.0.1, rc@^1.1.2, rc@^1.1.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.6.tgz#eb18989c6d4f4f162c399f79ddd29f3835568092"
   dependencies:
     deep-extend "~0.4.0"
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rc@^1.1.2, rc@^1.1.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.6.tgz#eb18989c6d4f4f162c399f79ddd29f3835568092"
+rc@^1.1.7:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.5.tgz#275cd687f6e3b36cc756baa26dfee80a790301fd"
   dependencies:
     deep-extend "~0.4.0"
     ini "~1.3.0"
@@ -9106,6 +9109,10 @@ regex-not@^1.0.0, regex-not@^1.0.2:
   dependencies:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
+
+regexpp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-1.0.1.tgz#d857c3a741dce075c2848dcb019a0a975b190d43"
 
 regexpu-core@^1.0.0:
   version "1.0.0"
