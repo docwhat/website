@@ -3,28 +3,25 @@ import React from 'react'
 import { rhythm } from '../utils/typography'
 import Gravatar from 'react-gravatar'
 
-const Comment = (props) => {
-  const {
-    name,
-    url,
-    email,
-    friendlyDate,
-    iso8601Date,
-    children
-  } = props
+const Comment = props => {
+  const { name, url, email, friendlyDate, iso8601Date, children } = props
 
   return (
-    <Article css={{
-      position: "relative",
-      marginBottom: rhythm( 2 ),
-      marginTop: rhythm( 1 ),
-    }}>
-      <Div css={{
-        width: '60px',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-      }}>
+    <Article
+      css={{
+        position: 'relative',
+        marginBottom: rhythm(2),
+        marginTop: rhythm(1),
+      }}
+    >
+      <Div
+        css={{
+          width: '60px',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+        }}
+      >
         <Gravatar
           style={{
             width: '100%',
@@ -34,26 +31,32 @@ const Comment = (props) => {
           md5={email}
           email={name}
           default="mm"
-          rating="pg" />
+          rating="pg"
+        />
       </Div>
-      <Div css={{
-        paddingLeft: '80px',
-      }}>
-        <Header css={{
-          display: 'flex',
-          flexDirection: 'row',
-          marginTop: rhythm( 1 / 4 ),
-          marginBottom: rhythm( 1 / 2 ),
-        }}>
+      <Div
+        css={{
+          paddingLeft: '80px',
+        }}
+      >
+        <Header
+          css={{
+            display: 'flex',
+            flexDirection: 'row',
+            marginTop: rhythm(1 / 4),
+            marginBottom: rhythm(1 / 2),
+          }}
+        >
           <A
             css={{
               alignSelf: 'flex-start',
               marginRight: 'auto',
-              fontSize: rhythm( 9 / 8 ),
+              fontSize: rhythm(9 / 8),
               lineHeight: 1,
             }}
             className="h-card"
-            href={url}>
+            href={url}
+          >
             {name}
           </A>
           <Time
@@ -62,14 +65,16 @@ const Comment = (props) => {
               marginLeft: 'auto',
               whiteSpace: 'nowrap',
               alignSelf: 'flex-end',
-              fontSize: rhythm( 2 / 3 ),
+              fontSize: rhythm(2 / 3),
             }}
             dateTime={iso8601Date}
-          >{friendlyDate}</Time>
-      </Header>
-      {children}
-    </Div>
-  </Article>
+          >
+            {friendlyDate}
+          </Time>
+        </Header>
+        {children}
+      </Div>
+    </Article>
   )
 }
 

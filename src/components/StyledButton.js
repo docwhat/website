@@ -1,4 +1,4 @@
-('use strict');
+;('use strict')
 
 import React from 'react'
 import g from 'glamorous'
@@ -29,15 +29,15 @@ const StyledButton = g.button(
     ':hover': {
       opacity: 0.7,
       transform: 'translateY(-1px)',
-      boxShadow: '0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)'
+      boxShadow: '0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)',
     },
     ':focus': { outline: 0 },
     ':active': {
-      transform: 'translateY(1px)'
-    }
+      transform: 'translateY(1px)',
+    },
   },
   props => ({
-    backgroundColor: (colors[props.type] || colors['primary']).string()
+    backgroundColor: (colors[props.type] || colors['primary']).string(),
   })
 )
 

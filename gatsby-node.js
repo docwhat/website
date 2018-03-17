@@ -11,52 +11,69 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     graphql(
       `
         {
-          pages: allMarkdownRemark( filter: { fields: { template: { eq: "page" } } }) {
-            edges { node { fields { slug } } }
+          pages: allMarkdownRemark(
+            filter: { fields: { template: { eq: "page" } } }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+              }
+            }
           }
-          posts: allMarkdownRemark( filter: { fields: { template: { eq: "post" } } } ) {
-            edges { node { fields { slug } } }
+          posts: allMarkdownRemark(
+            filter: { fields: { template: { eq: "post" } } }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+              }
+            }
           }
         }
       `
-    )
-      .then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
-        }
+    ).then(result => {
+      if (result.errors) {
+        console.log(result.errors)
+        reject(result.errors)
+      }
 
-        const pageTemplate = path.resolve(`./src/templates/page.js`)
+      const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-        _.each(result.data.pages.edges, edge => {
-          const { node: { fields: { slug } } } = edge
+      _.each(result.data.pages.edges, edge => {
+        const { node: { fields: { slug } } } = edge
 
-          createPage({
-            path: slug,
-            component: slash(pageTemplate),
-            context: { slug: slug, },
-          })
-        })
-
-        const postTemplate = path.resolve(`./src/templates/post.js`)
-
-        _.each(result.data.posts.edges, edge => {
-          const { node: { fields: { slug } } } = edge
-
-          createPage({
-            path: slug,
-            component: slash(postTemplate),
-            context: { slug: slug },
-          })
+        createPage({
+          path: slug,
+          component: slash(pageTemplate),
+          context: { slug: slug },
         })
       })
+
+      const postTemplate = path.resolve(`./src/templates/post.js`)
+
+      _.each(result.data.posts.edges, edge => {
+        const { node: { fields: { slug } } } = edge
+
+        createPage({
+          path: slug,
+          component: slash(postTemplate),
+          context: { slug: slug },
+        })
+      })
+    })
     resolve()
   })
 }
 
 const calculateDefaults = (node, getNode) => {
   const defaultSlug = createFilePath({ node, getNode, basePath: `pages` })
-  const isPostShaped = defaultSlug.match(/^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/)
+  const isPostShaped = defaultSlug.match(
+    /^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
+  )
 
   if (isPostShaped) {
     const [, defaultDate, defaultTitle] = isPostShaped
@@ -73,24 +90,27 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     try {
-      if(node.frontmatter.template === `comment`) {
+      if (node.frontmatter.template === `comment`) {
         createNodeField({ name: `template`, node: node, value: 'comment' })
       } else {
-        const [defaultSlug, defaultTitle, defaultDate] = calculateDefaults(node, getNode)
+        const [defaultSlug, defaultTitle, defaultDate] = calculateDefaults(
+          node,
+          getNode
+        )
 
-        const slug     = node.frontmatter.slug     || defaultSlug
-        const date     = node.frontmatter.date     || defaultDate
-        const title    = node.frontmatter.title    || defaultTitle
+        const slug = node.frontmatter.slug || defaultSlug
+        const date = node.frontmatter.date || defaultDate
+        const title = node.frontmatter.title || defaultTitle
         const template = node.frontmatter.template || 'post'
 
-        createNodeField({ name: `slug`,  node: node, value: slug })
-        createNodeField({ name: `date`,  node: node, value: date })
+        createNodeField({ name: `slug`, node: node, value: slug })
+        createNodeField({ name: `date`, node: node, value: date })
         createNodeField({ name: `title`, node: node, value: title })
         createNodeField({ name: `template`, node: node, value: template })
       }
-    } catch(ex) {
-      console.log("Error onCreateNode():", node.fileAbsolutePath, "\n", ex)
-      throw ex;
+    } catch (ex) {
+      console.log('Error onCreateNode():', node.fileAbsolutePath, '\n', ex)
+      throw ex
     }
   }
 }

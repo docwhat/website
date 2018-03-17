@@ -11,14 +11,7 @@ class SiteIndex extends React.Component {
     return (
       <Div>
         {posts.map(({ node }) => {
-          const {
-            fields: {
-              title,
-              slug,
-              date
-            },
-            excerpt
-          } = node
+          const { fields: { title, slug, date }, excerpt } = node
 
           return (
             <PostCard
@@ -38,23 +31,19 @@ class SiteIndex extends React.Component {
 export default SiteIndex
 
 export const pageQuery = graphql`
-query PiIndexQuery {
-  allMarkdownRemark(
-    sort: {fields: [fields___date], order: DESC},
-    filter: {
-      fields: {
-        template: {ne: "comment"},
-      },
-      frontmatter: {
-        test: {eq: "true"}
+  query PiIndexQuery {
+    allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        fields: { template: { ne: "comment" } }
+        frontmatter: { test: { eq: "true" } }
       }
-    }
-  ) {
-    edges {
-      node {
-        ...postCardFragment
+    ) {
+      edges {
+        node {
+          ...postCardFragment
+        }
       }
     }
   }
-}
 `

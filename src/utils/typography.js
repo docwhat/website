@@ -107,7 +107,10 @@ const typography = new Typography({
       blockquote: {
         ...scale(1 / 5),
         color: gray(45),
-        backgroundColor: heroColor.fade(0.8).desaturate(0.3).string(),
+        backgroundColor: heroColor
+          .fade(0.8)
+          .desaturate(0.3)
+          .string(),
         paddingLeft: rhythm(18 / 16),
         paddingRight: rhythm(1 / 2),
         paddingTop: rhythm(1 / 2),
@@ -118,8 +121,8 @@ const typography = new Typography({
       'blockquote:before': {
         ...scale(5 / 2),
         lineHeight: 1,
-        padding:0,
-        margin:0,
+        padding: 0,
+        margin: 0,
         content: '"“"',
         position: 'absolute',
         left: '-0.25ex',
@@ -155,7 +158,7 @@ const typography = new Typography({
         },
       },
     }
-  }
+  },
 })
 
 // Hot reload typography in development.

@@ -43,39 +43,40 @@ const TwitterBio = makeProfileLink(
 class Bio extends React.Component {
   render() {
     return (
-      <Div css={{
-        display: 'flex',
-      }}
-      className="h-card"
-      rel="me" >
-      <a
-        className="u-url"
+      <Div
+        css={{
+          display: 'flex',
+        }}
+        className="h-card"
         rel="me"
-        href="https://docwhat.org/" >
-        <Img
-          className="u-photo p-nickname"
-          rel="me"
-          src={avatarPic}
-          alt="docwhat"
-          css={{
-            borderRadius: "50%",
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-          }} />
-      </a>
-      <p>
-        The personal blog of <strong rel="me" className="p-name">
-          Christian Höltje
-        </strong>.
-        <br />
-        {GithubBio}
-        {TwitterBio}
-      </p>
-    </Div>
-  )
-}
+      >
+        <a className="u-url" rel="me" href="https://docwhat.org/">
+          <Img
+            className="u-photo p-nickname"
+            rel="me"
+            src={avatarPic}
+            alt="docwhat"
+            css={{
+              borderRadius: '50%',
+              marginRight: rhythm(1 / 2),
+              marginBottom: 0,
+              width: rhythm(2),
+              height: rhythm(2),
+            }}
+          />
+        </a>
+        <p>
+          The personal blog of{' '}
+          <strong rel="me" className="p-name">
+            Christian Höltje
+          </strong>.
+          <br />
+          {GithubBio}
+          {TwitterBio}
+        </p>
+      </Div>
+    )
+  }
 }
 
 export default Bio

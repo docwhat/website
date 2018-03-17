@@ -1,20 +1,20 @@
 import React from 'react'
 import g from 'glamorous'
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { rhythm, scale } from '../utils/typography'
 
 // Components
 import Bio from '../components/Bio.js'
-import PageHeader from "../components/PageHeader.js"
+import PageHeader from '../components/PageHeader.js'
 import SubmitComment from '../components/SubmitComment.js'
 import Comments from '../components/Comments.js'
 
-import { siteUrl, siteTitle, } from '../utils/constants.js'
+import { siteUrl, siteTitle } from '../utils/constants.js'
 import BlogPostMicroData from '../components/BlogPostMicroData.js'
 
-const PostTemplate = (props) => {
+const PostTemplate = props => {
   const {
     data: {
       markdownRemark: {
@@ -26,13 +26,11 @@ const PostTemplate = (props) => {
           dayOfMonth: dayOfMonth,
           ymdDate: ymdDate,
         },
-        wordCount: {
-          words
-        },
+        wordCount: { words },
         html: pageHtml,
       },
       comments: comments,
-    }
+    },
   } = props
 
   const helmetTitle = pageTitle || siteTitle
@@ -47,17 +45,15 @@ const PostTemplate = (props) => {
         dayName={dayName}
         dayOfMonth={dayOfMonth}
         ymdDate={ymdDate}
-        />
+      />
 
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
-      <h2>
-        Comments
-      </h2>
+      <h2>Comments</h2>
       <Comments comments={comments} />
       <SubmitComment slug={slug} url={pageUrl} />
 
-      <g.Hr css={{ marginBottom: rhythm(1), }} />
+      <g.Hr css={{ marginBottom: rhythm(1) }} />
       <Bio />
       <BlogPostMicroData
         postTitle={helmetTitle}
@@ -79,10 +75,7 @@ export default PostTemplate
 
 export const postQuery = graphql`
   query currentPostQuery($slug: String!) {
-    markdownRemark( fields: {
-      slug: { eq: $slug },
-      template: { eq: "post" }
-    }) {
+    markdownRemark(fields: { slug: { eq: $slug }, template: { eq: "post" } }) {
       html
       fields {
         slug
@@ -95,4 +88,4 @@ export const postQuery = graphql`
     }
     ...commentsQueryFragment
   }
-  `
+`

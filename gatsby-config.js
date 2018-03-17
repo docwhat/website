@@ -31,7 +31,7 @@ module.exports = {
               // maxWidth: 590,
               linkImagesToOriginal: true,
               backgroundColor: 'white',
-              sizeByPixelDensity: true
+              sizeByPixelDensity: true,
             },
           },
           {
@@ -48,14 +48,14 @@ module.exports = {
             resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'language-',
-            }
+            },
           },
           {
             resolve: 'gatsby-remark-embed-snippet',
             options: {
               classPrefix: 'language-',
               directory: `${__dirname}/examples/`,
-            }
+            },
           },
         ],
       },
@@ -76,7 +76,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: 'src/utils/typography'
+        pathToConfigModule: 'src/utils/typography',
       },
     },
     {
@@ -84,4 +84,4 @@ module.exports = {
       options: {},
     },
   ],
-};
+}

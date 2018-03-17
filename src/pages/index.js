@@ -5,27 +5,22 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio.js'
 import PostCard from '../components/PostCard.js'
-import {
-  siteTitle,
-  authorUrl,
-  authorJsonLd
-} from '../utils/constants.js'
+import { siteTitle, authorUrl, authorJsonLd } from '../utils/constants.js'
 
 const BlogMicroData = props => {
-  const {
-    siteTitle
-  } = props
+  const { siteTitle } = props
 
   const jsonObject = {
-    "@context": "http://schema.org",
-    "@type": "Blog",
-    "keywords": "software engineering agile devops ruby golang javascript refactoring",
-    "url": authorUrl,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": authorUrl,
+    '@context': 'http://schema.org',
+    '@type': 'Blog',
+    keywords:
+      'software engineering agile devops ruby golang javascript refactoring',
+    url: authorUrl,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': authorUrl,
     },
-    "author": authorJsonLd
+    author: authorJsonLd,
   }
 
   return (
@@ -40,20 +35,19 @@ class SiteIndex extends React.Component {
     return (
       <Div>
         <Helmet title={siteTitle}>
-          <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
-          <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48" />
+          <link
+            rel="openid2.provider"
+            href="https://openid.stackexchange.com/openid/provider"
+          />
+          <link
+            rel="openid2.local_id"
+            href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
+          />
         </Helmet>
         <Bio />
         <Div>
           {posts.map(({ node }) => {
-            const {
-              fields: {
-                title,
-                slug,
-                date
-              },
-              excerpt
-            } = node
+            const { fields: { title, slug, date }, excerpt } = node
 
             return (
               <PostCard
@@ -67,38 +61,39 @@ class SiteIndex extends React.Component {
           })}
         </Div>
         <BlogMicroData siteTitle={siteTitle} />
-        <A css={{
-          position: "fixed",
-          bottom: "0.4rem",
-          right: "0.4rem",
-          fontSize: "0.4rem",
-          color: "rgba(136, 136, 136, 0.3)",
-        }} href="pi/">Π</A>
-    </Div>
+        <A
+          css={{
+            position: 'fixed',
+            bottom: '0.4rem',
+            right: '0.4rem',
+            fontSize: '0.4rem',
+            color: 'rgba(136, 136, 136, 0.3)',
+          }}
+          href="pi/"
+        >
+          Π
+        </A>
+      </Div>
     )
-}
+  }
 }
 
 export default SiteIndex
 
 export const pageQuery = graphql`
-query IndexQuery {
-  allMarkdownRemark(
-    sort: {fields: [fields___date], order: DESC},
-    filter: {
-      fields: {
-        template: {eq: "post"},
-      },
-      frontmatter: {
-        test: {ne: "true"}
+  query IndexQuery {
+    allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        fields: { template: { eq: "post" } }
+        frontmatter: { test: { ne: "true" } }
       }
-    }
-  ) {
-    edges {
-      node {
-        ...postCardFragment
+    ) {
+      edges {
+        node {
+          ...postCardFragment
+        }
       }
     }
   }
-}
 `
