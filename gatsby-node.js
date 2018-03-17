@@ -92,6 +92,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     try {
       if (node.frontmatter.template === `comment`) {
         createNodeField({ name: `template`, node: node, value: 'comment' })
+        createNodeField({
+          name: `slug`,
+          node: node,
+          value: node.frontmatter.slug,
+        })
       } else {
         const [defaultSlug, defaultTitle, defaultDate] = calculateDefaults(
           node,
