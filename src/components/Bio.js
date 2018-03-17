@@ -45,7 +45,6 @@ class Bio extends React.Component {
     return (
       <Div css={{
         display: 'flex',
-        marginBottom: rhythm(2.5),
       }}
       className="h-card"
       rel="me" >

@@ -6,7 +6,7 @@ import * as PropTypes from "prop-types"
 import { rhythm, scale } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 
-require('prismjs/themes/prism.css')
+require('../utils/prismjs.css')
 
 class DefaultLayout extends React.Component {
   render() {
