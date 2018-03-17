@@ -15,8 +15,9 @@ tags:
   - bash
   - programming
 ---
+
 I don't like to write programs in
-[`bash`](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). It's not a
+[`bash`](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>). It's not a
 very pretty language. But it has one advantage over a lot of other
 languages:
 
@@ -27,7 +28,7 @@ But bash is still a lousy language.
 
 This is where bash tracebacks come in...
 
-*"Whaaaaa? Bash has tracebacks?"* I can hear you ask.
+_"Whaaaaa? Bash has tracebacks?"_ I can hear you ask.
 
 Yup, it can.
 
@@ -45,8 +46,8 @@ There is a little extra bits to ensure the traceback function itself
 doesn't appear in the output and to format it nicely.
 
 Not only are the tracebacks useful, but they make using `set -eu` much
-less painful. And you *are* using `set -eu` in your bash programs,
-right? *Right?*
+less painful. And you _are_ using `set -eu` in your bash programs,
+right? _Right?_
 
 I hope it is useful. If you have suggestions or questions, just ask!
 

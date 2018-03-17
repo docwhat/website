@@ -2,12 +2,8 @@
 id: 563
 title: 'bash: Checking a port number'
 date: 2010-07-16T17:23:06-04:00
-author: docwhat
 template: post
-guid: http://docwhat.org/?p=563
 slug: /bash-checking-a-port-number/
-categories:
-  - docwhat
 tags:
   - bash
   - programming
@@ -23,7 +19,7 @@ malformed input.
 
 An example:
 
-``` bash
+```bash
 declare -i foo='10#88f'
 bash: declare: 10#88f: value too great for base (error token is "10#88f")
 ```
@@ -31,7 +27,7 @@ bash: declare: 10#88f: value too great for base (error token is "10#88f")
 It's annoying (you can't use `||` to get around
 it) _and_ it's also wrong. It isn't a matter of base but an invalid value.
 
-``` bash
+```bash
 #!/bin/bash
 
 function to_int {
@@ -65,7 +61,7 @@ port_is_ok 88888f     # => *** 88888f is not a valid port
 Without the `to_int()` function, then you'd get errors from `port_is_ok`
 and the function would abort before it gets to the check.
 
-You have to redirect stderr to hide this bash error.
+You have to redirect `stderr` to hide this bash error.
 
 This was tested with bash `4.1.5(1)-release`
 
