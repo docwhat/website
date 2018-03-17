@@ -80,7 +80,7 @@ export default CalendarPage
 
 export const query = graphql`
   fragment calendarPageDatesFragment on MarkdownRemark {
-      frontmatter {
+    fields {
       ymdDate: date(formatString: "YYYY-MM-DD"),
       monthName: date(formatString: "MMMM"),
       dayName: date(formatString: "dddd"),
