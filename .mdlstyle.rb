@@ -5,10 +5,9 @@ all
 
 rule 'MD007', indent: 4
 rule 'MD029', style: 'ordered'
-rule 'MD004', style: :dash
+rule 'MD004', style: :consistent
 rule 'MD035', style: '---'
 
-exclude_rule 'first-header-h1'      # MD002
 exclude_rule 'fenced-code-language' # MD040
 exclude_rule 'first-line-h1'        # MD041
 exclude_rule 'header-style'         # MD029

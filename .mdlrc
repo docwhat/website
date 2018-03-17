@@ -1,8 +1,7 @@
-
 # MDL configuration file
 # vim:set ft=ruby:
 
 ignore_front_matter true
-style File.expand_path('.mdl-style.rb', File.dirname(__FILE__))
+style File.expand_path('.mdlstyle.rb')
 
 # EOF
