@@ -20,16 +20,14 @@ const PostTemplate = (props) => {
       markdownRemark: {
         fields: {
           slug: slug,
-        },
-        wordCount: {
-          words
-        },
-        frontmatter: {
           title: pageTitle,
           monthName: monthName,
           dayName: dayName,
           dayOfMonth: dayOfMonth,
           ymdDate: ymdDate,
+        },
+        wordCount: {
+          words
         },
         html: pageHtml,
       },
@@ -88,12 +86,10 @@ export const postQuery = graphql`
       html
       fields {
         slug
+        title
       }
       wordCount {
         words
-      }
-      frontmatter {
-        title
       }
       ...calendarPageDatesFragment
     }

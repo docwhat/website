@@ -54,24 +54,43 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
+const calculateDefaults = (node, getNode) => {
+  const defaultSlug = createFilePath({ node, getNode, basePath: `pages` })
+  const isPostShaped = defaultSlug.match(/^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/)
+
+  if (isPostShaped) {
+    const [, defaultDate, defaultTitle] = isPostShaped
+    return [defaultSlug, defaultTitle, defaultDate]
+  } else {
+    const [, defaultTitle] = defaultSlug.match(/^\/(.*)\/$/)
+    const defaultDate = '1972-12-14'
+    return [defaultSlug, defaultTitle, defaultDate]
+  }
+}
+
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === `MarkdownRemark`) {
-    // Calculate the slug iff not set.
-    const slugValue = node.frontmatter.slug ? node.frontmatter.slug : createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node: node,
-      value: slugValue,
-    })
+    try {
+      if(node.frontmatter.template === `comment`) {
+        createNodeField({ name: `template`, node: node, value: 'comment' })
+      } else {
+        const [defaultSlug, defaultTitle, defaultDate] = calculateDefaults(node, getNode)
 
-    // Calculate the template.
-    const templateValue = node.frontmatter.template ? node.frontmatter.template : 'post'
-    createNodeField({
-      name: `template`,
-      node: node,
-      value: templateValue,
-    })
+        const slug     = node.frontmatter.slug     || defaultSlug
+        const date     = node.frontmatter.date     || defaultDate
+        const title    = node.frontmatter.title    || defaultTitle
+        const template = node.frontmatter.template || 'post'
+
+        createNodeField({ name: `slug`,  node: node, value: slug })
+        createNodeField({ name: `date`,  node: node, value: date })
+        createNodeField({ name: `title`, node: node, value: title })
+        createNodeField({ name: `template`, node: node, value: template })
+      }
+    } catch(ex) {
+      console.log("Error onCreateNode():", node.fileAbsolutePath, "\n", ex)
+      throw ex;
+    }
   }
 }

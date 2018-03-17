@@ -13,7 +13,7 @@ const PageTemplate = (props) => {
   const {
     data: {
       markdownRemark: {
-        frontmatter: {
+        fields: {
           title: pageTitle,
         },
         html: pageHtml,
@@ -58,11 +58,8 @@ export const pageQuery = graphql`
       html
       fields {
         slug
-      }
-      frontmatter {
         title
       }
-      ...calendarPageDatesFragment
     }
   }
   `

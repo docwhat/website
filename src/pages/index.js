@@ -1,12 +1,10 @@
 import g, { H3, Small, Div } from 'glamorous'
-import glamor from 'glamor'
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
+import Bio from '../components/Bio.js'
+import PostCard from '../components/PostCard.js'
 import {
   siteTitle,
   authorUrl,
@@ -35,27 +33,6 @@ const BlogMicroData = props => {
   )
 }
 
-const PostTitle = props => (
-  <H3 css={{
-    marginBottom: 0,
-  }} >
-    <Link style={{ boxShadow: 'none' }} to={props.to}>
-      {props.children}
-    </Link>
-  </H3>
-)
-
-const PostMeta = props => (
-  <Small css={{
-    display: 'block',
-    lineHeight: 1,
-    marginBottom: rhythm(1 / 4),
-    textAlign: 'right',
-  }} >
-    {props.children}
-  </Small>
-)
-
 class SiteIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
@@ -69,13 +46,23 @@ class SiteIndex extends React.Component {
         <Bio />
         <Div>
           {posts.map(({ node }) => {
-            const title = get(node, 'frontmatter.title') || node.fields.slug
+            const {
+              fields: {
+                title,
+                slug,
+                date
+              },
+              excerpt
+            } = node
+
             return (
-              <section key={node.fields.slug}>
-                <PostTitle to={node.fields.slug}>{title}</PostTitle>
-                <PostMeta>{node.frontmatter.date}</PostMeta>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </section>
+              <PostCard
+                key={slug}
+                slug={slug}
+                title={title}
+                date={date}
+                excerpt={excerpt}
+              />
             )
           })}
         </Div>
@@ -90,19 +77,19 @@ export default SiteIndex
 export const pageQuery = graphql`
 query IndexQuery {
   allMarkdownRemark(
-    sort: {fields: [frontmatter___date], order: DESC},
-    filter: {fields: {template: {eq: "post"}}}
+    sort: {fields: [fields___date], order: DESC},
+    filter: {
+      fields: {
+        template: {eq: "post"},
+      },
+      frontmatter: {
+        test: {ne: "true"}
+      }
+    }
   ) {
     edges {
       node {
-        excerpt(pruneLength: 280)
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-        }
+        ...postCardFragment
       }
     }
   }

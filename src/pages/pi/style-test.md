@@ -1,6 +1,6 @@
 ---
-draft: false
-slug: '/style-test/'
+test: "true"
+slug: '/pi/style-test/'
 template: page
 title: Style and Layout test
 ---
@@ -211,6 +211,14 @@ Date:   Thu Mar 15 13:45:09 2018 -0400
 
     dates are not required for PageHeader
 ```
+
+### Inline
+
+This is how you find all `css` files:
+`find . -name '*.css' -type f -print`, indeed.
+
+And you can use `css›.some-class { background-color: #def }` to set
+colors.
 
 Components
 ----------
