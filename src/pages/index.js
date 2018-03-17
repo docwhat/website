@@ -1,4 +1,4 @@
-import g, { H3, Small, Div } from 'glamorous'
+import g, { H3, Small, Div, A } from 'glamorous'
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
@@ -67,9 +67,16 @@ class SiteIndex extends React.Component {
           })}
         </Div>
         <BlogMicroData siteTitle={siteTitle} />
-      </Div>
+        <A css={{
+          position: "fixed",
+          bottom: "0.4rem",
+          right: "0.4rem",
+          fontSize: "0.4rem",
+          color: "rgba(136, 136, 136, 0.3)",
+        }} href="pi/">Π</A>
+    </Div>
     )
-  }
+}
 }
 
 export default SiteIndex
