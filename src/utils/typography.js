@@ -109,6 +109,10 @@ const typography = new Typography({
         textShadow: '0 1px #888',
       },
 
+      'iframe': {
+        width: "100%",
+      },
+
       blockquote: {
         ...scale(1 / 5),
         color: gray(45),
