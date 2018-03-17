@@ -1,7 +1,7 @@
 import React from 'react'
 import g, { H1, Div } from 'glamorous'
 import Link from 'gatsby-link'
-import * as PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import { rhythm, scale } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
@@ -18,13 +18,15 @@ class DefaultLayout extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
+    let scaleFactor = location.pathname === rootPath ? 1 : 1 / 4
+
     header = (
       <H1
         css={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
+          ...scale(1.5 * scaleFactor),
+          marginBottom: rhythm(1.5 * scaleFactor),
           marginTop: 0,
-          borderBottomWidth: rhythm(1 / 2),
+          borderBottomWidth: rhythm(1 / 2 * scaleFactor),
           borderBottomColor: heroColor.string(),
         }}
       >

@@ -1,8 +1,6 @@
 import Typography from 'typography'
 import gray from 'gray-percentage'
-import {
-  heroColor
-} from '../utils/colors.js'
+import { heroColor } from '../utils/colors.js'
 import {
   TABLET_MEDIA_QUERY,
   MOBILE_MEDIA_QUERY,
@@ -16,7 +14,8 @@ const typography = new Typography({
   title: 'docwhat2018',
   baseFontSize: '21px',
   baseLineHeight: '1.5',
-  googleFonts: [{
+  googleFonts: [
+    {
       name: 'Quattrocento',
       styles: ['700'],
     },
@@ -46,11 +45,7 @@ const typography = new Typography({
   boldWeight: 700,
   // Github has all block elements use 1/2 rhythm not a full rhythm.
   blockMarginBottom: 1 / 2,
-  overrideStyles: ({
-    adjustFontSizeTo,
-    scale,
-    rhythm
-  }, options) => {
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     const vr = verticalRhythm({
       baseFontSize: '15px',
       baseLineHeight: '1.5',
@@ -109,8 +104,8 @@ const typography = new Typography({
         textShadow: '0 1px #888',
       },
 
-      'iframe': {
-        width: "100%",
+      iframe: {
+        width: '100%',
       },
 
       blockquote: {
