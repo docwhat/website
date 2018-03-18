@@ -1,5 +1,6 @@
 import Typography from 'typography'
 import gray from 'gray-percentage'
+import { css } from 'glamor'
 import { heroColor } from '../utils/colors.js'
 import {
   TABLET_MEDIA_QUERY,
@@ -80,14 +81,6 @@ const typography = new Typography({
         marginLeft: rhythm(1.25),
       },
 
-      a: {
-        color: '#4078c0',
-        textDecoration: 'none',
-      },
-      'a:hover,a:active': {
-        textDecoration: 'underline',
-      },
-
       '.gatsby-highlight-code-line': {
         backgroundColor: heroColor.string(),
         display: 'block',
@@ -102,10 +95,6 @@ const typography = new Typography({
       '.gatsby-highlight pre.language-terminal code': {
         color: '#eee',
         textShadow: '0 1px #888',
-      },
-
-      iframe: {
-        width: '100%',
       },
 
       blockquote: {
@@ -155,6 +144,12 @@ const typography = new Typography({
           marginRight: 0,
           paddingLeft: rhythm(9 / 16),
         },
+        '.gatsby-highlight > pre[class*="language-"]': {
+          paddingLeft: 0,
+          paddingRight: 0,
+          borderLeft: 'none',
+          borderRight: 'none',
+        },
       },
       [TABLET_MEDIA_QUERY]: {
         html: {
@@ -164,6 +159,21 @@ const typography = new Typography({
     }
   },
 })
+
+// Links
+css.global('a', {
+  color: '#4078c0',
+  textDecoration: 'none',
+  ':hover,:active': {
+    textDecoration: 'underline',
+  },
+})
+
+css.global('iframe', {
+  width: '100%',
+})
+
+css.global({})
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
