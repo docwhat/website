@@ -25,8 +25,8 @@ comments:
   # or "frontmatter"
   format: "frontmatter"
 
-  path: "comments/"
-  filename: "comment-{@id}"
+  path: "comments/p-{options.slug}"
+  filename: "entry{@timestamp}"
   extension: "md"
 
   # List of fields to be populated automatically by Staticman and included in
