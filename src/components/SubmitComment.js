@@ -1,4 +1,5 @@
 import g, { Div, Label, Input, Span, Form, Legend, Textarea } from 'glamorous'
+import { css } from 'glamor'
 import React from 'react'
 import Helmet from 'react-helmet'
 import gray from 'gray-percentage'
@@ -10,14 +11,55 @@ import StyledButton from './StyledButton.js'
 // TODO: Get reCaptcha siteKey and secret from staticman.yml instead.
 // TODO: Use a GraphQL Fragment
 
+const textBoxCss = css({
+  padding: `0 ${rhythm(1 / 4)}`,
+  '::placeholder': {
+    color: heroColor.darken(0.7).string(),
+    fontStyle: 'italic',
+  },
+})
+
 const FormOption = props => {
   const optParts = props.option.split('.')
   const name = `options[${optParts.join('][]')}]`
   return <Input name={name} value={props.value} type="hidden" />
 }
 
+const StyledLabel = g.label(props => {
+  let styles = [
+    {
+      display: 'flex',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'flex-start',
+      margin: '1em 0',
+      ':focus': {
+        background: heroColor.string(),
+      },
+    },
+  ]
+
+  styles.push(props['css'])
+
+  return styles
+})
+
+const StyledLabelDiv = g.label(props => {
+  let styles = [
+    {
+      display: 'inline-block',
+      flex: '0 0 30%',
+    },
+  ]
+
+  styles.push(props['css'])
+
+  return styles
+})
+
 const Labelled = props => {
-  var requiredText = ''
+  let requiredText = ''
+
   if (!props.required) {
     requiredText = (
       <Span
@@ -31,25 +73,13 @@ const Labelled = props => {
     )
   }
 
-  const css = props['css'] || {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'flex-start',
-    margin: '1em 0',
-  }
-
-  const divCss = props['divCss'] || {
-    display: 'inline-block',
-    flex: '0 0 30%',
-  }
   return (
-    <Label css={css}>
-      <Div css={divCss}>
+    <StyledLabel css={props['labelCss']}>
+      <StyledLabelDiv css={props['divCss']}>
         {props.label} {requiredText}
-      </Div>
+      </StyledLabelDiv>
       {props.children}
-    </Label>
+    </StyledLabel>
   )
 }
 
@@ -60,6 +90,7 @@ const LabelledInput = props => {
         css={{
           flex: '0 0 70%',
         }}
+        {...textBoxCss}
         name={props.name}
         type={props.type}
         placeholder={props.placeholder}
@@ -92,7 +123,7 @@ class SubmitComment extends React.Component {
     const returnUrl = this.props.url
     const slug = this.props.slug
     return (
-      <Form method="POST" action={formUrl} css={{}}>
+      <Form method="POST" action={formUrl}>
         <Legend
           css={{
             fontSize: rhythm(1),
@@ -130,12 +161,14 @@ class SubmitComment extends React.Component {
         <Labelled label="Message" required>
           <Textarea
             name="fields[message]"
-            placeholder="I really like that the messages can be in **Markdown**."
+            placeholder="Type your message. You can use **Markdown**!"
             css={{
               flex: '0 1 70%',
               width: '100%',
               minWidth: rhythm(10),
+              height: rhythm(5),
             }}
+            {...textBoxCss}
           />
         </Labelled>
 
