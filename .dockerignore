@@ -5,9 +5,13 @@
 .cache
 node_modules
 public
+favicons
+tmp
+tags
 
 # We use yarn
 package-lock.json
 
 Dockerfile
+.dockerignore
 *.log
