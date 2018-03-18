@@ -122,6 +122,7 @@ class SubmitComment extends React.Component {
       'https://api.staticman.net/v2/entry/docwhat/docwhat/master/comments'
     const returnUrl = this.props.url
     const slug = this.props.slug
+    const slugdir = slug.replace(/^\/+|\/+$/g, '')
     return (
       <Form method="POST" action={formUrl}>
         <Legend
@@ -134,6 +135,7 @@ class SubmitComment extends React.Component {
         </Legend>
         <FormOption option="redirect" value={returnUrl} />
         <FormOption option="slug" value={slug} />
+        <FormOption option="slugdir" value={slugdir} />
 
         <LabelledInput
           label="Name"
