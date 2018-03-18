@@ -16,5 +16,5 @@ RUN yarn run build
 
 #################################
 FROM nginx:stable-alpine AS final
-COPY --from=build /workdir/nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /workdir/public/ /usr/share/nginx/html/
