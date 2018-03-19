@@ -171,6 +171,9 @@ css.global('a', {
 
 css.global('iframe', {
   width: '100%',
+  height: `${100 * 9 / 16}vw`,
+  maxWidth: '640px',
+  maxHeight: '420px',
 })
 
 css.global({})
