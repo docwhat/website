@@ -38,10 +38,6 @@ are supported. To modify styling and highlight colors edit
 }
 ```
 
-{% highlight scss %} .highlight { margin: 0; padding: 1em;
-font-family: $monospace; font-size: $type-size-7; line-height: 1.8;
-} {% endhighlight %}
-
 ```html
 {% raw %}<nav class="pagination" role="navigation">
   {% if page.previous %}
@@ -96,7 +92,20 @@ with the first non-space character after the list item marker (e.g.,
 
 A plain `inline text`.
 
-Some css `ruby›{ a: true, b: 3, c: "cat" }`
+Some ruby `ruby›{ a: true, b: 3, c: "cat" }` code inline.
+
+### Ensure code is escaped
+
+The button should be inside the `pre`/`code` block when you inspect
+the elements:
+
+Inline version `<button />` is here.
+
+```none
+Block version <button /> is here.
+```
+
+See [bug #4597](https://github.com/gatsbyjs/gatsby/issues/4597)
 
 ### Code Embed
 
