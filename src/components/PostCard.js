@@ -1,7 +1,7 @@
 import g, { H3, Small, Div } from 'glamorous'
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import Link from './Link.js'
 import { rhythm } from '../utils/typography'
 
 const Title = props => (

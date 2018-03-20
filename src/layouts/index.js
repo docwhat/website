@@ -1,6 +1,6 @@
 import React from 'react'
 import g, { H1, Div } from 'glamorous'
-import Link from 'gatsby-link'
+import Link from '../components/Link.js'
 import PropTypes from 'prop-types'
 
 import { rhythm, scale } from '../utils/typography'

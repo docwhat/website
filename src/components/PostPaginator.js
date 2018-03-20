@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'glamor'
 import g from 'glamorous'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import Link from './Link.js'
 
 const linkStyle = css({ display: 'block' })
 

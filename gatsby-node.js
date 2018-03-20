@@ -3,7 +3,6 @@ const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { createPaginationPages } = require(`gatsby-pagination`)
-const slash = require(`slash`)
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
