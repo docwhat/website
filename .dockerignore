@@ -1,17 +1,17 @@
-.git
-.gitignore
-.travis.yml
+*
+!package.json
+!yarn.lock
 
-.cache
-node_modules
-public
-favicons
-tmp
-tags
+!comments
+!examples
+!static
+!src
 
-# We use yarn
-package-lock.json
+!gatsby*
+!.babelrc
+!.eslintrc.js
+!.mdlrc
+!.mdlstyle.rb
+!.prettierrc
 
-Dockerfile
-.dockerignore
-*.log
+!nginx.conf
