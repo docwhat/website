@@ -1,28 +1,21 @@
-import g, { Time, Em, Strong, Span } from 'glamorous'
+import g from 'glamorous'
 import React from 'react'
 import { rhythm } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 
-const CalendarPage = (props) => {
-  const {
-    monthName,
-    dayName,
-    dayOfMonth,
-    ymdDate
-  } = props
+const CalendarPage = props => {
+  const { dayName, dayOfMonth, ymdDate, monthName } = props
 
   const commonCSS = {
-    display: "block",
-    width: "100%",
-    fontSize: "1em",
-    fontWeight: "bold",
-    fontStyle: "normal",
-    textAlign: "center",
+    display: 'block',
+    fontSize: '1em',
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    width: '100%',
   }
 
-  const bannerColor = heroColor
-    .saturate(0.2)
-    .darken(0.45)
+  const bannerColor = heroColor.saturate(0.2).darken(0.45)
 
   const rmult = 5 / 12
   const year = ymdDate.split('-')[0]
@@ -30,49 +23,60 @@ const CalendarPage = (props) => {
   // Original idea from:
   // https://www.sitepoint.com/create-calendar-icon-html5-css3/
   return (
-    <Time
+    <g.Time
       css={{
-        display: "block",
+        backgroundColor: '#ffffff',
+        borderRadius: rhythm(0.6 * rmult),
+        boxShadow:
+          '0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd',
+        display: 'block',
+        fontSize: rhythm(rmult),
+        /* change icon size */
+        height: rhythm(7 * rmult),
         margin: 0,
+        overflow: 'hidden',
         position: 'relative',
-        fontSize: rhythm( rmult ), /* change icon size */
-        width: rhythm( 7 * rmult ),
-        height: rhythm( 7 * rmult ),
-        backgroundColor: "#ffffff",
-        borderRadius: rhythm( 0.6 * rmult ),
-        boxShadow: "0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd",
-        overflow: "hidden",
+        width: rhythm(7 * rmult),
       }}
       dateTime={ymdDate}
       title={ymdDate}
     >
-      <Em
+      <g.Em
         css={{
           ...commonCSS,
-          position: "absolute",
-          bottom: rhythm( 0.3 * rmult ),
+          bottom: rhythm(0.3 * rmult),
           color: bannerColor.string(),
-        }} >{dayName}</Em>
-      <Strong
+          position: 'absolute',
+        }}
+      >
+        {monthName}
+      </g.Em>
+      <g.Strong
         css={{
           ...commonCSS,
-          position: "absolute",
-          top: "0",
-          padding: `${rhythm( 0.4 * rmult )} 0`,
-          color: "#fff",
           backgroundColor: bannerColor.string(),
           borderBottom: `1px dashed ${bannerColor.darken(0.2).string()}`,
           boxShadow: `0 2px 0 ${bannerColor.string()}`,
-        }} >{monthName}</Strong>
-      <Span
+          color: '#fff',
+          padding: `${rhythm(0.4 * rmult)} 0`,
+          position: 'absolute',
+          top: '0',
+        }}
+      >
+        {year}
+      </g.Strong>
+      <g.Span
         css={{
           ...commonCSS,
-          fontSize: rhythm( 2.0 * rmult ),
-          letterSpacing: rhythm( -0.05 * rmult ),
-          paddingTop: rhythm( 2.6 * rmult ),
-          color: "#2f2f2f",
-        }}>{dayOfMonth}</Span>
-    </Time>
+          color: '#2f2f2f',
+          fontSize: rhythm(2.0 * rmult),
+          letterSpacing: rhythm(-0.05 * rmult),
+          paddingTop: rhythm(2.6 * rmult),
+        }}
+      >
+        {dayOfMonth}
+      </g.Span>
+    </g.Time>
   )
 }
 
@@ -81,9 +85,9 @@ export default CalendarPage
 export const query = graphql`
   fragment calendarPageDatesFragment on MarkdownRemark {
     fields {
-      ymdDate: date(formatString: "YYYY-MM-DD"),
-      monthName: date(formatString: "MMMM"),
-      dayName: date(formatString: "dddd"),
+      ymdDate: date(formatString: "YYYY-MM-DD")
+      monthName: date(formatString: "MMMM")
+      dayName: date(formatString: "dddd")
       dayOfMonth: date(formatString: "D")
     }
   }
