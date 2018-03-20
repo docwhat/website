@@ -7,7 +7,7 @@ import get from 'lodash/get'
 import { rhythm, scale } from '../utils/typography'
 
 // Components
-import Link from 'gatsby-link'
+import PostPaginator from '../components/PostPaginator.js'
 import Bio from '../components/Bio.js'
 import PageHeader from '../components/PageHeader.js'
 import SubmitComment from '../components/SubmitComment.js'
@@ -51,29 +51,15 @@ const PostTemplate = props => {
         ymdDate={ymdDate}
       />
 
+      <PostPaginator older={older} newer={newer} />
+
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
       <h2>Comments</h2>
       <Comments comments={comments} />
       <SubmitComment slug={slug} url={pageUrl} />
 
-      <g.Div
-        css={{
-          backgroundColor: '#def',
-          margin: '1em 0',
-        }}
-      >
-        {older && (
-          <Link className={linkStyle} to={older.fields.slug}>
-            &lt;- {older.fields.title}
-          </Link>
-        )}
-        {newer && (
-          <Link className={linkStyle} to={newer.fields.slug}>
-            -&gt; {newer.fields.title}
-          </Link>
-        )}
-      </g.Div>
+      <PostPaginator older={older} newer={newer} />
 
       <g.Hr css={{ marginBottom: rhythm(1) }} />
 
