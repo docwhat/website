@@ -4365,11 +4365,11 @@ gatsby-remark-copy-linked-files@^1.5.30:
     unist-util-visit "^1.1.1"
 
 gatsby-remark-embed-snippet@^1.0.12:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.13.tgz#b09ae88253c6788b8495b0f0d16f172d8ed99043"
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.15.tgz#d1ef3939d332d66293b4888d30bf9aaecd7cb710"
   dependencies:
     babel-runtime "^6.26.0"
-    gatsby-remark-prismjs "^1.2.18"
+    gatsby-remark-prismjs "^1.2.20"
     normalize-path "^2.1.1"
     parse-numeric-range "^0.0.2"
     unist-util-map "^1.0.3"
@@ -4393,9 +4393,9 @@ gatsby-remark-images@^1.5.56:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-remark-prismjs@^1.2.18:
-  version "1.2.18"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.18.tgz#b18a9130fe111095c4b53aba41f235c440be2197"
+gatsby-remark-prismjs@^1.2.18, gatsby-remark-prismjs@^1.2.20:
+  version "1.2.20"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.20.tgz#2ec4d014a44c7eea05ea3727decc095804a8fc75"
   dependencies:
     babel-runtime "^6.26.0"
     parse-numeric-range "0.0.2"
