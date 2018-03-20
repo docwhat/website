@@ -54,17 +54,18 @@ module.exports = {
           'gatsby-remark-smartypants',
           `gatsby-remark-autolink-headers`,
           {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              classPrefix: 'language-',
-              inlineCodeMarker: '›', // option-shift-4
-            },
-          },
-          {
+            // This must go before prismjs.
             resolve: 'gatsby-remark-embed-snippet',
             options: {
               classPrefix: 'language-',
               directory: `${__dirname}/examples/`,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: '›', // option-shift-4
             },
           },
         ],
