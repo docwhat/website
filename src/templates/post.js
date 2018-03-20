@@ -90,7 +90,11 @@ const PostTemplate = props => {
 
 PostTemplate.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object.isRequired,
+    markdownRemark: PropTypes.shape({
+      fields: PropTypes.object.isRequired,
+      wordCount: PropTypes.object.isRequired,
+      html: PropTypes.string.isRequired,
+    }).isRequired,
   }).isRequired,
 }
 
