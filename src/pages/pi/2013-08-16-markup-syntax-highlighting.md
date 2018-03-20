@@ -101,7 +101,7 @@ the elements:
 
 Inline version `<button />` is here.
 
-```none
+```
 Block version <button /> is here.
 ```
 
