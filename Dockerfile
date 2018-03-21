@@ -32,9 +32,22 @@ RUN yarn run lint
 FROM lint AS build
 ENV NODE_ENV production
 RUN yarn run build
-RUN pigz -11 --recursive --keep public
+
+###################
+FROM build AS compress
+RUN find public -type f \
+      \( \
+      -name '*.css' -o \
+      -name '*.html' -o \
+      -name '*.js' -o \
+      -name '*.json' -o \
+      -name '*.map' -o \
+      -name '*.txt' -o \
+      -name '*.xml' \
+      \) -print0 | xargs -0 pigz -11 --keep
+RUN find public -ls
 
 #################################
 FROM nginx:stable-alpine AS final
-COPY --from=build /workdir/public/ /html
+COPY --from=compress /workdir/public/ /html
 COPY nginx.conf /etc/nginx/nginx.conf
