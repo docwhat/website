@@ -1,4 +1,5 @@
 ;('use strict')
+// @format
 
 import React from 'react'
 import g from 'glamorous'

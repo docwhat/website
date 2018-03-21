@@ -1,3 +1,4 @@
+// @format
 import React from 'react'
 import g, { H1, Div } from 'glamorous'
 import Link from '../components/Link.js'

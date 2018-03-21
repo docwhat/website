@@ -1,3 +1,4 @@
+// @format
 import g, { Header, H1, Div } from 'glamorous'
 import React from 'react'
 import PropTypes from 'prop-types'

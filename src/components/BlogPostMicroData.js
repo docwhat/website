@@ -1,3 +1,4 @@
+// @format
 import React from 'react'
 import PropTypes from 'prop-types'
 import avatarPic from '../components/avatar.png'

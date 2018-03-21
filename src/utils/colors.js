@@ -1,3 +1,4 @@
+// @format
 import Color from 'color'
 
 // Documentation: https://github.com/Qix-/color

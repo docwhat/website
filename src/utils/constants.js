@@ -1,3 +1,4 @@
+// @format
 /* Various Constants */
 
 export const authorName = 'Christian Höltje'
