@@ -44,7 +44,6 @@ RUN find public -type f \
       -name '*.txt' -o \
       -name '*.xml' \
       \) -print0 | xargs -0 pigz -11 --keep
-RUN find public -ls
 
 #################################
 FROM nginx:stable-alpine AS final
