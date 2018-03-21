@@ -9,4 +9,7 @@ public
 # We use yarn
 package-lock.json
 *.log
+tags
+*.tmp
+*.temp
 tmp/
