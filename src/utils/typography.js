@@ -54,14 +54,14 @@ const typography = new Typography({
 
     return {
       h1: {
-        borderBottom: `1px solid ${gray(93)}`,
-        paddingBottom: `calc(${rhythm(1 / 4)} - 1px)`,
+        borderBottom: `1.0px solid ${gray(93)}`,
+        paddingBottom: `calc(${rhythm(1 / 4)} - 1.0px)`,
         marginBottom: rhythm(3 / 4),
         marginTop: rhythm(1.5),
       },
       h2: {
-        borderBottom: `1px solid ${gray(93)}`,
-        paddingBottom: `calc(${rhythm(1 / 4)} - 1px)`,
+        borderBottom: `1.0px solid ${gray(93)}`,
+        paddingBottom: `calc(${rhythm(1 / 4)} - 1.0px)`,
         marginBottom: rhythm(1 / 4),
         marginTop: rhythm(1),
       },
@@ -71,6 +71,10 @@ const typography = new Typography({
       'h3,h4,h5,h6': {
         marginBottom: rhythm(1 / 2),
         marginTop: rhythm(1),
+      },
+
+      hr: {
+        height: '1.0px',
       },
 
       'ol,ul': {
@@ -94,7 +98,7 @@ const typography = new Typography({
       },
       '.gatsby-highlight pre.language-terminal code': {
         color: '#eee',
-        textShadow: '0 1px #888',
+        textShadow: '0 1.0px #888',
       },
 
       blockquote: {
