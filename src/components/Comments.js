@@ -28,7 +28,13 @@ const Comments = data => {
       </Comment>
     )
   })
-  return <div>{commentList}</div>
+  return (
+    <div>
+      <h2>Comments</h2>
+
+      {commentList}
+    </div>
+  )
 }
 
 export default Comments

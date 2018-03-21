@@ -55,7 +55,6 @@ const PostTemplate = props => {
 
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
-      <h2>Comments</h2>
       <Comments comments={comments} />
       <SubmitComment slug={slug} url={pageUrl} />
 
