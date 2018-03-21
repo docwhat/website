@@ -1,4 +1,4 @@
-import g, { Div, Label, Input, Span, Form, Legend, Textarea } from 'glamorous'
+import g, { Div, Form, Input, Label, Legend, Textarea, Span } from 'glamorous'
 import { css } from 'glamor'
 import React from 'react'
 import Helmet from 'react-helmet'
@@ -12,11 +12,11 @@ import StyledButton from './StyledButton.js'
 // TODO: Use a GraphQL Fragment
 
 const textBoxCss = css({
-  padding: `0 ${rhythm(1 / 4)}`,
   '::placeholder': {
     color: heroColor.darken(0.7).string(),
     fontStyle: 'italic',
   },
+  padding: `0 ${rhythm(1 / 4)}`,
 })
 
 const FormOption = props => {
@@ -28,14 +28,14 @@ const FormOption = props => {
 const StyledLabel = g.label(props => {
   let styles = [
     {
+      ':focus': {
+        background: heroColor.string(),
+      },
       display: 'flex',
       flexDirection: 'row',
       flexWrap: 'wrap',
       justifyContent: 'flex-start',
       margin: '1em 0',
-      ':focus': {
-        background: heroColor.string(),
-      },
     },
   ]
 
@@ -64,8 +64,8 @@ const Labelled = props => {
     requiredText = (
       <Span
         css={{
-          fontStyle: 'italic',
           color: heroColor.darken(0.5).string(),
+          fontStyle: 'italic',
         }}
       >
         (optional)
@@ -76,7 +76,8 @@ const Labelled = props => {
   return (
     <StyledLabel css={props['labelCss']}>
       <StyledLabelDiv css={props['divCss']}>
-        {props.label} {requiredText}
+        {props.label}
+        {requiredText}
       </StyledLabelDiv>
       {props.children}
     </StyledLabel>
@@ -103,7 +104,9 @@ const ReCaptcha = () => {
   return null
   const siteKey = '6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P'
   const secret =
-    'HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dvqJopL1jhByo='
+    'HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8' +
+    'y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dv' +
+    'qJopL1jhByo='
   return (
     <Div>
       <Helmet>
@@ -117,90 +120,125 @@ const ReCaptcha = () => {
 }
 
 class SubmitComment extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isOpen: false,
+    }
+  }
+  toggleForm() {
+    if (this.props.closeSection) {
+      this.props.onCloseSectionClick && this.props.onCloseSectionClick()
+    } else {
+      this.setState({
+        isOpen: !this.state.isOpen,
+      })
+    }
+  }
   render() {
     const formUrl =
       'https://api.staticman.net/v2/entry/docwhat/docwhat/master/comments'
     const returnUrl = this.props.url
     const slug = this.props.slug
     const slugdir = slug.replace(/^\/+|\/+$/g, '')
+
     return (
       <Form method="POST" action={formUrl}>
         <Legend
           css={{
-            fontSize: rhythm(1),
+            ':hover': {
+              textDecoration: 'underline',
+            },
+            cursor: 'pointer',
             flex: '0 0 100%',
+            fontSize: rhythm(1),
           }}
+          onClick={this.toggleForm.bind(this)}
         >
-          Submit a Comment
-        </Legend>
-        <FormOption option="redirect" value={returnUrl} />
-        <FormOption option="slug" value={slug} />
-        <FormOption option="slugdir" value={slugdir} />
-
-        <LabelledInput
-          label="Name"
-          name="fields[name]"
-          type="text"
-          placeholder="Joe Cool"
-          required
-        />
-
-        <LabelledInput
-          label="E-mail"
-          name="fields[email]"
-          type="email"
-          placeholder="joe.cool@example.com"
-          required
-        />
-
-        <LabelledInput
-          label="Website"
-          name="fields[url]"
-          type="url"
-          placeholder="http://joecool.example.com/"
-        />
-
-        <Labelled label="Message" required>
-          <Textarea
-            name="fields[message]"
-            placeholder="Type your message. You can use **Markdown**!"
+          Submit a Comment{' '}
+          <div
             css={{
-              flex: '0 1 70%',
-              width: '100%',
-              minWidth: rhythm(10),
-              height: rhythm(5),
-            }}
-            {...textBoxCss}
-          />
-        </Labelled>
-
-        <Labelled
-          label="I want to be notified of new comments"
-          divCss={{
-            display: 'inline-block',
-            flex: '1 0 80%',
-          }}
-          required
-        >
-          <Div
-            css={{
-              flex: '0 1 20%',
-              textAlign: 'right',
+              margin: '0 0.5em',
+              display: 'inline-block',
+              transform: !this.state.isOpen ? 'rotate(-90deg)' : null,
             }}
           >
-            <Input type="checkbox" name="options[subscribe]" css={{}} />
-          </Div>
-        </Labelled>
+            ▼
+          </div>
+        </Legend>
+        {this.state.isOpen ? (
+          <div>
+            <FormOption option="redirect" value={returnUrl} />
+            <FormOption option="slug" value={slug} />
+            <FormOption option="slugdir" value={slugdir} />
 
-        <ReCaptcha />
+            <LabelledInput
+              label="Name"
+              name="fields[name]"
+              type="text"
+              placeholder="Joe Cool"
+              required
+            />
 
-        <Div
-          css={{
-            textAlign: 'right',
-          }}
-        >
-          <StyledButton>Comment</StyledButton>
-        </Div>
+            <LabelledInput
+              label="E-mail"
+              name="fields[email]"
+              type="email"
+              placeholder="joe.cool@example.com"
+              required
+            />
+
+            <LabelledInput
+              label="Website"
+              name="fields[url]"
+              type="url"
+              placeholder="http://joecool.example.com/"
+            />
+
+            <Labelled label="Message" required>
+              <Textarea
+                name="fields[message]"
+                placeholder="Type your message. You can use **Markdown**!"
+                css={{
+                  flex: '0 1 70%',
+                  height: rhythm(5),
+                  minWidth: rhythm(10),
+                  width: '100%',
+                }}
+                {...textBoxCss}
+              />
+            </Labelled>
+
+            <Labelled
+              label="I want to be notified of new comments"
+              divCss={{
+                display: 'inline-block',
+                flex: '1 0 80%',
+              }}
+              required
+            >
+              <Div
+                css={{
+                  flex: '0 1 20%',
+                  textAlign: 'right',
+                }}
+              >
+                <Input type="checkbox" name="options[subscribe]" css={{}} />
+              </Div>
+            </Labelled>
+
+            <ReCaptcha />
+
+            <Div
+              css={{
+                textAlign: 'right',
+              }}
+            >
+              <StyledButton>Comment</StyledButton>
+            </Div>
+          </div>
+        ) : null}
       </Form>
     )
   }
