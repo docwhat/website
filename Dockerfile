@@ -32,7 +32,7 @@ RUN yarn run lint
 FROM lint AS build
 ENV NODE_ENV production
 RUN yarn run build
-RUN pigz -11 --recursive public
+RUN pigz -11 --recursive --keep public
 
 #################################
 FROM nginx:stable-alpine AS final
