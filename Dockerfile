@@ -36,5 +36,5 @@ RUN pigz -11 --recursive public
 
 #################################
 FROM nginx:stable-alpine AS final
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /workdir/public/ /html
+COPY --chown=nginx:nginx --from=build /workdir/public/ /html
+COPY --chown=nginx:nginx nginx.conf /etc/nginx/nginx.conf
