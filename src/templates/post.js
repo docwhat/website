@@ -52,8 +52,6 @@ const PostTemplate = props => {
         ymdDate={ymdDate}
       />
 
-      <PostPaginator older={older} newer={newer} />
-
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
       <Comments comments={comments} />
