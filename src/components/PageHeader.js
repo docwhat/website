@@ -25,7 +25,7 @@ const PageHeader = props => {
     <Header
       css={{
         display: 'flex',
-        border: '1px solid hsla(0, 0%, 0%, 0)',
+        border: '1.0px solid hsla(0, 0%, 0%, 0)',
         minHeight: calendarIcon === '' ? 'unset' : rhythm(7 / 2),
         marginBottom: rhythm(1),
       }}

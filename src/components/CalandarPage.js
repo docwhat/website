@@ -28,7 +28,7 @@ const CalendarPage = props => {
         backgroundColor: '#ffffff',
         borderRadius: rhythm(0.6 * rmult),
         boxShadow:
-          '0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd',
+          '0 1.0px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1.0px #bdbdbd',
         display: 'block',
         fontSize: rhythm(rmult),
         /* change icon size */
@@ -55,7 +55,7 @@ const CalendarPage = props => {
         css={{
           ...commonCSS,
           backgroundColor: bannerColor.string(),
-          borderBottom: `1px dashed ${bannerColor.darken(0.2).string()}`,
+          borderBottom: `1.0px dashed ${bannerColor.darken(0.2).string()}`,
           boxShadow: `0 2px 0 ${bannerColor.string()}`,
           color: '#fff',
           padding: `${rhythm(0.4 * rmult)} 0`,
