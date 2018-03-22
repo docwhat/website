@@ -7,6 +7,7 @@ import gray from 'gray-percentage'
 import { rhythm } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 import StyledButton from './StyledButton.js'
+import IconBubbles2 from './IconBubbles2.js'
 
 // TODO: Move the reCapcha into a separate component.
 // TODO: Get reCaptcha siteKey and secret from staticman.yml instead.
@@ -157,7 +158,7 @@ class SubmitComment extends React.Component {
           }}
           onClick={this.toggleForm.bind(this)}
         >
-          Submit a Comment{' '}
+          <IconBubbles2 /> Submit a Comment{' '}
           <div
             css={{
               margin: '0 0.5em',
