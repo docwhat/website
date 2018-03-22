@@ -15,15 +15,15 @@ const Pager = ({ props, node, side, text }) => (
       textAlign: side,
     }}
   >
-    <Link to={node.fields.slug}>
+    <Link
+      to={node.fields.slug}
+      css={{
+        display: 'block',
+      }}
+      title={node.fields.date}
+    >
       <div css={{ fontWeight: 'bold' }}>{text}</div>
-      <div
-        css={{
-          whiteSpace: 'nowrap',
-          overflow: 'hidden',
-          textOverflow: 'ellipsis',
-        }}
-      >
+      <div>
         {side !== 'right' ? <IconArrowLeft /> : null} {node.fields.title}{' '}
         {side === 'right' ? <IconArrowRight /> : null}
       </div>
