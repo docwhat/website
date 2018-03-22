@@ -180,6 +180,10 @@ css.global('iframe', {
   maxHeight: '420px',
 })
 
+css.global('svg', {
+  verticalAlign: 'text-top',
+})
+
 css.global({})
 
 // Hot reload typography in development.

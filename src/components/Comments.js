@@ -2,6 +2,8 @@
 import React from 'react'
 import { rhythm } from '../utils/typography'
 import Comment from './Comment.js'
+import FontAwesome from 'react-fontawesome'
+import CommentsIcon from '../icons/comments.svg'
 
 const Comments = data => {
   if (data.comments === null) {
@@ -31,7 +33,9 @@ const Comments = data => {
   })
   return (
     <div>
-      <h2>Comments</h2>
+      <h2>
+        <CommentsIcon /> Comments
+      </h2>
 
       {commentList}
     </div>

@@ -7,7 +7,9 @@ import gray from 'gray-percentage'
 import { rhythm } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 import StyledButton from './StyledButton.js'
-import IconBubbles2 from './IconBubbles2.js'
+
+import CaretRightIcon from '../icons/caret-right.svg'
+import CommentIcon from '../icons/comment-alt.svg'
 
 // TODO: Move the reCapcha into a separate component.
 // TODO: Get reCaptcha siteKey and secret from staticman.yml instead.
@@ -158,16 +160,12 @@ class SubmitComment extends React.Component {
           }}
           onClick={this.toggleForm.bind(this)}
         >
-          <IconBubbles2 /> Submit a Comment{' '}
-          <div
+          <CommentIcon css={{ width: '1.125em' }} /> Submit a Comment{' '}
+          <CaretRightIcon
             css={{
-              margin: '0 0.5em',
-              display: 'inline-block',
-              transform: !this.state.isOpen ? 'rotate(-90deg)' : null,
+              transform: this.state.isOpen ? 'rotate(90deg)' : null,
             }}
-          >
-            ▼
-          </div>
+          />
         </Legend>
         {this.state.isOpen ? (
           <div>

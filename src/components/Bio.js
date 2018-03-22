@@ -4,42 +4,9 @@ import g, { Div, Img } from 'glamorous'
 
 import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
-import { FaGithub, FaTwitter } from 'react-icons/lib/fa'
-
-// TODO: Pull docwhat.org from siteUrl
-
-const makeProfileLink = (icon, url, username) => {
-  return (
-    <span
-      style={{
-        whiteSpace: 'nowrap',
-        margin: '0 0.2em',
-      }}
-      className="u-url"
-      rel="me"
-    >
-      {React.createElement(icon, {
-        style: {
-          display: 'inline-block',
-          verticalAlign: 'middle',
-          fill: '#888',
-        },
-      })}
-      <a href={url}>{username}</a>
-    </span>
-  )
-}
-
-const GithubBio = makeProfileLink(
-  FaGithub,
-  'https://github.com/docwhat',
-  'docwhat'
-)
-const TwitterBio = makeProfileLink(
-  FaTwitter,
-  'https://twitter.com/docwhat',
-  'docwhat'
-)
+import GithubLogo from '../icons/github.svg'
+import TwitterLogo from '../icons/twitter.svg'
+import { siteUrl, authorName } from '../utils/constants.js'
 
 class Bio extends React.Component {
   render() {
@@ -51,7 +18,7 @@ class Bio extends React.Component {
         className="h-card"
         rel="me"
       >
-        <a className="u-url" rel="me" href="https://docwhat.org/">
+        <a className="u-url" rel="me" href={siteUrl}>
           <Img
             className="u-photo p-nickname"
             rel="me"
@@ -69,11 +36,31 @@ class Bio extends React.Component {
         <p>
           The personal blog of{' '}
           <strong rel="me" className="p-name">
-            Christian Höltje
+            {authorName}
           </strong>.
           <br />
-          {GithubBio}
-          {TwitterBio}
+          <span
+            style={{
+              whiteSpace: 'nowrap',
+              margin: '0 0.2em',
+            }}
+            className="u-url"
+            rel="me"
+          >
+            <GithubLogo css={{ fill: '#888' }} />{' '}
+            <a href="https://github.com/docwhat">docwhat</a>
+          </span>
+          <span
+            style={{
+              whiteSpace: 'nowrap',
+              margin: '0 0.2em',
+            }}
+            className="u-url"
+            rel="me"
+          >
+            <TwitterLogo css={{ fill: '#888' }} />{' '}
+            <a href="https://twitter.com/docwhat">docwhat</a>
+          </span>
         </p>
       </Div>
     )
