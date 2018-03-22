@@ -11,7 +11,6 @@ RUN yarn install --no-cache --frozen-lockfile
 # keep this in sync with .dockerignore
 COPY ./static   ./static
 COPY ./comments ./comments
-COPY ./examples ./examples
 COPY ./src      ./src
 COPY \
   ./package.json \

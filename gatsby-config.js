@@ -58,7 +58,7 @@ module.exports = {
             resolve: 'gatsby-remark-embed-snippet',
             options: {
               classPrefix: 'language-',
-              directory: `${__dirname}/examples/`,
+              directory: `${__dirname}/src/examples/`,
             },
           },
           {
