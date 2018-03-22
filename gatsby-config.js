@@ -1,9 +1,13 @@
+// @format
+
+const { authorName, siteUrl, siteTitle } = require('./src/utils/constants.js')
+
 module.exports = {
   siteMetadata: {
-    title: "docwhat's blog",
-    author: 'Christian Höltje',
+    title: siteTitle,
+    author: authorName,
     description: 'Personal blog of Christian Höltje',
-    siteUrl: 'https://docwhat.org',
+    siteUrl: siteUrl,
   },
   plugins: [
     {

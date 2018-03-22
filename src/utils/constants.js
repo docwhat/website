@@ -1,18 +1,23 @@
 // @format
-/* Various Constants */
 
-export const authorName = 'Christian Höltje'
-export const authorUrl = 'https://docwhat.org'
-export const authorSameAs = [
+/* Various Constants */
+// This must not use ES6 magic!
+
+exports.authorName = 'Christian Höltje'
+exports.authorUrl = 'https://docwhat.org'
+
+exports.authorSameAs = [
   'https://twitter.com/docwhat',
   'https://github.com/docwhat',
 ]
-export const authorJsonLd = {
+
+exports.authorJsonLd = {
   '@type': 'Person',
-  name: authorName,
-  sameAs: authorSameAs,
+  name: exports.authorName,
+  sameAs: exports.authorSameAs,
 }
 
-export const siteTitle = "docwhat's blog"
-export const siteUrl =
-  typeof window === 'undefined' ? authorUrl : window.location.origin
+exports.siteTitle = "docwhat's blog"
+
+exports.siteUrl =
+  typeof window === 'undefined' ? exports.authorUrl : window.location.origin
