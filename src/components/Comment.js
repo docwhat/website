@@ -2,7 +2,17 @@
 import g, { Article, Div, Header, A, Time } from 'glamorous'
 import React from 'react'
 import { rhythm } from '../utils/typography'
-import Gravatar from 'react-gravatar'
+import Gravatar from './Gravatar.js'
+import gray from 'gray-percentage'
+
+const isMe = md5 => {
+  const myMd5s = [
+    '2721fe8ffd609b6df0d4b734defc9cd5',
+    '4e8076a0fdac6b8f284d8b316efdf7f3',
+  ]
+
+  return myMd5s.includes(md5)
+}
 
 const Comment = props => {
   const { name, url, email, friendlyDate, iso8601Date, children } = props
@@ -24,9 +34,12 @@ const Comment = props => {
         }}
       >
         <Gravatar
-          style={{
+          css={{
             width: '100%',
             borderRadius: '50%',
+            boxShadow: isMe(email)
+              ? `8px 8px 16px ${gray(60)}`
+              : `2px 2px 1px ${gray(50)}`,
           }}
           size={60}
           md5={email}
