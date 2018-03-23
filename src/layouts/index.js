@@ -8,8 +8,6 @@ import Logo from '../icons/logo.svg'
 import { rhythm, scale, options as typo } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 
-require('../utils/prismjs.css')
-
 class DefaultLayout extends React.Component {
   render() {
     const { location, children } = this.props
