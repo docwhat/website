@@ -3,8 +3,9 @@ import React from 'react'
 import g, { H1, Div } from 'glamorous'
 import Link from '../components/Link.js'
 import PropTypes from 'prop-types'
+import Logo from '../icons/logo.svg'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm, scale, options as typo } from '../utils/typography'
 import { heroColor } from '../utils/colors.js'
 
 require('../utils/prismjs.css')
@@ -19,16 +20,22 @@ class DefaultLayout extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    let scaleFactor = location.pathname === rootPath ? 1 : 1 / 4
+    let scaleFactor = location.pathname === rootPath ? 5 / 4 : 1 / 4
 
     header = (
-      <H1
+      <g.Header
         css={{
           ...scale(1.5 * scaleFactor),
           marginBottom: rhythm(1.5 * scaleFactor),
           marginTop: 0,
+          borderBottomStyle: 'solid',
           borderBottomWidth: rhythm(1 / 2 * scaleFactor),
           borderBottomColor: heroColor.string(),
+          fontFamily: typo.headerFontFamily
+            .map(fontName => `"${fontName}"`)
+            .join(', '),
+          fontWeight: 700,
+          textRendering: 'optimizeLegibility',
         }}
       >
         <Link
@@ -39,9 +46,10 @@ class DefaultLayout extends React.Component {
           }}
           to={'/'}
         >
+          <Logo />
           {"docwhat's blog"}
         </Link>
-      </H1>
+      </g.Header>
     )
     return (
       <Div

@@ -104,7 +104,6 @@ module.exports = {
       options: {
         dir: `${__dirname}/src/icons`,
         icon: true,
-        viewBox: false,
         // see https://github.com/smooth-code/svgr for a list of all options
       },
     },
