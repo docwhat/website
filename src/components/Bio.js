@@ -1,6 +1,6 @@
 // @format
 import React from 'react'
-import g, { Div, Img } from 'glamorous'
+import g from 'glamorous'
 
 import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
@@ -22,7 +22,7 @@ class Bio extends React.Component {
           rel="me"
         >
           <a className="u-url" rel="me" href={siteUrl}>
-            <Img
+            <g.Img
               className="u-photo p-nickname"
               rel="me"
               src={avatarPic}
