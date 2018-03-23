@@ -2,14 +2,9 @@
 id: 245
 title: Aquamacs vs. Dvorak-Qwerty layout
 date: 2009-01-29T01:17:20+00:00
-author: docwhat
 template: post
 guid: http://docwhat.org/?p=245
 slug: /aquamacs-vs-dvorak-qwerty-layout/
-openid_comments:
-  - 'a:1:{i:0;s:4:"6074";}'
-categories:
-  - docwhat
 tags:
   - dvorak
   - emacs
@@ -41,7 +36,7 @@ Hopefully this will be useful for someone. If not, it'll be useful for me when I
 
 Ciao!
 
-```{.python}
+```python
 #!/usr/bin/python -utWall
 # -*- coding: utf-8 -*-
 
