@@ -107,6 +107,12 @@ Block version <button /> is here.
 
 See [bug #4597](https://github.com/gatsbyjs/gatsby/issues/4597)
 
+### Long inline code
+
+This is a really
+`javascript›const reallyLongNameThatIsAnnoyinglyLong = { apples: 1, cats: 3, dogs: 20, deer: 2, rodents: 5 };`
+and the sentence continues afterwards.
+
 ### Code Embed
 
 An example of a code file embed below.
