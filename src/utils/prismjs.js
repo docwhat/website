@@ -1,10 +1,6 @@
-import gray from 'gray-percentage'
 import { css } from 'glamor'
 import { heroColor } from './colors.js'
-import {
-  TABLET_MEDIA_QUERY,
-  MOBILE_MEDIA_QUERY,
-} from 'typography-breakpoint-constants'
+import Color from 'color'
 
 /**
  * Based on:
@@ -21,8 +17,18 @@ const monoSpaceFontFamily = [
   'monospace',
 ]
 
+const codeBox = {
+  borderWidth: '1px',
+  borderStyle: 'solid',
+  borderColor: '#dddddd',
+  backgroundColor: '#f8f8f8',
+}
+
+const baseColor = heroColor.saturationl(5).lightness(22)
+// const baseColor = Color('#393a34')
+
 css.global(`code[class*='language-'], pre[class*='language-']`, {
-  color: '#393a34',
+  color: baseColor,
   fontFamily: monoSpaceFontFamily.map(s => `"${s}"`).join(', '),
   direction: 'ltr',
   textAlign: 'left',
@@ -43,29 +49,31 @@ css.global(`pre[class*='language-']`, {
   padding: '1em',
   margin: '0.5em 0',
   overflow: 'auto',
-  border: '1px solid #dddddd',
-  backgroundColor: 'white',
   whiteSpace: 'pre',
   wordSpacing: 'normal',
   wordBreak: 'normal',
+  ...codeBox,
 })
 
 /* Inline code */
 css.global(`:not(pre) > code[class*='language-']`, {
-  padding: '0.2em',
+  display: 'inline-block',
+  paddingRight: '0.2em',
+  paddingLeft: '0.2em',
   paddingTop: '1px',
   paddingBottom: '1px',
-  background: '#f8f8f8',
-  border: '1px solid #dddddd',
+  whiteSpace: 'pre-wrap',
+  wordBreak: 'word-break',
+  ...codeBox,
 })
 
 css.global('.token.comment, .token.prolog, .token.doctype, .token.cdata', {
-  color: '#999988',
+  color: heroColor.saturationl(20).darken(0.2),
   fontStyle: 'italic',
 })
 
 css.global('.token.namespace', {
-  opacity: 0.7,
+  opacity: '0.7',
 })
 
 css.global('.token.string, .token.attr-value', {
@@ -73,20 +81,20 @@ css.global('.token.string, .token.attr-value', {
 })
 
 css.global('.token.punctuation, .token.operator', {
-  color: '#393a34' /* no highlight */,
+  color: baseColor /* no highlight */,
 })
 
 css.global(
   '.token.entity, .token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.property, .token.regex, .token.inserted',
   {
-    color: '#36acaa',
+    color: 'hsl(228, 95%, 40%)',
   }
 )
 
 css.global(
   '.token.atrule, .token.keyword, .token.attr-name, .language-autohotkey .token.selector',
   {
-    color: '#00a4db',
+    color: heroColor.darken(0.5),
   }
 )
 

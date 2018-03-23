@@ -172,9 +172,10 @@ css.global('body', {
 css.global('a', {
   color: '#4078c0',
   textDecoration: 'none',
-  ':hover,:active': {
-    textDecoration: 'underline',
-  },
+})
+
+css.global('a:hover,a:active', {
+  textDecoration: 'underline',
 })
 
 css.global('iframe', {
