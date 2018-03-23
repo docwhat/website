@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Post: Teaser Image with OpenGraph Override"
 header:
   teaser: /assets/images/page-header-teaser.png

@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 categories:
 - Post Formats
 tags:

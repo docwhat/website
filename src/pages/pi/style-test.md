@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 slug: '/pi/style-test/'
 template: page
 title: Style and Layout test

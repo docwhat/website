@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Post: Image (Standard)"
 categories:
   - Post Formats

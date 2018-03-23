@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Post: Twitter Embed"
 categories:
   - Media

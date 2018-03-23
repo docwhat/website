@@ -1,6 +1,7 @@
 // @format
 import React from 'react'
 import Link from 'gatsby-link'
+import glamorous from 'glamorous'
 
 const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
 
@@ -9,4 +10,8 @@ const MyLink = props => {
   return <Link {...props} to={to} />
 }
 
-export default MyLink
+const MyGlamorousLink = glamorous(MyLink)(props => ({ to }) => {
+  to
+})
+
+export default MyGlamorousLink

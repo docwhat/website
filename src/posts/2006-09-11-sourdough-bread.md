@@ -2,36 +2,32 @@
 id: 9
 title: Sourdough Bread
 date: 2006-09-11T18:00:44+00:00
-author: docwhat
 template: post
 guid: http://docwhat.org/2006/09/sourdough-bread/
 slug: /sourdough-bread/
-title_tag:
-  - ""
-categories:
-  - docwhat
 tags:
   - bread
   - cooking
+archive: true
 ---
+
 In today's episode of "As the chef turns" we find that Linda is filled with remorse, believing that she accidentally killed Chuck with a meat grinder. Chuck, not aware of the confusion he left behind has run off to study at a secret Chinese culinary monastery to become worthy of Alice's love.
 
 Christian's secret plan for world sourdough domination is beginning to take shape in the recipe for loaves of a particular bread...
 
-Prepare the starter {#prepare-the-starter}
--------------------
+## Prepare the starter {#prepare-the-starter}
 
 ### Software (ingredients) {#software-ingredients}
 
--   1 cup [Sourdough Starter](/sourdough-starter)
--   2 1/2 cups unbleached or all purpose flour. Do *not* use self-rising flour.
--   2 cups warm (105-115 degrees Fahrenheit) water
+* 1 cup [Sourdough Starter](/sourdough-starter)
+* 2 1/2 cups unbleached or all purpose flour. Do _not_ use self-rising flour.
+* 2 cups warm (105-115 degrees Fahrenheit) water
 
 ### Hardware {#hardware}
 
--   One large glass mixing bowl. I strongly suggest that you don't use a metal bowl. If you must, then only use a stainless steel one.
--   Wooden, glass, or plastic spoon. Metal is bad. Yeasts don't work well with metal.
--   A cloth to cover the bowl with.
+* One large glass mixing bowl. I strongly suggest that you don't use a metal bowl. If you must, then only use a stainless steel one.
+* Wooden, glass, or plastic spoon. Metal is bad. Yeasts don't work well with metal.
+* A cloth to cover the bowl with.
 
 We are going to freshen up the starter for the bread. If you just made the starter, then simply grab 1 cup from your mixture before putting it into the fridge for storage instead of doing all the steps below.
 
@@ -43,23 +39,22 @@ Cover it with a cloth and leave it in a warm draft-free place for 8 hours.
 
 Take out 1 cup of the mixture for your bread, then put the rest in the refrigerator, mixing it in with the rest of your starter.
 
-The Dough {#the-dough}
----------
+## The Dough {#the-dough}
 
 ### Software (ingredients) {#software-ingredients-1}
 
--   4 to 4 1/2 cups unbleached flour. Again, do *not* use self-rising flour.
--   1 teaspoon salt
--   3 tablespoons sugar
--   1/4 teaspoon baking soda
--   3 tablespoons salad oil
+* 4 to 4 1/2 cups unbleached flour. Again, do _not_ use self-rising flour.
+* 1 teaspoon salt
+* 3 tablespoons sugar
+* 1/4 teaspoon baking soda
+* 3 tablespoons salad oil
 
 ### Hardware {#hardware-1}
 
--   One large glass mixing bowl. I strongly suggest that you don't use a metal bowl. If you must, then only use a stainless steel one.
--   Wooden, glass, or plastic spoon. Metal is bad. Yeasts don't work well with metal.
--   A second glass bowl, which will need to be greased.
--   A cloth to cover the bowl with.
+* One large glass mixing bowl. I strongly suggest that you don't use a metal bowl. If you must, then only use a stainless steel one.
+* Wooden, glass, or plastic spoon. Metal is bad. Yeasts don't work well with metal.
+* A second glass bowl, which will need to be greased.
+* A cloth to cover the bowl with.
 
 Add about half of the flour with all the rest of the ingredients into the bowl. Mix them until it's smooth and there aren't flour lumps.
 
@@ -77,15 +72,15 @@ You can tell it's ready when you touch it and the dent remains.
 
 #### Software {#software}
 
--   water
+* water
 
 #### Hardware {#hardware-2}
 
--   a greased baking sheet
--   a food-grade brush
+* a greased baking sheet
+* a food-grade brush
 
 1.  Punch the dough down and carefully divide the dough in half.
-2.  Shape each half into the traditional sourdough bread shape; round and slightly flat. Do *not* tear or rip the dough while shaping it.
+2.  Shape each half into the traditional sourdough bread shape; round and slightly flat. Do _not_ tear or rip the dough while shaping it.
 3.  Place the loaves in opposite corners of the baking sheet. Make three 1/4 inch slashes in the top of each loaf.
 4.  Let the dough rise for 1 hour in a warm place.
 5.  Preheat the oven to 375 degrees Fahrenheit.

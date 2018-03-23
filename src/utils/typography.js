@@ -165,6 +165,10 @@ const typography = new Typography({
 })
 
 // Links
+css.global('body', {
+  minWidth: '320px',
+})
+
 css.global('a', {
   color: '#4078c0',
   textDecoration: 'none',

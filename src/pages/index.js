@@ -4,10 +4,12 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { siteTitle, authorUrl, authorJsonLd } from '../utils/constants.js'
+import { rhythm } from '../utils/typography'
 
 import Bio from '../components/Bio.js'
 import PostCard from '../components/PostCard.js'
 import TheNetwork from '../components/TheNetwork.js'
+import Link from '../components/Link.js'
 
 const BlogMicroData = props => {
   const { siteTitle } = props
@@ -46,13 +48,28 @@ class SiteIndex extends React.Component {
             href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
           />
         </Helmet>
-        <Bio />
-        <Div>
+        <Div
+          css={{
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            margin: rhythm(-1 / 2),
+            '&>*': {
+              margin: rhythm(1 / 2),
+            },
+          }}
+        >
           {posts.map(({ node }) => {
             const { fields: { title, slug, date }, excerpt } = node
 
             return (
               <PostCard
+                overrideCss={{
+                  flex: `1 1 ${rhythm(10)}`,
+                  '&>p': {
+                    textAlign: 'justify',
+                  },
+                }}
                 key={slug}
                 slug={slug}
                 title={title}
@@ -61,8 +78,13 @@ class SiteIndex extends React.Component {
               />
             )
           })}
+
+          <Link css={{ width: '100%', textAlign: 'right' }} to="/all">
+            See all blog posts&hellip;
+          </Link>
         </Div>
         <BlogMicroData siteTitle={siteTitle} />
+        <Bio />
         <TheNetwork />
       </Div>
     )
@@ -74,10 +96,11 @@ export default SiteIndex
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
+      limit: 6
       sort: { fields: [fields___date], order: DESC }
       filter: {
         fields: { template: { eq: "post" } }
-        frontmatter: { test: { ne: "true" } }
+        frontmatter: { test: { ne: true }, archive: { ne: true } }
       }
     ) {
       edges {

@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Edge Case: No Tags"
 categories:
   - Edge Case

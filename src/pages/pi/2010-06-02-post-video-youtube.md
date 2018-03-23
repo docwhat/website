@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Post: Video (YouTube)"
 categories:
   - Post Formats

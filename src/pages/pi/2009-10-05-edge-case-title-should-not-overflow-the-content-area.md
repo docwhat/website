@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Antidisestablishmentarianism"
 categories:
   - Edge Case

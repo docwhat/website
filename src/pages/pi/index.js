@@ -37,7 +37,7 @@ export const pageQuery = graphql`
       sort: { fields: [fields___date], order: DESC }
       filter: {
         fields: { template: { ne: "comment" } }
-        frontmatter: { test: { eq: "true" } }
+        frontmatter: { test: { eq: true } }
       }
     ) {
       edges {

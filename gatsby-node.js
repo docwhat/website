@@ -51,7 +51,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           sort: { fields: [fields___date], order: DESC }
           filter: {
             fields: { template: { eq: "page" } }
-            frontmatter: { test: { ne: "true" } }
+            frontmatter: { test: { ne: true } }
           }
         ) {
           edges {
@@ -66,7 +66,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           sort: { fields: [fields___date], order: DESC }
           filter: {
             fields: { template: { eq: "post" } }
-            frontmatter: { test: { ne: "true" } }
+            frontmatter: { test: { ne: true } }
           }
         ) {
           edges {
@@ -83,7 +83,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           sort: { fields: [fields___date], order: DESC }
           filter: {
             fields: { template: { eq: "post" } }
-            frontmatter: { test: { eq: "true" } }
+            frontmatter: { test: { eq: true } }
           }
         ) {
           edges {

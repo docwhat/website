@@ -59,8 +59,6 @@ const PostTemplate = props => {
 
       <PostPaginator older={older} newer={newer} />
 
-      <g.Hr css={{ marginBottom: rhythm(1) }} />
-
       <Bio />
       <BlogPostMicroData
         postTitle={helmetTitle}

@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Markup: Image Alignment"
 categories:
   - Markup

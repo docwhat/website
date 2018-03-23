@@ -29,7 +29,6 @@ const PageTemplate = props => {
 
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
-      <g.Hr css={{ marginBottom: rhythm(1) }} />
       <Bio />
     </article>
   )

@@ -25,7 +25,6 @@ const StyledButton = g.button(
     transition: '0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97)',
     borderRadius: 4,
     color: '#fff',
-    narf: heroColor.hue(),
     boxShadow: '0 4px 6px rgba(50,50,93,.11), 0 1.0px 3px rgba(0,0,0,.08)',
     ':hover': {
       opacity: 0.7,

@@ -34,11 +34,21 @@ const PostCard = props => {
   const { slug, title, date, excerpt } = props
 
   return (
-    <section>
+    <g.Section css={props.overrideCss}>
       <Title to={slug}>{title}</Title>
       <Meta>{date}</Meta>
       <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-    </section>
+      <Link
+        css={{
+          display: 'block',
+          textAlign: 'right',
+          fontSize: rhythm(1 / 2),
+        }}
+        to={slug}
+      >
+        Read More&hellip;
+      </Link>
+    </g.Section>
   )
 }
 

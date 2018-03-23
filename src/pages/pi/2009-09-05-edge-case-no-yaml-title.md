@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 categories:
   - Edge Case
 tags:

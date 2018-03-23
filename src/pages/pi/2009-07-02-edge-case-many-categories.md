@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Edge Case: Many Categories"
 categories:
   - aciform mrofic

@@ -9,6 +9,7 @@ tags:
 - yeast
 template: post
 title: Sourdough Yeast Starter
+archive: true
 ---
 
 In today's episode of "As the chef turns" we find that Lance has
@@ -19,18 +20,18 @@ brother, Chuck.
 Meanwhile Christian has been working on mixing sourdough starter in
 a secret government underground lab...
 
--   1 package active dry yeast
--   3 cups warm water (105 to 115 deg)
--   3 1/2 cups unbleached or all-purpose flour. **Do not use
-    self-rising flour**
--   A cheesecloth or maybe a small towel. This is to keep the yeast
-    warm and to prevent debris from getting in.
--   Glass mixing bowl (big enough for everything). If you must use a
-    metal bowl, use a stainless steel one. These are the same rules
-    for beer making. [Bread](http://en.wikipedia.org/wiki/Bread) and
-    [beer](http://en.wikipedia.org/wiki/Beer%20are%20similar).
--   A 2 quart crock or glass jar. It must have a tight fitting lid.
-    Again, this shouldn't be metal. Metal *will* affect the output!
+* 1 package active dry yeast
+* 3 cups warm water (105 to 115 deg)
+* 3 1/2 cups unbleached or all-purpose flour. **Do not use
+  self-rising flour**
+* A cheesecloth or maybe a small towel. This is to keep the yeast
+  warm and to prevent debris from getting in.
+* Glass mixing bowl (big enough for everything). If you must use a
+  metal bowl, use a stainless steel one. These are the same rules
+  for beer making. [Bread](http://en.wikipedia.org/wiki/Bread) and
+  [beer](http://en.wikipedia.org/wiki/Beer%20are%20similar).
+* A 2 quart crock or glass jar. It must have a tight fitting lid.
+  Again, this shouldn't be metal. Metal _will_ affect the output!
 
 Once you have the parts together then you can make some starter:
 
@@ -97,14 +98,14 @@ Yeasts are your friends.
 
 Tips for sourdough happiness:
 
--   You should start the bread in the evening and then bake it in
-    the morning. Or the reverse. Either works. The idea is to let it
-    rest and rise plenty.
--   Let the starter warm up to room temperature before using it. You
-    don't want to shock your yeasts right before they are needed to
-    make your bread rise!
--   Don't kill the yeasts by feeding them anything but flour, sugar
-    and water!
+* You should start the bread in the evening and then bake it in
+  the morning. Or the reverse. Either works. The idea is to let it
+  rest and rise plenty.
+* Let the starter warm up to room temperature before using it. You
+  don't want to shock your yeasts right before they are needed to
+  make your bread rise!
+* Don't kill the yeasts by feeding them anything but flour, sugar
+  and water!
 
 > Note: The really hard crust on the outside of the San Francisco
 > bakery loaves is due to their ovens. Your bread will be yummy,

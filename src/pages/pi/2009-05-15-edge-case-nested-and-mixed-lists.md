@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Edge Case: Nested and Mixed Lists"
 categories:
   - edge-case

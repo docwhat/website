@@ -1,6 +1,6 @@
 ---
 title: "Post: Standard"
-test: "true"
+test: true
 excerpt_separator: "<!--more-->"
 categories:
   - Post Formats

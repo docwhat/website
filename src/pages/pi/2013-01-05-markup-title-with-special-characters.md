@@ -1,5 +1,5 @@
 ---
-test: "true"
+test: true
 title: "Markup: Title with Special&nbsp;---&nbsp;Characters"
 categories:
   - Markup

@@ -11,11 +11,12 @@ It is powered by [Gatsby](https://gatsbyjs.org).
 
 ## Developing
 
-``` console
+```console
 yarn install
 gatsby develop
 ```
 
 ## Notes
 
-- [_Made Mistakes_ gatsby-test issue #1](https://github.com/mmistakes/gatsby-test/issues/1)
+* [_Made Mistakes_ gatsby-test issue #1](https://github.com/mmistakes/gatsby-test/issues/1)
+* Incorporate this into develop some how... <https://css-tricks.com/findingfixing-unintended-body-overflow/>
