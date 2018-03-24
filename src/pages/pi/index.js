@@ -7,7 +7,7 @@ import PostCard from '../../components/PostCard.js'
 
 class SiteIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, `props.data.allMarkdownRemark.edges`)
 
     return (
       <Div>

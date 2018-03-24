@@ -8,8 +8,8 @@ const BlogPostMicroData = props => {
   const { postTitle, postUrl, ymdDate, wordCount } = props
 
   const jsonObject = {
-    '@context': 'http://schema.org',
-    '@type': 'BlogPosting',
+    '@context': `http://schema.org`,
+    '@type': `BlogPosting`,
     headline: postTitle,
     // "genre":"",
     // "keywords":"",
@@ -20,13 +20,13 @@ const BlogPostMicroData = props => {
     publisher: {
       ...authorJsonLd,
       logo: {
-        '@type': 'ImageObject',
+        '@type': `ImageObject`,
         contentUrl: avatarPic,
         url: authorUrl,
       },
     },
     mainEntityOfPage: {
-      '@type': 'WebPage',
+      '@type': `WebPage`,
       '@id': postUrl,
     },
     // "articleBody":""

@@ -7,7 +7,7 @@ import CommentsIcon from '../icons/comments.svg'
 
 const Comments = data => {
   if (data.comments === null) {
-    return ''
+    return ``
   }
   const { comments: { edges: comments } } = data
 

@@ -8,7 +8,7 @@ import { rhythm } from '../utils/typography'
 const PageHeader = props => {
   const { title, monthName, dayName, dayOfMonth, ymdDate } = props
 
-  var calendarIcon = ''
+  var calendarIcon = ``
   if (ymdDate) {
     calendarIcon = (
       <Div>
@@ -25,20 +25,20 @@ const PageHeader = props => {
   return (
     <Header
       css={{
-        display: 'flex',
-        border: '1.0px solid hsla(0, 0%, 0%, 0)',
-        minHeight: calendarIcon === '' ? 'unset' : rhythm(7 / 2),
+        display: `flex`,
+        border: `1.0px solid hsla(0, 0%, 0%, 0)`,
+        minHeight: calendarIcon === `` ? `unset` : rhythm(7 / 2),
         marginBottom: rhythm(1),
       }}
     >
       <H1
         css={{
           marginTop: 0,
-          marginRight: 'auto',
+          marginRight: `auto`,
           marginLeft: 0,
           marginBottom: 0,
           paddingRight: rhythm(1 / 5),
-          borderBottom: 'none',
+          borderBottom: `none`,
         }}
       >
         {title}

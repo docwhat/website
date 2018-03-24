@@ -26,26 +26,26 @@ class DefaultLayout extends React.Component {
           ...scale(1.5 * scaleFactor),
           marginBottom: rhythm(1.5 * scaleFactor),
           marginTop: 0,
-          borderBottomStyle: 'solid',
+          borderBottomStyle: `solid`,
           borderBottomWidth: rhythm(1 / 2 * scaleFactor),
           borderBottomColor: heroColor.string(),
           fontFamily: typo.headerFontFamily
             .map(fontName => `"${fontName}"`)
-            .join(', '),
+            .join(`, `),
           fontWeight: 700,
-          textRendering: 'optimizeLegibility',
+          textRendering: `optimizeLegibility`,
         }}
       >
         <Link
           style={{
-            boxShadow: 'none',
-            textDecoration: 'none',
-            color: 'inherit',
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
           }}
-          to={'/'}
+          to={`/`}
         >
           <Logo />
-          {"docwhat's blog"}
+          {`docwhat's blog`}
         </Link>
       </g.Header>
     )

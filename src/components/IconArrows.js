@@ -6,14 +6,14 @@ const IconArrow = overrideCss => props => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="50.4 -114.8 16 16"
     css={{
-      display: 'inline-block',
-      position: 'relative',
-      top: '-0.05em',
+      display: `inline-block`,
+      position: `relative`,
+      top: `-0.05em`,
       width: rhythm(2 / 3),
       height: rhythm(2 / 3),
       lineHeight: 1,
-      verticalAlign: 'middle',
-      fill: 'currentColor',
+      verticalAlign: `middle`,
+      fill: `currentColor`,
       ...overrideCss,
     }}
   >
@@ -23,5 +23,5 @@ const IconArrow = overrideCss => props => (
 
 export const IconArrowRight = IconArrow()
 
-const flipTransform = 'matrix(-1,0,0,1,0,0)'
+const flipTransform = `matrix(-1,0,0,1,0,0)`
 export const IconArrowLeft = IconArrow({ transform: flipTransform })

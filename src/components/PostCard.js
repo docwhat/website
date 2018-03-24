@@ -11,7 +11,7 @@ const Title = props => (
       marginBottom: 0,
     }}
   >
-    <Link style={{ boxShadow: 'none' }} to={props.to}>
+    <Link style={{ boxShadow: `none` }} to={props.to}>
       {props.children}
     </Link>
   </H3>
@@ -20,10 +20,10 @@ const Title = props => (
 const Meta = props => (
   <Small
     css={{
-      display: 'block',
+      display: `block`,
       lineHeight: 1,
       marginBottom: rhythm(1 / 4),
-      textAlign: 'right',
+      textAlign: `right`,
     }}
   >
     {props.children}
@@ -40,8 +40,8 @@ const PostCard = props => {
       <p dangerouslySetInnerHTML={{ __html: excerpt }} />
       <Link
         css={{
-          display: 'block',
-          textAlign: 'right',
+          display: `block`,
+          textAlign: `right`,
           fontSize: rhythm(1 / 2),
         }}
         to={slug}

@@ -51,6 +51,7 @@
     "graphql": "0.11.7",
     "lodash": "4.17.5",
     "prettier": "^1.8.2",
+    "prettier-eslint-cli": "^4.7.1",
     "prop-types": "^15.6.1",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -61,10 +62,7 @@
     "typography-breakpoint-constants": "^0.15.10"
   },
   "homepage": "https://github.com/docwhat/docwhat#readme",
-  "keywords": [
-    "gatsby",
-    "blog"
-  ],
+  "keywords": ["gatsby", "blog"],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -72,15 +70,20 @@
     "url": "git+https://github.com/docwhat/docwhat.git"
   },
   "scripts": {
-    "build": "env NODE_ENV=production gatsby build",
-    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
-    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
-    "check-links": "broken-link-checker --ordered --filter-level=3",
     "develop": "gatsby develop",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "build": "gatsby build",
     "serve": "gatsby serve",
+
+    "lint": "eslint '**/*.{js,jsx}'",
+    "format": "prettier-eslint --write '**/*.{js,jsx,md}'",
+    "format:check": "prettier-eslint --list-different '**/*.{js,jsx,md}'",
+
+    "check-external-links":
+      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
+    "check-internal-links":
+      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
+    "check-links": "broken-link-checker --ordered --filter-level=3",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

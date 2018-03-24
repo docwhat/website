@@ -17,14 +17,14 @@ import CommentIcon from '../icons/comment-alt.svg'
 const textBoxCss = css({
   '::placeholder': {
     color: heroColor.darken(0.7).string(),
-    fontStyle: 'italic',
+    fontStyle: `italic`,
   },
   padding: `0 ${rhythm(1 / 4)}`,
 })
 
 const FormOption = props => {
-  const optParts = props.option.split('.')
-  const name = `options[${optParts.join('][]')}]`
+  const optParts = props.option.split(`.`)
+  const name = `options[${optParts.join(`][]`)}]`
   return <Input name={name} value={props.value} type="hidden" />
 }
 
@@ -34,15 +34,15 @@ const StyledLabel = g.label(props => {
       ':focus': {
         background: heroColor.string(),
       },
-      display: 'flex',
-      flexDirection: 'row',
-      flexWrap: 'wrap',
-      justifyContent: 'flex-start',
-      margin: '1em 0',
+      display: `flex`,
+      flexDirection: `row`,
+      flexWrap: `wrap`,
+      justifyContent: `flex-start`,
+      margin: `1em 0`,
     },
   ]
 
-  styles.push(props['css'])
+  styles.push(props[`css`])
 
   return styles
 })
@@ -50,25 +50,25 @@ const StyledLabel = g.label(props => {
 const StyledLabelDiv = g.label(props => {
   let styles = [
     {
-      display: 'inline-block',
-      flex: '0 0 30%',
+      display: `inline-block`,
+      flex: `0 0 30%`,
     },
   ]
 
-  styles.push(props['css'])
+  styles.push(props[`css`])
 
   return styles
 })
 
 const Labelled = props => {
-  let requiredText = ''
+  let requiredText = ``
 
   if (!props.required) {
     requiredText = (
       <Span
         css={{
           color: heroColor.darken(0.5).string(),
-          fontStyle: 'italic',
+          fontStyle: `italic`,
         }}
       >
         (optional)
@@ -77,8 +77,8 @@ const Labelled = props => {
   }
 
   return (
-    <StyledLabel css={props['labelCss']}>
-      <StyledLabelDiv css={props['divCss']}>
+    <StyledLabel css={props[`labelCss`]}>
+      <StyledLabelDiv css={props[`divCss`]}>
         {props.label}
         {requiredText}
       </StyledLabelDiv>
@@ -92,7 +92,7 @@ const LabelledInput = props => {
     <Labelled label={props.label} required={props.required}>
       <Input
         css={{
-          flex: '0 0 70%',
+          flex: `0 0 70%`,
         }}
         {...textBoxCss}
         name={props.name}
@@ -105,11 +105,11 @@ const LabelledInput = props => {
 
 const ReCaptcha = () => {
   return null
-  const siteKey = '6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P'
+  const siteKey = `6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P`
   const secret =
-    'HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8' +
-    'y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dv' +
-    'qJopL1jhByo='
+    `HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8` +
+    `y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dv` +
+    `qJopL1jhByo=`
   return (
     <Div>
       <Helmet>
@@ -140,29 +140,28 @@ class SubmitComment extends React.Component {
     }
   }
   render() {
-    const formUrl =
-      'https://api.staticman.net/v2/entry/docwhat/docwhat/master/comments'
+    const formUrl = `https://api.staticman.net/v2/entry/docwhat/docwhat/master/comments`
     const returnUrl = this.props.url
     const slug = this.props.slug
-    const slugdir = slug.replace(/^\/+|\/+$/g, '')
+    const slugdir = slug.replace(/^\/+|\/+$/g, ``)
 
     return (
       <Form method="POST" action={formUrl}>
         <Legend
           css={{
             ':hover': {
-              textDecoration: 'underline',
+              textDecoration: `underline`,
             },
-            cursor: 'pointer',
-            flex: '0 0 100%',
+            cursor: `pointer`,
+            flex: `0 0 100%`,
             fontSize: rhythm(1),
           }}
           onClick={this.toggleForm.bind(this)}
         >
-          <CommentIcon css={{ width: '1.125em' }} /> Submit a Comment{' '}
+          <CommentIcon css={{ width: `1.125em` }} /> Submit a Comment{` `}
           <CaretRightIcon
             css={{
-              transform: this.state.isOpen ? 'rotate(90deg)' : null,
+              transform: this.state.isOpen ? `rotate(90deg)` : null,
             }}
           />
         </Legend>
@@ -200,10 +199,10 @@ class SubmitComment extends React.Component {
                 name="fields[message]"
                 placeholder="Type your message. You can use **Markdown**!"
                 css={{
-                  flex: '0 1 70%',
+                  flex: `0 1 70%`,
                   height: rhythm(5),
                   minWidth: rhythm(10),
-                  width: '100%',
+                  width: `100%`,
                 }}
                 {...textBoxCss}
               />
@@ -212,15 +211,15 @@ class SubmitComment extends React.Component {
             <Labelled
               label="I want to be notified of new comments"
               divCss={{
-                display: 'inline-block',
-                flex: '1 0 80%',
+                display: `inline-block`,
+                flex: `1 0 80%`,
               }}
               required
             >
               <Div
                 css={{
-                  flex: '0 1 20%',
-                  textAlign: 'right',
+                  flex: `0 1 20%`,
+                  textAlign: `right`,
                 }}
               >
                 <Input type="checkbox" name="options[subscribe]" css={{}} />
@@ -231,7 +230,7 @@ class SubmitComment extends React.Component {
 
             <Div
               css={{
-                textAlign: 'right',
+                textAlign: `right`,
               }}
             >
               <StyledButton>Comment</StyledButton>

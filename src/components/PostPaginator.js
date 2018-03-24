@@ -18,14 +18,15 @@ const Pager = ({ props, node, side, text }) => (
     <Link
       to={node.fields.slug}
       css={{
-        display: 'block',
+        display: `block`,
       }}
       title={node.fields.date}
     >
-      <div css={{ fontWeight: 'bold' }}>{text}</div>
+      <div css={{ fontWeight: `bold` }}>{text}</div>
       <div>
-        {side !== 'right' ? <IconArrowLeft /> : null} {node.fields.title}{' '}
-        {side === 'right' ? <IconArrowRight /> : null}
+        {side !== `right` ? <IconArrowLeft /> : null} {node.fields.title}
+        {` `}
+        {side === `right` ? <IconArrowRight /> : null}
       </div>
     </Link>
   </g.Li>
@@ -34,21 +35,21 @@ const Pager = ({ props, node, side, text }) => (
 const PostPaginator = ({ newer, older }) => (
   <g.Nav
     css={{
-      margin: '1em 0',
+      margin: `1em 0`,
     }}
   >
     <ul
       css={{
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        listStyleType: 'none',
+        display: `flex`,
+        flexDirection: `row`,
+        flexWrap: `wrap`,
+        listStyleType: `none`,
         margin: 0,
         padding: 0,
       }}
     >
-      {older && <Pager node={older} side={'left'} text={'Older'} />}
-      {newer && <Pager node={newer} side={'right'} text={'Newer'} />}
+      {older && <Pager node={older} side={`left`} text={`Older`} />}
+      {newer && <Pager node={newer} side={`right`} text={`Newer`} />}
     </ul>
   </g.Nav>
 )

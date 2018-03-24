@@ -1,7 +1,7 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const _ = require(`lodash`)
+const Promise = require(`bluebird`)
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 const { createPaginationPages } = require(`gatsby-pagination`)
 
 const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     try {
       if (node.frontmatter.template === `comment`) {
         // comments don't get pages.
-        createNodeField({ name: `template`, node: node, value: 'comment' })
+        createNodeField({ name: `template`, node: node, value: `comment` })
         createNodeField({
           name: `slug`,
           node: node,
@@ -29,7 +29,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         const slug = replacePath(node.frontmatter.slug || defaultSlug)
         const date = node.frontmatter.date || defaultDate
         const title = node.frontmatter.title || defaultTitle
-        const template = node.frontmatter.template || 'post'
+        const template = node.frontmatter.template || `post`
 
         createNodeField({ name: `slug`, node: node, value: slug })
         createNodeField({ name: `date`, node: node, value: date })
@@ -37,7 +37,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         createNodeField({ name: `template`, node: node, value: template })
       }
     } catch (ex) {
-      console.log('Error onCreateNode():', node.fileAbsolutePath, '\n', ex)
+      console.log(`Error onCreateNode():`, node.fileAbsolutePath, `\n`, ex)
       throw ex
     }
   }
@@ -171,7 +171,7 @@ const calculateDefaults = (node, getNode) => {
     return [`/pi/${defaultTitle}`, defaultTitle, defaultDate]
   } else {
     const [, defaultTitle] = defaultSlug.match(/^\/(.*)\/$/)
-    const defaultDate = '1972-12-14'
+    const defaultDate = `1972-12-14`
     return [defaultSlug, defaultTitle, defaultDate]
   }
 }

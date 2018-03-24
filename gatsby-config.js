@@ -1,12 +1,12 @@
 // @format
 
-const { authorName, siteUrl, siteTitle } = require('./src/utils/constants.js')
+const { authorName, siteUrl, siteTitle } = require(`./src/utils/constants.js`)
 
 module.exports = {
   siteMetadata: {
     title: siteTitle,
     author: authorName,
-    description: 'Personal blog of Christian Höltje',
+    description: `Personal blog of Christian Höltje`,
     siteUrl: siteUrl,
   },
   plugins: [
@@ -14,21 +14,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/comments`,
-        name: 'comments',
+        name: `comments`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/posts`,
-        name: 'posts',
+        name: `posts`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: `pages`,
       },
     },
     {
@@ -43,7 +43,7 @@ module.exports = {
             options: {
               // maxWidth: 590,
               linkImagesToOriginal: true,
-              backgroundColor: 'white',
+              backgroundColor: `white`,
               sizeByPixelDensity: true,
             },
           },
@@ -53,30 +53,30 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-emoji',
-          'gatsby-remark-smartypants',
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-emoji`,
+          `gatsby-remark-smartypants`,
           `gatsby-remark-autolink-headers`,
           {
             // This must go before prismjs.
-            resolve: 'gatsby-remark-embed-snippet',
+            resolve: `gatsby-remark-embed-snippet`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: `language-`,
               directory: `${__dirname}/src/examples/`,
             },
           },
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
-              inlineCodeMarker: '›', // option-shift-4
+              classPrefix: `language-`,
+              inlineCodeMarker: `›`, // option-shift-4
               aliases: {
-                elisp: 'scheme',
-                js: 'javascript',
-                lisp: 'scheme',
-                sh: 'bash',
-                viml: 'vim',
-                zsh: 'bash',
+                elisp: `scheme`,
+                js: `javascript`,
+                lisp: `scheme`,
+                sh: `bash`,
+                viml: `vim`,
+                zsh: `bash`,
               },
             },
           },
@@ -98,17 +98,17 @@ module.exports = {
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-glamor`,
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
-      resolve: 'gatsby-plugin-sitemap',
+      resolve: `gatsby-plugin-sitemap`,
       options: {},
     },
     {
-      resolve: 'gatsby-plugin-svgr',
+      resolve: `gatsby-plugin-svgr`,
       options: {
         dir: `${__dirname}/src/icons`,
         icon: true,

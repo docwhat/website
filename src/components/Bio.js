@@ -16,7 +16,7 @@ class Bio extends React.Component {
 
         <g.Div
           css={{
-            display: 'flex',
+            display: `flex`,
           }}
           className="h-card"
           rel="me"
@@ -28,7 +28,7 @@ class Bio extends React.Component {
               src={avatarPic}
               alt="docwhat"
               css={{
-                borderRadius: '50%',
+                borderRadius: `50%`,
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 width: rhythm(2),
@@ -37,31 +37,33 @@ class Bio extends React.Component {
             />
           </a>
           <p>
-            The personal blog of{' '}
+            The personal blog of{` `}
             <strong rel="me" className="p-name">
               {authorName}
             </strong>.
             <br />
             <span
               style={{
-                whiteSpace: 'nowrap',
-                margin: '0 0.2em',
+                whiteSpace: `nowrap`,
+                margin: `0 0.2em`,
               }}
               className="u-url"
               rel="me"
             >
-              <GithubLogo css={{ fill: '#888' }} />{' '}
+              <GithubLogo css={{ fill: `#888` }} />
+              {` `}
               <a href="https://github.com/docwhat">docwhat</a>
             </span>
             <span
               style={{
-                whiteSpace: 'nowrap',
-                margin: '0 0.2em',
+                whiteSpace: `nowrap`,
+                margin: `0 0.2em`,
               }}
               className="u-url"
               rel="me"
             >
-              <TwitterLogo css={{ fill: '#888' }} />{' '}
+              <TwitterLogo css={{ fill: `#888` }} />
+              {` `}
               <a href="https://twitter.com/docwhat">docwhat</a>
             </span>
           </p>

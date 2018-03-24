@@ -15,13 +15,12 @@ const BlogMicroData = props => {
   const { siteTitle } = props
 
   const jsonObject = {
-    '@context': 'http://schema.org',
-    '@type': 'Blog',
-    keywords:
-      'software engineering agile devops ruby golang javascript refactoring',
+    '@context': `http://schema.org`,
+    '@type': `Blog`,
+    keywords: `software engineering agile devops ruby golang javascript refactoring`,
     url: authorUrl,
     mainEntityOfPage: {
-      '@type': 'WebPage',
+      '@type': `WebPage`,
       '@id': authorUrl,
     },
     author: authorJsonLd,
@@ -34,7 +33,7 @@ const BlogMicroData = props => {
 
 class SiteIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, `props.data.allMarkdownRemark.edges`)
 
     return (
       <Div>
@@ -50,9 +49,9 @@ class SiteIndex extends React.Component {
         </Helmet>
         <Div
           css={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
+            display: `flex`,
+            flexDirection: `row`,
+            flexWrap: `wrap`,
             margin: rhythm(-1 / 2),
             '&>*': {
               margin: rhythm(1 / 2),
@@ -67,7 +66,7 @@ class SiteIndex extends React.Component {
                 overrideCss={{
                   flex: `1 1 ${rhythm(10)}`,
                   '&>p': {
-                    textAlign: 'justify',
+                    textAlign: `justify`,
                   },
                 }}
                 key={slug}
@@ -79,7 +78,7 @@ class SiteIndex extends React.Component {
             )
           })}
 
-          <Link css={{ width: '100%', textAlign: 'right' }} to="/all">
+          <Link css={{ width: `100%`, textAlign: `right` }} to="/all">
             See all blog posts&hellip;
           </Link>
         </Div>

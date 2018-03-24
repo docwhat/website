@@ -39,7 +39,7 @@ const PostTemplate = props => {
 
   const helmetTitle = pageTitle || siteTitle
   const pageUrl = `${siteUrl}${slug}`
-  const linkStyle = css({ display: 'block' })
+  const linkStyle = css({ display: `block` })
 
   return (
     <article>
@@ -84,7 +84,9 @@ export default PostTemplate
 
 export const postQuery = graphql`
   query currentPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug }, template: { eq: "post" } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug }, template: { eq: "post" } }
+    ) {
       html
       fields {
         slug
