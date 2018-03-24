@@ -1,20 +1,18 @@
 ---
 id: 137
-title: An anthropological introduction to YouTube
+title: "An anthropological introduction to YouTube"
 date: 2008-08-04T17:41:36+00:00
 template: post
 slug: /an-anthropological-introduction-to-youtube/
 tags:
-  - anthropology
-  - culture
-  - video
-  - youtube
+  - technology
+  - history
 ---
 
-An excellent presentation on what You Tube is and how it has
-impacted our culture. It is a presentation given at the Library of
-Congress, June 23rd 2008 by Michael Walsch, an assistant professor
-of Cultural Anthropology at Kansas State University.
+An excellent presentation on what You Tube is and how it has impacted our
+culture. It is a presentation given at the Library of Congress, June 23rd 2008
+by Michael Walsch, an assistant professor of Cultural Anthropology at Kansas
+State University.
 
 I recommend watching it in its entirety.
 

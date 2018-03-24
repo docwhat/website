@@ -13,18 +13,15 @@ template: post
 title: 'Emoticon Styles (JP vs. US)'
 ---
 
-I found this interesting article about [Americans and Japanese read
-faces
-differently](http://www.livescience.com/health/070510_facial_culture.html).
-To cut the article short, they explain that Japanese culture seems
-to read the eyes for emotional cues while American culture seems to
-read the mouth.
+I found this interesting article about
+[Americans and Japanese read faces differently](http://www.livescience.com/health/070510_facial_culture.html).
+To cut the article short, they explain that Japanese culture seems to read the
+eyes for emotional cues while American culture seems to read the mouth.
 
-Quick comparison of
-[emoticons](http://en.wikipedia.org/wiki/Emoticons):
+Quick comparison of [emoticons](http://en.wikipedia.org/wiki/Emoticons):
 
 |  US | JP         |
-|-----|------------|
+| --- | ---------- |
 | :-) | ^\_^       |
 | x-) | &gt;\_&lt; |
 | :-( | ;\_;       |

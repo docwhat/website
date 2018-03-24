@@ -13,8 +13,8 @@ title: Open Source on CNN
 
 I can't believe I've heard [ESR](http://www.catb.org/~esr/)'s
 [The Cathedral and the Bazaar](http://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)
-referenced on CNN during November 4th election coverage. I'm not
-sure what kind of milestone that is but it certainly is one.
+referenced on CNN during November 4th election coverage. I'm not sure what
+kind of milestone that is but it certainly is one.
 
 <iframe src="https://www.youtube.com/embed/q-4afdMalVA" frameborder="0" allowfullscreen></iframe>
 

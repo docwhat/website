@@ -3,36 +3,55 @@ id: 245
 title: Aquamacs vs. Dvorak-Qwerty layout
 date: 2009-01-29T01:17:20+00:00
 template: post
-guid: http://docwhat.org/?p=245
 slug: /aquamacs-vs-dvorak-qwerty-layout/
 tags:
   - dvorak
   - emacs
   - Python
 ---
+
 I love [Aquamacs Emacs](http://aquamacs.org/). It totally rocks.
 
-However, I use the [Dvorak-Qwerty](http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard#Mac_OS) keyboard layout (AKA DQ) and Aquamacs doesn't like the command key bindings that the DQ layout uses. DQ is dvorak except when you use the command key.  Then it becomes QWERTY. This was invaluable when I first started using OS-X since it matched all the docs.
+However, I use the
+[Dvorak-Qwerty](http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard#Mac_OS)
+keyboard layout (AKA DQ) and Aquamacs doesn't like the command key bindings
+that the DQ layout uses. DQ is dvorak except when you use the command key.
+ Then it becomes QWERTY. This was invaluable when I first started using OS-X
+since it matched all the docs.
 
-According to the [FAQ](http://www.emacswiki.org/emacs/AquamacsFAQ#toc6) Aquamacs cannot natively understand the command keys for this layout because it's a Carbon application, not a Cocoa application.
+According to the [FAQ](http://www.emacswiki.org/emacs/AquamacsFAQ#toc6)
+Aquamacs cannot natively understand the command keys for this layout because
+it's a Carbon application, not a Cocoa application.
 
 Fortunately, there is a workaround...
 
-[According to davidswelt](http://www.nabble.com/DQ-keyboard-bug-td17180634.html), this can be worked around by dropping in a custom `osxkeys.el` in `~/Library/Preferences/Aquamacs Emacs/`.
+[According to davidswelt](http://www.nabble.com/DQ-keyboard-bug-td17180634.html),
+this can be worked around by dropping in a custom `osxkeys.el` in
+`~/Library/Preferences/Aquamacs Emacs/`.
 
 A year ago, I did this customization by hand and pretty much forgot about.
 
 Since then, Aquamacs has gone through several iterations.
 
-The latest, 1.6, didn't like my preference settings. Since I keep all my customizations (normally) in [homedir](http://trac.gerf.org/homedir) I didn't think twice about blowing away my `~/Library/Preferences/Aquamacs Emacs/` directory.
+The latest, 1.6, didn't like my preference settings. Since I keep all my
+customizations (normally) in [homedir](http://trac.gerf.org/homedir) I didn't
+think twice about blowing away my `~/Library/Preferences/Aquamacs Emacs/`
+directory.
 
 Whups! This broke all my command keys!
 
-After spending a little time with Time Machine to recover the files and figure out what `osxkeys.el` was and finding [my old post](http://www.nabble.com/DQ-keyboard-bug-td17180634.html) again I decided to find a better solution.
+After spending a little time with Time Machine to recover the files and figure
+out what `osxkeys.el` was and finding
+[my old post](http://www.nabble.com/DQ-keyboard-bug-td17180634.html) again I
+decided to find a better solution.
 
-And here it is; A horribly kludgy python script that essentially automates davidswelt's workaround: based on a keymap hardcoded in the script it patches the `osxkeys.el` shipped with Aquamacs and then writes this patched version into `~/Library/Preferences/Aquamacs Emacs/`.
+And here it is; A horribly kludgy python script that essentially automates
+davidswelt's workaround: based on a keymap hardcoded in the script it patches
+the `osxkeys.el` shipped with Aquamacs and then writes this patched version
+into `~/Library/Preferences/Aquamacs Emacs/`.
 
-Hopefully this will be useful for someone. If not, it'll be useful for me when I forget about this and delete my preferences again.
+Hopefully this will be useful for someone. If not, it'll be useful for me when
+I forget about this and delete my preferences again.
 
 Ciao!
 

@@ -5,29 +5,23 @@ date: 2007-06-28T15:52:39+00:00
 template: post
 slug: /simcity-ds-landmark-unlock-codes/
 tags:
-  - codes
-  - hints
-  - nintendo ds
-  - simcity
   - video games
 ---
 
-Yeah, I bought [SimCity DS](http://amzn.to/2pjH5CY) and found that
-it had an unlock code for the Washington Monument (a GameStop
-Exclusive!).
+Yeah, I bought [SimCity DS](http://amzn.to/2pjH5CY) and found that it had an
+unlock code for the Washington Monument (a GameStop Exclusive!).
 
 I figured that there were more and searched the web. I found
-[a list](http://www.gamefaqs.com/portable/ds/code/935403.html), but
-it was missing one of the monuments (#12). Being the kind of person
-who can't stand a missing bit of information, I went looking. I
-finally found it, but it took some work because none of the lists
-had the number next to them. So I compiled a complete list to share
-with anyone else who gets SimCity DS.
+[a list](http://www.gamefaqs.com/portable/ds/code/935403.html), but it was
+missing one of the monuments (#12). Being the kind of person who can't stand a
+missing bit of information, I went looking. I finally found it, but it took
+some work because none of the lists had the number next to them. So I compiled
+a complete list to share with anyone else who gets SimCity DS.
 
 <!-- more -->
 
-To enter one of these codes, from the main-screen pick Museum -\>
-Landmark Collection and press the password button.
+To enter one of these codes, from the main-screen pick Museum -\> Landmark
+Collection and press the password button.
 
 | ##  | Password  | Name                     | Country   |
 | --- | --------- | ------------------------ | --------- |

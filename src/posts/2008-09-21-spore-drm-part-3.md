@@ -1,26 +1,29 @@
 ---
 id: 194
-title: SPORE DRM part 3
-date: 2008-09-21T17:41:52+00:00
-author: docwhat
+title: "SPORE DRM part 3"
+date: "2008-09-21T17:41:52+00:00"
 template: post
-guid: http://docwhat.org/2008/09/spore-drm-part-3/
-slug: /spore-drm-part-3/
-categories:
-  - docwhat
+slug: "/spore-drm-part-3/"
 tags:
-  - DRM
-  - macbook pro
-  - video games
+  - "DRM"
+  - "video games"
 ---
-It looks like EA decided to listen to their customers (and would-be customers):
 
-<a href="http://forum.spore.com/jforum/posts/list/2897.page">Answering your feedback about Spore Online Accounts</a>.
+It looks like EA decided to listen to their customers (and would-be
+customers):
 
-Short summary: They will add screen names, allowing 5 people to share the same account.
+[Answering your feedback about Spore Online Accounts](http://forum.spore.com/jforum/posts/list/2897.page).
 
-This is good news.  Other announcements that they have made include: bumping the number of hardware activations from 3 to 5. Adding the ability to deactivate a hardware deactivation (so you don't have to contact EA support if you upgrade the hardware too much).
+Short summary: They will add screen names, allowing 5 people to share the same
+account.
 
-DRM sucks as a whole but at least EA is trying to make it less of a hassle.  I still recommend that you only use SPORE on a Mac; the windows version of SecuROM seems to hork up windows systems, sometimes in unobvious ways.
+This is good news.  Other announcements that they have made include: bumping
+the number of hardware activations from 3 to 5. Adding the ability to
+deactivate a hardware deactivation (so you don't have to contact EA support if
+you upgrade the hardware too much).
+
+DRM sucks as a whole but at least EA is trying to make it less of a hassle.  I
+still recommend that you only use SPORE on a Mac; the windows version of
+SecuROM seems to hork up windows systems, sometimes in unobvious ways.
 
 Ciao!
