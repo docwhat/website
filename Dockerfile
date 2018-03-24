@@ -17,7 +17,8 @@ COPY \
   ./yarn.lock \
   ./gatsby* \
   ./.babelrc \
-  ./.eslintrc.js \
+  ./.eslintrc \
+  ./.eslintignore \
   ./.mdlrc \
   ./.mdlstyle.rb \
   ./.prettierrc \
