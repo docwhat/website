@@ -4,6 +4,8 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { createPaginationPages } = require(`gatsby-pagination`)
 
+const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
+
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
@@ -15,7 +17,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         createNodeField({
           name: `slug`,
           node: node,
-          value: node.frontmatter.slug,
+          value: replacePath(node.frontmatter.slug),
         })
       } else {
         // posts, pies, and pages.
@@ -24,7 +26,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           getNode
         )
 
-        const slug = node.frontmatter.slug || defaultSlug
+        const slug = replacePath(node.frontmatter.slug || defaultSlug)
         const date = node.frontmatter.date || defaultDate
         const title = node.frontmatter.title || defaultTitle
         const template = node.frontmatter.template || 'post'
