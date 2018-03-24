@@ -18,7 +18,7 @@
     "compass-vertical-rhythm": "^1.4.0",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.5.1",
-    "gatsby": "1.9.240",
+    "gatsby": "1.9.241",
     "gatsby-cli": "^1.1.48",
     "gatsby-link": "^1.6.39",
     "gatsby-pagination": "^1.2.0",
@@ -28,17 +28,17 @@
     "gatsby-plugin-google-analytics": "1.0.24",
     "gatsby-plugin-offline": "1.0.15",
     "gatsby-plugin-react-helmet": "2.0.8",
-    "gatsby-plugin-remove-trailing-slashes": "^1.0.8",
+    "gatsby-plugin-remove-trailing-slashes": "^1.0.9",
     "gatsby-plugin-sharp": "1.6.41",
     "gatsby-plugin-sitemap": "1.2.20",
     "gatsby-plugin-svgr": "^0.2.1",
     "gatsby-plugin-typography": "1.7.18",
     "gatsby-remark-autolink-headers": "^1.4.13",
     "gatsby-remark-copy-linked-files": "^1.5.30",
-    "gatsby-remark-embed-snippet": "^1.0.12",
-    "gatsby-remark-emoji": "^0.0.1",
+    "gatsby-remark-embed-snippet": "^1.0.16",
+    "gatsby-remark-emoji": "^0.0.2",
     "gatsby-remark-images": "^1.5.59",
-    "gatsby-remark-prismjs": "^1.2.18",
+    "gatsby-remark-prismjs": "^1.2.21",
     "gatsby-remark-responsive-iframe": "1.4.18",
     "gatsby-remark-smartypants": "^1.4.12",
     "gatsby-source-filesystem": "1.5.27",
@@ -62,7 +62,10 @@
     "typography-breakpoint-constants": "^0.15.10"
   },
   "homepage": "https://github.com/docwhat/docwhat#readme",
-  "keywords": ["gatsby", "blog"],
+  "keywords": [
+    "gatsby",
+    "blog"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -73,17 +76,12 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-
     "lint": "eslint '**/*.{js,jsx}'",
     "format": "prettier-eslint --write '**/*.{js,jsx,md}'",
     "format:check": "prettier-eslint --list-different '**/*.{js,jsx,md}'",
-
-    "check-external-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
-    "check-internal-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
+    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
+    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-links": "broken-link-checker --ordered --filter-level=3",
-
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
