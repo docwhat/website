@@ -60,7 +60,7 @@ remove the `(N)`
 The upshot is that this unsets the `GEM_PATH` and `GEM_HOME`.
 
 You may also want your `EDITOR` environment variable to include the
-`env -u GEM_PATH -u GEM_HOME` part as well:
+`zsh›env -u GEM_PATH -u GEM_HOME` part as well:
 
 ```zsh
 export GIT_EDITOR="env -u GEM_PATH -u GEM_HOME vim +1"

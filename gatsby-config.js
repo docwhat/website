@@ -70,6 +70,14 @@ module.exports = {
             options: {
               classPrefix: 'language-',
               inlineCodeMarker: '›', // option-shift-4
+              aliases: {
+                elisp: 'scheme',
+                js: 'javascript',
+                lisp: 'scheme',
+                sh: 'bash',
+                viml: 'vim',
+                zsh: 'bash',
+              },
             },
           },
         ],
