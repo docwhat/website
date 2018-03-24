@@ -22,6 +22,7 @@ const codeBox = {
   borderStyle: 'solid',
   borderColor: '#dddddd',
   backgroundColor: '#f8f8f8',
+  borderRadius: '1px',
 }
 
 const baseColor = heroColor.saturationl(5).lightness(22)
