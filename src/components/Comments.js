@@ -1,20 +1,19 @@
 // @flow
 // @format
 import React from 'react'
-import { rhythm } from '../utils/typography'
-import Comment from './Comment.js'
-import FontAwesome from 'react-fontawesome'
+
+import Comment from './Comment'
 import CommentsIcon from '../icons/comments.svg'
 
 const Comments = data => {
   if (data.comments === null) {
     return ``
   }
+
   const { comments: { edges: comments } } = data
 
-  const commentList = comments.map(({ node }, index) => {
+  const commentList = comments.map(({ node }) => {
     const {
-      fields: { slug: slug },
       frontmatter: { name, url, email, uuid, friendlyDate, iso8601Date },
       html,
     } = node

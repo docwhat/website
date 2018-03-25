@@ -1,7 +1,7 @@
 // @flow
 // @format
 
-/* Various Constants */
+// Various Constants
 // This must not use ES6 magic!
 
 exports.authorName = `Christian Höltje`

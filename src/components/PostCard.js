@@ -1,9 +1,9 @@
 // @flow
 // @format
-import g, { H3, Small, Div } from 'glamorous'
+import g, { H3, Small } from 'glamorous'
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from './Link.js'
+import Link from './Link'
 import { rhythm } from '../utils/typography'
 
 const Title = props => (
@@ -18,6 +18,14 @@ const Title = props => (
   </H3>
 )
 
+Title.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+}
+
 const Meta = props => (
   <Small
     css={{
@@ -30,6 +38,13 @@ const Meta = props => (
     {props.children}
   </Small>
 )
+
+Meta.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+}
 
 const PostCard = props => {
   const { slug, title, date, excerpt } = props
@@ -58,6 +73,7 @@ PostCard.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
+  overrideCss: PropTypes.object.isRequired,
 }
 
 export default PostCard

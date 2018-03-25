@@ -1,13 +1,12 @@
 // @flow
 // @format
 import React from 'react'
-import { css } from 'glamor'
 import g from 'glamorous'
 import PropTypes from 'prop-types'
-import Link from './Link.js'
-import { IconArrowRight, IconArrowLeft } from './IconArrows.js'
+import Link from './Link'
+import { IconArrowRight, IconArrowLeft } from './IconArrows'
 
-const Pager = ({ props, node, side, text }) => (
+const Pager = ({ node, side, text }) => (
   <g.Li
     css={{
       margin: 0,
@@ -33,6 +32,12 @@ const Pager = ({ props, node, side, text }) => (
   </g.Li>
 )
 
+Pager.propTypes = {
+  node: PropTypes.object.isRequired,
+  side: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}
+
 const PostPaginator = ({ newer, older }) => (
   <g.Nav
     css={{
@@ -49,10 +54,15 @@ const PostPaginator = ({ newer, older }) => (
         padding: 0,
       }}
     >
-      {older && <Pager node={older} side={`left`} text={`Older`} />}
-      {newer && <Pager node={newer} side={`right`} text={`Newer`} />}
+      {older && <Pager node={older} side="left" text="Older" />}
+      {newer && <Pager node={newer} side="right" text="Newer" />}
     </ul>
   </g.Nav>
 )
+
+PostPaginator.propTypes = {
+  newer: PropTypes.object.isRequired,
+  older: PropTypes.object.isRequired,
+}
 
 export default PostPaginator

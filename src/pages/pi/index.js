@@ -1,40 +1,41 @@
 // @format
 // @flow
-import g, { H3, Small, Div } from 'glamorous'
+import { Div } from 'glamorous'
 import React from 'react'
-import get from 'lodash/get'
+import PropTypes from 'prop-types'
 
-import PostCard from '../../components/PostCard.js'
+import PostCard from '../../components/PostCard'
 
-class SiteIndex extends React.Component {
-  render() {
-    const posts = get(this, `props.data.allMarkdownRemark.edges`)
+const SiteIndex = props => (
+  <Div>
+    {props.data.pies.edges.nodes.map(({ node }) => {
+      const { fields: { title, slug, date }, excerpt } = node
 
-    return (
-      <Div>
-        {posts.map(({ node }) => {
-          const { fields: { title, slug, date }, excerpt } = node
+      return (
+        <PostCard
+          key={slug}
+          slug={slug}
+          title={title}
+          date={date}
+          excerpt={excerpt}
+        />
+      )
+    })}
+  </Div>
+)
 
-          return (
-            <PostCard
-              key={slug}
-              slug={slug}
-              title={title}
-              date={date}
-              excerpt={excerpt}
-            />
-          )
-        })}
-      </Div>
-    )
-  }
+SiteIndex.propTypes = {
+  data: PropTypes.shape({
+    pies: PropTypes.shape({
+      edges: PropTypes.array.isRequired,
+    }).isRequired,
+  }).isRequired,
 }
-
 export default SiteIndex
 
 export const pageQuery = graphql`
   query PiIndexQuery {
-    allMarkdownRemark(
+    pies: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       filter: {
         fields: { template: { ne: "comment" } }

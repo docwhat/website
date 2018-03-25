@@ -2,12 +2,12 @@
 // @format
 import g from 'glamorous'
 import React from 'react'
-import { PropTypes } from 'prop-types'
+import PropTypes from 'prop-types'
 import { rhythm } from '../utils/typography'
 import { deemphasisColor } from '../utils/colors'
 
 const CalendarPage = props => {
-  const { dayOfMonth, ymdDate, monthName } = props
+  const { ymdDate, monthName, dayOfMonth } = props
 
   const commonCSS = {
     display: `block`,
@@ -82,10 +82,10 @@ const CalendarPage = props => {
   )
 }
 
-CalendarPage.propsType = {
-  dayOfMonth: PropTypes.string.isRequired,
+CalendarPage.propTypes = {
   ymdDate: PropTypes.string.isRequired,
   monthName: PropTypes.string.isRequired,
+  dayOfMonth: PropTypes.string.isRequired,
 }
 
 export default CalendarPage

@@ -1,10 +1,8 @@
 // @flow
 // @format
 
-import React from 'react'
 import g from 'glamorous'
-import { rhythm } from '../utils/typography'
-import { heroColor } from '../utils/colors.js'
+import { heroColor } from '../utils/colors'
 
 const colors = {
   danger: heroColor.hue(8),
@@ -37,7 +35,7 @@ const StyledButton = g.button(
     },
   },
   props => ({
-    backgroundColor: (colors[props.type] || colors[`primary`]).string(),
+    backgroundColor: (colors[props.type] || colors.primary).string(),
   })
 )
 

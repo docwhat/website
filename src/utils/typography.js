@@ -46,7 +46,7 @@ const typography = new Typography({
   headerWeight: 700,
   bodyWeight: `normal`,
   boldWeight: 700,
-  // Github has all block elements use 1/2 rhythm not a full rhythm.
+  /* Github has all block elements use 1/2 rhythm not a full rhythm. */
   blockMarginBottom: 1 / 2,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     const vr = verticalRhythm({
@@ -82,7 +82,6 @@ const typography = new Typography({
       'ol,ul': {
         marginLeft: rhythm(1.25),
       },
-      // children ol, ul
       'li>ol,li>ul': {
         marginLeft: rhythm(1.25),
       },

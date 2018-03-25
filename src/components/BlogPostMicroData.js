@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import avatarPic from '../components/avatar.png'
-import { authorUrl, authorJsonLd } from '../utils/constants.js'
+import { authorUrl, authorJsonLd } from '../utils/constants'
 
 const BlogPostMicroData = props => {
   const { postTitle, postUrl, ymdDate, wordCount } = props
@@ -12,9 +12,9 @@ const BlogPostMicroData = props => {
     '@context': `http://schema.org`,
     '@type': `BlogPosting`,
     headline: postTitle,
-    // "genre":"",
-    // "keywords":"",
-    wordCount: wordCount,
+    /* "genre":"", */
+    /* "keywords":"", */
+    wordCount,
     url: postUrl,
     datePublished: ymdDate,
     author: authorJsonLd,
@@ -30,7 +30,7 @@ const BlogPostMicroData = props => {
       '@type': `WebPage`,
       '@id': postUrl,
     },
-    // "articleBody":""
+    /* "articleBody":"" */
   }
 
   return (

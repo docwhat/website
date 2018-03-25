@@ -1,68 +1,60 @@
 // @format
 // @flow
 import React from 'react'
-import g, { H1, Div } from 'glamorous'
-import Link from '../components/Link.js'
+import g, { Div } from 'glamorous'
 import PropTypes from 'prop-types'
+import { withPrefix } from 'gatsby-link'
+
+import Link from '../components/Link'
 import Logo from '../icons/logo.svg'
-
+import { heroColor } from '../utils/colors'
 import { rhythm, scale, options as typo } from '../utils/typography'
-import { heroColor } from '../utils/colors.js'
 
-class DefaultLayout extends React.Component {
-  render() {
-    const { location, children } = this.props
-    let header
+const DefaultLayout = props => {
+  const { location, children } = props
+  const scaleFactor = location.pathname === withPrefix(`/`) ? 5 / 4 : 1 / 4
 
-    let rootPath = `/`
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
-    }
-
-    let scaleFactor = location.pathname === rootPath ? 5 / 4 : 1 / 4
-
-    header = (
-      <g.Header
-        css={{
-          ...scale(1.5 * scaleFactor),
-          marginBottom: rhythm(1.5 * scaleFactor),
-          marginTop: 0,
-          borderBottomStyle: `solid`,
-          borderBottomWidth: rhythm(1 / 2 * scaleFactor),
-          borderBottomColor: heroColor.string(),
-          fontFamily: typo.headerFontFamily
-            .map(fontName => `"${fontName}"`)
-            .join(`, `),
-          fontWeight: 700,
-          textRendering: `optimizeLegibility`,
+  const header = (
+    <g.Header
+      css={{
+        ...scale(1.5 * scaleFactor),
+        marginBottom: rhythm(1.5 * scaleFactor),
+        marginTop: 0,
+        borderBottomStyle: `solid`,
+        borderBottomWidth: rhythm(1 / 2 * scaleFactor),
+        borderBottomColor: heroColor.string(),
+        fontFamily: typo.headerFontFamily
+          .map(fontName => `"${fontName}"`)
+          .join(`, `),
+        fontWeight: 700,
+        textRendering: `optimizeLegibility`,
+      }}
+    >
+      <Link
+        style={{
+          boxShadow: `none`,
+          textDecoration: `none`,
+          color: `inherit`,
         }}
+        to="/"
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          <Logo />
-          {`docwhat's blog`}
-        </Link>
-      </g.Header>
-    )
-    return (
-      <Div
-        css={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          margin: `0 auto`,
-        }}
-      >
-        {header}
-        {children()}
-      </Div>
-    )
-  }
+        <Logo />
+        {`docwhat's blog`}
+      </Link>
+    </g.Header>
+  )
+  return (
+    <Div
+      css={{
+        maxWidth: rhythm(24),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        margin: `0 auto`,
+      }}
+    >
+      {header}
+      {children()}
+    </Div>
+  )
 }
 
 DefaultLayout.propTypes = {

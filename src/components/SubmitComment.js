@@ -124,6 +124,7 @@ LabelledInput.propTypes = {
 }
 
 const ReCaptcha = () => null
+
 // const ReCaptcha = () => {
 //   return null
 //   const siteKey = `6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P`
@@ -153,6 +154,7 @@ class SubmitComment extends React.Component {
 
     this.toggleForm = this.toggleForm.bind(this)
   }
+
   toggleForm() {
     if (this.props.closeSection) {
       if (this.props.onCloseSectionClick) {
@@ -164,6 +166,7 @@ class SubmitComment extends React.Component {
       })
     }
   }
+
   render() {
     const formUrl = `https://api.staticman.net/v2/entry/docwhat/docwhat/master/comments`
     const { url: returnUrl, slug } = this.props

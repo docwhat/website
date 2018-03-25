@@ -1,10 +1,12 @@
 // @flow
 // @format
-import g, { Article, Div, Header, A, Time } from 'glamorous'
 import React from 'react'
-import { rhythm } from '../utils/typography'
-import Gravatar from './Gravatar.js'
+import g from 'glamorous'
+import PropTypes from 'prop-types'
 import gray from 'gray-percentage'
+
+import Gravatar from './Gravatar'
+import { rhythm } from '../utils/typography'
 
 const isMe = md5 => {
   const myMd5s = [
@@ -19,14 +21,14 @@ const Comment = props => {
   const { name, url, email, friendlyDate, iso8601Date, children } = props
 
   return (
-    <Article
+    <g.Article
       css={{
         position: `relative`,
         marginBottom: rhythm(2),
         marginTop: rhythm(1),
       }}
     >
-      <Div
+      <g.Div
         css={{
           width: `60px`,
           position: `absolute`,
@@ -48,13 +50,13 @@ const Comment = props => {
           default="mm"
           rating="pg"
         />
-      </Div>
-      <Div
+      </g.Div>
+      <g.Div
         css={{
           paddingLeft: `80px`,
         }}
       >
-        <Header
+        <g.Header
           css={{
             display: `flex`,
             flexDirection: `row`,
@@ -62,7 +64,7 @@ const Comment = props => {
             marginBottom: rhythm(1 / 2),
           }}
         >
-          <A
+          <g.A
             css={{
               alignSelf: `flex-start`,
               marginRight: `auto`,
@@ -73,8 +75,8 @@ const Comment = props => {
             href={url}
           >
             {name}
-          </A>
-          <Time
+          </g.A>
+          <g.Time
             css={{
               display: `block`,
               marginLeft: `auto`,
@@ -85,12 +87,24 @@ const Comment = props => {
             dateTime={iso8601Date}
           >
             {friendlyDate}
-          </Time>
-        </Header>
+          </g.Time>
+        </g.Header>
         {children}
-      </Div>
-    </Article>
+      </g.Div>
+    </g.Article>
   )
+}
+
+Comment.propTypes = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  friendlyDate: PropTypes.string.isRequired,
+  iso8601Date: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }
 
 export default Comment

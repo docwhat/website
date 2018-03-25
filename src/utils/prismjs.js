@@ -87,7 +87,8 @@ css.global(`.token.string, .token.attr-value`, {
 })
 
 css.global(`.token.punctuation, .token.operator`, {
-  color: baseColor /* no highlight */,
+  /* no highlight */
+  color: baseColor,
 })
 
 css.global(

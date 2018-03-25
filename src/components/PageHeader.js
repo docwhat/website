@@ -1,15 +1,16 @@
 // @flow
 // @format
-import g, { Header, H1, Div } from 'glamorous'
+import { Header, H1, Div } from 'glamorous'
 import React from 'react'
 import PropTypes from 'prop-types'
-import CalendarPage from '../components/CalandarPage.js'
+
+import CalendarPage from '../components/CalandarPage'
 import { rhythm } from '../utils/typography'
 
 const PageHeader = props => {
   const { title, monthName, dayName, dayOfMonth, ymdDate } = props
 
-  var calendarIcon = ``
+  let calendarIcon = ``
   if (ymdDate) {
     calendarIcon = (
       <Div>

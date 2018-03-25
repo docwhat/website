@@ -4,12 +4,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import glamorous from 'glamorous'
 
-const MyLink = props => {
-  return <Link {...props} />
-}
+const MyLink = props => <Link {...props} />
 
-const MyGlamorousLink = glamorous(MyLink)(props => ({ to }) => {
-  to
-})
+const MyGlamorousLink = glamorous(MyLink)(() => ({ to }) => ({
+  to,
+}))
 
 export default MyGlamorousLink

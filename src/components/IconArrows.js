@@ -1,9 +1,10 @@
 // @flow
 // @format
-import { rhythm } from '../utils/typography.js'
+import React from 'react'
 import { Svg } from 'glamorous'
+import { rhythm } from '../utils/typography'
 
-const IconArrow = overrideCss => props => (
+const IconArrow = overrideCss => () => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="50.4 -114.8 16 16"
