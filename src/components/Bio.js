@@ -29,7 +29,7 @@ const Reference = props => (
   </g.Span>
 )
 
-Reference.propType = {
+Reference.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
