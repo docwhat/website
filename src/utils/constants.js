@@ -1,3 +1,4 @@
+// @flow
 // @format
 
 /* Various Constants */

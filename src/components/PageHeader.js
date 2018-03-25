@@ -1,3 +1,4 @@
+// @flow
 // @format
 import g, { Header, H1, Div } from 'glamorous'
 import React from 'react'

@@ -1,3 +1,5 @@
+// @flow
+// @format
 import React from 'react'
 import Gravatar from 'react-gravatar'
 import glamorous from 'glamorous'

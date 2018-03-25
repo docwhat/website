@@ -1,12 +1,14 @@
+// @flow
+// @format
 import Typography from 'typography'
 import gray from 'gray-percentage'
 import { css } from 'glamor'
-import { heroColor } from '../utils/colors.js'
 import {
   TABLET_MEDIA_QUERY,
   MOBILE_MEDIA_QUERY,
 } from 'typography-breakpoint-constants'
 import verticalRhythm from 'compass-vertical-rhythm'
+import { heroColor, mellowColor } from '../utils/colors'
 
 // Details:
 // https://github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-github/src/index.js
@@ -85,22 +87,6 @@ const typography = new Typography({
         marginLeft: rhythm(1.25),
       },
 
-      '.gatsby-highlight-code-line': {
-        backgroundColor: heroColor.string(),
-        display: `block`,
-        marginRight: `-1em`,
-        marginLeft: `-1em`,
-        paddingRight: `1em`,
-        paddingLeft: `0.75em`,
-      },
-      '.gatsby-highlight pre.language-terminal': {
-        background: `#222`,
-      },
-      '.gatsby-highlight pre.language-terminal code': {
-        color: `#eee`,
-        textShadow: `0 1.0px #888`,
-      },
-
       blockquote: {
         ...scale(1 / 5),
         color: gray(45),
@@ -170,7 +156,7 @@ css.global(`body`, {
 })
 
 css.global(`a`, {
-  color: `#4078c0`,
+  color: mellowColor.saturationl(50).lightness(50),
   textDecoration: `none`,
 })
 

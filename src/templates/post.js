@@ -1,45 +1,41 @@
 // @format
+// @flow
 import React from 'react'
-import g from 'glamorous'
-import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import get from 'lodash/get'
-import { rhythm, scale } from '../utils/typography'
 
 // Components
-import PostPaginator from '../components/PostPaginator.js'
-import Bio from '../components/Bio.js'
-import PageHeader from '../components/PageHeader.js'
-import SubmitComment from '../components/SubmitComment.js'
-import Comments from '../components/Comments.js'
+import PostPaginator from '../components/PostPaginator'
+import Bio from '../components/Bio'
+import PageHeader from '../components/PageHeader'
+import SubmitComment from '../components/SubmitComment'
+import Comments from '../components/Comments'
 
-import { siteUrl, siteTitle } from '../utils/constants.js'
-import BlogPostMicroData from '../components/BlogPostMicroData.js'
+import { siteUrl, siteTitle } from '../utils/constants'
+import BlogPostMicroData from '../components/BlogPostMicroData'
 
 const PostTemplate = props => {
   const {
     data: {
       markdownRemark: {
         fields: {
-          slug: slug,
+          slug,
           title: pageTitle,
-          monthName: monthName,
-          dayName: dayName,
-          dayOfMonth: dayOfMonth,
-          ymdDate: ymdDate,
+          monthName,
+          dayName,
+          dayOfMonth,
+          ymdDate,
         },
         wordCount: { words },
         html: pageHtml,
       },
-      comments: comments,
+      comments,
     },
     pathContext: { newer, older },
   } = props
 
   const helmetTitle = pageTitle || siteTitle
   const pageUrl = `${siteUrl}${slug}`
-  const linkStyle = css({ display: `block` })
 
   return (
     <article>
@@ -78,6 +74,10 @@ PostTemplate.propTypes = {
       html: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
+  pathContext: PropTypes.shape({
+    newer: PropTypes.object,
+    older: PropTypes.object,
+  }),
 }
 
 export default PostTemplate

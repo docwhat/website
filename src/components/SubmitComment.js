@@ -1,11 +1,12 @@
+// @flow
 // @format
-import g, { Div, Form, Input, Label, Legend, Textarea, Span } from 'glamorous'
+import g, { Div, Form, Input, Legend, Textarea, Span } from 'glamorous'
 import { css } from 'glamor'
 import React from 'react'
-import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
 import { rhythm } from '../utils/typography'
-import { heroColor } from '../utils/colors.js'
-import StyledButton from './StyledButton.js'
+import { heroColor } from '../utils/colors'
+import StyledButton from './StyledButton'
 
 import CaretRightIcon from '../icons/caret-right.svg'
 import CommentIcon from '../icons/comment-alt.svg'
@@ -28,8 +29,13 @@ const FormOption = props => {
   return <Input name={name} value={props.value} type="hidden" />
 }
 
+FormOption.propTypes = {
+  option: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+}
+
 const StyledLabel = g.label(props => {
-  let styles = [
+  const styles = [
     {
       ':focus': {
         background: heroColor.string(),
@@ -42,20 +48,20 @@ const StyledLabel = g.label(props => {
     },
   ]
 
-  styles.push(props[`css`])
+  styles.push(props.css)
 
   return styles
 })
 
 const StyledLabelDiv = g.label(props => {
-  let styles = [
+  const styles = [
     {
       display: `inline-block`,
       flex: `0 0 30%`,
     },
   ]
 
-  styles.push(props[`css`])
+  styles.push(props.css)
 
   return styles
 })
@@ -77,8 +83,8 @@ const Labelled = props => {
   }
 
   return (
-    <StyledLabel css={props[`labelCss`]}>
-      <StyledLabelDiv css={props[`divCss`]}>
+    <StyledLabel css={props.labelCss}>
+      <StyledLabelDiv css={props.divCss}>
         {props.label}
         {requiredText}
       </StyledLabelDiv>
@@ -87,40 +93,55 @@ const Labelled = props => {
   )
 }
 
-const LabelledInput = props => {
-  return (
-    <Labelled label={props.label} required={props.required}>
-      <Input
-        css={{
-          flex: `0 0 70%`,
-        }}
-        {...textBoxCss}
-        name={props.name}
-        type={props.type}
-        placeholder={props.placeholder}
-      />
-    </Labelled>
-  )
+Labelled.propTypes = {
+  required: PropTypes.bool.isRequired,
+  label: PropTypes.string.isRequired,
+  children: PropTypes.object,
+  labelCss: PropTypes.object,
+  divCss: PropTypes.object,
 }
 
-const ReCaptcha = () => {
-  return null
-  const siteKey = `6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P`
-  const secret =
-    `HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8` +
-    `y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dv` +
-    `qJopL1jhByo=`
-  return (
-    <Div>
-      <Helmet>
-        <script src="https://www.google.com/recaptcha/api.js" />
-      </Helmet>
-      <Div className="g-recaptcha" data-sitekey={siteKey} />
-      <FormOption option="reCaptcha.siteKey" value={siteKey} />
-      <FormOption option="reCaptcha.secret" value={secret} />
-    </Div>
-  )
+const LabelledInput = props => (
+  <Labelled label={props.label} required={props.required}>
+    <Input
+      css={{
+        flex: `0 0 70%`,
+      }}
+      {...textBoxCss}
+      name={props.name}
+      type={props.type}
+      placeholder={props.placeholder}
+    />
+  </Labelled>
+)
+
+LabelledInput.propTypes = {
+  label: PropTypes.string.isRequired,
+  required: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
 }
+
+const ReCaptcha = () => null
+// const ReCaptcha = () => {
+//   return null
+//   const siteKey = `6LeIP0oUAAAAANRB2QX0a3ItZkkiBJsmEs9pel4P`
+//   const secret =
+//     `HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8` +
+//     `y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dv` +
+//     `qJopL1jhByo=`
+//   return (
+//     <Div>
+//       <Helmet>
+//         <script src="https://www.google.com/recaptcha/api.js" />
+//       </Helmet>
+//       <Div className="g-recaptcha" data-sitekey={siteKey} />
+//       <FormOption option="reCaptcha.siteKey" value={siteKey} />
+//       <FormOption option="reCaptcha.secret" value={secret} />
+//     </Div>
+//   )
+// }
 
 class SubmitComment extends React.Component {
   constructor(props) {
@@ -129,10 +150,14 @@ class SubmitComment extends React.Component {
     this.state = {
       isOpen: false,
     }
+
+    this.toggleForm = this.toggleForm.bind(this)
   }
   toggleForm() {
     if (this.props.closeSection) {
-      this.props.onCloseSectionClick && this.props.onCloseSectionClick()
+      if (this.props.onCloseSectionClick) {
+        this.props.onCloseSectionClick()
+      }
     } else {
       this.setState({
         isOpen: !this.state.isOpen,
@@ -141,8 +166,7 @@ class SubmitComment extends React.Component {
   }
   render() {
     const formUrl = `https://api.staticman.net/v2/entry/docwhat/docwhat/master/comments`
-    const returnUrl = this.props.url
-    const slug = this.props.slug
+    const { url: returnUrl, slug } = this.props
     const slugdir = slug.replace(/^\/+|\/+$/g, ``)
 
     return (
@@ -156,7 +180,7 @@ class SubmitComment extends React.Component {
             flex: `0 0 100%`,
             fontSize: rhythm(1),
           }}
-          onClick={this.toggleForm.bind(this)}
+          onClick={this.toggleForm.bind}
         >
           <CommentIcon css={{ width: `1.125em` }} /> Submit a Comment{` `}
           <CaretRightIcon
@@ -240,6 +264,13 @@ class SubmitComment extends React.Component {
       </Form>
     )
   }
+}
+
+SubmitComment.propTypes = {
+  closeSection: PropTypes.bool,
+  onCloseSectionClick: PropTypes.func,
+  url: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
 }
 
 export default SubmitComment

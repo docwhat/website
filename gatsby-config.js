@@ -1,3 +1,4 @@
+// @flow
 // @format
 
 const { authorName, siteUrl, siteTitle } = require(`./src/utils/constants.js`)

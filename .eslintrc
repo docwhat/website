@@ -1,22 +1,32 @@
 {
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/react"
+  ],
   "env": {
     "browser": true,
     "es6": true
   },
-  "plugins": ["react"],
+  "plugins": ["react", "flowtype"],
   "globals": {
-    "graphql": false
+    "graphql": true
   },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
+  "parser": "babel-eslint",
   "rules": {
     "quotes": ["error", "backtick"],
     "jsx-quotes": ["error", "prefer-double"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+
+    "flowtype/space-after-type-colon": 0,
+    "flowtype/space-before-type-colon": 0,
+    "no-unexpected-multiline": 2,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/jsx-filename-extension": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/no-danger": 0,
+    "react/require-default-props": 0
   }
 }

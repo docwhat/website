@@ -1,7 +1,10 @@
+// @flow
+// @format
+
 import React from 'react'
 import { css } from 'glamor'
-import Link from './Link.js'
-import { rhythm } from '../utils/typography.js'
+import Link from './Link'
+import { rhythm } from '../utils/typography'
 
 const theCss = css({
   position: `fixed`,
@@ -11,7 +14,7 @@ const theCss = css({
   color: `rgba(136, 136, 136, 0.3)`,
 })
 
-export const TheNetwork = props => (
+export const TheNetwork = () => (
   <Link className={theCss} to="/pi/">
     Π
   </Link>

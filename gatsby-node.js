@@ -1,122 +1,34 @@
-const _ = require(`lodash`)
+// @flow
+// @format
 const Promise = require(`bluebird`)
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const { createPaginationPages } = require(`gatsby-pagination`)
 
-const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
+const replacePath = _path =>
+  _path === `/` ? _path : _path.replace(/\/$/, ``)
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+const calculateDefaults = (node, getNode) => {
+  const defaultSlug = createFilePath({ node, getNode })
+  const isPostShaped = defaultSlug.match(
+    /^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
+  )
+  const isPiShaped = defaultSlug.match(
+    /^\/pi\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
+  )
 
-  if (node.internal.type === `MarkdownRemark`) {
-    try {
-      if (node.frontmatter.template === `comment`) {
-        // comments don't get pages.
-        createNodeField({ name: `template`, node: node, value: `comment` })
-        createNodeField({
-          name: `slug`,
-          node: node,
-          value: replacePath(node.frontmatter.slug),
-        })
-      } else {
-        // posts, pies, and pages.
-        const [defaultSlug, defaultTitle, defaultDate] = calculateDefaults(
-          node,
-          getNode
-        )
-
-        const slug = replacePath(node.frontmatter.slug || defaultSlug)
-        const date = node.frontmatter.date || defaultDate
-        const title = node.frontmatter.title || defaultTitle
-        const template = node.frontmatter.template || `post`
-
-        createNodeField({ name: `slug`, node: node, value: slug })
-        createNodeField({ name: `date`, node: node, value: date })
-        createNodeField({ name: `title`, node: node, value: title })
-        createNodeField({ name: `template`, node: node, value: template })
-      }
-    } catch (ex) {
-      console.log(`Error onCreateNode():`, node.fileAbsolutePath, `\n`, ex)
-      throw ex
-    }
-  }
-}
-
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
-
-  return graphql(
-    `
-      {
-        pages: allMarkdownRemark(
-          sort: { fields: [fields___date], order: DESC }
-          filter: {
-            fields: { template: { eq: "page" } }
-            frontmatter: { test: { ne: true } }
-          }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        posts: allMarkdownRemark(
-          sort: { fields: [fields___date], order: DESC }
-          filter: {
-            fields: { template: { eq: "post" } }
-            frontmatter: { test: { ne: true } }
-          }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-                title
-                date(formatString: "MMMM DD, YYYY")
-              }
-            }
-          }
-        }
-        pies: allMarkdownRemark(
-          sort: { fields: [fields___date], order: DESC }
-          filter: {
-            fields: { template: { eq: "post" } }
-            frontmatter: { test: { eq: true } }
-          }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-                title
-                date(formatString: "MMMM DD, YYYY")
-              }
-            }
-          }
-        }
-      }
-    `
-  ).then(result => generateContent(createPage, result))
-}
-
-// Create posts pages.
-function generateContent(createPage, graphqlResults) {
-  if (graphqlResults.errors) {
-    return Promise.reject(graphqlResults.errors)
+  if (isPostShaped) {
+    const [, defaultDate, defaultTitle] = isPostShaped
+    return [defaultSlug, defaultTitle, defaultDate]
   }
 
-  const posts = graphqlResults.data.posts.edges
-  const pies = graphqlResults.data.pies.edges
-  const pages = graphqlResults.data.pages.edges
+  if (isPiShaped) {
+    const [, defaultDate, defaultTitle] = isPiShaped
+    return [`/pi/${defaultTitle}`, defaultTitle, defaultDate]
+  }
 
-  postWalker(createPage, posts)
-  postWalker(createPage, pies)
-
-  pageWalker(createPage, pages)
+  const [, defaultTitle] = defaultSlug.match(/^\/(.*)\/$/)
+  const defaultDate = `1972-12-14`
+  return [defaultSlug, defaultTitle, defaultDate]
 }
 
 const postWalker = (createPage, posts) => {
@@ -143,7 +55,7 @@ const postWalker = (createPage, posts) => {
 const pageWalker = (createPage, pages) => {
   const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-  pages.forEach(({ node }, index) => {
+  pages.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: pageTemplate,
@@ -154,24 +66,115 @@ const pageWalker = (createPage, pages) => {
   })
 }
 
-const calculateDefaults = (node, getNode) => {
-  const defaultSlug = createFilePath({ node, getNode })
-  const isPostShaped = defaultSlug.match(
-    /^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
-  )
-  const isPiShaped = defaultSlug.match(
-    /^\/pi\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
-  )
+exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+  const { createNodeField } = boundActionCreators
 
-  if (isPostShaped) {
-    const [, defaultDate, defaultTitle] = isPostShaped
-    return [defaultSlug, defaultTitle, defaultDate]
-  } else if (isPiShaped) {
-    const [, defaultDate, defaultTitle] = isPiShaped
-    return [`/pi/${defaultTitle}`, defaultTitle, defaultDate]
-  } else {
-    const [, defaultTitle] = defaultSlug.match(/^\/(.*)\/$/)
-    const defaultDate = `1972-12-14`
-    return [defaultSlug, defaultTitle, defaultDate]
+  if (node.internal.type === `MarkdownRemark`) {
+    try {
+      if (node.frontmatter.template === `comment`) {
+        // comments don't get pages.
+        createNodeField({ node, name: `template`, value: `comment` })
+        createNodeField({
+          node,
+          name: `slug`,
+          value: replacePath(node.frontmatter.slug),
+        })
+      } else {
+        // posts, pies, and pages.
+        const [defaultSlug, defaultTitle, defaultDate] = calculateDefaults(
+          node,
+          getNode
+        )
+
+        const slug = replacePath(node.frontmatter.slug || defaultSlug)
+        const date = node.frontmatter.date || defaultDate
+        const title = node.frontmatter.title || defaultTitle
+        const template = node.frontmatter.template || `post`
+
+        createNodeField({ node, name: `slug`, value: slug })
+        createNodeField({ node, name: `date`, value: date })
+        createNodeField({ node, name: `title`, value: title })
+        createNodeField({ node, name: `template`, value: template })
+      }
+    } catch (ex) {
+      console.error(`Error onCreateNode():`, node.fileAbsolutePath, `\n`, ex) // eslint-disable-line no-console
+      throw ex
+    }
   }
+}
+
+exports.createPages = ({ graphql, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+
+  return new Promise((resolve, reject) => {
+    graphql(
+      `
+        {
+          pages: allMarkdownRemark(
+            sort: { fields: [fields___date], order: DESC }
+            filter: {
+              fields: { template: { eq: "page" } }
+              frontmatter: { test: { ne: true } }
+            }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+              }
+            }
+          }
+          posts: allMarkdownRemark(
+            sort: { fields: [fields___date], order: DESC }
+            filter: {
+              fields: { template: { eq: "post" } }
+              frontmatter: { test: { ne: true } }
+            }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                  title
+                  date(formatString: "MMMM DD, YYYY")
+                }
+              }
+            }
+          }
+          pies: allMarkdownRemark(
+            sort: { fields: [fields___date], order: DESC }
+            filter: {
+              fields: { template: { eq: "post" } }
+              frontmatter: { test: { eq: true } }
+            }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                  title
+                  date(formatString: "MMMM DD, YYYY")
+                }
+              }
+            }
+          }
+        }
+      `
+    ).then(graphqlResults => {
+      if (graphqlResults.errors) {
+        reject(graphqlResults.errors)
+      }
+
+      const posts = graphqlResults.data.posts.edges
+      const pies = graphqlResults.data.pies.edges
+      const pages = graphqlResults.data.pages.edges
+
+      postWalker(createPage, posts)
+      postWalker(createPage, pies)
+
+      pageWalker(createPage, pages)
+      resolve()
+    })
+  })
 }

@@ -1,6 +1,12 @@
+// @flow
+// @format
 import { css } from 'glamor'
-import { heroColor } from './colors.js'
-import Color from 'color'
+import {
+  heroColor,
+  mellowColor,
+  deemphasisColor,
+  emphasisColor,
+} from './colors'
 
 /**
  * Based on:
@@ -25,8 +31,7 @@ const codeBox = {
   borderRadius: `1px`,
 }
 
-const baseColor = heroColor.saturationl(5).lightness(22)
-// const baseColor = Color('#393a34')
+const baseColor = deemphasisColor.saturationl(5.5).lightness(21.6)
 
 css.global(`code[class*='language-'], pre[class*='language-']`, {
   color: baseColor,
@@ -42,7 +47,7 @@ css.global(`code[class*='language-'], pre[class*='language-']`, {
 css.global(
   `pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection`,
   {
-    backgroundColor: `#b3d4fc`,
+    backgroundColor: heroColor,
   }
 )
 /* Code blocks */
@@ -69,7 +74,7 @@ css.global(`:not(pre) > code[class*='language-']`, {
 })
 
 css.global(`.token.comment, .token.prolog, .token.doctype, .token.cdata`, {
-  color: heroColor.saturationl(20).darken(0.2),
+  color: deemphasisColor.saturationl(20).lightness(10),
   fontStyle: `italic`,
 })
 
@@ -78,7 +83,7 @@ css.global(`.token.namespace`, {
 })
 
 css.global(`.token.string, .token.attr-value`, {
-  color: `#e3116c`,
+  color: deemphasisColor.saturationl(86).lightness(48),
 })
 
 css.global(`.token.punctuation, .token.operator`, {
@@ -88,30 +93,48 @@ css.global(`.token.punctuation, .token.operator`, {
 css.global(
   `.token.entity, .token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.property, .token.regex, .token.inserted`,
   {
-    color: `hsl(228, 95%, 40%)`,
+    color: emphasisColor.saturationl(95).lightness(40),
   }
 )
 
 css.global(
   `.token.atrule, .token.keyword, .token.attr-name, .language-autohotkey .token.selector`,
   {
-    color: heroColor.darken(0.5),
+    color: mellowColor.saturationl(100).lightness(43),
   }
 )
 
 css.global(
   `.token.function, .token.deleted, .language-autohotkey .token.tag`,
   {
-    color: `#9a050f`,
+    color: heroColor.saturationl(94).lightness(31),
   }
 )
 
 css.global(
   `.token.tag, .token.selector, .language-autohotkey .token.keyword`,
   {
-    color: `#00009f`,
+    color: mellowColor.saturationl(100).lightness(31),
   }
 )
+
+css.global(`.gatsby-highlight-code-line`, {
+  backgroundColor: heroColor.saturationl(100).lightness(93),
+  display: `block`,
+  marginRight: `-1em`,
+  marginLeft: `-1em`,
+  paddingRight: `1em`,
+  paddingLeft: `0.75em`,
+})
+
+css.global(`.gatsby-highlight pre.language-terminal`, {
+  background: `#222`,
+})
+
+css.global(`.gatsby-highlight pre.language-terminal code`, {
+  color: `#eee`,
+  textShadow: `0 1.0px #888`,
+})
 
 css.global(`.token.important, .token.function, .token.bold`, {
   fontWeight: `bold`,

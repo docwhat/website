@@ -1,4 +1,5 @@
 // @format
+// @flow
 import React from 'react'
 import g from 'glamorous'
 import PropTypes from 'prop-types'

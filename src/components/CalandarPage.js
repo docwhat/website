@@ -1,11 +1,13 @@
+// @flow
 // @format
 import g from 'glamorous'
 import React from 'react'
+import { PropTypes } from 'prop-types'
 import { rhythm } from '../utils/typography'
-import { heroColor } from '../utils/colors.js'
+import { deemphasisColor } from '../utils/colors'
 
 const CalendarPage = props => {
-  const { dayName, dayOfMonth, ymdDate, monthName } = props
+  const { dayOfMonth, ymdDate, monthName } = props
 
   const commonCSS = {
     display: `block`,
@@ -16,7 +18,7 @@ const CalendarPage = props => {
     width: `100%`,
   }
 
-  const bannerColor = heroColor.saturate(0.2).darken(0.45)
+  const bannerColor = deemphasisColor
 
   const rmult = 5 / 12
   const year = ymdDate.split(`-`)[0]
@@ -80,6 +82,12 @@ const CalendarPage = props => {
   )
 }
 
+CalendarPage.propsType = {
+  dayOfMonth: PropTypes.string.isRequired,
+  ymdDate: PropTypes.string.isRequired,
+  monthName: PropTypes.string.isRequired,
+}
+
 export default CalendarPage
 
 export const query = graphql`
@@ -87,7 +95,6 @@ export const query = graphql`
     fields {
       ymdDate: date(formatString: "YYYY-MM-DD")
       monthName: date(formatString: "MMMM")
-      dayName: date(formatString: "dddd")
       dayOfMonth: date(formatString: "D")
     }
   }

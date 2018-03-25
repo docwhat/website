@@ -1,3 +1,5 @@
+// @flow
+// @format
 import { rhythm } from '../utils/typography.js'
 import { Svg } from 'glamorous'
 

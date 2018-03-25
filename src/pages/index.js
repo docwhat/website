@@ -1,4 +1,5 @@
 // @format
+// @flow
 import g, { H3, Small, Div, A } from 'glamorous'
 import React from 'react'
 import get from 'lodash/get'

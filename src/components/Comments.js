@@ -1,3 +1,4 @@
+// @flow
 // @format
 import React from 'react'
 import { rhythm } from '../utils/typography'
