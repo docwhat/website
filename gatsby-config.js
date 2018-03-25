@@ -8,7 +8,7 @@ module.exports = {
     title: siteTitle,
     author: authorName,
     description: `Personal blog of Christian Höltje`,
-    siteUrl: siteUrl,
+    siteUrl,
   },
   plugins: [
     {

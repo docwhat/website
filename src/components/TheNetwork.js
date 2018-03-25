@@ -14,9 +14,9 @@ const theCss = css({
   color: `rgba(136, 136, 136, 0.3)`,
 })
 
-export const TheNetwork = () => (
+export const NetworkLink = () => (
   <Link className={theCss} to="/pi/">
     Π
   </Link>
 )
-export default TheNetwork
+export default NetworkLink

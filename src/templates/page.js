@@ -1,15 +1,12 @@
 // @format
 // @flow
 import React from 'react'
-import g from 'glamorous'
 import PropTypes from 'prop-types'
-
-import { rhythm } from '../utils/typography'
-
-import { siteTitle } from '../utils/constants.js'
 import Helmet from 'react-helmet'
-import PageHeader from '../components/PageHeader.js'
-import Bio from '../components/Bio.js'
+
+import { siteTitle } from '../utils/constants'
+import PageHeader from '../components/PageHeader'
+import Bio from '../components/Bio'
 
 const PageTemplate = props => {
   const {
@@ -18,7 +15,7 @@ const PageTemplate = props => {
     },
   } = props
 
-  var pageHeader = ``
+  let pageHeader = ``
   if (pageTitle && pageTitle !== ``) {
     pageHeader = <PageHeader title={pageTitle} />
   }

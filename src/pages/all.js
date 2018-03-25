@@ -1,46 +1,48 @@
 // @format
 // @flow
-import g, { H3, Small, Div, A } from 'glamorous'
+import { Div } from 'glamorous'
 import React from 'react'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
 
-import Bio from '../components/Bio.js'
-import PostCard from '../components/PostCard.js'
+import Bio from '../components/Bio'
+import PostCard from '../components/PostCard'
 
-class SiteIndex extends React.Component {
-  render() {
-    const posts = get(this, `props.data.allMarkdownRemark.edges`)
+const SiteIndex = props => (
+  <Div>
+    <Helmet title="All Posts" />
+    <Div>
+      {props.data.posts.edges.posts.map(({ node }) => {
+        const { fields: { title, slug, date }, excerpt } = node
 
-    return (
-      <Div>
-        <Helmet title="All Posts" />
-        <Div>
-          {posts.map(({ node }) => {
-            const { fields: { title, slug, date }, excerpt } = node
+        return (
+          <PostCard
+            key={slug}
+            slug={slug}
+            title={title}
+            date={date}
+            excerpt={excerpt}
+          />
+        )
+      })}
+    </Div>
+    <Bio />
+  </Div>
+)
 
-            return (
-              <PostCard
-                key={slug}
-                slug={slug}
-                title={title}
-                date={date}
-                excerpt={excerpt}
-              />
-            )
-          })}
-        </Div>
-        <Bio />
-      </Div>
-    )
-  }
+SiteIndex.propTypes = {
+  data: PropTypes.shape({
+    posts: PropTypes.shape({
+      edges: PropTypes.array.isRequired,
+    }).isRequired,
+  }).isRequired,
 }
 
 export default SiteIndex
 
 export const pageQuery = graphql`
   query AllQuery {
-    allMarkdownRemark(
+    posts: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       filter: {
         fields: { template: { eq: "post" } }
