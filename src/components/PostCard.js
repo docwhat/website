@@ -73,7 +73,7 @@ PostCard.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
-  overrideCss: PropTypes.object.isRequired,
+  overrideCss: PropTypes.object,
 }
 
 export default PostCard
