@@ -94,7 +94,7 @@ const Labelled = props => {
 }
 
 Labelled.propTypes = {
-  required: PropTypes.bool.isRequired,
+  required: PropTypes.bool,
   label: PropTypes.string.isRequired,
   children: PropTypes.object,
   labelCss: PropTypes.object,
@@ -117,7 +117,7 @@ const LabelledInput = props => (
 
 LabelledInput.propTypes = {
   label: PropTypes.string.isRequired,
-  required: PropTypes.bool.isRequired,
+  required: PropTypes.bool,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
@@ -183,7 +183,7 @@ class SubmitComment extends React.Component {
             flex: `0 0 100%`,
             fontSize: rhythm(1),
           }}
-          onClick={this.toggleForm.bind}
+          onClick={this.toggleForm}
         >
           <CommentIcon css={{ width: `1.125em` }} /> Submit a Comment{` `}
           <CaretRightIcon
