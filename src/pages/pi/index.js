@@ -8,7 +8,7 @@ import PostCard from '../../components/PostCard'
 
 const SiteIndex = props => (
   <Div>
-    {props.data.pies.edges.nodes.map(({ node }) => {
+    {props.data.pies.edges.map(({ node }) => {
       const { fields: { title, slug, date }, excerpt } = node
 
       return (
