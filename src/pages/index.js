@@ -73,9 +73,9 @@ const SiteIndex = props => (
         )
       })}
 
-      <Link css={{ width: `100%`, textAlign: `right` }} to="/all">
-        See all blog posts&hellip;
-      </Link>
+      <h3 css={{ textAlign: `right` }}>
+        <Link to="/all">See all blog posts&hellip;</Link>
+      </h3>
     </Div>
     <BlogMicroData />
     <Bio />
