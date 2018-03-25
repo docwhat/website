@@ -2,12 +2,39 @@
 // @format
 import React from 'react'
 import g from 'glamorous'
+import PropTypes from 'prop-types'
 
 import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
+import { siteUrl, authorName } from '../utils/constants'
+import Link from './Link'
 import GithubLogo from '../icons/github.svg'
 import TwitterLogo from '../icons/twitter.svg'
-import { siteUrl, authorName } from '../utils/constants'
+import Envelope from '../icons/envelope.svg'
+import Gift from '../icons/gift.svg'
+import Key from '../icons/key.svg'
+
+const Reference = props => (
+  <g.Span
+    css={{
+      whiteSpace: `nowrap`,
+      margin: `0 0.2em`,
+      '& svg': {
+        fill: `#888`,
+      },
+    }}
+    className="u-url"
+  >
+    {props.children}
+  </g.Span>
+)
+
+Reference.propType = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+}
 
 const Bio = () => (
   <div>
@@ -23,7 +50,6 @@ const Bio = () => (
       <a className="u-url" rel="me" href={siteUrl}>
         <g.Img
           className="u-photo p-nickname"
-          rel="me"
           src={avatarPic}
           alt="docwhat"
           css={{
@@ -41,30 +67,33 @@ const Bio = () => (
           {authorName}
         </strong>.
         <br />
-        <span
-          style={{
-            whiteSpace: `nowrap`,
-            margin: `0 0.2em`,
-          }}
-          className="u-url"
-          rel="me"
-        >
-          <GithubLogo css={{ fill: `#888` }} />
+        <Reference>
+          <GithubLogo />
           {` `}
           <a href="https://github.com/docwhat">docwhat</a>
-        </span>
-        <span
-          style={{
-            whiteSpace: `nowrap`,
-            margin: `0 0.2em`,
-          }}
-          className="u-url"
-          rel="me"
-        >
-          <TwitterLogo css={{ fill: `#888` }} />
+        </Reference>
+        <Reference>
+          <TwitterLogo />
           {` `}
           <a href="https://twitter.com/docwhat">docwhat</a>
-        </span>
+        </Reference>
+        <Reference>
+          <Envelope />
+          {` `}
+          <Link to="/contact" title="Contact me!">
+            contact
+          </Link>
+        </Reference>
+        <Reference>
+          <Link to="/reward" title="Send me a gift!">
+            <Gift />
+          </Link>
+        </Reference>
+        <Reference>
+          <Link to="/pubkey" title="GPG Public Key">
+            <Key />
+          </Link>
+        </Reference>
       </p>
     </g.Div>
   </div>
