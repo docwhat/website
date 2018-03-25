@@ -12,7 +12,7 @@ const SiteIndex = props => (
   <Div>
     <Helmet title="All Posts" />
     <Div>
-      {props.data.posts.edges.posts.map(({ node }) => {
+      {props.data.posts.edges.map(({ node }) => {
         const { fields: { title, slug, date }, excerpt } = node
 
         return (
