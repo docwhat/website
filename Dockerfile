@@ -48,6 +48,11 @@ RUN find public -type f \
 
 #################################
 FROM nginx:stable-alpine AS final
-LABEL maintainer="Christian Höltje <https://docwhat.org>"
+
+LABEL maintainer="Christian Höltje <https://docwhat.org>" \
+  org.label-schema.name="Website for docwhat.org" \
+  org.label-schema.url="https://docwhat.org/" \
+  org.label-schema.schema-version="1.0"
+
 COPY --from=compress /workdir/public/ /html
 COPY nginx.conf /etc/nginx/nginx.conf

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -eux
+
+# Build-time metadata as defined at http://label-schema.org
+exec docker build \
+  "--tag=$IMAGE_NAME" \
+  "--pull" \
+  "--label=org.label-schema.vcs-ref=$SOURCE_COMMIT" \
+  "--label=org.label-schema.vcs-url=$SOURCE_URL" \
+  "--label=org.label-schema.build-date=$BUILD_DATE" \
+  .
