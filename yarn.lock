@@ -4720,6 +4720,12 @@ fd-slicer@~1.0.1:
   dependencies:
     pend "~1.2.0"
 
+feed@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/feed/-/feed-1.1.1.tgz#914897517e94fa327cc6f73bb585a47c4a9ed321"
+  dependencies:
+    xml "^1.0.1"
+
 figures@^1.3.5:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
@@ -5145,15 +5151,6 @@ gatsby-plugin-catch-links@1.0.19:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-1.0.19.tgz#5f25b6e9b1b208afd6e177e234c9e483b5a60e2a"
   dependencies:
     babel-runtime "^6.26.0"
-
-gatsby-plugin-feed@1.3.20:
-  version "1.3.20"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-1.3.20.tgz#8dd760999c01164fd41560c6b276a1986b5beb53"
-  dependencies:
-    babel-runtime "^6.26.0"
-    lodash.merge "^4.6.0"
-    pify "^3.0.0"
-    rss "^1.2.2"
 
 gatsby-plugin-glamor@1.6.13:
   version "1.6.13"
@@ -8002,16 +7999,6 @@ miller-rabin@^4.0.0:
   version "1.33.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.33.0.tgz#a3492050a5cb9b63450541e39d9788d2272783db"
 
-mime-db@~1.25.0:
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.25.0.tgz#c18dbd7c73a5dbf6f44a024dc0d165a1e7b1c392"
-
-mime-types@2.1.13:
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.13.tgz#e07aaa9c6c6b9a7ca3012c69003ad25a39e92a88"
-  dependencies:
-    mime-db "~1.25.0"
-
 mime-types@2.1.18, mime-types@^2.1.12, mime-types@~2.1.16, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.7:
   version "2.1.18"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.18.tgz#6f323f60a83d11146f831ff11fd66e2fe5503bb8"
@@ -10791,13 +10778,6 @@ rollup@^0.36.3:
   dependencies:
     source-map-support "^0.4.0"
 
-rss@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/rss/-/rss-1.2.2.tgz#50a1698876138133a74f9a05d2bdc8db8d27a921"
-  dependencies:
-    mime-types "2.1.13"
-    xml "1.0.1"
-
 rsvp@^3.0.13, rsvp@^3.0.18:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
@@ -13087,7 +13067,7 @@ xml2js@^0.4.5:
     sax ">=0.6.0"
     xmlbuilder "~9.0.1"
 
-xml@1.0.1:
+xml@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
 

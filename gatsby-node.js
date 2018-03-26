@@ -1,8 +1,25 @@
 // @flow
 // @format
-const Promise = require(`bluebird`)
+const fs = require(`fs`)
+const pify = require(`pify`)
 const path = require(`path`)
+const Feed = require(`feed`)
+const moment = require(`moment`)
+const Promise = require(`bluebird`)
+const forEach = require(`lodash/forEach`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { siteUrl, authorName, siteTitle } = require(`./src/utils/constants`)
+
+const writeFile = pify(fs.writeFile)
+
+const runQuery = (handler, query) =>
+  handler(query).then(r => {
+    if (r.errors) {
+      throw new Error(r.errors.join(`, `))
+    }
+
+    return r.data
+  })
 
 const replacePath = _path =>
   _path === `/` ? _path : _path.replace(/\/$/, ``)
@@ -176,5 +193,93 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       pageWalker(createPage, pages)
       resolve()
     })
+  })
+}
+
+exports.onPostBuild = async ({ graphql }) => {
+  const feedQuery = await runQuery(
+    graphql,
+    `{
+      posts: allMarkdownRemark(
+        limit: 20
+        sort: { fields: [fields___date], order: DESC }
+        filter: {
+          fields: { template: { eq: "post" } }
+          frontmatter: { test: { ne: true } }
+        }
+      ) {
+        edges {
+          node {
+            html
+            fields {
+              slug
+              title
+              date
+            }
+          }
+        }
+      }
+    }`
+  )
+
+  const { posts: { edges: data } } = feedQuery
+
+  const feed = new Feed({
+    title: siteTitle,
+    link: siteUrl,
+    id: siteUrl,
+    feedLinks: {
+      atom: `${siteUrl}/atom.xml`,
+      json: `${siteUrl}/feed.json`,
+    },
+    author: {
+      name: authorName,
+      link: siteUrl,
+    },
+  })
+
+  forEach(data, ({ node }) => {
+    feed.addItem({
+      title: node.fields.title,
+      id: `${siteUrl}${node.fields.slug}`,
+      link: `${siteUrl}${node.fields.slug}`,
+      date: moment(node.fields.date).toDate(),
+      content: node.html.replace(/\b(href|src)="\//g, `$1="${siteUrl}`),
+      author: [
+        {
+          name: authorName,
+          link: siteUrl,
+        },
+      ],
+    })
+  })
+
+  const publicPath = `./public/`
+
+  await writeFile(
+    path.join(publicPath, `rss.xml`),
+    feed.rss2(),
+    `utf8`
+  ).catch(r => {
+    // eslint-disable-next-line no-console
+    console.error(`Failed to write JSON Feed file: `, r)
+  })
+
+  await writeFile(
+    path.join(publicPath, `atom.xml`),
+    feed.atom1(),
+    `utf8`
+  ).catch(r => {
+    // eslint-disable-next-line no-console
+    console.error(`Failed to write JSON Feed file: `, r)
+  })
+
+  await writeFile(
+    path.join(publicPath, `feed.json`),
+    feed.json1(),
+    `utf8`
+  ).catch(r => {
+    // eslint-disable-next-line no-console
+    console.error(`Failed to write JSON Feed file: `, r)
   })
 }
