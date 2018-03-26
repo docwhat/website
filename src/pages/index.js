@@ -45,6 +45,22 @@ const SiteIndex = props => (
         rel="openid2.local_id"
         href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
       />
+      <link
+        rel="openid.server"
+        href="https://openid.stackexchange.com/openid/provider"
+      />
+      <link
+        rel="openid.delegate"
+        href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
+      />
+      <meta
+        httpEquiv="X-XRDS-Location"
+        content="https://openid.stackexchange.com/xrds"
+      />
+      <meta
+        httpEquiv="X-Yadis-Location"
+        content="https://openid.stackexchange.com/xrds"
+      />
     </Helmet>
     <Div
       css={{
