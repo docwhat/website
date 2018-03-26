@@ -48,5 +48,6 @@ RUN find public -type f \
 
 #################################
 FROM nginx:stable-alpine AS final
+LABEL maintainer="Christian Höltje <https://docwhat.org>"
 COPY --from=compress /workdir/public/ /html
 COPY nginx.conf /etc/nginx/nginx.conf
