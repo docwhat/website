@@ -2,14 +2,14 @@
 
 set -eux
 
-env | sort -u 1>&2
-env | sort -u
+B_DATE="$(env TZ='America/New_York' date '+%Y-%m-%dT%H:%M:%SZ')"
+B_REPO="$(git ls-remote --get-url)"
 
 # Build-time metadata as defined at http://label-schema.org
 exec docker build \
   "--tag=$IMAGE_NAME" \
   "--pull" \
-  "--label=org.label-schema.vcs-ref=$SOURCE_COMMIT" \
-  "--label=org.label-schema.vcs-url=$SOURCE_URL" \
-  "--label=org.label-schema.build-date=$BUILD_DATE" \
+  "--label=org.label-schema.vcs-ref=$GIT_SHA1" \
+  "--label=org.label-schema.vcs-url=$B_REPO" \
+  "--label=org.label-schema.build-date=$B_DATE" \
   .
