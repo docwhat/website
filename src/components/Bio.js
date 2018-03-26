@@ -80,7 +80,7 @@ const Bio = () => (
         <Reference>
           <Envelope />
           {` `}
-          <Link to="/contact" title="Contact me!">
+          <Link to="/email" title="Contact me!">
             contact
           </Link>
         </Reference>

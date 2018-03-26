@@ -13,7 +13,7 @@ code. And so I have obliged.
 These links all open in new windows, so that you can look at them and decide
 which you would prefer to use.
 
-* [Email me](/contact) A hearty "Thank You!" Tell me what I've done to improve
+* [Email me](/email) A hearty "Thank You!" Tell me what I've done to improve
   your life!
 * [Think Geek Wishlist](http://www.thinkgeek.com/brain/gimme.cgi?wid=81e27ae08)
 * [Paypal Me!](paypal.me/holtje/5.99)
