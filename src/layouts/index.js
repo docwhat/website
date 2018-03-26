@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import { withPrefix } from 'gatsby-link'
 
 import Link from '../components/Link'
-import logoUrl, { ReactComponent as Logo } from '../icons/logo.svg'
+import logoUrl from '../icons/logo.svg'
 import { heroColor } from '../utils/colors'
 import { rhythm, scale, options as typo } from '../utils/typography'
 
