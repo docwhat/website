@@ -8,11 +8,11 @@ import avatarPic from './avatar.png'
 import { rhythm } from '../utils/typography'
 import { siteUrl, authorName } from '../utils/constants'
 import Link from './Link'
-import GithubLogo from '../icons/github.svg'
-import TwitterLogo from '../icons/twitter.svg'
-import Envelope from '../icons/envelope.svg'
-import Gift from '../icons/gift.svg'
-import Key from '../icons/key.svg'
+import { ReactComponent as GithubLogo } from '../icons/github.svg'
+import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
+import { ReactComponent as Envelope } from '../icons/envelope.svg'
+import { ReactComponent as Gift } from '../icons/gift.svg'
+import { ReactComponent as Key } from '../icons/key.svg'
 
 const Reference = props => (
   <g.Span

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import { withPrefix } from 'gatsby-link'
 
 import Link from '../components/Link'
-import Logo from '../icons/logo.svg'
+import logoUrl, { ReactComponent as Logo } from '../icons/logo.svg'
 import { heroColor } from '../utils/colors'
 import { rhythm, scale, options as typo } from '../utils/typography'
 
@@ -38,7 +38,13 @@ const DefaultLayout = props => {
         }}
         to="/"
       >
-        <Logo />
+        <g.Img
+          src={logoUrl}
+          alt="docwhat's avatar"
+          height="1em"
+          width="1em"
+          verticalAlign="text-top"
+        />
         {`docwhat's blog`}
       </Link>
     </g.Header>

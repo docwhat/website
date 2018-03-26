@@ -5211,9 +5211,9 @@ gatsby-plugin-sitemap@1.2.20:
     babel-runtime "^6.26.0"
     sitemap "^1.12.0"
 
-gatsby-plugin-svgr@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-svgr/-/gatsby-plugin-svgr-0.2.1.tgz#960bbb7d483aa7f7ac5e6ef30f64906611089901"
+gatsby-plugin-svgr@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-svgr/-/gatsby-plugin-svgr-1.0.0.tgz#5a5ab5b6aa9146ce6d9b0b01e9d91f3760952853"
   dependencies:
     svgr "*"
 
