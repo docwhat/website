@@ -33,6 +33,10 @@ const BlogMicroData = () => {
 const SiteIndex = props => (
   <Div>
     <Helmet title={siteTitle}>
+      <meta
+        name="google-site-verification"
+        content="caPZYkV8gUY3XzcNO0khNKflZYZvmpYNAYl280tdzn4"
+      />
       <link
         rel="openid2.provider"
         href="https://openid.stackexchange.com/openid/provider"
