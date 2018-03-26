@@ -2,6 +2,9 @@
 
 set -eux
 
+env | sort -u 1>&2
+env | sort -u
+
 # Build-time metadata as defined at http://label-schema.org
 exec docker build \
   "--tag=$IMAGE_NAME" \
