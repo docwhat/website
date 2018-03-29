@@ -1,6 +1,6 @@
 // @format
 // @flow
-import { Div } from 'glamorous'
+import { H3, Div } from 'glamorous'
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
@@ -92,11 +92,10 @@ const SiteIndex = props => (
           />
         )
       })}
-
-      <h3 css={{ textAlign: `right` }}>
-        <Link to="/all">See all blog posts&hellip;</Link>
-      </h3>
     </Div>
+    <H3 css={{ textAlign: `right` }}>
+      <Link to="/all">See all blog posts&hellip;</Link>
+    </H3>
     <BlogMicroData />
     <Bio />
     <TheNetwork />
