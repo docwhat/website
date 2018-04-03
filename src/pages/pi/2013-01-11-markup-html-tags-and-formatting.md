@@ -34,10 +34,13 @@ Single line blockquote:
 
 Multi line blockquote with a cite reference:
 
-> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
-
-<cite>Steve Jobs</cite> --- Apple Worldwide Developers' Conference, 1997
-{: .small}
+> People think focus means saying yes to the thing you've got to focus on. But
+> that's not what it means at all. It means saying no to the hundred other
+> good ideas that there are. You have to pick carefully. I'm actually as proud
+> of the things we haven't done as the things I have done. Innovation is
+> saying no to 1,000 things.
+>
+> <cite>Steve Jobs - Apple Worldwide Developers' Conference, 1997</cite>
 
 ## Footnotes
 
@@ -75,20 +78,6 @@ This line has a footnote [^footnote-1]. Scroll down or click the link to see it.
 | cell4                         |  cell5  |   cell6 |
 | ============================= |
 | Foot1                         |  Foot2  |   Foot3 |
-
-## Definition Lists
-
-Definition List Title
-: Definition list division.
-
-Startup
-: A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-: Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-: I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
 
 ## Unordered Lists (Nested)
 
@@ -242,7 +231,9 @@ This tag should denote <ins>inserted</ins> text.
 
 ### Keyboard Tag
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually
+styled like the `<code>` tag. Useful for things like <kbd>⌘</kbd> +
+<kbd>s</kbd>
 
 ### Preformatted Tag
 
@@ -250,11 +241,11 @@ This tag styles large blocks of code.
 
 <pre>
 .post-title {
-	margin: 0 0 5px;
-	font-weight: bold;
-	font-size: 38px;
-	line-height: 1.2;
-	and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.2;
+  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
 }
 </pre>
 
