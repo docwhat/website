@@ -86,6 +86,33 @@ const typography = new Typography({
         marginLeft: rhythm(1.25),
       },
 
+      kbd: {
+        background: gray(93),
+        borderRadius: `0.25em`,
+        boxShadow: `0.1em 0.1em 0.1em ${gray(43)}`,
+        color: gray(31),
+        cursor: `pointer`,
+        display: `inline-block`,
+        fontSize: `0.9em`,
+        fontVariant: `small-caps`,
+        fontWeight: `600`,
+        letterSpacing: `1px`,
+        lineHeight: `1`,
+        margin: `0 0.15em`,
+        padding: `0.2em 0.4em`,
+        userSelect: `none`,
+        verticalAlign: `text-bottom`,
+      },
+
+      'kbd:hover, kbd:hover *': {
+        color: `black`,
+      },
+
+      'kbd:active, kbd:active *': {
+        color: `black`,
+        boxShadow: `0.1em 0.1em 0 ${gray(81)} inset`,
+      },
+
       blockquote: {
         ...scale(1 / 5),
         color: gray(45),
@@ -173,8 +200,6 @@ css.global(`iframe`, {
 css.global(`svg`, {
   verticalAlign: `text-top`,
 })
-
-css.global({})
 
 require(`./prismjs.js`)
 
