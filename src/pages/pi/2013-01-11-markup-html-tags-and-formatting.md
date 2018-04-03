@@ -207,7 +207,18 @@ This is an example of a [link](http://apple.com "Apple").
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
-\*[CSS]: Cascading Style Sheets
+*[CSS]: Cascading Style Sheets
+
+This plugin works on MDAST, a Markdown AST
+implemented by [remark](https://github.com/wooorm/remark)
+
+*[MDAST]: Markdown Abstract Syntax Tree.
+*[AST]: Abstract syntax tree
+
+The HTML specification is maintained by the W3C.  It sometimes uses CSS.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
 
 ### Cite Tag
 

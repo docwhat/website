@@ -56,6 +56,7 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-emoji`,
+          `gatsby-remark-abbr`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-autolink-headers`,
           {
