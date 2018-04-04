@@ -2540,9 +2540,9 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000810"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000810.tgz#bd25830c41efab64339a2e381f49677343c84509"
 
-caniuse-db@^1.0.30000821:
-  version "1.0.30000821"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000821.tgz#3fcdc67c446a94a9cdd848248a4e3e54b2da7419"
+caniuse-db@^1.0.30000823:
+  version "1.0.30000823"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000823.tgz#e68e5f8c70783ef4059d2ea0de81f551651da6fc"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000810"
@@ -5159,9 +5159,9 @@ gatsby-plugin-glamor@1.6.13:
     babel-runtime "^6.26.0"
     glamor "^2.20.29"
 
-gatsby-plugin-google-analytics@1.0.27:
-  version "1.0.27"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.27.tgz#d040baffb3f74eeb236d4b6ce7020925c921ab1c"
+gatsby-plugin-google-analytics@1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.28.tgz#b5070e53bd39331b34bb9d8cf1cf24c680b4c60a"
   dependencies:
     babel-runtime "^6.26.0"
 
@@ -5260,12 +5260,12 @@ gatsby-remark-copy-linked-files@^1.5.30:
     probe-image-size "^3.2.0"
     unist-util-visit "^1.1.1"
 
-gatsby-remark-embed-snippet@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.18.tgz#617be4cc1d11a73522420b6422bc29fa2a9da23b"
+gatsby-remark-embed-snippet@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.19.tgz#0847b3eb3542eef4a2777ad4a66ac1f633648752"
   dependencies:
     babel-runtime "^6.26.0"
-    gatsby-remark-prismjs "^1.2.22"
+    gatsby-remark-prismjs "^1.2.23"
     normalize-path "^2.1.1"
     parse-numeric-range "^0.0.2"
     unist-util-map "^1.0.3"
@@ -5289,9 +5289,9 @@ gatsby-remark-images@^1.5.60:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-remark-prismjs@^1.2.22:
-  version "1.2.22"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.22.tgz#82ef3b10f582f355af431d90f276900a7e39a270"
+gatsby-remark-prismjs@^1.2.23:
+  version "1.2.23"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.23.tgz#49cd63f5b0977bf8ead13649d26f6f2d03c48fe8"
   dependencies:
     babel-runtime "^6.26.0"
     parse-numeric-range "0.0.2"
@@ -5317,9 +5317,9 @@ gatsby-remark-smartypants@^1.4.12:
     retext-smartypants "^2.0.0"
     unist-util-visit "^1.1.1"
 
-gatsby-source-filesystem@1.5.27:
-  version "1.5.27"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.27.tgz#0063e9e4c87f9172a1a08296d1c4c27d03f97d01"
+gatsby-source-filesystem@1.5.28:
+  version "1.5.28"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.28.tgz#4fe2452e425d5e39233f6892983291e3282cac6c"
   dependencies:
     babel-cli "^6.26.0"
     babel-runtime "^6.26.0"
@@ -5376,9 +5376,9 @@ gatsby-transformer-yaml@1.5.16:
     lodash "^4.17.4"
     unist-util-select "^1.5.0"
 
-gatsby@1.9.244:
-  version "1.9.244"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.244.tgz#20c28b48ef207161e35edd85e351d6c3ac3f4d45"
+gatsby@1.9.246:
+  version "1.9.246"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.246.tgz#0e6c66ce1de88d8369480b57f737c7c88d351bc7"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
