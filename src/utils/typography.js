@@ -94,7 +94,6 @@ const typography = new Typography({
         cursor: `pointer`,
         display: `inline-block`,
         fontSize: `0.9em`,
-        fontVariant: `small-caps`,
         fontWeight: `600`,
         letterSpacing: `1px`,
         lineHeight: `1`,
