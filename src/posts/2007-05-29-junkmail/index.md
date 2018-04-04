@@ -3,10 +3,11 @@ date: "2007-05-29T07:24:31+00:00"
 id: 57
 slug: "/junkmail/"
 template: "post"
-title: "Stopping junk postal mail: Are these ripoffs?"
+title: "Stop junk postal mail"
+q: "Stopping junk postal mail: Are these ripoffs?"
 tags:
-  - "Privacy"
-  - "spam"
+  - Privacy
+  - spam
 ---
 
 My [mother](http://dianewillis.com/), who has a lot of friends that send her
@@ -18,7 +19,7 @@ I took a quick look around and found similar services at
 [StopTheJunkMail](http://stopthejunkmail.com) and
 [Greendimes](http://greendimes.com/).
 
-I cannot tell if these are legit or not; Doing searches on the Internet are
+I cannot tell if these are legit or not; Doing searches on the internet are
 largely self referential. The problem with this kind of service is that they
 could, in theory, sign you up for the
 [Direct Marketing Association](http://the-dma.org/)'s
@@ -35,6 +36,5 @@ Ciao!
 
 \[Added 2007/05/05\] Here are two Greendimes admin interface images:
 
-![GreenDimes admin interface](greendimes1.jpg)
-
-![GreenDimes admin interface (cont.)](greendimes2.jpg)
+![GreenDimes admin interface](greendimes1.jpg 'GreenDimes admin interface')
+![GreenDimes admin interface (cont.)](greendimes2.jpg 'GreenDimes admin interface 2')
