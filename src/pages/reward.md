@@ -16,7 +16,7 @@ which you would prefer to use.
 * [Email me](/email) A hearty "Thank You!" Tell me what I've done to improve
   your life!
 * [Think Geek Wishlist](http://www.thinkgeek.com/brain/gimme.cgi?wid=81e27ae08)
-* [Paypal Me!](paypal.me/holtje/5.99)
+* [Paypal Me!](http://paypal.me/holtje/5.99)
 * Post me a letter, postcard, stickers, or items unique to your homeland! I'll
   blog about anything I get. :-)
 
