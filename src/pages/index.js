@@ -115,7 +115,7 @@ export default SiteIndex
 export const pageQuery = graphql`
   query IndexQuery {
     posts: allMarkdownRemark(
-      limit: 6
+      limit: 10
       sort: { fields: [fields___date], order: DESC }
       filter: {
         fields: { template: { eq: "post" } }
