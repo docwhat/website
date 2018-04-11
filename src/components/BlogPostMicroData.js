@@ -2,12 +2,12 @@
 // @format
 import React from 'react'
 import PropTypes from 'prop-types'
-import avatarPic from '../components/avatar.png'
-import { authorUrl, authorJsonLd } from '../utils/constants'
+import { authorJsonLD } from '../utils/ldjson'
 
 const BlogPostMicroData = props => {
   const { postTitle, postUrl, ymdDate, wordCount } = props
 
+  // https://jsonld-examples.com/schema.org/code/article/socialmediaposting/blogposting-markup.php
   const jsonObject = {
     '@context': `http://schema.org`,
     '@type': `BlogPosting`,
@@ -17,19 +17,8 @@ const BlogPostMicroData = props => {
     wordCount,
     url: postUrl,
     datePublished: ymdDate,
-    author: authorJsonLd,
-    publisher: {
-      ...authorJsonLd,
-      logo: {
-        '@type': `ImageObject`,
-        contentUrl: avatarPic,
-        url: authorUrl,
-      },
-    },
-    mainEntityOfPage: {
-      '@type': `WebPage`,
-      '@id': postUrl,
-    },
+    author: authorJsonLD,
+    mainEntityOfPage: `True`,
     /* "articleBody":"" */
   }
 

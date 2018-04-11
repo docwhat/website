@@ -1,13 +1,18 @@
 // @flow
 // @format
 
-const { authorName, siteUrl, siteTitle } = require(`./src/utils/constants.js`)
+const {
+  authorName,
+  siteDescription,
+  siteTitle,
+  siteUrl,
+} = require(`./src/utils/constants.js`)
 
 module.exports = {
   siteMetadata: {
     title: siteTitle,
     author: authorName,
-    description: `Personal blog of Christian Höltje`,
+    description: siteDescription,
     siteUrl,
   },
   plugins: [

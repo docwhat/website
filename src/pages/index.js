@@ -4,25 +4,25 @@ import { H3, Div } from 'glamorous'
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import { siteTitle, authorUrl, authorJsonLd } from '../utils/constants'
+import { siteTitle } from '../utils/constants'
 import { rhythm } from '../utils/typography'
+import { blogJsonLD } from '../utils/ldjson'
 
 import Bio from '../components/Bio'
 import PostCard from '../components/PostCard'
 import TheNetwork from '../components/TheNetwork'
 import Link from '../components/Link'
 
+// https://jsonld-examples.com/schema.org/code/blog-markup.php
 const BlogMicroData = () => {
   const jsonObject = {
     '@context': `http://schema.org`,
-    '@type': `Blog`,
-    keywords: `software engineering agile devops ruby golang javascript refactoring`,
-    url: authorUrl,
-    mainEntityOfPage: {
-      '@type': `WebPage`,
-      '@id': authorUrl,
-    },
-    author: authorJsonLd,
+    blogJsonLD,
+    //     "potentialAction": {
+    // "@type": "SearchAction",
+    // "target": "https://example.com/search.php?q={search_term}",
+    // "query-input": "required name=search_term"
+    //     },
   }
 
   return (
