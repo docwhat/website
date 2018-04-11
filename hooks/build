@@ -5,6 +5,10 @@ set -eux
 B_DATE="$(env TZ='America/New_York' date '+%Y-%m-%dT%H:%M:%SZ')"
 B_REPO="$(git ls-remote --get-url)"
 
+if [ -z "${GIT_SHA1:-}" ]; then
+  GIT_SHA1="$(git rev-parse HEAD)"
+fi
+
 # Build-time metadata as defined at http://label-schema.org
 exec docker build \
   "--tag=$IMAGE_NAME" \
