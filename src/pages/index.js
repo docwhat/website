@@ -26,7 +26,10 @@ const BlogMicroData = () => {
   }
 
   return (
-    <script type="application/ld+json">{JSON.stringify(jsonObject)}</script>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonObject) }}
+    />
   )
 }
 
