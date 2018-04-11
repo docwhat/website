@@ -1,7 +1,26 @@
+sudo: required
+language: ruby
+services:
+  - docker
 cache:
   directories:
     - node_modules
-language: ruby
+env:
+  global:
+    - DOCKER_USERNAME=docwhat
+    - secure: S2zWiSA4lh3F1qMBCBUZyF6Z+Slq1S1AxIBTQZ4dkUh6JODkGaerHHlFAAMBY4BQhZdLtJyAak9ToSdK8LxXu0EjaJyGQnUr5C3gRvwee8PuN2lyhMiO88j8uSq2pd93xbLw2g6gb3+We8WTy5N/Mk31s0jbzINlKShyBI7Teto=
+
+script:
+  - docker build --target=lint .
+  - docker build --target=build .
+  - env IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" hooks/build
+
+deploy:
+  provider: script
+  script: hooks/docker_push_next
+  on:
+    branch: next
+
 notifications:
   email:
     on_failure: never
@@ -14,9 +33,3 @@ notifications:
     users:
       secure: QFycDr2Xncye5QsFFHJs7nSd2sek0ntb7d/PthDAGkpxrfW9ebqkvrpjGSBDQiytqTBKOiUOkKwAFFNz7csukCdZ1mdjgQNoKmTzIgQvakUjZUsLZC/rPGHMveRdoaCNgiUwxWIRUCxpAHtlOFiYEdeJFuO5ju4vgmYP0gF/hXY=
   webhooks: https://www.travisbuddy.com/
-script:
-  - 'docker build --target=lint .'
-  - 'docker build --target=build .'
-services:
-  - docker
-sudo: required
