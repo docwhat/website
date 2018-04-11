@@ -12,25 +12,17 @@ import Bio from '../components/Bio'
 import PostCard from '../components/PostCard'
 import TheNetwork from '../components/TheNetwork'
 import Link from '../components/Link'
+import JsonLd from '../components/JsonLd'
 
 // https://jsonld-examples.com/schema.org/code/blog-markup.php
-const BlogMicroData = () => {
-  const jsonObject = {
-    '@context': `http://schema.org`,
-    blogJsonLD,
-    //     "potentialAction": {
-    // "@type": "SearchAction",
-    // "target": "https://example.com/search.php?q={search_term}",
-    // "query-input": "required name=search_term"
-    //     },
-  }
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonObject) }}
-    />
-  )
+const jsonLdData = {
+  '@context': `http://schema.org`,
+  blogJsonLD,
+  //     "potentialAction": {
+  // "@type": "SearchAction",
+  // "target": "https://example.com/search.php?q={search_term}",
+  // "query-input": "required name=search_term"
+  //     },
 }
 
 const SiteIndex = props => (
@@ -99,7 +91,7 @@ const SiteIndex = props => (
     <H3 css={{ textAlign: `right` }}>
       <Link to="/all">See all blog posts&hellip;</Link>
     </H3>
-    <BlogMicroData />
+    <JsonLd data={jsonLdData} />
     <Bio />
     <TheNetwork />
   </Div>

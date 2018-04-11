@@ -3,12 +3,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { authorJsonLD } from '../utils/ldjson'
+import JsonLd from './JsonLd'
 
 const BlogPostMicroData = props => {
   const { postTitle, postUrl, ymdDate, wordCount } = props
 
   // https://jsonld-examples.com/schema.org/code/article/socialmediaposting/blogposting-markup.php
-  const jsonObject = {
+  const jsonData = {
     '@context': `http://schema.org`,
     '@type': `BlogPosting`,
     headline: postTitle,
@@ -22,12 +23,7 @@ const BlogPostMicroData = props => {
     /* "articleBody":"" */
   }
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonObject) }}
-    />
-  )
+  return <JsonLd data={jsonData} />
 }
 
 BlogPostMicroData.propTypes = {
