@@ -8,7 +8,7 @@ cache:
 env:
   global:
     - DOCKER_USERNAME=docwhat
-    - secure: S2zWiSA4lh3F1qMBCBUZyF6Z+Slq1S1AxIBTQZ4dkUh6JODkGaerHHlFAAMBY4BQhZdLtJyAak9ToSdK8LxXu0EjaJyGQnUr5C3gRvwee8PuN2lyhMiO88j8uSq2pd93xbLw2g6gb3+We8WTy5N/Mk31s0jbzINlKShyBI7Teto=
+    - secure: cgA++j5I+hPFPw2IXUaY+zFLJZlSLw7Wdf1s5OxpZHo/iGIYI9FA2ejFQ/832idvD/5yWeKYAKcbFWpuYe9t//AUPvvhGDWGIkWLiPnRzTgvNJ0LmqPSfDUa1vCuCvLES3yWMocOL33nnaCehihzkcb/UG7/aw5wbmNZ3EUq4m0=
 
 script:
   - docker build --target=lint .
