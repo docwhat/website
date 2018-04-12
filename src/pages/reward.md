@@ -1,10 +1,10 @@
 ---
-changefreq: "monthly"
+id: 284
 template: "page"
 permalink: "/reward/"
-priority: "0.3"
 title: "Reward or Donate"
-wordpress_id: 284
+priority: "0.2"
+changefreq: "monthly"
 ---
 
 Some people have asked for a way to reward me or to encourage me to work on my

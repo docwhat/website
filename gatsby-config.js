@@ -111,7 +111,59 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: {},
+      options: {
+        query: `
+            {
+              site { siteMetadata { siteUrl } }
+              allSitePage: allMarkdownRemark(
+                limit: 100000
+                filter: {
+                  fields: { template: { ne: "comment" } }
+                  frontmatter: {
+                    test: { ne: true }
+                  }
+                }
+              ) {
+                edges {
+                  node {
+                    path: fileAbsolutePath
+                    fields { slug }
+                    frontmatter {
+                      changefreq
+                      priority
+                    }
+                  }
+                }
+              }
+            }
+          `,
+        serialize: ({ allSitePage }) =>
+          allSitePage.edges
+            .map(edge => ({
+              url: siteUrl + edge.node.fields.slug,
+              changefreq: edge.node.frontmatter.changefreq || `weekly`,
+              priority: parseFloat(edge.node.frontmatter.priority) || 0.5,
+            }))
+            .filter(item => item.priority >= 0.0)
+            .concat([
+              // TODO: I don't know how to get "frontmatter" from .js
+              {
+                url: `${siteUrl}/`,
+                changefreq: `daily`,
+                priority: 0.8,
+              },
+              {
+                url: `${siteUrl}/all`,
+                changefreq: `daily`,
+                priority: 0.4,
+              },
+              {
+                url: `${siteUrl}/email`,
+                changefreq: `yearly`,
+                priority: 0.1,
+              },
+            ]),
+      },
     },
     {
       resolve: `gatsby-plugin-svgr`,
