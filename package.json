@@ -16,6 +16,7 @@
     "bluebird": "3.5.1",
     "broken-link-checker": "^0.7.8",
     "caniuse-db": "^1.0.30000827",
+    "chalk": "^2.3.2",
     "color": "^3.0.0",
     "compass-vertical-rhythm": "^1.4.0",
     "eslint": "^4.19.1",
@@ -59,6 +60,8 @@
     "glamorous": "^4.12.2",
     "graphql": "0.11.7",
     "gray-percentage": "^2.0.0",
+    "inquirer": "^5.2.0",
+    "inquirer-datepicker-prompt": "^0.4.2",
     "lodash": "4.17.5",
     "moment": "2.x.x",
     "pify": "^3.0.0",
@@ -72,7 +75,8 @@
     "react-gravatar": "^2.6.3",
     "react-helmet": "^5.2.0",
     "typography": "^0.16.0",
-    "typography-breakpoint-constants": "^0.15.10"
+    "typography-breakpoint-constants": "^0.15.10",
+    "uuid": "^3.2.1"
   },
   "homepage": "https://github.com/docwhat/docwhat#readme",
   "keywords": [
@@ -95,6 +99,7 @@
     "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
     "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-links": "broken-link-checker --ordered --filter-level=3",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new": "node src/utils/newpost.js"
   }
 }
