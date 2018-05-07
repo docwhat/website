@@ -10,10 +10,9 @@ tags:
   - wtf
 ---
 
-I read the [The Daily WTF](http://thedailywtf.com/) regularly using
-[bloglines](http://bloglines.com/). When I read today’s
-[WTF article](http://thedailywtf.com/forums/thread/93418.aspx) I started to
-wonder, "Is this stuff real?"
+I read the [The Daily WTF](http://thedailywtf.com/) regularly. When I read
+today’s [WTF article](http://thedailywtf.com/forums/thread/93418.aspx) I
+started to wonder, "Is this stuff real?"
 
 I mean think about it. It has all the elements of a classic letter to
 Penthouse:
