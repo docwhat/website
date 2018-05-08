@@ -2492,9 +2492,13 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639, caniuse-db@^1.0.30000827:
+caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000833"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000833.tgz#2bd7be72a401658d2cbcb8f4d7600deebeb1c676"
+
+caniuse-db@^1.0.30000835:
+  version "1.0.30000835"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000835.tgz#6556931cdf035903d8655d6303f9501b5915fbe9"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000833"
@@ -4990,9 +4994,9 @@ gatsby-plugin-google-analytics@1.0.31:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-offline@1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.15.tgz#26af0e1d1c8ed0c31f92bc6a75484b583550ef5b"
+gatsby-plugin-offline@1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.16.tgz#d3b92a9dc427cacb106dddf336bda68456ea8126"
   dependencies:
     babel-runtime "^6.26.0"
     sw-precache "^5.0.0"
@@ -5087,9 +5091,9 @@ gatsby-remark-copy-linked-files@^1.5.31:
     probe-image-size "^4.0.0"
     unist-util-visit "^1.1.1"
 
-gatsby-remark-embed-snippet@^1.0.20:
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.21.tgz#137f83eafd6d823fde89cbfbcb716e07ecddc4c4"
+gatsby-remark-embed-snippet@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-1.0.22.tgz#da640eb9a92cad689d0fae54ad051dae89eb7ad4"
   dependencies:
     babel-runtime "^6.26.0"
     gatsby-remark-prismjs "^1.2.24"

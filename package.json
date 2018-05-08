@@ -15,7 +15,7 @@
     "babel-preset-flow": "^6.23.0",
     "bluebird": "3.5.1",
     "broken-link-checker": "^0.7.8",
-    "caniuse-db": "^1.0.30000827",
+    "caniuse-db": "^1.0.30000835",
     "chalk": "^2.3.2",
     "color": "^3.0.0",
     "compass-vertical-rhythm": "^1.4.0",
@@ -35,7 +35,7 @@
     "gatsby-plugin-catch-links": "1.0.22",
     "gatsby-plugin-glamor": "1.6.13",
     "gatsby-plugin-google-analytics": "1.0.31",
-    "gatsby-plugin-offline": "1.0.15",
+    "gatsby-plugin-offline": "1.0.16",
     "gatsby-plugin-react-helmet": "2.0.11",
     "gatsby-plugin-remove-trailing-slashes": "^1.0.9",
     "gatsby-plugin-sharp": "1.6.44",
@@ -45,7 +45,7 @@
     "gatsby-remark-abbr": "^1.0.0",
     "gatsby-remark-autolink-headers": "^1.4.16",
     "gatsby-remark-copy-linked-files": "^1.5.31",
-    "gatsby-remark-embed-snippet": "^1.0.20",
+    "gatsby-remark-embed-snippet": "^1.0.22",
     "gatsby-remark-emoji": "^0.0.2",
     "gatsby-remark-images": "^1.5.60",
     "gatsby-remark-prismjs": "^1.2.24",
@@ -79,7 +79,10 @@
     "uuid": "^3.2.1"
   },
   "homepage": "https://github.com/docwhat/docwhat#readme",
-  "keywords": ["gatsby", "blog"],
+  "keywords": [
+    "gatsby",
+    "blog"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -93,10 +96,8 @@
     "lint": "eslint '**/*.{js,jsx}'",
     "format": "prettier-eslint --write '**/*.{js,jsx,md}'",
     "format:check": "prettier-eslint --list-different '**/*.{js,jsx,md}'",
-    "check-external-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
-    "check-internal-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
+    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
+    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-links": "broken-link-checker --ordered --filter-level=3",
     "test": "echo \"Error: no test specified\" && exit 1",
     "new": "node src/utils/newpost.js"
