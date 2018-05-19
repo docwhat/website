@@ -53,8 +53,8 @@ const postWalker = (createPage, posts) => {
 
   // Create pages for each Markdown file.
   posts.forEach(({ node }, index) => {
-    const newer = index === 0 ? false : posts[index - 1].node
-    const older = index === posts.length - 1 ? false : posts[index + 1].node
+    const newer = index === 0 ? null : posts[index - 1].node
+    const older = index === posts.length - 1 ? null : posts[index + 1].node
 
     createPage({
       path: node.fields.slug,
@@ -222,7 +222,9 @@ exports.onPostBuild = async ({ graphql }) => {
     }`
   )
 
-  const { posts: { edges: data } } = feedQuery
+  const {
+    posts: { edges: data },
+  } = feedQuery
 
   const feed = new Feed({
     title: siteTitle,
