@@ -176,8 +176,7 @@ const typography = new Typography({
           paddingLeft: rhythm(9 / 16),
         },
         '.gatsby-highlight > pre[class*="language-"]': {
-          paddingLeft: 0,
-          paddingRight: 0,
+          padding: `0.2em`,
           borderLeft: `none`,
           borderRight: `none`,
         },
