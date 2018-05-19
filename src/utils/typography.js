@@ -28,6 +28,8 @@ const monoSpaceFontFamilyString = monoSpaceFontFamily
 
 const typography = new Typography({
   title: `docwhat2018`,
+  baseFontSize: `21px`,
+  baseLineHeight: `1.5`,
   googleFonts: [
     {
       name: `Quattrocento`,
