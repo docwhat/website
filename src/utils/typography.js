@@ -212,6 +212,19 @@ css.global(`iframe`, {
   maxHeight: `420px`,
 })
 
+css.global(`ins`, {
+  textDecoration: `none`,
+})
+
+css.global(`del`, {
+  textDecoration: `solid ${mellowColor} line-through`,
+  opacity: `0.6`,
+})
+
+css.global(`del > *`, {
+  textDecoration: `inherit`,
+})
+
 css.global(`svg`, {
   verticalAlign: `text-top`,
 })
