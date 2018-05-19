@@ -13,10 +13,21 @@ import { heroColor, mellowColor } from '../utils/colors'
 // Details:
 // https://github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-github/src/index.js
 
+const monoSpaceFontFamily = [
+  `SFMono-Regular`,
+  `Consolas`,
+  `Liberation Mono`,
+  `Menlo`,
+  `Courier`,
+  `monospace`,
+]
+
+const monoSpaceFontFamilyString = monoSpaceFontFamily
+  .map(s => (s.match(/\s+/) ? `"${s}"` : s))
+  .join(`, `)
+
 const typography = new Typography({
   title: `docwhat2018`,
-  baseFontSize: `21px`,
-  baseLineHeight: `1.5`,
   googleFonts: [
     {
       name: `Quattrocento`,
@@ -24,7 +35,7 @@ const typography = new Typography({
     },
     {
       name: `Quattrocento Sans`,
-      styles: [`400`, `400i`, `700`],
+      styles: [`400`, `700`],
     },
   ],
   headerFontFamily: [
@@ -42,15 +53,15 @@ const typography = new Typography({
     `Segoe UI Symbol`,
   ],
   scaleRatio: 2,
-  bodyColor: `hsla(0,0%,0%,0.8)`,
+  bodyColor: gray(20),
   headerWeight: 700,
-  bodyWeight: `normal`,
+  bodyWeight: 400,
   boldWeight: 700,
   /* Github has all block elements use 1/2 rhythm not a full rhythm. */
   blockMarginBottom: 1 / 2,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     const vr = verticalRhythm({
-      baseFontSize: `15px`,
+      baseFontSize: `16px`,
       baseLineHeight: `1.5`,
     })
 
@@ -84,6 +95,11 @@ const typography = new Typography({
       },
       'li>ol,li>ul': {
         marginLeft: rhythm(1.25),
+      },
+
+      'code,pre,tt': {
+        fontFamily: monoSpaceFontFamilyString,
+        lineHeight: `1.5`,
       },
 
       kbd: {

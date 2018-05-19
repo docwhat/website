@@ -14,32 +14,12 @@ import {
  * Inspired by Github syntax coloring
  */
 
-const monoSpaceFontFamily = [
-  `SFMono-Regular`,
-  `Consolas`,
-  `Liberation Mono`,
-  `Menlo`,
-  `Courier`,
-  `monospace`,
-]
-
-const codeBox = {
-  borderWidth: `1px`,
-  borderStyle: `solid`,
-  borderColor: `#dddddd`,
-  backgroundColor: `#f8f8f8`,
-  borderRadius: `1px`,
-}
-
 const baseColor = deemphasisColor.saturationl(5.5).lightness(21.6)
 
 css.global(`code[class*='language-'], pre[class*='language-']`, {
   color: baseColor,
-  fontFamily: monoSpaceFontFamily.map(s => `"${s}"`).join(`, `),
   direction: `ltr`,
   textAlign: `left`,
-  fontSize: `0.95em`,
-  lineHeight: `1.2em`,
   tabSize: 4,
   hyphens: `none`,
 })
@@ -50,27 +30,32 @@ css.global(
     backgroundColor: heroColor,
   }
 )
+
 /* Code blocks */
 css.global(`pre[class*='language-']`, {
   padding: `1em`,
-  margin: `0.5em 0`,
   overflow: `auto`,
+  lineHeight: `1.45`,
+  backgroundColor: deemphasisColor.saturationl(29).lightness(97),
+  borderRadius: `0.19em`,
+
   whiteSpace: `pre`,
   wordSpacing: `normal`,
   wordBreak: `normal`,
-  ...codeBox,
+  wordWrap: `normal`,
 })
 
 /* Inline code */
 css.global(`:not(pre) > code[class*='language-']`, {
   display: `inline-block`,
-  paddingRight: `0.2em`,
-  paddingLeft: `0.2em`,
-  paddingTop: `1px`,
-  paddingBottom: `1px`,
+  padding: `0.2em 0.4em`,
+  backgroundColor: mellowColor
+    .saturationl(13)
+    .lightness(12)
+    .alpha(0.05),
   whiteSpace: `pre-wrap`,
-  wordBreak: `word-break`,
-  ...codeBox,
+  wordBreak: `break-word`,
+  borderRadius: `0.19em`,
 })
 
 css.global(`.token.comment, .token.prolog, .token.doctype, .token.cdata`, {
