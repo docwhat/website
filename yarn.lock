@@ -2496,9 +2496,9 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000833"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000833.tgz#2bd7be72a401658d2cbcb8f4d7600deebeb1c676"
 
-caniuse-db@^1.0.30000840:
-  version "1.0.30000840"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000840.tgz#68d5a0f0694c92180b0d82e720d70f8e61366604"
+caniuse-db@^1.0.30000843:
+  version "1.0.30000843"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000843.tgz#4f7e8501f557dc9bcd37dd33ac85905c765efec2"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000833"
@@ -4131,9 +4131,9 @@ eslint-plugin-flowtype@^2.46.1:
   dependencies:
     lodash "^4.15.0"
 
-eslint-plugin-import@^2.9.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.11.0.tgz#15aeea37a67499d848e8e981806d4627b5503816"
+eslint-plugin-import@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.12.0.tgz#dad31781292d6664b25317fd049d2e2b2f02205d"
   dependencies:
     contains-path "^0.1.0"
     debug "^2.6.8"
@@ -5148,9 +5148,9 @@ gatsby-remark-smartypants@^1.4.12:
     retext-smartypants "^2.0.0"
     unist-util-visit "^1.1.1"
 
-gatsby-source-filesystem@^1.5.35:
-  version "1.5.35"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.35.tgz#1d7a92c60def1ba6f7f33c468cf4832af0e904ed"
+gatsby-source-filesystem@^1.5.36:
+  version "1.5.36"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.36.tgz#273a9940eacdff3bea6d58f114d8478e7ae3a0de"
   dependencies:
     babel-cli "^6.26.0"
     babel-runtime "^6.26.0"
@@ -5199,18 +5199,18 @@ gatsby-transformer-sharp@^1.6.24:
     fs-extra "^4.0.2"
     probe-image-size "^4.0.0"
 
-gatsby-transformer-yaml@^1.5.16:
-  version "1.5.16"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-1.5.16.tgz#24459e8d0cc235e51b6eeaf7843912f990c10c68"
+gatsby-transformer-yaml@^1.5.17:
+  version "1.5.17"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-1.5.17.tgz#1187a5b4e7ebd9a170541bdf91f0497b8ab77ab0"
   dependencies:
     babel-runtime "^6.26.0"
     js-yaml "3.7.0"
     lodash "^4.17.4"
     unist-util-select "^1.5.0"
 
-gatsby@^1.9.260:
-  version "1.9.260"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.260.tgz#365d2c673846511def7250488a954a8a554dd161"
+gatsby@^1.9.261:
+  version "1.9.261"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.261.tgz#ca5352874de3ec359150d1ce592e19ed564d0fc0"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"

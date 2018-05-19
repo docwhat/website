@@ -15,7 +15,7 @@
     "babel-preset-flow": "^6.23.0",
     "bluebird": "3.5.1",
     "broken-link-checker": "^0.7.8",
-    "caniuse-db": "^1.0.30000840",
+    "caniuse-db": "^1.0.30000843",
     "chalk": "^2.3.2",
     "color": "^3.0.0",
     "compass-vertical-rhythm": "^1.4.0",
@@ -23,12 +23,12 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.46.1",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.8.2",
     "feed": "^1.1.1",
     "flow-bin": "^0.68.0",
-    "gatsby": "^1.9.260",
+    "gatsby": "^1.9.261",
     "gatsby-cli": "^1.1.52",
     "gatsby-link": "^1.6.40",
     "gatsby-pagination": "^1.2.0",
@@ -51,10 +51,10 @@
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-remark-responsive-iframe": "^1.4.18",
     "gatsby-remark-smartypants": "^1.4.12",
-    "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-source-filesystem": "^1.5.36",
     "gatsby-transformer-remark": "^1.7.41",
     "gatsby-transformer-sharp": "^1.6.24",
-    "gatsby-transformer-yaml": "^1.5.16",
+    "gatsby-transformer-yaml": "^1.5.17",
     "gh-pages": "^1.1.0",
     "glamor": "^2.20.29",
     "glamorous": "^4.13.0",
@@ -79,7 +79,10 @@
     "uuid": "^3.2.1"
   },
   "homepage": "https://github.com/docwhat/docwhat#readme",
-  "keywords": ["gatsby", "blog"],
+  "keywords": [
+    "gatsby",
+    "blog"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -93,10 +96,8 @@
     "lint": "eslint '**/*.{js,jsx}'",
     "format": "prettier-eslint --write '**/*.{js,jsx,md}'",
     "format:check": "prettier-eslint --list-different '**/*.{js,jsx,md}'",
-    "check-external-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
-    "check-internal-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
+    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
+    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-links": "broken-link-checker --ordered --filter-level=3",
     "test": "echo \"Error: no test specified\" && exit 1",
     "new": "node src/utils/newpost.js"
