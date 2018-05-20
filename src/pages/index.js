@@ -5,11 +5,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { siteTitle } from '../utils/constants'
-import { rhythm } from '../utils/typography'
 import { blogJsonLD } from '../utils/ldjson'
 
 import Bio from '../components/Bio'
-import PostCard from '../components/PostCard'
+import PostCardList from '../components/PostCardList'
 import TheNetwork from '../components/TheNetwork'
 import Link from '../components/Link'
 import JsonLd from '../components/JsonLd'
@@ -57,37 +56,7 @@ const SiteIndex = props => (
         content="https://openid.stackexchange.com/xrds"
       />
     </Helmet>
-    <Div
-      css={{
-        display: `flex`,
-        flexDirection: `row`,
-        flexWrap: `wrap`,
-        margin: rhythm(-1 / 2),
-        '&>*': {
-          margin: rhythm(1 / 2),
-        },
-      }}
-    >
-      {props.data.posts.edges.map(({ node }) => {
-        const { fields: { title, slug, date }, excerpt } = node
-
-        return (
-          <PostCard
-            overrideCss={{
-              flex: `1 1 ${rhythm(10)}`,
-              '&>p': {
-                textAlign: `justify`,
-              },
-            }}
-            key={slug}
-            slug={slug}
-            title={title}
-            date={date}
-            excerpt={excerpt}
-          />
-        )
-      })}
-    </Div>
+    <PostCardList postcards={props.data.posts.edges} />
     <H3 css={{ textAlign: `right` }}>
       <Link to="/all">See all blog posts&hellip;</Link>
     </H3>
@@ -100,7 +69,7 @@ const SiteIndex = props => (
 SiteIndex.propTypes = {
   data: PropTypes.shape({
     posts: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
+      edges: PropTypes.arrayOf(PropTypes.node).isRequired,
     }).isRequired,
   }).isRequired,
 }
