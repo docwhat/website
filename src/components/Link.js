@@ -1,13 +1,13 @@
 // @flow
 // @format
-import React from 'react'
 import Link from 'gatsby-link'
 import glamorous from 'glamorous'
+import PropTypes from 'prop-types'
 
-const MyLink = props => <Link {...props} />
+const MyGlamorousLink = glamorous(Link)(() => () => ({}))
 
-const MyGlamorousLink = glamorous(MyLink)(() => ({ to }) => ({
-  to,
-}))
+MyGlamorousLink.propTypes = {
+  to: PropTypes.string.isRequired,
+}
 
 export default MyGlamorousLink
