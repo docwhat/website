@@ -9,7 +9,7 @@ import { blogJsonLD } from '../utils/ldjson'
 
 import Bio from '../components/Bio'
 import PostCardList from '../components/PostCardList'
-import TheNetwork from '../components/TheNetwork'
+import TheNet from '../components/TheNet'
 import Link from '../components/Link'
 import JsonLd from '../components/JsonLd'
 
@@ -62,7 +62,7 @@ const SiteIndex = props => (
     </H3>
     <JsonLd data={jsonLdData} />
     <Bio />
-    <TheNetwork />
+    <TheNet />
   </Div>
 )
 
