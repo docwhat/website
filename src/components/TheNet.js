@@ -14,7 +14,7 @@ const theCss = css({
   color: `rgba(136, 136, 136, 0.3)`,
 })
 
-export const TheNet = () => (
+const TheNet = () => (
   <Link className={theCss} to="/pi/">
     Π
   </Link>
