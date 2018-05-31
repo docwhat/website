@@ -11,7 +11,10 @@ import Bio from '../components/Bio'
 const PageTemplate = props => {
   const {
     data: {
-      markdownRemark: { fields: { title: pageTitle }, html: pageHtml },
+      markdownRemark: {
+        fields: { title: pageTitle },
+        html: pageHtml,
+      },
     },
   } = props
 

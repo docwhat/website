@@ -10,7 +10,9 @@ const Comments = data => {
     return ``
   }
 
-  const { comments: { edges: comments } } = data
+  const {
+    comments: { edges: comments },
+  } = data
 
   const commentList = comments.map(({ node }) => {
     const {

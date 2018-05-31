@@ -24,6 +24,6 @@ gatsby develop
 
 ## Notes
 
-* [_Made Mistakes_ gatsby-test issue #1](https://github.com/mmistakes/gatsby-test/issues/1)
-* Incorporate this into develop some how...
+- [_Made Mistakes_ gatsby-test issue #1](https://github.com/mmistakes/gatsby-test/issues/1)
+- Incorporate this into develop some how...
   <https://css-tricks.com/findingfixing-unintended-body-overflow/>

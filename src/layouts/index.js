@@ -21,7 +21,7 @@ const DefaultLayout = props => {
         marginBottom: rhythm(1.5 * scaleFactor),
         marginTop: 0,
         borderBottomStyle: `solid`,
-        borderBottomWidth: rhythm(1 / 2 * scaleFactor),
+        borderBottomWidth: rhythm((1 / 2) * scaleFactor),
         borderBottomColor: heroColor.string(),
         fontFamily: typo.headerFontFamily
           .map(fontName => `"${fontName}"`)
