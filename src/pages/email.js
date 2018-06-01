@@ -35,8 +35,8 @@ const ContactForm = () => (
       </p>
       <p>Okay, nevermind that.</p>
       <p>
-        You put your email address and question in the form below and I’ll
-        read it and send you a reply.
+        You put your email address and question in the form below and I’ll read
+        it and send you a reply.
         <span role="img" aria-label="Slightly Smiling Face">
           🙂
         </span>

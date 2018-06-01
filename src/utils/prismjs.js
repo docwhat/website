@@ -90,19 +90,13 @@ css.global(
   }
 )
 
-css.global(
-  `.token.function, .token.deleted, .language-autohotkey .token.tag`,
-  {
-    color: heroColor.saturationl(94).lightness(31),
-  }
-)
+css.global(`.token.function, .token.deleted, .language-autohotkey .token.tag`, {
+  color: heroColor.saturationl(94).lightness(31),
+})
 
-css.global(
-  `.token.tag, .token.selector, .language-autohotkey .token.keyword`,
-  {
-    color: mellowColor.saturationl(100).lightness(31),
-  }
-)
+css.global(`.token.tag, .token.selector, .language-autohotkey .token.keyword`, {
+  color: mellowColor.saturationl(100).lightness(31),
+})
 
 css.global(`.gatsby-highlight-code-line`, {
   backgroundColor: heroColor.saturationl(100).lightness(93),

@@ -22,8 +22,4 @@ const emphasisHue = 24
 export const emphasisColor = Color.hsl([emphasisHue, saturation, lightness])
 
 const deemphasisHue = 264
-export const deemphasisColor = Color.hsl([
-  deemphasisHue,
-  saturation,
-  lightness,
-])
+export const deemphasisColor = Color.hsl([deemphasisHue, saturation, lightness])

@@ -21,8 +21,7 @@ const runQuery = (handler, query) =>
     return r.data
   })
 
-const replacePath = _path =>
-  _path === `/` ? _path : _path.replace(/\/$/, ``)
+const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
 
 const calculateDefaults = (node, getNode) => {
   const defaultSlug = createFilePath({ node, getNode })
@@ -258,14 +257,12 @@ exports.onPostBuild = async ({ graphql }) => {
 
   const publicPath = `./public/`
 
-  await writeFile(
-    path.join(publicPath, `rss.xml`),
-    feed.rss2(),
-    `utf8`
-  ).catch(r => {
-    // eslint-disable-next-line no-console
-    console.error(`Failed to write JSON Feed file: `, r)
-  })
+  await writeFile(path.join(publicPath, `rss.xml`), feed.rss2(), `utf8`).catch(
+    r => {
+      // eslint-disable-next-line no-console
+      console.error(`Failed to write JSON Feed file: `, r)
+    }
+  )
 
   await writeFile(
     path.join(publicPath, `atom.xml`),
