@@ -4,6 +4,7 @@ import React from 'react'
 import { Svg } from 'glamorous'
 import { rhythm } from '../utils/typography'
 
+// eslint-disable-next-line react/display-name
 const IconArrow = overrideCss => () => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
