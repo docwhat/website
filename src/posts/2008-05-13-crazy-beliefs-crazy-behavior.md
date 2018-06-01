@@ -10,11 +10,11 @@ tags:
 
 If someone hears voices that tell them to do something, we call them crazy.
 
-If someone reads a book of fiction and tries to act as if it is talking to
-them and telling them what to do, we call that crazy.
+If someone reads a book of fiction and tries to act as if it is talking to them
+and telling them what to do, we call that crazy.
 
-How is [this](http://richarddawkins.net/article,2560,n,n) not insanity?  How
-is this called anything but completely fucking bug-nuts?
+How is [this](http://richarddawkins.net/article,2560,n,n) not insanity?  How is
+this called anything but completely fucking bug-nuts?
 
 Update 2008-06-02: And of course you knew that these ass-hole idiots wouldn't
 rest till

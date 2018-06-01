@@ -17,21 +17,21 @@ Kit](https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&A
 
 <img src="https://ir-na.amazon-adsystem.com/e/ir?t=thedocwha-20&l=am2&o=1&a=B0023WU6OI" width="1" height="1" border="0" alt="Amazon bug" style="border:none !important; margin:0px !important;" />
 
-A quick Doctor What Product Suggestion: The [iKlear Complete Cleaning
-Kit](http://amzn.to/2n5ZwwC) is great.
+A quick Doctor What Product Suggestion: The
+[iKlear Complete Cleaning Kit](http://amzn.to/2n5ZwwC) is great.
 
-I thought at first that it was a stupid overkill for the price; I mean
-it only has a few cloths and some cleaning solution.
+I thought at first that it was a stupid overkill for the price; I mean it only
+has a few cloths and some cleaning solution.
 
-But I really wanted the little cloth to protect the screen. I've seen
-how horrible MacBook screens can get from keyboard scum.
+But I really wanted the little cloth to protect the screen. I've seen how
+horrible MacBook screens can get from keyboard scum.
 
-However, after I bought it I really liked the cloths and the cleaner.
- The extra cloths are really nice and big; the cleaner actually really
-works well. All in all I think it was worth it.
+However, after I bought it I really liked the cloths and the cleaner.  The extra
+cloths are really nice and big; the cleaner actually really works well. All in
+all I think it was worth it.
 
-I was reminded of how helpful it was when I had a slight "drinking
-problem" and spewed beer across my screen and keyboard. :-(
+I was reminded of how helpful it was when I had a slight "drinking problem" and
+spewed beer across my screen and keyboard. :-(
 
 After it dried out, the iKlear stuff did a great job removing it.
 

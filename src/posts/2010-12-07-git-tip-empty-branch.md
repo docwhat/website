@@ -15,15 +15,22 @@ tags:
   - git
   - tip
 ---
-Ever wanted to make an empty branch (with no history in it) in git? It's not hard...
 
-Why would you want to do this? Well, for example, I have a new project in github. I'm trying to implement it in several ways, jRuby, Java, Qt, etc. Having separate branches is really handy.
+Ever wanted to make an empty branch (with no history in it) in git? It's not
+hard...
 
-Another reason you might want to do this is for upstream tracking. I used this to cold-start a branch where I commit all the changes of an upstream project and then merge them into my customized branch. Git makes tracking an upstream project much easier.
+Why would you want to do this? Well, for example, I have a new project in
+github. I'm trying to implement it in several ways, jRuby, Java, Qt, etc. Having
+separate branches is really handy.
+
+Another reason you might want to do this is for upstream tracking. I used this
+to cold-start a branch where I commit all the changes of an upstream project and
+then merge them into my customized branch. Git makes tracking an upstream
+project much easier.
 
 Anyway, enough of that. Here's how to do it:
 
-``` bash
+```bash
 # WARNING: Make sure you've committed all your work...
 #
 # Point git at a new branch:

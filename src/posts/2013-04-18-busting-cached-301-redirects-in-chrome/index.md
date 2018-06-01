@@ -16,8 +16,8 @@ The [Chrome browser](http://www.google.com/chrome/) caches
 aggressively. This is normally a good thing, unless you're the one setting up
 the 301 and you make a mistake...
 
-There is no obvious place in chrome to refresh that cache, but there is a
-nifty trick.
+There is no obvious place in chrome to refresh that cache, but there is a nifty
+trick.
 
 Go to the URL:
 
@@ -31,4 +31,4 @@ Ciao!
 
 Additional Links:
 
-* [Stack Overflow: How can I make Chrome stop caching redirects?](http://superuser.com/questions/304589/how-can-i-make-chrome-stop-caching-redirects)
+- [Stack Overflow: How can I make Chrome stop caching redirects?](http://superuser.com/questions/304589/how-can-i-make-chrome-stop-caching-redirects)

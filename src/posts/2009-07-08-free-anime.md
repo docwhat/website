@@ -13,8 +13,12 @@ tags:
   - cool
   - video
 ---
-<a href="http://funimation.com/video/">Funimation</a> – an importer of Japanese <a href="http://en.wikipedia.org/wiki/Anime">anime</a> – is making their stuff available on the web in <a href="http://hulu.com/">hulu</a> style. W00T!
 
-They have some good stuff there: Slayers, Techi Muyo - Ryo Ohki, and Pani Poni Dash.
+<a href="http://funimation.com/video/">Funimation</a> – an importer of Japanese
+<a href="http://en.wikipedia.org/wiki/Anime">anime</a> – is making their stuff
+available on the web in <a href="http://hulu.com/">hulu</a> style. W00T!
+
+They have some good stuff there: Slayers, Techi Muyo - Ryo Ohki, and Pani Poni
+Dash.
 
 Ciao!

@@ -69,10 +69,10 @@ evil `os.system()`. But that narrow-wide trick is neat.
 
 Ciao!
 
-1.  UPDATE 2007-10-08: Added mark-as-new when saving, so that they will
-    attract my notice via the mailbox changing.
-2.  UPDATE 2007-10-09: Fixed the mark-as-new stuff...had to use tagging to
-    make it work.
+1.  UPDATE 2007-10-08: Added mark-as-new when saving, so that they will attract
+    my notice via the mailbox changing.
+2.  UPDATE 2007-10-09: Fixed the mark-as-new stuff...had to use tagging to make
+    it work.
 3.  UPDATE 2010-03-01: Updated 'y' macro based on feedback from Mark Fardal.
 4.  UPDATE 2014-08-11: Fixed broken formatting due to age. Fixed some minor
     typos.

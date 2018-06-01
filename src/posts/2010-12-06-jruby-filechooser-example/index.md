@@ -12,30 +12,28 @@ tags:
   - Ruby
 ---
 
-I'm working on the next version of _It's All Text!_ and it needs a
-stand-alone editor server. I've had a couple false starts other
-languages but I'm thinking it should be Java or JRuby so that it is
-fairly portable without me having too much grief. In addition,
-installing Java is a little more acceptable to a random group of
-people than installing Ruby (at the moment, it may change in the
+I'm working on the next version of _It's All Text!_ and it needs a stand-alone
+editor server. I've had a couple false starts other languages but I'm thinking
+it should be Java or JRuby so that it is fairly portable without me having too
+much grief. In addition, installing Java is a little more acceptable to a random
+group of people than installing Ruby (at the moment, it may change in the
 future).
 
-Actually, I found two projects that make it much more likely I'll
-use JRuby instead of Java:
+Actually, I found two projects that make it much more likely I'll use JRuby
+instead of Java:
 
-1.  [rawr](http://rawr.rubyforge.org/) - a gem to bundle your JRuby
-    project into an app, `.exe` or `.jar`. I won't have to force the
-    user to install Java.
-2.  [monkeybars](http://monkeybars.rubyforge.org/) - a gem to
-    providing an MVC model for swing development. You use netbeans,
-    whatever, to build the V, and ruby to do the M and C.
+1.  [rawr](http://rawr.rubyforge.org/) - a gem to bundle your JRuby project into
+    an app, `.exe` or `.jar`. I won't have to force the user to install Java.
+2.  [monkeybars](http://monkeybars.rubyforge.org/) - a gem to providing an MVC
+    model for swing development. You use netbeans, whatever, to build the V, and
+    ruby to do the M and C.
 
-The snippet below allows the user to pick an editor application from
-their system. It should be able to be ported to pure Java without
-too much grief if I want to.
+The snippet below allows the user to pick an editor application from their
+system. It should be able to be ported to pure Java without too much grief if I
+want to.
 
-The interesting bits are the `FileFilter` subclass and the OS
-detection (JRuby specific).
+The interesting bits are the `FileFilter` subclass and the OS detection (JRuby
+specific).
 
 ```ruby
 require 'rbconfig'

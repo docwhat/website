@@ -20,8 +20,8 @@ Why did I switch away from YUI you might ask?
 
 A couple reasons:
 
-1.  jQuery has a bunch of idiomatic constructs to make what I'm doing here
-    much easier: Example:
+1.  jQuery has a bunch of idiomatic constructs to make what I'm doing here much
+    easier: Example:
 
 ```javascript
 $('table tbody tr:even').each(function() {

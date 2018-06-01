@@ -13,8 +13,8 @@ I found myself trying to figure out how to disable something called
 markdown in Vim.
 
 It was colliding with my Markdown stuff pretty badly and had really bad
-suggestions anyway (I mean, I'm writing text, not code... so no surprise) and
-I was getting annoyed of turning it off by hand.
+suggestions anyway (I mean, I'm writing text, not code... so no surprise) and I
+was getting annoyed of turning it off by hand.
 
 So I Googled for a solution and I found someones `.vimrc` and while it was
 written for NeoComplCache, it was easy to just change all the `NeoComplCache`
@@ -55,9 +55,9 @@ When I next saw here, she stomped up to me and complained:
 
 She was kidding... I think.
 
-But the point is, I spend a lot of time contributing back to the community.
-Not necessarily by writing code (I do that, too) but by filing bugs, answering
+But the point is, I spend a lot of time contributing back to the community. Not
+necessarily by writing code (I do that, too) but by filing bugs, answering
 questions, adding helpful comments to issues, etc.
 
-It isn't that hard to write a bug, answer a question, etc. and it can be
-really helpful for others... or drive them mad.
+It isn't that hard to write a bug, answer a question, etc. and it can be really
+helpful for others... or drive them mad.

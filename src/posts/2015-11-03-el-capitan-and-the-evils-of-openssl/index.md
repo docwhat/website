@@ -24,11 +24,10 @@ Here are the things I know about it right now:
 1.  <del datetime="2016-08-23T14:57:34+00:00">SecureTransport (OS X's
     replacement for OpenSSL) may fall back to using OpenSSL if the environment
     variable `SSL_CERT_FILE` is set.</del>
-1.  Lots of places are "cross-signing" their intermediate certs to upgrade
-    from SHA-1 to SHA-2 for security reasons.
-1.  OS X's OpenSSL cannot handle the intermediate cross-signing and report
-    that it cannot verify certificates. SecureTransport handles this just
-    fine.
+1.  Lots of places are "cross-signing" their intermediate certs to upgrade from
+    SHA-1 to SHA-2 for security reasons.
+1.  OS X's OpenSSL cannot handle the intermediate cross-signing and report that
+    it cannot verify certificates. SecureTransport handles this just fine.
 1.  [HomeBrew](http://brew.sh/) applications usually don't support
     SecureTransport and instead use HomeBrew's OpenSSL.
 1.  `/usr/bin/curl` uses SecureTransport directly, unless you set
@@ -47,12 +46,12 @@ will break `curl` and anything else that uses SecureTransport. Like `curl`.
 I _think_ the work-around is to not use `SSL_CERT_FILE` to update all the
 `cert.pem` files the various OpenSSL versions use:
 
-* `/usr/local/etc/libressl/cert.pem` -- HomeBrew'd
+- `/usr/local/etc/libressl/cert.pem` -- HomeBrew'd
   [LibreSSL](http://www.libressl.org/)
-* `/usr/local/etc/openssl/cert.pem` -- HomeBrew'd OpenSSL
-* `/opt/chefdk/embedded/ssl/cert.pem` -- ChefDK's OpenSSL (installed via
+- `/usr/local/etc/openssl/cert.pem` -- HomeBrew'd OpenSSL
+- `/opt/chefdk/embedded/ssl/cert.pem` -- ChefDK's OpenSSL (installed via
   [BrewCask](https://github.com/caskroom/homebrew-cask))
-* `/opt/vagrant/embedded/cacert.pem` -- Vagrant's OpenSSL (installed via
+- `/opt/vagrant/embedded/cacert.pem` -- Vagrant's OpenSSL (installed via
   [BrewCask](https://github.com/caskroom/homebrew-cask))
 
 This is frustrating.

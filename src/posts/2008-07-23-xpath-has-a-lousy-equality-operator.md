@@ -55,9 +55,9 @@ what you want if it silently promotes/demotes things?  Reading through
 [the section on booleans](http://www.w3.org/TR/xpath#booleans) in the XPath
 documentation explains how equality works:
 
-> If one object to be compared is a node-set and the other is a string, then
-> the comparison will be true if and only if there is a node in the node-set
-> such that the result of performing the comparison on the
+> If one object to be compared is a node-set and the other is a string, then the
+> comparison will be true if and only if there is a node in the node-set such
+> that the result of performing the comparison on the
 > [`string-value`](http://www.w3.org/TR/xpath#dt-string-value) of the node and
 > the other string is true.
 
@@ -65,9 +65,9 @@ It's almost like it was designed by people who don't program... or maybe a
 committee.
 
 This is bad because equality tests will return true in unexpected places.  It
-also means that the designers of XPath could ignore things like set
-operations. A `map()`, `reduce()`, etc. would all be very handy.  As would
-some way to write functions. [EXSLT](http://www.exslt.org/) helps with this
-somewhat, but not much.
+also means that the designers of XPath could ignore things like set operations.
+A `map()`, `reduce()`, etc. would all be very handy.  As would some way to write
+functions. [EXSLT](http://www.exslt.org/) helps with this somewhat, but not
+much.
 
 Ciao!

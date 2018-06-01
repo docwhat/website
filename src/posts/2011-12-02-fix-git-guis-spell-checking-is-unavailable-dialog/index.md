@@ -15,16 +15,16 @@ tags:
 [Hints and Kinks blog post](http://matthew.mceachen.us/blog/howto-fix-git-guis-spell-checking-is-unavailable-dialog-1153.html);
 I added information about the Homebrew solution</i>
 
-If you use 'git gui' on the Mac, you may find that it repeatedly
-pops up a message about spell checking being unavailable. This
-happens when using the [MacPorts](http://www.macports.org/) or
-[Homebrew](http://brew.sh) versions of git.
+If you use 'git gui' on the Mac, you may find that it repeatedly pops up a
+message about spell checking being unavailable. This happens when using the
+[MacPorts](http://www.macports.org/) or [Homebrew](http://brew.sh) versions of
+git.
 
-The error message will say something like (the language that's
-missing might be different):
+The error message will say something like (the language that's missing might be
+different):
 
-> Spell checking is unavailable: No word lists can be found for the
-> language "en_US"
+> Spell checking is unavailable: No word lists can be found for the language
+> "en_US"
 
 You can easily fix this in MacPorts with:
 

@@ -13,8 +13,8 @@ title: git gc for a bunch of directories
 
 Every so often, you might want to run
 [`git gc`](http://stackoverflow.com/questions/55729/how-often-should-you-use-git-gc)
-to keep your [`git`](http://git-scm.com/) repositories running fast.
-Here's an easy way to do that.
+to keep your [`git`](http://git-scm.com/) repositories running fast. Here's an
+easy way to do that.
 
 Assuming you have your git repositories in `~/projects`:
 
@@ -22,8 +22,7 @@ Assuming you have your git repositories in `~/projects`:
 find ~/projects -name '.git' -type d -print0 | xargs -0 -Iq env GIT_DIR=q git gc
 ```
 
-This works for
-[`git fsck`](http://book.git-scm.com/4_maintaining_git.html) as
+This works for [`git fsck`](http://book.git-scm.com/4_maintaining_git.html) as
 well.
 
 Ciao!

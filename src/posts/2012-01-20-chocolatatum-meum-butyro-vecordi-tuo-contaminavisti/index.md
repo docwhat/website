@@ -16,12 +16,12 @@ format: aside
 
 ![Reese's Peanut Butter Cups](pbcups.png)
 
-"Chocolatatum meum butyro vecordi tuo contaminavisti!" is how you
-say "You got your chocolate in my peanut butter!" in Latin.
+"Chocolatatum meum butyro vecordi tuo contaminavisti!" is how you say "You got
+your chocolate in my peanut butter!" in Latin.
 
 Just thought you should know.
 
-Thanks to [@fadeaccompli](https://twitter.com/#!/fadeaccompli) for
-the translation and
-[Wikipedia](http://en.wikipedia.org/wiki/Reese%27s_Peanut_Butter_Cups)
-for the picture.
+Thanks to [@fadeaccompli](https://twitter.com/#!/fadeaccompli) for the
+translation and
+[Wikipedia](http://en.wikipedia.org/wiki/Reese%27s_Peanut_Butter_Cups) for the
+picture.

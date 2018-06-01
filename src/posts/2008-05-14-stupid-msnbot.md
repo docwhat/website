@@ -30,8 +30,8 @@ iptables -A INPUT -s 65.55.208.0/24 -j DROP
 ```
 
 I checked on gerf.org and discovered that it was having trouble. A crew of at
-least 20 bots (ip addresses 65.55.208.180 through 199 inclusive) were
-requesting urls at about 1 a second.
+least 20 bots (ip addresses 65.55.208.180 through 199 inclusive) were requesting
+urls at about 1 a second.
 
 Not a lot of traffic unless you notice that the URLs they were requesting were
 all TRAC source and changeset URLs. These are cpu, disk and io intensive URLs
@@ -39,16 +39,16 @@ and I have them in my [`robots.txt`](http://trac.gerf.org/robots.txt) as URLs
 that no bot should crawl.
 
 I immediately went to the
-[webmaster forums](http://forums.microsoft.com/webmaster/) to see if others
-have had this problem (they have) and to complain.
+[webmaster forums](http://forums.microsoft.com/webmaster/) to see if others have
+had this problem (they have) and to complain.
 
 Apparently, bots aren't all they have trouble with:
 
-> "We apologize, but an unknown error has occurred in the forums. This error
-> has been logged."
+> "We apologize, but an unknown error has occurred in the forums. This error has
+> been logged."
 
-Reading through the forums, it looks like msnbot has a really hard time
-reading the `robots.txt`files and honoring them. Really odd because I wrote
+Reading through the forums, it looks like msnbot has a really hard time reading
+the `robots.txt`files and honoring them. Really odd because I wrote
 a`robots.txt` parser just for fun way back in 1990-something and it's really
 easy.
 

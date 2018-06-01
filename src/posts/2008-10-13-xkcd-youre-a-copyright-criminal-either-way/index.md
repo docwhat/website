@@ -19,14 +19,14 @@ this way. For an example of this in the real world consider those that bought
 [Walmart's DRM music](http://boingboing.net/2008/09/26/walmart-shutting-dow.html).
 
 Their choices are either violate the
-[DMCA](http://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act) (which
-is still illegal even with Walmart's blessing and a waste of time and quality)
-or lose their music.
+[DMCA](http://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act) (which is
+still illegal even with Walmart's blessing and a waste of time and quality) or
+lose their music.
 
 <!-- more -->
 
 There are other costs to buying DRM'd music;  check out these resources:
 
-* [Defective By Design](http://www.defectivebydesign.org/)
-* ["The Customer is always Wrong"](http://www.eff.org/pages/customer-always-wrong-users-guide-drm-online-music)
-* [The EFF's DRM page](http://www.eff.org/issues/drm)
+- [Defective By Design](http://www.defectivebydesign.org/)
+- ["The Customer is always Wrong"](http://www.eff.org/pages/customer-always-wrong-users-guide-drm-online-music)
+- [The EFF's DRM page](http://www.eff.org/issues/drm)

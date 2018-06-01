@@ -14,17 +14,20 @@ tags:
   - Chromium
   - Google Chrome
 ---
+
 Interested in running the nightly builds of Chromium 4 for OS-X?
 
 Me too.
 
 So I threw together a script to grab the latest nightly builds.
 
-This is not the same as the [Google Chrome Developer Release](http://www.google.com/chrome/intl/en/eula_dev.html?dl=mac).
+This is not the same as the
+[Google Chrome Developer Release](http://www.google.com/chrome/intl/en/eula_dev.html?dl=mac).
 
-This is the open source code that will make it's way into Google Chrome 4, some day. It's very beta, you have been warned.
+This is the open source code that will make it's way into Google Chrome 4, some
+day. It's very beta, you have been warned.
 
-``` bash
+```bash
 #!/bin/bash
 
 set -eu

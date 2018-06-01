@@ -13,8 +13,15 @@ tags:
   - Lua
   - Python
 ---
-There is a nifty new project for the Android phone: <a href="http://code.google.com/p/android-scripting/">Android Scripting Environment</a>.
 
-This lets you use <a href="http://lua.org">Lua</a> and <a href="http://python.org/">Python</a> to write scripts on Android.  Not quite the same as writing a whole application in those languages, but a great start!
+There is a nifty new project for the Android phone:
+<a href="http://code.google.com/p/android-scripting/">Android Scripting
+Environment</a>.
 
-[via <a href="http://google-opensource.blogspot.com/2009/06/introducing-android-scripting.html">Google Open Source Blog</a>]
+This lets you use <a href="http://lua.org">Lua</a> and
+<a href="http://python.org/">Python</a> to write scripts on Android.  Not quite
+the same as writing a whole application in those languages, but a great start!
+
+[via <a
+href="http://google-opensource.blogspot.com/2009/06/introducing-android-scripting.html">Google
+Open Source Blog</a>]

@@ -23,10 +23,9 @@ The viewer has tools like
 [greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/748),
 [stylish](https://addons.mozilla.org/en-US/firefox/addon/2108),
 [No Script](https://addons.mozilla.org/en-US/firefox/addon/722), and
-[AdBlock Plus](https://addons.mozilla.org/en-US/firefox/addon/1865). These
-tools block, alter, enhance, or add to the web as the viewer visits sites.
-What the viewer sees may be completely different from what the creator
-intended.
+[AdBlock Plus](https://addons.mozilla.org/en-US/firefox/addon/1865). These tools
+block, alter, enhance, or add to the web as the viewer visits sites. What the
+viewer sees may be completely different from what the creator intended.
 
 While the actual technique is interesting, it is even more interesting to see
 the audience's reactions to the removal of the MySpace cruft.

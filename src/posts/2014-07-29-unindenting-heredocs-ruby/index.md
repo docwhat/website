@@ -11,9 +11,8 @@ tags:
 
 This is a bit of code I wanted to save.
 
-When using HEREDOCs in Ruby, the `<<-` operator is handy to keep
-everything indented in the source. But it doesn't help with the
-content of the HEREDOC.
+When using HEREDOCs in Ruby, the `<<-` operator is handy to keep everything
+indented in the source. But it doesn't help with the content of the HEREDOC.
 
 Example:
 
@@ -60,5 +59,5 @@ def example
 end
 ```
 
-Too bad you can't pull in some of these Rails monkey patches without
-pulling in lots of stuff you don't want.
+Too bad you can't pull in some of these Rails monkey patches without pulling in
+lots of stuff you don't want.

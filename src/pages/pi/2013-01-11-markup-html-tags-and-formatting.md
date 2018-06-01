@@ -35,10 +35,10 @@ Single line blockquote:
 Multi line blockquote with a cite reference:
 
 > People think focus means saying yes to the thing you've got to focus on. But
-> that's not what it means at all. It means saying no to the hundred other
-> good ideas that there are. You have to pick carefully. I'm actually as proud
-> of the things we haven't done as the things I have done. Innovation is
-> saying no to 1,000 things.
+> that's not what it means at all. It means saying no to the hundred other good
+> ideas that there are. You have to pick carefully. I'm actually as proud of the
+> things we haven't done as the things I have done. Innovation is saying no to
+> 1,000 things.
 >
 > <cite>Steve Jobs - Apple Worldwide Developers' Conference, 1997</cite>
 
@@ -53,21 +53,19 @@ writing.
 
   Here is John Gruber's post
   [About the Footnotes](http://daringfireball.net/2005/07/footnotes). Besides,
-  what would a post about creating footnotes in HTML be without actually
-  having at least one footnote to demonstrate?
+  what would a post about creating footnotes in HTML be without actually having
+  at least one footnote to demonstrate?
 
 Footnotes are also not a core feature of markdown, but they're a common
 extension feature. The footnote syntax looks like this:
 
 ```markdown
-This line has a footnote [^footnote-1]. Scroll down or click the link to see
-it.
+This line has a footnote [^footnote-1]. Scroll down or click the link to see it.
 ```
 
 That renders like this:
 
-This line has a footnote [^footnote-1]. Scroll down or click the link to see
-it.
+This line has a footnote [^footnote-1]. Scroll down or click the link to see it.
 
 ## Tables
 
@@ -90,18 +88,18 @@ it.
 
 ## Unordered Lists (Nested)
 
-* List item one
-  * List item one
-    * List item one
-    * List item two
-    * List item three
-    * List item four
-  * List item two
-  * List item three
-  * List item four
-* List item two
-* List item three
-* List item four
+- List item one
+  - List item one
+    - List item one
+    - List item two
+    - List item three
+    - List item four
+  - List item two
+  - List item three
+  - List item four
+- List item two
+- List item three
+- List item four
 
 ## Ordered List (Nested)
 
@@ -146,14 +144,14 @@ Make any link standout more when applying the `.btn` class.
 ```markdown
 [Default Button Text](#link){: .btn} [Primary Button Text](#link){: .btn
 .btn--primary} [Success Button Text](#link){: .btn .btn--success}
-[Warning Button Text](#link){: .btn .btn--warning}
-[Danger Button Text](#link){: .btn .btn--danger} [Info Button Text](#link){:
-.btn .btn--info} [Inverse Button](#link){: .btn .btn--inverse}
-[Light Outline Button](#link){: .btn .btn--light-outline}
+[Warning Button Text](#link){: .btn .btn--warning} [Danger Button Text](#link){:
+.btn .btn--danger} [Info Button Text](#link){: .btn .btn--info}
+[Inverse Button](#link){: .btn .btn--inverse} [Light Outline Button](#link){:
+.btn .btn--light-outline}
 ```
 
-[X-Large Button](#){: .btn .btn--primary .btn--x-large} [Large Button](#){:
-.btn .btn--primary .btn--large} [Default Button](#){: .btn .btn--primary }
+[X-Large Button](#){: .btn .btn--primary .btn--x-large} [Large Button](#){: .btn
+.btn--primary .btn--large} [Default Button](#){: .btn .btn--primary }
 [Small Button](#){: .btn .btn--primary .btn--small}
 
 ```markdown
@@ -199,18 +197,16 @@ This is an example of a [link](http://apple.com 'Apple').
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
-*[CSS]: Cascading Style Sheets
+\*[CSS]: Cascading Style Sheets
 
-This plugin works on MDAST, a Markdown AST
-implemented by [remark](https://github.com/wooorm/remark)
+This plugin works on MDAST, a Markdown AST implemented by
+[remark](https://github.com/wooorm/remark)
 
-*[MDAST]: Markdown Abstract Syntax Tree.
-*[AST]: Abstract syntax tree
+_[MDAST]: Markdown Abstract Syntax Tree. _[AST]: Abstract syntax tree
 
-The HTML specification is maintained by the W3C.  It sometimes uses CSS.
+The HTML specification is maintained by the W3C. It sometimes uses CSS.
 
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
+_[HTML]: Hyper Text Markup Language _[W3C]: World Wide Web Consortium
 
 ### Cite Tag
 
@@ -236,8 +232,7 @@ This tag should denote <ins>inserted</ins> text.
 ### Keyboard Tag
 
 This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually
-styled like the `<code>` tag. Useful for things like <kbd>⌘</kbd> +
-<kbd>s</kbd>
+styled like the `<code>` tag. Useful for things like <kbd>⌘</kbd> + <kbd>s</kbd>
 
 ### Preformatted Tag
 
@@ -268,8 +263,8 @@ down.
 
 ### Superscript Tag
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which
-should lift the 2 up.
+Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should
+lift the 2 up.
 
 ### Variable Tag
 

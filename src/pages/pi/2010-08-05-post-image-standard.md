@@ -8,8 +8,8 @@ tags:
   - Post Formats
 ---
 
-The preferred way of using images is placing them in the `assets/`
-directory and referencing them with a relative path.
+The preferred way of using images is placing them in the `assets/` directory and
+referencing them with a relative path.
 
 Standard image with no width modifier classes applied.
 
