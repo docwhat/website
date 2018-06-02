@@ -83,7 +83,10 @@
     "uuid": "^3.2.1"
   },
   "homepage": "https://github.com/docwhat/docwhat#readme",
-  "keywords": ["gatsby", "blog"],
+  "keywords": [
+    "gatsby",
+    "blog"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -94,17 +97,14 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint":
-      "eslint '*.js' 'src/**/*.{js,jsx}' && prettier-eslint --list-different '*.js' 'src/**/*.{js,jsx}'",
+    "lint": "eslint '*.js' 'src/**/*.{js,jsx}' && prettier-eslint --list-different '*.js' 'src/**/*.{js,jsx}'",
     "lint:fix": "prettier-eslint --write '**/*.{js,jsx}'",
     "posts:lint": "prettier-eslint --list-different 'src/**/*.md'",
     "posts:lint:fix": "prettier-eslint --write 'src/**/*.md'",
     "comments:lint": "prettier-eslint --list-different 'comments/**/*.md'",
     "comments:lint:fix": "prettier-eslint --write 'comments/**/*.md'",
-    "check-external-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
-    "check-internal-links":
-      "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
+    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
+    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-links": "broken-link-checker --ordered --filter-level=3",
     "test": "echo \"Error: no test specified\" && exit 1",
     "new": "node src/utils/newpost.js"
