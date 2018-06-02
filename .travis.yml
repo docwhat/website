@@ -17,7 +17,8 @@ deploy:
   provider: script
   script: 'IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" script/push'
   on:
-    branch: next
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^master|next$
 
 notifications:
   email:
