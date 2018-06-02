@@ -11,7 +11,7 @@ declare -r \
 
 if ! docker push "${tag}"; then
   username=${DOCKER_USERNAME:-docwhat}
-  password=${DOCKER_USERNAME:-$(lpass show --password docker.com)}
+  password=${DOCKER_PASSWORD:-$(lpass show --password docker.com)}
   declare -r username password
 
   echo "$password" | docker login -u "$username" --password-stdin
