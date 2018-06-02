@@ -1,0 +1,39 @@
+#!/bin/bash
+
+set -eEuo pipefail
+
+build_date="$(env TZ='America/New_York' date '+%Y-%m-%dT%H:%M:%SZ')"
+top_dir="$(git rev-parse --show-toplevel)"
+repo_url="$(git ls-remote --get-url)"
+branch="$(git rev-parse --abbrev-ref HEAD)"
+version=$(cat "${top_dir}/.node-version")
+tag=${IMAGE_NAME:-docwhat/docwhat:${branch}}
+gitsha=${GIT_SHA1:-$(git rev-parse HEAD)}
+
+declare -r \
+  build_date \
+  top_dir \
+  repo_url \
+  branch \
+  version \
+  tag \
+  gitsha
+
+cat <<INFO
+On ${build_date}
+We're building the image ${tag} with Node ${version}
+From ${repo_url}#${branch} (${gitsha})
+===========================================================
+INFO
+
+docker build \
+  --build-arg="NODE_VERSION=${version}" \
+  --target="final" \
+  --tag="${tag}" \
+  --pull \
+  --label="org.label-schema.vcs-ref=${gitsha}" \
+  --label="org.label-schema.vcs-url=${repo_url}" \
+  --label="org.label-schema.build-date=${build_date}" \
+  "${top_dir}"
+
+# EOF

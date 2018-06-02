@@ -11,13 +11,11 @@ env:
     - secure: cgA++j5I+hPFPw2IXUaY+zFLJZlSLw7Wdf1s5OxpZHo/iGIYI9FA2ejFQ/832idvD/5yWeKYAKcbFWpuYe9t//AUPvvhGDWGIkWLiPnRzTgvNJ0LmqPSfDUa1vCuCvLES3yWMocOL33nnaCehihzkcb/UG7/aw5wbmNZ3EUq4m0=
 
 script:
-  - docker build --target=lint .
-  - docker build --target=build .
-  - env IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" hooks/build
+  - 'IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" script/build'
 
 deploy:
   provider: script
-  script: hooks/docker_push_next
+  script: 'IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" script/push'
   on:
     branch: next
 

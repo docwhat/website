@@ -1,7 +1,11 @@
+ARG NODE_VERSION=8
+
 #############################
-FROM node:8-wheezy AS builder
-RUN apt-get update && apt-get install -y \
+FROM node:$NODE_VERSION AS builder
+RUN apt-get -qq update \
+      && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
       pigz \
+      && apt-get clean \
       && rm -rf /var/lib/apt/lists/*
 RUN mkdir /workdir
 WORKDIR /workdir
@@ -42,6 +46,7 @@ RUN find public -type f \
       -name '*.js' -o \
       -name '*.json' -o \
       -name '*.map' -o \
+      -name '*.svg' -o \
       -name '*.txt' -o \
       -name '*.xml' \
       \) -print0 | xargs -0 pigz -11 --keep

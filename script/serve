@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -eEuo pipefail
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+tag=${IMAGE_NAME:-docwhat/docwhat:${branch}}
+
+declare -r \
+  branch \
+  tag
+
+exec docker run \
+  --rm \
+  --publish=8080:80 \
+  --name="docwhat_${branch}" \
+  "${tag}"
+
+# EOF
