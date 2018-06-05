@@ -2,10 +2,7 @@
   "name": "docwhat.org",
   "description": "Personal blog of Christian Höltje",
   "version": "1.0.0",
-  "author": {
-    "name": "Christian Höltje",
-    "url": "https://docwhat.org/"
-  },
+  "author": "Christian Höltje (https://docwhat.org/)",
   "bugs": {
     "url": "https://github.com/docwhat/docwhat/issues"
   },
