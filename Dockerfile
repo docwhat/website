@@ -1,7 +1,10 @@
 ARG NODE_VERSION=8
 
+FROM node:$NODE_VERSION  AS node
+FROM nginx:stable-alpine AS nginx
+
 #############################
-FROM node:$NODE_VERSION AS builder
+FROM node AS builder
 RUN apt-get -qq update \
       && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
       pigz \
@@ -52,7 +55,7 @@ RUN find public -type f \
       \) -print0 | xargs -0 pigz -11 --keep
 
 #################################
-FROM nginx:stable-alpine AS final
+FROM nginx AS final
 
 LABEL maintainer="Christian Höltje <https://docwhat.org>" \
   org.label-schema.name="Website for docwhat.org" \
