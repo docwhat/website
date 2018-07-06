@@ -24,10 +24,12 @@ COPY \
   ./yarn.lock \
   ./gatsby* \
   ./.babelrc \
-  ./.eslintrc \
   ./.eslintignore \
+  ./.eslintrc \
+  ./.flowconfig \
   ./.mdlrc \
   ./.mdlstyle.rb \
+  ./.prettierignore \
   ./.prettierrc \
   ./
 
