@@ -10,7 +10,7 @@
     "esversion": 6,
     "asi": true
   },
-  "dependencies": {
+  "devDependencies": {
     "babel-eslint": "^8.0.3",
     "babel-preset-flow": "^6.23.0",
     "bluebird": "3.5.1",
