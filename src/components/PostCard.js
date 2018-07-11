@@ -1,32 +1,29 @@
 // @flow
 // @format
 import g, { H3, Small } from 'glamorous'
-import React from 'react'
-import PropTypes from 'prop-types'
+import * as React from 'react'
 import Link from './Link'
 import { rhythm } from '../utils/typography'
 
-const Title = props => (
+const Title = ({
+  to,
+  children,
+}: {
+  to: string,
+  children: React.Node,
+}): React.Node => (
   <H3
     css={{
       marginBottom: 0,
     }}
   >
-    <Link style={{ boxShadow: `none` }} to={props.to}>
-      {props.children}
+    <Link style={{ boxShadow: `none` }} to={to}>
+      {children}
     </Link>
   </H3>
 )
 
-Title.propTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-}
-
-const Meta = props => (
+const Meta = ({ children }: { children: React.Node }): React.Node => (
   <Small
     css={{
       display: `block`,
@@ -35,46 +32,39 @@ const Meta = props => (
       textAlign: `right`,
     }}
   >
-    {props.children}
+    {children}
   </Small>
 )
 
-Meta.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-}
-
-const PostCard = props => {
-  const { slug, title, date, excerpt } = props
-
-  return (
-    <g.Section css={props.overrideCss}>
-      <Title to={slug}>{title}</Title>
-      <Meta>{date}</Meta>
-      <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-      <Link
-        css={{
-          display: `block`,
-          textAlign: `right`,
-          fontSize: rhythm(1 / 2),
-        }}
-        to={slug}
-      >
-        Read More&hellip;
-      </Link>
-    </g.Section>
-  )
-}
-
-PostCard.propTypes = {
-  slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
-  overrideCss: PropTypes.object,
-}
+const PostCard = ({
+  date,
+  excerpt,
+  overrideCss,
+  slug,
+  title,
+}: {
+  date: string,
+  excerpt: string,
+  overrideCss: Object,
+  slug: string,
+  title: string,
+}): React.Node => (
+  <g.Section css={overrideCss}>
+    <Title to={slug}>{title}</Title>
+    <Meta>{date}</Meta>
+    <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+    <Link
+      css={{
+        display: `block`,
+        textAlign: `right`,
+        fontSize: rhythm(1 / 2),
+      }}
+      to={slug}
+    >
+      Read More&hellip;
+    </Link>
+  </g.Section>
+)
 
 export default PostCard
 

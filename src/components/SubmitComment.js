@@ -2,7 +2,7 @@
 // @format
 import g, { Div, Form, Input, Legend, Textarea, Span } from 'glamorous'
 import { css } from 'glamor'
-import React from 'react'
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import { rhythm } from '../utils/typography'
 import { heroColor } from '../utils/colors'
@@ -23,35 +23,32 @@ const textBoxCss = css({
   padding: `0 ${rhythm(1 / 4)}`,
 })
 
-const FormOption = props => {
+const FormOption = (props: { option: string, value: string }): React.Node => {
   const optParts = props.option.split(`.`)
   const name = `options[${optParts.join(`][]`)}]`
   return <Input name={name} value={props.value} type="hidden" />
 }
 
-FormOption.propTypes = {
-  option: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-}
-
-const StyledLabel = g.label(props => {
-  const styles = [
-    {
-      ':focus': {
-        background: heroColor.string(),
+const StyledLabel = g.label(
+  (props: { css: Object }): Array<Object> => {
+    const styles = [
+      {
+        ':focus': {
+          background: heroColor.string(),
+        },
+        display: `flex`,
+        flexDirection: `row`,
+        flexWrap: `wrap`,
+        justifyContent: `flex-start`,
+        margin: `1em 0`,
       },
-      display: `flex`,
-      flexDirection: `row`,
-      flexWrap: `wrap`,
-      justifyContent: `flex-start`,
-      margin: `1em 0`,
-    },
-  ]
+    ]
 
-  styles.push(props.css)
+    styles.push(props.css)
 
-  return styles
-})
+    return styles
+  }
+)
 
 const StyledLabelDiv = g.label(props => {
   const styles = [
@@ -145,7 +142,7 @@ const ReCaptcha = () => null
 // }
 
 class SubmitComment extends React.Component {
-  constructor(props) {
+  constructor(props: Object) {
     super(props)
 
     this.state = {
