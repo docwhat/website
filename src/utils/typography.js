@@ -9,51 +9,44 @@ import {
 } from 'typography-breakpoint-constants'
 import verticalRhythm from 'compass-vertical-rhythm'
 import { heroColor, mellowColor } from '../utils/colors'
+// import systemfonts from 'system-font'
 
 // Details:
 // https://github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-github/src/index.js
 
-const monoSpaceFontFamily = [
-  `SFMono-Regular`,
-  `Consolas`,
-  `Liberation Mono`,
-  `Menlo`,
-  `Courier`,
-  `monospace`,
+const quoteCommaList = (fontList: Array<string>): string =>
+  fontList.map(s => (s.match(/\s/) ? `"${s}"` : s)).join(', ')
+
+const monospaceFontFamily = [
+  'SFMono-Regular',
+  'Menlo',
+  'Monaco',
+  'Consolas',
+  'Liberation Mono',
+  'Courier New',
+  'monospace',
 ]
 
-const monoSpaceFontFamilyString = monoSpaceFontFamily
-  .map(s => (s.match(/\s+/) ? `"${s}"` : s))
-  .join(`, `)
+const systemFontFamily = [
+  '-apple-system',
+  'BlinkMacSystemFont',
+  'Segoe UI',
+  'Roboto',
+  'Helvetica Neue',
+  'Arial',
+  'sans-serif',
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+]
 
 const typography = new Typography({
   title: `docwhat2018`,
   baseFontSize: `21px`,
   baseLineHeight: `1.5`,
-  googleFonts: [
-    {
-      name: `Quattrocento`,
-      styles: [`700`],
-    },
-    {
-      name: `Quattrocento Sans`,
-      styles: [`400`, `700`],
-    },
-  ],
-  headerFontFamily: [
-    `Quattrocento`,
-    `serif`,
-    `Apple Color Emoji`,
-    `Segoe UI Emoji`,
-    `Segoe UI Symbol`,
-  ],
-  bodyFontFamily: [
-    `Quattrocento Sans`,
-    `sans-serif`,
-    `Apple Color Emoji`,
-    `Segoe UI Emoji`,
-    `Segoe UI Symbol`,
-  ],
+  googleFonts: [],
+  headerFontFamily: systemFontFamily,
+  bodyFontFamily: systemFontFamily,
   scaleRatio: 2,
   bodyColor: gray(20),
   headerWeight: 700,
@@ -100,7 +93,7 @@ const typography = new Typography({
       },
 
       'code,pre,tt': {
-        fontFamily: monoSpaceFontFamilyString,
+        fontFamily: quoteCommaList(monospaceFontFamily),
         lineHeight: `1.5`,
       },
 
