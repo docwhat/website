@@ -1,12 +1,12 @@
 {
   "extends": [
-    "standard",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "prettier",
     "prettier/flowtype",
     "prettier/react",
-    "prettier/standard"
+    "prettier/standard",
+    "standard"
   ],
   "env": {
     "browser": true,
@@ -20,6 +20,17 @@
   "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": "error",
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "comma-dangle": "off",
+    "space-before-function-paren": [ "warn", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }]
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
   }
 }
