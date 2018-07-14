@@ -23,7 +23,7 @@ const Title = ({
   </H3>
 )
 
-const Meta = ({ children }: { children: React.Node }): React.Node => (
+const Meta = (props: { children: React.Node }): React.Node => (
   <Small
     css={{
       display: `block`,
@@ -32,7 +32,7 @@ const Meta = ({ children }: { children: React.Node }): React.Node => (
       textAlign: `right`,
     }}
   >
-    {children}
+    {props.children}
   </Small>
 )
 

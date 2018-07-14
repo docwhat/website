@@ -1,20 +1,26 @@
 // @flow
 // @format
-import React from 'react'
+import * as React from 'react'
 import g from 'glamorous'
-import PropTypes from 'prop-types'
 
 import avatarPic from './avatar.png'
-import { rhythm } from '../utils/typography'
+import typography from '../utils/typography'
 import { siteUrl, authorName } from '../utils/constants'
 import Link from './Link'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as GithubLogo } from '../icons/github.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Envelope } from '../icons/envelope.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Gift } from '../icons/gift.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Key } from '../icons/key.svg'
 
-const Reference = props => (
+const rhythm = typography.rhythm
+
+const Reference = (props: { children: React.Node }): React.Node => (
   <g.Span
     css={{
       whiteSpace: `nowrap`,
@@ -28,13 +34,6 @@ const Reference = props => (
     {props.children}
   </g.Span>
 )
-
-Reference.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-}
 
 const Bio = () => (
   <div>
