@@ -47,7 +47,7 @@ Guess what they
 I used to work with the talented [Carol](http://carol-nichols.com/). She left
 the company and went to work elsewhere.
 
-When I next saw here, she stomped up to me and complained:
+When I next saw her, she stomped up to me and complained:
 
 > Whenever I Google for the answer to something, you're there! Question on
 > StackOverflow? You answered it. I go to file a bug on GitHub, you've already
