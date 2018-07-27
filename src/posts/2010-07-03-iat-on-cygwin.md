@@ -1,5 +1,5 @@
 ---
-id: 560
+id: "560"
 title: IAT on Cygwin
 date: 2010-07-03T16:21:30+00:00
 author: docwhat

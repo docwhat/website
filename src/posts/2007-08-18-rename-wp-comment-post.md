@@ -1,5 +1,5 @@
 ---
-id: 64
+id: "64"
 title: WordPress anti-spam recipe
 date: 2007-08-18T16:30:06+00:00
 template: post

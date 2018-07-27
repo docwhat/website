@@ -1,5 +1,5 @@
 ---
-id: 355
+id: "355"
 title: Lots of cool software cheap
 date: 2009-04-03T10:36:03+00:00
 author: docwhat

@@ -1,5 +1,5 @@
 ---
-id: 1202
+id: "1202"
 title: OS X Vim with Ruby crashes
 date: 2012-12-08T17:48:42-05:00
 template: post

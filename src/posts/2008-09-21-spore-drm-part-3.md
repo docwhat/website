@@ -1,5 +1,5 @@
 ---
-id: 194
+id: "194"
 title: "SPORE DRM part 3"
 date: "2008-09-21T17:41:52+00:00"
 template: post

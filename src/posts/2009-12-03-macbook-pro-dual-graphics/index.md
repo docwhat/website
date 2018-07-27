@@ -1,6 +1,6 @@
 ---
 date: '2009-12-03T17:23:29+00:00'
-id: 478
+id: "478"
 template: post
 slug: '/macbook-pro-dual-graphics/'
 tags:

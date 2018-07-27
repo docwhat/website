@@ -1,6 +1,6 @@
 ---
 date: "2008-05-15T17:03:54+00:00"
-id: 89
+id: "89"
 template: post
 slug: "/sparring-knives/"
 tags:

@@ -1,5 +1,5 @@
 ---
-id: 84
+id: "84"
 title: "Cathy Ferguson"
 date: "2008-01-19T23:03:56+00:00"
 template: "post"

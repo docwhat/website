@@ -1,5 +1,5 @@
 ---
-id: 491
+id: "491"
 title: "It's All Text! 1.4 (FF3.6 compatible)"
 date: 2010-01-23T18:53:57+00:00
 author: docwhat

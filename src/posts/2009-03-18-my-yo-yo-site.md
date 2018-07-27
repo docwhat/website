@@ -1,5 +1,5 @@
 ---
-id: 310
+id: "310"
 title: My Site, the Yo-Yo
 date: 2009-03-18T22:37:59+00:00
 author: docwhat

@@ -1,5 +1,5 @@
 ---
-id: 127
+id: "127"
 title: "Unappealing Taxes, part 2"
 date: "2008-08-01T17:35:14+00:00"
 template: post

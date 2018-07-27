@@ -1,5 +1,5 @@
 ---
-id: 33
+id: "33"
 title: Making JavaScript transparent
 date: 2006-11-19T16:17:45+00:00
 template: post

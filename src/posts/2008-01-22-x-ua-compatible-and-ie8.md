@@ -1,5 +1,5 @@
 ---
-id: 85
+id: "85"
 title: "X-UA-Compatible and IE8"
 date: "2008-01-22T13:18:02+00:00"
 template: post

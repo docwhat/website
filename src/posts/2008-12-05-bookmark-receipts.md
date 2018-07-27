@@ -1,5 +1,5 @@
 ---
-id: 228
+id: "228"
 title: Bookmark Receipts
 date: 2008-12-05T13:27:40+00:00
 template: post

@@ -1,5 +1,5 @@
 ---
-id: 1172
+id: "1172"
 title: German windows for my home
 date: 2012-09-11T19:54:21-04:00
 template: post

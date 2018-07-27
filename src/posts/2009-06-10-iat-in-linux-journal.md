@@ -1,5 +1,5 @@
 ---
-id: 386
+id: "386"
 title: IAT in LJ
 date: 2009-06-10T13:31:51+00:00
 author: docwhat

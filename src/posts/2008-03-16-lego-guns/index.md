@@ -1,6 +1,6 @@
 ---
 date: "2008-03-16T02:11:07+00:00"
-id: 87
+id: "87"
 template: "post"
 slug: "/lego-guns/"
 tags:

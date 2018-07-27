@@ -4,7 +4,7 @@ categories:
 - docwhat
 date: '2010-04-19T17:33:49+00:00'
 guid: 'http://docwhat.org/?p=542'
-id: 542
+id: "542"
 template: post
 openid_comments:
 - 'a:1:{i:0;s:4:"6986";}'

@@ -1,5 +1,5 @@
 ---
-id: 27
+id: "27"
 title: We are what we eat?
 date: 2006-09-27T22:11:10+00:00
 template: post

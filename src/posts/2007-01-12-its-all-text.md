@@ -1,5 +1,5 @@
 ---
-id: 35
+id: "35"
 title: "It's All Text!"
 date: 2007-01-12T01:02:35+00:00
 template: post

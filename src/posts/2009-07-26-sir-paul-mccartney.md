@@ -1,5 +1,5 @@
 ---
-id: 417
+id: "417"
 title: Sir Paul McCartney
 date: 2009-07-26T17:25:01+00:00
 author: docwhat

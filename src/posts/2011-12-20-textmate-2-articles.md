@@ -1,7 +1,7 @@
 ---
 date: "2011-12-20T10:05:21-05:00"
 guid: "http://docwhat.org/?p=801"
-id: 801
+id: "801"
 image: "/files/2011/12/tm2-icon-250x250.jpg"
 slug: "/textmate-2-articles/"
 tags:

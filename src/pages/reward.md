@@ -1,5 +1,5 @@
 ---
-id: 284
+id: '284'
 template: "page"
 permalink: "/reward/"
 title: "Reward or Donate"

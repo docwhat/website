@@ -1,5 +1,5 @@
 ---
-id: 14
+id: "14"
 title: My older projects have been moved.
 date: 2006-09-06T23:24:35+00:00
 template: post

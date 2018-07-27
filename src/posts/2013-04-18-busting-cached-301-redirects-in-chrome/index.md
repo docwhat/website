@@ -1,7 +1,7 @@
 ---
 author: docwhat
 date: '2013-04-18T17:31:50-04:00'
-id: 1274
+id: "1274"
 image: '/files/2013/04/geeklatte-chrome-yukop-250x250.png'
 slug: '/busting-cached-301-redirects-in-chrome/'
 tags:

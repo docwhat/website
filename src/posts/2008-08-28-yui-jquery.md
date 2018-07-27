@@ -1,5 +1,5 @@
 ---
-id: 171
+id: "171"
 title: "Switched from YUI to jQuery"
 date: "2008-08-28T23:22:20+00:00"
 template: "post"

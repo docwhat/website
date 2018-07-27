@@ -1,5 +1,5 @@
 ---
-id: 780
+id: "780"
 title: Microsoft makes .txt files dangerous
 date: 2011-09-23T09:02:39-04:00
 template: post

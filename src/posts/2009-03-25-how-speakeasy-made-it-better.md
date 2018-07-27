@@ -1,5 +1,5 @@
 ---
-id: 341
+id: "341"
 title: How speakeasy made it better
 date: 2009-03-25T12:05:57+00:00
 author: docwhat

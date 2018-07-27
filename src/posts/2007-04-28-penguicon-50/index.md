@@ -1,6 +1,6 @@
 ---
 date: "2007-04-28T11:19:35+00:00"
-id: 52
+id: "52"
 slug: "/penguicon-50/"
 template: post
 title: "Penguicon 5.0!"

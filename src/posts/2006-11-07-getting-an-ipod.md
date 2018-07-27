@@ -1,5 +1,5 @@
 ---
-id: 25
+id: "25"
 title: Getting an iPod
 date: 2006-11-07T18:58:06+00:00
 template: post

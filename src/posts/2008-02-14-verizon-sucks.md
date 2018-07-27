@@ -1,5 +1,5 @@
 ---
-id: 86
+id: "86"
 title: Verizon ineptitude
 date: 2008-02-14T10:04:13+00:00
 template: post

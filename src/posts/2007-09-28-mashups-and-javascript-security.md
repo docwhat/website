@@ -1,5 +1,5 @@
 ---
-id: 68
+id: "68"
 title: "Mashups and JavaScript Security"
 date: "2007-09-28T15:28:03+00:00"
 template: "post"

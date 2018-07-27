@@ -1,5 +1,5 @@
 ---
-id: 66
+id: "66"
 title: Wordpress User-Agent
 date: 2007-09-24T01:30:25+00:00
 template: post

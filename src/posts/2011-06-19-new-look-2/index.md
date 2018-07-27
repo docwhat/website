@@ -1,5 +1,5 @@
 ---
-id: 726
+id: "726"
 title: New Look
 date: 2011-06-19T16:15:12-04:00
 template: post

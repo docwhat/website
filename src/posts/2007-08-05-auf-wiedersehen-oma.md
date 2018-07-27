@@ -1,5 +1,5 @@
 ---
-id: 62
+id: "62"
 title: Auf Wiedersehen, Oma
 date: 2007-08-05T21:25:00+00:00
 template: post

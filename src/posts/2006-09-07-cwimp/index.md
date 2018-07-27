@@ -1,7 +1,7 @@
 ---
 date: "2006-09-07T17:18:39+00:00"
 guid: "http://docwhat.org/2006/09/cwimp/"
-id: 13
+id: "13"
 template: post
 slug: "/cwimp/"
 tags:

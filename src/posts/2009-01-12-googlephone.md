@@ -1,5 +1,5 @@
 ---
-id: 234
+id: "234"
 title: Google Phone
 date: 2009-01-12T22:43:00+00:00
 template: post

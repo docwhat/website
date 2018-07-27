@@ -1,5 +1,5 @@
 ---
-id: 426
+id: "426"
 title: Google Gears, FF 3.5, and OS-X
 date: 2009-08-04T19:11:06+00:00
 author: docwhat

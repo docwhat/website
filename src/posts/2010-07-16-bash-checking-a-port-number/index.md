@@ -1,5 +1,5 @@
 ---
-id: 563
+id: "563"
 title: 'bash: Checking a port number'
 date: 2010-07-16T17:23:06-04:00
 template: post

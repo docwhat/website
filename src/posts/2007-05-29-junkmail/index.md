@@ -1,6 +1,6 @@
 ---
 date: "2007-05-29T07:24:31+00:00"
-id: 57
+id: "57"
 slug: "/junkmail/"
 template: "post"
 title: "Stop junk postal mail"

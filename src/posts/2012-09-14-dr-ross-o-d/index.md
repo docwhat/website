@@ -1,6 +1,6 @@
 ---
 date: '2012-09-14T17:16:41-04:00'
-id: 1084
+id: "1084"
 slug: '/dr-ross-o-d/'
 tags:
 - Squirrel Hill

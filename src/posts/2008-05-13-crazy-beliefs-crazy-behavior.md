@@ -1,5 +1,5 @@
 ---
-id: 92
+id: "92"
 title: "Crazy beliefs means crazy behavior"
 date: "2008-05-13T17:21:34+00:00"
 template: "post"

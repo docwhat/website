@@ -1,5 +1,5 @@
 ---
-id: 646
+id: "646"
 title: 'Git Tip: empty branch'
 date: 2010-12-07T17:18:21-05:00
 author: docwhat

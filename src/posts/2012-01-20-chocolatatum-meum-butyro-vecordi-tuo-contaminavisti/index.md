@@ -1,5 +1,5 @@
 ---
-id: 822
+id: "822"
 title: Chocolatatum meum butyro vecordi tuo contaminavisti!
 date: 2012-01-20T23:17:15-05:00
 template: post

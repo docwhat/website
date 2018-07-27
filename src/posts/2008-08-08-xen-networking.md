@@ -1,5 +1,5 @@
 ---
-id: 142
+id: "142"
 title: Xen Networking
 date: 2008-08-08T17:44:36+00:00
 template: post

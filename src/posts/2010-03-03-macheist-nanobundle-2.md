@@ -1,5 +1,5 @@
 ---
-id: 519
+id: "519"
 title: MacHeist nanoBundle 2
 date: 2010-03-03T07:59:59+00:00
 author: docwhat

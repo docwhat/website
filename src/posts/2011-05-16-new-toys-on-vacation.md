@@ -1,5 +1,5 @@
 ---
-id: 698
+id: "698"
 title: New Toys
 date: 2011-05-16T17:23:40-04:00
 author: docwhat

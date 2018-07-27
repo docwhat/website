@@ -1,5 +1,5 @@
 ---
-id: 752
+id: "752"
 title: Ruby crashing on Lion
 date: 2011-08-16T18:01:02-04:00
 template: post

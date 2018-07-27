@@ -1,5 +1,5 @@
 ---
-id: 207
+id: "207"
 title: "November 4th: Vote!"
 date: "2008-11-04T15:10:29+00:00"
 template: post

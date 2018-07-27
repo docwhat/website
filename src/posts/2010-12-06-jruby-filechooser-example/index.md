@@ -1,5 +1,5 @@
 ---
-id: 638
+id: "638"
 title: JRuby FileChooser example
 date: 2010-12-06T17:05:56-05:00
 template: post

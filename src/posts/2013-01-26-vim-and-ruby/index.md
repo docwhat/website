@@ -1,5 +1,5 @@
 ---
-id: 1222
+id: "1222"
 title: More on Vim with ruby crashing
 date: 2013-01-26T16:13:42-05:00
 author: docwhat

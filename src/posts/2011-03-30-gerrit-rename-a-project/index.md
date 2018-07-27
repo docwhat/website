@@ -1,5 +1,5 @@
 ---
-id: 673
+id: "673"
 title: 'Gerrit: Rename a Project'
 date: 2011-03-30T10:44:23-04:00
 template: post

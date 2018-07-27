@@ -1,5 +1,5 @@
 ---
-id: 475
+id: "475"
 title: Firefox Fix
 date: 2009-11-09T12:29:02+00:00
 author: docwhat

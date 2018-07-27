@@ -1,5 +1,5 @@
 ---
-id: 452
+id: "452"
 title: Speed Reading
 date: 2009-09-16T17:25:22+00:00
 author: docwhat

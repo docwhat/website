@@ -1,7 +1,7 @@
 ---
 date: '2006-09-08T18:00:01+00:00'
 guid: 'http://docwhat.org/2006/09/sourdough-starter/'
-id: 11
+id: "11"
 slug: '/sourdough-starter/'
 tags:
 - bread

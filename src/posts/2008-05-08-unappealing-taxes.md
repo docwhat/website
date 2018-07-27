@@ -1,5 +1,5 @@
 ---
-id: 90
+id: "90"
 title: "Unappealing Taxes"
 date: "2008-05-08T17:43:00+00:00"
 template: "post"

@@ -1,5 +1,5 @@
 ---
-id: 39
+id: "39"
 title: 'Containing blocks and offsetParent: the secret of position absolute'
 date: 2007-03-19T08:00:40+00:00
 template: post

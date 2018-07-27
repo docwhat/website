@@ -1,5 +1,5 @@
 ---
-id: 1250
+id: "1250"
 title: "40days - Simple isn't easy"
 date: 2013-02-28T17:33:50-05:00
 template: post

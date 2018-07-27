@@ -1,6 +1,6 @@
 ---
 date: "2008-05-16T22:15:43+00:00"
-id: 95
+id: "95"
 template: "post"
 slug: "/bbs-the-documentary/"
 tags:

@@ -1,6 +1,6 @@
 ---
 date: "2008-09-12T12:23:54+00:00"
-id: 190
+id: "190"
 template: post
 slug: "/spore-drm-part-2/"
 tags:

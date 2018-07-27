@@ -1,6 +1,6 @@
 ---
 date: '2007-06-20T20:12:01+00:00'
-id: 60
+id: "60"
 template: post
 slug: '/what-language-would-you-like-it-in/'
 tags:

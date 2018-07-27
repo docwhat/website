@@ -1,6 +1,6 @@
 ---
 date: '2014-04-28T09:51:50-04:00'
-id: 1435
+id: "1435"
 image: '/files/2014/04/knife-250x250.png'
 template: post
 slug: '/rename-chef-node/'

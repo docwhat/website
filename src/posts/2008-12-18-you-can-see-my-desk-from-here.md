@@ -1,5 +1,5 @@
 ---
-id: 232
+id: "232"
 title: You can see my desk from here!
 date: 2008-12-18T11:02:51+00:00
 template: post

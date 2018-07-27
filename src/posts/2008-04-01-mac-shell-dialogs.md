@@ -1,5 +1,5 @@
 ---
-id: 88
+id: "88"
 title: "Mac Tricks: Shell Script Dialogs"
 date: "2008-04-01T23:21:32+00:00"
 template: "post"

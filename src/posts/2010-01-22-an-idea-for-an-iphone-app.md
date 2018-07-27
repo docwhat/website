@@ -1,5 +1,5 @@
 ---
-id: 489
+id: "489"
 title: An idea for an iPhone app
 date: 2010-01-22T20:43:24+00:00
 template: post

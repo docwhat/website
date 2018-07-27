@@ -1,5 +1,5 @@
 ---
-id: 238
+id: "238"
 title: Learning Java
 date: 2009-01-22T17:48:30+00:00
 template: post

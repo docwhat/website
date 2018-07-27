@@ -1,5 +1,5 @@
 ---
-id: 137
+id: "137"
 title: "An anthropological introduction to YouTube"
 date: 2008-08-04T17:41:36+00:00
 template: post

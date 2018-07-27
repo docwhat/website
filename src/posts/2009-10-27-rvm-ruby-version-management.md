@@ -1,5 +1,5 @@
 ---
-id: 471
+id: "471"
 title: 'RVM: ruby version management'
 date: 2009-10-27T17:23:08+00:00
 author: docwhat

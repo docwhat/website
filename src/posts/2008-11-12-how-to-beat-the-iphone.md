@@ -1,5 +1,5 @@
 ---
-id: 221
+id: "221"
 title: How to beat the iPhone
 date: 2008-11-12T17:43:07+00:00
 template: post

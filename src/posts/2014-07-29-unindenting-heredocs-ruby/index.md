@@ -1,5 +1,5 @@
 ---
-id: 1449
+id: "1449"
 title: Unindenting HEREDOCs in Ruby
 date: 2014-07-29T13:47:22-04:00
 template: post

@@ -1,5 +1,5 @@
 ---
-id: 182
+id: "182"
 title: IAT made Network World
 date: 2008-09-05T16:21:01+00:00
 template: post

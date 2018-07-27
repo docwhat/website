@@ -1,5 +1,5 @@
 ---
-id: 28
+id: "28"
 title: Writing Practice
 date: 2006-10-11T10:13:40+00:00
 template: post

@@ -1,5 +1,5 @@
 ---
-id: 456
+id: "456"
 title: The Party of Stupid
 date: 2009-09-26T22:16:59+00:00
 author: docwhat

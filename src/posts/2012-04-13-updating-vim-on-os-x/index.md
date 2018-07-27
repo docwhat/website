@@ -1,6 +1,6 @@
 ---
 date: "2012-04-13T09:03:12-04:00"
-id: 841
+id: "841"
 image: "/files/2012/04/356023245659.png"
 slug: "/updating-vim-on-os-x/"
 tags:

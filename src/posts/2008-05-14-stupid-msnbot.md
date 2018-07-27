@@ -1,5 +1,5 @@
 ---
-id: 91
+id: "91"
 title: "msnbot: the stupid bot"
 date: "2008-05-14T17:12:29+00:00"
 template: "post"

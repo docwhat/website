@@ -1,6 +1,6 @@
 ---
 date: "2007-10-02T11:08:24+00:00"
-id: 71
+id: "71"
 template: "post"
 slug: "/amazon/"
 title: "Amazon Christ!"

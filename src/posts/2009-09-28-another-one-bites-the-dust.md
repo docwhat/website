@@ -1,7 +1,7 @@
 ---
 date: '2009-09-28T08:00:49+00:00'
 guid: 'http://docwhat.org/?p=462'
-id: 462
+id: "462"
 template: post
 slug: '/another-one-bites-the-dust/'
 tags:

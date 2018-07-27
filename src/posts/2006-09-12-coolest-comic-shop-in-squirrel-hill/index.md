@@ -1,6 +1,6 @@
 ---
 date: "2006-09-12T22:09:28+00:00"
-id: 20
+id: "20"
 slug: "/coolest-comic-shop/"
 template: post
 title: "Coolest Comic Shop in Squirrel Hill"

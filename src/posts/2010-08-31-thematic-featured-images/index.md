@@ -1,5 +1,5 @@
 ---
-id: 589
+id: "589"
 title: Thematic featured images
 date: 2010-08-31T17:00:07-04:00
 template: post

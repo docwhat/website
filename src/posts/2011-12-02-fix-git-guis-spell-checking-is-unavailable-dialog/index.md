@@ -1,5 +1,5 @@
 ---
-id: 791
+id: "791"
 title: Fix git-gui’s “Spell checking is unavailable” dialog
 date: 2011-12-02T11:23:16-05:00
 template: post

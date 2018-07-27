@@ -1,5 +1,5 @@
 ---
-id: 1239
+id: "1239"
 title: 'Re: All https, all the time'
 date: 2013-02-26T08:02:12-05:00
 author: docwhat

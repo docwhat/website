@@ -1,5 +1,5 @@
 ---
-id: 1093
+id: "1093"
 title: 'vim - preserve your cursor and window state'
 date: 2012-06-22T12:12:05-04:00
 template: post

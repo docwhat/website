@@ -1,5 +1,5 @@
 ---
-id: 367
+id: "367"
 title: Useless Error Messages
 date: 2009-05-28T15:53:14+00:00
 author: docwhat

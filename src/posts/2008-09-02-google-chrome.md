@@ -1,5 +1,5 @@
 ---
-id: 176
+id: "176"
 title: Google Chrome
 date: 2008-09-02T17:15:21+00:00
 template: post

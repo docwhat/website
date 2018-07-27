@@ -1,5 +1,5 @@
 ---
-id: 392
+id: "392"
 title: Happiness is a warm SCM
 date: 2009-06-18T14:40:01+00:00
 author: docwhat

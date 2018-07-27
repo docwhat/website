@@ -1,5 +1,5 @@
 ---
-id: 245
+id: "245"
 title: Aquamacs vs. Dvorak-Qwerty layout
 date: 2009-01-29T01:17:20+00:00
 template: post

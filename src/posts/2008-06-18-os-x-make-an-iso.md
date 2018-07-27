@@ -1,5 +1,5 @@
 ---
-id: 97
+id: "97"
 title: "OS X: Make an ISO"
 date: "2008-06-18T17:26:53+00:00"
 template: post

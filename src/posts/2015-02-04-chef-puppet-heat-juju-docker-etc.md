@@ -1,5 +1,5 @@
 ---
-id: 1576
+id: "1576"
 title: Chef, Puppet, Heat, Juju, Docker, etc.
 date: 2015-02-04T13:38:51-05:00
 author: docwhat
