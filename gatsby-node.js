@@ -21,7 +21,8 @@ const runQuery = (handler, query) =>
     return r.data
   })
 
-const replacePath = _path => (_path === `/` ? _path : _path.replace(/\/$/, ``))
+const replacePath = _path =>
+  _path === `/` ? _path : `/${_path.replace(/^\/|\/$/, '')}`
 
 const calculateDefaults = (node, getNode) => {
   const defaultSlug = createFilePath({ node, getNode })
