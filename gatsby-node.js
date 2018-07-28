@@ -246,7 +246,7 @@ exports.onPostBuild = async ({ graphql }) => {
       id: `${siteUrl}${node.fields.slug}`,
       link: `${siteUrl}${node.fields.slug}`,
       date: moment(node.fields.date).toDate(),
-      content: node.html.replace(/\b(href|src)="\//g, `$1="${siteUrl}`),
+      content: node.html.replace(/\b(href|src)="\//g, `$1="${siteUrl}/`),
       author: [
         {
           name: authorName,
