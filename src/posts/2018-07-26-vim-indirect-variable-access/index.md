@@ -6,10 +6,9 @@ id: cd4295aa-fb12-4f7c-9536-ce9a6e642880
 template: post
 banner:
     url: 'tuesday-temptation-550409-unsplash.jpg'
-    name: 'ROUND AND ROUND'
     author:
         name: 'Tuesday Temptation'
-        url: 'https://unsplash.com/photos/ffB7ct610dw'
+        url: 'https://unsplash.com/photos/ffB7ct610dw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
 ---
 
 ![](tuesday-temptation-550409-unsplash.jpg)
