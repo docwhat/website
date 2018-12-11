@@ -33,6 +33,11 @@
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.5",
     "babel-preset-flow": "^6.23.0",
@@ -87,8 +92,10 @@
     "glamorous": "^4.13.0",
     "graphql": "0.11.7",
     "gray-percentage": "^2.0.0",
+    "husky": "latest",
     "inquirer": "^5.2.0",
     "inquirer-datepicker-prompt": "^0.4.2",
+    "lint-staged": "latest",
     "lodash": "4.17.10",
     "moment": "2.x.x",
     "pify": "^3.0.0",
@@ -102,6 +109,7 @@
     "react-gist": "^1.2.1",
     "react-gravatar": "^2.6.3",
     "react-helmet": "^5.2.0",
+    "sort-package-json": "latest",
     "typography": "^0.16.0",
     "typography-breakpoint-constants": "^0.15.10",
     "uuid": "^3.2.1"
@@ -109,5 +117,11 @@
   "jshintConfig": {
     "esversion": 6,
     "asi": true
+  },
+  "lint-staged": {
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
   }
 }
