@@ -122,6 +122,14 @@
     "package.json": [
       "sort-package-json",
       "git add"
+    ],
+    "*.{js,jsx}": [
+      "prettier-eslint --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
     ]
   }
 }
