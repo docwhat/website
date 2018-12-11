@@ -1,5 +1,7 @@
 // @format
 // @flow
+import { graphql } from 'gatsby'
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -13,6 +15,7 @@ import Comments from '../components/Comments'
 
 import { siteUrl, siteTitle } from '../utils/constants'
 import BlogPostMicroData from '../components/BlogPostMicroData'
+import Layout from '../components/Layout.js'
 
 const PostTemplate = props => {
   const {
@@ -31,38 +34,40 @@ const PostTemplate = props => {
       },
       comments,
     },
-    pathContext: { newer, older },
+    pageContext: { newer, older },
   } = props
 
   const helmetTitle = pageTitle || siteTitle
   const pageUrl = `${siteUrl}${slug}`
 
   return (
-    <article>
-      <Helmet title={helmetTitle} />
-      <PageHeader
-        title={pageTitle}
-        monthName={monthName}
-        dayName={dayName}
-        dayOfMonth={dayOfMonth}
-        ymdDate={ymdDate}
-      />
+    <Layout location={props.location}>
+      <article>
+        <Helmet title={helmetTitle} />
+        <PageHeader
+          title={pageTitle}
+          monthName={monthName}
+          dayName={dayName}
+          dayOfMonth={dayOfMonth}
+          ymdDate={ymdDate}
+        />
 
-      <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
-      <Comments comments={comments} />
-      <SubmitComment slug={slug} url={pageUrl} />
+        <Comments comments={comments} />
+        <SubmitComment slug={slug} url={pageUrl} />
 
-      <PostPaginator older={older} newer={newer} />
+        <PostPaginator older={older} newer={newer} />
 
-      <Bio />
-      <BlogPostMicroData
-        postTitle={helmetTitle}
-        postUrl={pageUrl}
-        ymdDate={ymdDate}
-        wordCount={words}
-      />
-    </article>
+        <Bio />
+        <BlogPostMicroData
+          postTitle={helmetTitle}
+          postUrl={pageUrl}
+          ymdDate={ymdDate}
+          wordCount={words}
+        />
+      </article>
+    </Layout>
   )
 }
 
@@ -74,7 +79,7 @@ PostTemplate.propTypes = {
       html: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     newer: PropTypes.object,
     older: PropTypes.object,
   }),

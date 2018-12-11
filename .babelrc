@@ -1,4 +1,0 @@
-{
-  "presets": [["env", { "targets": { "node": "current" } }], "react", "flow"],
-  "plugins": ["add-module-exports"]
-}

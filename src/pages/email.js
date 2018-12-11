@@ -2,7 +2,7 @@
 // @flow
 import React from 'react'
 import g from 'glamorous'
-import { withPrefix } from 'gatsby-link'
+import { withPrefix } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import StyledButton from '../components/StyledButton'
 

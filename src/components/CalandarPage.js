@@ -1,5 +1,7 @@
 // @flow
 // @format
+import { graphql } from 'gatsby'
+
 import g from 'glamorous'
 import React from 'react'
 import PropTypes from 'prop-types'

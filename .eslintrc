@@ -22,15 +22,21 @@
     "prettier/prettier": "error",
     "semi": ["error", "never"],
     "comma-dangle": "off",
-    "space-before-function-paren": [ "warn", {
-      "anonymous": "always",
-      "named": "never",
-      "asyncArrow": "always"
-    }]
+    "space-before-function-paren": [
+      "warn",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
   },
   "settings": {
     "flowtype": {
       "onlyFilesWithFlowAnnotation": false
+    },
+    "react": {
+      "version": "detect"
     }
   }
 }

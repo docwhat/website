@@ -1,17 +1,21 @@
 // @format
 // @flow
-import React from 'react'
+import { withPrefix } from 'gatsby'
+import * as React from 'react'
 import g, { Div } from 'glamorous'
-import PropTypes from 'prop-types'
-import { withPrefix } from 'gatsby-link'
 
 import Link from '../components/Link'
 import logoUrl from '../icons/logo.svg'
 import { heroColor } from '../utils/colors'
 import { rhythm, scale, options as typo } from '../utils/typography'
 
-const DefaultLayout = props => {
-  const { location, children } = props
+type Props = {
+  children?: React.Node,
+  location: any,
+}
+
+const DefaultLayout = (props: Props) => {
+  const { children, location } = props
   const scaleFactor = location.pathname === withPrefix(`/`) ? 5 / 4 : 1 / 4
 
   const header = (
@@ -58,14 +62,9 @@ const DefaultLayout = props => {
       }}
     >
       {header}
-      {children()}
+      {children}
     </Div>
   )
-}
-
-DefaultLayout.propTypes = {
-  location: PropTypes.object.isRequired,
-  children: PropTypes.func.isRequired,
 }
 
 export default DefaultLayout

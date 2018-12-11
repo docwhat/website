@@ -1,12 +1,13 @@
 // @format
-// @flow
+import { graphql } from 'gatsby'
+
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import { siteTitle } from '../utils/constants'
 import PageHeader from '../components/PageHeader'
 import Bio from '../components/Bio'
+import Layout from '../components/Layout.js'
 
 const PageTemplate = props => {
   const {
@@ -26,21 +27,17 @@ const PageTemplate = props => {
   const helmetTitle = pageTitle || siteTitle
 
   return (
-    <article>
-      <Helmet title={helmetTitle} />
-      {pageHeader}
+    <Layout location={props.location}>
+      <article>
+        <Helmet title={helmetTitle} />
+        {pageHeader}
 
-      <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
-      <Bio />
-    </article>
+        <Bio />
+      </article>
+    </Layout>
   )
-}
-
-PageTemplate.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object.isRequired,
-  }).isRequired,
 }
 
 export default PageTemplate

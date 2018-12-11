@@ -64,7 +64,8 @@ const Bio = () => (
         The personal blog of{` `}
         <strong rel="me" className="p-name">
           {authorName}
-        </strong>.
+        </strong>
+        .
         <br />
         <Reference>
           <GithubLogo />

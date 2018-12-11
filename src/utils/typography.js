@@ -40,7 +40,7 @@ const systemFontFamily = [
   'Segoe UI Symbol',
 ]
 
-const typography = new Typography({
+const myTypography = new Typography({
   title: `docwhat2018`,
   baseFontSize: `21px`,
   baseLineHeight: `1.5`,
@@ -225,9 +225,10 @@ css.global(`svg`, {
 
 require(`./prismjs.js`)
 
-// Hot reload typography in development.
+// Hot reload myTypography in development.
 if (process.env.NODE_ENV !== `production`) {
-  typography.injectStyles()
+  myTypography.injectStyles()
 }
 
-export default typography
+export const { rhythm, scale, options } = myTypography
+export default myTypography

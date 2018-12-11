@@ -16,6 +16,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    'gatsby-plugin-flow',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

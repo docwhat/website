@@ -1,5 +1,7 @@
 // @format
 // @flow
+import { graphql } from 'gatsby'
+
 import { Div } from 'glamorous'
 import React from 'react'
 import Helmet from 'react-helmet'

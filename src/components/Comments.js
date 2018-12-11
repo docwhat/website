@@ -1,5 +1,7 @@
 // @flow
 // @format
+import { graphql } from 'gatsby'
+
 import React from 'react'
 
 import Comment from './Comment'
@@ -47,7 +49,7 @@ const Comments = data => {
 export default Comments
 
 export const CommentsBySlug = graphql`
-  fragment commentsQueryFragment on RootQueryType {
+  fragment commentsQueryFragment on Query {
     comments: allMarkdownRemark(
       filter: { fields: { slug: { eq: $slug }, template: { eq: "comment" } } }
       sort: { fields: [fields___slug, frontmatter___date], order: ASC }
