@@ -26,12 +26,12 @@ has a few cloths and some cleaning solution.
 But I really wanted the little cloth to protect the screen. I've seen how
 horrible MacBook screens can get from keyboard scum.
 
-However, after I bought it I really liked the cloths and the cleaner.  The extra
-cloths are really nice and big; the cleaner actually really works well. All in
-all I think it was worth it.
+However, after I bought it I really liked the cloths and the cleaner.  The
+extra cloths are really nice and big; the cleaner actually really works well.
+All in all I think it was worth it.
 
-I was reminded of how helpful it was when I had a slight "drinking problem" and
-spewed beer across my screen and keyboard. :-(
+I was reminded of how helpful it was when I had a slight "drinking problem"
+and spewed beer across my screen and keyboard. :-(
 
 After it dried out, the iKlear stuff did a great job removing it.
 

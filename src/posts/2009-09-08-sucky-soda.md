@@ -14,12 +14,13 @@ I am not a soda fan.
 
 I don't like Pepsi, Coke, etc. They taste like chemicals to me.
 
-The last soda I like was an orange Fanta I got in a McDonalds in Germany. It did
-not taste like anything I've gotten in the US. It was not sickly sweet and
+The last soda I like was an orange Fanta I got in a McDonalds in Germany. It
+did not taste like anything I've gotten in the US. It was not sickly sweet and
 actually tasted good.
 
 I've come to realize that part of the reason for this is high fructose corn
-syrup, but that isn't all of it. I think the sodas in America are just horrible.
+syrup, but that isn't all of it. I think the sodas in America are just
+horrible.
 
 And things like this video from <http://chow.com/> pretty much prove that the
 big US sodas are crap.<!-- more -->

@@ -19,8 +19,9 @@ There is a nifty new project for the Android phone:
 Environment</a>.
 
 This lets you use <a href="http://lua.org">Lua</a> and
-<a href="http://python.org/">Python</a> to write scripts on Android.  Not quite
-the same as writing a whole application in those languages, but a great start!
+<a href="http://python.org/">Python</a> to write scripts on Android.  Not
+quite the same as writing a whole application in those languages, but a great
+start!
 
 [via <a
 href="http://google-opensource.blogspot.com/2009/06/introducing-android-scripting.html">Google

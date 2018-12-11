@@ -15,25 +15,26 @@ So I decided to try to install
 (and virtualenv) on my Mac Book Pro. Virtualenv was explained to me as being
 python's version of Wayne E. Seguin's RVM (Ruby Version Manager).
 
-I've tried installing virtualenv/wrapper twice before and failed miserably. But
-this time I decided to actually do it.<!-- more -->
+I've tried installing virtualenv/wrapper twice before and failed miserably.
+But this time I decided to actually do it.<!-- more -->
 
 Some quick background: I've been a very active python programmer up to and
-including 2.5 series. I've implemented large python-based systems at several of
-the companies I've worked for; including two very successful web applications.
-I've implemented two ORMs in python and even grokked meta-programming in python.
+including 2.5 series. I've implemented large python-based systems at several
+of the companies I've worked for; including two very successful web
+applications. I've implemented two ORMs in python and even grokked
+meta-programming in python.
 
-But that was several years ago. I've not really done much programming in python
-since 2007 or so. Except for some smaller utilities. I've since started working
-with Ruby, heavily in the last year, and am really liking it. It took me a while
-to understand what the underlying philosophy was about but I get it now. Other
-than some ugly warts (threading in 1.9 acts differently on different OSes and a
-lot of base classes/types are privileged and don't deal well with being
-overridden) Ruby is pretty spiffy.
+But that was several years ago. I've not really done much programming in
+python since 2007 or so. Except for some smaller utilities. I've since started
+working with Ruby, heavily in the last year, and am really liking it. It took
+me a while to understand what the underlying philosophy was about but I get it
+now. Other than some ugly warts (threading in 1.9 acts differently on
+different OSes and a lot of base classes/types are privileged and don't deal
+well with being overridden) Ruby is pretty spiffy.
 
-Since I've last done serious programming in python, it has gotten `easy_install`
-(it existed, but was beta), `pip`, and the `.egg` package format. All big
-improvements.
+Since I've last done serious programming in python, it has gotten
+`easy_install` (it existed, but was beta), `pip`, and the `.egg` package
+format. All big improvements.
 
 Anyway, back to virtualenv/wrapper.
 
@@ -43,22 +44,23 @@ that I didn't understand what virtualenv and virtualenvwrapper are.
 For those who don't know:
 
 Virtualenv does _not_ install new python versions. You need the versions
-installed some other way (such as a package manager or compiling them yourself).
-It is a way to manage python packages and libraries. If you're familiar with
-RVM, then it's basically a way to do `rvm gemset` for python.
+installed some other way (such as a package manager or compiling them
+yourself). It is a way to manage python packages and libraries. If you're
+familiar with RVM, then it's basically a way to do `rvm gemset` for python.
 
 However, virtualenv is clunky to use... allegedly, I've not played with it.
 
 Fortunately, we have virtualenvwrapper to make life easier! This is similar to
-RVM in the way it is designed -- it's a bunch of shell functions you source into
-your shell. You then get commands like:
+RVM in the way it is designed -- it's a bunch of shell functions you source
+into your shell. You then get commands like:
 
-`mkvirtualenv` Creates a new virtual environment (a python gemset, if you will).
+`mkvirtualenv` Creates a new virtual environment (a python gemset, if you
+will).
 
 `rmvirtualenv` Three guesses and the first two don't count.
 
-`workon <env>` Sets which environment to work on. If you don't specify one, then
-it'll list them all. Sort of like `rvm use`.
+`workon <env>` Sets which environment to work on. If you don't specify one,
+then it'll list them all. Sort of like `rvm use`.
 
 `deactivate` Deactivate your python environments. Sort of the equivalent of
 `rvm use system`.
@@ -78,16 +80,17 @@ Warning: The download is huge.
 
 ### Install homebrew
 
-I installed [homebrew](https://github.com/mxcl/homebrew). Actually, I've had it
-for while, but if you're following this on a new Mac, you might want to know
-that I had installed it. The instructions are straightforward so I won't repeat
-them here.
+I installed [homebrew](https://github.com/mxcl/homebrew). Actually, I've had
+it for while, but if you're following this on a new Mac, you might want to
+know that I had installed it. The instructions are straightforward so I won't
+repeat them here.
 
 ### Install python 2.7
 
-This is optional, I suspect. I didn't play with installing virtualenv/wrapper on
-the system's python. I try to leave the system stuff alone, if possible. It
-saves me headaches later. Especially if I mess something and need to try again.
+This is optional, I suspect. I didn't play with installing virtualenv/wrapper
+on the system's python. I try to leave the system stuff alone, if possible. It
+saves me headaches later. Especially if I mess something and need to try
+again.
 
 ```bash
 brew install readline sqlite gdbm
@@ -96,15 +99,16 @@ brew install python --universal
 
 I do this in two steps because:
 
-1.  I wanted to ensure the dependencies for python are installed before python.
-    Homebrew is getting better with dependencies but it isn't perfect. If they
-    aren't installed before, then you would have to uninstall and re-install
-    python to get python notice them.
+1.  I wanted to ensure the dependencies for python are installed before
+    python. Homebrew is getting better with dependencies but it isn't perfect.
+    If they aren't installed before, then you would have to uninstall and
+    re-install python to get python notice them.
 2.  I want to make python --universal so I can build 32bit and 64bit versions.
 
 ### Install pip
 
-So this was something that confused me greatly, but I eventually figured it out.
+So this was something that confused me greatly, but I eventually figured it
+out.
 
 You need to run `easy_install`, but I couldn't figure out where `easy_install`
 was in Homebrew. I looked all over and didn't find it.
@@ -178,8 +182,8 @@ This does a couple of things:
 4.  Tells pip to honor the virtualenv stuff.
 
 The last bit was the part I banged my head on the most, even though I didn't
-know it. I was following some instructions on installing virtualenvwrappers and
-they left that part out. Commands like `mkvirtualenv` are shell functions.
+know it. I was following some instructions on installing virtualenvwrappers
+and they left that part out. Commands like `mkvirtualenv` are shell functions.
 `virtualenvwrapper.sh` contains those functions. I kept looking for shell
 scripts or programs or something.
 

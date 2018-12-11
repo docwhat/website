@@ -8,7 +8,8 @@ tags:
 - humor
 ---
 
-Amazon redesigned their web-site, shrinking my name even more than previously...
+Amazon redesigned their web-site, shrinking my name even more than
+previously...
 
 ![Amazon
 Snapshot](amazon-christ.png 'Amazon Snapshot')

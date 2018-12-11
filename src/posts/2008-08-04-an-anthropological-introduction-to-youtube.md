@@ -20,6 +20,7 @@ I recommend watching it in its entirety.
 
 Duration: 1 hour
 
-Found via [GrokLaw](http://www.groklaw.net/article.php?story=20080803232159314)
+Found via
+[GrokLaw](http://www.groklaw.net/article.php?story=20080803232159314)
 
 <!-- more -->

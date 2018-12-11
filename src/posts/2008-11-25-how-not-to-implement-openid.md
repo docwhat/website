@@ -28,20 +28,20 @@ myopenid.com). Or even multiple places!~~
 ~~I reported that
 [bug](https://sourceforge.net/tracker2/?func=detail&aid=1955438&group_id=1&atid=200001)
 but it was never fixed.  The original part of the problem was that it's HTML
-parsing was broken.  I **know** that none of the open source libraries have had
-this problem.~~
+parsing was broken.  I **know** that none of the open source libraries have
+had this problem.~~
 
 ~~Now that I have the fancy new
-[OpenID Plugin](http://wordpress.org/extend/plugins/openid/) that can be its own
-provider, sourceforge is _still_ broken.~~
+[OpenID Plugin](http://wordpress.org/extend/plugins/openid/) that can be its
+own provider, sourceforge is _still_ broken.~~
 
 ~~This isn't rocket science, folks. There are libraries that do almost
 everything for you!~~
 
 ~~Sheesh.~~
 
-**UPDATE**[2009-03-14]: It turns out I was wrong! The problem is that the OpenID
-Plugin was
+**UPDATE**[2009-03-14]: It turns out I was wrong! The problem is that the
+OpenID Plugin was
 [broken](http://code.google.com/p/diso/issues/detail?id=101&colspec=ID%20Type%20Project%20Status%20Priority%20Milestone%20Owner%20Summary).
 It's just that at the time of this post, only SourceForge was triggering the
 bug.  Eventually, all OpenID sites were triggering the bug.
@@ -51,5 +51,5 @@ can make is that the feedback wasn't sufficient to let me troubleshoot the
 problem.
 
 **UPDATE**[2009-03-19]: Wrong again! It turns out that broken apache rewrite
-rules (which were hidden by **ErrorDocument** directives) were the cause. Man, I
-should stop being wrong so much. ;-)
+rules (which were hidden by **ErrorDocument** directives) were the cause. Man,
+I should stop being wrong so much. ;-)

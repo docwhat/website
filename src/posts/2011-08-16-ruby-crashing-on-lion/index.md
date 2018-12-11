@@ -34,8 +34,8 @@ equivalent-shell-startup file:
 export CC=/usr/bin/gcc-4.2
 ```
 
-That line forces any project to compile using GNU `gcc` instead of LLVM's `gcc`.
-Not ideal, but at least Ruby works.
+That line forces any project to compile using GNU `gcc` instead of LLVM's
+`gcc`. Not ideal, but at least Ruby works.
 
 If you've already installed a ruby or two or compiled any native extensions
 using the `llvm-gcc` then you'll have to remove them (replace the ruby version
@@ -48,9 +48,9 @@ $ gem pristine --all          # Rebuilds all natively built gems
                               # ...repeat for all gemsets. *sigh*
 ```
 
-I went for the nuclear option since I wasn't sure what was broken and what okay.
-**Warning:** this command will destroy everything in `~/.rvm`, including any
-customizations you've set therein.
+I went for the nuclear option since I wasn't sure what was broken and what
+okay. **Warning:** this command will destroy everything in `~/.rvm`, including
+any customizations you've set therein.
 
 ```bash
 rvm implode

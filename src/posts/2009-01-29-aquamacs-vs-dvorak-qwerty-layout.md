@@ -14,14 +14,14 @@ I love [Aquamacs Emacs](http://aquamacs.org/). It totally rocks.
 
 However, I use the
 [Dvorak-Qwerty](http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard#Mac_OS)
-keyboard layout (AKA DQ) and Aquamacs doesn't like the command key bindings that
-the DQ layout uses. DQ is dvorak except when you use the command key.  Then it
-becomes QWERTY. This was invaluable when I first started using OS-X since it
-matched all the docs.
+keyboard layout (AKA DQ) and Aquamacs doesn't like the command key bindings
+that the DQ layout uses. DQ is dvorak except when you use the command key.
+ Then it becomes QWERTY. This was invaluable when I first started using OS-X
+since it matched all the docs.
 
-According to the [FAQ](http://www.emacswiki.org/emacs/AquamacsFAQ#toc6) Aquamacs
-cannot natively understand the command keys for this layout because it's a
-Carbon application, not a Cocoa application.
+According to the [FAQ](http://www.emacswiki.org/emacs/AquamacsFAQ#toc6)
+Aquamacs cannot natively understand the command keys for this layout because
+it's a Carbon application, not a Cocoa application.
 
 Fortunately, there is a workaround...
 
@@ -47,11 +47,11 @@ decided to find a better solution.
 
 And here it is; A horribly kludgy python script that essentially automates
 davidswelt's workaround: based on a keymap hardcoded in the script it patches
-the `osxkeys.el` shipped with Aquamacs and then writes this patched version into
-`~/Library/Preferences/Aquamacs Emacs/`.
+the `osxkeys.el` shipped with Aquamacs and then writes this patched version
+into `~/Library/Preferences/Aquamacs Emacs/`.
 
-Hopefully this will be useful for someone. If not, it'll be useful for me when I
-forget about this and delete my preferences again.
+Hopefully this will be useful for someone. If not, it'll be useful for me when
+I forget about this and delete my preferences again.
 
 Ciao!
 

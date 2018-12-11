@@ -15,19 +15,19 @@ My first web site went live when the
 web browser; made by NCSA.) web browser was released.
 
 My website, my skills and my interests have all evolved over the years. I have
-tried things like [Zope](http://zope.org/), [PHP](http://php.net/), server-side
-includes, and even Front Page.
+tried things like [Zope](http://zope.org/), [PHP](http://php.net/),
+server-side includes, and even Front Page.
 
 The problem is: I really don't want to have to manage the nuts and bolts of my
 site.
 
-I occasionally have an idea or something I want to share with people. Then I get
-the urge to update my website. Unfortunately, this makes following through with
-the urge, updating the website, a little too expensive. Usually I notice that
-part of the theme is missing, or that some links are broken, or that I didn't
-actually finish that thought on some page. You add to this that I am a software
-engineer who does web application design all day; I'm not really interested in
-taking my work home with me.
+I occasionally have an idea or something I want to share with people. Then I
+get the urge to update my website. Unfortunately, this makes following through
+with the urge, updating the website, a little too expensive. Usually I notice
+that part of the theme is missing, or that some links are broken, or that I
+didn't actually finish that thought on some page. You add to this that I am a
+software engineer who does web application design all day; I'm not really
+interested in taking my work home with me.
 
 So I stay away from my website.
 
@@ -43,20 +43,21 @@ posts were managed and the fact it uses MySQL and not
 bunch more and it has a large number of plugins.
 
 but... but... but... Setting it up initially worked okay, but then I tried to
-download some input filters (format engines for posts and stuff). Well, Textile
-didn't work at all. It turned out it was for an older Drupal, though it showed
-up in the "filter for 4.7" section of modules. The interwiki module didn't work
-at all (it looked mostly due to MySQL-isms). To make things worse, as I looked
-at how the interwiki plugin was written, I was appalled by the API for changing
-stuff in Drupal.
+download some input filters (format engines for posts and stuff). Well,
+Textile didn't work at all. It turned out it was for an older Drupal, though
+it showed up in the "filter for 4.7" section of modules. The interwiki module
+didn't work at all (it looked mostly due to MySQL-isms). To make things worse,
+as I looked at how the interwiki plugin was written, I was appalled by the API
+for changing stuff in Drupal.
 
-I went back to looking at WordPress in more depth. It has the advantage that it
-is a blog and only a blog. It does what it does and does it well. It's mostly
-simple and the wordpress website has lots of information on common blog tasks.
+I went back to looking at WordPress in more depth. It has the advantage that
+it is a blog and only a blog. It does what it does and does it well. It's
+mostly simple and the wordpress website has lots of information on common blog
+tasks.
 
 It ended up taking me about 4 days of work to do this. I a lot of work,
-considering that I had a working site before. But not that much work considering
-what it could have taken. All in all, I'm pretty happy, now.
+considering that I had a working site before. But not that much work
+considering what it could have taken. All in all, I'm pretty happy, now.
 
 So, here is my website. Reborn, reconstituted, rebuilt for ... what, the fifth
 time?

@@ -23,8 +23,8 @@ Unix commands or can translate them to windows.
     ?>
     ```
 
-3.  Modify the form `comments.php` in your theme to point to `/post/` instead of
-    `/wp-comments-post.php`
+3.  Modify the form `comments.php` in your theme to point to `/post/` instead
+    of `/wp-comments-post.php`
 4.  Add the following
     [RewriteRule](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html#rewriterule)
     to your ".htaccess" files to block "wp-comments-post.php":
@@ -34,12 +34,13 @@ Unix commands or can translate them to windows.
     ```
 
 Is this a perfect solution? No, it isn't; spammers will work around it, using
-scripts that read your blog posts first to get the correct page to post to. But
-it does slow down a spammer. To a spammer, time is money, so a mass-spammer will
-be less likely use it. For an unpopular blog like my own, it isn't worth it for
-a spammer to work around this problem (or even notice it is a problem). However,
-if you own a super popular blog, this won't add much protection because the
-reward to the spammer is high enough that the extra cost is worthwhile.
+scripts that read your blog posts first to get the correct page to post to.
+But it does slow down a spammer. To a spammer, time is money, so a
+mass-spammer will be less likely use it. For an unpopular blog like my own, it
+isn't worth it for a spammer to work around this problem (or even notice it is
+a problem). However, if you own a super popular blog, this won't add much
+protection because the reward to the spammer is high enough that the extra
+cost is worthwhile.
 
 I hope this helps you. :-)
 

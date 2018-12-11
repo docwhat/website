@@ -17,9 +17,9 @@ tags:
 You may be familiar with redirecting the output of your shell script to a file
 using `exec`
 
-However, what do you do if you want monitor the output while logging at the same
-time? I just figured this out (probably again, since I tend to forget things...
-which is why I'm blogging this).
+However, what do you do if you want monitor the output while logging at the
+same time? I just figured this out (probably again, since I tend to forget
+things... which is why I'm blogging this).
 
 WARNING: This is bash-specific. While I prefer [ZSH](http://zsh.org/) for my
 personal shell, I generally code in bash because it is everywhere.

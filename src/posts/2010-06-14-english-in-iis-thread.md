@@ -77,8 +77,8 @@ interesting anomaly.
 Your reluctance to laugh about it with me could be seen to reflect a slightly
 precious attitude towards criticism, when in fact there is none offered.
 
-The fact that this _isn't_ an open-source project, and people _are_ paid to fix
-this kind of thing, is noteworthy. But hey, it's no big deal.
+The fact that this _isn't_ an open-source project, and people _are_ paid to
+fix this kind of thing, is noteworthy. But hey, it's no big deal.
 
 Ciao.</blockquote>
 
@@ -99,10 +99,10 @@ maybe, who scanned for errors wasn't american ?
 
 Pedro Leite From Portugal.</blockquote>
 
-The difference between <em>loose</em> and <em>lose</em> is actually pretty hard
-to figure out. Mainly because they sound a like and people tend to pronounce
-them similarly when they speak. I know I have a hard time telling which was
-being used if either would work in a spoken sentence.
+The difference between <em>loose</em> and <em>lose</em> is actually pretty
+hard to figure out. Mainly because they sound a like and people tend to
+pronounce them similarly when they speak. I know I have a hard time telling
+which was being used if either would work in a spoken sentence.
 
 <h3>andrewh:</h3>
 
@@ -121,14 +121,14 @@ out-loud, but totally doesn't work when written.
 
 <blockquote>well , "loose" is the correct english spelling for "loose" and "lose" is the correct english spelling for "lose" but the 2 have very different meanings.
 
-- <http://www.websters-online-dictionary.org/definition/lose>
-- <http://www.thefreedictionary.com/lose>
-- [http://dictionary.cambridge.org/define.asp?key=16736&dict=S〈=E](http://dictionary.cambridge.org/define.asp?key=16736&dict=S〈=E)
-- <http://www.allwords.com/query.php?SearchType=3&Keyword=lose&goquery=Find+it%21&Language=ENG&ESP=1&v=72189267>
-- <http://www.websters-online-dictionary.org/definition/loose>
-- <http://www.thefreedictionary.com/loose>
-- [http://dictionary.cambridge.org/define.asp?key=16717&dict=S〈=E](http://dictionary.cambridge.org/define.asp?key=16717&dict=S〈=E)
-- <http://www.allwords.com/query.php?SearchType=3&Keyword=loose&goquery=Find+it%21&Language=ENG&ESP=1&v=58781511>
+-   <http://www.websters-online-dictionary.org/definition/lose>
+-   <http://www.thefreedictionary.com/lose>
+-   [http://dictionary.cambridge.org/define.asp?key=16736&dict=S〈=E](http://dictionary.cambridge.org/define.asp?key=16736&dict=S〈=E)
+-   <http://www.allwords.com/query.php?SearchType=3&Keyword=lose&goquery=Find+it%21&Language=ENG&ESP=1&v=72189267>
+-   <http://www.websters-online-dictionary.org/definition/loose>
+-   <http://www.thefreedictionary.com/loose>
+-   [http://dictionary.cambridge.org/define.asp?key=16717&dict=S〈=E](http://dictionary.cambridge.org/define.asp?key=16717&dict=S〈=E)
+-   <http://www.allwords.com/query.php?SearchType=3&Keyword=loose&goquery=Find+it%21&Language=ENG&ESP=1&v=58781511>
 
 <h3>pedro:</h3>
 

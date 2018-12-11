@@ -32,8 +32,8 @@ I had to download it and play with it.
 I'll post more later with some better descriptions of how it might actually
 affect _me_.
 
-If you're interested, I can describe the interesting things I have been coughing
-up... No? Later maybe. :-)
+If you're interested, I can describe the interesting things I have been
+coughing up... No? Later maybe. :-)
 
 Ciao!
 

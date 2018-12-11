@@ -19,8 +19,8 @@ project.
 
 However, I needed to rename a project and here is how I did it.<!-- more -->
 
-**WARNING**: This was done against `schema_version` 47. I make no promises that
-it works for other versions.
+**WARNING**: This was done against `schema_version` 47. I make no promises
+that it works for other versions.
 
 This is a SQL script. Replace the words `NEW` and `OLD` with your new and old
 project names. Since I did it for multiple projects, I used Perl to

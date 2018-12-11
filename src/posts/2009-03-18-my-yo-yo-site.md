@@ -21,10 +21,10 @@ eventually resolved by Speakeasy.
 It went down again yesterday.
 
 Today I tortured the site to fix
-[a bug](http://code.google.com/p/diso/issues/detail?id=101). The ever excellent
-[Will Norris](http://willnorris.com/) took a dive through the code to figure out
-that my apache rewrite rules for [Wordpress](http://wordpress.org/)' permalinks
-were incorrect.
+[a bug](http://code.google.com/p/diso/issues/detail?id=101). The ever
+excellent [Will Norris](http://willnorris.com/) took a dive through the code
+to figure out that my apache rewrite rules for
+[Wordpress](http://wordpress.org/)' permalinks were incorrect.
 
 How embarrasing.
 

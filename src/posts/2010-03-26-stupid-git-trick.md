@@ -15,9 +15,9 @@ tags:
 
 This was one of those dumb things that I should have figured out earlier.
 
-If you use emacs for editing then you probably have a customized `.emacs` file.
-Even if you don't, your system is probably loading a boatload of features for
-emacs.
+If you use emacs for editing then you probably have a customized `.emacs`
+file. Even if you don't, your system is probably loading a boatload of
+features for emacs.
 
 I certainly have a ton of elisp that I use to make development easier.
 

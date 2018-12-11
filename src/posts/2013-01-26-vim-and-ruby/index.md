@@ -15,8 +15,8 @@ tags:
 
 I finally figured out all the reasons why [Vim](http://www.vim.org/) keeps
 crashing on me. I started collecting info in
-[OS X Vim with Ruby crashes](/os-x-vim-with-ruby-crashes/) but there were still
-crashes happening.
+[OS X Vim with Ruby crashes](/os-x-vim-with-ruby-crashes/) but there were
+still crashes happening.
 
 It's an interesting story. Grab a beer and pull up a chair...
 
@@ -33,15 +33,15 @@ option) it grabbed whatever ruby is first in my `PATH`. Usually this is a ruby
 compiled by RVM.
 
 One of the things RVM can do (and usually does) is compile custom libraries
-(such as `libyaml` or `libreadline`) to make the ruby work better. This is great
-for using raw ruby, but within `vim` it causes it to crash because it finds the
-non-RVM version of the library, loads it, and crashes.
+(such as `libyaml` or `libreadline`) to make the ruby work better. This is
+great for using raw ruby, but within `vim` it causes it to crash because it
+finds the non-RVM version of the library, loads it, and crashes.
 
 In some cases `vim` and ruby are compiled with incompatible `CFLAGS` or even
 with different compilers (`clang` vs. `gcc`).
 
-The symptom for this is a crash the instance Vim tries to do _anything_ with its
-built-in ruby interpreter.
+The symptom for this is a crash the instance Vim tries to do _anything_ with
+its built-in ruby interpreter.
 
 This fix for this is when compiling `vim` to specify the ruby to use. For
 example:
@@ -55,15 +55,15 @@ example:
 This one may or may not causes crashes, depending on the gems you have. If you
 only have pure-ruby gems then it may never cause a crash.
 
-However, if you have `GEM_HOME` and `GEM_PATH` set (which RVM does for you) then
-when you run Vim and try to load any gems it'll look in those paths.
+However, if you have `GEM_HOME` and `GEM_PATH` set (which RVM does for you)
+then when you run Vim and try to load any gems it'll look in those paths.
 
 If any of the gems to be loaded are compiled incompatibly (as above) then when
-Vim's ruby interpreter loads them, `vim` will crash. `mysql2` and `nokogiri` are
-two that cause `vim` to crash regularly for me in this case.
+Vim's ruby interpreter loads them, `vim` will crash. `mysql2` and `nokogiri`
+are two that cause `vim` to crash regularly for me in this case.
 
-The solution is to unset `GEM_HOME` and `GEM_PATH` before running vim. I have it
-aliased in my `~/.zshrc` file:
+The solution is to unset `GEM_HOME` and `GEM_PATH` before running vim. I have
+it aliased in my `~/.zshrc` file:
 
 ```bash
 alias ex='env -u GEM_PATH -u GEM_HOME command ex'
@@ -94,11 +94,11 @@ crashing.
 ## Final thoughts
 
 There has to be a better way to handle this. I'm unclear how `vim` is loading
-the ruby interpreter, but I suspect that ruby just isn't designed right to allow
-this work well.
+the ruby interpreter, but I suspect that ruby just isn't designed right to
+allow this work well.
 
 I opened [bug 17313](https://github.com/mxcl/homebrew/issues/17313) with
-[Homebrew](http://brew.sh/), but the more I think about this the more I think it
-is a Vim and Ruby problem.
+[Homebrew](http://brew.sh/), but the more I think about this the more I think
+it is a Vim and Ruby problem.
 
 Ciao!

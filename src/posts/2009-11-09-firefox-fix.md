@@ -17,20 +17,20 @@ tags:
 I have a tendency to switch my default browser every so often. I like playing
 with new toys.
 
-I just switched from Safari to Firefox 3.5.5 and discovered I couldn't stand the
-way external links open in new tabs though I wanted new-window links such as
-target="\_blank" to open in a new tab.
+I just switched from Safari to Firefox 3.5.5 and discovered I couldn't stand
+the way external links open in new tabs though I wanted new-window links such
+as target="\_blank" to open in a new tab.
 
 This used to work via
 <a href="http://kb.mozillazine.org/Browser.link.open_external">browser.link.open_external.</a>
 
 But <a href="http://kb.mozillazine.org/Browser.link.open_external">no
 longer</a>. They nuked this via
-<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=324164">bug 324164</a>. I
-can sort of understand it. Most people want a new tab or a new window on each
-new link. However, if you use spaces in OS-X or desktops in Linux, then setting
-this unified option to "new tab" sucks -- you have to play "hunt the window"
-every time you click a link in a program.
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=324164">bug 324164</a>.
+I can sort of understand it. Most people want a new tab or a new window on
+each new link. However, if you use spaces in OS-X or desktops in Linux, then
+setting this unified option to "new tab" sucks -- you have to play "hunt the
+window" every time you click a link in a program.
 
 Bleh.
 

@@ -15,9 +15,9 @@ I just uploaded
 
 Assuming I made no mistakes, then it should appear shortly.
 
-The big changes are that it supports Firefox 4.0b7. In addition to that, I have
-fixed some of the problems with OS-X. In part because the ability to launch
-applications in Firefox is becoming more annoying with each release.
+The big changes are that it supports Firefox 4.0b7. In addition to that, I
+have fixed some of the problems with OS-X. In part because the ability to
+launch applications in Firefox is becoming more annoying with each release.
 
 But not to worry! I'm working hard on IAT2.0. The next version will be broken
 into two parts: An editor server and the actual plugin.
@@ -30,7 +30,7 @@ The downside is that after installing IAT2.0, you'll have to download an
 application and have it running.
 
 I'd love to hear feedback on whether that is too evil or too much work. Or if
-it's just fine and dandy. I'm working hard to try to make sure the editor server
-is easy to install and use, so hopefully I'll minimize any problems.
+it's just fine and dandy. I'm working hard to try to make sure the editor
+server is easy to install and use, so hopefully I'll minimize any problems.
 
 Ciao!

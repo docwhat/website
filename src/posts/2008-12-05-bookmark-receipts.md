@@ -28,7 +28,7 @@ items on a piece of paper while the books would be listed on a bookmark.
 I dunno. Maybe it doesn't work that well for Amazon. They'd probably find it
 easier to just print up a million bookmarks and chuck them in the box.
 
-But it'd be really nice at a local bookstore.  It'd be an extra bit of niceness
-that would encourage people to come back.
+But it'd be really nice at a local bookstore.  It'd be an extra bit of
+niceness that would encourage people to come back.
 
 Ciao!

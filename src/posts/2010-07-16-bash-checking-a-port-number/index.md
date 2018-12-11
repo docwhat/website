@@ -57,8 +57,8 @@ port_is_ok 88888f     # => *** 88888f is not a valid port
 # EOF
 ```
 
-Without the `to_int()` function, then you'd get errors from `port_is_ok` and the
-function would abort before it gets to the check.
+Without the `to_int()` function, then you'd get errors from `port_is_ok` and
+the function would abort before it gets to the check.
 
 You have to redirect `stderr` to hide this bash error.
 

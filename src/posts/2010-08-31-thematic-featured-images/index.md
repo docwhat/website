@@ -11,22 +11,22 @@ tags:
 ---
 
 I was wondering what the "Featured Images" box was when creating new posts and
-discovered that it's a handy way to add images to a post. It auto resizes, crops
-(if you want), and can make it just "work" in your layout. The only drawback
-I've seen is I can't use urls for the image.
+discovered that it's a handy way to add images to a post. It auto resizes,
+crops (if you want), and can make it just "work" in your layout. The only
+drawback I've seen is I can't use urls for the image.
 
-Unfortunately, the [Thematic](http://themeshaper.com/thematic/ 'Thematic') theme
-doesn't have out-of-the-box support for it.
+Unfortunately, the [Thematic](http://themeshaper.com/thematic/ 'Thematic')
+theme doesn't have out-of-the-box support for it.
 
 Fortunately, [Thematic](http://themeshaper.com/thematic/ 'Thematic') is very
 customizable so this is pretty easy.
 
 The gist of what I'm doing is turning on this feature in
-[Wordpress](http://wordpress.org 'WordPress'), telling it the default size, and
-then adding the image to beginning of my post.  I added some left-right
+[Wordpress](http://wordpress.org 'WordPress'), telling it the default size,
+and then adding the image to beginning of my post.  I added some left-right
 alternating alignment based on the number of the post.  Not perfect if you
-create lots of drafts, but better than just having the images always on the same
-side.
+create lots of drafts, but better than just having the images always on the
+same side.
 
 Here's what you need to add to your Thematic child theme's `function.php`:
 
@@ -59,12 +59,12 @@ And here's the styling you need to add for the left/right images:
 ```css
 body .wp-post-image,
 body .wp-post-image-left {
-  float: left;
-  margin: 5px 20px 20px 0;
+    float: left;
+    margin: 5px 20px 20px 0;
 }
 body img.wp-post-image-right {
-  float: right;
-  margin: 5px 0 20px 20px;
+    float: right;
+    margin: 5px 0 20px 20px;
 }
 ```
 
@@ -73,8 +73,8 @@ Ciao!
 ### Update
 
 It looks like Thematic now has support for featured images, but I like mine
-better. Ideally I would integrate with their support some how, but I'm too lazy
-at the moment.
+better. Ideally I would integrate with their support some how, but I'm too
+lazy at the moment.
 
 Add this to your `function.php`:
 
@@ -93,13 +93,13 @@ And change the CSS to look like this to override the
 /*** wp-post-image ***/
 body .entry-content .wp-post-image,
 body .entry-content .wp-post-image-left {
-  float: left;
-  margin: 5px 20px 20px 0;
-  border: none;
-  padding: 0;
+    float: left;
+    margin: 5px 20px 20px 0;
+    border: none;
+    padding: 0;
 }
 html body .entry-content .wp-post-image-right {
-  float: right;
-  margin: 5px 0 20px 20px;
+    float: right;
+    margin: 5px 0 20px 20px;
 }
 ```

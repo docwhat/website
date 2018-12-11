@@ -59,5 +59,5 @@ def example
 end
 ```
 
-Too bad you can't pull in some of these Rails monkey patches without pulling in
-lots of stuff you don't want.
+Too bad you can't pull in some of these Rails monkey patches without pulling
+in lots of stuff you don't want.

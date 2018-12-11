@@ -13,7 +13,7 @@
 
 This is the static site source code for [docwhat.org](https://docwhat.org).
 
-It is powered by [Gatsby](https://gatsbyjs.org).
+It's powered by [Gatsby](https://gatsbyjs.org).
 
 ## Developing
 

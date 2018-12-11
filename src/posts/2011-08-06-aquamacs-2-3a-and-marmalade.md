@@ -16,12 +16,12 @@ tags:
 
 A quick and easy way to packages up-and-running in Aquamacs is to use
 [Marmalade](http://marmalade-repo.org/). Marmalade is a package manager. It'll
-fetch an elisp package for you, install it, and make sure it loads up again when
-you restart emacs.
+fetch an elisp package for you, install it, and make sure it loads up again
+when you restart emacs.
 
 Marmalade is sort of the next-gen version of [ELPA](http://tromey.com/elpa/),
-the Emacs Lisp Package Archive. Even better, it's the package manager (with some
-tweaks) used in Emacs 24 (which will become Aquamacs 2.4).
+the Emacs Lisp Package Archive. Even better, it's the package manager (with
+some tweaks) used in Emacs 24 (which will become Aquamacs 2.4).
 
 I'm excited to see Emacs improving the user experience. It's about time it
 started making life easier for people who want more than a bare-minimum emacs
@@ -58,9 +58,9 @@ Now restart Aquamacs.
 
 Once you have Aquamacs running, type `M-x list-packages`
 
-Wait a few seconds and you'll see a list of packages. You move around the buffer
-normally. To get help, press `h`. To mark something for install, press `i`. To
-actually execute the install, use `x`.
+Wait a few seconds and you'll see a list of packages. You move around the
+buffer normally. To get help, press `h`. To mark something for install, press
+`i`. To actually execute the install, use `x`.
 
 After you install a package, you may need to add the appropriate
 `(require 'foo)` to `Preferences.el`. For example, I needed it for
@@ -70,14 +70,16 @@ After you install a package, you may need to add the appropriate
 
 Either way, you can use this to install ECB (Use `ecb_snap` for Aquamacs 2.3a
 and add `(require 'ecb)` to the end of your `Preferences.el`). This is easier
-than [my previous article](http://docwhat.org/2010/08/cedet-ecb-for-aquamacs/).
+than
+[my previous article](http://docwhat.org/2010/08/cedet-ecb-for-aquamacs/).
 Cool!
 
 ## Closing Notes
 
-If you have any problems, check out the various ELPA resources. Even though it's
-a different repository, it still uses the same mechanisms. The only difference
-is that in the ELPA version of `package.el` the command to list the packages is
-`package-list-packages`, but with the Marmalade version it's `list-packages`.
+If you have any problems, check out the various ELPA resources. Even though
+it's a different repository, it still uses the same mechanisms. The only
+difference is that in the ELPA version of `package.el` the command to list the
+packages is `package-list-packages`, but with the Marmalade version it's
+`list-packages`.
 
 Ciao!

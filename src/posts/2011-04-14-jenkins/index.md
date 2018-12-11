@@ -11,11 +11,11 @@ tags:
 title: Jenkins
 ---
 
-We have recently started using [Jenkins](http://jenkins-ci.org/) at work and it
-is awesome.
+We have recently started using [Jenkins](http://jenkins-ci.org/) at work and
+it is awesome.
 
-Jenkins describes itself as a continuous integration software, but it really is
-more. You can use Jenkins to build, test, and do
+Jenkins describes itself as a continuous integration software, but it really
+is more. You can use Jenkins to build, test, and do
 [`cron`](http://en.wikipedia.org/wiki/Cron) jobs, etc. It's very powerful and
 really useful.
 
@@ -40,17 +40,17 @@ shell, Windows cmd, jPython, JRuby... just to name a few.
 
 I'm contemplating replacing my `cron` jobs with Jenkins on
 [Gerf.Org](http://gerf.org) just because it is so much handier to be able to
-look at logs, re-trigger a `cron` job, etc. Not to mention that I can use it for
-continuous integration of [IATed](https://github.com/docwhat/iated) and any
-other projects I want.
+look at logs, re-trigger a `cron` job, etc. Not to mention that I can use it
+for continuous integration of [IATed](https://github.com/docwhat/iated) and
+any other projects I want.
 
-Jenkins has great support for slave nodes. Out of the box it supports Unix slave
-nodes via SSH; it will automatically connect to the slave and setup the correct
-JDKs, etc. all on its own. Even setting up a windows slave is relatively easy:
-Install a JVM, go to the Jenkins page for that slave node and web-launch the
-slave software; it does the rest. To make the slave permanent across re-boot,
-use the menu option in the slave program to install it as a service. Not as easy
-as with Unix, but still very easy.
+Jenkins has great support for slave nodes. Out of the box it supports Unix
+slave nodes via SSH; it will automatically connect to the slave and setup the
+correct JDKs, etc. all on its own. Even setting up a windows slave is
+relatively easy: Install a JVM, go to the Jenkins page for that slave node and
+web-launch the slave software; it does the rest. To make the slave permanent
+across re-boot, use the menu option in the slave program to install it as a
+service. Not as easy as with Unix, but still very easy.
 
 If you want to try it out, you can get it running really quickly by running
 `java -jar jenkins.war`... it has a built in servlet container server. Or you

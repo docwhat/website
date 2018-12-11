@@ -24,23 +24,23 @@ compatible with the system Ruby.
 I have [RVM](http://rvm.io) installed on my system and what was happening is
 that:
 
-- RVM sets the `GEM_PATH` and `GEM_HOME`.
-- I had a version of Ruby 1.8.7 in RVM. This is the same version as (Mac)Vim and
-  OS X has installed in `/usr/`.
-- I had binary (compiled) gems installed for the RVM 1.8.7 Ruby. These are files
-  that end in `.so`.
-- So (Mac)Vim tries to do completion, tries loading a binary gem from the
-  `GEM_PATH`, finds the RVM 1.8.7 version of the `.so` gem module, loads it, and
-  crashes.
+-   RVM sets the `GEM_PATH` and `GEM_HOME`.
+-   I had a version of Ruby 1.8.7 in RVM. This is the same version as (Mac)Vim
+    and OS X has installed in `/usr/`.
+-   I had binary (compiled) gems installed for the RVM 1.8.7 Ruby. These are
+    files that end in `.so`.
+-   So (Mac)Vim tries to do completion, tries loading a binary gem from the
+    `GEM_PATH`, finds the RVM 1.8.7 version of the `.so` gem module, loads it,
+    and crashes.
 
-This isn't surprising. My RVM doesn't compile Ruby the same way Apple does. This
-is deliberate, because I want certain performance behaviors, etc.
+This isn't surprising. My RVM doesn't compile Ruby the same way Apple does.
+This is deliberate, because I want certain performance behaviors, etc.
 
 Anyway, the solution is simple enough.
 
 If you got your Vim and MacVim through
-[HomeBrew](http://mxcl.github.com/homebrew/) (and really, you should), then just
-add this to your `~/.zshrc`:
+[HomeBrew](http://mxcl.github.com/homebrew/) (and really, you should), then
+just add this to your `~/.zshrc`:
 
 ```zsh
 for i in /usr/local/opt/vim/bin/*(N) /usr/local/opt/macvim/bin/*(N); do
@@ -49,10 +49,10 @@ for i in /usr/local/opt/vim/bin/*(N) /usr/local/opt/macvim/bin/*(N); do
 done
 ```
 
-Homebrew installs a symlink for most kegs into `/usr/local/opt/*package-name*`,
-which makes it simple to find the list of all binaries in a keg. The `(N)` is a
-ZSH-ism that says it is okay for the `*` to return nothing. If you're using
-bash, just remove the `(N)`
+Homebrew installs a symlink for most kegs into
+`/usr/local/opt/*package-name*`, which makes it simple to find the list of all
+binaries in a keg. The `(N)` is a ZSH-ism that says it is okay for the `*` to
+return nothing. If you're using bash, just remove the `(N)`
 
 The upshot is that this unsets the `GEM_PATH` and `GEM_HOME`.
 

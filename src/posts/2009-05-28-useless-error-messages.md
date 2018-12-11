@@ -39,26 +39,28 @@ If you want to see how useless this message is try searching for that message;
 there are millions of people asking for help and only a few posts with a
 solution other than install all the DLLs into your system folder.
 
-To solve it, I had to read and re-read tons of documentation on how "Assemblies"
-work.  Assemblies and shadow caching are worthy of a whole 'nother rant.  Trust
-me on that.
+To solve it, I had to read and re-read tons of documentation on how
+"Assemblies" work.  Assemblies and shadow caching are worthy of a whole
+'nother rant.  Trust me on that.
 
 <h3>Server Application Unavailable</h3>
 This message included a note to the Administrator:
 <blockquote>An error message detailing the cause of this specific request failure can be found in the application event log of the web server. Please review this log entry to discover what caused this error to occur.</blockquote>
 Of course, there are two different logs you might look in: System Events and the IIS logs.
 
-System Events had no log messages in it.  The IIS logs only told me that it was
-an HTTP 500 error. There was nothing else.
+System Events had no log messages in it.  The IIS logs only told me that it
+was an HTTP 500 error. There was nothing else.
 
 Yay!
 
 <h3>Could not load file or assembly 'VivisimoNET' or one of its dependencies. An attempt was made to load a program with an incorrect format.</h3>
 
-There was an System Event entry for this, at least, but it didn't say much more.
+There was an System Event entry for this, at least, but it didn't say much
+more.
 
 Fortunately, I was prepared for this; I knew it would complain because my DLLs
-were 32bit (as needed for debugging in Visual Studio) but IIS needed 64bit DLLs.
+were 32bit (as needed for debugging in Visual Studio) but IIS needed 64bit
+DLLs.
 
 <hr />
 
@@ -66,8 +68,8 @@ I'd argue that error messages and debugging output are very important. I'm
 amazed at how horrible the logs, debug messages, and other feedback is in
 Windows.
 
-Obviously there is enough debugging messages to let people get their work done.
-Or maybe there are just enough people to talk to each other and solve it that
-way. Who knows.
+Obviously there is enough debugging messages to let people get their work
+done. Or maybe there are just enough people to talk to each other and solve it
+that way. Who knows.
 
 Ciao!

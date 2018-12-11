@@ -17,8 +17,8 @@ I'm an Uncle!
 My sister gave birth to Alexander Bruce on Sunday. Both are doing well.
 
 My mom gave me the details (weight, length, etc.) and I promptly forgot the
-numbers; but the important part is that everyone survived the ordeal with flying
-colors. :-)
+numbers; but the important part is that everyone survived the ordeal with
+flying colors. :-)
 
 I'll update this post when I get an email with the info in it. Naturally I'll
 also add pictures as I get them.

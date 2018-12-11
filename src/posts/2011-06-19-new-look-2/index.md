@@ -19,8 +19,8 @@ I had been using [Thematic](http://themeshaper.com/thematic/) which is very
 nice. It has good semantic markup as well as other nice features. But it isn't
 HTML5 and I wanted HTML5.
 
-I tried several themes just to play around, and then found a theme that combined
-[boilerplate](http://aarontgrogg.com/boilerplate/), HTML5,
+I tried several themes just to play around, and then found a theme that
+combined [boilerplate](http://aarontgrogg.com/boilerplate/), HTML5,
 [compass](http://compass-style.org/reference/compass/) and
 [sass](http://sass-lang.com/). Unfortunately, it didn't really do everything I
 wanted. I also lost the URL for the GitHub project. _sigh_. But I hadn't seen
@@ -28,10 +28,10 @@ compass nor sass before (or if I had, it was only in passing). This was really
 cool stuff. I started playing with and deciding I really wanted to use it.
 
 I like my green color and it is a pain to write the color in everyplace. But
-compass lets me assign the color to a variable `$hero-color`, and to then alter
-it by doing things like `darken($hero-color, 30%)`. It also has a saner form of
-nesting so I can [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself) up my
-CSS.
+compass lets me assign the color to a variable `$hero-color`, and to then
+alter it by doing things like `darken($hero-color, 30%)`. It also has a saner
+form of nesting so I can
+[DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself) up my CSS.
 
 In addition, compass has mixins so I don't have to repeat `border-radius`
 multiple times to support different browsers. As well as grid support via
