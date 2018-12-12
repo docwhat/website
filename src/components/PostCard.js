@@ -76,6 +76,6 @@ export const query = graphql`
       title
       date(formatString: "MMMM DD, YYYY")
     }
-    excerpt(pruneLength: 280)
+    excerpt(format: PLAIN, pruneLength: 280)
   }
 `

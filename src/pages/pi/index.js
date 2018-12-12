@@ -3,14 +3,16 @@
 import { graphql } from 'gatsby'
 
 import { Div } from 'glamorous'
-import React from 'react'
+import * as React from 'react'
 import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
 
 import PostCardList from '../../components/PostCardList'
 import Layout from '../../components/Layout.js'
 
-const SiteIndex = props => (
+const SiteIndex = (props: {
+  location: Location,
+  data: { pies: { edges: Array<React.Node> } },
+}) => (
   <Layout location={props.location}>
     <Div>
       <Helmet title="Gatekeeper" />
@@ -18,14 +20,6 @@ const SiteIndex = props => (
     </Div>
   </Layout>
 )
-
-SiteIndex.propTypes = {
-  data: PropTypes.shape({
-    pies: PropTypes.shape({
-      edges: PropTypes.arrayOf(PropTypes.node).isRequired,
-    }).isRequired,
-  }).isRequired,
-}
 
 export default SiteIndex
 

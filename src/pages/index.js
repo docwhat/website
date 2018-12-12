@@ -2,12 +2,9 @@
 // @flow
 import { graphql } from 'gatsby'
 
-// @format
-// @flow
 import { H3, Div } from 'glamorous'
-import React from 'react'
+import * as React from 'react'
 import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
 import { siteTitle } from '../utils/constants'
 import { blogJsonLD } from '../utils/ldjson'
 
@@ -29,7 +26,10 @@ const jsonLdData = {
   //     },
 }
 
-const SiteIndex = props => (
+const SiteIndex = (props: {
+  location: Location,
+  data: { posts: { edges: Array<React.Node> } },
+}) => (
   <Layout location={props.location}>
     <Div>
       <Helmet title={siteTitle}>
@@ -72,14 +72,6 @@ const SiteIndex = props => (
     </Div>
   </Layout>
 )
-
-SiteIndex.propTypes = {
-  data: PropTypes.shape({
-    posts: PropTypes.shape({
-      edges: PropTypes.arrayOf(PropTypes.node).isRequired,
-    }).isRequired,
-  }).isRequired,
-}
 
 export default SiteIndex
 

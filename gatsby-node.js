@@ -1,4 +1,3 @@
-// @flow
 // @format
 const fs = require(`fs`)
 const pify = require(`pify`)

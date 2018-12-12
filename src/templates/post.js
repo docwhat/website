@@ -2,8 +2,7 @@
 // @flow
 import { graphql } from 'gatsby'
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import * as React from 'react'
 import Helmet from 'react-helmet'
 
 // Components
@@ -17,7 +16,21 @@ import { siteUrl, siteTitle } from '../utils/constants'
 import BlogPostMicroData from '../components/BlogPostMicroData'
 import Layout from '../components/Layout.js'
 
-const PostTemplate = props => {
+const PostTemplate = (props: {
+  data: {
+    markdownRemark: {
+      fields: any,
+      wordCount: { words: number },
+      html: string,
+    },
+    comments: Array<any>,
+  },
+  pageContext: {
+    newer?: any,
+    older?: any,
+  },
+  location: Location,
+}) => {
   const {
     data: {
       markdownRemark: {
@@ -69,20 +82,6 @@ const PostTemplate = props => {
       </article>
     </Layout>
   )
-}
-
-PostTemplate.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      fields: PropTypes.object.isRequired,
-      wordCount: PropTypes.object.isRequired,
-      html: PropTypes.string.isRequired,
-    }).isRequired,
-  }).isRequired,
-  pageContext: PropTypes.shape({
-    newer: PropTypes.object,
-    older: PropTypes.object,
-  }),
 }
 
 export default PostTemplate

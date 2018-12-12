@@ -23,7 +23,6 @@ COPY \
   ./package.json \
   ./yarn.lock \
   ./gatsby* \
-  ./.babelrc \
   ./.eslintignore \
   ./.eslintrc \
   ./.flowconfig \
