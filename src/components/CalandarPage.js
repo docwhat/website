@@ -4,11 +4,14 @@ import { graphql } from 'gatsby'
 
 import g from 'glamorous'
 import React from 'react'
-import PropTypes from 'prop-types'
 import { rhythm } from '../utils/typography'
 import { deemphasisColor } from '../utils/colors'
 
-const CalendarPage = props => {
+const CalendarPage = (props: {
+  ymdDate: string,
+  monthName: string,
+  dayOfMonth: string,
+}) => {
   const { ymdDate, monthName, dayOfMonth } = props
 
   const commonCSS = {
@@ -82,12 +85,6 @@ const CalendarPage = props => {
       </g.Span>
     </g.Time>
   )
-}
-
-CalendarPage.propTypes = {
-  ymdDate: PropTypes.string.isRequired,
-  monthName: PropTypes.string.isRequired,
-  dayOfMonth: PropTypes.string.isRequired,
 }
 
 export default CalendarPage
