@@ -3,38 +3,39 @@
 import { graphql } from 'gatsby'
 
 import { Div } from 'glamorous'
-import React from 'react'
+import * as React from 'react'
 import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
 
 import Bio from '../components/Bio'
 import PostCardList from '../components/PostCardList'
+import Layout from '../components/Layout.js'
 
-const SiteIndex = props => (
-  <Div>
-    <Helmet title="All Posts" />
-    <PostCardList postcards={props.data.posts.edges} />
-    <Bio />
-  </Div>
+const SiteIndex = (props: {
+  location: Location,
+  data: { posts: { edges?: React.Node } },
+}) => (
+  <Layout location={props.location}>
+    <Div>
+      <Helmet title="All Posts" />
+      <h1>All posts</h1>
+      <PostCardList postcards={props.data.posts.edges} />
+      <Bio />
+    </Div>
+  </Layout>
 )
-
-SiteIndex.propTypes = {
-  data: PropTypes.shape({
-    posts: PropTypes.shape({
-      edges: PropTypes.arrayOf(PropTypes.node).isRequired,
-    }).isRequired,
-  }).isRequired,
-}
 
 export default SiteIndex
 
 export const pageQuery = graphql`
-  query AllQuery {
+  query {
     posts: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       filter: {
-        fields: { template: { eq: "post" } }
-        frontmatter: { test: { ne: true } }
+        fields: {
+          sourceName: { eq: "posts" }
+          draft: { ne: true }
+          archived: { eq: false }
+        }
       }
     ) {
       edges {

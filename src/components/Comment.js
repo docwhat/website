@@ -113,9 +113,6 @@ export default Comment
 
 export const query = graphql`
   fragment commentAttributesFragment on MarkdownRemark {
-    fields {
-      slug
-    }
     frontmatter {
       name
       url

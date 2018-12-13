@@ -27,10 +27,7 @@ export const pageQuery = graphql`
   query PiIndexQuery {
     pies: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
-      filter: {
-        fields: { template: { ne: "comment" } }
-        frontmatter: { test: { eq: true } }
-      }
+      filter: { fields: { sourceName: { eq: "pies" } } }
     ) {
       edges {
         node {

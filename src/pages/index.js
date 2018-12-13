@@ -76,13 +76,16 @@ const SiteIndex = (props: {
 export default SiteIndex
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query {
     posts: allMarkdownRemark(
       limit: 10
       sort: { fields: [fields___date], order: DESC }
       filter: {
-        fields: { template: { eq: "post" } }
-        frontmatter: { test: { ne: true }, archive: { ne: true } }
+        fields: {
+          sourceName: { eq: "posts" }
+          draft: { eq: false }
+          archived: { eq: false }
+        }
       }
     ) {
       edges {

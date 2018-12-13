@@ -1,10 +1,8 @@
 ---
 id: '284'
-template: "page"
-permalink: "/reward/"
-title: "Reward or Donate"
-priority: "0.2"
-changefreq: "monthly"
+title: 'Reward or Donate'
+priority: '0.2'
+changefreq: 'monthly'
 ---
 
 Some people have asked for a way to reward me or to encourage me to work on my

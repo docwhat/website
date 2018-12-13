@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/posts`,
         name: `posts`,
       },
     },
@@ -36,6 +36,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/pi`,
+        name: `pies`,
       },
     },
     {
@@ -119,7 +126,7 @@ module.exports = {
               allSitePage: allMarkdownRemark(
                 limit: 100000
                 filter: {
-                  fields: { template: { ne: "comment" } }
+                  fields: { sourceName: { in: ["pages", "posts"] } }
                   frontmatter: {
                     test: { ne: true }
                   }

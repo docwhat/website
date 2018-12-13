@@ -1,10 +1,6 @@
 ---
 id: '15'
-categories:
-- docwhat
 date: '2006-09-05T12:18:17-04:00'
-template: page
-permalink: '/pubkey/'
 title: Public Key
 priority: '0.2'
 changefreq: monthly
