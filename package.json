@@ -90,7 +90,7 @@
     "glamor": "^2.20.29",
     "glamorous": "^4.13.0",
     "gray-percentage": "^2.0.0",
-    "husky": "latest",
+    "husky": "^1.3.0",
     "inquirer": "^6.2.1",
     "inquirer-datepicker-prompt": "^0.4.2",
     "lint-staged": "latest",
@@ -108,7 +108,7 @@
     "react-gravatar": "^2.6.3",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
-    "sort-package-json": "latest",
+    "sort-package-json": "^1.17.1",
     "typography": "^0.16.18",
     "typography-breakpoint-constants": "^0.16.18",
     "uuid": "^3.2.1"
