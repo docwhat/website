@@ -15,22 +15,7 @@ WORKDIR /workdir
 COPY package.json yarn.lock ./
 RUN yarn install --no-cache --frozen-lockfile
 
-# keep this in sync with .dockerignore
-COPY ./static   ./static
-COPY ./comments ./comments
-COPY ./src      ./src
-COPY \
-  ./package.json \
-  ./yarn.lock \
-  ./gatsby* \
-  ./.eslintignore \
-  ./.eslintrc \
-  ./.flowconfig \
-  ./.mdlrc \
-  ./.mdlstyle.rb \
-  ./.prettierignore \
-  ./.prettierrc \
-  ./
+COPY ./ ./
 
 ###################
 FROM builder AS lint

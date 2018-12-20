@@ -3,18 +3,17 @@
 !yarn.lock
 
 !comments
+!posts
+!pi
 !examples
 !static
 !src
 
 !gatsby*
 !.babelrc
-!.eslintignore
-!.eslintrc
+!.eslint*
 !.flowconfig
-!.mdlrc
-!.mdlstyle.rb
-!.prettierignore
-!.prettierrc
+!.mdl*
+!.prettier*
 
 !nginx.conf
