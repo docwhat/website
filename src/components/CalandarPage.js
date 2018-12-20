@@ -1,11 +1,11 @@
 // @flow
 // @format
 import { graphql } from 'gatsby'
-
 import g from 'glamorous'
 import React from 'react'
-import { rhythm } from '../utils/typography'
+
 import { deemphasisColor } from '../utils/colors'
+import { rhythm } from '../utils/typography'
 
 const CalendarPage = (props: {
   ymdDate: string,

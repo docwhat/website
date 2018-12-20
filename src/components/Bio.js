@@ -1,22 +1,22 @@
 // @flow
 // @format
-import * as React from 'react'
 import g from 'glamorous'
+import * as React from 'react'
 
-import avatarPic from './avatar.png'
-import typography from '../utils/typography'
-import { siteUrl, authorName } from '../utils/constants'
-import Link from './Link'
-// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
-import { ReactComponent as GithubLogo } from '../icons/github.svg'
-// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
-import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Envelope } from '../icons/envelope.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Gift } from '../icons/gift.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
+import { ReactComponent as GithubLogo } from '../icons/github.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Key } from '../icons/key.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
+import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
+import { authorName, siteUrl } from '../utils/constants'
+import typography from '../utils/typography'
+import Link from './Link'
+import avatarPic from './avatar.png'
 
 const rhythm = typography.rhythm
 

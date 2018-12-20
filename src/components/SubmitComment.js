@@ -1,15 +1,15 @@
 // @flow
 // @format
-import g, { Div, Form, Input, Legend, Textarea, Span } from 'glamorous'
 import { css } from 'glamor'
-import * as React from 'react'
+import g, { Div, Form, Input, Legend, Span, Textarea } from 'glamorous'
 import PropTypes from 'prop-types'
-import { rhythm } from '../utils/typography'
-import { heroColor } from '../utils/colors'
-import StyledButton from './StyledButton'
+import * as React from 'react'
 
 import { ReactComponent as CaretRightIcon } from '../icons/caret-right.svg'
 import { ReactComponent as CommentIcon } from '../icons/comment-alt.svg'
+import { heroColor } from '../utils/colors'
+import { rhythm } from '../utils/typography'
+import StyledButton from './StyledButton'
 
 // TODO: Move the reCapcha into a separate component.
 // TODO: Get reCaptcha siteKey and secret from staticman.yml instead.

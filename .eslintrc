@@ -9,14 +9,16 @@
     "standard"
   ],
   "env": {
-    "browser": true,
     "node": true,
     "es6": true
   },
-  "plugins": ["react", "flowtype", "prettier", "standard"],
-  "globals": {
-    "graphql": true
-  },
+  "plugins": [
+    "react",
+    "flowtype",
+    "prettier",
+    "standard",
+    "simple-import-sort"
+  ],
   "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": "error",
@@ -29,7 +31,13 @@
         "named": "never",
         "asyncArrow": "always"
       }
-    ]
+    ],
+    "simple-import-sort/sort": "error",
+    "sort-imports": "off",
+    "import/first": "error",
+    "import/order": "off",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
   },
   "settings": {
     "flowtype": {

@@ -1,11 +1,12 @@
 // @flow
 // @format
 import { css } from 'glamor'
+
 import {
-  heroColor,
-  mellowColor,
   deemphasisColor,
   emphasisColor,
+  heroColor,
+  mellowColor,
 } from './colors'
 
 /**

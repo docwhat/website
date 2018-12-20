@@ -1,19 +1,18 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-
-import { H3, Div } from 'glamorous'
+import { Div, H3 } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import { siteTitle } from '../utils/constants'
-import { blogJsonLD } from '../utils/ldjson'
 
 import Bio from '../components/Bio'
-import PostCardList from '../components/PostCardList'
-import TheNet from '../components/TheNet'
-import Link from '../components/Link'
 import JsonLd from '../components/JsonLd'
 import Layout from '../components/Layout.js'
+import Link from '../components/Link'
+import PostCardList from '../components/PostCardList'
+import TheNet from '../components/TheNet'
+import { siteTitle } from '../utils/constants'
+import { blogJsonLD } from '../utils/ldjson'
 
 // https://jsonld-examples.com/schema.org/code/blog-markup.php
 const jsonLdData = {

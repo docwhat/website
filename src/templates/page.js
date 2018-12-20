@@ -1,14 +1,13 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
-import { siteTitle } from '../utils/constants'
-import PageHeader from '../components/PageHeader'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout.js'
+import PageHeader from '../components/PageHeader'
+import { siteTitle } from '../utils/constants'
 
 const PageTemplate = (props: {
   location: Location,

@@ -1,20 +1,18 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
+import Bio from '../components/Bio'
+import BlogPostMicroData from '../components/BlogPostMicroData'
+import Comments from '../components/Comments'
+import Layout from '../components/Layout.js'
+import PageHeader from '../components/PageHeader'
 // Components
 import PostPaginator from '../components/PostPaginator'
-import Bio from '../components/Bio'
-import PageHeader from '../components/PageHeader'
 import SubmitComment from '../components/SubmitComment'
-import Comments from '../components/Comments'
-
-import { siteUrl, siteTitle } from '../utils/constants'
-import BlogPostMicroData from '../components/BlogPostMicroData'
-import Layout from '../components/Layout.js'
+import { siteTitle, siteUrl } from '../utils/constants'
 
 const PostTemplate = (props: {
   data: {

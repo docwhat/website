@@ -2,6 +2,7 @@
 // @format
 
 import g from 'glamorous'
+
 import { heroColor } from '../utils/colors'
 
 const colors = {

@@ -1,14 +1,13 @@
 // @flow
 // @format
 import { graphql } from 'gatsby'
-
-import React from 'react'
 import g from 'glamorous'
-import PropTypes from 'prop-types'
 import gray from 'gray-percentage'
+import PropTypes from 'prop-types'
+import React from 'react'
 
-import Gravatar from './Gravatar'
 import { rhythm } from '../utils/typography'
+import Gravatar from './Gravatar'
 
 const isMe = md5 => {
   const myMd5s = [

@@ -1,10 +1,11 @@
 // @flow
 // @format
 
-import React from 'react'
 import { css } from 'glamor'
-import Link from './Link'
+import React from 'react'
+
 import { rhythm } from '../utils/typography'
+import Link from './Link'
 
 const theCss = css({
   fontSize: rhythm(1 / 2),

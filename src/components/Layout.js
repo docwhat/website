@@ -1,13 +1,13 @@
 // @format
 // @flow
 import { withPrefix } from 'gatsby'
-import * as React from 'react'
 import g, { Div } from 'glamorous'
+import * as React from 'react'
 
 import Link from '../components/Link'
 import logoUrl from '../icons/logo.svg'
 import { heroColor } from '../utils/colors'
-import { rhythm, scale, options as typo } from '../utils/typography'
+import { options as typo, rhythm, scale } from '../utils/typography'
 
 type Props = {
   children?: React.Node,

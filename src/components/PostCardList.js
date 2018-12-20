@@ -1,10 +1,11 @@
 // @flow
 // @format
-import React from 'react'
-import PropTypes from 'prop-types'
 import { Div } from 'glamorous'
-import PostCard from './PostCard'
+import PropTypes from 'prop-types'
+import React from 'react'
+
 import { rhythm } from '../utils/typography'
+import PostCard from './PostCard'
 
 const PostCardList = props => (
   <Div

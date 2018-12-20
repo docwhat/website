@@ -1,7 +1,8 @@
 // @flow
 // @format
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
+
 import { authorJsonLD } from '../utils/ldjson'
 import JsonLd from './JsonLd'
 

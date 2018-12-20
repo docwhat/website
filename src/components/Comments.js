@@ -1,11 +1,10 @@
 // @flow
 // @format
 import { graphql } from 'gatsby'
-
 import React from 'react'
 
-import Comment from './Comment'
 import { ReactComponent as CommentsIcon } from '../icons/comments.svg'
+import Comment from './Comment'
 
 const Comments = data => {
   if (data.comments === null) {

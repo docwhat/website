@@ -1,15 +1,15 @@
 // @flow
 // @format
-import Typography from 'typography'
-import gray from 'gray-percentage'
-import { css } from 'glamor'
-import {
-  TABLET_MEDIA_QUERY,
-  MOBILE_MEDIA_QUERY,
-} from 'typography-breakpoint-constants'
 import verticalRhythm from 'compass-vertical-rhythm'
+import { css } from 'glamor'
+import gray from 'gray-percentage'
+import Typography from 'typography'
+import {
+  MOBILE_MEDIA_QUERY,
+  TABLET_MEDIA_QUERY,
+} from 'typography-breakpoint-constants'
+
 import { heroColor, mellowColor } from '../utils/colors'
-// import systemfonts from 'system-font'
 
 // Details:
 // https://github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-github/src/index.js

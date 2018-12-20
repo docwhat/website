@@ -1,7 +1,8 @@
 // @flow
 // @format
-import React from 'react'
 import { Svg } from 'glamorous'
+import React from 'react'
+
 import { rhythm } from '../utils/typography'
 
 // eslint-disable-next-line react/display-name

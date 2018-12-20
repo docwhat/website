@@ -1,8 +1,8 @@
 // @flow
 // @format
-import { Header, H1, Div } from 'glamorous'
-import React from 'react'
+import { Div, H1, Header } from 'glamorous'
 import PropTypes from 'prop-types'
+import React from 'react'
 
 import CalendarPage from '../components/CalandarPage'
 import { rhythm } from '../utils/typography'

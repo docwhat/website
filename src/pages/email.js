@@ -1,11 +1,12 @@
 // @format
 // @flow
-import React from 'react'
-import g from 'glamorous'
 import { withPrefix } from 'gatsby'
-import { rhythm } from '../utils/typography'
-import StyledButton from '../components/StyledButton.js'
+import g from 'glamorous'
+import React from 'react'
+
 import Layout from '../components/Layout.js'
+import StyledButton from '../components/StyledButton.js'
+import { rhythm } from '../utils/typography'
 
 const labelCSS = {
   display: `inline-block`,

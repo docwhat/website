@@ -1,10 +1,11 @@
 // @flow
 // @format
-import React from 'react'
 import g from 'glamorous'
 import PropTypes from 'prop-types'
+import React from 'react'
+
+import { IconArrowLeft, IconArrowRight } from './IconArrows'
 import Link from './Link'
-import { IconArrowRight, IconArrowLeft } from './IconArrows'
 
 const Pager = ({ node, side, text }) => (
   <g.Li

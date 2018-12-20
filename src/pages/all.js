@@ -1,14 +1,13 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-
 import { Div } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
-import PostCardList from '../components/PostCardList'
 import Layout from '../components/Layout.js'
+import PostCardList from '../components/PostCardList'
 
 const SiteIndex = (props: {
   location: Location,

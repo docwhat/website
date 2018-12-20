@@ -3,8 +3,9 @@
 import { graphql } from 'gatsby'
 import g, { H3, Small } from 'glamorous'
 import * as React from 'react'
-import Link from './Link'
+
 import { rhythm } from '../utils/typography'
+import Link from './Link'
 
 const Title = ({
   to,
