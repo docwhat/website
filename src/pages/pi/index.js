@@ -1,29 +1,42 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-import { Div } from 'glamorous'
+import { A, H1, P } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../../components/Layout.js'
-import PostCardList from '../../components/PostCardList'
+import PostCardList from '../../components/PostCardList.js'
+import SourceLink from '../../components/SourceLink.js'
 
 const SiteIndex = (props: {
   location: Location,
-  data: { pies: { edges: Array<React.Node> } },
+  data: { pies: { edges: React.Node } },
 }) => (
   <Layout location={props.location}>
-    <Div>
+    <>
       <Helmet title="Gatekeeper" />
+      <H1>
+        Welcome to <A href="https://amzn.to/2SgcHGK">Gatekeeper</A>
+      </H1>
+      <P>This is behind-the-scenes for docwhat.org.</P>
+      <P>
+        The current version is <SourceLink />
+      </P>
       <PostCardList postcards={props.data.pies.edges} />
-    </Div>
+    </>
   </Layout>
 )
 
 export default SiteIndex
 
 export const pageQuery = graphql`
-  query PiIndexQuery {
+  query {
+    site {
+      siteMetadata {
+        version
+      }
+    }
     pies: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       filter: { fields: { sourceName: { eq: "pies" } } }

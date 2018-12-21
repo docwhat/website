@@ -1,4 +1,3 @@
-// @flow
 // @format
 import { Div, H1, Header } from 'glamorous'
 import PropTypes from 'prop-types'

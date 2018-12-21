@@ -19,3 +19,5 @@ exports.siteDescription = 'Personal blog of Christian Höltje'
 
 exports.siteUrl =
   typeof window === 'undefined' ? exports.authorUrl : window.location.origin
+
+exports.sourceUrl = 'https://github.com/docwhat/docwhat'

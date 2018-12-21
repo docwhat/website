@@ -1,11 +1,14 @@
 // @flow
 // @format
 
+const process = require('process')
+
 const {
   authorName,
   siteDescription,
   siteTitle,
   siteUrl,
+  sourceUrl,
 } = require(`./src/utils/constants.js`)
 
 module.exports = {
@@ -14,6 +17,9 @@ module.exports = {
     author: authorName,
     description: siteDescription,
     siteUrl,
+    version: process.env.SITE_VERSION, // This can only be calculated here in dev mode.
+    commit: process.env.SITE_COMMIT, // This can only be calculated here in dev mode.
+    sourceUrl,
   },
   plugins: [
     'gatsby-plugin-flow',
