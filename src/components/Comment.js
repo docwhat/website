@@ -3,8 +3,7 @@
 import { graphql } from 'gatsby'
 import g from 'glamorous'
 import gray from 'gray-percentage'
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
 import Gravatar from './Gravatar'
@@ -18,7 +17,14 @@ const isMe = md5 => {
   return myMd5s.includes(md5)
 }
 
-const Comment = props => {
+const Comment = (props: {
+  name: string,
+  url: string,
+  email: string,
+  friendlyDate: string,
+  iso8601Date: string,
+  children: React.Node,
+}) => {
   const { name, url, email, friendlyDate, iso8601Date, children } = props
 
   return (
@@ -94,18 +100,6 @@ const Comment = props => {
       </g.Div>
     </g.Article>
   )
-}
-
-Comment.propTypes = {
-  name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  friendlyDate: PropTypes.string.isRequired,
-  iso8601Date: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
 }
 
 export default Comment
