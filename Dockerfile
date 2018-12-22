@@ -39,6 +39,8 @@ RUN yarn run lint
 ###################
 FROM lint AS build
 ENV NODE_ENV production
+ARG SITE_COMMIT="no commit"
+ARG SITE_VERSION="master"
 RUN yarn run build
 
 ###################

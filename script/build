@@ -9,6 +9,7 @@ branch="$(git rev-parse --abbrev-ref HEAD)"
 version=$(cat "${top_dir}/.node-version")
 tag=${IMAGE_NAME:-docwhat/docwhat:${branch}}
 gitsha=${GIT_SHA1:-$(git rev-parse HEAD)}
+gitcommit=${GIT_COMMIT:-$(git log -1 --oneline --decorate)}
 
 declare -r \
   build_date \
@@ -28,6 +29,8 @@ INFO
 
 docker build \
   --build-arg="NODE_VERSION=${version}" \
+  --build-arg="SITE_COMMIT=${gitcommit}" \
+  --build-arg="SITE_VERSION=${gitsha}" \
   --target="final" \
   --tag="${tag}" \
   --pull \

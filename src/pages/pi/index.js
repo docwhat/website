@@ -21,7 +21,7 @@ const SiteIndex = (props: {
       </H1>
       <P>This is behind-the-scenes for docwhat.org.</P>
       <P>
-        The current version is <SourceLink />
+        The current version is: <br /> <SourceLink />
       </P>
       <PostCardList postcards={props.data.pies.edges} />
     </>
