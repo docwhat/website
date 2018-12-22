@@ -6,6 +6,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../../components/Layout.js'
+import Link from '../../components/Link.js'
 import PostCardList from '../../components/PostCardList.js'
 import SourceLink from '../../components/SourceLink.js'
 
@@ -16,10 +17,12 @@ const SiteIndex = (props: {
   <Layout location={props.location}>
     <>
       <Helmet title="Gatekeeper" />
-      <H1>
-        Welcome to <A href="https://amzn.to/2SgcHGK">Gatekeeper</A>
-      </H1>
-      <P>This is behind-the-scenes for docwhat.org.</P>
+      <H1>Welcome to Gatekeeper!</H1>
+
+      <P>
+        <A href="https://amzn.to/2SgcHGK">Gatekeeper</A>: Behind-the-scenes for{' '}
+        <Link to="/">docwhat.org</Link>.
+      </P>
       <P>
         The current version is: <br /> <SourceLink />
       </P>

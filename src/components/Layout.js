@@ -14,9 +14,13 @@ type Props = {
   location: any,
 }
 
-const DefaultLayout = (props: Props) => {
+const Layout = (props: Props) => {
   const { children, location } = props
-  const scaleFactor = location.pathname === withPrefix(`/`) ? 5 / 4 : 1 / 4
+
+  const isHomepage =
+    location.pathname === withPrefix('/') ||
+    location.pathname === withPrefix('/pi/')
+  const scaleFactor = isHomepage ? 5 / 4 : 1 / 4
 
   const header = (
     <g.Header
@@ -67,4 +71,4 @@ const DefaultLayout = (props: Props) => {
   )
 }
 
-export default DefaultLayout
+export default Layout

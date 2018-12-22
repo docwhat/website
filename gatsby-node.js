@@ -246,8 +246,10 @@ exports.onPostBuild = async ({ graphql }) => {
         limit: 20
         sort: { fields: [fields___date], order: DESC }
         filter: {
-          fields: { sourceName: { eq: "posts" }
-          archived: { eq: false }
+          fields: {
+            sourceName: { eq: "posts" }
+            draft: { eq: false }
+            archived: { eq: false }
           }
         }
       ) {

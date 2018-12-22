@@ -1,7 +1,7 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-import { Div, H3 } from 'glamorous'
+import { H3 } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -30,7 +30,7 @@ const SiteIndex = (props: {
   data: { posts: { edges: Array<React.Node> } },
 }) => (
   <Layout location={props.location}>
-    <Div>
+    <>
       <Helmet title={siteTitle}>
         <meta
           name="google-site-verification"
@@ -68,7 +68,7 @@ const SiteIndex = (props: {
       <JsonLd data={jsonLdData} />
       <Bio />
       <TheNet />
-    </Div>
+    </>
   </Layout>
 )
 
