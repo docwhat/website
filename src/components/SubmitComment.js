@@ -2,10 +2,11 @@
 // @format
 import { css } from 'glamor'
 import g, { Div, Form, Input, Legend, Span, Textarea } from 'glamorous'
-import PropTypes from 'prop-types'
 import * as React from 'react'
 
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as CaretRightIcon } from '../icons/caret-right.svg'
+// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as CommentIcon } from '../icons/comment-alt.svg'
 import { heroColor } from '../utils/colors'
 import { rhythm } from '../utils/typography'
@@ -63,7 +64,13 @@ const StyledLabelDiv = g.label(props => {
   return styles
 })
 
-const Labelled = props => {
+const Labelled = (props: {
+  required?: boolean,
+  label: string,
+  children: React.Node,
+  labelCss?: Object,
+  divCss?: Object,
+}) => {
   let requiredText = ``
 
   if (!props.required) {
@@ -90,15 +97,13 @@ const Labelled = props => {
   )
 }
 
-Labelled.propTypes = {
-  required: PropTypes.bool,
-  label: PropTypes.string.isRequired,
-  children: PropTypes.object,
-  labelCss: PropTypes.object,
-  divCss: PropTypes.object,
-}
-
-const LabelledInput = props => (
+const LabelledInput = (props: {
+  label: string,
+  required?: boolean,
+  name: string,
+  type: string,
+  placeholder: string,
+}) => (
   <Labelled label={props.label} required={props.required}>
     <Input
       css={{
@@ -111,14 +116,6 @@ const LabelledInput = props => (
     />
   </Labelled>
 )
-
-LabelledInput.propTypes = {
-  label: PropTypes.string.isRequired,
-  required: PropTypes.bool,
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-}
 
 const ReCaptcha = () => null
 
@@ -141,8 +138,21 @@ const ReCaptcha = () => null
 //   )
 // }
 
-class SubmitComment extends React.Component {
-  constructor(props: Object) {
+type Props = {
+  slug: string,
+  url: string,
+  closeSection?: boolean,
+  onCloseSectionClick?: Function,
+}
+
+type State = {
+  isOpen: boolean,
+}
+
+class SubmitComment extends React.Component<Props, State> {
+  toggleForm: any
+
+  constructor(props: Props) {
     super(props)
 
     this.state = {
@@ -264,13 +274,6 @@ class SubmitComment extends React.Component {
       </Form>
     )
   }
-}
-
-SubmitComment.propTypes = {
-  closeSection: PropTypes.bool,
-  onCloseSectionClick: PropTypes.func,
-  url: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
 }
 
 export default SubmitComment
