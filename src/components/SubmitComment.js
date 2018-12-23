@@ -139,8 +139,8 @@ const ReCaptcha = () => null
 // }
 
 type Props = {
-  slug: string,
   url: string,
+  slug: string,
   closeSection?: boolean,
   onCloseSectionClick?: Function,
 }

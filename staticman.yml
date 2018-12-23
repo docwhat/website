@@ -35,7 +35,8 @@ comments:
   # to be used directly (e.g. a string, number or array)
   generatedFields:
     template: comment
-    slug: "{options.slugdir}"
+    slugdir: "{options.slugdir}"
+    slug: "{options.slug}"
     date:
       type: date
       options:
