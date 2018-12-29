@@ -2,21 +2,22 @@
 
 set -eEuo pipefail
 
-branch="$(git rev-parse --abbrev-ref HEAD)"
-tag=${IMAGE_NAME:-docwhat/docwhat:${branch}}
-
 declare -r \
-  branch \
-  tag
+  tag=${IMAGE_NAME:-docwhat:local} \
+  push_tag=${1:-${tag}}
 
-if ! docker push "${tag}"; then
+if [[ $tag != "$push_tag" ]]; then
+  docker tag "$tag" "$push_tag"
+fi
+
+if ! docker push "$tag"; then
   username=${DOCKER_USERNAME:-docwhat}
   password=${DOCKER_PASSWORD:-$(lpass show --password docker.com)}
   declare -r username password
 
   echo "$password" | docker login -u "$username" --password-stdin
 
-  exec docker push "${tag}"
+  exec docker push "$tag"
 fi
 
 # EOF
