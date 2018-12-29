@@ -7,7 +7,7 @@ top_dir="$(git rev-parse --show-toplevel)"
 repo_url="$(git ls-remote --get-url)"
 branch="$(git rev-parse --abbrev-ref HEAD)"
 version=$(cat "${top_dir}/.node-version")
-tag=${IMAGE_NAME:-docwhat/docwhat:${branch}}
+tag=${IMAGE_NAME:-docwhat:local}
 gitsha=${GIT_SHA1:-$(git rev-parse HEAD)}
 gitcommit=${GIT_COMMIT:-$(git log -1 --oneline --decorate)}
 
@@ -18,7 +18,8 @@ declare -r \
   branch \
   version \
   tag \
-  gitsha
+  gitsha \
+  gitcommit
 
 cat <<INFO
 On ${build_date}

@@ -10,12 +10,11 @@ env:
     - DOCKER_USERNAME=docwhat
     - secure: cgA++j5I+hPFPw2IXUaY+zFLJZlSLw7Wdf1s5OxpZHo/iGIYI9FA2ejFQ/832idvD/5yWeKYAKcbFWpuYe9t//AUPvvhGDWGIkWLiPnRzTgvNJ0LmqPSfDUa1vCuCvLES3yWMocOL33nnaCehihzkcb/UG7/aw5wbmNZ3EUq4m0=
 
-script:
-  - 'IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" script/build'
+script: script/build
 
 deploy:
   provider: script
-  script: 'IMAGE_NAME=docwhat/docwhat:"$TRAVIS_BRANCH" script/push'
+  script: 'script/push "docwhat/docwhat:${TRAVIS_BRANCH}"'
   on:
     all_branches: true
     condition: $TRAVIS_BRANCH =~ ^master|next$
