@@ -2,22 +2,41 @@
 
 set -eEuo pipefail
 
-declare -r \
-  tag=${IMAGE_NAME:-docwhat:local} \
-  push_tag=${1:-${tag}}
+declare -r tag=${IMAGE_NAME:-docwhat:local}
+declare -r push_tag=${1:-${tag}}
+
+function docker_username() {
+  local oldstate
+  if [[ -n ${DOCKER_USERNAME:-} ]]; then
+    echo "$DOCKER_USERNAME"
+  else
+    lpass show --username --sync=auto docker.com
+  fi
+}
+
+function docker_password() {
+  local -r oldstate="$(shopt -po xtrace)"
+  set +x
+
+  if [[ -n ${DOCKER_PASSWORD:-} ]]; then
+    echo "$DOCKER_PASSWORD"
+  else
+    lpass show --password --sync=auto docker.com
+  fi
+  eval "$oldstate" 1>&2
+}
 
 if [[ $tag != "$push_tag" ]]; then
   docker tag "$tag" "$push_tag"
 fi
 
-if ! docker push "$tag"; then
-  username=${DOCKER_USERNAME:-docwhat}
-  password=${DOCKER_PASSWORD:-$(lpass show --password docker.com)}
-  declare -r username password
+if ! docker push "$push_tag"; then
+  username=$(docker_username)
+  declare -r username
 
-  echo "$password" | docker login -u "$username" --password-stdin
+  docker_password | docker login --username="$username" --password-stdin
 
-  exec docker push "$tag"
+  docker push "$push_tag"
 fi
 
 # EOF
