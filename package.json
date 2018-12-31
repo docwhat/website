@@ -43,7 +43,7 @@
     "@svgr/webpack": "2.4.1",
     "bluebird": "3.5.3",
     "broken-link-checker": "0.7.8",
-    "caniuse-db": "1.0.30000923",
+    "caniuse-db": "1.0.30000925",
     "chalk": "2.4.1",
     "color": "3.1.0",
     "compass-vertical-rhythm": "1.4.5",
