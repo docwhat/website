@@ -60,7 +60,7 @@
     "eslint-plugin-simple-import-sort": "2.0.0",
     "eslint-plugin-standard": "4.0.0",
     "feed": "1.1.1",
-    "flow-bin": "0.88.0",
+    "flow-bin": "0.89.0",
     "gatsby": "2.0.73",
     "gatsby-cli": "2.4.7",
     "gatsby-pagination": "1.2.0",
