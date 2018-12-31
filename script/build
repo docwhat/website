@@ -28,16 +28,19 @@ From ${repo_url}#${branch} (${gitsha})
 ===========================================================
 INFO
 
-docker build \
-  --build-arg="NODE_VERSION=${version}" \
-  --build-arg="SITE_COMMIT=${gitcommit}" \
-  --build-arg="SITE_VERSION=${gitsha}" \
-  --target="final" \
-  --tag="${tag}" \
-  --pull \
-  --label="org.label-schema.vcs-ref=${gitsha}" \
-  --label="org.label-schema.vcs-url=${repo_url}" \
-  --label="org.label-schema.build-date=${build_date}" \
+declare -ra docker_build_args=(
+  "--build-arg=NODE_VERSION=${version}"
+  "--build-arg=SITE_COMMIT=${gitcommit}"
+  "--build-arg=SITE_VERSION=${gitsha}"
+  "--target=final"
+  "--tag=${tag}"
+  "--pull"
+  "--label=org.label-schema.vcs-ref=${gitsha}"
+  "--label=org.label-schema.vcs-url=${repo_url}"
+  "--label=org.label-schema.build-date=${build_date}"
   "${top_dir}"
+)
+
+docker build "${docker_build_args[@]}"
 
 # EOF
