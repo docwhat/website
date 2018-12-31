@@ -39,4 +39,8 @@ if ! docker push "$push_tag"; then
   docker push "$push_tag"
 fi
 
+if [[ -n ${CI:-} ]]; then
+  curl -X POST -sSf 'https://hooks.microbadger.com/images/docwhat/docwhat/abVd1cbH3B2206gjokNJ7jZuxEM='
+fi
+
 # EOF
