@@ -28,6 +28,10 @@ notifications:
       secure: diUwJTJM8+LfgSJDt5dba6iXlAH01/3bIOSj622mT4zNix91e2W00mleN0C1HaoQoOJ6JaMgQLUOqxmy1spqUbVs4sHpdTxcCaK9jF5Z/OslxRk7BGnLzaJYIKDUqoqPLWtkdFzrdrGAw5pHp3ZoQpNNxDn87R76b+43F2rPKpI=
     on_failure: always
     on_success: change
+    template:
+      - "%{result}: %{commit_subject}"
+      - "  %{compare_url}"
+      - "  %{build_url}"
     users:
       secure: QFycDr2Xncye5QsFFHJs7nSd2sek0ntb7d/PthDAGkpxrfW9ebqkvrpjGSBDQiytqTBKOiUOkKwAFFNz7csukCdZ1mdjgQNoKmTzIgQvakUjZUsLZC/rPGHMveRdoaCNgiUwxWIRUCxpAHtlOFiYEdeJFuO5ju4vgmYP0gF/hXY=
   webhooks: https://www.travisbuddy.com/
