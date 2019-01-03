@@ -11,7 +11,9 @@ env:
     - DOCKER_USERNAME=docwhat
     - secure: cgA++j5I+hPFPw2IXUaY+zFLJZlSLw7Wdf1s5OxpZHo/iGIYI9FA2ejFQ/832idvD/5yWeKYAKcbFWpuYe9t//AUPvvhGDWGIkWLiPnRzTgvNJ0LmqPSfDUa1vCuCvLES3yWMocOL33nnaCehihzkcb/UG7/aw5wbmNZ3EUq4m0=
 
-script: script/build
+script:
+  - docker version
+  - script/build
 
 deploy:
   provider: script
