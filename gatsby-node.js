@@ -2,7 +2,7 @@
 const fs = require(`fs`)
 const pify = require(`pify`)
 const pathlib = require(`path`)
-const Feed = require(`feed`)
+const Feed = require(`feed`).Feed
 const moment = require(`moment`)
 const Promise = require(`bluebird`)
 const { siteUrl, authorName, siteTitle } = require(`./src/utils/constants`)
