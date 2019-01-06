@@ -3,13 +3,8 @@
     "baseBranches": ["next"],
     "enabledManagers": ["yarn"],
     "prCreation": "status-success",
-    "dependencies": {
-        "automerge": true,
-        "major": {
-            "automerge": false
-        }
-    },
-    "devDependencies": {
-        "automerge": true
+    "automerge": true,
+    "major": {
+        "automerge": false
     }
 }
