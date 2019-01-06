@@ -1,6 +1,10 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "baseBranches": ["next"]
+    "extends": ["config:base"],
+    "baseBranches": ["next"],
+    "enabledManagers": ["yarn"],
+    "prCreation": "status-success",
+    "automerge": true,
+    "major": {
+        "automerge": false
+    }
 }
