@@ -1,8 +1,9 @@
 {
     "extends": ["config:base"],
+    "timezone": "America/New_York",
+    "schedule": ["after 10pm", "before 5:00am"],
     "baseBranches": ["next"],
     "enabledManagers": ["yarn"],
-    "prCreation": "status-success",
     "automerge": true,
     "major": {
         "automerge": false
