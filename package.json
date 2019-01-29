@@ -19,9 +19,6 @@
   "main": "n/a",
   "scripts": {
     "build": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby build",
-    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
-    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
-    "check-links": "broken-link-checker --ordered --filter-level=3",
     "comments:lint": "prettier-eslint --list-different 'comments/**/*.md'",
     "comments:lint:fix": "prettier-eslint --write 'comments/**/*.md'",
     "develop": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby develop",
@@ -94,7 +91,6 @@
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "broken-link-checker": "0.7.8",
     "eslint": "5.12.1",
     "eslint-config-prettier": "3.6.0",
     "eslint-config-standard": "12.0.0",
