@@ -41,6 +41,6 @@ declare -ra docker_build_args=(
   "${top_dir}"
 )
 
-docker build "${docker_build_args[@]}"
+exec docker build "${docker_build_args[@]}"
 
 # EOF
