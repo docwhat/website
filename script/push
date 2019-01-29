@@ -24,9 +24,7 @@ function docker_password() {
 }
 
 function docker_login() {
-  username=$(docker_username)
-  local -r username
-  docker_password | docker login --username="$username" --password-stdin
+  docker_password | docker login --username="$(docker_username)" --password-stdin
 }
 
 function push_tag() {
