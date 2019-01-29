@@ -1,12 +1,12 @@
-[![](https://images.microbadger.com/badges/version/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master 'Get your own version badge on microbadger.com')
-[![](https://images.microbadger.com/badges/image/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master 'Get your own image badge on microbadger.com')
-[![](https://images.microbadger.com/badges/commit/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master 'Get your own commit badge on microbadger.com')
-[![](https://travis-ci.org/docwhat/docwhat.svg?branch=master)](https://travis-ci.org/docwhat/docwhat)
+[![](https://images.microbadger.com/badges/version/docwhat/docwhat:stable.svg)](https://microbadger.com/images/docwhat/docwhat:stable)
+[![](https://images.microbadger.com/badges/image/docwhat/docwhat:stable.svg)](https://microbadger.com/images/docwhat/docwhat:stable)
+[![](https://images.microbadger.com/badges/commit/docwhat/docwhat:stable.svg)](https://microbadger.com/images/docwhat/docwhat:stable)
+[![](https://travis-ci.org/docwhat/docwhat.svg?branch=stable)](https://travis-ci.org/docwhat/docwhat)
 
-[![](https://images.microbadger.com/badges/version/docwhat/docwhat:next.svg)](https://microbadger.com/images/docwhat/docwhat:next 'Get your own version badge on microbadger.com')
-[![](https://images.microbadger.com/badges/image/docwhat/docwhat:next.svg)](https://microbadger.com/images/docwhat/docwhat:next 'Get your own image badge on microbadger.com')
-[![](https://images.microbadger.com/badges/commit/docwhat/docwhat:next.svg)](https://microbadger.com/images/docwhat/docwhat:next 'Get your own commit badge on microbadger.com')
-[![](https://travis-ci.org/docwhat/docwhat.svg?branch=next)](https://travis-ci.org/docwhat/docwhat)
+[![](https://images.microbadger.com/badges/version/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
+[![](https://images.microbadger.com/badges/image/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
+[![](https://images.microbadger.com/badges/commit/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
+[![](https://travis-ci.org/docwhat/docwhat.svg?branch=master)](https://travis-ci.org/docwhat/docwhat)
 
 # Source for docwhat.org
 
