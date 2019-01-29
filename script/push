@@ -2,9 +2,6 @@
 
 set -eEuo pipefail
 
-declare -r tag=${IMAGE_NAME:-docwhat:local}
-declare -r push_tag=${1:-${tag}}
-
 function docker_username() {
   local oldstate
   if [[ -n ${DOCKER_USERNAME:-} ]]; then
@@ -26,18 +23,32 @@ function docker_password() {
   eval "$oldstate" 1>&2
 }
 
-if [[ $tag != "$push_tag" ]]; then
-  docker tag "$tag" "$push_tag"
-fi
-
-if ! docker push "$push_tag"; then
+function docker_login() {
   username=$(docker_username)
-  declare -r username
-
+  local -r username
   docker_password | docker login --username="$username" --password-stdin
+}
 
-  docker push "$push_tag"
-fi
+function push_tag() {
+  local -r push_tag="docwhat/docwhat:${1}"
+  local -r tag=${IMAGE_NAME:-docwhat:local}
+
+  if [[ $tag != "$push_tag" ]]; then
+    docker tag "$tag" "$push_tag"
+  fi
+
+  if ! docker push "$push_tag"; then
+    docker push "$push_tag"
+  fi
+}
+
+## Main
+
+docker_login
+
+for tag in "$@"; do
+  push_tag "$tag"
+done
 
 if [[ -n ${CI:-} ]]; then
   curl -X POST -sSf 'https://hooks.microbadger.com/images/docwhat/docwhat/abVd1cbH3B2206gjokNJ7jZuxEM='
