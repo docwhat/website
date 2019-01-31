@@ -122,7 +122,7 @@
     "inquirer": "6.2.1",
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "8.1.1",
-    "prettier": "1.16.2",
+    "prettier": "1.16.3",
     "prettier-eslint-cli": "4.7.1",
     "sort-package-json": "1.18.0"
   },
