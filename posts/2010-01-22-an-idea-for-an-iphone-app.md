@@ -8,6 +8,7 @@ tags:
     - iphone
     - programming
     - video games
+archived: true
 ---
 
 <iframe src="https://www.youtube.com/embed/2kFGxH4wrs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

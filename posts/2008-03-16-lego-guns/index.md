@@ -6,6 +6,7 @@ slug: '/lego-guns/'
 tags:
     - LEGO
 title: 'LEGO guns!'
+archived: true
 ---
 
 [![Broomhandled

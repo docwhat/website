@@ -6,6 +6,7 @@ slug: '/xbox-360-avatars/'
 tags:
     - video games
 title: XBox 360 avatars
+archived: true
 ---
 
 ![My

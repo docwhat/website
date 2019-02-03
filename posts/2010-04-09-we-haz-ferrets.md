@@ -12,6 +12,7 @@ tags:
     - ferrets
     - pets
 title: 'We Haz Ferrets!'
+archived: true
 ---
 
 [![The ferrets in

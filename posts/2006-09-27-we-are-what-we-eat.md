@@ -8,6 +8,7 @@ slug: /we-are-what-we-eat/
 tags:
     - waste of time
     - wtf
+archived: true
 ---
 
 I read the [The Daily WTF](http://thedailywtf.com/) regularly. When I read

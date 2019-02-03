@@ -7,6 +7,7 @@ slug: /gecko-grip/
 tags:
     - Science
     - Technology
+archived: true
 ---
 
 This is the coolest thing.  I remember reading about how the discovered how

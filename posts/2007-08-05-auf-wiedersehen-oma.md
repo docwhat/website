@@ -12,6 +12,7 @@ tags:
     - grandmother
     - oma
     - sad
+archived: true
 ---
 
 When I was little, my dad and mom would take me to Germany to see my Dad's

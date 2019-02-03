@@ -7,6 +7,7 @@ slug: '/scott-adams-bullshit-detector-broken/'
 tags:
     - Science
 title: Scott Adams Bullshit
+archived: true
 ---
 
 [![The Selfish

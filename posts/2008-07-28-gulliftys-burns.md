@@ -7,6 +7,7 @@ slug: /gulliftys-burns/
 tags:
     - home
     - Pittsburgh
+archived: true
 ---
 
 Aaah!  There was a

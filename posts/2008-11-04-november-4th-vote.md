@@ -7,6 +7,7 @@ slug: '/november-4th-vote/'
 tags:
     - friends
     - politics
+archived: true
 ---
 
 _[Rob Landley](http://landley.net/) has an awesomely well written reminder of

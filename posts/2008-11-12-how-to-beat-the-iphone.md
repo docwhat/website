@@ -7,6 +7,7 @@ slug: /how-to-beat-the-iphone/
 tags:
     - phone
     - wifi
+archived: true
 ---
 
 For all those cell phone companies trying to figure out how to beat AT&T's

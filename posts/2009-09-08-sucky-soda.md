@@ -8,6 +8,7 @@ tags:
     - food
     - soda
     - taste
+archived: true
 ---
 
 I am not a soda fan.

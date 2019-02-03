@@ -10,6 +10,7 @@ slug: '/our-new-car/'
 tags:
     - car
 title: Our New Car
+archived: true
 ---
 
 [![Our new used 2006 Scion

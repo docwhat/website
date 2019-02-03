@@ -10,6 +10,7 @@ tags:
     - Python
     - sick
 title: "Python 2.5 and I'm sick"
+archived: true
 ---
 
 So, I woke up this morning and felt like crap but thought I could make it to

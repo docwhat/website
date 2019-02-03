@@ -12,6 +12,7 @@ tags:
     - anime
     - cool
     - video
+    archived: true
 ---
 
 <a href="http://funimation.com/video/">Funimation</a> – an importer of

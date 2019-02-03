@@ -6,6 +6,7 @@ slug: '/first-house/'
 tags:
     - home
 title: 'My First House!'
+archived: true
 ---
 
 So, I haven't been blogging much lately. Part of the reason is that Robin and

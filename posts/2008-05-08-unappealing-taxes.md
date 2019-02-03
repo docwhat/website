@@ -6,6 +6,7 @@ template: 'post'
 slug: '/unappealing-taxes/'
 tags:
     - home
+archived: true
 ---
 
 > Unquestionably, there is progress.  The average American now pays out twice

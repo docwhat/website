@@ -6,6 +6,7 @@ tags:
     - Squirrel Hill
 template: post
 title: 'Dr. Ross, O.D.'
+archived: true
 ---
 
 [Dr. Ross](https://www.yelp.com/biz/edward-ross-od-pittsburgh-3) and his staff

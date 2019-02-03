@@ -11,6 +11,7 @@ categories:
 tags:
     - blog
     - OS X
+archived: true
 ---
 
 There is a new <a href="http://macheist.com/">MacHeist</a> nanoBundle. For

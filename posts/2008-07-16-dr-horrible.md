@@ -6,6 +6,7 @@ template: 'post'
 slug: '/dr-horrible/'
 tags:
     - 'sci-fi'
+archived: true
 ---
 
 For those that are fans of [Joss Whedon](http://whedonesque.com/), he has

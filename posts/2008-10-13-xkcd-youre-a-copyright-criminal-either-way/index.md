@@ -7,6 +7,7 @@ slug: '/xkcd-youre-a-copyright-criminal-either-way/'
 tags:
     - copyright
     - DRM
+archived: true
 ---
 
 The always witting and intelligent web comic XKCD makes an excellent point

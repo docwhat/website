@@ -8,6 +8,7 @@ title_tag:
     - 'Cathy Ferguson: Mortgage Advisor'
 tags:
     - home
+archived: true
 ---
 
 I had this idea of this _huge_ post I'd write about how I went about getting a

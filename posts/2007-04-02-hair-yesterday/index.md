@@ -12,6 +12,7 @@ tags:
     - long
     - short
     - strange
+archived: true
 ---
 
 ![This is my hair before I got it

@@ -8,6 +8,7 @@ q: 'Stopping junk postal mail: Are these ripoffs?'
 tags:
     - Privacy
     - spam
+archived: true
 ---
 
 My [mother](http://dianewillis.com/), who has a lot of friends that send her

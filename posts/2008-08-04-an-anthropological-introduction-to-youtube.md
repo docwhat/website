@@ -7,6 +7,7 @@ slug: /an-anthropological-introduction-to-youtube/
 tags:
     - technology
     - history
+archived: true
 ---
 
 An excellent presentation on what You Tube is and how it has impacted our
