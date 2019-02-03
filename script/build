@@ -9,7 +9,7 @@ branch="$(git rev-parse --abbrev-ref HEAD)"
 version=$(cat "${top_dir}/.node-version")
 tag=${IMAGE_NAME:-docwhat:local}
 gitsha=${GIT_SHA1:-$(git rev-parse HEAD)}
-gitcommit=${GIT_COMMIT:-$(git log -1 --oneline --decorate)}
+gitcommit=${GIT_COMMIT:-$(git log -1 --date=short --format='%h %ad %s')}
 
 declare -r \
   build_date \
