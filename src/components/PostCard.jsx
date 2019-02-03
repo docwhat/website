@@ -25,18 +25,28 @@ const Title = ({
   </H3>
 )
 
-const Meta = (props: { children: React.Node }): React.Node => (
-  <Small
-    css={{
-      display: `block`,
-      lineHeight: 1,
-      marginBottom: rhythm(1 / 4),
-      textAlign: `right`,
-    }}
-  >
-    {props.children}
-  </Small>
-)
+const Meta = (props: { date: string }): React.Node => {
+  const [month, dom, year] = props.date.split(' ')
+  return (
+    <Small
+      css={{
+        display: `block`,
+        lineHeight: 1,
+        marginTop: rhythm(1 / 4),
+        marginBottom: rhythm(1 / 4),
+        textAlign: `right`,
+      }}
+    >
+      <i>
+        {month}
+        &nbsp;
+        {dom},
+      </i>
+      &nbsp;
+      <b>{year}</b>
+    </Small>
+  )
+}
 
 const PostCard = ({
   date,
@@ -53,7 +63,7 @@ const PostCard = ({
 }): React.Node => (
   <g.Section css={overrideCss}>
     <Title to={slug}>{title}</Title>
-    <Meta>{date}</Meta>
+    <Meta date={date} />
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
     <Link
       css={{
@@ -75,7 +85,7 @@ export const query = graphql`
     fields {
       slug
       title
-      date(formatString: "MMMM DD, YYYY")
+      date(formatString: "MMMM DD YYYY")
     }
     excerpt(format: PLAIN, pruneLength: 280)
   }
