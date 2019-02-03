@@ -5,10 +5,10 @@ import { A, H1, P } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
-import Layout from '../../components/Layout.js'
-import Link from '../../components/Link.js'
-import PostCardList from '../../components/PostCardList.js'
-import SourceLink from '../../components/SourceLink.js'
+import Layout from '../../components/Layout'
+import Link from '../../components/Link'
+import PostCardList from '../../components/PostCardList'
+import SourceLink from '../../components/SourceLink'
 
 const SiteIndex = (props: {
   location: Location,

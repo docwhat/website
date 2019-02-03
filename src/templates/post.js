@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import BlogPostMicroData from '../components/BlogPostMicroData'
 import Comments from '../components/Comments'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 // Components
 import PostPaginator from '../components/PostPaginator'

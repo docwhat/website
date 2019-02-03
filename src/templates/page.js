@@ -5,7 +5,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import { siteTitle } from '../utils/constants'
 

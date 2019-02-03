@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import JsonLd from '../components/JsonLd'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
 import Link from '../components/Link'
 import PostCardList from '../components/PostCardList'
 import TheNet from '../components/TheNet'

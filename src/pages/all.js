@@ -6,7 +6,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
 import PostCardList from '../components/PostCardList'
 
 const SiteIndex = (props: {

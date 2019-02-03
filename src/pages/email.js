@@ -4,8 +4,8 @@ import { withPrefix } from 'gatsby'
 import g from 'glamorous'
 import React from 'react'
 
-import Layout from '../components/Layout.js'
-import StyledButton from '../components/StyledButton.js'
+import Layout from '../components/Layout'
+import StyledButton from '../components/StyledButton'
 import { rhythm } from '../utils/typography'
 
 const labelCSS = {
