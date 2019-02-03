@@ -1,4 +1,3 @@
-// @flow
 // @format
 
 const process = require('process')
@@ -112,7 +111,6 @@ module.exports = {
         trackingId: `UA-4714126-2`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-trailing-slashes`,
