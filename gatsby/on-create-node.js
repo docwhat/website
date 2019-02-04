@@ -2,6 +2,7 @@
 
 const pathlib = require(`path`)
 const _ = require(`lodash`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const onCreateNode = ({ node, actions, getNode }) => {
   try {
@@ -52,7 +53,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
         createNodeField({
           node,
           name: `date`,
-          value: calculateDate(node, getNode),
+          value: calculateDate(node, getNode, sourceName),
         })
       }
     }
@@ -69,19 +70,26 @@ const calculateTitle = (node, getNode) =>
     .name.replace(/.*\/([^/]+)$/, '$1')
     .replace(/[\d]{4}-[\d]{2}-[\d]{2}-/, '')
 
-const calculateDate = (node, getNode) => {
+/**
+ * Calculates the date for a post based on frontmatter and filename.
+ */
+const calculateDate = (node, getNode, sourceName) => {
   if (node.frontmatter.date) {
     return node.frontmatter.date
   }
 
-  const hasDateInPath = getNode(node.parent).name.match(
-    /^([\d]{4}-[\d]{2}-[\d]{2})/
-  )
+  const relPath = createFilePath({
+    node,
+    getNode,
+    basePath: `content/${sourceName}`,
+  })
+
+  const hasDateInPath = relPath.match(/^\/?([\d]{4}-[\d]{2}-[\d]{2})/)
   if (hasDateInPath) {
     return hasDateInPath[1]
   }
 
-  throw new Error(`Unable to get date for ${getNode(node.parent).absolutePath}`)
+  throw new Error(`Unable to get date for ${relPath}`)
 }
 
 const calculateSlugFromPath = (node, getNode) => {
