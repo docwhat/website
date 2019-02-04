@@ -1,4 +1,4 @@
-ARG NODE_VERSION=8
+ARG NODE_VERSION=10
 
 FROM node:$NODE_VERSION  AS node
 FROM nginx:stable-alpine AS nginx
