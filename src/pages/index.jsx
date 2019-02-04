@@ -1,5 +1,7 @@
 // @format
 // @flow
+// @ts-ignore
+// @ts-nocheck
 import { graphql } from 'gatsby'
 import { H3 } from 'glamorous'
 import * as React from 'react'
@@ -78,7 +80,7 @@ export const pageQuery = graphql`
   query {
     posts: allMarkdownRemark(
       limit: 10
-      sort: { fields: [fields___date], order: DESC }
+      sort: { order: DESC, fields: [fields___date] }
       filter: {
         fields: {
           sourceName: { eq: "posts" }

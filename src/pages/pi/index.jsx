@@ -41,7 +41,7 @@ export const pageQuery = graphql`
       }
     }
     pies: allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { sourceName: { eq: "pies" } } }
     ) {
       edges {

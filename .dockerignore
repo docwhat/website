@@ -2,9 +2,7 @@
 !package.json
 !yarn.lock
 
-!comments
-!posts
-!pi
+!content
 !examples
 !static
 !src

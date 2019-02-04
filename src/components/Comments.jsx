@@ -53,7 +53,7 @@ export const CommentsBySlug = graphql`
       filter: {
         fields: { postSlug: { eq: $slug }, sourceName: { eq: "comments" } }
       }
-      sort: { fields: [frontmatter___date], order: ASC }
+      sort: { fields: [fields___date], order: ASC }
     ) {
       edges {
         node {

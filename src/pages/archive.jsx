@@ -35,7 +35,7 @@ export default SiteIndex
 export const pageQuery = graphql`
   query {
     posts: allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      sort: { order: DESC, fields: [fields___date] }
       filter: {
         fields: {
           sourceName: { eq: "posts" }

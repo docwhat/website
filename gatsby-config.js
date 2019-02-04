@@ -25,14 +25,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/comments`,
+        path: `${__dirname}/content/comments`,
         name: `comments`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/posts`,
+        path: `${__dirname}/content/posts`,
         name: `posts`,
       },
     },
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/pi`,
+        path: `${__dirname}/content/pi`,
         name: `pies`,
       },
     },
@@ -128,7 +128,8 @@ module.exports = {
             {
               site { siteMetadata { siteUrl } }
               allSitePage: allMarkdownRemark(
-                limit: 100000
+                limit: 100000,
+                sort: { order: DESC, fields: [fields___date] },
                 filter: {
                   fields: { sourceName: { in: ["pages", "posts"] } }
                   frontmatter: {

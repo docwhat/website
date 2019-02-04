@@ -19,14 +19,12 @@
   "main": "n/a",
   "scripts": {
     "build": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby build",
-    "comments:lint": "prettier-eslint --list-different 'comments/**/*.md'",
-    "comments:lint:fix": "prettier-eslint --write 'comments/**/*.md'",
     "develop": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby develop",
-    "lint": "eslint '*.js' 'src/**/*.{js,jsx}' && prettier-eslint --list-different '*.js' 'src/**/*.{js,jsx}'",
+    "lint": "eslint '**/*.{js,jsx}' && prettier-eslint --list-different '**/*.{js,jsx}'",
     "lint:fix": "prettier-eslint --write '**/*.{js,jsx}'",
+    "markdown:lint": "prettier-eslint --list-different 'content/**/*.md'",
+    "markdown:lint:fix": "prettier-eslint --write 'content/**/*.md'",
     "new": "node src/utils/newpost.js",
-    "posts:lint": "prettier-eslint --list-different 'src/**/*.md'",
-    "posts:lint:fix": "prettier-eslint --write 'src/**/*.md'",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

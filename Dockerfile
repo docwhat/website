@@ -18,10 +18,9 @@ RUN yarn install --no-cache --frozen-lockfile
 # keep these in sync with .dockerignore
 # don't include nginx.conf.
 COPY ./static/   ./static/
+COPY ./gatsby/   ./gatsby/
 COPY ./src/      ./src/
-COPY ./comments/ ./comments/
-COPY ./posts/    ./posts/
-COPY ./pi/       ./pi/
+COPY ./content/  ./content/
 COPY \
   ./package.json \
   ./yarn.lock \

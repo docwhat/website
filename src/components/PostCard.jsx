@@ -1,5 +1,7 @@
 // @flow
 // @format
+// @ts-ignore
+// @ts-nocheck
 import { graphql } from 'gatsby'
 import g, { H3, Small } from 'glamorous'
 import * as React from 'react'
@@ -38,12 +40,9 @@ const Meta = (props: { date: string }): React.Node => {
       }}
     >
       <i>
-        {month}
-        &nbsp;
-        {dom},
+        {month}&nbsp;{dom},
       </i>
-      &nbsp;
-      <b>{year}</b>
+      &nbsp;<b>{year}</b>
     </Small>
   )
 }
