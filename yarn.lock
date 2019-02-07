@@ -5652,10 +5652,10 @@ gatsby-remark-abbr@1.0.0:
     remark-abbr "^1.0.7"
     unist-util-visit "^1.2.0"
 
-gatsby-remark-autolink-headers@2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.0.13.tgz#b49d9e417685202ed765ba60dc2505522a3853b6"
-  integrity sha512-KzSInFkND4VT52NgX/Af1nmLjHRtcA66l/+DMbUp89T8DbFOV4kUhMlFWxnP9nbWDGiFru0/enojpxIlqGhqIg==
+gatsby-remark-autolink-headers@2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.0.14.tgz#8dbcbb51af900bbf80252677341dceaac38e2afb"
+  integrity sha512-t1/gDgek4xNWxt0+5z0cs1bjZXyZh4r0ug5+iDEuKVGK9Uc9qGjE8oc2xDsLwi/UnxlEmHr8ESnPqm2jOkoE+A==
   dependencies:
     "@babel/runtime" "^7.0.0"
     github-slugger "^1.1.1"
