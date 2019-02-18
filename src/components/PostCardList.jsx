@@ -1,6 +1,4 @@
-// @flow
 // @format
-import { Div } from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -8,7 +6,7 @@ import { rhythm } from '../utils/typography'
 import PostCard from './PostCard'
 
 const PostCardList = props => (
-  <Div
+  <div
     css={{
       display: `flex`,
       flexDirection: `row`,
@@ -37,7 +35,7 @@ const PostCardList = props => (
         />
       )
     })}
-  </Div>
+  </div>
 )
 
 PostCardList.propTypes = {
