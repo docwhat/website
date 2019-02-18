@@ -3,7 +3,6 @@
 // @ts-ignore
 // @ts-nocheck
 import { graphql } from 'gatsby'
-import g, { H3, Small } from 'glamorous'
 import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
@@ -16,7 +15,7 @@ const Title = ({
   to: string,
   children: React.Node,
 }): React.Node => (
-  <H3
+  <h3
     css={{
       marginBottom: 0,
     }}
@@ -24,26 +23,25 @@ const Title = ({
     <Link style={{ boxShadow: `none` }} to={to}>
       {children}
     </Link>
-  </H3>
+  </h3>
 )
 
 const Meta = (props: { date: string }): React.Node => {
   const [month, dom, year] = props.date.split(' ')
   return (
-    <Small
+    <small
       css={{
-        display: `block`,
+        display: 'block',
         lineHeight: 1,
         marginTop: rhythm(1 / 4),
         marginBottom: rhythm(1 / 4),
-        textAlign: `right`,
+        textAlign: 'right',
+        whiteSpace: 'pre',
+        fontStyle: 'italic',
       }}
     >
-      <i>
-        {month}&nbsp;{dom},
-      </i>
-      &nbsp;<b>{year}</b>
-    </Small>
+      {month} {dom}, {year}
+    </small>
   )
 }
 
@@ -60,7 +58,7 @@ const PostCard = ({
   slug: string,
   title: string,
 }): React.Node => (
-  <g.Section css={overrideCss}>
+  <section css={overrideCss}>
     <Title to={slug}>{title}</Title>
     <Meta date={date} />
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
@@ -74,7 +72,7 @@ const PostCard = ({
     >
       Read More&hellip;
     </Link>
-  </g.Section>
+  </section>
 )
 
 export default PostCard
