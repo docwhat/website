@@ -36,7 +36,6 @@ css.global(
 css.global(`pre[class*='language-']`, {
   padding: `1em`,
   overflow: `auto`,
-  lineHeight: `1.45`,
   backgroundColor: deemphasisColor.saturationl(29).lightness(97),
   borderRadius: `0.19em`,
 
@@ -72,9 +71,10 @@ css.global(`.token.string, .token.attr-value`, {
   color: deemphasisColor.saturationl(86).lightness(48),
 })
 
-css.global(`.token.punctuation, .token.operator`, {
+css.global(`.token.punctuation, .token.operator, .token.command`, {
   /* no highlight */
   color: baseColor,
+  fontWeight: 'bold',
 })
 
 css.global(
@@ -85,15 +85,18 @@ css.global(
 )
 
 css.global(
-  `.token.atrule, .token.keyword, .token.attr-name, .language-autohotkey .token.selector`,
+  `.token.atrule, .token.keyword, .token.attr-name, .language-autohotkey .token.selector, .token.coord`,
   {
     color: mellowColor.saturationl(100).lightness(43),
   }
 )
 
-css.global(`.token.function, .token.deleted, .language-autohotkey .token.tag`, {
-  color: heroColor.saturationl(94).lightness(31),
-})
+css.global(
+  `.token.function, .token.deleted, .language-autohotkey .token.tag, .token.commit_sha1`,
+  {
+    color: heroColor.saturationl(94).lightness(31),
+  }
+)
 
 css.global(`.token.tag, .token.selector, .language-autohotkey .token.keyword`, {
   color: mellowColor.saturationl(100).lightness(31),
@@ -108,19 +111,44 @@ css.global(`.gatsby-highlight-code-line`, {
   paddingLeft: `0.75em`,
 })
 
-css.global(`.gatsby-highlight pre.language-terminal`, {
-  background: `#222`,
-})
-
-css.global(`.gatsby-highlight pre.language-terminal code`, {
-  color: `#eee`,
-  textShadow: `0 1.0px #888`,
-})
-
 css.global(`.token.important, .token.function, .token.bold`, {
   fontWeight: `bold`,
 })
 
 css.global(`.token.italic`, {
   fontStyle: `italic`,
+})
+
+css.global(`pre[class*="language-"].line-numbers`, {
+  padding: '0',
+  paddingLeft: '3.8em',
+  position: 'relative',
+  counterReset: 'linenumber',
+})
+css.global(`pre[class*="language-"].line-numbers > code`, {
+  position: 'relative',
+  whiteSpace: 'inherit',
+})
+css.global(`.line-numbers .line-numbers-rows`, {
+  position: 'absolute',
+  pointerEvents: 'none',
+  top: '0',
+  left: '-3.8em',
+  width: '3em',
+  letterSpacing: '-1px',
+  borderRight: '1px solid #999',
+  userSelect: 'none',
+})
+css.global(`.line-numbers-rows > span`, {
+  pointerEvents: 'none',
+  display: 'block',
+  counterIncrement: 'linenumber',
+})
+css.global(`.line-numbers-rows > span:before`, {
+  content: 'counter(linenumber)',
+  color: '#999',
+  display: 'block',
+  padding: 0,
+  paddingRight: '0.8em',
+  textAlign: 'right',
 })

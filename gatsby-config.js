@@ -95,6 +95,7 @@ module.exports = {
                 js: `javascript`,
                 lisp: `scheme`,
                 sh: `bash`,
+                terminal: `bash`,
                 viml: `vim`,
                 zsh: `bash`,
               },

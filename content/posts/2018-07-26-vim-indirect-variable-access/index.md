@@ -18,7 +18,7 @@ In Vim you can use a variable as a variable name.
 Instead of using the variable name directly, wrap it in curly braces (`{}`).
 This will use the contents of the variable as the variable name.
 
-```vim
+```vim{numberLines: true}
 let l:variable_name = 'b:infosec_username'
 let {l:variable_name} = 'George'
 
@@ -31,7 +31,7 @@ You can see how I used it my ftplugin files, such as `markdown.vim` on lines
 and
 [line 34](https://github.com/docwhat/dotfiles/blob/1b255b2f92bcf70ba8a8737f79200cd77188d9a9/tag-neovim/config/nvim/ftplugin/markdown.vim#L34).
 
-```vim
+```vim{2,8}
 " Prevents multiple invocations
 let s:guard = 'b:did_ftplugin_markdown' | if exists(s:guard) | finish | endif
 
