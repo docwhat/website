@@ -170,10 +170,13 @@ const myTypography = new Typography({
           marginRight: 0,
           paddingLeft: rhythm(9 / 16),
         },
-        '.gatsby-highlight > pre[class*="language-"]': {
+        'pre[class*="language-"], pre[class*="language-"].line-numbers': {
           padding: `0.2em`,
           borderLeft: `none`,
           borderRight: `none`,
+        },
+        '.line-numbers-rows > span': {
+          display: 'none',
         },
       },
       [TABLET_MEDIA_QUERY]: {
