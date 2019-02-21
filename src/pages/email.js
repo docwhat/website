@@ -39,8 +39,8 @@ const ContactForm = (props: { location: Location }) => (
         </p>
         <p>Okay, nevermind that.</p>
         <p>
-          You put your email address and question in the form below and I’ll
-          read it and send you a reply.
+          If you put your email address in the form below and I’ll send you a
+          reply.
           <span role="img" aria-label="Slightly Smiling Face">
             🙂
           </span>
