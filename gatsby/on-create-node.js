@@ -10,9 +10,7 @@ const onCreateNode = async ({ node, actions, getNode }) => {
   }
 
   const { createNodeField } = actions
-  const sourceName = getNode(node.parent).sourceInstanceName
-
-  createNodeField({ node, name: `sourceName`, value: sourceName })
+  const sourceName = node.fields.sourceName
 
   const slug = calculateSlug(node, getNode)
 

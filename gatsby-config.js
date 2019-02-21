@@ -69,6 +69,7 @@ module.exports = {
           `gatsby-remark-emoji`,
           `gatsby-remark-abbr`,
           `gatsby-remark-smartypants`,
+          'gatsby-remark-source-name',
           `gatsby-remark-autolink-headers`,
           {
             // This must go before prismjs.
