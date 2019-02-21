@@ -6,12 +6,10 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import BlogPostMicroData from '../components/BlogPostMicroData'
-import Comments from '../components/Comments'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 // Components
 import PostPaginator from '../components/PostPaginator'
-import SubmitComment from '../components/SubmitComment'
 import { siteTitle, siteUrl } from '../utils/constants'
 
 const PostTemplate = (props: {
@@ -21,7 +19,6 @@ const PostTemplate = (props: {
       wordCount: { words: number },
       html: string,
     },
-    comments: Array<any>,
   },
   pageContext: {
     newer?: any,
@@ -43,7 +40,6 @@ const PostTemplate = (props: {
         wordCount: { words },
         html: pageHtml,
       },
-      comments,
     },
     pageContext: { newer, older },
   } = props
@@ -64,9 +60,6 @@ const PostTemplate = (props: {
         />
 
         <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
-
-        <Comments comments={comments} />
-        <SubmitComment slug={slug} url={pageUrl} />
 
         <PostPaginator older={older} newer={newer} />
 
@@ -97,6 +90,5 @@ export const postQuery = graphql`
       }
       ...calendarPageDatesFragment
     }
-    ...commentsQueryFragment
   }
 `
