@@ -108,7 +108,7 @@ const calculateSlug = (node, getNode) => {
   )
 
   if (node.fields.sourceName === 'pies') {
-    return `/pi${baseSlug}`
+    return `/pi${baseSlug.replace(/^\/pi\//, '/')}`
   }
 
   return baseSlug
