@@ -62,8 +62,8 @@ const PostPaginator = ({ newer, older }) => (
 )
 
 PostPaginator.propTypes = {
-  newer: PropTypes.object.isRequired,
-  older: PropTypes.object.isRequired,
+  newer: PropTypes.object,
+  older: PropTypes.object,
 }
 
 export default PostPaginator
