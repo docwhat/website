@@ -34,18 +34,22 @@
     }
   },
   "lint-staged": {
-    "*.md": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.{js,jsx}": [
-      "prettier-eslint --write",
-      "git add"
-    ],
-    "package.json": [
-      "sort-package-json",
-      "git add"
-    ]
+    "linters": {
+      "**/*.md": [
+        "prettier --write",
+        "git add"
+      ],
+      "**/*.{js,jsx}": [
+        "prettier-eslint --write",
+        "eslint",
+        "git add"
+      ],
+      "package.json": [
+        "sort-package-json",
+        "git add"
+      ]
+    },
+    "relative": true
   },
   "dependencies": {
     "@babel/core": "7.3.3",
