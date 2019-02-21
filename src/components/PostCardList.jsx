@@ -39,7 +39,18 @@ const PostCardList = props => (
 )
 
 PostCardList.propTypes = {
-  postcards: PropTypes.arrayOf(PropTypes.node).isRequired,
+  postcards: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        fields: PropTypes.shape({
+          slug: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
+          date: PropTypes.string.isRequired,
+        }),
+        excerpt: PropTypes.string.isRequired,
+      }),
+    })
+  ).isRequired,
 }
 
 export default PostCardList
