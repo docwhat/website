@@ -1,4 +1,5 @@
 // @format
+'use strict'
 
 const pathlib = require(`path`)
 

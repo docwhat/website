@@ -1,14 +1,12 @@
-// @flow
 // @format
-import g from 'glamorous'
+import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import { IconArrowLeft, IconArrowRight } from './IconArrows'
-import Link from './Link'
 
 const Pager = ({ node, side, text }) => (
-  <g.Li
+  <li
     css={{
       margin: 0,
       padding: 0,
@@ -30,7 +28,7 @@ const Pager = ({ node, side, text }) => (
         {side === `right` ? <IconArrowRight /> : null}
       </div>
     </Link>
-  </g.Li>
+  </li>
 )
 
 Pager.propTypes = {
@@ -40,7 +38,7 @@ Pager.propTypes = {
 }
 
 const PostPaginator = ({ newer, older }) => (
-  <g.Nav
+  <nav
     css={{
       margin: `1em 0`,
     }}
@@ -58,7 +56,7 @@ const PostPaginator = ({ newer, older }) => (
       {older && <Pager node={older} side="left" text="Older" />}
       {newer && <Pager node={newer} side="right" text="Newer" />}
     </ul>
-  </g.Nav>
+  </nav>
 )
 
 PostPaginator.propTypes = {

@@ -1,12 +1,13 @@
 // @format
 // @flow
+import { Global } from '@emotion/core'
 import { withPrefix } from 'gatsby'
-import g, { Div } from 'glamorous'
+import Link from 'gatsby-link'
 import * as React from 'react'
 
-import Link from '../components/Link'
 import logoUrl from '../icons/logo.svg'
 import { heroColor } from '../utils/colors'
+import globalCss from '../utils/style.js'
 import { options as typo, rhythm, scale } from '../utils/typography'
 
 type Props = {
@@ -23,7 +24,7 @@ const Layout = (props: Props) => {
   const scaleFactor = isHomepage ? 5 / 4 : 1 / 4
 
   const header = (
-    <g.Header
+    <header
       css={{
         ...scale(1.5 * scaleFactor),
         marginBottom: rhythm(1.5 * scaleFactor),
@@ -39,35 +40,38 @@ const Layout = (props: Props) => {
       }}
     >
       <Link
-        style={{
+        css={{
           boxShadow: `none`,
           textDecoration: `none`,
           color: `inherit`,
         }}
         to="/"
       >
-        <g.Img
+        <img
           src={logoUrl}
           alt="docwhat's avatar"
-          height="1em"
-          width="1em"
-          verticalAlign="text-top"
+          css={{
+            height: '1em',
+            width: '1em',
+            verticalAlign: 'text-top',
+          }}
         />
         {`docwhat's blog`}
       </Link>
-    </g.Header>
+    </header>
   )
   return (
-    <Div
+    <div
       css={{
         maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         margin: `0 auto`,
       }}
     >
+      <Global styles={globalCss} />
       {header}
       {children}
-    </Div>
+    </div>
   )
 }
 

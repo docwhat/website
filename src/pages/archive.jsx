@@ -1,7 +1,6 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-import { Div, H1, P } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -14,19 +13,19 @@ const SiteIndex = (props: {
   data: { posts: { edges?: React.Node } },
 }) => (
   <Layout location={props.location}>
-    <Div>
+    <>
       <Helmet title="Post Archive" />
-      <H1>Post Archive</H1>
-      <P
+      <h1>Post Archive</h1>
+      <p
         css={{
           fontSize: '80%',
         }}
       >
         Posts that have been retired for one reason or another.
-      </P>
+      </p>
       <PostCardList postcards={props.data.posts.edges} />
       <Bio />
-    </Div>
+    </>
   </Layout>
 )
 

@@ -1,10 +1,9 @@
 // @flow
 // @format
 import { graphql } from 'gatsby'
-import g from 'glamorous'
 import React from 'react'
 
-import { deemphasisColor } from '../utils/colors'
+import { heroColor } from '../utils/colors'
 import { rhythm } from '../utils/typography'
 
 const CalendarPage = (props: {
@@ -23,7 +22,8 @@ const CalendarPage = (props: {
     width: `100%`,
   }
 
-  const bannerColor = deemphasisColor
+  const bannerColor = heroColor.darken(0.0)
+  const fontColor = bannerColor.negate()
 
   const rmult = 5 / 12
   const year = ymdDate.split(`-`)[0]
@@ -31,7 +31,7 @@ const CalendarPage = (props: {
   // Original idea from:
   // https://www.sitepoint.com/create-calendar-icon-html5-css3/
   return (
-    <g.Time
+    <time
       css={{
         backgroundColor: `#ffffff`,
         borderRadius: rhythm(0.6 * rmult),
@@ -48,31 +48,31 @@ const CalendarPage = (props: {
       dateTime={ymdDate}
       title={ymdDate}
     >
-      <g.Em
+      <em
         css={{
           ...commonCSS,
           bottom: rhythm(0.3 * rmult),
-          color: bannerColor.string(),
+          color: bannerColor,
           position: `absolute`,
         }}
       >
         {monthName}
-      </g.Em>
-      <g.Strong
+      </em>
+      <strong
         css={{
           ...commonCSS,
           backgroundColor: bannerColor.string(),
           borderBottom: `1.0px dashed ${bannerColor.darken(0.2).string()}`,
           boxShadow: `0 2px 0 ${bannerColor.string()}`,
-          color: `#fff`,
+          color: fontColor,
           padding: `${rhythm(0.4 * rmult)} 0`,
           position: `absolute`,
           top: `0`,
         }}
       >
         {year}
-      </g.Strong>
-      <g.Span
+      </strong>
+      <span
         css={{
           ...commonCSS,
           color: `#2f2f2f`,
@@ -82,8 +82,8 @@ const CalendarPage = (props: {
         }}
       >
         {dayOfMonth}
-      </g.Span>
-    </g.Time>
+      </span>
+    </time>
   )
 }
 

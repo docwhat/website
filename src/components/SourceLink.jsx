@@ -1,7 +1,6 @@
 // @format
 // @flow
 import { StaticQuery, graphql } from 'gatsby'
-import { A, Code } from 'glamorous'
 import * as React from 'react'
 
 const SourceLink = () => (
@@ -18,13 +17,13 @@ const SourceLink = () => (
       }
     `}
     render={data => (
-      <A
+      <a
         href={`${data.site.siteMetadata.sourceUrl}/tree/${
           data.site.siteMetadata.version
         }`}
       >
-        <Code>{data.site.siteMetadata.commit}</Code>
-      </A>
+        <code>{data.site.siteMetadata.commit}</code>
+      </a>
     )}
   />
 )

@@ -1,7 +1,6 @@
 // @flow
 // @format
 import verticalRhythm from 'compass-vertical-rhythm'
-import { css } from 'glamor'
 import gray from 'gray-percentage'
 import Typography from 'typography'
 import {
@@ -9,7 +8,7 @@ import {
   TABLET_MEDIA_QUERY,
 } from 'typography-breakpoint-constants'
 
-import { heroColor, mellowColor } from '../utils/colors'
+import { heroColor } from '../utils/colors'
 
 // Details:
 // https://github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-github/src/index.js
@@ -187,46 +186,6 @@ const myTypography = new Typography({
     }
   },
 })
-
-// Links
-css.global(`body`, {
-  minWidth: `320px`,
-})
-
-css.global(`a`, {
-  color: mellowColor.saturationl(50).lightness(50),
-  textDecoration: `none`,
-})
-
-css.global(`a:hover,a:active`, {
-  textDecoration: `underline`,
-})
-
-css.global(`iframe`, {
-  width: `100%`,
-  height: `${(100 * 9) / 16}vw`,
-  maxWidth: `640px`,
-  maxHeight: `420px`,
-})
-
-css.global(`ins`, {
-  textDecoration: `none`,
-})
-
-css.global(`del`, {
-  textDecoration: `solid ${mellowColor} line-through`,
-  opacity: `0.6`,
-})
-
-css.global(`del > *`, {
-  textDecoration: `inherit`,
-})
-
-css.global(`svg`, {
-  verticalAlign: `text-top`,
-})
-
-require(`./prismjs.js`)
 
 // Hot reload myTypography in development.
 if (process.env.NODE_ENV !== `production`) {

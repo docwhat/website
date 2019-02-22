@@ -1,12 +1,11 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-import { A, H1, P } from 'glamorous'
+import Link from 'gatsby-link'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../../components/Layout'
-import Link from '../../components/Link'
 import PostCardList from '../../components/PostCardList'
 import SourceLink from '../../components/SourceLink'
 
@@ -17,15 +16,15 @@ const SiteIndex = (props: {
   <Layout location={props.location}>
     <>
       <Helmet title="Gatekeeper" />
-      <H1>Welcome to Gatekeeper!</H1>
+      <h1>Welcome to Gatekeeper!</h1>
 
-      <P>
-        <A href="https://amzn.to/2SgcHGK">Gatekeeper</A>: Behind-the-scenes for{' '}
+      <p>
+        <a href="https://amzn.to/2SgcHGK">Gatekeeper</a>: Behind-the-scenes for{' '}
         <Link to="/">docwhat.org</Link>.
-      </P>
-      <P>
+      </p>
+      <p>
         The current version is: <br /> <SourceLink />
-      </P>
+      </p>
       <PostCardList postcards={props.data.pies.edges} />
     </>
   </Layout>

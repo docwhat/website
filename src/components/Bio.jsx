@@ -1,6 +1,7 @@
 // @flow
 // @format
-import g from 'glamorous'
+import { ClassNames } from '@emotion/core'
+import Link from 'gatsby-link'
 import * as React from 'react'
 
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
@@ -15,31 +16,38 @@ import { ReactComponent as Key } from '../icons/key.svg'
 import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
 import { authorName, siteUrl } from '../utils/constants'
 import typography from '../utils/typography'
-import Link from './Link'
 import avatarPic from './avatar.png'
 
 const rhythm = typography.rhythm
 
-const Reference = (props: { children: React.Node }): React.Node => (
-  <g.Span
-    css={{
-      whiteSpace: `nowrap`,
-      margin: `0 0.2em`,
-      '& svg': {
-        fill: `#888`,
-      },
-    }}
-    className="u-url"
-  >
-    {props.children}
-  </g.Span>
+const Reference = (props: {
+  className?: string,
+  children: React.Node,
+}): React.Node => (
+  <ClassNames>
+    {({ css, cx }) => (
+      <span
+        className={cx(
+          'u-url',
+          css`
+            white-space: nowrap;
+            margin: 0 0.2em;
+            fill: #888;
+          `,
+          props.className
+        )}
+      >
+        {props.children}
+      </span>
+    )}
+  </ClassNames>
 )
 
 const Bio = () => (
   <div>
-    <g.Hr css={{ margin: `${rhythm(1)} 0` }} />
+    <hr css={{ margin: `${rhythm(1)} 0` }} />
 
-    <g.Div
+    <div
       css={{
         display: `flex`,
       }}
@@ -47,7 +55,7 @@ const Bio = () => (
       rel="me"
     >
       <a className="u-url" rel="me" href={siteUrl}>
-        <g.Img
+        <img
           className="u-photo p-nickname"
           src={avatarPic}
           alt="docwhat"
@@ -60,19 +68,23 @@ const Bio = () => (
           }}
         />
       </a>
-      <p>
+      <p
+        css={{
+          margin: `0 0.2em`,
+        }}
+      >
         The personal blog of{` `}
         <strong rel="me" className="p-name">
           {authorName}
         </strong>
         .
         <br />
-        <Reference>
+        <Reference rel="me" css={{ marginLeft: 0 }}>
           <GithubLogo />
           {` `}
           <a href="https://github.com/docwhat">docwhat</a>
         </Reference>
-        <Reference>
+        <Reference rel="me">
           <TwitterLogo />
           {` `}
           <a href="https://twitter.com/docwhat">docwhat</a>
@@ -89,13 +101,13 @@ const Bio = () => (
             <Gift />
           </Link>
         </Reference>
-        <Reference>
+        <Reference css={{ marginRight: 0 }}>
           <Link to="/pubkey" title="GPG Public Key">
             <Key />
           </Link>
         </Reference>
       </p>
-    </g.Div>
+    </div>
   </div>
 )
 

@@ -1,7 +1,7 @@
 // @flow
 // @format
 
-import g from 'glamorous'
+import styled from '@emotion/styled'
 
 import { heroColor } from '../utils/colors'
 
@@ -12,7 +12,7 @@ const colors = {
   gray: heroColor.saturationl(20),
 }
 
-const StyledButton = g.button(
+const StyledButton = styled.button(
   {
     fontSize: 16,
     margin: 10,

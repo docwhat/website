@@ -3,10 +3,10 @@
 // @ts-ignore
 // @ts-nocheck
 import { graphql } from 'gatsby'
+import Link from 'gatsby-link'
 import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
-import Link from './Link'
 
 const Title = ({
   to,

@@ -1,7 +1,6 @@
 // @format
 // @flow
 import { graphql } from 'gatsby'
-import { Div } from 'glamorous'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -14,12 +13,12 @@ const SiteIndex = (props: {
   data: { posts: { edges?: React.Node } },
 }) => (
   <Layout location={props.location}>
-    <Div>
+    <>
       <Helmet title="All Posts" />
       <h1>All posts</h1>
       <PostCardList postcards={props.data.posts.edges} />
       <Bio />
-    </Div>
+    </>
   </Layout>
 )
 

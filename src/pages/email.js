@@ -1,32 +1,32 @@
 // @format
 // @flow
+import styled from '@emotion/styled'
 import { withPrefix } from 'gatsby'
-import g from 'glamorous'
 import React from 'react'
 
 import Layout from '../components/Layout'
 import StyledButton from '../components/StyledButton'
 import { rhythm } from '../utils/typography'
 
-const labelCSS = {
-  display: `inline-block`,
-  flex: `0 0 25%`,
-}
+const MyLabel = styled.label`
+  display: inline-block;
+  flex: 0 0 25%;
+`
 
-const inputCSS = {
-  flex: `1 1 75%`,
-}
+const MyInput = styled.input`
+  flex: 1 1 75%;
+`
 
 const ContactForm = (props: { location: Location }) => (
   <Layout location={props.location}>
-    <g.Form
+    <form
       action="https://formspree.io/%64%6f%63%77%68%61%74%40%67%65%72%66%2e%6f%72%67"
       method="POST"
     >
       <input type="hidden" name="_subject" value="Contact Form" />
       <input name="_next" value={withPrefix(`/thanks`)} type="hidden" />
 
-      <g.Div>
+      <div>
         <p>
           I like to help people. If you want to reach me about something, feel
           free to use the form below.
@@ -45,46 +45,44 @@ const ContactForm = (props: { location: Location }) => (
             🙂
           </span>
         </p>
-      </g.Div>
+      </div>
 
-      <g.Div
-        display="flex"
-        flexDirection="row"
-        flexWrap="wrap"
+      <div
         css={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
           '& > *': {
             margin: `${rhythm(1 / 2)} 0`,
           },
         }}
       >
-        <g.Label css={labelCSS} htmlFor="name">
-          Name
-        </g.Label>
-        <g.Input css={inputCSS} name="name" id="name" type="text" />
+        <MyLabel htmlFor="name">Name</MyLabel>
+        <MyInput name="name" id="name" type="text" />
 
-        <g.Label css={labelCSS} htmlFor="_replyTo">
-          Email
-        </g.Label>
-        <g.Input css={inputCSS} name="_replyTo" id="_replyTo" type="email" />
-      </g.Div>
+        <MyLabel htmlFor="_replyTo">Email</MyLabel>
+        <MyInput name="_replyTo" id="_replyTo" type="email" />
+      </div>
 
-      <g.Label display="block" htmlFor="message">
+      <label css={{ display: 'block' }} htmlFor="message">
         Message
-      </g.Label>
-      <g.Textarea
+      </label>
+      <textarea
         name="message"
         id="message"
         placeholder="Your message"
-        width="100%"
-        height="30vw"
-        minHeight="10em"
         required
+        css={{
+          width: '100%',
+          height: '30vw',
+          minHeight: '10em',
+        }}
       />
 
-      <g.Div css={{ textAlign: `right` }}>
+      <div css={{ textAlign: `right` }}>
         <StyledButton>Send</StyledButton>
-      </g.Div>
-    </g.Form>
+      </div>
+    </form>
   </Layout>
 )
 

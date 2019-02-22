@@ -1,11 +1,11 @@
 // @flow
 // @format
 
-import { css } from 'glamor'
+import { css } from '@emotion/core'
+import Link from 'gatsby-link'
 import React from 'react'
 
 import { rhythm } from '../utils/typography'
-import Link from './Link'
 
 const theCss = css({
   fontSize: rhythm(1 / 2),
@@ -18,7 +18,7 @@ const theCss = css({
 })
 
 const TheNet = () => (
-  <Link className={theCss} to="/pi/">
+  <Link css={theCss} to="/pi/">
     π
   </Link>
 )

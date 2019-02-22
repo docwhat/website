@@ -3,14 +3,13 @@
 // @ts-ignore
 // @ts-nocheck
 import { graphql } from 'gatsby'
-import { H3 } from 'glamorous'
+import Link from 'gatsby-link'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import JsonLd from '../components/JsonLd'
 import Layout from '../components/Layout'
-import Link from '../components/Link'
 import PostCardList from '../components/PostCardList'
 import TheNet from '../components/TheNet'
 import { siteTitle } from '../utils/constants'
@@ -64,9 +63,9 @@ const SiteIndex = (props: {
         />
       </Helmet>
       <PostCardList postcards={props.data.posts.edges} />
-      <H3 css={{ textAlign: `right` }}>
+      <h3 css={{ textAlign: `right` }}>
         <Link to="/all">See all blog posts&hellip;</Link>
-      </H3>
+      </h3>
       <JsonLd data={jsonLdData} />
       <Bio />
       <TheNet />

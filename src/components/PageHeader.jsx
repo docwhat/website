@@ -1,5 +1,4 @@
 // @format
-import { Div, H1, Header } from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -12,19 +11,19 @@ const PageHeader = props => {
   let calendarIcon = ``
   if (ymdDate) {
     calendarIcon = (
-      <Div>
+      <>
         <CalendarPage
           monthName={monthName}
           dayName={dayName}
           dayOfMonth={dayOfMonth}
           ymdDate={ymdDate}
         />
-      </Div>
+      </>
     )
   }
 
   return (
-    <Header
+    <header
       css={{
         display: `flex`,
         border: `1.0px solid hsla(0, 0%, 0%, 0)`,
@@ -32,7 +31,7 @@ const PageHeader = props => {
         marginBottom: rhythm(1),
       }}
     >
-      <H1
+      <h1
         css={{
           marginTop: 0,
           marginRight: `auto`,
@@ -43,9 +42,9 @@ const PageHeader = props => {
         }}
       >
         {title}
-      </H1>
+      </h1>
       {calendarIcon}
-    </Header>
+    </header>
   )
 }
 
