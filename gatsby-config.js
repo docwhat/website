@@ -55,7 +55,7 @@ module.exports = {
             options: {
               // maxWidth: 590,
               linkImagesToOriginal: true,
-              backgroundColor: `white`,
+              backgroundColor: `transparent`,
               sizeByPixelDensity: true,
             },
           },
@@ -76,7 +76,7 @@ module.exports = {
             resolve: `gatsby-remark-embed-snippet`,
             options: {
               classPrefix: `language-`,
-              directory: `${__dirname}/src/examples/`,
+              directory: `${__dirname}/content/embed`,
             },
           },
           {
