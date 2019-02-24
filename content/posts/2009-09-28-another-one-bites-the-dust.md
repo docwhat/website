@@ -7,6 +7,7 @@ slug: '/another-one-bites-the-dust/'
 tags:
     - Pittsburgh
 title: Another one bites the dust
+archived: true
 ---
 
 [![The motorcycle that crashed in front of our

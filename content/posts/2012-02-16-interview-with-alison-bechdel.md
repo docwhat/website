@@ -9,6 +9,7 @@ tags:
     - comics
 template: post
 title: Interview with Alison Bechdel
+archived: true
 ---
 
 If you aren't into comic art, skip this...

@@ -6,6 +6,7 @@ template: post
 slug: /a-visit-from-sister-claire/
 tags:
     - family
+archived: true
 ---
 
 My little sister, [Claire](http://www.myspace.com/clairewillis/) came to

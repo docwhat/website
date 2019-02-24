@@ -6,6 +6,7 @@ template: post
 slug: /groove-scheme/
 tags:
     - music
+archived: true
 ---
 
 Okay, I just recently discovered

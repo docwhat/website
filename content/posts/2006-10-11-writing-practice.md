@@ -7,6 +7,7 @@ guid: http://docwhat.org/2006/10/writing-practice/
 slug: /writing-practice/
 tags:
     - Writing
+archived: true
 ---
 
 I started this blog for a

@@ -9,6 +9,7 @@ tags:
     - 'penguicon'
 title_tag:
     - 'What I did at Penguicon 2007'
+archived: true
 ---
 
 Robin and I enjoyed [Penguicon](http://penguicon.org/) 5.0 last weekend. We

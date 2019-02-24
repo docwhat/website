@@ -7,6 +7,7 @@ slug: '/unappealing-taxs-part-2/'
 tags:
     - Pittsburgh
     - home
+archived: true
 ---
 
 I just got the "Disposition of appeal from real estate assessment".  This is

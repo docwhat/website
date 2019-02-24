@@ -13,6 +13,7 @@ tags:
     - ISP
     - network
     - speakeasy
+archived: true
 ---
 
 As I

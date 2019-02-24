@@ -9,6 +9,7 @@ tags:
     - derp
     - microsoft
     - security
+archived: true
 ---
 
 Microsoft has finally figured out how to make opening a `.txt` file

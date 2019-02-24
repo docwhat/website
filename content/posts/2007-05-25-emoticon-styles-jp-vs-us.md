@@ -11,6 +11,7 @@ tags:
     - Science
 template: post
 title: 'Emoticon Styles (JP vs. US)'
+archived: true
 ---
 
 I found this interesting article about

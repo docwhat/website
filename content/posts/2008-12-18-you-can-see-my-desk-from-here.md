@@ -7,6 +7,7 @@ slug: /you-can-see-my-desk-from-here/
 tags:
     - photos
     - work
+archived: true
 ---
 
 Pop City did an article about my workplace and

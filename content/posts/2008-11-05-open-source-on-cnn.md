@@ -7,6 +7,7 @@ tags:
     - open source
     - politics
 title: Open Source on CNN
+archived: true
 ---
 
 <a href="https://www.amazon.com/gp/product/0596001088/ref=as_li_ss_il?ie=UTF8&sa-no-redirect=1&linkCode=li2&tag=thedocwha-20&linkId=43906e9b8313a17b3646498f5973a650" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0596001088&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thedocwha-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=thedocwha-20&l=li2&o=1&a=0596001088" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />

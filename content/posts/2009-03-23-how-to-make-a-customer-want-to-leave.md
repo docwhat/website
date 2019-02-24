@@ -15,6 +15,7 @@ tags:
     - ISP
     - network
     - speakeasy
+archived: true
 ---
 
 [<strong>UPDATE</strong>: <a

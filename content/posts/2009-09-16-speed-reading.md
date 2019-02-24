@@ -8,6 +8,7 @@ guid: http://docwhat.org/?p=452
 slug: /speed-reading/
 categories:
     - docwhat
+archived: true
 ---
 
 I've been interested in speed reading since I was a kid. I liked books a lot
