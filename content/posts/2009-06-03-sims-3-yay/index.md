@@ -14,7 +14,7 @@ title: 'Sims 3: Yay!'
 archived: true
 ---
 
-[![The Sims 3: Collector's Edition](https://ecx.images-amazon.com/images/I/51lonl7ZDdL._SL160_.jpg)](https://www.amazon.com/The-Sims-3-Collectors-Edition/dp/B001EM1DK4%3FSubscriptionId%3D02E5W5871AJF7PMMMS82%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001EM1DK4)
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=thedocwha-20&language=en_US&marketplace=amazon&region=US&placement=B00166N6SA&asins=B00166N6SA&linkId=2da77d78317dc33bf21144e10adf764c&show_border=true&link_opens_in_new_window=true"></iframe>
 
 The Sims 3 for the Mac (and I guess Windows too, but who uses that?) and the
 iPod Touch (and I guess the iPhone too, but who uses that?) was released
@@ -32,9 +32,7 @@ The install took forever and I wasn't amused to find an update waiting
 immediately but that's just a one-time cost; I'll live.
 
 The collector's edition came with a cute Plumbob USB drive. It's shiny and
-green: what's not to like? I put
-[photos](https://www.flickr.com/photos/docwhat/3589583760/) on flickr for the
-curious.
+green: what's not to like? ~~I put photos on flickr for the curious.~~
 
 The biggest change is the way the whole "buy downloadable content" is now
 integrated much more tightly into the product. It is very obvious that they
@@ -44,14 +42,13 @@ an exchange for user uploaded elements.
 I haven't figured out how to make custom elements, but I'm sure something will
 be revealed soon.
 
-[![Sims 3
-Plumbob](https://farm4.static.flickr.com/3325/3589583760_17fb0404a8_t.jpg)](https://www.flickr.com/photos/docwhat/3589583760/ 'Sims 3 USB Plumbob')
+![Sims 3
+Plumbob](3589583760_9e8607a6b1_o.jpg 'Sims 3 USB Plumbob')
 
 The copy protection requires the DVD to be in the tray at all times which I
 hate. I will probably download a no-cd hack when one becomes available. It's
-possible I won't need one since it runs in a
-[Transgaming](http://www.transgaming.com/) windows environment and mostly
-likely is not talking to the hardware directly.
+possible I won't need one since it runs in a _Transgaming_ windows environment
+and mostly likely is not talking to the hardware directly.
 
 As a Mac user the fallout from [SecureRom in SPORE](/spore-drm/) wasn't that
 big a deal, though some of the initial limitations were not nice.
@@ -70,5 +67,4 @@ lose your PDF we'll let you download it again for up to 2 years." What
 bullshit.
 
 -   [official site](http://www.thesims3.com/)
--   [on Amazon](http://www.amazon.com/The-Sims-3-Collectors-Edition/dp/B001EM1DK4%3FSubscriptionId%3D02E5W5871AJF7PMMMS82%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001EM1DK4)
--   [on iTunes](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=317904170&mt=8&uo=6)
+-   [on Amazon](https://amzn.to/2BPgXHi)

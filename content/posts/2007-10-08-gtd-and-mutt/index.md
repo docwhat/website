@@ -17,8 +17,8 @@ pretty interesting.
 
 Since [Mutt](http://mutt.org/) is my favorite email client, I spent a little
 playing with it and making changes. I'm using a different
-[editlabel](http://docwhat.org/files/2007/10/editlabel) script and my way
-doesn't require patching and recompiling mutt.
+[editlabel](/files/editlabel) script and my way doesn't require patching and
+recompiling mutt.
 
 Here are my `muttrc` changes:
 

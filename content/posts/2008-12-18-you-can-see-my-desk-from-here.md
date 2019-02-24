@@ -11,11 +11,9 @@ archived: true
 ---
 
 Pop City did an article about my workplace and
-[you can see my desk](http://www.popcitymedia.com/timnews/vivisimo1217.aspx)
-in the photo.
+[you can see my desk](# 'Broken Link') in the photo.
 
 BTW: This blog is unrelated to my workplace; none of my comments here should
 be construed to reflect opinion of my past, present or future employers.
-Though it is a cool place to work with [many](http://peterpawlowski.com/)
-[cool](http://drewcox.org/ 'Mr. Cox')
-[people](http://ekilon.livejournal.com/).
+Though it is a cool place to work with [many](# Peter Pawlowski)
+[cool](# 'Andrew Cox') [people](http://ekilon.livejournal.com/).

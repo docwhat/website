@@ -1,0 +1,74 @@
+#!/usr/bin/python -utWall
+
+import readline, sys, os
+
+def my_input(prompt, default=None, completions=None):
+    if default is not None:
+        def pre_input_hook():
+            readline.insert_text(str(default))
+            readline.redisplay()
+        readline.set_pre_input_hook(pre_input_hook)
+
+    if completions:
+        def complete(text, state):
+            if state == 0:
+                line = readline.get_line_buffer()
+                begidx = readline.get_begidx()
+                endidx = readline.get_endidx()
+                val[:] = completions(text, line, begidx, endidx)
+            return val[state]
+
+        old_completer = readline.get_completer()
+        readline.set_completer(complete)
+        val = []
+
+    return raw_input(prompt)
+
+def get_label(filename):
+    header = 'X-Label: '
+    fp = file(filename, 'r')
+    result = ''
+    for line in fp.readlines():
+        if line.startswith(header):
+            result = line[len(header):].strip()
+            break
+    fp.close()
+    return result
+
+def write_label(filename, label):
+    header = ['X-Label:']
+    tmpfile = filename + '.tmp'
+    if label:
+        header.append(' ')
+        header.append(label)
+    header = '"%s"' % ((''.join(header)).replace('"', '\"'))
+    cmd = ' '.join([ 'formail',
+                     '-I',
+                     header,
+                     '<',
+                     filename,
+                     '>',
+                     tmpfile,
+                     '&&',
+                     'mv',
+                     tmpfile,
+                     filename
+                     ])
+    os.system(cmd)
+
+if "__main__" == __name__:
+    infile = sys.argv[1]
+    histfile = os.path.join(os.environ["HOME"], ".mutt/.label_history")
+
+    if hasattr(readline, 'read_history_file'):
+        try:
+            readline.read_history_file(histfile)
+        except IOError:
+            pass
+
+    label = get_label(infile)
+    new_label = my_input('Label: ', label)
+
+    if new_label != label:
+        write_label(infile, new_label)
+    readline.write_history_file(histfile)

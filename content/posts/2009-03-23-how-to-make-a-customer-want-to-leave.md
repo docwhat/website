@@ -18,19 +18,17 @@ tags:
 archived: true
 ---
 
-[<strong>UPDATE</strong>: <a
-href="http://docwhat.org/2009/03/how-speakeasy-made-it-better">I have been
-made happy. Yay!</a>]
+\[<strong>UPDATE</strong>: I have been
+[made happy](/how-speakeasy-made-it-better). Yay!\]
 
 Do ISPs just dislike me?  I can't think why; I do virtually nothing
 outrageous.  I normally don't rack up much, if any, support costs.  What isn't
 there to like?
 
-Yet here I am, a little past a year since the
-<a href="http://docwhat.org/2008/02/verizon-sucks/">last time</a> I had ISP
-problems, and Speakeasy is giving me grief.
+Yet here I am, a little past a year since the [last time](/verizon-sucks/) I
+had ISP problems, and Speakeasy is giving me grief.
 
-<strong>The situation:</strong>
+**The situation:**
 
 I have Business 3.0/768 DSL with 99% uptime SLA with Speakeasy.  The "site" is
 the basement of my house.  I try not to say residence because it has a
@@ -50,11 +48,13 @@ times and he ran checks using his tools.
 Eventually he decides that something is wrong at the CO.  He says I have two
 choices:
 
-<ol>
-	<li>Have a modem sent out next day air tomorrow (will arrive Thursday). If the problem is the modem, I'll be charged $99. Otherwise I send it back free.</li>
-	<li>Have a tech show up tomorrow.  If the problem is the modem, I'll be charged $200 but I'll get the modem immediately.</li>
-</ol>
-I double and triple checked that the modem would be replaced, by the onsite tech, if the modem is the cause.  SpaceGhost affirms each time.
+1.  Have a modem sent out next day air tomorrow (will arrive Thursday). If the
+    problem is the modem, I'll be charged \$99. Otherwise I send it back free.
+2.  Have a tech show up tomorrow.  If the problem is the modem, I'll be
+    charged \$200 but I'll get the modem immediately.
+
+I double and triple checked that the modem would be replaced, by the onsite
+tech, if the modem is the cause.  SpaceGhost affirms each time.
 
 So, I figure I'd rather have it fixed tomorrow, for certain even if I have to
 pay \$200, than wait for a "maybe" fix on Thursday.
@@ -172,10 +172,10 @@ I ask to escalate it to his managers. He said a manager will call me back.
 And now we're up to the present.  I'm not holding my breath for the manager to
 call me back.
 
-I've already scoped out <a href="http://www.covad.com/">the competition</a>:
-they have essentially the same service for just a little less.  I'll have to
-talk to a person to get them to remove the "Professional Installation" fee; I
-don't need someone to install a modem.
+I've already scoped out [the competition](http://www.covad.com/); they have
+essentially the same service for just a little less.  I'll have to talk to a
+person to get them to remove the "Professional Installation" fee; I don't need
+someone to install a modem.
 
 I'll loose the tech-savvy support.  But I don't see what kind of choice I
 have; I won't accept paying for non-service.

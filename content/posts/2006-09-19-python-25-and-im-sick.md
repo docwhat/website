@@ -37,7 +37,3 @@ If you're interested, I can describe the interesting things I have been
 coughing up... No? Later maybe. :-)
 
 Ciao!
-
-**EDIT**: I see that Andrew Kuchling has done a better job than I would have
-done with his
-[What's New in Python 2.5](http://docs.python.org/whatsnew/whatsnew25.html).

@@ -58,8 +58,8 @@ more. I went and got some of the bits I didn't have already.
 Robin and I attended the wedding of two friends, Rob Landley and
 [Fade the Cat](http://fadethecat.livejournal.com/), which they squeezed in as
 a private panel between events they both wanted to go to. It was very nice and
-very unique. [Steve Jackson](http://www.io.com/~sj/) officiated the ceremony
-and we swapped entertaining stories about the newlyweds.
+very unique. Steve Jackson officiated the ceremony and we swapped entertaining
+stories about the newlyweds.
 
 Robin and I finally saw a [piece pack](http://www.piecepack.org/) in person
 and played a game called

@@ -28,7 +28,7 @@ government underground lab...
 -   Glass mixing bowl (big enough for everything). If you must use a metal
     bowl, use a stainless steel one. These are the same rules for beer making.
     [Bread](http://en.wikipedia.org/wiki/Bread) and
-    [beer](http://en.wikipedia.org/wiki/Beer%20are%20similar).
+    [beer](http://en.wikipedia.org/wiki/Beer) are similar.
 -   A 2 quart crock or glass jar. It must have a tight fitting lid. Again,
     this shouldn't be metal. Metal _will_ affect the output!
 
@@ -101,7 +101,6 @@ Tips for sourdough happiness:
 
 That's all; happy yeasting!
 
-Next time: What to do with that yeast (hint:
-[make bread](http://docwhat.org/2006/09/sourdough-bread/))!
+Next time: What to do with that yeast (hint: [make bread](/sourdough-bread/))!
 
 Ciao!

@@ -48,15 +48,5 @@ It was in the
 [Apple Script Language Guide](http://developer.apple.com/documentation/AppleScript/Conceptual/AppleScriptLangGuide).
 Excellent.
 
-Here are some tutorials aimed at AppleScript beginners (and I mean beginners;
-I'd much prefer a "Dive into" style tutorial):
-
-1.  [AppleScript Tutorial for Beginners I - Getting Started & Script Editor](http://macscripter.net/articles/415_0_10_0_C/)
-2.  [AppleScript Tutorial for Beginners II - Variables and Dictionaries](http://macscripter.net/articles/428_0_10_0_C/)
-3.  [AppleScript Tutorial for Beginners III - The Power of Lists](http://macscripter.net/articles/434_0_10_0_C/)
-4.  [AppleScript Tutorial for Beginners IV - Records & Repeats](http://macscripter.net/articles/445_0_10_0_C/)
-5.  [AppleScript Tutorial for Beginners V - Testing & Shorthand](http://macscripter.net/articles/452_0_10_0_C/)
-6.  [AppleScript Tutorial for Beginners VI - User Interaction](http://macscripter.net/articles/458_0_10_0_C/)
-7.  [AppleScript Tutorial for Beginners VII - Errors](http://macscripter.net/articles/463_0_10_0_C/)
-8.  [AppleScript Tutorial for Beginners VIII - Getting the Drop on Droplets](http://macscripter.net/articles/467_0_1_0_C/)
-9.  [AppleScript Tutorial for Beginners IX - Math](http://macscripter.net/articles/470_0_10_0_C/)
+~~Here are some tutorials aimed at AppleScript beginners (and I mean
+beginners; I'd much prefer a "Dive into" style tutorial):~~
