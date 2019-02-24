@@ -12,7 +12,10 @@ categories:
 tags:
     - aquamacs
     - emacs
+archived: true
 ---
+
+**Warning**: _Marmalade_ has not been updated since 2014 and seems to be dead.
 
 A quick and easy way to packages up-and-running in Aquamacs is to use
 [Marmalade](http://marmalade-repo.org/). Marmalade is a package manager. It'll
@@ -40,14 +43,14 @@ $ wget http://repo.or.cz/w/emacs.git/blob_plain/1a0a666f941c99882093d7bd08ced150
 Next edit <code>~/Library/Preferences/Aquamacs Emacs/Preferences.el</code> and
 add these lines:
 
-```clojure
+```elisp
 (require 'package)
 ;; Marmalade
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 ;; The original ELPA archive still has some useful
 ;; stuff.
-;; (add-to-list 'package-archives<br />
+;; (add-to-list 'package-archives
 ;;              '("elpa" . "http://tromey.com/elpa/"))
 (package-initialize)
 ```
@@ -70,9 +73,7 @@ After you install a package, you may need to add the appropriate
 
 Either way, you can use this to install ECB (Use `ecb_snap` for Aquamacs 2.3a
 and add `(require 'ecb)` to the end of your `Preferences.el`). This is easier
-than
-[my previous article](http://docwhat.org/2010/08/cedet-ecb-for-aquamacs/).
-Cool!
+than [my previous article](/cedet-ecb-for-aquamacs/). Cool!
 
 ## Closing Notes
 

@@ -40,9 +40,8 @@ multiple times to support different browsers. As well as grid support via
 I also took the opportunity to manage my wordpress site via
 [Rake](http://rake.rubyforge.org/) and [Capistrano](http://capify.org/).
 Normally, I'd blog about how I did it, but capifying my wordpress blog was
-harder than I would have hoped. You can view my
-[Capfile](http://git.gerf.org/?p=docwhat-web.git;a=blob;f=Capfile;h=ce036449d46a9f7ac6d4c28c12370d09496e43d3;hb=1e0d76b0983e784389a5ab23a89c06284246a46d)
-if you want, but you may need a handful of aspirin.
+harder than I would have hoped. You can view my `Capfile` if you want, but you
+may need a handful of aspirin.
 
 I also made my theme compatible with mobile devices. Previously I used
 [WPTouch](http://wordpress.org/extend/pl). I wasn't very fond of it because it

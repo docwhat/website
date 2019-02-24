@@ -13,7 +13,7 @@ tags:
     - vim
 ---
 
-I finally figured out all the reasons why [Vim](http://www.vim.org/) keeps
+I finally figured out all the reasons why [Vim](https://www.vim.org/) keeps
 crashing on me. I started collecting info in
 [OS X Vim with Ruby crashes](/os-x-vim-with-ruby-crashes/) but there were
 still crashes happening.
@@ -97,8 +97,8 @@ There has to be a better way to handle this. I'm unclear how `vim` is loading
 the ruby interpreter, but I suspect that ruby just isn't designed right to
 allow this work well.
 
-I opened [bug 17313](https://github.com/mxcl/homebrew/issues/17313) with
-[Homebrew](http://brew.sh/), but the more I think about this the more I think
-it is a Vim and Ruby problem.
+I opened [bug 17313](https://github.com/Homebrew/legacy-homebrew/issues/17313)
+with [Homebrew](http://brew.sh/), but the more I think about this the more I
+think it is a Vim and Ruby problem.
 
 Ciao!

@@ -18,7 +18,7 @@ I've seen some solutions that embed a JavaScript editor into a textarea on
 demand. Generally, I don't like them. They are re-inventing a wheel.
 Especially since I like my particular flavor of wheel,
 [Emacs](http://emacswiki.org/), though I have no problem with
-[other](http://vim.org/) flavors.
+[other](https://www.vim.org/) flavors.
 
 So when I discovered the [Firefox](http://mozilla.com/) extension
 [MozEx](http://mozex.mozdev.org/) I was a very happy hacker indeed. But as

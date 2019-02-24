@@ -30,8 +30,8 @@ fact, it was the same code.
 "Huh", I thought, "I must've _borrowed_ this from the same `.vimrc` earlier"
 
 I double checked the URL of the `.vimrc` I was _borrowing_ code from... and it
-was mine. On
-[GitHub](https://raw.githubusercontent.com/docwhat/homedir-vim/master/vimrc/.vimrc).
+was
+[my `.vimrc`](https://github.com/docwhat/homedir-vim/blob/5297202e882f77096757b8bd529df387cae06dee/vimrc/.vimrc).
 
 ---
 

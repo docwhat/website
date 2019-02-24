@@ -11,17 +11,17 @@ tags:
     - vim
 ---
 
-On my OS X systems, [Vim](http://www.vim.org) and
-[MacVim](https://code.google.com/p/macvim/) has been crashing a lot. The main
-symptom is that anything using
-[Omni completion](http://vim.wikia.com/wiki/Omni_completion), such as
+On my OS X systems, [Vim](https://www.vim.org) and
+[MacVim](https://github.com/macvim-dev/macvim) has been crashing a lot. The
+main symptom is that anything using
+[Omni completion](https://vim.fandom.com/wiki/Omni_completion), such as
 [NeoComplCache](https://github.com/Shougo/neocomplcache), would try to use the
 built in Ruby and cause vim to die with `Vim: Caught deadly signal SEGV`.
 
 It turns out that this is due to vim loading ruby modules/libraries not
 compatible with the system Ruby.
 
-I have [RVM](http://rvm.io) installed on my system and what was happening is
+I have [RVM](https://rvm.io/) installed on my system and what was happening is
 that:
 
 -   RVM sets the `GEM_PATH` and `GEM_HOME`.
@@ -38,9 +38,8 @@ This is deliberate, because I want certain performance behaviors, etc.
 
 Anyway, the solution is simple enough.
 
-If you got your Vim and MacVim through
-[HomeBrew](http://mxcl.github.com/homebrew/) (and really, you should), then
-just add this to your `~/.zshrc`:
+If you got your Vim and MacVim through [HomeBrew](https://brew.sh) (and
+really, you should), then just add this to your `~/.zshrc`:
 
 ```zsh
 for i in /usr/local/opt/vim/bin/*(N) /usr/local/opt/macvim/bin/*(N); do

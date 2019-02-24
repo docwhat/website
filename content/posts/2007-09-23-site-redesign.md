@@ -36,8 +36,8 @@ Sandbox but I also looked through a lot of the
 Even though Sandbox itself has excellent markup, there were still things that
 I wanted to customize and Sandbox doesn't have any markup customization
 available to it. So I wrote a simple tool to do
-[insert and replace](http://hg.gerf.org/docwhat.web/file/theme/bin/insert) and
-used that to make changes to Sandbox.
+[insert and replace](# 'Broken Link') and used that to make changes to
+Sandbox.
 
 I also wrote a bunch of makefiles, in the style of
 "[Recursive Make Considered Harmful](http://miller.emu.id.au/pmiller/books/rmch/)"

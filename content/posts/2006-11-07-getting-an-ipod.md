@@ -11,6 +11,7 @@ tags:
     - sony
     - Technology
     - toy
+archived: true
 ---
 
 Let's face it: Current digital players suck.
@@ -57,9 +58,9 @@ is nice. It supports Ogg Vorbis out of the box. It's a little pricey. None are
 as big as I really want (60gig+). And I really want to play with a device
 before I buy it; iRiver only has a few, usually older, models available in
 stores. At the Apple store, I can play with an iPod and I have friends that
-have them. Heck, my [wife](http://labrat.gerf.org/) has one! But there is no
-Linux support. It's supposed to work, but I really don't want my digital
-player to turn into an embedded development project. I just want it to work.
+have them. Heck, my wife has one! But there is no Linux support. It's supposed
+to work, but I really don't want my digital player to turn into an embedded
+development project. I just want it to work.
 
 Then there are things like Sony's players and Microsoft's
 [Zune](http://www.defectivebydesign.org/topic/zune), which both are

@@ -29,7 +29,7 @@ In case you want this rule for yourself, here you go:
 iptables -A INPUT -s 65.55.208.0/24 -j DROP
 ```
 
-I checked on gerf.org and discovered that it was having trouble. A crew of at
+I checked on my site and discovered that it was having trouble. A crew of at
 least 20 bots (ip addresses 65.55.208.180 through 199 inclusive) were
 requesting urls at about 1 a second.
 

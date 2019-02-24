@@ -34,9 +34,9 @@ A year ago, I did this customization by hand and pretty much forgot about.
 Since then, Aquamacs has gone through several iterations.
 
 The latest, 1.6, didn't like my preference settings. Since I keep all my
-customizations (normally) in [homedir](http://trac.gerf.org/homedir) I didn't
-think twice about blowing away my `~/Library/Preferences/Aquamacs Emacs/`
-directory.
+customizations (normally) in [homedir](https://github.com/docwhat/homedir) I
+didn't think twice about blowing away my
+`~/Library/Preferences/Aquamacs Emacs/` directory.
 
 Whups! This broke all my command keys!
 
