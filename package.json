@@ -22,8 +22,8 @@
     "develop": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby develop",
     "lint": "eslint '**/*.{js,jsx}' && prettier-eslint --list-different '**/*.{js,jsx}'",
     "lint:fix": "prettier-eslint --write '**/*.{js,jsx}'",
-    "markdown:lint": "prettier-eslint --list-different 'content/**/*.md'",
-    "markdown:lint:fix": "prettier-eslint --write 'content/**/*.md'",
+    "markdown:lint": "prettier --list-different 'content/**/*.md'",
+    "markdown:lint:fix": "prettier --write 'content/**/*.md'",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
