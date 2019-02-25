@@ -34,11 +34,6 @@ export default SiteIndex
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        version
-      }
-    }
     pies: allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { sourceName: { eq: "pies" } } }
