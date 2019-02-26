@@ -131,7 +131,11 @@ module.exports = {
                 limit: 100000,
                 sort: { order: DESC, fields: [fields___date] },
                 filter: {
-                  fields: { sourceName: { in: ["pages", "posts"] } }
+                  fields: {
+                    sourceName: { in: ["pages", "posts"] }
+                    draft: { eq: false }
+                    archived: { eq: false }
+                  }
                   frontmatter: {
                     test: { ne: true }
                   }
