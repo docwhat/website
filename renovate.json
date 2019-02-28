@@ -3,7 +3,7 @@
         "config:base",
         "default:automergeMinor",
         "group:all",
-        "schedule:monthly",
+        "schedule:daily",
         ":maintainLockFilesMonthly"
     ],
     "timezone": "America/New_York",
