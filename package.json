@@ -109,7 +109,7 @@
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "eslint": "5.14.1",
+    "eslint": "5.15.0",
     "eslint-config-prettier": "4.1.0",
     "eslint-config-standard": "12.0.0",
     "eslint-plugin-flowtype": "3.4.2",
@@ -125,10 +125,10 @@
     "husky": "1.3.1",
     "inquirer": "6.2.2",
     "inquirer-datepicker-prompt": "0.4.2",
-    "lint-staged": "8.1.4",
+    "lint-staged": "8.1.5",
     "prettier": "1.16.4",
     "prettier-eslint-cli": "4.7.1",
-    "sort-package-json": "1.19.0"
+    "sort-package-json": "1.20.0"
   },
   "jshintConfig": {
     "esversion": 6,
