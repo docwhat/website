@@ -57,7 +57,7 @@
     "@emotion/styled": "^10.0.7",
     "@svgr/webpack": "4.1.0",
     "bluebird": "3.5.3",
-    "caniuse-db": "1.0.30000939",
+    "caniuse-db": "1.0.30000940",
     "chalk": "2.4.2",
     "color": "3.1.0",
     "compass-vertical-rhythm": "1.4.5",
@@ -128,7 +128,7 @@
     "lint-staged": "8.1.5",
     "prettier": "1.16.4",
     "prettier-eslint-cli": "4.7.1",
-    "sort-package-json": "1.20.0"
+    "sort-package-json": "1.21.0"
   },
   "jshintConfig": {
     "esversion": 6,

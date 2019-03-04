@@ -3031,10 +3031,10 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@1.0.30000939:
-  version "1.0.30000939"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000939.tgz#8cb54a9868fe040fbf2e2441408c68b7008912e8"
-  integrity sha512-nB5tLf3hOs+biXl1lhKjHRgNC0J1I7H52h/t1FP7qxARKKwpB0z+P/JewJLYAlxCBP/q7rxJzQzHHrQMl0viKg==
+caniuse-db@1.0.30000940:
+  version "1.0.30000940"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000940.tgz#3c000526cb5e127f93efb39e9d922c3943c7d64e"
+  integrity sha512-JUnonxq+uuKoiP/p9fGSvS0PJxlTix87Uo8v+vwVtziNCneEQKaKH+n+g3TUVqakuidFVfJR/ywqyxCnMV3Y/Q==
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000921:
   version "1.0.30000923"
@@ -12666,10 +12666,10 @@ sort-object-keys@^1.1.2:
   resolved "https://registry.yarnpkg.com/sort-object-keys/-/sort-object-keys-1.1.2.tgz#d3a6c48dc2ac97e6bc94367696e03f6d09d37952"
   integrity sha1-06bEjcKsl+a8lDZ2luA/bQnTeVI=
 
-sort-package-json@1.20.0:
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-1.20.0.tgz#b2407ac5e7d0b4ed01a66c99b9ab9dd1b505c7ed"
-  integrity sha512-xrclPt/C0hiMPUBEshjWJ4dcqCqP1RcZMI2VsUqPe5f4V39Lach4xITARMH3H0WnrO/T5LeqYVocCWRg6YoWfw==
+sort-package-json@1.21.0:
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-1.21.0.tgz#9501273da130693b4dd1ebe68882d1d289119546"
+  integrity sha512-G920kGKROov3kS32jnmf03YolcGTkdONKbOv+Hi1Db7D9lBXhNU5aNMZCE0j/hfDqd/zmPVmpSiuhSOt3Lv+4A==
   dependencies:
     detect-indent "^5.0.0"
     sort-object-keys "^1.1.2"
