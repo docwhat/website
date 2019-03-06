@@ -44,23 +44,39 @@ const onCreateNode = async ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: `date`,
-      value: calculateDate(node, getNode, sourceName),
+      value: calculateDate(node, getNode),
     })
   }
 
   return node
 }
 
-const calculateTitle = (node, getNode) =>
-  node.frontmatter.title ||
-  getNode(node.parent)
-    .name.replace(/.*\/([^/]+)$/, '$1')
+const calculateTitle = (node, getNode) => {
+  if (node.frontmatter.title) {
+    return node.frontmatter.title
+  }
+
+  const relPath = createFilePath({
+    node,
+    getNode,
+    basePath: `content/${node.fields.sourceName}`,
+  })
+
+  const protoTitle = relPath
+    .replace(/.*\/([^/]+)\/?$/, '$1')
     .replace(/[\d]{4}-[\d]{2}-[\d]{2}-/, '')
+    .replace(/-+/g, ' ')
+    .replace(/^\w.*/, function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+    })
+
+  return protoTitle
+}
 
 /**
  * Calculates the date for a post based on frontmatter and filename.
  */
-const calculateDate = (node, getNode, sourceName) => {
+const calculateDate = (node, getNode) => {
   if (node.frontmatter.date) {
     return node.frontmatter.date
   }
@@ -68,7 +84,7 @@ const calculateDate = (node, getNode, sourceName) => {
   const relPath = createFilePath({
     node,
     getNode,
-    basePath: `content/${sourceName}`,
+    basePath: `content/${node.fields.sourceName}`,
   })
 
   const hasDateInPath = relPath.match(/^\/?([\d]{4}-[\d]{2}-[\d]{2})/)
