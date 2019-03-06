@@ -18,8 +18,7 @@ const onPostBuild = async ({ graphql }) => {
         filter: {
           fields: {
             sourceName: { eq: "posts" }
-            draft: { eq: false }
-            archived: { eq: false }
+            hide: { eq: true }
           }
         }
       ) {

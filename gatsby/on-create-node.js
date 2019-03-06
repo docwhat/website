@@ -9,6 +9,8 @@ const onCreateNode = async ({ node, actions, getNode }) => {
     return {}
   }
 
+  const isProduction = process.env.NODE_ENV === 'production'
+
   const { createNodeField } = actions
   const sourceName = node.fields.sourceName
 
@@ -39,6 +41,11 @@ const onCreateNode = async ({ node, actions, getNode }) => {
       name: `draft`,
       value: draft,
     })
+    createNodeField({
+      node,
+      name: `hide`,
+      value: isProduction && (archived || draft),
+    })
   }
   if (sourceName !== 'pages') {
     createNodeField({
@@ -66,9 +73,10 @@ const calculateTitle = (node, getNode) => {
     .replace(/.*\/([^/]+)\/?$/, '$1')
     .replace(/[\d]{4}-[\d]{2}-[\d]{2}-/, '')
     .replace(/-+/g, ' ')
-    .replace(/^\w.*/, function(txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-    })
+    .replace(
+      /^\w.*/,
+      txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+    )
 
   return protoTitle
 }
