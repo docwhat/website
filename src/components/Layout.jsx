@@ -4,6 +4,7 @@ import { Global } from '@emotion/core'
 import { withPrefix } from 'gatsby'
 import Link from 'gatsby-link'
 import * as React from 'react'
+import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
 import logoUrl from '../icons/logo.svg'
 import { heroColor } from '../utils/colors'
@@ -37,6 +38,12 @@ const Layout = (props: Props) => {
           .join(`, `),
         fontWeight: 700,
         textRendering: `optimizeLegibility`,
+        [MOBILE_MEDIA_QUERY]: {
+          ...scale(1.0),
+          borderBottomWidth: rhythm(1 / 2),
+          marginBottom: rhythm(1.5),
+          textAlign: 'center',
+        },
       }}
     >
       <Link
