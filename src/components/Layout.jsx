@@ -53,7 +53,8 @@ const Layout = (props: Props) => {
           css={{
             height: '1em',
             width: '1em',
-            verticalAlign: 'text-top',
+            verticalAlign: 'text-bottom',
+            margin: 0,
           }}
         />
         {`docwhat's blog`}
