@@ -85,6 +85,11 @@ export const postQuery = graphql`
         slug
         title
       }
+      frontmatter {
+        banner {
+          unsplash
+        }
+      }
       wordCount {
         words
       }

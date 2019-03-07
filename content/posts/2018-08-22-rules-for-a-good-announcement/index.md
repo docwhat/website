@@ -3,11 +3,13 @@ title: Rules for a good announcement
 date: 2018-12-13
 draft: true
 banner:
-    url: 'rawpixel-783348-unsplash.jpg'
-    author:
-        name: 'rawpixel'
-        url: 'https://unsplash.com/photos/hzqDYxRSN14?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+    unsplash: 'hzqDYxRSN14'
 ---
+
+Unsplash items:
+
+-   <https://github.com/gatsbyjs/gatsby/tree/master/examples/using-gatsby-image>
+-   <https://www.gatsbyjs.org/packages/gatsby-source-unsplash/>
 
 ![](rawpixel-783348-unsplash.jpg)
 
