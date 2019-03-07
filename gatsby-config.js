@@ -110,7 +110,6 @@ module.exports = {
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-emotion`,
       options: {},
