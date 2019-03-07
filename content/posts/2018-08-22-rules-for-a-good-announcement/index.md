@@ -20,6 +20,8 @@ slack. These rules work for other digital mediums as well.
 To be clear; By announcement I mean notices saying there will be an outage or
 an upgrade, etc.
 
+<!-- more -->
+
 I have seen a lot announcements that are overly verbose and hard to
 understand.
 

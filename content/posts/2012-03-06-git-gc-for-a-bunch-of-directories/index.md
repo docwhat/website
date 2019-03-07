@@ -16,6 +16,8 @@ Every so often, you might want to run
 to keep your [`git`](http://git-scm.com/) repositories running fast. Here's an
 easy way to do that.
 
+<!-- more -->
+
 Assuming you have your git repositories in `~/projects`:
 
 ```bash

@@ -31,6 +31,8 @@ _"Whaaaaa? Bash has tracebacks?"_ I can hear you ask.
 
 Yup, it can.
 
+<!-- more -->
+
 Check out the gist below. It is both a demonstration of the traceback as well
 as a template; grab the bits between the "cut here" and paste it into your own
 program.

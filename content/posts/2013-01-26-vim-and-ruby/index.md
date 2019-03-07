@@ -20,6 +20,8 @@ still crashes happening.
 
 It's an interesting story. Grab a beer and pull up a chair...
 
+<!-- more -->
+
 So there turns out to be due to custom versions of
 [Ruby](http://www.ruby-lang.org/) that I use a lot, usually via
 [RVM](https://rvm.io/) (but not always).

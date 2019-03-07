@@ -16,6 +16,8 @@ He's a very practical guy. He'll get the job done quickly and efficiently.
 And, he'll answer any and all questions. Something that not all doctors do
 well. His staff is awesome and helpful as well.
 
+<!-- more -->
+
 I've been getting glasses from him for a while and the assistant mentioned
 daily wear contacts. So I made an appointment to try them out (when I last
 wore contacts, daily wear contacts had just come out and cost a fortune, now

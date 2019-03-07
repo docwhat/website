@@ -23,3 +23,5 @@ export const emphasisColor = Color.hsl([emphasisHue, saturation, lightness])
 
 const deemphasisHue = 264
 export const deemphasisColor = Color.hsl([deemphasisHue, saturation, lightness])
+
+export const lightBackground = Color.rgb(255, 255, 255)

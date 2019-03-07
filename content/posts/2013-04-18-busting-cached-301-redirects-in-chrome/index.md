@@ -19,6 +19,8 @@ the 301 and you make a mistake...
 There is no obvious place in chrome to refresh that cache, but there is a
 nifty trick.
 
+<!-- more -->
+
 Go to the URL:
 
     view-source:http://cached-url/

@@ -12,8 +12,9 @@ I just switched my (rather limited) JavaScript from
 [YUI](http://developer.yahoo.com/yui) to [jQuery](http://jquery.com/).
 
 jQuery took a little (a couple hours) to learn how to write something close to
-idiomatic code. My new code is much much smaller and easier to
-read.<!-- more -->
+idiomatic code. My new code is much much smaller and easier to read.
+
+<!-- more -->
 
 Why did I switch away from YUI you might ask?
 

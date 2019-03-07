@@ -6,7 +6,8 @@ import { graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import * as React from 'react'
 
-import { rhythm } from '../utils/typography'
+import { lightBackground } from '../utils/colors.js'
+import { rhythm } from '../utils/typography.js'
 import ReadMore from './ReadMore.jsx'
 
 const Title = ({
@@ -69,6 +70,8 @@ const PostCard = ({
     <div
       css={{
         position: 'relative',
+        verticalAlign: 'top',
+        minHeight: rhythm(4),
         ':before': {
           content: "''",
           width: '100%',
@@ -76,7 +79,9 @@ const PostCard = ({
           position: 'absolute',
           left: 0,
           bottom: 0,
-          background: `linear-gradient(transparent ${rhythm(2)} , white)`,
+          background: `linear-gradient(transparent ${rhythm(
+            2
+          )} , ${lightBackground})`,
         },
       }}
       dangerouslySetInnerHTML={{ __html: excerpt }}
@@ -94,6 +99,6 @@ export const query = graphql`
       title
       date(formatString: "MMMM DD YYYY")
     }
-    excerpt(format: HTML, pruneLength: 280)
+    excerpt(format: HTML, pruneLength: 300)
   }
 `

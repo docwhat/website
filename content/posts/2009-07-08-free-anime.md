@@ -15,12 +15,13 @@ tags:
 archived: true
 ---
 
-<a href="http://funimation.com/video/">Funimation</a> – an importer of
-Japanese <a href="http://en.wikipedia.org/wiki/Anime">anime</a> – is making
-their stuff available on the web in <a href="http://hulu.com/">hulu</a> style.
-W00T!
+[Funimation](http://funimation.com/video/) -- an importer of Japanese
+[anime](http://en.wikipedia.org/wiki/Anime) -- is making their stuff available
+on the web in [hulu](http://hulu.com/) style. W00T!
 
 They have some good stuff there: Slayers, Techi Muyo - Ryo Ohki, and Pani Poni
 Dash.
+
+<!-- more -->
 
 Ciao!

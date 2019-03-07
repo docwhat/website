@@ -1,7 +1,7 @@
 ---
 date: 2009-08-07T17:14:53+00:00
 id: '429'
-slug: '/bobby-mcferrin-messes-with-your-mind'
+slug: '/bobby-mcferrin-messes-with-your-mind/'
 tags:
     - music
     - science
@@ -16,6 +16,8 @@ things out from existing information, all without <em>thinking</em> about it.
 And it's some good music.
 
 All at the same time!
+
+<!-- more -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ne6tB2KiZuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

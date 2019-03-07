@@ -13,6 +13,8 @@ Are you having trouble with SSL on El Capitan (OS X 10.11)?
 
 Me too.
 
+<!-- more -->
+
 Here are the things I know about it right now:
 
 1.  OS X's OpenSSL is ancient (0.9.8-ish).

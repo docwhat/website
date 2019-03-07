@@ -20,6 +20,8 @@ comic artist. I loved her autobiographical book
 [_Fun Home_](http://amzn.to/2FZvzHn). The story was engaging and the art was
 so enjoyable to look at.
 
+<!-- more -->
+
 In the video she is working on her next book,
 [_Are You My Mother?_](http://amzn.to/2Ixrxo1) a follow up to to _Fun Home_.
 She is being interviewed by an English professor, Hillary Chute, from the

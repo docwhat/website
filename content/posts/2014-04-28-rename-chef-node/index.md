@@ -20,6 +20,8 @@ In my network, all hosts have the same domain name. However, we
 Therefore I wanted to rename the nodes. With some experimentation, I figured
 it out.
 
+<!-- more -->
+
 ## Example
 
 Let's say I have a node called `george.example.com` but I want to change the

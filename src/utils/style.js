@@ -7,13 +7,16 @@ import {
   deemphasisColor,
   emphasisColor,
   heroColor,
+  lightBackground,
   mellowColor,
 } from './colors'
 
 const baseColor = deemphasisColor.saturationl(5.5).lightness(21.6)
 
 const globalCss = css({
-  // Links
+  html: {
+    backgroundColor: lightBackground,
+  },
   body: {
     minWidth: '320px',
   },

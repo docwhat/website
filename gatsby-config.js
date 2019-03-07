@@ -53,9 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        // // Commented due to bug
-        // // https://github.com/gatsbyjs/gatsby/issues/4459
-        // excerpt_separator: `<!-- more -->`,
+        excerpt_separator: `<!-- more -->`,
         plugins: [
           {
             resolve: `gatsby-remark-images`,
