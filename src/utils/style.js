@@ -2,6 +2,7 @@
 // @format
 import { css } from '@emotion/core'
 
+import { rhythm } from '../utils/typography'
 import {
   deemphasisColor,
   emphasisColor,
@@ -73,7 +74,7 @@ const globalCss = css({
 
   /* Code blocks */
   "pre[class*='language-']": {
-    padding: '1em',
+    padding: rhythm(1 / 2),
     overflow: 'auto',
     backgroundColor: deemphasisColor
       .saturationl(29)
@@ -85,6 +86,7 @@ const globalCss = css({
     wordSpacing: 'normal',
     wordBreak: 'normal',
     wordWrap: 'normal',
+    minHeight: '2em',
   },
 
   /* Inline code */
