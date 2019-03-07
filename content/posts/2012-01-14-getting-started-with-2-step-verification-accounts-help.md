@@ -19,8 +19,6 @@ If you use any Google services (GMail, GTalk, etc.) and you care even a little
 bit about the data in that account, then you should turn on
 [2-step](http://bit.ly/w81zSc) verification.
 
-<!-- more -->
-
 If you need a story to explain why you need this, the check out this story by
 James Follow as he recounts
 [how his wife's account was hacked](http://bit.ly/zC1LdH) (This is an article

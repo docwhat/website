@@ -19,8 +19,6 @@ for future use. If you have any suggestions or recommendations, I'd appreciate
 it. I'm also looking for someone to install them (and remove the existing
 ones) in the Pittsburgh, PA area.
 
-<!-- more -->
-
 I'm probably looking to add a ductless AC system (my house is old with no
 central air) at the same time, since I don't want to put in nice windows and
 re-install my window-mounted AC units (assuming I could make them work in

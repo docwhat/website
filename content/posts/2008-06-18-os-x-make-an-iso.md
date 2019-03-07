@@ -18,8 +18,6 @@ You can use `Disk Utility` to create ISO images in Mac OS X:
 I found this handy hint on the Internet as well. To convert a `.dmg` file, you
 can use `hdiutil` to convert it!
 
-<!-- more -->
-
 ```bash
 hdiutil convert original.dmg -format UDTO -o newisoimage.cdr
 ```

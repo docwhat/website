@@ -18,5 +18,3 @@ Here's a "Daily WTF" about the Tandem computers. The comments are fun, too:
 Ciao!
 
 P.S. Yes, I'm having fun with the "Press This" feature in Wordpress 2.6.
-
-<!-- more -->

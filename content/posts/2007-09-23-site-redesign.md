@@ -15,7 +15,7 @@ even more changes in the way the unseen back-end parts have changed.
 Previously, I had a modified copy of the default WP 2.x theme (which is based
 on Kubric theme). It was reasonable markup, but I spent a lot of time
 modifying the classes and adding containers to hang my CSS off of. In
-addition, tracking the changes to the default theme was a pain.<!-- more -->
+addition, tracking the changes to the default theme was a pain.
 
 As I read through [CSS Mastery](https://amzn.to/2I3YKXd) I realized that there
 were significantly better ways to do the markup that would allow even more

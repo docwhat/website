@@ -20,8 +20,7 @@ write about one of the people that I can really recommend; Cathy Ferguson our
 broker. Not sure, though.
 
 We wanted to know about our mortgage options before we started looking at
-houses. We knew what we wanted in most ways, just not in money
-terms.<!-- more -->
+houses. We knew what we wanted in most ways, just not in money terms.
 
 First off, we tried going to our local bank. The guy we talked to was very ...
 unprofessional. It's not that we wanted a guy dressed in an impeccable suit,

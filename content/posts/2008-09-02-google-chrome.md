@@ -18,8 +18,6 @@ created a comic book,
 [Scott McCloud](http://www.scottmccloud.com/) (author of
 [_Zot!_](https://amzn.to/2DRHzoY)).
 
-<!-- more -->
-
 I'm not sure what I think.
 
 On the one hand I feel that browsers do need an overhaul.  When they crash

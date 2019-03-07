@@ -21,8 +21,6 @@ Burnette.  So far it's been decent.  You can get
 special code.  I bought the PDF and paper book for less than Barnes and Nobels
 is selling it down the street.  Good deal, I think.
 
-<!-- more -->
-
 The hardest part is that so much is alien.  I only ever coded for the Palm
 (version 2 and 3).  The life cycle is no problem; it makes perfect sense.  But
 things like Java and Eclipse...well, I've never used them before.

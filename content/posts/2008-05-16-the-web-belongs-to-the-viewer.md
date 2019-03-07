@@ -16,8 +16,6 @@ This video is a perfect example of this (3 minutes, 30 seconds):
 
 <iframe src="https://www.youtube.com/embed/8hghpuxCHTc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<!-- more -->
-
 The viewer has tools like
 [user css](http://www.mozilla.org/unix/customizing.html#usercss),
 [greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/748),

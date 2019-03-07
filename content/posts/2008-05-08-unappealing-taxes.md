@@ -26,7 +26,7 @@ this automatically when a house is sold.  They have a formula that helps them
 figure out whether to appeal or not, but basically, at the core, the heart of
 the matter is... they want more money.
 
-My job was to fight the appeal.<!-- more -->
+My job was to fight the appeal.
 
 Quick description of property taxes in Allegheny County: Taxes are based on
 what your property would probably have been worth in January of 2002.  Since

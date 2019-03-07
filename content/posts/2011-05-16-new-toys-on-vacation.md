@@ -35,8 +35,6 @@ Fortunately, the other half of the handle prevented it from shutting
 completely and I didn't have anything valuable in the way. The Leatherman was
 an attractive idea, but a lousy product. I've long since stopped carrying it.
 
-<!-- more -->
-
 Now <a href="http://www.swissarmy.com/">Victorinox</a> has the awesome
 <a href="http://www.amazon.com/gp/product/B000FNIL8K/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B000FNIL8K">SwissTool
 Spirit Plus Ratchet</a>, which is what the Leatherman should have been to

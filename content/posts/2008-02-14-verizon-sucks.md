@@ -24,7 +24,7 @@ residential support the moment it knows who I am. I have been told this is
 because the phone number I was given for my DSL (which is a dry loop; it has
 no phone service, just DSL) used to belong to a residential customer and the
 system is confused. I was told they would fix this when I signed up in
-November.<!-- more -->
+November.
 
 The guy I talk to checked a bunch of things and in the end said that while he
 could just barely detect a signal from my equipment. Which is odd because I'm

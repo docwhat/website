@@ -22,7 +22,7 @@ link only to discover that the link is something stupid? Such as:
 javascript:window.open(‘http://someurl/’);
 ```
 
-<!-- more -->The underlying HTML for this looks like so:
+The underlying HTML for this looks like so:
 
 ```html
 You should click on this:

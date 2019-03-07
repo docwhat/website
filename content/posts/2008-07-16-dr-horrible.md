@@ -11,7 +11,7 @@ archived: true
 
 For those that are fans of [Joss Whedon](http://whedonesque.com/), he has
 started releasing his mini/limited-time/videopod/series,
-"[Dr. Horrible's sing-along blog](http://drhorrible.com/)".<!-- more -->
+"[Dr. Horrible's sing-along blog](http://drhorrible.com/)".
 
 It stars Neil Patrick Harris, Nathan Fillion, and Felicia Day. Neil Patrick
 Harris was

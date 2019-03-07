@@ -24,8 +24,6 @@ Their choices are either violate the
 is still illegal even with Walmart's blessing and a waste of time and quality)
 or lose their music.
 
-<!-- more -->
-
 There are other costs to buying DRM'd music;  check out these resources:
 
 -   [Defective By Design](http://www.defectivebydesign.org/)

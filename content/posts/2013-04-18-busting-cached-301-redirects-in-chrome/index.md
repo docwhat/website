@@ -19,8 +19,6 @@ the 301 and you make a mistake...
 There is no obvious place in chrome to refresh that cache, but there is a
 nifty trick.
 
-<!-- more -->
-
 Go to the URL:
 
     view-source:http://cached-url/
@@ -28,8 +26,6 @@ Go to the URL:
 This causes Chrome to recheck the page and will update any cached 301 rules.
 
 Ciao!
-
-<!-- more -->
 
 Additional Links:
 

@@ -22,8 +22,6 @@ easier. I still love Emacs, though. One of the things I've been waiting for
 has been mark-and-select (a.k.a. control-space in Emacs). I haven't seen it
 yet, but then again, I'm only starting to play with TM2.
 
-<!-- more -->
-
 This is just a post to place all the helpful links, posts, etc. into one place
 so I can stop leaving open tabs in my browser (and so you can see them too).
 

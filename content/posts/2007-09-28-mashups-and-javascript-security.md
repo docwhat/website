@@ -19,7 +19,7 @@ and of JavaScript as a whole.
 He proposes a solution involving what he calls _vats_; a self contained
 JavaScript interpreter with limited communication to the page. The JavaScript
 in the page would be the only trusted code running and the code in the various
-vats would not be trusted.<!-- more -->
+vats would not be trusted.
 
 He mentioned there should be an interface such that the user would be prompted
 with intelligent (and decidable) questions, such as "Do you want to give web

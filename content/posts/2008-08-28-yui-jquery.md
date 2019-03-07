@@ -14,8 +14,6 @@ I just switched my (rather limited) JavaScript from
 jQuery took a little (a couple hours) to learn how to write something close to
 idiomatic code. My new code is much much smaller and easier to read.
 
-<!-- more -->
-
 Why did I switch away from YUI you might ask?
 
 A couple reasons:

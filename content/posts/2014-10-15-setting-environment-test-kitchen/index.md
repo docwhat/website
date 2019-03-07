@@ -19,8 +19,6 @@ You can do with by changing your `.kitchen.yml` file. In my example, I'll show
 it at the root, but they can be set on a per-suite level as well, which is
 handy to test different environments.
 
-<!-- more -->
-
 For chef-solo:
 
 ```yaml

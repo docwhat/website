@@ -27,7 +27,8 @@ it here; any formatting errors are mine._
 >
 > <cite>Sun Tsu, The Art of War</cite>
 
-<!-- more -->The Republican party is not just the party of "no", it's the party of "stupid".
+The Republican party is not just the party of "no", it's the party of
+"stupid".
 
 You can trace the "party of stupid" trend back to Ronald Regan, an
 Altzheimer's patient who Dave Barry described as "napping towards glory". But

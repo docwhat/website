@@ -18,8 +18,6 @@ main symptom is that anything using
 [NeoComplCache](https://github.com/Shougo/neocomplcache), would try to use the
 built in Ruby and cause vim to die with `Vim: Caught deadly signal SEGV`.
 
-<!-- more -->
-
 It turns out that this is due to vim loading ruby modules/libraries not
 compatible with the system Ruby.
 

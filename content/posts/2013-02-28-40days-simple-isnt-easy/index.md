@@ -15,8 +15,6 @@ I wrote a simple one-page web application called
 [40days](http://docwhat.github.com/40days/). It shows you what the date is for
 40 days in the future. I say "simple" but simple isn't easy. It never is.
 
-<!-- more -->
-
 I wrote 40days because my orthodontist would schedule my appointments 40 days
 apart and it was a hassle for me and secretary to figure out what date that
 was.

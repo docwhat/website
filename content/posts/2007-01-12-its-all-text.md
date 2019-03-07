@@ -26,8 +26,6 @@ time went on I didn't like the way the extension was going. It was trying to
 solve a problem I didn't have; it wanted to add handlers for things like
 ssh://, etc. and I didn't need that. I needed an external editor!
 
-<!-- more -->
-
 When [Firefox](http://mozilla.com/) 2.0 came out, MozEx didn't work. I waited
 for an update and it didn't come out. Since my new job used a lot of editing
 stuff via web forms, I really really needed an editor. So I reached for

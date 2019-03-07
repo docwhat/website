@@ -17,8 +17,6 @@ And it's some good music.
 
 All at the same time!
 
-<!-- more -->
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ne6tB2KiZuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 There are

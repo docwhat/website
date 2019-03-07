@@ -16,8 +16,6 @@ old, but more importantly, it doesn't have all the bells and whistles enabled.
 Specifically, it doesn't come with ruby and python support compiled in. Which
 is a shame, because some plugins for Vim need it.
 
-<!-- more -->
-
 I've been playing with Vim since a couple months ago when I was pair
 programming with a co-worker, Shawn. Shawn prefers Vim and he is very good at
 it.

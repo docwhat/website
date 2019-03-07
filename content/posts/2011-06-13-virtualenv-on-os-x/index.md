@@ -16,7 +16,7 @@ So I decided to try to install
 python's version of Wayne E. Seguin's RVM (Ruby Version Manager).
 
 I've tried installing virtualenv/wrapper twice before and failed miserably.
-But this time I decided to actually do it.<!-- more -->
+But this time I decided to actually do it.
 
 Some quick background: I've been a very active python programmer up to and
 including 2.5 series. I've implemented large python-based systems at several

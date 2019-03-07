@@ -22,8 +22,6 @@ DropBox stores files in the "cloud", which isn't all that new.
 However, their software that pushes and pulls files automatically behind the
 scenes is the really cool part.
 
-<!-- more -->
-
 I've been using it in OS X and Linux and both systems are pretty similar: You
 have a folder called Dropbox. Anything you drop in it automatically is copied
 to their servers and then to your other systems.

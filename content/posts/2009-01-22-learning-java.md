@@ -19,7 +19,7 @@ have to use
 I've been looking around for something like
 [Dive Into Python](http://diveintopython.org/) but for Java.  So far, no luck.
 
-Any recommendations would be very welcome.<!-- more -->
+Any recommendations would be very welcome.
 
 A friend who does work on
 an [Eclipse](http://www.eclipse.org/) plugin/extension recommended the

@@ -19,7 +19,7 @@ music they performed.  The CD was well received and so they kept at it.
 Currently, they tour with a huge band performing their grooves around the
 world in giant concert-slash-parties.
 
-Here's where it gets interesting.<!-- more -->
+Here's where it gets interesting.
 
 When their contract expired with their record label, they declined to sign
 back up.  Instead, they signed up for a one year deal with

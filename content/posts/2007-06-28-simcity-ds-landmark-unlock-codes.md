@@ -18,8 +18,6 @@ missing bit of information, I went looking. I finally found it, but it took
 some work because none of the lists had the number next to them. So I compiled
 a complete list to share with anyone else who gets SimCity DS.
 
-<!-- more -->
-
 To enter one of these codes, from the main-screen pick Museum -\> Landmark
 Collection and press the password button.
 

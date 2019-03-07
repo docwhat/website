@@ -24,8 +24,6 @@ Even though I read Bill
 [Von Hagen](http://www.vonhagen.org/ "Bill von Hagen's web site")'s excellent
 [_Professional Xen Virtualization_](https://amzn.to/2pC2xnx).
 
-<!-- more -->
-
 Of course, it's not really his fault.  Xen 3.0 hit beta right before he
 published it;  The new networking stuff wasn't really in place yet and
 certainly wasn't ready for release yet.

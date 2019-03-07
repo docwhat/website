@@ -26,8 +26,6 @@ echo exists(l:variable_name) " => 1
 echo {l:variable_name} " => George
 ```
 
-<!-- more -->
-
 You can see how I used it my ftplugin files, such as `markdown.vim` on lines
 [line 2](https://github.com/docwhat/dotfiles/blob/1b255b2f92bcf70ba8a8737f79200cd77188d9a9/tag-neovim/config/nvim/ftplugin/markdown.vim#L2)
 and

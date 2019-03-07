@@ -19,4 +19,4 @@ of Allegheny County within thirty days.  I hope they don't since I believe
 this is a civil court and that means that I would have to actually know what
 the heck I was doing. Or hire someone who does.
 
-Ciao!<!-- more -->
+Ciao!

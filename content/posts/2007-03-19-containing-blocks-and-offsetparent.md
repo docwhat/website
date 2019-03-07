@@ -24,8 +24,6 @@ simplistic test cases, but it wouldn't work on gmail. I got it to work on
 [Wikipedia](http://wikipedia.com). Or if I got it to work on one of those,
 it'd fail to work on my simplistic test cases.
 
-<!-- more -->
-
 So I did what any sane developer would do after the umpteenth attempt to fix
 the same problem.
 

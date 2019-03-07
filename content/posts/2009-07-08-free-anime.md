@@ -22,6 +22,4 @@ on the web in [hulu](http://hulu.com/) style. W00T!
 They have some good stuff there: Slayers, Techi Muyo - Ryo Ohki, and Pani Poni
 Dash.
 
-<!-- more -->
-
 Ciao!

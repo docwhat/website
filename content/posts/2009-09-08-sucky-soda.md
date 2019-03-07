@@ -24,7 +24,7 @@ syrup, but that isn't all of it. I think the sodas in America are just
 horrible.
 
 And things like this video from <http://chow.com/> pretty much prove that the
-big US sodas are crap.<!-- more -->
+big US sodas are crap.
 
 Does anyone know of a store in Pittsburgh like
 [Soda Pop Stop](http://www.sodapopstop.com/)? Wandering around the store would
