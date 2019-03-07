@@ -2,7 +2,6 @@
 // @flow
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import BlogPostMicroData from '../components/BlogPostMicroData'
@@ -10,6 +9,7 @@ import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 // Components
 import PostPaginator from '../components/PostPaginator'
+import Seo from '../components/Seo.jsx'
 import { siteTitle, siteUrl } from '../utils/constants'
 
 const PostTemplate = (props: {
@@ -18,6 +18,7 @@ const PostTemplate = (props: {
       fields: any,
       wordCount: { words: number },
       html: string,
+      excerpt: string,
     },
   },
   pageContext: {
@@ -39,6 +40,7 @@ const PostTemplate = (props: {
         },
         wordCount: { words },
         html: pageHtml,
+        excerpt,
       },
     },
     pageContext: { newer, older },
@@ -50,7 +52,12 @@ const PostTemplate = (props: {
   return (
     <Layout location={props.location}>
       <article>
-        <Helmet title={helmetTitle} />
+        <Seo
+          title={pageTitle}
+          description={excerpt}
+          pathname={props.location.pathname}
+          article={true}
+        />
         <PageHeader
           title={pageTitle}
           monthName={monthName}
@@ -88,6 +95,7 @@ export const postQuery = graphql`
       wordCount {
         words
       }
+      excerpt(format: PLAIN)
       ...calendarPageDatesFragment
     }
   }

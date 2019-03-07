@@ -21,3 +21,6 @@ exports.siteUrl =
   typeof window === 'undefined' ? exports.authorUrl : window.location.origin
 
 exports.sourceUrl = 'https://github.com/docwhat/docwhat'
+
+exports.twitterUsername = '@docwhat'
+exports.githubUsername = 'docwhat'

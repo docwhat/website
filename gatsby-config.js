@@ -8,17 +8,24 @@ const {
   siteTitle,
   siteUrl,
   sourceUrl,
+  twitterUsername,
+  githubUsername,
 } = require(`./src/utils/constants.js`)
 
 module.exports = {
   siteMetadata: {
     title: siteTitle,
+    titleTemplate: '%s · docwhat',
     author: authorName,
     description: siteDescription,
     siteUrl,
+    url: siteUrl,
     version: process.env.SITE_VERSION, // This can only be calculated here in dev mode.
     commit: process.env.SITE_COMMIT, // This can only be calculated here in dev mode.
     sourceUrl,
+    image: '/favicon.png',
+    twitterUsername: twitterUsername,
+    githubUsername: githubUsername,
   },
   plugins: [
     'gatsby-plugin-flow',
