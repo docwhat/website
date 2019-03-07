@@ -11,8 +11,14 @@ const PostCardList = props => (
       display: `flex`,
       flexDirection: `row`,
       flexWrap: `wrap`,
+      maxWidth: rhythm(24 - 1), // from Layout
+      overflow: 'auto',
       margin: rhythm(-1 / 2),
-      '&>*': { margin: rhythm(1 / 2) },
+      '& > *': {
+        margin: rhythm(1 / 2),
+        width: rhythm(10),
+        maxWidth: rhythm(24 - 2),
+      },
     }}
   >
     {props.postcards.map(({ node }) => {

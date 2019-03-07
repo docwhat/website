@@ -7,6 +7,7 @@ import Link from 'gatsby-link'
 import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
+import ReadMore from './ReadMore.jsx'
 
 const Title = ({
   to,
@@ -58,20 +59,29 @@ const PostCard = ({
   slug: string,
   title: string,
 }): React.Node => (
-  <section css={overrideCss}>
+  <section
+    css={{
+      ...overrideCss,
+    }}
+  >
     <Title to={slug}>{title}</Title>
     <Meta date={date} />
-    <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-    <Link
+    <div
       css={{
-        display: `block`,
-        textAlign: `right`,
-        fontSize: rhythm(1 / 2),
+        position: 'relative',
+        ':before': {
+          content: "''",
+          width: '100%',
+          height: rhythm(4),
+          position: 'absolute',
+          left: 0,
+          bottom: 0,
+          background: `linear-gradient(transparent ${rhythm(2)} , white)`,
+        },
       }}
-      to={slug}
-    >
-      Read More&hellip;
-    </Link>
+      dangerouslySetInnerHTML={{ __html: excerpt }}
+    />
+    <ReadMore to={slug} />
   </section>
 )
 
@@ -84,6 +94,6 @@ export const query = graphql`
       title
       date(formatString: "MMMM DD YYYY")
     }
-    excerpt(format: PLAIN, pruneLength: 280)
+    excerpt(format: HTML, pruneLength: 280)
   }
 `
