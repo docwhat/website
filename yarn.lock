@@ -3031,10 +3031,10 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@1.0.30000941:
-  version "1.0.30000941"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000941.tgz#81ab7e49ecdd98c3c9a266b50205af9159ec60a6"
-  integrity sha512-xgDlJ1rEg4Zb1wqyiDw1Lwd2lIrG5El9vhHwURihFw8+Gk2PcyVh1RWaymOwFx6q49rMgVFqQAvLJmEU9RUUJg==
+caniuse-db@1.0.30000942:
+  version "1.0.30000942"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000942.tgz#e29e4c6afa3558edafe7c190c7f8bdd93fb7c486"
+  integrity sha512-HB+j2/Gywe+0JPtEMw8ioTi4ykIOco9nfSGspMGIBocqi4aMYZYALP992RmhVcUyB0oS5h8nrKGk9fCF9L1VXA==
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000921:
   version "1.0.30000923"
@@ -6453,10 +6453,10 @@ gatsby-transformer-yaml@2.1.8:
     lodash "^4.17.10"
     unist-util-select "^1.5.0"
 
-gatsby@2.1.23:
-  version "2.1.23"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.23.tgz#f228e54b728ce48bcee38457cff40dd5604db2ab"
-  integrity sha512-jS9X+hAOmITQl5S5Q91oeom0gG+UViKvzJXDWJjpOC6uUJwfXWXRkTNv9XZrIcNT4AZBDDBa70AYqUVLly8yZg==
+gatsby@2.1.24:
+  version "2.1.24"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.24.tgz#0522989cd4e0e6fc84e02fd2f97cf62cb8ef290b"
+  integrity sha512-S2ghkROyAxAPZv31y9SxPDh1uEcrvK9De157GWLj+Ljx+Iahdjl+gSh0pntmooik5BlEyYBhdBhD0MDliBMogg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
