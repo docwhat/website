@@ -1,5 +1,8 @@
 sudo: required
-language: ruby
+language: node_js
+node_js:
+  - "node"
+cache: yarn
 services:
   - docker
 env:
@@ -10,13 +13,11 @@ env:
     - secure: Tu9PBkOV1FOewm0PBxN1XfGnfvlnr2qysXIegiMcoQGrR6qcIGn2J2ZoXbcIdOpVU0xwty8eLQCPj/oamBUYX6D2h5fbu+puRs7UB81Y1t5RzNc6Y7XqjagGLni2HbDSltKdNDQydtA1Nuz1ugsZNm9G2+jc54En4SM5dgKBaxA=
 
 install: true nop
+before_script:
+  - sudo apt-get install -y pigz
+
 script:
-  - docker version
-  - script/build
-  - docker run --rm -p 8000:80 --name=cypress -d docwhat:local
-  - yarn wait-on http://localhost:8000
-  - yarn cypress:run:record --ci-build-id "${TRAVIS_BUILD_ID}"
-  - docker rm -f cypress
+  - yarn run travis
 
 deploy:
   provider: script

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -eEuo pipefail
+
+cd "$(dirname "$(dirname "$0")")"
+
+find public -type f \
+  -iname '*.gz' \
+  -print0 |
+  xargs -0 rm -f
+
+find public -type f \
+  \( \
+  -name '*.css' -o \
+  -name '*.html' -o \
+  -name '*.js' -o \
+  -name '*.json' -o \
+  -name '*.map' -o \
+  -name '*.svg' -o \
+  -name '*.txt' -o \
+  -name '*.xml' \
+  \) -print0 |
+  xargs -0 pigz --keep
+
+# EOF

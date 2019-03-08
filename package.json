@@ -19,6 +19,7 @@
   "main": "n/a",
   "scripts": {
     "build": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby build",
+    "clean": "rm -rf .cache public",
     "cypress:open": "cypress open",
     "cypress:run": "wait-on http://localhost:8000 && cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
@@ -27,13 +28,18 @@
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
     "develop": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby develop",
+    "docker:build": "yarn build && script/compress && script/build",
+    "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
+    "docker:stop": "docker container rm -f docwhat.org",
     "lint": "eslint '**/*.{js,jsx}' && prettier-eslint --list-different '**/*.{js,jsx}'",
     "lint:fix": "prettier-eslint --write '**/*.{js,jsx}'",
     "markdown:lint": "prettier --list-different 'content/**/*.md'",
     "markdown:lint:fix": "prettier --write 'content/**/*.md'",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "yarn install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run:record && yarn docker:stop"
   },
   "husky": {
     "hooks": {
