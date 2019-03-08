@@ -79,7 +79,7 @@ const PostCard = ({
           position: 'absolute',
           left: 0,
           bottom: 0,
-          background: `linear-gradient(transparent ${rhythm(
+          background: `linear-gradient(${lightBackground.fade(1)} ${rhythm(
             2
           )} , ${lightBackground})`,
         },
