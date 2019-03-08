@@ -8,6 +8,7 @@ exec docker run \
   --rm \
   --publish=8080:80 \
   --name="docwhat_org" \
+  "$@" \
   "${tag}"
 
 # EOF
