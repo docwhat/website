@@ -20,6 +20,7 @@ const Title = ({
   <h3
     css={{
       marginBottom: 0,
+      marginTop: rhythm(1 / 4),
     }}
   >
     <Link style={{ boxShadow: `none` }} to={to}>
@@ -72,8 +73,12 @@ const PostCard = ({
         position: 'relative',
         verticalAlign: 'top',
         minHeight: rhythm(4),
+        maxHeight: rhythm(10),
+        zIndex: 10,
+        overflow: 'hidden',
         ':before': {
           content: "''",
+          zIndex: 100,
           width: '100%',
           height: rhythm(4),
           position: 'absolute',
