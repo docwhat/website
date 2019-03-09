@@ -13,7 +13,9 @@ tags:
 I was wondering what the "Featured Images" box was when creating new posts and
 discovered that it's a handy way to add images to a post. It auto resizes,
 crops (if you want), and can make it just "work" in your layout. The only
-drawback I've seen is I can't use urls for the image.
+drawback I've seen is I can't use URLs for the image.
+
+<!-- more -->
 
 Unfortunately, the [Thematic](http://themeshaper.com/thematic/ 'Thematic')
 theme doesn't have out-of-the-box support for it.

@@ -1,18 +1,20 @@
 ---
 id: '194'
 title: 'SPORE DRM part 3'
-date: '2008-09-21T17:41:52+00:00'
-template: post
+date: '2008-09-21'
 slug: '/spore-drm-part-3/'
 tags:
     - 'DRM'
     - 'video games'
+archive: true
 ---
 
 It looks like EA decided to listen to their customers (and would-be
 customers):
 
 [Answering your feedback about Spore Online Accounts](http://forum.spore.com/jforum/posts/list/2897.page).
+
+<!-- more -->
 
 Short summary: They will add screen names, allowing 5 people to share the same
 account.

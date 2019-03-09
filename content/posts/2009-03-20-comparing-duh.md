@@ -1,11 +1,6 @@
 ---
-author: docwhat
-categories:
-    - docwhat
-date: '2009-03-20T17:37:39+00:00'
-guid: 'http://docwhat.org/?p=316'
+date: '2009-03-20'
 id: '316'
-template: post
 slug: '/comparing-duh/'
 tags:
     - computer
@@ -25,6 +20,8 @@ Go read Wil's post so I can properly compare magnitudes with Mr. Wheaton.
  I'll wait.
 
 Okay, pretty funny, right? But I think I can one up that.
+
+<!-- more -->
 
 The year was in the neighborhood of 1990.  I was about 17; a student still in
 high-school. I was taking some physics classes at

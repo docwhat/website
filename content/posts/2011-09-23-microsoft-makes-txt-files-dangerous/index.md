@@ -19,7 +19,11 @@ dangerous...
 > Microsoft Windows. The vulnerability could allow remote code execution if a
 > user opens a legitimate rich text format file (`.rtf`), **text file
 > (`.txt`)**, or Word document (`.doc`) that is located in the same network
-> directory as a specially crafted dynamic link library (DLL) file."
+> directory as a specially crafted dynamic link library (`DLL`) file."
+
+Emphasis is mine.
+
+<!-- more -->
 
 [Microsoft Security Bulletin MS11-071](https://technet.microsoft.com/en-us/security/bulletin/ms11-071)
 _(formatting is mine)_

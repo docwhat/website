@@ -18,6 +18,8 @@ According to babelfish, the author
 All Text! (I left out a `var` declaration) and is explaining the way to fix
 this. Neat!
 
+<!-- more -->
+
 I have fixed it, of course. But I can't help thinking how useful this would
 have been back when I worked at
 [TurboLinux](https://en.wikipedia.org/wiki/Turbolinux).

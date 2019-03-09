@@ -1,11 +1,6 @@
 ---
-author: docwhat
-categories:
-    - docwhat
-date: '2009-03-19T17:23:18+00:00'
-guid: 'http://docwhat.org/?p=313'
+date: '2009-03-19'
 id: '313'
-template: post
 slug: '/wifi-tethering-via-the-android/'
 tags:
     - Android
@@ -21,6 +16,8 @@ that an ideal device would be a portable wifi hotspot.
 
 Well, now one exists for the G1:
 [android-wifi-tether project](http://code.google.com/p/android-wifi-tether/).
+
+<!-- more -->
 
 Combined with my giant 2600mAh battery upgrade, my ADP1 can serve wifi to my
 iPod Touch and laptop anyplace I can get a data connection.

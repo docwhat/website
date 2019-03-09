@@ -9,9 +9,7 @@ tags:
 title: 'BBS the Documentary'
 ---
 
-[![_BBS the documentary_ on Amazon](https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0009NN6EA&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=thedocwha-20)](https://www.amazon.com/gp/product/B0009NN6EA/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0009NN6EA&linkCode=as2&tag=thedocwha-20&linkId=cdf8bd50174b0936e6dab91c28034377)
-
-<img src="https://ir-na.amazon-adsystem.com/e/ir?t=thedocwha-20&l=am2&o=1&a=B0009NN6EA" width="1" height="1" border="0" alt="Amazon bug" style="border:none !important; margin:0px !important;" />
+[![](//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0009NN6EA&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thedocwha-20&language=en_US)](https://www.amazon.com/gp/product/B0009NN6EA/ref=as_li_ss_il?ie=UTF8&sa-no-redirect=1&linkCode=li3&tag=thedocwha-20&linkId=ffcb5c2ce1792c0fbade5ca83f27c7dd&language=en_US)<img src="https://ir-na.amazon-adsystem.com/e/ir?t=thedocwha-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=B0009NN6EA" width="1" height="1" />
 
 There is this great documentary called
 "[BBS the documentary](http://www.bbsdocumentary.com/ "Link to the documentary's homepage")"
@@ -21,6 +19,8 @@ and it's 5 and 1/2 hours long with tons of extras.
 For those who don't remember BBSes: You would use a modem to dial up a
 computer system that had one or more modems and you could send messages (like
 email) and download files (like ftp) and play online games.
+
+<!-- more -->
 
 Why was this amazing?  There was no real internet, no email, and no web.  This
 was the way you talked to people and transfered files, etc.

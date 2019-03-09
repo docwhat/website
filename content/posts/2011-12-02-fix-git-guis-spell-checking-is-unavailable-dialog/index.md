@@ -1,8 +1,7 @@
 ---
 id: '791'
 title: Fix git-gui’s “Spell checking is unavailable” dialog
-date: 2011-12-02T11:23:16-05:00
-template: post
+date: 2011-12-02
 slug: /fix-git-guis-spell-checking-is-unavailable-dialog/
 image: /files/2011/12/missing-aspell-300x139-250x115.png
 tags:
@@ -19,6 +18,8 @@ If you use 'git gui' on the Mac, you may find that it repeatedly pops up a
 message about spell checking being unavailable. This happens when using the
 [MacPorts](http://www.macports.org/) or [Homebrew](http://brew.sh) versions of
 git.
+
+<!-- more -->
 
 The error message will say something like (the language that's missing might
 be different):

@@ -1,26 +1,23 @@
 ---
 id: '548'
 title: English in IIS thread
-date: 2010-06-14T17:44:27+00:00
+date: 2010-06-14
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=548
 slug: /english-in-iis-thread/
-openid_comments:
-    - 'a:0:{}'
-categories:
-    - docwhat
 tags:
     - english
     - grammar
     - iis
     - microsoft
     - spelling
+archive: true
 ---
 
 [Peter](http://peterpawlowski.com/) noticed today that IIS has an error in the
 English for one of its dialog boxes. We immediately searched for it and found
 this [bizarre thread](http://msdn.itags.org/iis/21911/).
+
+<!-- more -->
 
 It's hard to read it in its original form, so I have re-organized it here and
 saved it for posterity.

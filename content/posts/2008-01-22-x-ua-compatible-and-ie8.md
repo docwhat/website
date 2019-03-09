@@ -1,8 +1,7 @@
 ---
 id: '85'
 title: 'X-UA-Compatible and IE8'
-date: '2008-01-22T13:18:02+00:00'
-template: post
+date: '2008-01-22'
 slug: '/x-ua-compatible-and-ie8/'
 title_tag:
     - 'X-UA-Compatible and IE8: Extending the MS monopoly'
@@ -21,6 +20,8 @@ IE8.
 This is a flag for browsers to change how they render the web page, not by
 standards that are being followed, but by the browser that it is known to work
 with.
+
+<!-- more -->
 
 The header looks like this:
 

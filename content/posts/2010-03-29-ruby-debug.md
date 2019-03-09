@@ -1,19 +1,13 @@
 ---
 id: '526'
-title: Ruby Debugging
-date: 2010-03-29T17:29:39+00:00
-author: docwhat
-template: post
-guid: http://docwhat.org/?p=526
-slug: /ruby-debug/
+title: 'Ruby Debugging'
+date: 2010-03-29
+slug: '/ruby-debug/'
 enclosure:
     - |
         http://cardero.textdrive.com/~eventualbuddha/ruby-debug-1-basics.mov
         2901355
         video/quicktime
-
-categories:
-    - docwhat
 tags:
     - debugging
     - Ruby
@@ -22,6 +16,8 @@ tags:
 There is a ruby-debugger gem which is very handy for trouble shooting problems
 in a ruby script. The built in debugging is quite powerful and worth learning
 to use.
+
+<!-- more -->
 
 First off, install ruby-debug:
 

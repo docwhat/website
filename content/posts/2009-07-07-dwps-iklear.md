@@ -1,27 +1,21 @@
 ---
-author: docwhat
-categories:
-    - docwhat
-date: '2009-07-07T17:08:07+00:00'
-guid: 'http://docwhat.org/?p=403'
+date: 2009-07-07
 id: '403'
-template: post
 slug: '/dwps-iklear/'
 tags:
     - DWPS
 title: 'DWPS: iKlear'
 ---
 
-[![iKlear Complete Cleaning
-Kit](//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0023WU6OI&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thedocwha-20&language=en_US)](https://amzn.to/2txV8aH)
-
-<img src="https://ir-na.amazon-adsystem.com/e/ir?t=thedocwha-20&language=en_US&l=li2&o=1&a=B0023WU6OI" width="1" height="1" border="0" alt="Amazon bug" style="border:none !important; margin:0px !important;" />
+[![](//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0023WU6OI&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thedocwha-20&language=en_US)](https://www.amazon.com/gp/product/B0023WU6OI/ref=as_li_ss_il?ie=UTF8&sa-no-redirect=1&linkCode=li3&tag=thedocwha-20&linkId=d27395ef3452421dd977df2124ac3004&language=en_US)<img src="https://ir-na.amazon-adsystem.com/e/ir?t=thedocwha-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=B0023WU6OI" width="1" height="1" />
 
 A quick Doctor What Product Suggestion: The
 [iKlear Complete Cleaning Kit](https://amzn.to/2txV8aH) is great.
 
 I thought at first that it was a stupid overkill for the price; I mean it only
 has a few cloths and some cleaning solution.
+
+<!-- more -->
 
 But I really wanted the little cloth to protect the screen. I've seen how
 horrible MacBook screens can get from keyboard scum.

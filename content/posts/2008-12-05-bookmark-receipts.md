@@ -1,11 +1,11 @@
 ---
 id: '228'
 title: Bookmark Receipts
-date: 2008-12-05T13:27:40+00:00
-template: post
+date: 2008-12-05
 slug: /bookmark-receipts/
 title_tag:
     - 'Idea: Bookmark receipts'
+archive: true
 ---
 
 This is something that's been floating around in my head since I saw the tiny
@@ -13,6 +13,8 @@ little printer at the public library that they use to print out your receipt.
 
 The idea is simple: Print out your receipt (at libraries, bookstores, etc.) on
 card-stock in the shape of a bookmark.
+
+<!-- more -->
 
 This allows for a lot of room for customization; you can put logos on the back
 and corners, etc.

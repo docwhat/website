@@ -19,6 +19,8 @@ much grief. In addition, installing Java is a little more acceptable to a
 random group of people than installing Ruby (at the moment, it may change in
 the future).
 
+<!-- more -->
+
 Actually, I found two projects that make it much more likely I'll use JRuby
 instead of Java:
 

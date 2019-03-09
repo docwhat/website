@@ -1,13 +1,8 @@
 ---
 id: '386'
 title: IAT in LJ
-date: 2009-06-10T13:31:51+00:00
-author: docwhat
-template: post
-guid: http://docwhat.org/?p=386
+date: 2009-06-10
 slug: /iat-in-linux-journal/
-categories:
-    - docwhat
 tags:
     - howto
     - "It's All Text!"
@@ -15,16 +10,15 @@ tags:
 ---
 
 The Linux Journal's Associate Editor Mitch Frazier has done a
-<a href="http://www.linuxjournal.com/video/firefox-addon-its-all-text">one
-minute video on
-</a><em><a href="http://www.linuxjournal.com/video/firefox-addon-its-all-text">It's
-All
-Text!</a></em><a href="http://www.linuxjournal.com/video/firefox-addon-its-all-text">
-</a>that is really handy to show what IAT can do:
+[one minute video on](http://www.linuxjournal.com/video/firefox-addon-its-all-text)
+_[It's All Text!](http://www.linuxjournal.com/video/firefox-addon-its-all-text)_
+[](http://www.linuxjournal.com/video/firefox-addon-its-all-text) that is
+really handy to show what IAT can do:
 
-<object width="500" height="400" data="http://blip.tv/scripts/flash/showplayer.swf?enablejs=true&amp;feedurl=www.linuxjournal.com/rss&amp;file=http://blip.tv/rss/flash/2235438&amp;showplayerpath=http://blip.tv/scripts/flash/showplayer.swf" type="application/x-shockwave-flash"><param name="id" value="emfield_videocck_player_bliptv_1" /><param name="allowfullscreen" value="true" /><param name="quality" value="best" /><param name="src" value="http://blip.tv/scripts/flash/showplayer.swf?enablejs=true&amp;feedurl=www.linuxjournal.com/rss&amp;file=http://blip.tv/rss/flash/2235438&amp;showplayerpath=http://blip.tv/scripts/flash/showplayer.swf" /><param name="name" value="emfield_videocck_player_bliptv_1" /></object>
+`youtube:https://www.youtube.com/embed/-_wJnTBVe_8`
 
-Thanks to <a href="http://cad.cx/blog/">Colin</a> for pointing that out.
+<!-- more -->
 
-[<a href="http://www.linuxjournal.com/video/firefox-addon-its-all-text">Linux
-Journal</a>]
+Thanks to [Colin](http://cad.cx/blog/) for pointing that out.
+
+\[[Linux Journal](http://www.linuxjournal.com/video/firefox-addon-its-all-text)\]

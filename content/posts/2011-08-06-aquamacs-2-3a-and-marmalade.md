@@ -22,6 +22,8 @@ A quick and easy way to packages up-and-running in Aquamacs is to use
 fetch an elisp package for you, install it, and make sure it loads up again
 when you restart emacs.
 
+<!-- more -->
+
 Marmalade is sort of the next-gen version of [ELPA](http://tromey.com/elpa/),
 the Emacs Lisp Package Archive. Even better, it's the package manager (with
 some tweaks) used in Emacs 24 (which will become Aquamacs 2.4).

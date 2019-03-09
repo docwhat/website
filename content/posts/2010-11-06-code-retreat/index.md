@@ -1,7 +1,7 @@
 ---
 id: '631'
 title: Code Retreat
-date: 2010-11-06T21:52:20-04:00
+date: 2010-11-06
 template: post
 slug: /code-retreat/
 image: /files/2010/11/foo.png
@@ -20,6 +20,8 @@ writing code for
 [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 When the 45 minutes are up, you delete all your code, take a break, and do it
 again with a different partner.
+
+<!-- more -->
 
 I was skeptical but it was fun and interesting. We threw in the additional
 curve that we could use whatever language the pair wanted to do. Some examples

@@ -1,5 +1,5 @@
 ---
-date: '2010-08-30T17:20:37-04:00'
+date: 2010-08-30
 id: '574'
 image: '/files/2010/08/Emacs-ECB-250x232.png'
 slug: '/cedet-ecb-for-aquamacs/'
@@ -7,7 +7,6 @@ tags:
     - aquamacs
     - emacs
     - OS X
-template: post
 title: 'Setting up CEDET/ECB for Aquamacs'
 ---
 
@@ -20,6 +19,8 @@ title: 'Setting up CEDET/ECB for Aquamacs'
 > file for CEDET but beware the differences between CEDET shipped with Emacs
 > and the stand-alone version. When you get ECB, you need a version newer than
 > 2.40, which at this time means getting the CVS version.
+
+<!-- more -->
 
 The new 2.x series no longer requires the
 [Dvorak hack](/aquamacs-vs-dvorak-qwerty-layout) I posted about earlier (yay!)

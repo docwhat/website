@@ -14,7 +14,7 @@ control how the viewer will use the site.
 
 This video is a perfect example of this (3 minutes, 30 seconds):
 
-<iframe src="https://www.youtube.com/embed/8hghpuxCHTc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+`youtube:https://www.youtube.com/embed/8hghpuxCHTc`
 
 <!-- more -->
 

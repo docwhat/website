@@ -1,7 +1,7 @@
 ---
 id: '651'
 title: IAT 1.5
-date: 2010-12-08T17:37:38-05:00
+date: 2010-12-08
 template: post
 slug: /iat-1-5/
 image: /files/2010/12/11568.png
@@ -18,6 +18,8 @@ Assuming I made no mistakes, then it should appear shortly.
 The big changes are that it supports Firefox 4.0b7. In addition to that, I
 have fixed some of the problems with OS-X. In part because the ability to
 launch applications in Firefox is becoming more annoying with each release.
+
+<!-- more -->
 
 But not to worry! I'm working hard on IAT2.0. The next version will be broken
 into two parts: An editor server and the actual plugin.

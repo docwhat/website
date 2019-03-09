@@ -11,8 +11,6 @@ tags:
 archived: true
 ---
 
-<iframe src="https://www.youtube.com/embed/2kFGxH4wrs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 Robin (my awesome wife) came up with an idea for an iPhone app.
 
 We were watching [UHF](http://www.imdb.com/title/tt0098546/) and there is a
@@ -22,6 +20,10 @@ throwing them out the 3rd floor window. There was a pile poodles on the lawn
 of his apartment building.
 
 She cracked up.
+
+<!-- more -->
+
+`youtube:https://www.youtube.com/embed/2kFGxH4wrs4`
 
 After she recovered and picked herself off the floor, she said that I should
 make a "Teach Poodles to Fly" app. I haven't written an iPhone app yet, but

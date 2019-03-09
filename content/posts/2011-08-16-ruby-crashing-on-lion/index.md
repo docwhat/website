@@ -15,6 +15,8 @@ Apparently Ruby doesn't work well (or barely at all) with Lion and X Code 4.1
 In fact, it crashes with gusto when compiled with X Code 4.1... **UNLESS** you
 know the magic words!
 
+<!-- more -->
+
 I'm unclear how ruby 1.8.7 crashes and burns, but `1.9.2-p290` crashes with
 annoying (yet seemingly random) regularity. It looks like, at the minimum,
 threading is definitely having a problem with LLVM. You can test it out
@@ -60,5 +62,3 @@ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 Then I had to reinstall all the rubies I use and reset up any gemsets.
 
 I hope this helps someone.
-
-Ciao!

@@ -1,7 +1,6 @@
 ---
 date: '2007-06-20T20:12:01+00:00'
 id: '60'
-template: post
 slug: '/what-language-would-you-like-it-in/'
 tags:
     - "It's All Text!"
@@ -19,6 +18,8 @@ Their system automagically created a
 and it'll track changes as I upload them. They have mixed a lot of
 technologies to produce something pretty spiffy. I know how hard it is to mix
 this stuff and the fact it works well is amazing.
+
+<!-- more -->
 
 I submitted the translations because I'm just about ready to submit version
 1.0, probably in the next month. I tend to work on IAT in spurts because

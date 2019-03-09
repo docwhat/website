@@ -1,8 +1,7 @@
 ---
 id: '245'
-title: Aquamacs vs. Dvorak-Qwerty layout
-date: 2009-01-29T01:17:20+00:00
-template: post
+title: 'Aquamacs vs. Dvorak-Qwerty layout'
+date: 2009-01-29
 slug: /aquamacs-vs-dvorak-qwerty-layout/
 tags:
     - dvorak
@@ -18,6 +17,8 @@ keyboard layout (AKA DQ) and Aquamacs doesn't like the command key bindings
 that the DQ layout uses. DQ is dvorak except when you use the command key.
  Then it becomes QWERTY. This was invaluable when I first started using OS-X
 since it matched all the docs.
+
+<!-- more -->
 
 According to the [FAQ](http://www.emacswiki.org/emacs/AquamacsFAQ#toc6)
 Aquamacs cannot natively understand the command keys for this layout because

@@ -1,7 +1,7 @@
 ---
 id: '726'
-title: New Look
-date: 2011-06-19T16:15:12-04:00
+title: New Look (2)
+date: 2011-06-19
 template: post
 slug: /new-look-2/
 image: /files/2011/06/Screen-shot-2011-06-19-at-1.09.48-AM.png
@@ -18,6 +18,8 @@ wished I did differently, etc. and I want to play with new technologies like
 I had been using [Thematic](http://themeshaper.com/thematic/) which is very
 nice. It has good semantic markup as well as other nice features. But it isn't
 HTML5 and I wanted HTML5.
+
+<!-- more -->
 
 I tried several themes just to play around, and then found a theme that
 combined [boilerplate](http://aarontgrogg.com/boilerplate/), HTML5,

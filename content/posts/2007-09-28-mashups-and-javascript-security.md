@@ -35,7 +35,7 @@ The other thing he mentions is using
 vats and the servers. I think `JSONRequest` would be a vast improvement over
 [XMLHttpRequest](http://en.wikipedia.org/wiki/Xmlhttprequest), myself.
 
-<iframe src="https://www.youtube.com/embed/V13wmj88Zx8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+`youtube:https://www.youtube.com/embed/V13wmj88Zx8`
 
 via: [Ajaxian](http://ajaxian.com/archives/gears-and-the-mashup-problem)
 

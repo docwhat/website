@@ -14,13 +14,16 @@ archived: true
 ---
 
 [![Our new used 2006 Scion
-xB](https://farm4.static.flickr.com/3462/3398968942_fec485a118_m.jpg)](https://www.flickr.com/photos/docwhat/3398968942/ 'Our new used 2006 Scion xB')Robin
-and I bought ourselves a new car over the weekend: A 2006 Scion xB. It's boxy,
-white and cute.
+xB](https://farm4.static.flickr.com/3462/3398968942_fec485a118_m.jpg)](https://www.flickr.com/photos/docwhat/3398968942/ 'Our new used 2006 Scion xB')
+
+Robin and I bought ourselves a new car over the weekend: A 2006 Scion xB. It's
+boxy, white and cute.
 
 The thing we like the most is the amount of space present in the car. It's
 huge inside. The backseat has enough space to easily cross your legs without
 touching the seat in front. I could almost wear a top-hat in the car!
+
+<!-- more -->
 
 It's a used car. It had 19,000 miles when we bought it.  Our mechanic has
 checked it from top-to-bottom and said it looked good.

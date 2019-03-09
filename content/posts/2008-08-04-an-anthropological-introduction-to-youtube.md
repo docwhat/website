@@ -17,7 +17,7 @@ State University.
 
 I recommend watching it in its entirety.
 
-<iframe src="https://www.youtube.com/embed/TPAO-lZ4_hU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+`youtube:https://www.youtube.com/embed/TPAO-lZ4_hU`
 
 Duration: 1 hour
 

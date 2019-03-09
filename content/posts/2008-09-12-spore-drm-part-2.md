@@ -1,12 +1,12 @@
 ---
-date: '2008-09-12T12:23:54+00:00'
+date: '2008-09-12'
 id: '190'
-template: post
 slug: '/spore-drm-part-2/'
 tags:
     - DRM
     - 'video games'
 title: 'SPORE DRM on the Mac'
+archive: true
 ---
 
 Following up on my [previous article](/spore-drm), I did a little experiment
@@ -15,6 +15,8 @@ script to md5 sum all the files that I thought might be used to install a
 kernel module or a startup item.
 
 I then did the following:
+
+<!-- more -->
 
 1.  Ran the checksum script
 2.  Installed SPORE.

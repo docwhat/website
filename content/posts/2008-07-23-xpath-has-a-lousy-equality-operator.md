@@ -1,13 +1,13 @@
 ---
-date: '2008-07-23T17:19:54+00:00'
+date: '2008-07-23'
 id: '121'
-template: post
 slug: '/xpath-has-a-lousy-equality-operator/'
 tags:
     - programming
     - xpath
     - xslt
 title: 'XPath has a lousy equality operator'
+archive: true
 ---
 
 I just (re-)discovered this bit of stupidity in XPath/XSL. The equal operator
@@ -15,6 +15,8 @@ will demote node-sets, result-trees, etc. into to strings when compared with a
 string.
 
 Check out this example:
+
+<!-- more -->
 
 XML File:
 

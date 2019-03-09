@@ -1,22 +1,20 @@
 ---
 id: '310'
 title: My Site, the Yo-Yo
-date: 2009-03-18T22:37:59+00:00
-author: docwhat
-template: post
-guid: http://docwhat.org/?p=310
+date: 2009-03-18
 slug: /my-yo-yo-site/
-categories:
-    - docwhat
 tags:
     - Apache
     - Wordpress
+archive: true
 ---
 
 My site has bee having all kinds of fun the past week and a half.
 
 Starting last Monday night the network was down for 4 and half days. This was
 eventually resolved by Speakeasy.
+
+<!-- more -->
 
 It went down again yesterday.
 

@@ -1,11 +1,6 @@
 ---
-author: docwhat
-categories:
-    - docwhat
-date: '2006-09-06T23:15:30+00:00'
-guid: 'http://docwhat.org/2006/09/moving-to-a-blog/'
+date: '2006-09-06'
 id: '3'
-template: post
 slug: '/moving-to-a-blog/'
 title: Moving to a blog
 ---
@@ -20,6 +15,8 @@ server-side includes, and even Front Page.
 
 The problem is: I really don't want to have to manage the nuts and bolts of my
 site.
+
+<!-- more -->
 
 I occasionally have an idea or something I want to share with people. Then I
 get the urge to update my website. Unfortunately, this makes following through

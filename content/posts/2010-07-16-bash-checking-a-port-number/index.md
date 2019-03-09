@@ -1,8 +1,7 @@
 ---
 id: '563'
 title: 'bash: Checking a port number'
-date: 2010-07-16T17:23:06-04:00
-template: post
+date: 2010-07-16T
 slug: /bash-checking-a-port-number/
 tags:
     - bash
@@ -15,6 +14,8 @@ tags:
 Ever needed to check if a given port number is valid in bash? It's harder than
 it looks because if you accept any input from the user, you can't use
 `declare -i` since it spews errors and aborts functions with malformed input.
+
+<!-- more -->
 
 An example:
 

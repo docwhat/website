@@ -1,8 +1,7 @@
 ---
 id: '142'
 title: Xen Networking
-date: 2008-08-08T17:44:36+00:00
-template: post
+date: 2008-08-08
 slug: /xen-networking/
 tags:
     - technology
@@ -13,6 +12,8 @@ running in a `domU` on hardware that is massively more powerful than it used
 to be.  The original hardware (until about 3 years ago) was a 333Mhz box with
 20gigs of disk-space. Since then it has been running on newer hardware.
 However, the hardware was flakey and getting flakier.
+
+<!-- more -->
 
 So it became time to upgrade to some new hardware. Xen was a natural choice
 because I can remotely power off a `domU` and it allows me to move my print

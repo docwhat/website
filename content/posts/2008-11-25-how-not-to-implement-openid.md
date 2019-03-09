@@ -1,14 +1,14 @@
 ---
 id: '224'
 title: How not to implement OpenID
-date: 2008-11-25T17:35:29+00:00
-template: post
+date: 2008-11-25
 slug: /how-not-to-implement-openid/
 title_tag:
     - 'SourceForge: How not to implement OpenID'
 tags:
     - mybad
     - OpenID
+archive: true
 ---
 
 **UPDATE**: I was wrong! See below...

@@ -1,23 +1,19 @@
 ---
 id: '441'
 title: Nightly Chromium
-date: 2009-08-18T17:41:36+00:00
-author: docwhat
-template: post
-guid: http://docwhat.org/?p=441
+date: 2009-08-18
 slug: /nightly-chromium/
-openid_comments:
-    - 'a:1:{i:0;s:4:"7015";}'
-categories:
-    - docwhat
 tags:
     - Chromium
     - Google Chrome
+archive: true
 ---
 
 Interested in running the nightly builds of Chromium 4 for OS-X?
 
 Me too.
+
+<!-- more -->
 
 So I threw together a script to grab the latest nightly builds.
 

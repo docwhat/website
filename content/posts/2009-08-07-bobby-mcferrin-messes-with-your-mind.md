@@ -19,7 +19,7 @@ All at the same time!
 
 <!-- more -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ne6tB2KiZuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+`youtube:https://www.youtube.com/embed/ne6tB2KiZuk`
 
 There are
 [more videos](https://www.youtube.com/channel/UCShHFwKyhcDo3g7hr4f1R8A)

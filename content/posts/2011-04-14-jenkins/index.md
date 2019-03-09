@@ -1,5 +1,5 @@
 ---
-date: '2011-04-14T18:32:28-04:00'
+date: 2011-04-14
 id: '678'
 image: '/files/2011/04/Screen-shot-2011-04-14-at-1.08.16-PM-214x250.png'
 template: post
@@ -18,6 +18,8 @@ Jenkins describes itself as a continuous integration software, but it really
 is more. You can use Jenkins to build, test, and do
 [`cron`](http://en.wikipedia.org/wiki/Cron) jobs, etc. It's very powerful and
 really useful.
+
+<!-- more -->
 
 Not only is very useful, it is being developed and improved quickly. Bugs get
 fixed rapidly by a very motivated team of developers. Combined with its

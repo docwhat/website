@@ -1,8 +1,7 @@
 ---
 id: '64'
 title: WordPress anti-spam recipe
-date: 2007-08-18T16:30:06+00:00
-template: post
+date: 2007-08-18
 slug: /rename-wp-comment-post/
 tags:
     - spam
@@ -12,6 +11,8 @@ tags:
 Here's a simple recipe to cut down on comment spam in
 [WordPress](http://wordpress.org/). I assume you have basic understanding of
 Unix commands or can translate them to windows.
+
+<!-- more -->
 
 1.  Make a directory in the root of your WordPress file system called `post`.
 2.  Create a file in the directory called `index.php` with the following
