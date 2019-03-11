@@ -19,7 +19,7 @@
   "main": "n/a",
   "scripts": {
     "build": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby build",
-    "clean": "rm -rf .cache public",
+    "clean": "gatsby clean",
     "cypress:open": "cypress open",
     "cypress:run": "wait-on http://localhost:8000 && cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
