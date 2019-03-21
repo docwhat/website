@@ -1,11 +1,12 @@
 {
     "extends": [
         "config:base",
-        ":automergeMinor",
-        ":group:monorepos",
-        ":group:recommended",
+        "group:monorepos",
+        "group:recommended",
+        ":assignee(docwhat)",
         ":automergeLinters",
-        ":assignee(docwhat)"
+        ":automergeMinor",
+        ":maintainLockFilesWeekly"
     ],
     "timezone": "America/New_York"
 }
