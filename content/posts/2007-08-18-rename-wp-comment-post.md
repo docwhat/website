@@ -30,7 +30,7 @@ Unix commands or can translate them to windows.
     [RewriteRule](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html#rewriterule)
     to your ".htaccess" files to block "wp-comments-post.php":
 
-    ```apache
+    ```apacheconf
     RewriteRule ^/wp-comments-post.php - [F,L]
     ```
 
@@ -49,7 +49,7 @@ BTW: If you use the
 [Permalink-Redirect](http://fucoder.com/code/permalink-redirect/) plugin, then
 you can change that `RewriteRule` to:
 
-```apache
+```apacheconf
 RewriteRule ^/(wp-comments-post|wp-trackback).php - [F,L]
 ```
 

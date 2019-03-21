@@ -116,7 +116,7 @@ was in Homebrew. I looked all over and didn't find it.
 Fortunately, I got frustrated and tried uninstalling and re-installing python
 and sow this message at the end of the python install:
 
-```text
+```
 A "distutils.cfg" has been written, specifing the install-scripts folder as:
   /usr/local/share/python
 

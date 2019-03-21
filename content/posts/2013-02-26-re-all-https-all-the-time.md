@@ -34,7 +34,7 @@ well.
 
 So the complete rule would be:
 
-```apache
+```apacheconf
 UseCanonicalName on
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
