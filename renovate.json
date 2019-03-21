@@ -1,13 +1,4 @@
 {
-    "extends": [
-        "config:base",
-        "default:automergeMinor",
-        "group:all",
-        "schedule:daily"
-    ],
-    "timezone": "America/New_York",
-    "lockFileMaintenance": {
-        "extends": ["group:all"],
-        "commitMessageAction": "Update"
-    }
+    "extends": ["config:base", "default:automergeMinor"],
+    "timezone": "America/New_York"
 }
