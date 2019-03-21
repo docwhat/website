@@ -1,7 +1,7 @@
 ---
 id: '1093'
 title: 'vim - preserve your cursor and window state'
-date: 2012-06-22T12:12:05-04:00
+date: '2012-06-22'
 template: post
 slug: /vim-preserve-your-cursor-and-window-state/
 image: /files/2012/04/356023245659.png

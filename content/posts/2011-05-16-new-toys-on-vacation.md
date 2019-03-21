@@ -1,7 +1,7 @@
 ---
 id: '698'
 title: New Toys
-date: 2011-05-16T17:23:40-04:00
+date: '2011-05-16'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=698

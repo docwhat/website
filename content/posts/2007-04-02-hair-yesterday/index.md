@@ -1,7 +1,7 @@
 ---
 id: '45'
 title: Hair yesterday, gone today.
-date: 2007-04-02T22:09:35+00:00
+date: '2007-04-02'
 template: post
 slug: /hair-yesterday/
 tags:

@@ -1,7 +1,7 @@
 ---
 id: '207'
 title: 'November 4th: Vote!'
-date: '2008-11-04T15:10:29+00:00'
+date: '2008-11-04'
 template: post
 slug: '/november-4th-vote/'
 tags:

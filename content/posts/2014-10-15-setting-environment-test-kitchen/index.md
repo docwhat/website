@@ -1,7 +1,7 @@
 ---
 id: '1559'
 title: Setting your environment in test-kitchen
-date: 2014-10-15T16:36:48-04:00
+date: '2014-10-15'
 author: docwhat
 template: post
 slug: /setting-environment-test-kitchen/

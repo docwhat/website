@@ -1,5 +1,5 @@
 ---
-date: '2009-07-15T17:19:20+00:00'
+date: '2009-07-15'
 id: '415'
 template: post
 slug: '/dropbox/'

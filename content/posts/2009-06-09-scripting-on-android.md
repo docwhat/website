@@ -1,7 +1,7 @@
 ---
 id: '383'
 title: Scripting on Android
-date: 2009-06-09
+date: '2009-06-09'
 slug: /scripting-on-android/
 tags:
     - Android

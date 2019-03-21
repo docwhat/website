@@ -1,7 +1,7 @@
 ---
 id: '263'
 title: Groove Scheme
-date: 2009-02-28T15:16:39+00:00
+date: '2009-02-28'
 template: post
 slug: /groove-scheme/
 tags:

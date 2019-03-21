@@ -1,7 +1,7 @@
 ---
 id: '791'
 title: Fix git-gui’s “Spell checking is unavailable” dialog
-date: 2011-12-02
+date: '2011-12-02'
 slug: /fix-git-guis-spell-checking-is-unavailable-dialog/
 image: /files/2011/12/missing-aspell-300x139-250x115.png
 tags:

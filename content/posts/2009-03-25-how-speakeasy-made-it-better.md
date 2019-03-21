@@ -1,7 +1,7 @@
 ---
 id: '341'
 title: How speakeasy made it better
-date: 2009-03-25T12:05:57+00:00
+date: '2009-03-25'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=341

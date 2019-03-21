@@ -1,7 +1,7 @@
 ---
 id: '563'
 title: 'bash: Checking a port number'
-date: 2010-07-16T
+date: '2010-07-16'
 slug: /bash-checking-a-port-number/
 tags:
     - bash

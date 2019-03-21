@@ -1,7 +1,7 @@
 ---
 id: '475'
 title: Firefox Fix
-date: 2009-11-09
+date: '2009-11-09'
 slug: /firefox-fix/
 tags:
     - Firefox

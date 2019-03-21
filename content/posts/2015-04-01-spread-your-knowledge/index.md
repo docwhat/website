@@ -1,7 +1,7 @@
 ---
 id: '1603'
 title: Spread your knowledge
-date: 2015-04-01T12:25:49-04:00
+date: '2015-04-01'
 template: post
 slug: /spread-your-knowledge/
 image: /files/2015/04/share_knowledge-250x250.png

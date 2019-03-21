@@ -1,7 +1,7 @@
 ---
 id: '1239'
 title: 'Re: All https, all the time'
-date: 2013-02-26T08:02:12-05:00
+date: '2013-02-26'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=1239

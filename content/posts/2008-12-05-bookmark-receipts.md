@@ -1,10 +1,8 @@
 ---
 id: '228'
 title: Bookmark Receipts
-date: 2008-12-05
+date: '2008-12-05'
 slug: /bookmark-receipts/
-title_tag:
-    - 'Idea: Bookmark receipts'
 archive: true
 ---
 

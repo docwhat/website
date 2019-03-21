@@ -1,7 +1,7 @@
 ---
 id: '726'
 title: New Look (2)
-date: 2011-06-19
+date: '2011-06-19'
 template: post
 slug: /new-look-2/
 image: /files/2011/06/Screen-shot-2011-06-19-at-1.09.48-AM.png

@@ -1,7 +1,7 @@
 ---
 id: '409'
 title: Free Anime!
-date: 2009-07-08T17:17:12+00:00
+date: '2009-07-08'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=409

@@ -1,7 +1,7 @@
 ---
 id: '335'
 title: How to make a customer want to leave
-date: 2009-03-23T18:51:58+00:00
+date: '2009-03-23'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=335

@@ -1,10 +1,8 @@
 ---
 id: '224'
-title: How not to implement OpenID
-date: 2008-11-25
-slug: /how-not-to-implement-openid/
-title_tag:
-    - 'SourceForge: How not to implement OpenID'
+title: 'SourceForge: How not to implement OpenID'
+date: '2008-11-25'
+slug: '/how-not-to-implement-openid/'
 tags:
     - mybad
     - OpenID

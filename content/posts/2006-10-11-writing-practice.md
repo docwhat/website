@@ -1,7 +1,7 @@
 ---
 id: '28'
 title: Writing Practice
-date: 2006-10-11T10:13:40+00:00
+date: '2006-10-11'
 template: post
 guid: http://docwhat.org/2006/10/writing-practice/
 slug: /writing-practice/

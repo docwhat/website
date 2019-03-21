@@ -1,13 +1,9 @@
 ---
 id: '84'
-title: 'Cathy Ferguson'
-date: '2008-01-19T23:03:56+00:00'
+title: 'Cathy Ferguson: Mortgage Advisor'
+date: '2008-01-19'
 template: 'post'
 slug: '/cathy-ferguson/'
-title_tag:
-    - 'Cathy Ferguson: Mortgage Advisor'
-tags:
-    - home
 archived: true
 ---
 

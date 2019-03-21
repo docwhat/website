@@ -1,7 +1,7 @@
 ---
 id: '769'
 title: Undoing a rails generate
-date: 2011-09-08T11:29:58-04:00
+date: '2011-09-08'
 template: post
 slug: /undoing-a-rails-generate/
 image: /files/2011/09/rails.png

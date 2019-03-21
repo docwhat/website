@@ -1,7 +1,7 @@
 ---
 id: '310'
 title: My Site, the Yo-Yo
-date: 2009-03-18
+date: '2009-03-18'
 slug: /my-yo-yo-site/
 tags:
     - Apache

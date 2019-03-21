@@ -1,7 +1,7 @@
 ---
 id: '61'
 title: SimCity DS Landmark unlock codes
-date: 2007-06-28T15:52:39+00:00
+date: '2007-06-28'
 template: post
 slug: /simcity-ds-landmark-unlock-codes/
 tags:

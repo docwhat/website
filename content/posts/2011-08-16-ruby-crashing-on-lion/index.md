@@ -1,7 +1,7 @@
 ---
 id: '752'
 title: Ruby crashing on Lion
-date: 2011-08-16T18:01:02-04:00
+date: '2011-08-16'
 template: post
 slug: /ruby-crashing-on-lion/
 image: /files/2011/08/ruby.png

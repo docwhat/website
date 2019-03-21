@@ -1,5 +1,5 @@
 ---
-date: '2007-05-25T17:23:19+00:00'
+date: '2007-05-25'
 guid: 'http://docwhat.org/2007/05/emoticon-styles-jp-vs-us/'
 id: '56'
 slug: '/emoticon-styles-jp-vs-us/'

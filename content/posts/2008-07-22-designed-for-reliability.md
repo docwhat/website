@@ -1,7 +1,7 @@
 ---
 id: '119'
 title: 'Designed For Reliability'
-date: '2008-07-22T11:54:35+00:00'
+date: '2008-07-22'
 template: 'post'
 slug: '/designed-for-reliability/'
 tags:

@@ -1,7 +1,7 @@
 ---
 id: '1576'
 title: Chef, Puppet, Heat, Juju, Docker, etc.
-date: 2015-02-04T13:38:51-05:00
+date: '2015-02-04'
 author: docwhat
 template: post
 guid: https://docwhat.org/?p=1576

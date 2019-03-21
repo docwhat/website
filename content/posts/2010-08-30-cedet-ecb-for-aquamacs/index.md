@@ -1,5 +1,5 @@
 ---
-date: 2010-08-30
+date: '2010-08-30'
 id: '574'
 image: '/files/2010/08/Emacs-ECB-250x232.png'
 slug: '/cedet-ecb-for-aquamacs/'

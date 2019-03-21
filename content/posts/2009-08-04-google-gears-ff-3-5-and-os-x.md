@@ -1,7 +1,7 @@
 ---
 id: '426'
 title: 'Google Gears, FF 3.5, and OS-X'
-date: 2009-08-04
+date: '2009-08-04'
 slug: '/google-gears-ff-3-5-and-os-x/'
 tags:
     - Firefox

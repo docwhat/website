@@ -1,14 +1,12 @@
 ---
-date: '2007-04-28T11:19:35+00:00'
+date: '2007-04-28'
 id: '52'
 slug: '/penguicon-50/'
 template: post
-title: 'Penguicon 5.0!'
+title: 'What I did at Penguicon 2007'
 tags:
     - 'convention'
     - 'penguicon'
-title_tag:
-    - 'What I did at Penguicon 2007'
 archived: true
 ---
 

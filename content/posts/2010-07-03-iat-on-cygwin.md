@@ -1,7 +1,7 @@
 ---
 id: '560'
 title: IAT on Cygwin
-date: 2010-07-03T16:21:30+00:00
+date: '2010-07-03'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=560

@@ -1,5 +1,5 @@
 ---
-date: 2011-04-14
+date: '2011-04-14'
 id: '678'
 image: '/files/2011/04/Screen-shot-2011-04-14-at-1.08.16-PM-214x250.png'
 template: post

@@ -1,7 +1,7 @@
 ---
 id: '367'
 title: Useless Error Messages
-date: 2009-05-28T15:53:14+00:00
+date: '2009-05-28'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=367

@@ -1,5 +1,5 @@
 ---
-date: '2006-09-12T22:09:28+00:00'
+date: '2006-09-12'
 id: '20'
 slug: '/coolest-comic-shop/'
 template: post

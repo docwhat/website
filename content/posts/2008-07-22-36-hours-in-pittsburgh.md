@@ -1,5 +1,5 @@
 ---
-date: '2008-07-22T17:26:05+00:00'
+date: '2008-07-22'
 guid: 'http://docwhat.org/?p=113'
 id: '113'
 template: post

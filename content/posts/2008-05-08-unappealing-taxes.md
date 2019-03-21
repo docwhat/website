@@ -1,7 +1,7 @@
 ---
 id: '90'
 title: 'Unappealing Taxes'
-date: '2008-05-08T17:43:00+00:00'
+date: '2008-05-08'
 template: 'post'
 slug: '/unappealing-taxes/'
 tags:

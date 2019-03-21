@@ -1,5 +1,5 @@
 ---
-date: '2009-12-03T17:23:29+00:00'
+date: '2009-12-03'
 id: '478'
 template: post
 slug: '/macbook-pro-dual-graphics/'

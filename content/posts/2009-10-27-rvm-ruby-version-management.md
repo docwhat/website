@@ -1,7 +1,7 @@
 ---
 id: '471'
 title: 'RVM: ruby version management'
-date: 2009-10-27T17:23:08+00:00
+date: '2009-10-27'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=471

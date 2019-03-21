@@ -1,7 +1,7 @@
 ---
 id: '473'
 title: Smoking craters are good
-date: 2009-10-28T17:01:43+00:00
+date: '2009-10-28'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=473

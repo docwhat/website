@@ -1,7 +1,7 @@
 ---
 id: '25'
 title: Getting an iPod
-date: 2006-11-07T18:58:06+00:00
+date: '2006-11-07'
 guid: http://docwhat.org/2006/11/getting-an-ipod/
 slug: /getting-an-ipod/
 tags:

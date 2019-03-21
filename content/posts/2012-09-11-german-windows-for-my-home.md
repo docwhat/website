@@ -1,7 +1,7 @@
 ---
 id: '1172'
 title: German windows for my home
-date: 2012-09-11T19:54:21-04:00
+date: '2012-09-11'
 template: post
 guid: http://docwhat.org/?p=1172
 slug: /german-windows-for-my-home/

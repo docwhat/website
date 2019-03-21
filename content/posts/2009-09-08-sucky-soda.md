@@ -1,7 +1,7 @@
 ---
 id: '446'
 title: Sucky soda
-date: 2009-09-08T17:23:40+00:00
+date: '2009-09-08'
 template: post
 slug: /sucky-soda/
 tags:

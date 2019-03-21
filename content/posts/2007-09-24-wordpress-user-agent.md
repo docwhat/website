@@ -1,7 +1,7 @@
 ---
 id: '66'
 title: Wordpress User-Agent
-date: 2007-09-24T01:30:25+00:00
+date: '2007-09-24'
 template: post
 slug: /wordpress-user-agent/
 tags:

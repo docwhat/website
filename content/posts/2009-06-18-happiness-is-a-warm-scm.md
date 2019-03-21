@@ -1,7 +1,7 @@
 ---
 id: '392'
 title: Happiness is a warm SCM
-date: 2009-06-18
+date: '2009-06-18'
 slug: /happiness-is-a-warm-scm/
 tags:
     - git

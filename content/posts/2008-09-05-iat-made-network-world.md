@@ -1,7 +1,7 @@
 ---
 id: '182'
 title: IAT made Network World
-date: 2008-09-05T16:21:01+00:00
+date: '2008-09-05'
 template: post
 slug: /iat-made-network-world/
 tags:

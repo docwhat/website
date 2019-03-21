@@ -1,7 +1,7 @@
 ---
 id: '75'
 title: 'GTD and Mutt'
-date: '2007-10-08T00:30:13+00:00'
+date: '2007-10-08'
 template: 'post'
 slug: '/gtd-and-mutt/'
 tags:

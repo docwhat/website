@@ -1,7 +1,7 @@
 ---
 id: '489'
 title: An idea for an iPhone app
-date: 2010-01-22T20:43:24+00:00
+date: '2010-01-22'
 template: post
 slug: /an-idea-for-an-iphone-app/
 tags:

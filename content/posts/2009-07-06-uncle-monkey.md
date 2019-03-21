@@ -1,7 +1,7 @@
 ---
 id: '396'
 title: Uncle Monkey
-date: 2009-07-06T11:16:56+00:00
+date: '2009-07-06'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=396

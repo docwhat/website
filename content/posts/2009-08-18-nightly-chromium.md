@@ -1,7 +1,7 @@
 ---
 id: '441'
 title: Nightly Chromium
-date: 2009-08-18
+date: '2009-08-18'
 slug: /nightly-chromium/
 tags:
     - Chromium

@@ -1,7 +1,7 @@
 ---
 id: '1449'
 title: Unindenting HEREDOCs in Ruby
-date: 2014-07-29T13:47:22-04:00
+date: '2014-07-29'
 template: post
 slug: /unindenting-heredocs-ruby/
 image: /files/2011/08/ruby.png

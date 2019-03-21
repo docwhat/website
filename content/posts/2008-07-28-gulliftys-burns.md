@@ -1,7 +1,7 @@
 ---
 id: '124'
 title: "Gullifty's burns!"
-date: 2008-07-28T13:37:45+00:00
+date: '2008-07-28'
 template: post
 slug: /gulliftys-burns/
 tags:

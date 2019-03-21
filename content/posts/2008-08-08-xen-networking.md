@@ -1,7 +1,7 @@
 ---
 id: '142'
 title: Xen Networking
-date: 2008-08-08
+date: '2008-08-08'
 slug: /xen-networking/
 tags:
     - technology

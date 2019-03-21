@@ -1,5 +1,5 @@
 ---
-date: '2008-05-15T17:03:54+00:00'
+date: '2008-05-15'
 id: '89'
 template: post
 slug: '/sparring-knives/'

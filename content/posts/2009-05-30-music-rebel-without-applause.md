@@ -1,7 +1,7 @@
 ---
 id: '372'
 title: 'Music: Rebel without Applause'
-date: 2009-05-30T21:20:00+00:00
+date: '2009-05-30'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=372

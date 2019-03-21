@@ -1,5 +1,5 @@
 ---
-date: '2008-11-05T14:29:26+00:00'
+date: '2008-11-05'
 id: '214'
 template: post
 slug: '/open-source-on-cnn/'

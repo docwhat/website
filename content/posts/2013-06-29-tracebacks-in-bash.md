@@ -1,7 +1,7 @@
 ---
 id: '1300'
 title: Tracebacks in bash
-date: 2013-06-29T09:05:33-04:00
+date: '2013-06-29'
 author: docwhat
 template: post
 guid: https://docwhat.org/?p=1300

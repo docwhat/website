@@ -1,7 +1,7 @@
 ---
 id: '245'
 title: 'Aquamacs vs. Dvorak-Qwerty layout'
-date: 2009-01-29
+date: '2009-01-29'
 slug: /aquamacs-vs-dvorak-qwerty-layout/
 tags:
     - dvorak

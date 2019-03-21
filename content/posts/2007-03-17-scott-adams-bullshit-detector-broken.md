@@ -1,5 +1,5 @@
 ---
-date: '2007-03-17T20:53:09+00:00'
+date: '2007-03-17'
 guid: 'http://docwhat.org/2007/03/scott-adams-bullshit-detector-broken/'
 id: '38'
 template: post

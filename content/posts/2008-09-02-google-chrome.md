@@ -1,14 +1,10 @@
 ---
 id: '176'
-title: Google Chrome
-date: 2008-09-02T17:15:21+00:00
+title: 'Google Chrome; A brand-new browser'
+date: '2008-09-02'
 template: post
-slug: /google-chrome/
-title_tag:
-    - 'Google Chrome -- A brand-new browser'
-tags:
-    - technology
-    - web
+slug: '/google-chrome/'
+archive: true
 ---
 
 Great jumping Jesus in a sidecar with chocolate jimmies! Google has released

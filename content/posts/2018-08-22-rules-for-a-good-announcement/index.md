@@ -1,6 +1,6 @@
 ---
 title: Rules for a good announcement
-date: 2018-12-13
+date: '2018-12-13'
 draft: true
 banner:
     url: 'rawpixel-783348-unsplash.jpg'

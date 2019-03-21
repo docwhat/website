@@ -1,7 +1,7 @@
 ---
 id: '589'
 title: Thematic featured images
-date: 2010-08-31T17:00:07-04:00
+date: '2010-08-31'
 template: post
 slug: /thematic-featured-images/
 image: /files/2010/08/Screen-shot-2010-08-31-at-1.29.20-AM-250x250.png

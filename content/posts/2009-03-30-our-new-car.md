@@ -2,7 +2,7 @@
 author: docwhat
 categories:
     - docwhat
-date: '2009-03-30T20:50:08+00:00'
+date: '2009-03-30'
 guid: 'http://docwhat.org/?p=350'
 id: '350'
 template: post

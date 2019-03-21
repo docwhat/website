@@ -1,7 +1,7 @@
 ---
 id: '197'
 title: Gecko-grip
-date: 2008-10-10T10:53:45+00:00
+date: '2008-10-10'
 template: post
 slug: /gecko-grip/
 tags:

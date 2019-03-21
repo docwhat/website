@@ -1,7 +1,7 @@
 ---
 id: '452'
 title: Speed Reading
-date: 2009-09-16T17:25:22+00:00
+date: '2009-09-16'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=452

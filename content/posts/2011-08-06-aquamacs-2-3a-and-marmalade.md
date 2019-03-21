@@ -1,7 +1,7 @@
 ---
 id: '740'
 title: Aquamacs 2.3a and Marmalade
-date: 2011-08-06T00:22:38-04:00
+date: '2011-08-06'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=740

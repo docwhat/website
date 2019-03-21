@@ -1,5 +1,5 @@
 ---
-date: '2007-06-20T20:12:01+00:00'
+date: '2007-06-20'
 id: '60'
 slug: '/what-language-would-you-like-it-in/'
 tags:

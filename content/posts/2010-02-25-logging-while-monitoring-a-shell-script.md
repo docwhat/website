@@ -1,7 +1,7 @@
 ---
 id: '511'
 title: 'Logging while monitoring a shell script'
-date: 2010-02-25
+date: '2010-02-25'
 slug: '/logging-while-monitoring-a-shell-script/'
 tags:
     - bash

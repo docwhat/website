@@ -1,7 +1,7 @@
 ---
 id: '65'
 title: Site Redesign
-date: 2007-09-23T21:36:44+00:00
+date: '2007-09-23'
 template: post
 slug: /site-redesign/
 tags:

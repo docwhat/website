@@ -1,7 +1,7 @@
 ---
 id: '651'
 title: IAT 1.5
-date: 2010-12-08
+date: '2010-12-08'
 template: post
 slug: /iat-1-5/
 image: /files/2010/12/11568.png

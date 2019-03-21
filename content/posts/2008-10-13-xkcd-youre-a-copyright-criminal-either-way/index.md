@@ -1,7 +1,7 @@
 ---
 id: '199'
 title: "XKCD: you're a copyright criminal either way"
-date: '2008-10-13T17:41:58+00:00'
+date: '2008-10-13'
 template: post
 slug: '/xkcd-youre-a-copyright-criminal-either-way/'
 tags:

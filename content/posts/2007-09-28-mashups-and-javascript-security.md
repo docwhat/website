@@ -1,7 +1,7 @@
 ---
 id: '68'
 title: 'Mashups and JavaScript Security'
-date: '2007-09-28T15:28:03+00:00'
+date: '2007-09-28'
 template: 'post'
 slug: '/mashups-and-javascript-security/'
 tags:

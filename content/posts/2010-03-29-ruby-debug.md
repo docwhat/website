@@ -1,7 +1,7 @@
 ---
 id: '526'
 title: 'Ruby Debugging'
-date: 2010-03-29
+date: '2010-03-29'
 slug: '/ruby-debug/'
 enclosure:
     - |

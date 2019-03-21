@@ -1,5 +1,5 @@
 ---
-date: '2006-09-07T17:18:39+00:00'
+date: '2006-09-07'
 guid: 'http://docwhat.org/2006/09/cwimp/'
 id: '13'
 template: post

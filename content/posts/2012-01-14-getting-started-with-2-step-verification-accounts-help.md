@@ -1,7 +1,7 @@
 ---
 id: '813'
 title: 'PSA: Turn on 2-step verification in Google'
-date: 2012-01-14T22:06:22-05:00
+date: '2012-01-14'
 author: docwhat
 template: post
 guid: http://docwhat.org/?p=813

@@ -1,5 +1,5 @@
 ---
-date: '2009-03-22T15:40:47+00:00'
+date: '2009-03-22'
 id: '330'
 template: post
 slug: '/xbox-360-avatars/'

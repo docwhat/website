@@ -1,7 +1,7 @@
 ---
 id: '39'
 title: 'Containing blocks and offsetParent: the secret of position absolute'
-date: 2007-03-19T08:00:40+00:00
+date: '2007-03-19'
 template: post
 guid: http://docwhat.org/2007/03/containing-blocks-and-offsetparent/
 slug: /containing-blocks-and-offsetparent/

@@ -1,5 +1,5 @@
 ---
-date: '2007-05-29T07:24:31+00:00'
+date: '2007-05-29'
 id: '57'
 slug: '/junkmail/'
 template: 'post'

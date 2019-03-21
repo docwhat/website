@@ -1,7 +1,7 @@
 ---
 id: '638'
 title: JRuby FileChooser example
-date: 2010-12-06T17:05:56-05:00
+date: '2010-12-06'
 template: post
 slug: /jruby-filechooser-example/
 image: /files/2010/12/Screen-shot-2010-12-06-at-3.07.18-AM-250x199.png

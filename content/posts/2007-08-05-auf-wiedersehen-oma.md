@@ -1,11 +1,9 @@
 ---
 id: '62'
-title: Auf Wiedersehen, Oma
-date: 2007-08-05T21:25:00+00:00
+title: 'Auf Wiedersehen, Oma'
+date: '2007-08-05'
 template: post
 slug: /auf-wiedersehen-oma/
-title_tag:
-    - Erika Höltje dies, just shy of age 94
 tags:
     - death
     - family
