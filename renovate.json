@@ -1,4 +1,11 @@
 {
-    "extends": ["config:base", "default:automergeMinor"],
+    "extends": [
+        "config:base",
+        ":automergeMinor",
+        ":group:monorepos",
+        ":group:recommended",
+        ":automergeLinters",
+        ":assignee(docwhat)"
+    ],
     "timezone": "America/New_York"
 }
