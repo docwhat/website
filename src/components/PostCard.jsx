@@ -72,7 +72,7 @@ const PostCard = ({
       css={{
         position: 'relative',
         verticalAlign: 'top',
-        minHeight: rhythm(4),
+        minHeight: rhythm(3),
         maxHeight: rhythm(10),
         zIndex: 10,
         overflow: 'hidden',
@@ -84,9 +84,9 @@ const PostCard = ({
           position: 'absolute',
           left: 0,
           bottom: 0,
-          background: `linear-gradient(${lightBackground.fade(1)} ${rhythm(
-            2
-          )} , ${lightBackground})`,
+          background: `linear-gradient(${lightBackground.fade(
+            1
+          )}, ${lightBackground})`,
         },
       }}
       dangerouslySetInnerHTML={{ __html: excerpt }}
