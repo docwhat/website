@@ -1,8 +1,7 @@
 ---
 date: '2006-09-07'
-guid: 'http://docwhat.org/2006/09/cwimp/'
+
 id: '13'
-template: post
 slug: '/cwimp/'
 tags:
     - cosmic wimpout

@@ -6,7 +6,6 @@ slug: '/virtualenv-on-os-x/'
 tags:
     - OS X
     - Python
-template: post
 title: Virtualenv on OS X
 ---
 

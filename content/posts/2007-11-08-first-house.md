@@ -1,7 +1,6 @@
 ---
 date: '2007-11-08'
 id: '79'
-template: post
 slug: '/first-house/'
 tags:
     - home

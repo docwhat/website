@@ -2,7 +2,6 @@
 id: '1709'
 title: El Capitan and the evils of OpenSSL
 date: '2015-11-03'
-template: post
 slug: /el-capitan-and-the-evils-of-openssl/
 image: /files/2011/09/derp.png
 tags:

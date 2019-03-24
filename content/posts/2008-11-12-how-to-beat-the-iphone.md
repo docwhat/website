@@ -2,7 +2,6 @@
 id: '221'
 title: How to beat the iPhone
 date: '2008-11-12'
-template: post
 slug: /how-to-beat-the-iphone/
 tags:
     - phone

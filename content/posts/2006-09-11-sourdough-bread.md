@@ -2,7 +2,7 @@
 id: '9'
 title: Sourdough Bread
 date: '2006-09-11'
-guid: http://docwhat.org/2006/09/sourdough-bread/
+
 slug: /sourdough-bread/
 tags:
     - bread

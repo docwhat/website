@@ -2,8 +2,7 @@
 id: '822'
 title: Chocolatatum meum butyro vecordi tuo contaminavisti!
 date: '2012-01-20'
-template: post
-guid: http://docwhat.org/?p=822
+
 slug: /chocolatatum-meum-butyro-vecordi-tuo-contaminavisti/
 image: /files/2012/01/pbcups.png
 categories:

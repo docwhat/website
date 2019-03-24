@@ -1,8 +1,7 @@
 ---
 date: '2008-07-22'
-guid: 'http://docwhat.org/?p=113'
+
 id: '113'
-template: post
 slug: '/36-hours-in-pittsburgh/'
 tags:
     - Pittsburgh

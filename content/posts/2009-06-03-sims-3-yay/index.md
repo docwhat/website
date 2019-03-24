@@ -3,9 +3,8 @@ author: docwhat
 categories:
     - docwhat
 date: '2009-06-03'
-guid: 'http://docwhat.org/?p=377'
+
 id: '377'
-template: post
 slug: '/sims-3-yay/'
 tags:
     - reviews

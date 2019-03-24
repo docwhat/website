@@ -3,9 +3,8 @@ author: docwhat
 categories:
     - docwhat
 date: '2009-08-13'
-guid: 'http://docwhat.org/?p=432'
+
 id: '432'
-template: post
 slug: '/attack-of-the-cicada/'
 tags:
     - bugs

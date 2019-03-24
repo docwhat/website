@@ -1,8 +1,7 @@
 ---
 date: '2009-09-28'
-guid: 'http://docwhat.org/?p=462'
+
 id: '462'
-template: post
 slug: '/another-one-bites-the-dust/'
 tags:
     - Pittsburgh

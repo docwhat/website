@@ -3,9 +3,8 @@ author: docwhat
 categories:
     - docwhat
 date: '2010-04-09'
-guid: 'http://docwhat.org/?p=533'
+
 id: '533'
-template: post
 slug: '/we-haz-ferrets/'
 tags:
     - animals

@@ -2,8 +2,7 @@
 id: '35'
 title: "It's All Text!"
 date: '2007-01-12'
-template: post
-guid: http://docwhat.org/2007/01/its-all-text/
+
 slug: /its-all-text/
 tags:
     - "It's All Text!"

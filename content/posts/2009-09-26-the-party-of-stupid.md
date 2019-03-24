@@ -3,8 +3,7 @@ id: '456'
 title: The Party of Stupid
 date: '2009-09-26'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=456
+
 slug: /the-party-of-stupid/
 categories:
     - docwhat

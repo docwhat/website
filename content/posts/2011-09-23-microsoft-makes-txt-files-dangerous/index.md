@@ -2,7 +2,6 @@
 id: '780'
 title: Microsoft makes .txt files dangerous
 date: '2011-09-23'
-template: post
 slug: /microsoft-makes-txt-files-dangerous/
 image: /files/2011/09/derp.png
 tags:

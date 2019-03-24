@@ -3,8 +3,7 @@ id: '372'
 title: 'Music: Rebel without Applause'
 date: '2009-05-30'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=372
+
 slug: /music-rebel-without-applause/
 categories:
     - docwhat

@@ -3,8 +3,7 @@ id: '452'
 title: Speed Reading
 date: '2009-09-16'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=452
+
 slug: /speed-reading/
 categories:
     - docwhat

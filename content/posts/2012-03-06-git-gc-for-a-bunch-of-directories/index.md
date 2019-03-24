@@ -1,13 +1,12 @@
 ---
 date: '2012-03-06'
-guid: 'http://docwhat.org/?p=837'
+
 id: '837'
 image: '/files/2012/03/view\_git-logo-250x250.png'
 slug: '/git-gc-for-a-bunch-of-directories/'
 tags:
     - git
     - maintenance
-template: post
 title: git gc for a bunch of directories
 ---
 

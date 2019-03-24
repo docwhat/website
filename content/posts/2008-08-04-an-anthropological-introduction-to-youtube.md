@@ -2,7 +2,6 @@
 id: '137'
 title: 'An anthropological introduction to YouTube'
 date: '2008-08-04'
-template: post
 slug: /an-anthropological-introduction-to-youtube/
 tags:
     - technology

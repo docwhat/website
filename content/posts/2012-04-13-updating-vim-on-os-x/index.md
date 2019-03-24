@@ -6,7 +6,6 @@ slug: '/updating-vim-on-os-x/'
 tags:
     - OS X
     - vim
-template: post
 title: 'Updating VIM on OS X'
 ---
 

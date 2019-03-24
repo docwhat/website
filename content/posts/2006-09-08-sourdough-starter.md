@@ -1,13 +1,12 @@
 ---
 date: '2006-09-08'
-guid: 'http://docwhat.org/2006/09/sourdough-starter/'
+
 id: '11'
 slug: '/sourdough-starter/'
 tags:
     - bread
     - cooking
     - yeast
-template: post
 title: Sourdough Yeast Starter
 archived: true
 ---

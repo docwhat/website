@@ -3,8 +3,7 @@ id: '646'
 title: 'Git Tip: empty branch'
 date: '2010-12-07'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=646
+
 slug: /git-tip-empty-branch/
 openid_comments:
     - 'a:1:{i:0;s:4:"9432";}'

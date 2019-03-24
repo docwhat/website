@@ -3,8 +3,7 @@ id: '1576'
 title: Chef, Puppet, Heat, Juju, Docker, etc.
 date: '2015-02-04'
 author: docwhat
-template: post
-guid: https://docwhat.org/?p=1576
+
 slug: /chef-puppet-heat-juju-docker-etc/
 openid_comments:
     - 'a:3:{i:0;i:17072;i:1;i:17073;i:2;i:17077;}'

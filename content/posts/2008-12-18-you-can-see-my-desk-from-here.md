@@ -2,7 +2,6 @@
 id: '232'
 title: You can see my desk from here!
 date: '2008-12-18'
-template: post
 slug: /you-can-see-my-desk-from-here/
 tags:
     - photos

@@ -3,7 +3,6 @@ id: '1222'
 title: More on Vim with ruby crashing
 date: '2013-01-26'
 author: docwhat
-template: post
 slug: /vim-and-ruby/
 image: /files/2012/04/356023245659.png
 categories:

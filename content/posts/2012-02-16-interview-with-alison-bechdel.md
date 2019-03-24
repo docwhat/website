@@ -1,13 +1,12 @@
 ---
 date: '2012-02-16'
-guid: 'http://docwhat.org/?p=829'
+
 id: '829'
 slug: '/interview-with-alison-bechdel/'
 tags:
     - Alison Bechdel
     - art
     - comics
-template: post
 title: Interview with Alison Bechdel
 archived: true
 ---

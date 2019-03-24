@@ -3,8 +3,7 @@ id: '355'
 title: Lots of cool software cheap
 date: '2009-04-03'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=355
+
 slug: /lots-of-cool-software-cheap/
 categories:
     - docwhat

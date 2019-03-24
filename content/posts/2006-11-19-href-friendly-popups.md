@@ -2,8 +2,7 @@
 id: '33'
 title: Making JavaScript transparent
 date: '2006-11-19'
-template: post
-guid: http://docwhat.org/2006/11/href-friendly-popups/
+
 slug: /href-friendly-popups/
 tags:
     - JavaScript

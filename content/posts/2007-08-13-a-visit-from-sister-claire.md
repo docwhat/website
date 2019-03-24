@@ -2,7 +2,6 @@
 id: '63'
 title: A visit from sister Claire
 date: '2007-08-13'
-template: post
 slug: /a-visit-from-sister-claire/
 tags:
     - family

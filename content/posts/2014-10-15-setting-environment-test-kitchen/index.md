@@ -3,7 +3,6 @@ id: '1559'
 title: Setting your environment in test-kitchen
 date: '2014-10-15'
 author: docwhat
-template: post
 slug: /setting-environment-test-kitchen/
 image: /files/2014/10/Chef_Software_Inc._company_logo-228x250.png
 categories:

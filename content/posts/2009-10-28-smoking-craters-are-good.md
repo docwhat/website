@@ -3,8 +3,7 @@ id: '473'
 title: Smoking craters are good
 date: '2009-10-28'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=473
+
 slug: /smoking-craters-are-good/
 openid_comments:
     - 'a:2:{i:0;s:4:"6450";i:1;s:4:"6451";}'

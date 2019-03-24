@@ -2,7 +2,6 @@
 id: '14'
 title: My older projects have been moved.
 date: '2006-09-06'
-template: post
 slug: /my-older-projects-have-been-moved/
 ---
 

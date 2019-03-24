@@ -2,8 +2,7 @@
 id: '27'
 title: We are what we eat?
 date: '2006-09-27'
-template: post
-guid: http://docwhat.org/2006/09/we-are-what-we-eat/
+
 slug: /we-are-what-we-eat/
 tags:
     - waste of time

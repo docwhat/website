@@ -3,8 +3,7 @@ id: '1300'
 title: Tracebacks in bash
 date: '2013-06-29'
 author: docwhat
-template: post
-guid: https://docwhat.org/?p=1300
+
 slug: /tracebacks-in-bash/
 openid_comments:
     - 'a:1:{i:0;i:9945;}'

@@ -3,8 +3,7 @@ id: '417'
 title: Sir Paul McCartney
 date: '2009-07-26'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=417
+
 slug: /sir-paul-mccartney/
 categories:
     - docwhat

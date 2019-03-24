@@ -1,13 +1,12 @@
 ---
 date: '2011-12-20'
-guid: 'http://docwhat.org/?p=801'
+
 id: '801'
 image: '/files/2011/12/tm2-icon-250x250.jpg'
 slug: '/textmate-2-articles/'
 tags:
     - OS X
     - TextMate
-template: post
 title: 'TextMate 2 Articles'
 ---
 

@@ -3,9 +3,8 @@ author: docwhat
 categories:
     - docwhat
 date: '2010-04-19'
-guid: 'http://docwhat.org/?p=542'
+
 id: '542'
-template: post
 openid_comments:
     - 'a:1:{i:0;s:4:"6986";}'
 slug: '/two-ways-to-improve-os-x/'

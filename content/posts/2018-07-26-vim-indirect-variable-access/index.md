@@ -3,7 +3,6 @@ title: 'Vim: indirect variable access'
 date: '2018-07-27'
 slug: vim-indirect-variable-access
 id: cd4295aa-fb12-4f7c-9536-ce9a6e642880
-template: post
 banner:
     url: 'tuesday-temptation-550409-unsplash.jpg'
     author:

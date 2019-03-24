@@ -1,8 +1,7 @@
 ---
 date: '2006-09-19'
-guid: 'http://docwhat.org/2006/09/python-25-and-im-sick/'
+
 id: '26'
-template: post
 slug: '/python-25-and-im-sick/'
 tags:
     - cool

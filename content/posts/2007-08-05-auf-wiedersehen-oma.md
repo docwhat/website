@@ -2,7 +2,6 @@
 id: '62'
 title: 'Auf Wiedersehen, Oma'
 date: '2007-08-05'
-template: post
 slug: /auf-wiedersehen-oma/
 tags:
     - death

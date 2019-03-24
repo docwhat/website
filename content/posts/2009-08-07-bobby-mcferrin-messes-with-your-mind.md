@@ -5,7 +5,6 @@ slug: '/bobby-mcferrin-messes-with-your-mind/'
 tags:
     - music
     - science
-template: post
 title: 'Bobby McFerrin messes with your mind'
 archived: true
 ---

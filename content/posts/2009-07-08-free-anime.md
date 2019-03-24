@@ -3,8 +3,7 @@ id: '409'
 title: Free Anime!
 date: '2009-07-08'
 author: docwhat
-template: post
-guid: http://docwhat.org/?p=409
+
 slug: /free-anime/
 categories:
     - docwhat

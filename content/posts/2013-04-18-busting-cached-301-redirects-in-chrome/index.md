@@ -7,7 +7,6 @@ slug: '/busting-cached-301-redirects-in-chrome/'
 tags:
     - '301'
     - 'Google Chrome'
-template: post
 title: 'Busting cached 301 redirects in Chrome.'
 ---
 

@@ -4,7 +4,6 @@ id: '1084'
 slug: '/dr-ross-o-d/'
 tags:
     - Squirrel Hill
-template: post
 title: 'Dr. Ross, O.D.'
 archived: true
 ---

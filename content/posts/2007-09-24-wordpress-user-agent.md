@@ -2,7 +2,6 @@
 id: '66'
 title: Wordpress User-Agent
 date: '2007-09-24'
-template: post
 slug: /wordpress-user-agent/
 tags:
     - Wordpress

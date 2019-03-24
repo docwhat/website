@@ -2,7 +2,6 @@
 id: '234'
 title: Google Phone
 date: '2009-01-12'
-template: post
 slug: /googlephone/
 tags:
     - Android

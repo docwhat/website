@@ -1,8 +1,7 @@
 ---
 date: '2007-03-17'
-guid: 'http://docwhat.org/2007/03/scott-adams-bullshit-detector-broken/'
+
 id: '38'
-template: post
 slug: '/scott-adams-bullshit-detector-broken/'
 tags:
     - Science

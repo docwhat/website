@@ -1,7 +1,6 @@
 ---
 date: '2009-03-22'
 id: '330'
-template: post
 slug: '/xbox-360-avatars/'
 tags:
     - video games

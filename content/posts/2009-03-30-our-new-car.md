@@ -3,9 +3,8 @@ author: docwhat
 categories:
     - docwhat
 date: '2009-03-30'
-guid: 'http://docwhat.org/?p=350'
+
 id: '350'
-template: post
 slug: '/our-new-car/'
 tags:
     - car

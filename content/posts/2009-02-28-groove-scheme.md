@@ -2,7 +2,6 @@
 id: '263'
 title: Groove Scheme
 date: '2009-02-28'
-template: post
 slug: /groove-scheme/
 tags:
     - music

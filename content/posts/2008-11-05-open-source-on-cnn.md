@@ -1,7 +1,6 @@
 ---
 date: '2008-11-05'
 id: '214'
-template: post
 slug: '/open-source-on-cnn/'
 tags:
     - open source
