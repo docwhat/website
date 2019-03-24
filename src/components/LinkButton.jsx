@@ -12,6 +12,9 @@ type Props = {
   children: React.Node,
 }
 
+const color = heroColor.negate()
+const background = heroColor
+
 const LinkButton = ({ children, to, ...other }: Props): React.Node => (
   <Link
     css={{
@@ -20,8 +23,14 @@ const LinkButton = ({ children, to, ...other }: Props): React.Node => (
       marginLeft: 'auto',
       marginRight: 'auto',
       fontSize: rhythm(1 / 2),
-      backgroundColor: heroColor.string(),
-      color: heroColor.negate().string(),
+      backgroundColor: background
+        .desaturate(0.3)
+        .lighten(0.3)
+        .string(),
+      color: color
+        .desaturate(0.3)
+        .lighten(0.3)
+        .string(),
       userSelect: 'none',
       cursor: 'pointer',
       height: rhythm(1 + 1 / 4),
@@ -31,6 +40,8 @@ const LinkButton = ({ children, to, ...other }: Props): React.Node => (
       '&:hover': {
         textDecoration: 'none',
         boxShadow: `1px 1px 4px rgba(0, 0, 0, 0.5)`,
+        backgroundColor: background.string(),
+        color: color.string(),
       },
       '&:active': {
         boxShadow: `0 0 2px rgba(0, 0, 0, 0.8)`,
