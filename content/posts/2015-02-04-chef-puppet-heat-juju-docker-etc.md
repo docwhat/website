@@ -208,6 +208,5 @@ My understanding is that while it works, it isn't mature yet.
 
 -   [CFEngine vs. Puppet vs. Chef vs. Ansible vs. Salt](http://blog.normation.com/en/2013/12/12/cfengine-vs-puppet-vs-chef-vs-ansible-vs-salt/)
     _2013-12-12_
--   [Review: Puppet vs. Chef vs. Ansible vs.
-    Salt](http://www.infoworld.com/article/2609482/data-center/review--puppet-vs--chef-vs--ansible-vs--salt
-    .html) _2013-11-21_
+-   [Review: Puppet vs. Chef vs. Ansible vs. Salt](http://www.infoworld.com/article/2609482/data-center/review--puppet-vs--chef-vs--ansible-vs--salt.html)
+    _2013-11-21_

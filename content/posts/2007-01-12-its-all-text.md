@@ -60,19 +60,19 @@ I get to version 1, at which point I start a new post someplace...
 
 My current todo list:
 
--   [idea] dropdown list for charsets (utf-8, western-iso, default)?
--   [low] `getDocumentIdentifier` should sort arguments and append the post
+-   \[idea\] dropdown list for charsets (utf-8, western-iso, default)?
+-   \[low\] `getDocumentIdentifier` should sort arguments and append the post
     data.
--   [security] Detect collisions using the raw key.
--   [idea] Pass in the line number to the editor, arbitrary command?
--   [high] On edit, let user pick the file extension.
--   [idea] allow the user to pick an alternative editor?
--   [med] Profiling and optimization.
--   [med] If the textarea is focused, we should refresh it.
--   [low] When the editor quits, we should refresh the textarea.
--   [idea] support for input elements as well?
--   [high] Confirm that we find textareas inside iframes and frames.
--   [med] Have gumdrop fade in and out on mouseover
+-   \[security\] Detect collisions using the raw key.
+-   \[idea\] Pass in the line number to the editor, arbitrary command?
+-   \[high\] On edit, let user pick the file extension.
+-   \[idea\] allow the user to pick an alternative editor?
+-   \[med\] Profiling and optimization.
+-   \[med\] If the textarea is focused, we should refresh it.
+-   \[low\] When the editor quits, we should refresh the textarea.
+-   \[idea\] support for input elements as well?
+-   \[high\] Confirm that we find textareas inside iframes and frames.
+-   \[med\] Have gumdrop fade in and out on mouseover
 
 Things marked as ideas, may or may not happen. Everything else will either
 happen or the issue will be addressed in some other way.

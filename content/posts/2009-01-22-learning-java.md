@@ -38,7 +38,7 @@ and not enough about what makes Java different than, say, Python or C++.
 
 Ciao!
 
-[UPDATES]
+\[UPDATES\]
 
 1.  [Essential Java Resources](http://www.ibm.com/developerworks/java/library/j-javaresources.html?ca=dgr-lnxw04JavaList) ...
     in honor of Java's 14th anniversary.

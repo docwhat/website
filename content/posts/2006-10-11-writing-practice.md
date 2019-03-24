@@ -9,8 +9,6 @@ tags:
 archived: true
 ---
 
-<!--lint disable no-undefined-references -->
-
 I started this blog for a
 [couple of reasons](http://docwhat.org/2006/09/moving-to-a-blog/). One of the
 reasons is that I wanted to get better at writing.

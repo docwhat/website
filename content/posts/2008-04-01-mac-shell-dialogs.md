@@ -26,7 +26,8 @@ osascript -e 'tell app "System Events" to display dialog "A stop dialog with onl
 
 I would assume there are other values you could feed in for the icon, but I
 haven't a clue and I can't find it in Script Editor Library. How annoying.
-[Note: I did end up finding it in the Apple Script Language Guide, see below.]
+\[Note: I did end up finding it in the Apple Script Language Guide, see
+below.\]
 
 Here's a version with multiple buttons:
 

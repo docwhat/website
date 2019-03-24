@@ -47,8 +47,8 @@ Well, at the least I can offer you one free song:
 
 Ciao!
 
-[Update 2009-02-03: Staash correctly pointed out it's a pyramid scheme, not a
-Ponzi scheme.]
+\[Update 2009-02-03: Staash correctly pointed out it's a pyramid scheme, not a
+Ponzi scheme.\]
 
 Groove Armada albums:
 

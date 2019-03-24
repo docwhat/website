@@ -38,7 +38,7 @@ everything for you!~~
 
 ~~Sheesh.~~
 
-**UPDATE**[2009-03-14]: It turns out I was wrong! The problem is that the
+**UPDATE**\[2009-03-14\]: It turns out I was wrong! The problem is that the
 OpenID Plugin was
 [broken](http://code.google.com/p/diso/issues/detail?id=101&colspec=ID%20Type%20Project%20Status%20Priority%20Milestone%20Owner%20Summary).
 It's just that at the time of this post, only SourceForge was triggering the
@@ -48,6 +48,6 @@ To SourceForge and their staff: I apologize; I was wrong. The only complaint I
 can make is that the feedback wasn't sufficient to let me troubleshoot the
 problem.
 
-**UPDATE**[2009-03-19]: Wrong again! It turns out that broken apache rewrite
+**UPDATE**\[2009-03-19\]: Wrong again! It turns out that broken apache rewrite
 rules (which were hidden by **ErrorDocument** directives) were the cause. Man,
 I should stop being wrong so much. ;-)

@@ -12,8 +12,6 @@ tags:
 toc: true
 ---
 
-<!--lint disable no-undefined-references -->
-
 Syntax highlighting is a feature that displays source code, in different
 colors and fonts according to the category of terms. This feature facilitates
 writing in a structured language such as a programming language or a markup

@@ -13,8 +13,6 @@ tags:
 archived: true
 ---
 
-<!--lint disable no-undefined-references -->
-
 Let's face it: Current digital players suck.
 [iPods](http://www.apple.com/itunes/) suck.
 [iRiver](http://www.iriveramerica.com/) sucks.
