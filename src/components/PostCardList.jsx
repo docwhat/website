@@ -1,11 +1,26 @@
+// @flow
 // @format
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
 import PostCard from './PostCard'
 
-const PostCardList = props => (
+type PostCardEdge = {
+  node: {
+    fields: {
+      slug: string,
+      title: string,
+      ymdDate: string,
+    },
+    excerpt: string,
+  },
+}
+
+type Props = {
+  postcards: Array<PostCardEdge>,
+}
+
+const PostCardList = (props: Props): React.Node => (
   <div
     css={{
       display: `flex`,
@@ -23,7 +38,7 @@ const PostCardList = props => (
   >
     {props.postcards.map(({ node }) => {
       const {
-        fields: { title, slug, date },
+        fields: { title, slug, ymdDate },
         excerpt,
       } = node
 
@@ -36,27 +51,12 @@ const PostCardList = props => (
           key={slug}
           slug={slug}
           title={title}
-          date={date}
+          ymdDate={ymdDate}
           excerpt={excerpt}
         />
       )
     })}
   </div>
 )
-
-PostCardList.propTypes = {
-  postcards: PropTypes.arrayOf(
-    PropTypes.shape({
-      node: PropTypes.shape({
-        fields: PropTypes.shape({
-          slug: PropTypes.string.isRequired,
-          title: PropTypes.string.isRequired,
-          date: PropTypes.string.isRequired,
-        }),
-        excerpt: PropTypes.string.isRequired,
-      }),
-    })
-  ).isRequired,
-}
 
 export default PostCardList

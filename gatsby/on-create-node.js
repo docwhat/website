@@ -1,6 +1,7 @@
 // @format
 
 const pathlib = require(`path`)
+const childProcess = require(`child_process`)
 const _ = require(`lodash`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -54,6 +55,18 @@ const onCreateNode = async ({ node, actions, getNode }) => {
       value: calculateDate(node, getNode),
     })
   }
+  createNodeField({
+    node,
+    name: `update_date`,
+    value: await calculateUpdatedDate(node.fileAbsolutePath),
+  })
+  createNodeField({
+    node,
+    name: `update_hash`,
+    value: await calculateUpdatedHash(node.fileAbsolutePath),
+  })
+
+  // https://github.com/docwhat/docwhat/commits/2df6346/content/posts/2006-09-06-my-older-projects-have-been-moved.md
 
   return node
 }
@@ -102,6 +115,31 @@ const calculateDate = (node, getNode) => {
 
   throw new Error(`Unable to get date for ${relPath}`)
 }
+
+const runAndReturnStdout = (cmd, ...args) =>
+  new Promise((resolve, reject) => {
+    const command = childProcess.spawn(cmd, ...args)
+    var result = ''
+    command.stdout.on('data', data => {
+      result += data.toString()
+    })
+    command.on('close', code => resolve(result))
+    command.on('error', err => {
+      reject(err)
+    })
+  })
+
+const calculateUpdatedDate = filePath =>
+  runAndReturnStdout('git', [
+    'log',
+    '-1',
+    '--pretty=format:%aI',
+    '--',
+    filePath,
+  ])
+
+const calculateUpdatedHash = filePath =>
+  runAndReturnStdout('git', ['log', '-1', '--pretty=format:%h', '--', filePath])
 
 const calculateSlugFromPath = (node, getNode) => {
   const parent = getNode(node.parent)

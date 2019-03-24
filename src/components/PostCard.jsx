@@ -1,14 +1,14 @@
 // @flow
 // @format
-// @ts-ignore
-// @ts-nocheck
 import { graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import * as React from 'react'
 
 import { lightBackground } from '../utils/colors.js'
 import { rhythm } from '../utils/typography.js'
+import Date from './Date.jsx'
 import ReadMore from './ReadMore.jsx'
+import SmallPrint from './SmallPrint.jsx'
 
 const Title = ({
   to,
@@ -29,45 +29,35 @@ const Title = ({
   </h3>
 )
 
-const Meta = (props: { date: string }): React.Node => {
-  const [month, dom, year] = props.date.split(' ')
-  return (
-    <small
-      css={{
-        display: 'block',
-        lineHeight: 1,
-        marginTop: rhythm(1 / 4),
-        marginBottom: rhythm(1 / 4),
-        textAlign: 'right',
-        whiteSpace: 'pre',
-        fontStyle: 'italic',
-      }}
-    >
-      {month} {dom}, {year}
-    </small>
-  )
-}
-
-const PostCard = ({
-  date,
-  excerpt,
-  overrideCss,
-  slug,
-  title,
-}: {
-  date: string,
+type Props = {
+  ymdDate: string,
   excerpt: string,
   overrideCss: Object,
   slug: string,
   title: string,
-}): React.Node => (
+}
+
+const PostCard = ({
+  ymdDate,
+  excerpt,
+  overrideCss,
+  slug,
+  title,
+}: Props): React.Node => (
   <section
     css={{
       ...overrideCss,
     }}
   >
     <Title to={slug}>{title}</Title>
-    <Meta date={date} />
+    <SmallPrint
+      css={{
+        display: 'block',
+        textAlign: 'right',
+      }}
+    >
+      <Date date={ymdDate} />
+    </SmallPrint>
     <div
       css={{
         position: 'relative',
@@ -102,7 +92,7 @@ export const query = graphql`
     fields {
       slug
       title
-      date(formatString: "MMMM DD YYYY")
+      ymdDate: date(formatString: "YYYY-MM-DD")
     }
     excerpt(format: HTML, pruneLength: 300)
   }

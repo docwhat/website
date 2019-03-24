@@ -37,6 +37,7 @@ const PostTemplate = (props: {
           dayName,
           dayOfMonth,
           ymdDate,
+          ymdUpdate,
         },
         wordCount: { words },
         html: pageHtml,
@@ -63,6 +64,7 @@ const PostTemplate = (props: {
           monthName={monthName}
           dayName={dayName}
           dayOfMonth={dayOfMonth}
+          ymdUpdate={ymdUpdate}
           ymdDate={ymdDate}
         />
 
@@ -75,6 +77,7 @@ const PostTemplate = (props: {
           postTitle={helmetTitle}
           postUrl={pageUrl}
           ymdDate={ymdDate}
+          ymdUpdate={ymdUpdate}
           wordCount={words}
         />
       </article>
