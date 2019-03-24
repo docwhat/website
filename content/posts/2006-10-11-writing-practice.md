@@ -9,15 +9,17 @@ tags:
 archived: true
 ---
 
+<!--lint disable no-undefined-references -->
+
 I started this blog for a
 [couple of reasons](http://docwhat.org/2006/09/moving-to-a-blog/). One of the
 reasons is that I wanted to get better at writing.
 
-IRL[^1], I'm not very good at explaining thoughts as they pop up. I tend to
-think about stuff faster than I can talk or I jump from subject to subject, I
-get sidetracked, forget what I've already talked about or I forget who I'm
-talking to and what they know or don't know already. Obviously, talking to me
-can be exacerbating though occasionally amusing.
+IRL[^1], I'm not good at explaining thoughts as they pop up. I tend to think
+about stuff faster than I can talk or I jump from subject to subject, I get
+sidetracked, forget what I've already talked about or I forget who I'm talking
+to and what they know or don't know already. Obviously, talking to me can be
+exacerbating though occasionally amusing.
 
 <!-- more -->
 
@@ -40,9 +42,9 @@ And ADD makes my writing a little strange.
 ADD makes my writing choppy; I leave off parts that I thought of but couldn't
 get my fingers to type as fast as my head.
 
-But ADD is good for editing other people's writing, especially when intended
-for the web. I get bored if a paragraph is too long; opening sentences should
-clue me into the content so I can decide if I want to read it. These sort of
+ADD is good for editing other people's writing, especially when intended for
+the web. I get bored if a paragraph is too long; opening sentences should clue
+me into the content so I can decide if I want to read it. These sort of
 changes makes reading on the web much easier.
 
 Which brings me to another reason to practice writing; writing is a form of

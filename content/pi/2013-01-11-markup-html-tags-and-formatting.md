@@ -14,6 +14,8 @@ tags:
 toc: true
 ---
 
+<!--lint disable no-undefined-references -->
+
 A variety of common markup showing how the theme styles them.
 
 ## Header two

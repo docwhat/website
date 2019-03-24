@@ -13,6 +13,8 @@ tags:
 archived: true
 ---
 
+<!--lint disable no-undefined-references -->
+
 Let's face it: Current digital players suck.
 [iPods](http://www.apple.com/itunes/) suck.
 [iRiver](http://www.iriveramerica.com/) sucks.
@@ -22,9 +24,9 @@ is a bunch of bastards.
 Okay. Spleen has been vented. Let me catch my breath... _whew_.
 
 In theory, digital players are the same. They play music files in a nice
-portable form factor. They are like tape-cassette walk-men from the 80's. They
+portable form factor. They're like tape-cassette walk-men from the 80's. They
 come in various shapes, sizes and the battery lasts a different amount of
-time; but they are all play music. A few throw in a radio too, just for fun.
+time; but they're all play music. A few throw in a radio too, just for fun.
 
 Until you look a little closer and look at the software. The evil evil _evil_
 software.
@@ -48,8 +50,8 @@ The iPod can work with Ubuntu[^1], but it isn't supported by
 [Apple](http://apple.com/). The hardware is nice. The software is okay, but it
 doesn't play [Ogg Vorbis](http://www.vorbis.com/). It's preferred format is
 [AAC](http://en.wikipedia.org/wiki/Advanced_Audio_Coding). The ACC tools in
-Linux are not very good and I haven't tried using it yet. MP3s are supported,
-but I cannot stand them as a rule because all the encoders I have ever used
+Linux aren't very good and I haven't tried using it yet. MP3s are supported,
+but I can't stand them as a rule because all the encoders I have ever used
 create high pitched artifacts that are painful for me to listen to.
 
 iRiver has some nice hardware too. Having an FM tuner in your digital player
@@ -73,7 +75,7 @@ And then fortune smiled on me! My wife's 4gig iPod's battery died. Since it
 was dead anyway, she gave me permission to play with it. This wasn't all that
 bad for Robin. She got to look for new device online.
 
-So while she was looking at the various trade offs I previous looked at, and
+While she was looking at the various trade offs I previous looked at, and
 cursing out Sony and other idiotic vendors, I played with
 [Rockbox](http://rockbox.org/) using her pink iPod mini.
 
