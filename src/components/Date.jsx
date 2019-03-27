@@ -6,6 +6,7 @@ import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
 
 type Props = {
   date: string,
+  title?: string,
 }
 
 type State = {
@@ -30,10 +31,12 @@ class DateNode extends React.Component<Props, State> {
   }
 
   render() {
-    const { date, ...other } = this.props
+    const { date, title, ...other } = this.props
+
+    const displayTitle = title === undefined ? date : title
 
     return (
-      <time dateTime={date} {...other}>
+      <time dateTime={date} title={displayTitle} {...other}>
         {this.state.dateString === '' ? date : this.state.dateString}
       </time>
     )
