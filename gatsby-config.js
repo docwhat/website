@@ -152,7 +152,11 @@ module.exports = {
                 edges {
                   node {
                     path: fileAbsolutePath
-                    fields { slug }
+                    fields {
+                      slug
+                      created: date(formatString: "YYYY-MM-DD")
+                      lastmod: update_date(formatString: "YYYY-MM-DD")
+                    }
                     frontmatter {
                       changefreq
                       priority
@@ -168,6 +172,8 @@ module.exports = {
               url: siteUrl + edge.node.fields.slug,
               changefreq: edge.node.frontmatter.changefreq || `weekly`,
               priority: parseFloat(edge.node.frontmatter.priority) || 0.5,
+              lastmod:
+                edge.node.fields.lastmod || edge.node.fields.created || null,
             }))
             .filter(item => item.priority >= 0.0)
             .concat([
