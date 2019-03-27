@@ -4,14 +4,12 @@ import { graphql } from 'gatsby'
 import React from 'react'
 
 import { heroColor } from '../utils/colors'
+import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
 import { rhythm } from '../utils/typography'
 
-const CalendarPage = (props: {
-  ymdDate: string,
-  monthName: string,
-  dayOfMonth: string,
-}) => {
-  const { ymdDate, monthName, dayOfMonth } = props
+const CalendarPage = (props: { ymdDate: string }) => {
+  const { ymdDate } = props
+  const date = ymdString2Date(ymdDate)
 
   const commonCSS = {
     display: `block`,
@@ -26,7 +24,10 @@ const CalendarPage = (props: {
   const fontColor = bannerColor.negate()
 
   const rmult = 5 / 12
-  const year = ymdDate.split(`-`)[0]
+  const lang = getNavigatorLanguage()
+  const year = date.getFullYear()
+  const dayOfMonth = date.getDate()
+  const monthName = date.toLocaleDateString(lang, { month: 'long' })
 
   // Original idea from:
   // https://www.sitepoint.com/create-calendar-icon-html5-css3/

@@ -2,6 +2,8 @@
 // @format
 import * as React from 'react'
 
+import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
+
 type Props = {
   date: string,
 }
@@ -16,12 +18,7 @@ class DateNode extends React.Component<Props, State> {
   }
 
   componentDidMount() {
-    const date = this.props.date
-    const dateObject = new Date(date)
-    const getNavigatorLanguage = () =>
-      navigator.languages && navigator.languages.length
-        ? navigator.languages[0]
-        : navigator.language || 'en'
+    const dateObject = ymdString2Date(this.props.date)
 
     this.setState({
       dateString: dateObject.toLocaleDateString(getNavigatorLanguage(), {
