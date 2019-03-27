@@ -6,7 +6,12 @@ const pify = require(`pify`)
 const pathlib = require(`path`)
 const moment = require(`moment`)
 const Feed = require(`feed`).Feed
-const { siteUrl, authorName, siteTitle } = require(`../src/utils/constants`)
+const {
+  siteUrl,
+  authorName,
+  siteTitle,
+  siteDescription,
+} = require(`../src/utils/constants`)
 
 const onPostBuild = async ({ graphql }) => {
   const results = await runQuery(
@@ -38,8 +43,12 @@ const onPostBuild = async ({ graphql }) => {
 
   const feed = new Feed({
     title: siteTitle,
+    description: siteDescription,
     link: siteUrl,
     id: siteUrl,
+    language: 'en',
+    image: `${siteUrl}/favicon.png`,
+    favicon: `${siteUrl}/favicon.ico`,
     feedLinks: {
       atom: `${siteUrl}/atom.xml`,
       json: `${siteUrl}/feed.json`,
