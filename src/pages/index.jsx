@@ -60,6 +60,18 @@ const SiteIndex = (props: { location: Location }) => {
             httpEquiv="X-Yadis-Location"
             content="https://openid.stackexchange.com/xrds"
           />
+          <link
+            rel="alternate home"
+            type="application/rss+xml"
+            href="/feed.rss"
+            title="Subscribe via RSS"
+          />
+          <link
+            rel="alternate home"
+            type="application/atom+xml"
+            href="/feed.atom"
+            title="Subscribe via Atom"
+          />
         </Helmet>
         <PostCardList postcards={posts} />
         <h3 css={{ textAlign: `right` }}>

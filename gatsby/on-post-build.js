@@ -84,8 +84,8 @@ const onPostBuild = async ({ graphql }) => {
     )
 
   return Promise.all([
-    writeFeed('rss.xml', feed.rss2()),
-    writeFeed('atom.xml', feed.atom1()),
+    writeFeed('feed.rss', feed.rss2()),
+    writeFeed('feed.atom', feed.atom1()),
     writeFeed('feed.json', feed.json1()),
   ])
 }
