@@ -70,8 +70,8 @@
   },
   "dependencies": {
     "@babel/core": "7.4.0",
-    "@emotion/core": "^10.0.7",
-    "@emotion/styled": "^10.0.7",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
     "@svgr/webpack": "4.1.0",
     "bluebird": "3.5.3",
     "caniuse-db": "1.0.30000953",
