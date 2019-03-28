@@ -48,10 +48,9 @@ class CalendarPage extends React.Component<Props, State> {
     const fontColor = bannerColor.negate()
 
     const rmult = 5 / 12 // Magic number... I know... horrible.
-    const lang = getNavigatorLanguage()
     const year = date.getFullYear()
     const dayOfMonth = date.getDate()
-    const monthName = date.toLocaleDateString(lang, { month: 'short' })
+    const monthName = date.toLocaleDateString('en-US', { month: 'short' })
 
     // Original idea from:
     // https://www.sitepoint.com/create-calendar-icon-html5-css3/
