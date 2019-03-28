@@ -15,6 +15,7 @@ const theCss = css({
   position: `fixed`,
   bottom: rhythm(1 / 2),
   right: rhythm(1),
+  zIndex: 200,
 })
 
 const TheNet = () => (

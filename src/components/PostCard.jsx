@@ -64,11 +64,11 @@ const PostCard = ({
         verticalAlign: 'top',
         minHeight: rhythm(3),
         maxHeight: rhythm(10),
-        zIndex: 10,
+        zIndex: 1,
         overflow: 'hidden',
         ':before': {
           content: "''",
-          zIndex: 100,
+          zIndex: 2,
           width: '100%',
           height: rhythm(4),
           position: 'absolute',
