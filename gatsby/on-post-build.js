@@ -23,7 +23,7 @@ const onPostBuild = async ({ graphql }) => {
         filter: {
           fields: {
             sourceName: { eq: "posts" }
-            hide: { eq: true }
+            hide: { eq: false }
           }
         }
       ) {
