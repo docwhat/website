@@ -1,6 +1,6 @@
 ---
 title: Rules for a good announcement
-date: '2018-12-13'
+date: '2019-03-29'
 draft: true
 banner:
     url: 'rawpixel-783348-unsplash.jpg'
@@ -89,4 +89,14 @@ Example:
 
 ### Actions
 
+You should state what the user should do in clear plain language.
+
+A good approach is to use numbered lists with each step being one simple
+instruction.
+
+Telling the user they have nothing to do is also acceptable.
+
 ### Details
+
+Describe what is going on. Use language you would use to explain the event to
+your a colleague.
