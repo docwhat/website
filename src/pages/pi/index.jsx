@@ -8,9 +8,11 @@ import Layout from '../../components/Layout'
 import PostCardList from '../../components/PostCardList'
 import SourceLink from '../../components/SourceLink'
 import useAllPies from '../../components/useAllPies'
+import useSiteMetadata from '../../components/useSiteMetadata'
 
 const SiteIndex = (props: { location: Location }) => {
   const pies = useAllPies()
+  const site = useSiteMetadata()
 
   return (
     <Layout location={props.location}>
@@ -25,6 +27,46 @@ const SiteIndex = (props: { location: Location }) => {
         <p>
           The current version is: <br /> <SourceLink />
         </p>
+        <table>
+          <thead>
+            <tr>
+              <th>variable</th>
+              <th>value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>SITE_BRANCH</th>
+              <td>
+                <code>{site.branch}</code>
+              </td>
+            </tr>
+            <tr>
+              <th>SITE_COMMIT</th>
+              <td>
+                <code>{site.commit}</code>
+              </td>
+            </tr>
+            <tr>
+              <th>SITE_VERSION</th>
+              <td>
+                <code>{site.version}</code>
+              </td>
+            </tr>
+            <tr>
+              <th>GATSBY_ENV</th>
+              <td>
+                <code>{site.gatsby_env}</code>
+              </td>
+            </tr>
+            <tr>
+              <th>NODE_ENV</th>
+              <td>
+                <code>{site.node_env}</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <PostCardList postcards={pies} />
       </>
     </Layout>

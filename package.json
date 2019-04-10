@@ -18,7 +18,7 @@
   "author": "Christian Höltje (https://docwhat.org/)",
   "main": "n/a",
   "scripts": {
-    "build": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby build",
+    "build": "NODE_ENV=production script/env gatsby build",
     "clean": "gatsby clean",
     "cypress:open": "cypress open",
     "cypress:run": "wait-on http://localhost:8000 && cypress run",
@@ -27,7 +27,7 @@
     "cypress:run:record": "cypress run --record",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
-    "develop": "SITE_COMMIT=\"${SITE_COMMIT:-$(git log -1 --oneline --decorate)}\" SITE_VERSION=\"${SITE_VERSION:-$(git rev-parse HEAD)}\" gatsby develop",
+    "develop": "NODE_ENV=development script/env gatsby develop",
     "docker:build": "yarn build && script/compress && script/build",
     "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
     "docker:stop": "docker container rm -f docwhat.org",

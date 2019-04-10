@@ -20,8 +20,11 @@ module.exports = {
     description: siteDescription,
     siteUrl,
     url: siteUrl,
-    version: process.env.SITE_VERSION, // This can only be calculated here in dev mode.
-    commit: process.env.SITE_COMMIT, // This can only be calculated here in dev mode.
+    version: process.env.SITE_VERSION || 'unknown', // This can only be calculated here in dev mode.
+    commit: process.env.SITE_COMMIT || 'unknown', // This can only be calculated here in dev mode.
+    branch: process.env.SITE_BRANCH || 'unknown', // This can only be calculated here in dev mode.
+    node_env: process.env.NODE_ENV || 'development', // This can only be calculated here in dev mode.
+    gatsby_env: process.env.GATSBY_ENV || 'development', // This can only be calculated here in dev mode.
     sourceUrl,
     image: '/favicon.png',
     twitterUsername: twitterUsername,

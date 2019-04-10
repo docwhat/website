@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -euo pipefail
+
+SITE_BRANCH="${SITE_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}"
+SITE_COMMIT="${SITE_COMMIT:-$(git log -1 --oneline --decorate)}"
+SITE_VERSION="${SITE_VERSION:-$(git rev-parse HEAD)}"
+
+if [[ $NODE_ENV == "development" ]]; then
+  default_env=development
+elif [[ $SITE_BRANCH == "stable" ]]; then
+  default_env=production
+else
+  default_env=staging
+fi
+
+GATSBY_ENV="${GATSBY_ENV:-${default_env}}"
+
+export SITE_BRANCH SITE_COMMIT SITE_VERSION GATSBY_ENV
+
+exec "$@"
+
+# EOF
