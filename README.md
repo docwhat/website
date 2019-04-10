@@ -21,6 +21,17 @@ yarn install
 gatsby develop
 ```
 
+## HOWTO
+
+### Fix DPI for an image
+
+If an image has the wrong size in Markdown it's because the density/DPI is
+wrong:
+
+```sh
+convert original.jpg -density 300 -units pixelsperinch new.jpg
+```
+
 ## Notes
 
 -   [_Made Mistakes_ gatsby-test issue #1](https://github.com/mmistakes/gatsby-test/issues/1)
