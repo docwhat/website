@@ -146,7 +146,7 @@
     "inquirer": "6.2.2",
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "8.1.5",
-    "prettier": "1.16.4",
+    "prettier": "1.17.0",
     "prettier-eslint-cli": "4.7.1",
     "remark-abbr": "1.3.0",
     "remark-cli": "6.0.1",
