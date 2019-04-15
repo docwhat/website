@@ -42,7 +42,7 @@
     "serve": "gatsby serve",
     "setup": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run:record && yarn docker:stop"
+    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && (yarn cypress:run:record || yarn cypress:run) && yarn docker:stop"
   },
   "husky": {
     "hooks": {
