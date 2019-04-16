@@ -20,16 +20,16 @@ sudo -v \
 
 ### What's going on?
 
-If a Go program is compiled with `CGO_ENABLED=0` for macOS then Go uses its
+On macOS, if a Go program is compiled with `CGO_ENABLED=0` then Go uses its
 own internal network name resolver. This resolver only knows about
 `/etc/resolv.conf` and doesn't know about the `libSystem` (macOS `libc`)
 library and its name resolution functions.
 
 macOS (like most modern OSes) has smarter DNS lookups than just using an
-`/etc/resolv.conf` which allow it to smoothly handle switching network.
+`/etc/resolv.conf` which allow it to smoothly handle switching networks.
 
-When a VPN is used the macOS DNS lookups use the VPN's DNS if a host name is
-behind the VPN, otherwise it uses the standard DNS settings.
+When a VPN is being used then DNS lookups will be split between the VPN's DNS
+servers and your ISP's DNS servers, depending on the hostname.
 
 You can setup custom name servers for certain domains by creating
 `resolv.conf` style files in `/etc/resolver/<domain>`. This is what your VPN
