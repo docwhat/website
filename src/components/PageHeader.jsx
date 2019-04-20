@@ -3,7 +3,7 @@
 import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
-import CalendarPage from './CalandarPage'
+import CalendarPage from './CalendarPage'
 import Date from './Date'
 import SmallPrint from './SmallPrint'
 
