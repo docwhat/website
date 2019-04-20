@@ -1,27 +1,17 @@
 // @flow
 // @format
+import styled from '@emotion/styled'
+// eslint-disable-next-line no-unused-vars
 import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
 
-type Props = {
-  children: React.Node,
-}
-
-const SmallPrint = ({ children, ...other }: Props): React.Node => (
-  <small
-    css={{
-      fontSize: '65%',
-      fontStyle: 'italic',
-      lineHeight: 1,
-      marginBottom: rhythm(1 / 4),
-      marginTop: rhythm(1 / 4),
-      opacity: 0.5,
-      whiteSpace: 'pre',
-    }}
-    {...other}
-  >
-    {children}
-  </small>
-)
-export default SmallPrint
+export default styled.small`
+  font-size: 65%;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: ${rhythm(1 / 4)};
+  margin-top: ${rhythm(1 / 4)};
+  opacity: 0.5;
+  white-space: pre;
+`
