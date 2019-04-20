@@ -64,7 +64,6 @@ const globalCss = css({
    */
 
   "code[class*='language-'], pre[class*='language-']": {
-    color: baseColor.string(),
     direction: 'ltr',
     textAlign: 'left',
     tabSize: 4,
@@ -94,7 +93,6 @@ const globalCss = css({
 
   /* Inline code */
   ":not(pre) > code[class*='language-']": {
-    display: 'inline-block',
     padding: '0.2em 0.4em',
     backgroundColor: mellowColor
       .saturationl(13)
@@ -103,7 +101,7 @@ const globalCss = css({
       .string(),
     whiteSpace: 'pre-wrap',
     wordBreak: 'break-word',
-    borderRadius: '0.19em',
+    borderRadius: '0.2em',
   },
 
   '.token.comment, .token.prolog, .token.doctype, .token.cdata': {
