@@ -5,6 +5,7 @@ public
 .intermediate-representation/
 .cache/
 .tern-port
+.vscode/
 
 # We use yarn
 package-lock.json
