@@ -74,7 +74,7 @@
     "@emotion/styled": "^10.0.10",
     "@svgr/webpack": "4.2.0",
     "bluebird": "3.5.4",
-    "caniuse-db": "1.0.30000962",
+    "caniuse-db": "1.0.30000963",
     "chalk": "2.4.2",
     "color": "3.1.1",
     "compass-vertical-rhythm": "1.4.5",
