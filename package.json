@@ -141,7 +141,7 @@
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-simple-import-sort": "3.1.0",
     "eslint-plugin-standard": "4.0.0",
-    "flow-bin": "0.97.0",
+    "flow-bin": "0.98.0",
     "husky": "2.1.0",
     "inquirer": "6.3.1",
     "inquirer-datepicker-prompt": "0.4.2",
