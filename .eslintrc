@@ -2,11 +2,11 @@
   "extends": [
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
+    "standard",
     "prettier",
     "prettier/flowtype",
     "prettier/react",
-    "prettier/standard",
-    "standard"
+    "prettier/standard"
   ],
   "env": {
     "node": true,
@@ -15,9 +15,10 @@
   "plugins": [
     "react",
     "flowtype",
-    "prettier",
+    "emotion",
     "standard",
-    "simple-import-sort"
+    "simple-import-sort",
+    "prettier"
   ],
   "parser": "babel-eslint",
   "rules": {
