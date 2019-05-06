@@ -21,7 +21,7 @@
     "build": "NODE_ENV=production script/env gatsby build",
     "clean": "gatsby clean",
     "cypress:open": "cypress open",
-    "cypress:run": "wait-on http://localhost:8000 && cypress run",
+    "cypress:run": "wait-on http://localhost:8000 && cypress run --record=false",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:headed": "cypress run --headed",
     "cypress:run:record": "cypress run --record",
