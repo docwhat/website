@@ -4,9 +4,9 @@ import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
 import React from 'react'
 
-import { heroColor } from '../utils/colors'
+import { heroColor } from '../utils/colors.js'
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../utils/style.js'
 
 type State = {
   monthName: string,

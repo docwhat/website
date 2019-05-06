@@ -4,9 +4,9 @@ import styled from '@emotion/styled'
 import { withPrefix } from 'gatsby'
 import React from 'react'
 
-import Layout from '../components/Layout'
-import StyledButton from '../components/StyledButton'
-import { rhythm } from '../utils/typography'
+import Layout from '../components/Layout.jsx'
+import StyledButton from '../components/StyledButton.jsx'
+import { rhythm } from '../utils/style.js'
 
 const MyLabel = styled.label`
   display: inline-block;

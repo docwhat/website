@@ -1,20 +1,11 @@
 ---
-test: true
 title: 'Markup: HTML Tags and Formatting'
-header:
-    teaser: 'assets/images/markup-syntax-highlighting-teaser.jpg'
-categories:
-    - Markup
-tags:
-    - content
-    - css
-    - formatting
-    - html
-    - markup
-toc: true
+date: 2013-01-11
 ---
 
 A variety of common markup showing how the theme styles them.
+
+# Header one
 
 ## Header two
 
@@ -129,7 +120,13 @@ it.
     <legend>Personalia:</legend>
     Name: <input type="text" size="30"><br>
     Email: <input type="text" size="30"><br>
-    Date of birth: <input type="text" size="10">
+    Date of birth: <input type="text" size="10"><br>
+    Duck:
+        <input type="radio" id="huey" name="drone" value="huey" checked><label for="huey">Huey</label>
+        <input type="radio" id="dewey" name="drone" value="dewey"><label for="dewey">Dewey</label>
+        <input type="radio" id="louie" name="drone" value="louie"><label for="louie">Louie</label>
+    <br>
+    Comment: <textarea></textarea>
   </fieldset>
 </form>
 
@@ -177,15 +174,30 @@ This tag will let you <strike>strikeout text</strike>.
 
 The emphasize tag should _italicize_ text.
 
-### Insert Tag
+### Corrections
+
+#### Deleted Tag
+
+<del datetime="2016-08-23T14:57:34+00:00">SecureTransport may fall back to
+using OpenSSL if the environment variable `SSL_CERT_FILE` is set.</del>
+
+#### Insert Tag
 
 This tag should denote <ins>inserted</ins> text.
 
+#### Both
+
+Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum The best things in life
+are <del>mostly free</del><ins>actually really expensive</ins>. A little
+<ins>learning</ins><del>knowledge</del> is a dangerous thing. lorem ipsum
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+
 ### Keyboard Tag
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually
-styled like the `<code>` tag. Useful for things like <kbd>⌘</kbd> +
-<kbd>s</kbd>
+This scarcely known tag emulates <kbd>keyboard text</kbd>. Useful for things
+like <kbd>⌘</kbd> + <kbd>s</kbd>
 
 ### Preformatted Tag
 
@@ -203,7 +215,7 @@ This tag styles large blocks of code.
 
 ### Quote Tag
 
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
+<q>Developers, developers, developers&hellip;</q> &#8211;Steve Ballmer
 
 ### Strong Tag
 

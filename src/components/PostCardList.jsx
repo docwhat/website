@@ -1,9 +1,10 @@
 // @flow
 // @format
+import { css } from '@emotion/core'
 import * as React from 'react'
 
-import { rhythm } from '../utils/typography'
-import PostCard from './PostCard'
+import { rhythm } from '../utils/style.js'
+import PostCard from './PostCard.jsx'
 
 type PostCardEdge = {
   node: {
@@ -22,19 +23,17 @@ type Props = {
 
 const PostCardList = (props: Props): React.Node => (
   <div
-    css={{
-      display: `flex`,
-      flexDirection: `row`,
-      flexWrap: `wrap`,
-      maxWidth: rhythm(24 - 1), // from Layout
-      overflow: 'auto',
-      margin: rhythm(-1 / 2),
-      '& > *': {
-        margin: rhythm(1 / 2),
-        width: rhythm(10),
-        maxWidth: rhythm(24 - 2),
-      },
-    }}
+    css={css`
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: ${rhythm(24 - 1)}; // from Layout
+      overflow: auto;
+      margin: ${rhythm(-1 / 2)};
+      & > * {
+        margin: ${rhythm(1 / 2)};
+      }
+    `}
   >
     {props.postcards.map(({ node }) => {
       const {
@@ -45,7 +44,8 @@ const PostCardList = (props: Props): React.Node => (
       return (
         <PostCard
           overrideCss={{
-            flex: `1 1 ${rhythm(10)}`,
+            flex: `1`,
+            minWidth: `20ch`,
             '&>p': { textAlign: `justify` },
           }}
           key={slug}

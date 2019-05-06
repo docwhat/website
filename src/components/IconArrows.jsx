@@ -2,7 +2,7 @@
 // @format
 import React from 'react'
 
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../utils/style.js'
 
 // eslint-disable-next-line react/display-name
 const IconArrow = overrideCss => () => (

@@ -5,7 +5,7 @@ import { css } from '@emotion/core'
 import Link from 'gatsby-link'
 import React from 'react'
 
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../utils/style'
 
 const theCss = css({
   fontSize: rhythm(1 / 2),

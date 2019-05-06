@@ -93,7 +93,6 @@
     "gatsby-plugin-sharp": "2.0.36",
     "gatsby-plugin-sitemap": "2.1.0",
     "gatsby-plugin-svgr": "2.0.2",
-    "gatsby-plugin-typography": "2.2.13",
     "gatsby-remark-abbr": "1.0.0",
     "gatsby-remark-autolink-headers": "2.0.16",
     "gatsby-remark-copy-linked-files": "2.0.12",
@@ -121,9 +120,6 @@
     "react-gist": "1.2.1",
     "react-gravatar": "2.6.3",
     "react-helmet": "5.2.1",
-    "react-typography": "0.16.19",
-    "typography": "0.16.19",
-    "typography-breakpoint-constants": "0.16.19",
     "uuid": "3.3.2"
   },
   "devDependencies": {

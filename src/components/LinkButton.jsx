@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import Link from 'gatsby-link'
 
 import { heroColor } from '../utils/colors.js'
-import { rhythm } from '../utils/typography.js'
+import { rhythm } from '../utils/style.js'
 
 const color = heroColor.negate()
 const background = heroColor

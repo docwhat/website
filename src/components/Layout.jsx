@@ -1,15 +1,13 @@
 // @format
 // @flow
-import { Global } from '@emotion/core'
+import { Global, css } from '@emotion/core'
 import { withPrefix } from 'gatsby'
 import Link from 'gatsby-link'
 import * as React from 'react'
-import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
 import logoUrl from '../icons/logo.svg'
-import { heroColor } from '../utils/colors'
-import globalCss from '../utils/style.js'
-import { options as typo, rhythm, scale } from '../utils/typography'
+import { heroColor } from '../utils/colors.js'
+import globalCss, { MOBILE_MEDIA_QUERY, rhythm } from '../utils/style.js'
 
 type Props = {
   children?: React.Node,
@@ -22,64 +20,58 @@ const Layout = (props: Props) => {
   const isHomepage =
     location.pathname === withPrefix('/') ||
     location.pathname === withPrefix('/pi/')
-  const scaleFactor = isHomepage ? 5 / 4 : 1 / 4
+  const scaleFactor = isHomepage ? 2.5 : 1.5
 
   const header = (
     <header
-      css={{
-        ...scale(1.5 * scaleFactor),
-        marginBottom: rhythm(1.5 * scaleFactor),
-        marginTop: 0,
-        borderBottomStyle: `solid`,
-        borderBottomWidth: rhythm((1 / 2) * scaleFactor),
-        borderBottomColor: heroColor.string(),
-        fontFamily: typo.headerFontFamily
-          .map(fontName => `"${fontName}"`)
-          .join(`, `),
-        fontWeight: 700,
-        textRendering: `optimizeLegibility`,
-        [MOBILE_MEDIA_QUERY]: {
-          ...scale(1.0),
-          borderBottomWidth: rhythm(1 / 2),
-          marginBottom: rhythm(1.5),
-          textAlign: 'center',
+      css={css`
+        font-size: ${1 * scaleFactor}rem;
+        line-height: 0;
+        margin-top: 1rem;
+        margin-bottom: ${rhythm(1 / 2)};
+        border-bottom-style: solid;
+        border-bottom-width: 0.25rem;
+        border-bottom-color: ${heroColor.string()};
+        padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+        padding: 0;
+        font-weight: 700;
+        text-rendering: optimizeLegibility;
+
+        ${MOBILE_MEDIA_QUERY} {
+          font-size: 1rem;
+          border-bottom-width: 0.5rem;
+          text-align: center;
         },
-      }}
+      `}
     >
       <Link
-        css={{
-          boxShadow: `none`,
-          textDecoration: `none`,
-          color: `inherit`,
-        }}
+        css={css`
+          box-shadow: none;
+          text-decoration: none;
+          color: inherit;
+        `}
         to="/"
       >
         <img
           src={logoUrl}
           alt="docwhat's avatar"
-          css={{
-            height: '1em',
-            width: '1em',
-            verticalAlign: 'text-bottom',
-            margin: 0,
-          }}
+          css={css`
+            height: 1em;
+            width: 1em;
+            vertical-align: text-bottom;
+            margin: 0;
+          `}
         />
-        {`docwhat's blog`}
+        {"docwhat's blog"}
       </Link>
     </header>
   )
   return (
-    <div
-      css={{
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        margin: `0 auto`,
-      }}
-    >
+    <>
       <Global styles={globalCss} />
       {header}
       {children}
-    </div>
+    </>
   )
 }
 

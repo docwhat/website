@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 // eslint-disable-next-line no-unused-vars
 import * as React from 'react'
 
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../utils/style'
 
 export default styled.small`
   font-size: 65%;

@@ -131,8 +131,7 @@ A second block quote:
 | `git diff`   | Show file differences that **haven't been** staged |
 | `git status` | List all _new or modified_ files                   |
 
-## Components
+## Misc.
 
-### A Gist
-
-<Gist id=2973488 file=example1.vim></Gist>
+An <abbr title="abbreviation">abbr</abbr> with a title and an untitled
+<abbr>abbr</abbr>.

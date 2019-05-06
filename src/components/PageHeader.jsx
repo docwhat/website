@@ -2,10 +2,10 @@
 // @format
 import * as React from 'react'
 
-import { rhythm } from '../utils/typography'
-import CalendarPage from './CalendarPage'
-import Date from './Date'
-import SmallPrint from './SmallPrint'
+import { rhythm } from '../utils/style.js'
+import CalendarPage from './CalendarPage.jsx'
+import Date from './Date.jsx'
+import SmallPrint from './SmallPrint.jsx'
 
 type Props = {
   title: string,
@@ -59,6 +59,7 @@ const PageHeader = (props: Props): React.Node => {
       >
         <h1
           css={{
+            lineHeight: 1,
             marginTop: 0,
             marginRight: `auto`,
             marginLeft: 0,
