@@ -78,8 +78,8 @@ const SiteIndex = (props: { location: Location }) => {
           <Link to="/all">See all blog posts&hellip;</Link>
         </h3>
         <JsonLd data={jsonLdData} />
-        <Bio />
         <TheNet />
+        <Bio />
       </>
     </Layout>
   )

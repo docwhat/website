@@ -15,7 +15,7 @@ exports.authorSameAs = [
 exports.siteTitle = "docwhat's blog"
 exports.siteKeywords =
   'software engineering agile devops ruby golang javascript refactoring'
-exports.siteDescription = 'Personal blog of Christian Höltje'
+exports.siteDescription = 'The personal blog of Christian Höltje'
 
 exports.siteUrl =
   typeof window === 'undefined' ? exports.authorUrl : window.location.origin
