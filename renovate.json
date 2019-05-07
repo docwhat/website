@@ -5,8 +5,7 @@
         "group:recommended",
         ":assignee(docwhat)",
         ":automergeLinters",
-        ":automergeMinor",
-        ":maintainLockFilesDaily"
+        ":automergeMinor"
     ],
     "timezone": "America/New_York"
 }
