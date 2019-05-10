@@ -28,7 +28,7 @@ const PostCardList = (props: Props): React.Node => (
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: ${rhythm(24 - 1)}; /* from Layout */
+      max-width: calc(100% - ${rhythm(1)}); /* from Layout */
       overflow: auto;
       margin: 0 ${rhythm(-1 / 2)};
       & > * {
@@ -46,7 +46,7 @@ const PostCardList = (props: Props): React.Node => (
         <PostCard
           overrideCss={{
             flex: `1`,
-            minWidth: `20ch`,
+            minWidth: `24ch`,
             '&>p': { textAlign: `justify` },
           }}
           key={slug}

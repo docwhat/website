@@ -7,7 +7,9 @@ import * as React from 'react'
 
 import logoUrl from '../icons/logo.svg'
 import { heroColor } from '../utils/colors.js'
-import globalCss, { MOBILE_MEDIA_QUERY, rhythm } from '../utils/style.js'
+import { MOBILE_MEDIA_QUERY } from '../utils/media-queries.js'
+import prismCss from '../utils/prism-style.js'
+import globalCss, { rhythm } from '../utils/style.js'
 
 type Props = {
   children?: React.Node,
@@ -69,6 +71,7 @@ const Layout = (props: Props) => {
   return (
     <>
       <Global styles={globalCss} />
+      <Global styles={prismCss} />
       {header}
       {children}
     </>
