@@ -213,9 +213,19 @@ This tag styles large blocks of code.
 }
 </pre>
 
-### Quote Tag
+### Q Tag
 
 <q>Developers, developers, developers&hellip;</q> &#8211;Steve Ballmer
+
+### Mark Tag
+
+It is a dark time for the Rebellion. Although the Death Star has been
+destroyed, <mark class="match">Imperial</mark> troops have driven the Rebel
+forces from their hidden base and pursued them across the galaxy.
+
+Evading the dreaded <mark class="match">Imperial</mark> Starfleet, a group of
+freedom fighters led by Luke Skywalker has established a new secret base on
+the remote ice world of Hoth.
 
 ### Strong Tag
 

@@ -31,8 +31,10 @@
     "docker:build": "yarn build && script/compress && script/build",
     "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
     "docker:stop": "docker container rm -f docwhat.org",
-    "lint": "yarn run lint:js && yarn run lint:md",
-    "lint:fix": "yarn run lint:js:fix && yarn run lint:md:fix",
+    "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md",
+    "lint:css": "stylelint './src/**/*.{js,jsx,css}'",
+    "lint:css:fix": "stylelint --fix './src/**/*.{js,jsx,css}'",
+    "lint:fix": "yarn run lint:js:fix && yarn run lint:css:fix && yarn run lint:md:fix",
     "lint:js": "eslint '**/*.{js,jsx}'",
     "lint:js:fix": "prettier --write '**/*.{js,jsx}'",
     "lint:md": "remark --frail --quiet --no-stdout 'content/**/*.md'",
@@ -59,7 +61,11 @@
       "**/*.{js,jsx}": [
         "prettier --write",
         "eslint",
+        "stylelint",
         "git add"
+      ],
+      "**/*.css": [
+        "stylelint"
       ],
       "package.json": [
         "sort-package-json",
@@ -145,11 +151,16 @@
     "lint-staged": "8.1.6",
     "prettier": "1.17.0",
     "prettier-eslint-cli": "4.7.1",
+    "prettier-stylelint": "^0.4.2",
     "remark-abbr": "1.3.1",
     "remark-cli": "6.0.1",
     "remark-frontmatter": "1.3.1",
     "remark-preset-lint-recommended": "3.0.2",
     "sort-package-json": "1.22.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.6.0",
     "wait-on": "3.2.0"
   },
   "jshintConfig": {

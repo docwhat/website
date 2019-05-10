@@ -59,7 +59,7 @@ class CalendarPage extends React.Component<Props, State> {
       position: relative;
       width: ${rhythm(7 * rmult)};
 
-      // CommonCSS
+      /* CommonCSS */
       & > * {
         display: block;
         font-size: 1em;

@@ -41,7 +41,7 @@ const Layout = (props: Props) => {
           font-size: 1rem;
           border-bottom-width: 0.5rem;
           text-align: center;
-        },
+        }
       `}
     >
       <Link
