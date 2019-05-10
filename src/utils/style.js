@@ -134,6 +134,7 @@ const globalCss = css`
     font-variant-numeric: normal;
     font-weight: normal;
     font-size: 16pt;
+    line-height: 1.25;
   }
 
   ${TABLET_MEDIA_QUERY} {
@@ -473,10 +474,15 @@ const globalCss = css`
     word-wrap: normal;
     min-height: 2em;
   }
+  ${MOBILE_MEDIA_QUERY} {
+    pre[class*='language-'] {
+      font-size: 85%;
+    }
+  }
 
   /* Inline code */
   :not(pre) > code[class*='language-'] {
-    padding: 0.2em 0.4em;
+    padding: 0 0.3em;
     background-color: ${mellowColor
       .saturationl(13)
       .lightness(12)
