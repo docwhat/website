@@ -112,12 +112,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-4714126-2`,
-      },
-    },
     `gatsby-plugin-favicon`,
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-catch-links`,
@@ -200,4 +194,15 @@ module.exports = {
       },
     },
   ],
+}
+
+if (module.exports.siteMetadata.gatsby_env === 'production') {
+  module.exports['plugins'] = module.exports.plugins.concat([
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-4714126-2`,
+      },
+    },
+  ])
 }
