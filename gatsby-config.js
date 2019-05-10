@@ -65,7 +65,6 @@ module.exports = {
               withWebp: true,
               linkImagesToOriginal: true,
               backgroundColor: `transparent`,
-              sizeByPixelDensity: true,
             },
           },
           {
