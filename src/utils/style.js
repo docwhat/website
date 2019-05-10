@@ -614,3 +614,5 @@ const globalCss = css`
 `
 
 export default globalCss
+
+// vim:set ft=javascript.jsx:
