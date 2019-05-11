@@ -28,7 +28,6 @@ const PostCardList = (props: Props): React.Node => (
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: calc(100% - ${rhythm(1)}); /* from Layout */
       overflow: auto;
       margin: 0 ${rhythm(-1 / 2)};
       & > * {

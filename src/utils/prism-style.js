@@ -9,7 +9,6 @@ import {
   mellowColor,
 } from './colors.js'
 import { MOBILE_MEDIA_QUERY } from './media-queries.js'
-import { rhythm } from './style.js'
 
 /**
  * Based on:
@@ -34,7 +33,7 @@ const prismCss = css`
 
   /* Code blocks */
   pre[class*='language-'] {
-    padding: ${rhythm(1 / 2)};
+    padding: 0.75rem;
     background-color: ${deemphasisColor
       .saturationl(29)
       .lightness(97)
@@ -46,6 +45,11 @@ const prismCss = css`
     word-wrap: normal;
     min-height: 2em;
   }
+
+  .gatsby-highlight-code-line pre[class*='language-'] {
+    padding: 0;
+  }
+
   ${MOBILE_MEDIA_QUERY} {
     pre[class*='language-'] {
       font-size: 85%;
@@ -151,10 +155,8 @@ const prismCss = css`
       .lightness(93)
       .string()};
     display: block;
-    margin-right: -1em;
-    margin-left: -1em;
-    padding-right: 1em;
-    padding-left: 0.75em;
+    margin: 0 -1ch;
+    padding: 0 1ch;
   }
 
   .token.important,
@@ -204,7 +206,7 @@ const prismCss = css`
   ${MOBILE_MEDIA_QUERY} {
     pre[class*='language-'],
     pre[class*='language-'].line-numbers {
-      padding: 0.2em;
+      padding: 0.25rem 0;
       border-left: none;
       border-right: none;
     }

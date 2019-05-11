@@ -33,7 +33,6 @@ const globalCss = css`
 
   html {
     background-color: ${lightBackground.string()};
-    color: hsla(0,0%,0%,0.8);
     font-size: 1.3rem;
   }
 
@@ -44,6 +43,7 @@ const globalCss = css`
   }
 
   body {
+    color: ${grey(20)};
     margin: 0 auto;
     max-width: 70ch;
     min-width: 320px;
@@ -208,8 +208,8 @@ const globalCss = css`
 
   del {
     color: inherit;
-    text-decoration: solid ${emphasisColor.string()} line-through;
     opacity: 0.8;
+    text-decoration: solid ${emphasisColor.string()} line-through;
   }
 
   del > * {
@@ -217,24 +217,30 @@ const globalCss = css`
   }
 
   table {
-    width: 100%;
+    border-collapse: collapse;
     margin: 1rem 0;
+    table-layout:fixed;
+    width: 100%;
   }
 
   td, th {
-    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    border-bottom: 1px solid ${grey(88)};
     font-feature-settings: "tnum";
+
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.75rem;
     padding-bottom: calc(0.75rem - 1px);
   }
+
   th:first-child,td:first-child {
     padding-left: 0;
   }
+
   th:last-child,td:last-child {
     padding-right: 0;
   }
+
   tbody tr:nth-of-type(odd) {
     background-color: ${deemphasisColor
       .saturationl(30)

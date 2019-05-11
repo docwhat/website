@@ -26,4 +26,4 @@ export const deemphasisColor = Color.hsl([deemphasisHue, saturation, lightness])
 
 export const lightBackground = Color.rgb(255, 255, 255)
 
-export const grey = (value: number) => `hsla(0,0%,0%,${100 - value})`
+export const grey = (value: number) => `hsla(0,0%,0%,${(100 - value) / 100})`
