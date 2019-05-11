@@ -80,6 +80,7 @@ const calculateTitle = (node, getNode) => {
     node,
     getNode,
     basePath: `content/${node.fields.sourceName}`,
+    trailingslash: false,
   })
 
   const protoTitle = relPath
@@ -106,6 +107,7 @@ const calculateDate = (node, getNode) => {
     node,
     getNode,
     basePath: `content/${node.fields.sourceName}`,
+    trailingslash: false,
   })
 
   const hasDateInPath = relPath.match(/^\/?([\d]{4}-[\d]{2}-[\d]{2})/)
