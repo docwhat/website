@@ -5,7 +5,6 @@ const uuidv4 = require(`uuid/v4`)
 const _ = require(`lodash`)
 const fs = require(`fs`)
 const yaml = require(`js-yaml`)
-const dateFormat = require(`dateformat`)
 
 inquirer.registerPrompt(`datetime`, require(`inquirer-datepicker-prompt`))
 
@@ -27,6 +26,7 @@ inquirer
       type: `datetime`,
       name: `date`,
       message: `Post date? `,
+      format: ['yyyy', '-', 'mm', '-', 'dd'],
     },
     {
       type: `input`,
@@ -38,10 +38,10 @@ inquirer
   .then(answers => {
     const frontmatter = _.clone(answers)
     frontmatter.id = uuidv4()
-    frontmatter.template = `post`
+    frontmatter.draft = true
+    frontmatter.date = answers.date.toISOString().split('T')[0]
 
-    const ymd = dateFormat(frontmatter.date, `yyyy-mm-dd`)
-    const directory = `src/posts/${ymd}-${frontmatter.slug}`
+    const directory = `content/posts/${frontmatter.slug}`
     const filepath = `${directory}/index.md`
     const contents = `---\n${yaml.safeDump(frontmatter)}---\n\nText goes here`
 
