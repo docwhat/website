@@ -9,10 +9,10 @@ draft: true
 In a
 [_declarative pipeline_](https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline):
 
-1. Add a
+1.  Add a
    [`parameters`](https://jenkins.io/doc/book/pipeline/syntax/#parameters)
    section if one doesn't exist already.
-2. Within the `parameters` section, add a `credentials` section.
+2.  Within the `parameters` section, add a `credentials` section.
 
     ```groovy
     /* EXAMPLE */
@@ -27,7 +27,7 @@ In a
     }
     ```
 
-3. Within a [`steps`](https://jenkins.io/doc/book/pipeline/syntax/#steps)
+3.  Within a [`steps`](https://jenkins.io/doc/book/pipeline/syntax/#steps)
    section, use the
    [`withCredentials()`](https://jenkins.io/doc/pipeline/steps/credentials-binding/)
    method, using the credentialsId specified above wrapped with `${...}`.
