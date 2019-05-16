@@ -5026,10 +5026,10 @@ eslint-plugin-react@7.13.0, eslint-plugin-react@^7.8.2:
     prop-types "^15.7.2"
     resolve "^1.10.1"
 
-eslint-plugin-simple-import-sort@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-3.1.0.tgz#4df43780737037f4b8b19419ed2201055d2ae8fc"
-  integrity sha512-pdjdqZYzTvyUP0+z5dPrMAtqdWp7GawEqLJXJbm4vhaBCKnuwoiHcUdz0jnB8mD/vTlZYAMJ/EYJN8LTt1wGOA==
+eslint-plugin-simple-import-sort@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-3.1.1.tgz#a5e7c9f2819d9590c0046d835debf445689955e3"
+  integrity sha512-ik1YH6gFjdXEZTeePCDEkjBqQO95IfG/uqZkI+5Kl8GESq4eVYrNC21+XXML3rEuj/XVVfUZbwPkCXOW+ecjhw==
   dependencies:
     validate-npm-package-name "^3.0.0"
 
