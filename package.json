@@ -86,7 +86,7 @@
     "compass-vertical-rhythm": "1.4.5",
     "eslint-plugin-emotion": "^10.0.7",
     "feed": "2.0.4",
-    "gatsby": "2.5.0",
+    "gatsby": "2.5.1",
     "gatsby-cli": "2.5.14",
     "gatsby-pagination": "1.2.0",
     "gatsby-plugin-catch-links": "2.0.14",
