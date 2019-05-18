@@ -47,6 +47,11 @@ const onCreateNode = async ({ node, actions, getNode }) => {
       name: `hide`,
       value: isProduction && (archived || draft),
     })
+    createNodeField({
+      node,
+      name: `banner`,
+      value: _.get(node, 'frontmatter.banner', {}),
+    })
   }
   if (sourceName !== 'pages') {
     createNodeField({

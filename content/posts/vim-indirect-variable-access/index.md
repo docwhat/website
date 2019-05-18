@@ -1,16 +1,12 @@
 ---
 title: 'Vim: indirect variable access'
-date: '2018-07-27'
-slug: vim-indirect-variable-access
-id: cd4295aa-fb12-4f7c-9536-ce9a6e642880
+date: '2018-07-26'
+id: 'cd4295aa-fb12-4f7c-9536-ce9a6e642880'
 banner:
-    url: 'tuesday-temptation-550409-unsplash.jpg'
-    author:
-        name: 'Tuesday Temptation'
-        url: 'https://unsplash.com/photos/ffB7ct610dw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+    credits: 'Photo by Tuesday Temptation'
+    image: 'tuesday-temptation-550409-unsplash.jpg'
+    sourceUrl: 'https://unsplash.com/photos/ffB7ct610dw'
 ---
-
-![](tuesday-temptation-550409-unsplash.jpg)
 
 In Vim you can use a variable as a variable name.
 

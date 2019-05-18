@@ -1,9 +1,9 @@
 ---
 title: DNS not working with Go binaries and VPNs
 date: '2019-04-10'
+banner:
+    image: 'closeup.jpg'
 ---
-
-![](closeup.jpg)
 
 If you are having DNS problems (i.e., `Host not found`) while using a Go
 binary while connected via a VPN... then I have a solution for you.

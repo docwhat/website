@@ -112,9 +112,6 @@ export const query = graphql`
   fragment calendarPageDatesFragment on MarkdownRemark {
     fields {
       ymdDate: date(formatString: "YYYY-MM-DD")
-      ymdUpdate: update_date(formatString: "YYYY-MM-DD")
-      monthName: date(formatString: "MMMM")
-      dayOfMonth: date(formatString: "D")
     }
   }
 `

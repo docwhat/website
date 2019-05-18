@@ -18,7 +18,8 @@
     "emotion",
     "standard",
     "simple-import-sort",
-    "prettier"
+    "prettier",
+    "import"
   ],
   "parser": "babel-eslint",
   "rules": {
@@ -33,6 +34,7 @@
         "asyncArrow": "always"
       }
     ],
+
     "simple-import-sort/sort": "error",
     "sort-imports": "off",
     "import/first": "error",

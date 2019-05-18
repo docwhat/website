@@ -173,6 +173,12 @@ const globalCss = css`
     }
   }
 
+  figcaption {
+    text-align: right;
+    font-size: ${rhythm(1 / 2)};
+    color: ${grey(40)};
+  }
+
   kbd {
     background: ${grey(93)};
     border-radius: 0.25em;

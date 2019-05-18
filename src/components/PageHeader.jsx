@@ -1,5 +1,6 @@
 // @flow
 // @format
+import { graphql } from 'gatsby'
 import * as React from 'react'
 
 import { rhythm } from '../utils/style.js'
@@ -9,28 +10,19 @@ import SmallPrint from './SmallPrint.jsx'
 
 type Props = {
   title: string,
-  monthName: string,
-  dayName: string,
-  dayOfMonth: string,
   ymdDate: string,
   ymdUpdate: string,
 }
 
 const PageHeader = (props: Props): React.Node => {
-  const { title, monthName, dayName, dayOfMonth, ymdDate, ymdUpdate } = props
+  const { title, ymdDate, ymdUpdate } = props
 
   let calendarIcon = ``
   let updateBlurb = ``
   if (ymdDate) {
     calendarIcon = (
       <>
-        <CalendarPage
-          monthName={monthName}
-          dayName={dayName}
-          dayOfMonth={dayOfMonth}
-          ymdDate={ymdDate}
-          ymdUpdate={ymdUpdate}
-        />
+        <CalendarPage ymdDate={ymdDate} />
       </>
     )
     if (ymdUpdate !== 'Invalid date' && ymdUpdate > ymdDate) {
@@ -78,3 +70,12 @@ const PageHeader = (props: Props): React.Node => {
 }
 
 export default PageHeader
+
+export const query = graphql`
+  fragment pageHeaderFragment on MarkdownRemark {
+    ...calendarPageDatesFragment
+    fields {
+      ymdUpdate: update_date(formatString: "YYYY-MM-DD")
+    }
+  }
+`

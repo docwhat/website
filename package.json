@@ -88,6 +88,7 @@
     "feed": "2.0.4",
     "gatsby": "2.5.3",
     "gatsby-cli": "2.5.14",
+    "gatsby-image": "^2.0.41",
     "gatsby-pagination": "1.2.0",
     "gatsby-plugin-catch-links": "2.0.14",
     "gatsby-plugin-emotion": "^4.0.4",

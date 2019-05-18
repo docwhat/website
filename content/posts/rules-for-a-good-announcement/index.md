@@ -1,15 +1,12 @@
 ---
-title: Rules for a good announcement
+title: 'Rules for a good announcement'
 date: '2019-03-29'
-draft: true
+id: 'c1a83c3d-429a-4993-97d5-8e416b23d198'
 banner:
-    url: 'rawpixel-783348-unsplash.jpg'
-    author:
-        name: 'rawpixel'
-        url: 'https://unsplash.com/photos/hzqDYxRSN14?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+    credits: 'Photo by rawpixel'
+    image: 'rawpixel-783348-unsplash.jpg'
+    sourceUrl: 'https://unsplash.com/photos/hzqDYxRSN14'
 ---
-
-![](rawpixel-783348-unsplash.jpg)
 
 Writing for the digital medium (email, blog posts, slack, discord, etc.)
 requires breaking the rules you learned in school.

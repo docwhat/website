@@ -40,6 +40,11 @@ inquirer
     frontmatter.id = uuidv4()
     frontmatter.draft = true
     frontmatter.date = answers.date.toISOString().split('T')[0]
+    frontmatter.banner = {
+      credits: '',
+      image: '',
+      sourceUrl: '',
+    }
 
     const directory = `content/posts/${frontmatter.slug}`
     const filepath = `${directory}/index.md`
