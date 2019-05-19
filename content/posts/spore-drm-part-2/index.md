@@ -44,7 +44,7 @@ these subdirectories:
 -   `/mach_kernel.ctfsys`
 -   `/private/etc/`
 
-It didn't change any timestamps, filesizes or md5sums.  Even if something was
+It didn't change any timestamps, filesizes or md5sums. Even if something was
 already installed via the [Creature Creator](https://amzn.to/2I25apG) I would
 expect it to at least update that code or something.
 
@@ -54,14 +54,14 @@ install a kernel module or a system startup item; changes needed to hide
 directories, detect if debuggers have ever been run, or hide processes.
 
 The thing I wondered about is why it needs root access (it asks for your
-password) during install.  So I'm not 100% confident.
+password) during install. So I'm not 100% confident.
 
 That's a big improvement over all the horrible problems that Windows users
-have reported.  And it means it can be uninstalled and in the way Mac users
-are accustom to.
+have reported. And it means it can be uninstalled and in the way Mac users are
+accustom to.
 
 On the downside, it looks like the authorization is actually causing both
-Windows and Mac users problems.  There is a thread on the forums about how
+Windows and Mac users problems. There is a thread on the forums about how
 [you can't have multiple accounts with one install](http://forum.spore.com/jforum/posts/list/103.page).
 Despite expectations and the instruction manual saying otherwise.
 
@@ -70,7 +70,7 @@ legit complaint along with the windows people who tried to install it and it
 failed or caused various problems.
 
 I had only heard one report about hard drive failure and I suspect it was
-unrelated or a fabrication.  I would expect more Mac users to have complained
+unrelated or a fabrication. I would expect more Mac users to have complained
 by now.
 
 Ciao!

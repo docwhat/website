@@ -9,11 +9,11 @@ archived: true
 ---
 
 Okay, I just recently discovered
-[Groove Armada](http://www.groovearmada.com/ 'Groove Armada home page').  I
+[Groove Armada](http://www.groovearmada.com/ 'Groove Armada home page'). I
 really like their music (and I'm not entirely sure why).
 
 Two guys started a club, called Groove Armada and then put out a CD of the
-music they performed.  The CD was well received and so they kept at it.
+music they performed. The CD was well received and so they kept at it.
 
 Currently, they tour with a huge band performing their grooves around the
 world in giant concert-slash-parties.
@@ -21,18 +21,19 @@ world in giant concert-slash-parties.
 Here's where it gets interesting.<!-- more -->
 
 When their contract expired with their record label, they declined to sign
-back up.  Instead, they signed up for a one year deal with
+back up. Instead, they signed up for a one year deal with
 [b-live-share](http://www.bliveshare.com/share/jl2ymuK4yMy8jg91gF0t/docwhat),
-a music sharing site  run by [Bacardi](http://www.bacardi.com/) (yup, the
-booze guys).
+a music sharing site run by [Bacardi](http://www.bacardi.com/) (yup, the booze
+guys).
 
-This site entices you to sign up to get one free song.  You then get another
+This site entices you to sign up to get one free song. You then get another
 free song after getting more friends to sign up.
 
 That's right, it's a music sharing
-[~~Ponzi scheme~~](http://en.wikipedia.org/wiki/Ponzi_scheme) [multi-level pyramid scheme](http://en.wikipedia.org/wiki/Multilevel_pyramid_scheme).
- Early sharers will do great as the pool of available friends to share with is
-large.  Later sharers will do worse as the pool of available friends shrinks.
+[~~Ponzi scheme~~](http://en.wikipedia.org/wiki/Ponzi_scheme)
+[multi-level pyramid scheme](http://en.wikipedia.org/wiki/Multilevel_pyramid_scheme).
+Early sharers will do great as the pool of available friends to share with is
+large. Later sharers will do worse as the pool of available friends shrinks.
 
 At least there isn't the physically limited constraint of money trickling up;
 the music is digital downloads so infinite copies can be made.

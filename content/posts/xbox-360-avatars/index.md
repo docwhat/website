@@ -11,7 +11,7 @@ archived: true
 ![My
 Avatar](avatar-body.png 'My XBox Live avatar')
 
-Hee-hee.  You can look up people's XBox 360 avatars on the net. Neat!
+Hee-hee. You can look up people's XBox 360 avatars on the net. Neat!
 
 Now I just need something similar for my Mii.
 

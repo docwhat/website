@@ -25,7 +25,7 @@ or lose their music.
 
 <!-- more -->
 
-There are other costs to buying DRM'd music;  check out these resources:
+There are other costs to buying DRM'd music; check out these resources:
 
 -   [Defective By Design](http://www.defectivebydesign.org/)
 -   ["The Customer is always Wrong"](http://www.eff.org/pages/customer-always-wrong-users-guide-drm-online-music)

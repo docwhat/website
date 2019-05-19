@@ -9,7 +9,7 @@ tags:
 ---
 
 The single most important fact that web site owners forget is that the web
-belongs to the viewer.  It doesn't belong to the web site owner; they don't
+belongs to the viewer. It doesn't belong to the web site owner; they don't
 control how the viewer will use the site.
 
 This video is a perfect example of this (3 minutes, 30 seconds):

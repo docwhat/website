@@ -33,7 +33,7 @@ people in the word just read Newsweek and don't really think about what it
 says or talk about it anything. Kudos. It's good to think.
 
 > "The most exciting phrase to hear in science, the one that heralds new
-> discoveries, is not 'Eureka!' (I found it!) but 'That's funny...'"   — Isaac
+> discoveries, is not 'Eureka!' (I found it!) but 'That's funny...'" — Isaac
 > Asimov
 
 It should also be mentioned that the Newsweek article is full of "evolution

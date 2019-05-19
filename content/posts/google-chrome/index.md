@@ -17,18 +17,18 @@ created a comic book,
 
 I'm not sure what I think.
 
-On the one hand I feel that browsers do need an overhaul.  When they crash
-(and they do) they take everything down.
+On the one hand I feel that browsers do need an overhaul. When they crash (and
+they do) they take everything down.
 [SSB](http://en.wikipedia.org/wiki/Site_Specific_Browser)s show us that parts
-of the web are actually applications and should be treated as such.  The
+of the web are actually applications and should be treated as such. The
 security models in most browsers are built around concepts that no longer make
 sense.
 
 On the other hand: why create yet another browser? Safari, Firefox, IE and now
 this one?
 
-But maybe the market needs another shake up.  Safari & Webkit shook things up
-a little but because it only runs reliably on OS X it ultimately didn't have
+But maybe the market needs another shake up. Safari & Webkit shook things up a
+little but because it only runs reliably on OS X it ultimately didn't have
 much impact; except maybe as an example of how much a web page can look if the
 browsers supported more features.
 

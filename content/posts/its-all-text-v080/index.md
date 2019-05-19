@@ -11,7 +11,7 @@ I have just released version 0.8.0 of
 "[It's All Text!](https://addons.mozilla.org/en-US/firefox/addon/4125)", the
 [Firefox](http://www.mozilla.com/en-US/firefox/) extension that answers the
 age old question, "What happens when you give a yo-yo to a flock of
-flamingoes?"[^†]
+flamingoes?"[^1]
 
 <!-- more -->
 
@@ -31,4 +31,4 @@ track of them, but here are the obvious ones from looking at the change log.
 
 Ciao!
 
-[^†]: <https://www.imdb.com/title/tt0120910/quotes/qt0124570>
+[^1]: <https://www.imdb.com/title/tt0120910/quotes/qt0124570>

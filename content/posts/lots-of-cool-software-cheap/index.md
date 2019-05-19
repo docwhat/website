@@ -13,13 +13,13 @@ tags:
 ---
 
 If you haven\'t heard of [MacHeist](http://www.macheist.com/bundle/u/314119/),
-then you should go check it out right now.  It\'s only good for four more
-days. What they do is sell a bundle for \\\$39 that includes lots of different
-mac software from different vendors.
+then you should go check it out right now. It\'s only good for four more days.
+What they do is sell a bundle for \\\$39 that includes lots of different mac
+software from different vendors.
 
 They exact amount of software you'll get depends on how many people sign up.
- As each milestone is met, another package is unlocked. 25% of the \$39 goes
-to one of their 10 charities (or split between all 10), your choice.
+As each milestone is met, another package is unlocked. 25% of the \$39 goes to
+one of their 10 charities (or split between all 10), your choice.
 
 <!-- more -->
 

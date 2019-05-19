@@ -23,7 +23,7 @@ HTML5 and I wanted HTML5.
 I tried several themes just to play around, and then found a theme that
 combined [boilerplate](http://aarontgrogg.com/boilerplate/), HTML5,
 [compass](http://compass-style.org/reference/compass/) and
-[sass](http://sass-lang.com/). Unfortunately, it didn't really do everything I
+[sass](http://sass-lang.com/). Unfortunately, it didn't really do everything I
 wanted. I also lost the URL for the GitHub project. _sigh_. But I hadn't seen
 compass nor sass before (or if I had, it was only in passing). This was really
 cool stuff. I started playing with and deciding I really wanted to use it.

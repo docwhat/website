@@ -13,7 +13,7 @@ In [Chef](http://getchef.com) the `node_name` is for human usage. By default
 it is set to the `fqdn`. Which is annoying for typing.
 
 In my network, all hosts have the same domain name. However, we
-`knife bootstrap`ed this one system without setting the node name with the
+`knife bootstrap`ed this one system without setting the node name with the
 `-N` flag.
 
 Therefore I wanted to rename the nodes. With some experimentation, I figured

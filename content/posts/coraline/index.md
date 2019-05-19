@@ -12,21 +12,21 @@ Robin and I saw [Coraline](http://coraline.com/) on Saturday, in 2D. It was a
 great movie. We both liked it a lot. We liked it enough that we went to see it
 again in 3D on Sunday.
 
-The 3D version made a good use of the technology.  They didn't go nuts with
-it, which would have driven \*me\* nuts.  It was  "just there".
+The 3D version made a good use of the technology. They didn't go nuts with it,
+which would have driven \*me\* nuts. It was "just there".
 
 Actually, the 3D made it feel like you were watching the little puppets being
-animated in real-time in front of you.  And the puppets are really nicely
-done, so it does add to it.
+animated in real-time in front of you. And the puppets are really nicely done,
+so it does add to it.
 
 I understand that the 3D version is only going to be out for two weeks (it's
 being pushed out by the Jonas Bros. Concert) so I recommend you see it now.
 
-For people with glasses, it seem to work okay.  The glasses are big enough.
- As usual, if you have different astigmatisms in each eye then 3D will be hard
-to watch.
+For people with glasses, it seem to work okay. The glasses are big enough. As
+usual, if you have different astigmatisms in each eye then 3D will be hard to
+watch.
 
 Now I can't wait till I get my copy of <span
-id="evtst|a|0061649708"></span> the book.
+id="evtst|a|0061649708"></span> the book.
 
 Ciao!

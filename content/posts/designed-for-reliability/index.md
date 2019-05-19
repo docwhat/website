@@ -9,7 +9,7 @@ tags:
     - humor
 ---
 
-I used to work for Tandem.  These computers were amazing and the only thing
+I used to work for Tandem. These computers were amazing and the only thing
 that'd take them down was human error...
 
 Here's a "Daily WTF" about the Tandem computers. The comments are fun, too:

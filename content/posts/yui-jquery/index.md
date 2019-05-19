@@ -2,17 +2,14 @@
 id: '171'
 title: 'Switched from YUI to jQuery'
 date: '2008-08-28'
-template: 'post'
 slug: '/yui-jquery/'
-tags:
-    - JavaScript
 ---
 
 I just switched my (rather limited) JavaScript from
 [YUI](http://developer.yahoo.com/yui) to [jQuery](http://jquery.com/).
 
 jQuery took a little (a couple hours) to learn how to write something close to
-idiomatic code. My new code is much much smaller and easier to read.
+idiomatic code. My new code is much smaller and easier to read.
 
 <!-- more -->
 

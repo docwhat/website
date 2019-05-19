@@ -22,7 +22,7 @@ with It's All Text!
 <!-- more -->
 
 He's using it to play with emacs and emacsclient, but it'll probably work for
-using the Cygwin vim.  I bet it also works with
+using the Cygwin vim. I bet it also works with
 [Cygwin/X](http://x.cygwin.com/ 'Cygwin/X').
 
 I'm always impressed at the new ways people find to use IAT.

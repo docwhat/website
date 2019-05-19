@@ -13,8 +13,8 @@ title: 'BBS the Documentary'
 
 There is this great documentary called
 "[BBS the documentary](http://www.bbsdocumentary.com/ "Link to the documentary's homepage")"
-by Jason Scott.  It's an amazing documentary about computer bulliten boards
-and it's 5 and 1/2 hours long with tons of extras.
+by Jason Scott. It's an amazing documentary about computer bulliten boards and
+it's 5 and 1/2 hours long with tons of extras.
 
 For those who don't remember BBSes: You would use a modem to dial up a
 computer system that had one or more modems and you could send messages (like
@@ -22,20 +22,20 @@ email) and download files (like ftp) and play online games.
 
 <!-- more -->
 
-Why was this amazing?  There was no real internet, no email, and no web.  This
+Why was this amazing? There was no real internet, no email, and no web. This
 was the way you talked to people and transfered files, etc.
 
-I didn't know about this documentary until I met Jason Scott (proprietor of
+I didn't know about this documentary until I met Jason Scott (proprietor of
 the [textfiles.com](http://textfiles.com) history site) at
-[Penguicon](http://penguicon.org/ 'Official Penguicon site') 6.0.  He had a
+[Penguicon](http://penguicon.org/ 'Official Penguicon site') 6.0. He had a
 presentation about his next documentary
 "[Get Lamp](http://www.getlamp.com/ 'Official Get Lamp documentary site')"
-which will be about interactive fiction.  As a huge Infocom fan I'm really
+which will be about interactive fiction. As a huge Infocom fan I'm really
 interested and can't wait for it to come out.
 
 Later on, Robin and I met him in the hall and we spent some time talking about
-his documentaries and such.  We had a good time talking to him and even Robin
-got interested in what he was talking about.  So I ordered it when we got back
+his documentaries and such. We had a good time talking to him and even Robin
+got interested in what he was talking about. So I ordered it when we got back
 and it arrived last week.
 
 It's a bit much to watch in one go but it comes in handy half hour byte size

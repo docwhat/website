@@ -25,7 +25,7 @@ iPod Touch and laptop anyplace I can get a data connection.
 Too bad Pittsburgh doesn't have T-Mobile 3g yet.
 
 If you have a G1, just scan the QR Code image to the right with the barcode
-scanner and it'll take you right to the project so you can install it.  You
+scanner and it'll take you right to the project so you can install it. You
 need a G1 with root access.
 
 Ciao!

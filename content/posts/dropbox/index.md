@@ -35,5 +35,5 @@ Not unreasonable, but I only need the internet version of a USB stick.
 
 Ciao!
 
-PS: All the links I provided are referrals.  If you use that then we both get
+PS: All the links I provided are referrals. If you use that then we both get
 free extra space.

@@ -93,7 +93,7 @@ great.
 New Toys:
 
 <ul>
-	<li><a href="http://www.amazon.com/gp/product/B000FNIL8K/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B000FNIL8K">SwissTool™ Spirit Plus Ratchet</a></li>
-	<li><a href="http://www.amazon.com/gp/product/B004OZJ42W/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B004OZJ42W">Benchmade Tanto Blade BK-1</a></li>
-	<li><a href="http://www.amazon.com/gp/product/B00076QVPU/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B00076QVPU">Pentax 8x40 PCF WP II Binoculars</a></li>
+    <li><a href="http://www.amazon.com/gp/product/B000FNIL8K/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B000FNIL8K">SwissTool™ Spirit Plus Ratchet</a></li>
+    <li><a href="http://www.amazon.com/gp/product/B004OZJ42W/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B004OZJ42W">Benchmade Tanto Blade BK-1</a></li>
+    <li><a href="http://www.amazon.com/gp/product/B00076QVPU/ref=as_li_ss_tl?ie=UTF8&tag=thedocwha-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B00076QVPU">Pentax 8x40 PCF WP II Binoculars</a></li>
 </ul>

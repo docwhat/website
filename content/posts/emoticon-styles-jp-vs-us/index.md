@@ -1,15 +1,7 @@
 ---
 date: '2007-05-25'
-
-id: '56'
 slug: '/emoticon-styles-jp-vs-us/'
-tags:
-    - anthropology
-    - emotion
-    - expression
-    - Japan
-    - Science
-title: 'Emoticon Styles (JP vs. US)'
+title: 'Emoticon Styles (JP vs US)'
 archived: true
 ---
 
@@ -20,13 +12,14 @@ eyes for emotional cues while American culture seems to read the mouth.
 
 Quick comparison of [emoticons](http://en.wikipedia.org/wiki/Emoticons):
 
-|  US | JP         |
+| US  | JP         |
 | --- | ---------- |
 | :-) | ^\_^       |
 | x-) | &gt;\_&lt; |
 | :-( | ;\_;       |
 
 Interesting. I like the JP emoticons sometimes. This is my favorite:
+
 `\^_^/ yay!`.
 
 Ciao!

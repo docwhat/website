@@ -3,9 +3,6 @@ date: '2007-04-28'
 id: '52'
 slug: '/penguicon-50/'
 title: 'What I did at Penguicon 2007'
-tags:
-    - 'convention'
-    - 'penguicon'
 archived: true
 ---
 
@@ -67,12 +64,16 @@ was nice enough to run us through most of a game using his copy of the
 [Blue Panther](http://www.bluepantherllc.com/JCDPiecepack.htm) pretty plastic
 tile version of the piece pack.
 
+<!-- textlint-disable -->
+
 I finally saw Randy Milholland, the creator of
 [Something Positive](http://www.somethingpositive.net/). I was disappointed
 that he didn't look like any of his characters, like Davan or Choo-Choo Bear.
 He gave me a [badge ribbon](http://penguicon.org/wiki/BadgeRibbons/) that said
 "Ask me to show you where R. Milholland touched me." That drew a few puzzled
 expressions. (He shook my hand, in case you wondered.)
+
+<!-- textlint-enable -->
 
 I saw [Tom Smith](http://www.tomsmithonline.com/) and Robin bought one of
 every CD he had that we didn't already have. We also saw

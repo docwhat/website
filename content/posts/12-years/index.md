@@ -9,8 +9,8 @@ tags:
 archived: true
 ---
 
-I have been married to Robin, my wonderful wife, for 12 years.  I am very
-lucky and married my bestest friend and boy have we had fun.
+I have been married to Robin, my wonderful wife, for 12 years. I am very lucky
+and married my bestest friend and boy have we had fun.
 
 I love you Robin!
 

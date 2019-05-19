@@ -19,12 +19,12 @@ customers):
 Short summary: They will add screen names, allowing 5 people to share the same
 account.
 
-This is good news.  Other announcements that they have made include: bumping
+This is good news. Other announcements that they have made include: bumping
 the number of hardware activations from 3 to 5. Adding the ability to
 deactivate a hardware deactivation (so you don't have to contact EA support if
 you upgrade the hardware too much).
 
-DRM sucks as a whole but at least EA is trying to make it less of a hassle.  I
+DRM sucks as a whole but at least EA is trying to make it less of a hassle. I
 still recommend that you only use SPORE on a Mac; the windows version of
 SecuROM seems to hork up windows systems, sometimes in unobvious ways.
 

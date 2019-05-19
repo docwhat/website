@@ -41,15 +41,15 @@ Hmm.... I don't remember that being there earlier.
 Apparently a pair of idiots were racing on their crotch-rockets. When an
 officer started after them they raced off, splitting up. The officer followed
 this idiot, slowing down (and loosing track of the rider) when he saw he was
-hitting 80.  Unfortunately for the idiot Hobart St. is too tricky for that
+hitting 80. Unfortunately for the idiot Hobart St. is too tricky for that
 racing and the turn took him out.
 
 After "wumph"ing his bike, the idiot managed to get off the motorcycle and run
 behind my house, throwing down his helmet as he ran, and then hopped a fence.
 
-I'm amazed he survived.  He must have been mostly upright when going between a
+I'm amazed he survived. He must have been mostly upright when going between a
 car and a telephone poll, but obviously fell over as soon as he hit the
-sidewalk.  The bike's cowling is a complete mess. I didn't get a good look at
+sidewalk. The bike's cowling is a complete mess. I didn't get a good look at
 the helmet, but I bet it's been dinged. If he had gone slightly to the right,
 he would have smashed in to a telephone pole and everyone would know who he
 was ... you know, besides dead.

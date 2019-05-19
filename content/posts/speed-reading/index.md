@@ -19,7 +19,7 @@ Anyway, I found some newer resources on the 'net about speed reading and
 thought I should put them here:
 
 <ul>
-	<li><a href="http://derrenbrown.co.uk/scientific-speed-reading-read-300-faster-20-minutes/">A post from Derren Brown's blog with video</a></li>
+    <li><a href="http://derrenbrown.co.uk/scientific-speed-reading-read-300-faster-20-minutes/">A post from Derren Brown's blog with video</a></li>
         <li><a href="http://www.fourhourworkweek.com/blog/2009/07/30/speed-reading-and-accelerated-learning/">Tim Ferriss' blog post with instructive text</a></li>
 </ul>
 

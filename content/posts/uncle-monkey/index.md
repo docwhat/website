@@ -51,7 +51,7 @@ Statistics:
 
 I've been told the poor kid looks like I did as a newborn.
 
-Yup, I can confirm that... he do.  Lament for the
+Yup, I can confirm that... he do. Lament for the
 [poor kid at flickr](https://www.flickr.com/photos/docwhat/sets/72157621387476120/ 'Photos of Alexander Bruce').
 
 Ciao!

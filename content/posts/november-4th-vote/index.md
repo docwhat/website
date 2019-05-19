@@ -10,7 +10,7 @@ archived: true
 ---
 
 _[Rob Landley](http://landley.net/) has an awesomely well written reminder of
-why we should all vote today.  He's given me permission to post the whole this
+why we should all vote today. He's given me permission to post the whole this
 here. Any formatting errors are mine._
 
 The existence of

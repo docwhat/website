@@ -9,7 +9,7 @@ tags:
 
 Gerf.Org just switched to [Xen](http://www.xen.org/ 'The Xen Homepage'). It's
 running in a `domU` on hardware that is massively more powerful than it used
-to be.  The original hardware (until about 3 years ago) was a 333Mhz box with
+to be. The original hardware (until about 3 years ago) was a 333Mhz box with
 20gigs of disk-space. Since then it has been running on newer hardware.
 However, the hardware was flakey and getting flakier.
 
@@ -27,8 +27,8 @@ Even though I read Bill
 
 <!-- more -->
 
-Of course, it's not really his fault.  Xen 3.0 hit beta right before he
-published it;  The new networking stuff wasn't really in place yet and
+Of course, it's not really his fault. Xen 3.0 hit beta right before he
+published it; The new networking stuff wasn't really in place yet and
 certainly wasn't ready for release yet.
 
 Anyway, the [Xen Wiki](http://wiki.xensource.com/xenwiki/XenNetworking)
@@ -43,22 +43,21 @@ it applies 100% to newer versions.
 
 ## The Goal
 
-The goal here is to create three bridges: LAN, WAN and DMZ.   The hardware in
-question has two NICs: one facing internal and one facing external.  The DMZ
-will be on a dummy NIC that is entirely virtual.  This was I can host
-external, internal and quarantined systems all as `domU`s in the Xen
-environment.
+The goal here is to create three bridges: LAN, WAN and DMZ. The hardware in
+question has two NICs: one facing internal and one facing external. The DMZ
+will be on a dummy NIC that is entirely virtual. This was I can host external,
+internal and quarantined systems all as `domU`s in the Xen environment.
 
 ## network-bridge
 
-The network-bridge script is used to create bridges.  You can think of a
-bridge as a virtual network hub.  In Xen, the bridge appears as a device in
-`ifconfig`, like `eth0` or `lo` does.  This bridge can have multiple `domU`s
+The network-bridge script is used to create bridges. You can think of a bridge
+as a virtual network hub. In Xen, the bridge appears as a device in
+`ifconfig`, like `eth0` or `lo` does. This bridge can have multiple `domU`s
 hooked up to it, in addition to a real physical NIC.
 
-This is implemented via the `network-bridge` script.  You can pass in various
-arguments to control how it creates the bridge.  You can also just do it all
-yourself, but I'm not interested in that.  Too much work.
+This is implemented via the `network-bridge` script. You can pass in various
+arguments to control how it creates the bridge. You can also just do it all
+yourself, but I'm not interested in that. Too much work.
 
 The basic usage is something like this (from a `xend-setup.sxp`):
 
@@ -78,20 +77,20 @@ vif = [
 ]
 ```
 
-So this new zen would be connected to this bridge.  Packets would be routed
-out foo and through `peth1` (formally known as `eth1`).
+So this new zen would be connected to this bridge. Packets would be routed out
+foo and through `peth1` (formally known as `eth1`).
 
 ## my-network-bridge
 
 What you can do now, is replace `network-bridge` (which is in
-`/etc/xen/scripts`, btw) with a script of our own.  I'm calling it
+`/etc/xen/scripts`, btw) with a script of our own. I'm calling it
 `my-network-bridge`:
 
 ```bash
 #!/bin/bash
 dir=$(dirname "$0")
-"$dir/network-bridge" "$@" vifnum=0 netdev=eth0   bridge=lan
-"$dir/network-bridge" "$@" vifnum=1 netdev=eth1   bridge=wan
+"$dir/network-bridge" "$@" vifnum=0 netdev=eth0     bridge=lan
+"$dir/network-bridge" "$@" vifnum=1 netdev=eth1     bridge=wan
 "$dir/network-bridge" "$@" vifnum=2 netdev=dummy0 bridge=dmz
 # EOF
 ```

@@ -53,7 +53,7 @@ The output:
 ```
 
 This is ridiculous. How can you be sure that the equal operator is returning
-what you want if it silently promotes/demotes things?  Reading through
+what you want if it silently promotes or demotes things? Reading through
 [the section on booleans](http://www.w3.org/TR/xpath#booleans) in the XPath
 documentation explains how equality works:
 
@@ -66,10 +66,10 @@ documentation explains how equality works:
 It's almost like it was designed by people who don't program... or maybe a
 committee.
 
-This is bad because equality tests will return true in unexpected places.  It
+This is bad because equality tests will return true in unexpected places. It
 also means that the designers of XPath could ignore things like set
-operations. A `map()`, `reduce()`, etc. would all be very handy.  As would
-some way to write functions. [EXSLT](http://www.exslt.org/) helps with this
+operations. A `map()`, `reduce()`, etc. would all be very handy. As would some
+way to write functions. [EXSLT](http://www.exslt.org/) helps with this
 somewhat, but not much.
 
 Ciao!

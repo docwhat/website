@@ -25,9 +25,9 @@ myopenid.com). Or even multiple places!~~
 
 ~~I reported that
 [bug](https://sourceforge.net/tracker2/?func=detail&aid=1955438&group_id=1&atid=200001)
-but it was never fixed.  The original part of the problem was that it's HTML
-parsing was broken.  I **know** that none of the open source libraries have
-had this problem.~~
+but it was never fixed. The original part of the problem was that it's HTML
+parsing was broken. I **know** that none of the open source libraries have had
+this problem.~~
 
 ~~Now that I have the fancy new
 [OpenID Plugin](http://wordpress.org/extend/plugins/openid/) that can be its
@@ -42,7 +42,7 @@ everything for you!~~
 OpenID Plugin was
 [broken](http://code.google.com/p/diso/issues/detail?id=101&colspec=ID%20Type%20Project%20Status%20Priority%20Milestone%20Owner%20Summary).
 It's just that at the time of this post, only SourceForge was triggering the
-bug.  Eventually, all OpenID sites were triggering the bug.
+bug. Eventually, all OpenID sites were triggering the bug.
 
 To SourceForge and their staff: I apologize; I was wrong. The only complaint I
 can make is that the feedback wasn't sufficient to let me troubleshoot the

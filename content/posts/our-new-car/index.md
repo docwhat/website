@@ -24,27 +24,27 @@ touching the seat in front. I could almost wear a top-hat in the car!
 
 <!-- more -->
 
-It's a used car. It had 19,000 miles when we bought it.  Our mechanic has
+It's a used car. It had 19,000 miles when we bought it. Our mechanic has
 checked it from top-to-bottom and said it looked good.
 
-The only potential downside is that it is a manual transmission.  Personally,
-I don't mind it; I've wanted an excuse to get good at driving a stick for a
+The only potential downside is that it is a manual transmission. Personally, I
+don't mind it; I've wanted an excuse to get good at driving a stick for a
 while.
 
 Robin has driven a motorcycle but hasn't had any experience driving a
 manual-transmission car.
 
 We've been driving to the water front to practice in their parking lots.
- Robin's gotten quite good with (relatively) flat surfaces.
+Robin's gotten quite good with (relatively) flat surfaces.
 
 Now we need to get her some practice on some real hills.
 
 I was thinking of going to one of the bigger hills and finding as spot where
-there are empty parallel parking spots and stopping there.  Then letting Robin
-start from a stand-still there.  That way there would be space to go backwards
+there are empty parallel parking spots and stopping there. Then letting Robin
+start from a stand-still there. That way there would be space to go backwards
 without hitting anything or blocking traffic.
 
-I may stay outside the car to watch for traffic, etc.  Not sure.  To bad not
+I may stay outside the car to watch for traffic, etc. Not sure. To bad not
 many parking lots are on hills. ;-/
 
 Ciao!

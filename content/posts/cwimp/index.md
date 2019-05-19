@@ -26,5 +26,5 @@ these days. I heard rumors that Palm runs Linux or something like that.
 
 Ciao!
 
-**UPDATE 2011-03:** I have moved it to GitHub instead of hosting it locally.
+**UPDATE 2011-03:** I have moved it to GitHub instead of hosting it locally.
 This project is really dead, but if it still works for you, great!

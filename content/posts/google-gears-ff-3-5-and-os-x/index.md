@@ -18,7 +18,7 @@ This includes the Gears for Safari plugin which breaks sites with gears
 support. :confused:
 
 You can tell if you have a problem by going to <http://gears.google.com/> and
-seeing if there is a big blue box on the right-hand side.  It should say
+seeing if there is a big blue box on the right-hand side. It should say
 something like: "Download Gears" or "Gears is installed".
 
 If you don't see anything on the right-hand side then you need this fix:

@@ -15,7 +15,7 @@ However, I use the
 [Dvorak-Qwerty](http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard#Mac_OS)
 keyboard layout (AKA DQ) and Aquamacs doesn't like the command key bindings
 that the DQ layout uses. DQ is dvorak except when you use the command key.
- Then it becomes QWERTY. This was invaluable when I first started using OS-X
+Then it becomes QWERTY. This was invaluable when I first started using OS-X
 since it matched all the docs.
 
 <!-- more -->

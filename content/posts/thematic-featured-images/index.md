@@ -24,8 +24,8 @@ customizable so this is pretty easy.
 
 The gist of what I'm doing is turning on this feature in
 [Wordpress](http://wordpress.org 'WordPress'), telling it the default size,
-and then adding the image to beginning of my post.  I added some left-right
-alternating alignment based on the number of the post.  Not perfect if you
+and then adding the image to beginning of my post. I added some left-right
+alternating alignment based on the number of the post. Not perfect if you
 create lots of drafts, but better than just having the images always on the
 same side.
 
