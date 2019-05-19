@@ -14771,12 +14771,12 @@ text-table@0.2.0, text-table@^0.2.0, text-table@~0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-textlint-filter-rule-comments@^1.2.2:
+textlint-filter-rule-comments@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/textlint-filter-rule-comments/-/textlint-filter-rule-comments-1.2.2.tgz#3a72c494994e068e0e4aaad0f24ea7cfe338503a"
   integrity sha1-OnLElJlOBo4OSqrQ8k6nz+M4UDo=
 
-textlint-rule-date-weekday-mismatch@^1.0.5:
+textlint-rule-date-weekday-mismatch@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/textlint-rule-date-weekday-mismatch/-/textlint-rule-date-weekday-mismatch-1.0.5.tgz#2ac2568be5149d65d4a9a507e9aa887f7d50c60b"
   integrity sha1-KsJWi+UUnWXUqaUH6aqIf31Qxgs=
@@ -14784,7 +14784,7 @@ textlint-rule-date-weekday-mismatch@^1.0.5:
     chrono-node "^1.2.5"
     moment "^2.17.1"
 
-textlint-rule-diacritics@^0.0.2:
+textlint-rule-diacritics@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-diacritics/-/textlint-rule-diacritics-0.0.2.tgz#9998d2bcd9218edfc8d783db5a49948ca077b612"
   integrity sha1-mZjSvNkhjt/I14PbWkmUjKB3thI=
@@ -14792,7 +14792,7 @@ textlint-rule-diacritics@^0.0.2:
     match-casing "^1.0.0"
     strip-json-comments "^2.0.1"
 
-textlint-rule-editorconfig@^1.0.3:
+textlint-rule-editorconfig@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/textlint-rule-editorconfig/-/textlint-rule-editorconfig-1.0.3.tgz#97f126c65622adf364e08b70156415a96bdd84ba"
   integrity sha1-l/EmxlYirfNk4ItwFWQVqWvdhLo=
@@ -14813,7 +14813,7 @@ textlint-rule-helper@^2.0.0:
     structured-source "^3.0.2"
     unist-util-visit "^1.1.0"
 
-textlint-rule-no-start-duplicated-conjunction@^2.0.2:
+textlint-rule-no-start-duplicated-conjunction@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-start-duplicated-conjunction/-/textlint-rule-no-start-duplicated-conjunction-2.0.2.tgz#49612a49dca18bbe5468019836b5c9be24c09e79"
   integrity sha512-HydBbkWjnMn4KrnlpnusY1BGjIG+64UySxRCvRphUAIiuJL2nbkdrIIiOjwfQhllKUa7Sf33bs6RAcbEWjZVfg==
@@ -14822,14 +14822,14 @@ textlint-rule-no-start-duplicated-conjunction@^2.0.2:
     sentence-splitter "^3.0.6"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-todo@^2.0.1:
+textlint-rule-no-todo@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/textlint-rule-no-todo/-/textlint-rule-no-todo-2.0.1.tgz#86351ed3521ce8faa3b8224f88887f3cecbf2920"
   integrity sha512-+adoWaBgoTN2g0WNcrERhVq7gdPKQIf1z7Ol+6XwMGv8XmuoFp5vJljHKtCmJBmGhBihjty2b8oaza2MY6UNlw==
   dependencies:
     textlint-rule-helper "^2.0.0"
 
-textlint@^11.2.5:
+textlint@11.2.5:
   version "11.2.5"
   resolved "https://registry.yarnpkg.com/textlint/-/textlint-11.2.5.tgz#89663b781bf1038dca6a923f15bc41bab3dcde05"
   integrity sha512-1yEEf0mPEVDfIZII0yWz9VVlo0xF51cfvqHubPtsylxHpQdfgCDX3cLHXhDVT2RTv8lrOGTrudeXtYV3NPoNdQ==
