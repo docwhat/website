@@ -4,14 +4,18 @@ date: 2019-05-20
 slug: jenkins-per-user-credentials
 id: d7402a4d-5fd9-49c0-92fb-6d56ad0cdd04
 draft: true
+banner:
+    sourceUrl: 'https://unsplash.com/photos/mhUsz2ezlXQ'
+    credits: 'Photo by Crystal Kwok'
+    image: 'crystal-kwok-487022-unsplash.jpg'
 ---
 
 In a
 [_declarative pipeline_](https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline):
 
 1.  Add a
-   [`parameters`](https://jenkins.io/doc/book/pipeline/syntax/#parameters)
-   section if one doesn't exist already.
+    [`parameters`](https://jenkins.io/doc/book/pipeline/syntax/#parameters)
+    section if one doesn't exist already.
 2.  Within the `parameters` section, add a `credentials` section.
 
     ```groovy
@@ -28,9 +32,10 @@ In a
     ```
 
 3.  Within a [`steps`](https://jenkins.io/doc/book/pipeline/syntax/#steps)
-   section, use the
-   [`withCredentials()`](https://jenkins.io/doc/pipeline/steps/credentials-binding/)
-   method, using the credentialsId specified above wrapped with `${...}`.
+    section, use the
+    [`withCredentials()`](https://jenkins.io/doc/pipeline/steps/credentials-binding/)
+    method, using the credentialsId specified above wrapped with `${...}`.
+
 
     ```groovy
     /* EXAMPLE */
