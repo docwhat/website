@@ -24,6 +24,7 @@ script:
   - yarn run travis
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: 'script/push "${TRAVIS_BRANCH}"'
   on:
