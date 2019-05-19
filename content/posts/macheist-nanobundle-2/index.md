@@ -2,14 +2,7 @@
 id: '519'
 title: MacHeist nanoBundle 2
 date: '2010-03-03'
-author: docwhat
-
 slug: /macheist-nanobundle-2/
-categories:
-    - docwhat
-tags:
-    - blog
-    - OS X
 archived: true
 ---
 
