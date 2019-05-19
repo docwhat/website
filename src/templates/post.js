@@ -1,5 +1,6 @@
 // @format
 // @flow
+import { css } from '@emotion/core'
 import { graphql } from 'gatsby'
 import * as React from 'react'
 
@@ -19,6 +20,7 @@ type Props = {
       fields: {
         slug: string,
         title: string,
+        editLink: string,
         banner: {
           credits: string,
           sourceUrl: string,
@@ -39,11 +41,30 @@ type Props = {
   location: Location,
 }
 
+const PostActions = (props: { editLink: string }) => (
+  <div
+    css={css`
+      text-align: right;
+    `}
+  >
+    <a target="_blank" rel="noopener noreferrer" href={props.editLink}>
+      Edit on GitHub
+    </a>
+  </div>
+)
+
 const PostTemplate = (props: Props) => {
   const {
     data: {
       markdownRemark: {
-        fields: { banner, slug, title: pageTitle, ymdDate, ymdUpdate },
+        fields: {
+          banner,
+          slug,
+          editLink,
+          title: pageTitle,
+          ymdDate,
+          ymdUpdate,
+        },
         wordCount: { words },
         html: pageHtml,
         excerpt,
@@ -53,7 +74,7 @@ const PostTemplate = (props: Props) => {
   } = props
 
   const helmetTitle = pageTitle || siteTitle
-  const pageUrl = `${siteUrl}${slug}`
+  const postUrl = `${siteUrl}${slug}`
   const bannerImage = banner ? (
     <BannerImage
       credits={banner.credits}
@@ -79,12 +100,14 @@ const PostTemplate = (props: Props) => {
 
         <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
+        <PostActions editLink={editLink} />
+
         <PostPaginator older={older} newer={newer} />
 
         <Bio />
         <BlogPostMicroData
           postTitle={helmetTitle}
-          postUrl={pageUrl}
+          postUrl={postUrl}
           ymdDate={ymdDate}
           ymdUpdate={ymdUpdate}
           wordCount={words}
@@ -103,6 +126,7 @@ export const postQuery = graphql`
       fields {
         slug
         title
+        editLink
         banner {
           credits
           sourceUrl

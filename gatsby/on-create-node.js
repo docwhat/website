@@ -5,14 +5,27 @@ const childProcess = require(`child_process`)
 const _ = require(`lodash`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const TopDir = pathlib.dirname(__dirname)
+const isProduction = process.env.NODE_ENV === 'production'
+
 const onCreateNode = async ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.fileAbsolutePath) {
+    createNodeField({
+      name: 'editLink',
+      node,
+      value: `https://github.com/docwhat/docwhat/edit/master${node.fileAbsolutePath.replace(
+        TopDir,
+        ''
+      )}`,
+    })
+  }
+
   if (node.internal.type !== `MarkdownRemark`) {
     return {}
   }
 
-  const isProduction = process.env.NODE_ENV === 'production'
-
-  const { createNodeField } = actions
   const sourceName = node.fields.sourceName
 
   const slug = calculateSlug(node, getNode)
