@@ -43,13 +43,7 @@ const PostTemplate = (props: Props) => {
   const {
     data: {
       markdownRemark: {
-        fields: {
-          banner: { credits, sourceUrl, image },
-          slug,
-          title: pageTitle,
-          ymdDate,
-          ymdUpdate,
-        },
+        fields: { banner, slug, title: pageTitle, ymdDate, ymdUpdate },
         wordCount: { words },
         html: pageHtml,
         excerpt,
@@ -60,6 +54,15 @@ const PostTemplate = (props: Props) => {
 
   const helmetTitle = pageTitle || siteTitle
   const pageUrl = `${siteUrl}${slug}`
+  const bannerImage = banner ? (
+    <BannerImage
+      credits={banner.credits}
+      sourceUrl={banner.sourceUrl}
+      image={banner.image}
+    />
+  ) : (
+    ''
+  )
 
   return (
     <Layout location={props.location}>
@@ -72,7 +75,7 @@ const PostTemplate = (props: Props) => {
         />
         <PageHeader title={pageTitle} ymdUpdate={ymdUpdate} ymdDate={ymdDate} />
 
-        <BannerImage credits={credits} sourceUrl={sourceUrl} image={image} />
+        {bannerImage}
 
         <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
 
