@@ -1,7 +1,6 @@
 ---
 date: '2012-09-14'
 id: '1084'
-slug: '/dr-ross-o-d/'
 tags:
     - Squirrel Hill
 title: 'Dr.  Ross, O.D.'

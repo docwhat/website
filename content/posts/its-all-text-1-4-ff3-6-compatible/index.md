@@ -2,7 +2,6 @@
 id: '491'
 title: "It's All Text! 1.4 (FF3.6 compatible)"
 date: '2010-01-23'
-slug: /its-all-text-1-4-ff3-6-compatible/
 tags:
     - Firefox
     - "It's All Text!"

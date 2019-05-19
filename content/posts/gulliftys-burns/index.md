@@ -2,7 +2,6 @@
 id: '124'
 title: "Gullifty's burns!"
 date: '2008-07-28'
-slug: /gulliftys-burns/
 tags:
     - home
     - Pittsburgh

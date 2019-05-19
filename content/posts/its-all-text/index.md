@@ -3,7 +3,6 @@ id: '35'
 title: "It's All Text!"
 date: '2007-01-12'
 
-slug: /its-all-text/
 tags:
     - "It's All Text!"
     - JavaScript

@@ -1,7 +1,6 @@
 ---
 date: '2008-05-15'
 id: '89'
-slug: '/sparring-knives/'
 tags:
     - fun
 title: Sparring Knives

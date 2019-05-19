@@ -2,7 +2,6 @@
 id: '238'
 title: Learning Java
 date: '2009-01-22'
-slug: /learning-java/
 tags:
     - Android
     - java

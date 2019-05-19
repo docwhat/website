@@ -2,7 +2,6 @@
 date: '2006-09-19'
 
 id: '26'
-slug: '/python-25-and-im-sick/'
 tags:
     - cool
     - features

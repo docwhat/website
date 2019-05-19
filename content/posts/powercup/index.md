@@ -5,7 +5,6 @@ categories:
 date: '2009-05-01'
 
 id: '363'
-slug: '/powercup/'
 tags:
     - car
     - electronics

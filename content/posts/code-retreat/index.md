@@ -2,7 +2,6 @@
 id: '631'
 title: Code Retreat
 date: '2010-11-06'
-slug: /code-retreat/
 image: /files/2010/11/foo.png
 tags:
     - bash

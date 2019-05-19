@@ -3,7 +3,6 @@ id: '39'
 title: 'Containing blocks and offsetParent: the secret of position absolute'
 date: '2007-03-19'
 
-slug: /containing-blocks-and-offsetparent/
 tags:
     - CSS
     - JavaScript

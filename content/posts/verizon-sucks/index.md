@@ -2,7 +2,6 @@
 id: '86'
 title: Verizon ineptitude
 date: '2008-02-14'
-slug: /verizon-sucks/
 tags:
     - home
     - technology

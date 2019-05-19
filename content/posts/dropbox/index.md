@@ -1,7 +1,6 @@
 ---
 date: '2009-07-15'
 id: '415'
-slug: '/dropbox/'
 tags:
     - cloud
     - cool

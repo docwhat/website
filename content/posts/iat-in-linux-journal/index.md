@@ -2,7 +2,6 @@
 id: '386'
 title: IAT in LJ
 date: '2009-06-10'
-slug: /iat-in-linux-journal/
 tags:
     - howto
     - "It's All Text!"

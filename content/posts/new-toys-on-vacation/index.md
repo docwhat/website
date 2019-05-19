@@ -4,7 +4,6 @@ title: New Toys
 date: '2011-05-16'
 author: docwhat
 
-slug: /new-toys-on-vacation/
 image: /files/2011/05/swisstool-spirit-plus-ratchet-250x250.jpg
 categories:
     - docwhat

@@ -2,7 +2,6 @@
 date: '2007-03-21'
 
 id: '41'
-slug: '/a-bug-report-from-japan/'
 tags:
     - "It's All Text!"
 title: 'A bug report from Japan...'

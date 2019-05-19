@@ -2,7 +2,6 @@
 date: '2007-03-17'
 
 id: '38'
-slug: '/scott-adams-bullshit-detector-broken/'
 tags:
     - Science
 title: Scott Adams Bullshit

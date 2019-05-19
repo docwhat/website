@@ -3,7 +3,6 @@ id: '27'
 title: We are what we eat?
 date: '2006-09-27'
 
-slug: /we-are-what-we-eat/
 tags:
     - waste of time
     - wtf

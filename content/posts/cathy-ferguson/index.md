@@ -3,7 +3,6 @@ id: '84'
 title: 'Cathy Ferguson: Mortgage Advisor'
 date: '2008-01-19'
 template: 'post'
-slug: '/cathy-ferguson/'
 archived: true
 ---
 

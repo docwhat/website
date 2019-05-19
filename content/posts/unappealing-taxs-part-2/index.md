@@ -2,7 +2,6 @@
 id: '127'
 title: 'Unappealing Taxes, part 2'
 date: '2008-08-01'
-slug: '/unappealing-taxs-part-2/'
 tags:
     - Pittsburgh
     - home

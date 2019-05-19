@@ -2,7 +2,6 @@
 id: '228'
 title: Bookmark Receipts
 date: '2008-12-05'
-slug: /bookmark-receipts/
 archive: true
 ---
 

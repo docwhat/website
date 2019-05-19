@@ -4,7 +4,6 @@ title: 'Music: Rebel without Applause'
 date: '2009-05-30'
 author: docwhat
 
-slug: /music-rebel-without-applause/
 categories:
     - docwhat
 tags:

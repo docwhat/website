@@ -2,7 +2,6 @@
 date: '2007-04-13'
 
 id: '51'
-slug: '/houdini/'
 tags:
     - books
     - magic

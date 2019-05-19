@@ -4,7 +4,6 @@ title: Lots of cool software cheap
 date: '2009-04-03'
 author: docwhat
 
-slug: /lots-of-cool-software-cheap/
 categories:
     - docwhat
 tags:

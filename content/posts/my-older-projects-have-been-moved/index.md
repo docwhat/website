@@ -2,7 +2,6 @@
 id: '14'
 title: My older projects have been moved.
 date: '2006-09-06'
-slug: /my-older-projects-have-been-moved/
 ---
 
 This is really just administrata, due to my recent

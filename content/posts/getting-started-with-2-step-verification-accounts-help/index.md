@@ -4,7 +4,6 @@ title: 'PSA: Turn on 2-step verification in Google'
 date: '2012-01-14'
 author: docwhat
 
-slug: /getting-started-with-2-step-verification-accounts-help/
 image: /files/2012/01/guard-lock-e1326596625843.jpg
 categories:
     - docwhat

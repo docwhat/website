@@ -1,6 +1,5 @@
 ---
 date: '2007-05-25'
-slug: '/emoticon-styles-jp-vs-us/'
 title: 'Emoticon Styles (JP vs US)'
 archived: true
 ---

@@ -2,7 +2,6 @@
 date: '2008-07-22'
 
 id: '113'
-slug: '/36-hours-in-pittsburgh/'
 tags:
     - Pittsburgh
 title: '36 Hours in Pittsburgh - NYTimes.com'

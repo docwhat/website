@@ -2,7 +2,6 @@
 date: '2007-11-26'
 id: '80'
 template: 'post'
-slug: '/no-laptop/'
 tags:
     - technology
 title: 'My laptop has died'

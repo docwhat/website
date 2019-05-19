@@ -1,7 +1,6 @@
 ---
 date: '2009-03-19'
 id: '313'
-slug: '/wifi-tethering-via-the-android/'
 tags:
     - Android
     - phone

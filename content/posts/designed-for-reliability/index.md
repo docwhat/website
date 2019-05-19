@@ -3,7 +3,6 @@ id: '119'
 title: 'Designed For Reliability'
 date: '2008-07-22'
 template: 'post'
-slug: '/designed-for-reliability/'
 tags:
     - reliability
     - humor

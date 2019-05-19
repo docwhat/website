@@ -2,7 +2,6 @@
 id: '489'
 title: An idea for an iPhone app
 date: '2010-01-22'
-slug: /an-idea-for-an-iphone-app/
 tags:
     - iphone
     - programming

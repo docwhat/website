@@ -2,7 +2,6 @@
 date: '2006-09-08'
 
 id: '11'
-slug: '/sourdough-starter/'
 tags:
     - bread
     - cooking

@@ -1,7 +1,6 @@
 ---
 date: '2007-05-29'
 id: '57'
-slug: '/junkmail/'
 template: 'post'
 title: 'Stop junk postal mail'
 q: 'Stopping junk postal mail: Are these ripoffs?'

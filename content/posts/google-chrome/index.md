@@ -2,7 +2,6 @@
 id: '176'
 title: 'Google Chrome; A brand-new browser'
 date: '2008-09-02'
-slug: '/google-chrome/'
 archive: true
 ---
 

@@ -3,7 +3,6 @@ id: '34'
 title: Wii!!!!!
 date: '2006-12-27'
 
-slug: /wii/
 tags:
     - video games
 archived: true

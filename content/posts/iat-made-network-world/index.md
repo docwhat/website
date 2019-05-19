@@ -2,7 +2,6 @@
 id: '182'
 title: IAT made Network World
 date: '2008-09-05'
-slug: /iat-made-network-world/
 tags:
     - "It's All Text!"
 ---

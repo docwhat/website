@@ -4,7 +4,6 @@ title: Uncle Monkey
 date: '2009-07-06'
 author: docwhat
 
-slug: /uncle-monkey/
 categories:
     - docwhat
 tags:

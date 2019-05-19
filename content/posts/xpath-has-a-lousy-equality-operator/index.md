@@ -1,7 +1,6 @@
 ---
 date: '2008-07-23'
 id: '121'
-slug: '/xpath-has-a-lousy-equality-operator/'
 tags:
     - programming
     - xpath

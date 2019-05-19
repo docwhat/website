@@ -4,7 +4,6 @@ title: The Party of Stupid
 date: '2009-09-26'
 author: docwhat
 
-slug: /the-party-of-stupid/
 categories:
     - docwhat
 tags:

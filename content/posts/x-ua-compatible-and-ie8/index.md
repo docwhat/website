@@ -2,7 +2,6 @@
 id: '85'
 title: 'X-UA-Compatible and IE8'
 date: '2008-01-22'
-slug: '/x-ua-compatible-and-ie8/'
 ---
 
 There is a new META header being proposed called `X-UA-Compatible`. It was

@@ -2,7 +2,6 @@
 date: '2008-03-16'
 id: '87'
 template: 'post'
-slug: '/lego-guns/'
 tags:
     - LEGO
 title: 'LEGO guns!'

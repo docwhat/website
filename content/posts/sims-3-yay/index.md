@@ -5,7 +5,6 @@ categories:
 date: '2009-06-03'
 
 id: '377'
-slug: '/sims-3-yay/'
 tags:
     - reviews
     - video games

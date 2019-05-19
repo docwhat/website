@@ -2,7 +2,6 @@
 id: '638'
 title: JRuby FileChooser example
 date: '2010-12-06'
-slug: /jruby-filechooser-example/
 image: /files/2010/12/Screen-shot-2010-12-06-at-3.07.18-AM-250x199.png
 tags:
     - "It's All Text!"

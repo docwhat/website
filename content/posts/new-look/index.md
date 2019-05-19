@@ -2,7 +2,6 @@
 id: '277'
 title: New Look!
 date: '2009-03-08'
-slug: /new-look/
 tags:
     - design
     - theme

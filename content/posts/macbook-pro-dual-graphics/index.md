@@ -1,7 +1,6 @@
 ---
 date: '2009-12-03'
 id: '478'
-slug: '/macbook-pro-dual-graphics/'
 tags:
     - hardware
     - macbook pro

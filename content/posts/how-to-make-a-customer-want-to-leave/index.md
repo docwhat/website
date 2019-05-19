@@ -4,7 +4,6 @@ title: How to make a customer want to leave
 date: '2009-03-23'
 author: docwhat
 
-slug: /how-to-make-a-customer-want-to-leave/
 openid_comments:
     - 'a:1:{i:0;s:4:"6988";}'
 categories:

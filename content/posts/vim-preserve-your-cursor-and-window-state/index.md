@@ -2,7 +2,6 @@
 id: '1093'
 title: 'vim - preserve your cursor and window state'
 date: '2012-06-22'
-slug: /vim-preserve-your-cursor-and-window-state/
 image: /files/2012/04/356023245659.png
 tags:
     - vim

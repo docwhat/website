@@ -3,7 +3,6 @@ id: '9'
 title: Sourdough Bread
 date: '2006-09-11'
 
-slug: /sourdough-bread/
 tags:
     - bread
     - cooking

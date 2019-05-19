@@ -3,7 +3,6 @@ id: '33'
 title: Making JavaScript transparent
 date: '2006-11-19'
 
-slug: /href-friendly-popups/
 tags:
     - JavaScript
 ---

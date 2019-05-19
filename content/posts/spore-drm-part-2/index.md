@@ -1,7 +1,6 @@
 ---
 date: '2008-09-12'
 id: '190'
-slug: '/spore-drm-part-2/'
 tags:
     - DRM
     - 'video games'

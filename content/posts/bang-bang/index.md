@@ -1,7 +1,6 @@
 ---
 date: '2007-12-16'
 id: '83'
-slug: '/bang-bang/'
 tags:
     - home
 title: 'Bang! Bang!'

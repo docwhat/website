@@ -4,7 +4,6 @@ title: Useless Error Messages
 date: '2009-05-28'
 author: docwhat
 
-slug: /useless-error-messages/
 openid_comments:
     - 'a:1:{i:0;s:4:"6244";}'
 categories:

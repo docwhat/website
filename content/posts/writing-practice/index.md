@@ -3,7 +3,6 @@ id: '28'
 title: Writing Practice
 date: '2006-10-11'
 
-slug: /writing-practice/
 tags:
     - Writing
 archived: true

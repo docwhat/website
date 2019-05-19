@@ -3,7 +3,6 @@ id: '93'
 title: '12 years!'
 date: '2008-05-12'
 template: 'post'
-slug: '/12-years/'
 tags:
     - robin
 archived: true

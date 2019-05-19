@@ -4,7 +4,6 @@ title: Tracebacks in bash
 date: '2013-06-29'
 author: docwhat
 
-slug: /tracebacks-in-bash/
 openid_comments:
     - 'a:1:{i:0;i:9945;}'
 image: /files/2013/06/argonaut_shell-250x187.jpg

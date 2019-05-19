@@ -2,7 +2,6 @@
 id: '40'
 title: "It's All Text! v0.6+"
 date: '2007-03-26'
-slug: /its_all_text_v06/
 tags:
     - JavaScript
 ---

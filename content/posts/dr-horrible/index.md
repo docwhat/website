@@ -3,7 +3,6 @@ id: '99'
 title: "Dr. Horrible's sing-along blog"
 date: '2008-07-16'
 template: 'post'
-slug: '/dr-horrible/'
 tags:
     - 'sci-fi'
 archived: true

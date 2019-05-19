@@ -4,7 +4,6 @@ title: Aquamacs 2.3a and Marmalade
 date: '2011-08-06'
 author: docwhat
 
-slug: /aquamacs-2-3a-and-marmalade/
 image: /files/2011/08/2190102002_e56bb311b9_o-192x250.jpg
 categories:
     - docwhat

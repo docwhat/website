@@ -2,7 +2,6 @@
 date: '2008-05-16'
 id: '95'
 template: 'post'
-slug: '/bbs-the-documentary/'
 tags:
     - technology
     - history

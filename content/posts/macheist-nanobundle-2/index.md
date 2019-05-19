@@ -2,7 +2,6 @@
 id: '519'
 title: MacHeist nanoBundle 2
 date: '2010-03-03'
-slug: /macheist-nanobundle-2/
 archived: true
 ---
 

@@ -2,7 +2,6 @@
 id: '184'
 title: "SPORE has DRM and Amazon users don't like it"
 date: '2008-09-08'
-slug: '/spore-drm/'
 tags:
     - DRM
     - video games

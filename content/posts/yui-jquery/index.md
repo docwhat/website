@@ -2,7 +2,6 @@
 id: '171'
 title: 'Switched from YUI to jQuery'
 date: '2008-08-28'
-slug: '/yui-jquery/'
 ---
 
 I just switched my (rather limited) JavaScript from

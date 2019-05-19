@@ -4,7 +4,6 @@ title: Free Anime!
 date: '2009-07-08'
 author: docwhat
 
-slug: /free-anime/
 categories:
     - docwhat
 tags:

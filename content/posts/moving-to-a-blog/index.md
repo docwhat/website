@@ -1,7 +1,6 @@
 ---
 date: '2006-09-06'
 id: '3'
-slug: '/moving-to-a-blog/'
 title: Moving to a blog
 ---
 

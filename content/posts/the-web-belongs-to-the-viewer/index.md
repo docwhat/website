@@ -3,7 +3,6 @@ id: '94'
 title: 'The web belongs to the viewer'
 date: '2008-05-16'
 template: 'post'
-slug: '/the-web-belongs-to-the-viewer/'
 tags:
     - web
 ---

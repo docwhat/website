@@ -4,7 +4,6 @@ title: Chef, Puppet, Heat, Juju, Docker, etc.
 date: '2015-02-04'
 author: docwhat
 
-slug: /chef-puppet-heat-juju-docker-etc/
 openid_comments:
     - 'a:3:{i:0;i:17072;i:1;i:17073;i:2;i:17077;}'
 image: /files/2015/02/8466596628_d41523b3fe_k-e1423075090864-250x250.jpg

@@ -3,7 +3,6 @@ id: '69'
 title: 'HX-20'
 date: '2007-09-30'
 template: 'post'
-slug: '/hx-20/'
 tags:
     - 'Technology'
 ---

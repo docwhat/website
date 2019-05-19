@@ -4,7 +4,6 @@ title: 'Git Tip: empty branch'
 date: '2010-12-07'
 author: docwhat
 
-slug: /git-tip-empty-branch/
 openid_comments:
     - 'a:1:{i:0;s:4:"9432";}'
 image: /files/2010/12/got_git_tshirt-250x250.jpg

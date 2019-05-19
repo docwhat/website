@@ -4,7 +4,6 @@ title: 'Re: All https, all the time'
 date: '2013-02-26'
 author: docwhat
 
-slug: /re-all-https-all-the-time/
 categories:
     - docwhat
 tags:

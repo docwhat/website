@@ -3,7 +3,6 @@ id: '75'
 title: 'GTD and Mutt'
 date: '2007-10-08'
 template: 'post'
-slug: '/gtd-and-mutt/'
 tags:
     - agile
 ---

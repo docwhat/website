@@ -5,7 +5,6 @@ categories:
 date: '2009-08-17'
 
 id: '435'
-slug: '/district-9/'
 tags:
     - movie
     - reviews

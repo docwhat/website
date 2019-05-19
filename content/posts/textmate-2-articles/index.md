@@ -3,7 +3,6 @@ date: '2011-12-20'
 
 id: '801'
 image: '/files/2011/12/tm2-icon-250x250.jpg'
-slug: '/textmate-2-articles/'
 tags:
     - OS X
     - TextMate

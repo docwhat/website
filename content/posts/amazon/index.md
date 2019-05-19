@@ -2,7 +2,6 @@
 date: '2007-10-02'
 id: '71'
 template: 'post'
-slug: '/amazon/'
 title: 'Amazon Christ!'
 tags:
     - humor

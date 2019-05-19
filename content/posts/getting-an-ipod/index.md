@@ -3,7 +3,6 @@ id: '25'
 title: Getting an iPod
 date: '2006-11-07'
 
-slug: /getting-an-ipod/
 tags:
     - iPod
     - iriver

@@ -1,7 +1,6 @@
 ---
 title: Per-user credentials in a Jenkins pipeline
 date: 2019-05-20
-slug: jenkins-per-user-credentials
 id: d7402a4d-5fd9-49c0-92fb-6d56ad0cdd04
 draft: true
 banner:

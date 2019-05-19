@@ -2,7 +2,6 @@
 date: '2012-02-16'
 
 id: '829'
-slug: '/interview-with-alison-bechdel/'
 tags:
     - Alison Bechdel
     - art

@@ -2,7 +2,6 @@
 date: '2009-09-28'
 
 id: '462'
-slug: '/another-one-bites-the-dust/'
 tags:
     - Pittsburgh
 title: Another one bites the dust

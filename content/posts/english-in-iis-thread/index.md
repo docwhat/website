@@ -3,7 +3,6 @@ id: '548'
 title: English in IIS thread
 date: '2010-06-14'
 author: docwhat
-slug: /english-in-iis-thread/
 tags:
     - english
     - grammar

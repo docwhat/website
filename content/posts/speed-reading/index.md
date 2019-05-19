@@ -4,7 +4,6 @@ title: Speed Reading
 date: '2009-09-16'
 author: docwhat
 
-slug: /speed-reading/
 categories:
     - docwhat
 archived: true

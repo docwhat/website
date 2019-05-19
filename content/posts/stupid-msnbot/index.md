@@ -3,7 +3,6 @@ id: '91'
 title: 'msnbot: the stupid bot'
 date: '2008-05-14'
 template: 'post'
-slug: '/stupid-msnbot/'
 tags:
     - Technology
 ---

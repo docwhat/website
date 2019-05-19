@@ -5,7 +5,6 @@ categories:
 date: '2010-04-09'
 
 id: '533'
-slug: '/we-haz-ferrets/'
 tags:
     - animals
     - ferrets

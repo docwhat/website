@@ -1,7 +1,6 @@
 ---
 date: '2009-07-07'
 id: '403'
-slug: '/dwps-iklear/'
 tags:
     - DWPS
 title: 'DWPS: iKlear'

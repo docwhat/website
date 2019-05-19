@@ -1,7 +1,6 @@
 ---
 date: '2006-09-12'
 id: '20'
-slug: '/coolest-comic-shop/'
 title: 'Coolest Comic Shop in Squirrel Hill'
 tags:
     - comics

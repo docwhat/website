@@ -3,7 +3,6 @@ id: '90'
 title: 'Unappealing Taxes'
 date: '2008-05-08'
 template: 'post'
-slug: '/unappealing-taxes/'
 tags:
     - home
 archived: true

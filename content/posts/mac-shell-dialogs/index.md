@@ -3,7 +3,6 @@ id: '88'
 title: 'Mac Tricks: Shell Script Dialogs'
 date: '2008-04-01'
 template: 'post'
-slug: '/mac-shell-dialogs/'
 ---
 
 As you may know, I have had a MacBook Pro (15" - glossy) for a few months now.

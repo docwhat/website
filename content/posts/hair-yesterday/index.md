@@ -2,7 +2,6 @@
 id: '45'
 title: Hair yesterday, gone today.
 date: '2007-04-02'
-slug: /hair-yesterday/
 tags:
     - charity
     - donation

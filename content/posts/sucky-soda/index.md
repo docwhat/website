@@ -2,7 +2,6 @@
 id: '446'
 title: Sucky soda
 date: '2009-09-08'
-slug: /sucky-soda/
 tags:
     - food
     - soda

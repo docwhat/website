@@ -2,7 +2,6 @@
 id: '65'
 title: Site Redesign
 date: '2007-09-23'
-slug: /site-redesign/
 tags:
     - design
     - Wordpress

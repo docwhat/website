@@ -1,7 +1,6 @@
 ---
 date: '2007-10-19'
 id: '77'
-slug: '/boiler/'
 tags:
     - home
 title: 'Weil McLain'

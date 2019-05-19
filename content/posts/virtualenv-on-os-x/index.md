@@ -2,7 +2,6 @@
 date: '2011-06-13'
 id: '716'
 image: '/files/2011/06/xcode.png'
-slug: '/virtualenv-on-os-x/'
 tags:
     - OS X
     - Python

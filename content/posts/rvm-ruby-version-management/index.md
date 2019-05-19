@@ -4,7 +4,6 @@ title: 'RVM: ruby version management'
 date: '2009-10-27'
 author: docwhat
 
-slug: /rvm-ruby-version-management/
 openid_comments:
     - 'a:1:{i:0;s:4:"6396";}'
 categories:

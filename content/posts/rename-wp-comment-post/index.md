@@ -2,7 +2,6 @@
 id: '64'
 title: WordPress anti-spam recipe
 date: '2007-08-18'
-slug: /rename-wp-comment-post/
 tags:
     - spam
     - Wordpress

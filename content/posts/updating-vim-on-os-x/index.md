@@ -2,7 +2,6 @@
 date: '2012-04-13'
 id: '841'
 image: '/files/2012/04/356023245659.png'
-slug: '/updating-vim-on-os-x/'
 tags:
     - OS X
     - vim

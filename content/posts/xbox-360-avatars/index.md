@@ -1,7 +1,6 @@
 ---
 date: '2009-03-22'
 id: '330'
-slug: '/xbox-360-avatars/'
 tags:
     - video games
 title: XBox 360 avatars

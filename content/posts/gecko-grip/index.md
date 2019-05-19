@@ -2,7 +2,6 @@
 id: '197'
 title: Gecko-grip
 date: '2008-10-10'
-slug: /gecko-grip/
 tags:
     - Science
     - Technology

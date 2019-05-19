@@ -4,7 +4,6 @@ title: Sir Paul McCartney
 date: '2009-07-26'
 author: docwhat
 
-slug: /sir-paul-mccartney/
 categories:
     - docwhat
 tags:

@@ -3,7 +3,6 @@ id: '68'
 title: 'Mashups and JavaScript Security'
 date: '2007-09-28'
 template: 'post'
-slug: '/mashups-and-javascript-security/'
 tags:
     - 'JavaScript'
     - 'security'

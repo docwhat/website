@@ -2,7 +2,6 @@
 id: '194'
 title: 'SPORE DRM part 3'
 date: '2008-09-21'
-slug: '/spore-drm-part-3/'
 tags:
     - 'DRM'
     - 'video games'

@@ -3,7 +3,6 @@ author: docwhat
 date: '2013-04-18'
 id: '1274'
 image: '/files/2013/04/geeklatte-chrome-yukop-250x250.png'
-slug: '/busting-cached-301-redirects-in-chrome/'
 tags:
     - '301'
     - 'Google Chrome'

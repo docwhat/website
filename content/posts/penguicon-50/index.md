@@ -1,7 +1,6 @@
 ---
 date: '2007-04-28'
 id: '52'
-slug: '/penguicon-50/'
 title: 'What I did at Penguicon 2007'
 archived: true
 ---

@@ -5,7 +5,6 @@ categories:
 date: '2009-03-30'
 
 id: '350'
-slug: '/our-new-car/'
 tags:
     - car
 title: Our New Car

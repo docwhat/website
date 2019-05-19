@@ -1,7 +1,6 @@
 ---
 date: '2009-08-07'
 id: '429'
-slug: '/bobby-mcferrin-messes-with-your-mind/'
 tags:
     - music
     - science

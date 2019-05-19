@@ -1,7 +1,6 @@
 ---
 date: '2009-03-20'
 id: '316'
-slug: '/comparing-duh/'
 tags:
     - computer
     - NeXT

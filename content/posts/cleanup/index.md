@@ -3,7 +3,6 @@ id: '37'
 title: 'Cleaning up parts of the blog'
 date: '2007-03-07'
 
-slug: /cleanup/
 tags:
     - blog
     - design

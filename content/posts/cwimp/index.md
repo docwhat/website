@@ -2,7 +2,6 @@
 date: '2006-09-07'
 
 id: '13'
-slug: '/cwimp/'
 tags:
     - cosmic wimpout
     - linux

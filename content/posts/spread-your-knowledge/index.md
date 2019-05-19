@@ -2,7 +2,6 @@
 id: '1603'
 title: Spread your knowledge
 date: '2015-04-01'
-slug: /spread-your-knowledge/
 image: /files/2015/04/share_knowledge-250x250.png
 ---
 

@@ -2,7 +2,6 @@
 id: '97'
 title: 'OS X: Make an ISO'
 date: '2008-06-18'
-slug: '/os-x-make-an-iso/'
 tags:
     - macOS
 ---

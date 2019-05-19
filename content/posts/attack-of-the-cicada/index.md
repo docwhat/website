@@ -5,7 +5,6 @@ categories:
 date: '2009-08-13'
 
 id: '432'
-slug: '/attack-of-the-cicada/'
 tags:
     - bugs
     - cicadas

@@ -4,7 +4,6 @@ title: How speakeasy made it better
 date: '2009-03-25'
 author: docwhat
 
-slug: /how-speakeasy-made-it-better/
 categories:
     - docwhat
 tags:

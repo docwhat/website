@@ -2,7 +2,6 @@
 id: '207'
 title: 'November 4th: Vote!'
 date: '2008-11-04'
-slug: '/november-4th-vote/'
 tags:
     - friends
     - politics

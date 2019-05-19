@@ -2,7 +2,6 @@
 date: '2014-04-28'
 id: '1435'
 image: '/files/2014/04/knife-250x250.png'
-slug: '/rename-chef-node/'
 tags:
     - chef
     - knife

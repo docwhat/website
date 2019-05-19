@@ -2,7 +2,6 @@
 id: '523'
 title: 'Stupid Git Trick'
 date: '2010-03-26'
-slug: '/stupid-git-trick/'
 tags:
     - emacs
     - git

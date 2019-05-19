@@ -2,7 +2,6 @@
 id: '70'
 title: "It's All Text! v0.8.0"
 date: '2007-10-01'
-slug: '/its-all-text-v080/'
 tags:
     - "It's All Text!"
 ---

@@ -2,7 +2,6 @@
 id: '526'
 title: 'Ruby Debugging'
 date: '2010-03-29'
-slug: '/ruby-debug/'
 enclosure:
     - |
         http://cardero.textdrive.com/~eventualbuddha/ruby-debug-1-basics.mov

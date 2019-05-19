@@ -2,7 +2,6 @@
 id: '258'
 title: Coraline
 date: '2009-02-10'
-slug: /coraline/
 tags:
     - movie
 archived: true

@@ -1,7 +1,6 @@
 ---
 date: '2007-06-20'
 id: '60'
-slug: '/what-language-would-you-like-it-in/'
 tags:
     - "It's All Text!"
 title: 'What language would you like it in?'
