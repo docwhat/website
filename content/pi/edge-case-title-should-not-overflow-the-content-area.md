@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Antidisestablishmentarianism'
+date: '2009-05-19'
 categories:
     - Edge Case
 tags:

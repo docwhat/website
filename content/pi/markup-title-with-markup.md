@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Markup: Title *with* **Markdown**'
+date: 2013-01-16
 categories:
     - Markdown
 tags:

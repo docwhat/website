@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Markup: Text Readability Test'
+date: 2013-01-15
 excerpt: 'A bunch of text to test readability.'
 categories:
     - Markup

@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Post: Twitter Embed'
+date: '2012-02-03'
 categories:
     - Media
 tags:

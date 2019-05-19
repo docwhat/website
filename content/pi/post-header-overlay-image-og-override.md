@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Post: Overlay Image with OpenGraph Override'
+date: 2009-01-19
 header:
     overlay_image: assets/unsplash-image-1.jpg
     og_image: assets/page-header-og-image.png

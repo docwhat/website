@@ -1,6 +1,7 @@
 ---
 title: 'Post: Chat'
 test: true
+date: 2009-01-17
 categories:
     - Post Formats
 tags:

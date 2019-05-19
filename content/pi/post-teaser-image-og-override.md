@@ -1,8 +1,9 @@
 ---
 test: true
-title: 'Post: Header Image with OpenGraph Override'
+title: 'Post: Teaser Image with OpenGraph Override'
+date: '2012-02-02'
 header:
-    image: /assets/images/page-header-image.png
+    teaser: /assets/images/page-header-teaser.png
     og_image: /assets/images/page-header-og-image.png
 categories:
     - Layout
@@ -14,10 +15,10 @@ tags:
 last_modified_at: 2017-10-26T15:12:19-04:00
 ---
 
-This post has a header image with an OpenGraph override.
+This post has a teaser image with an OpenGraph override.
 
 ```yaml
 header:
-    image: /assets/images/page-header-image.png
+    teaser: /assets/images/page-header-teaser.png
     og_image: /assets/images/page-header-og-image.png
 ```

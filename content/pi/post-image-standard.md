@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Post: Image (Standard)'
+date: 2009-02-23
 categories:
     - Post Formats
 tags:

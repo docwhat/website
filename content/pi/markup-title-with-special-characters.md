@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Markup: Title with Special&nbsp;---&nbsp;Characters'
+date: 2013-01-17
 categories:
     - Markup
 tags:

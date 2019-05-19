@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Markup: Text Alignment'
+date: 2013-01-14
 categories:
     - Markup
 tags:

@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Edge Case: Many Categories'
+date: '2009-07-02'
 categories:
     - aciform mrofic
     - antiquarianism

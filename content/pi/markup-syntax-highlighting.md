@@ -1,6 +1,7 @@
 ---
 id: '93ec299a-af93-4e67-871a-28ed775bbe6e'
 test: true
+date: 2019-01-13
 title: 'Markup: Syntax Highlighting'
 excerpt: 'Post displaying the various ways of highlighting code in Markdown.'
 last_modified_at: 2018-01-03T09:45:06-05:00

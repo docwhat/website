@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Post: Image (Linked with Caption)'
+date: 2009-02-21
 categories:
     - Post Formats
 tags:

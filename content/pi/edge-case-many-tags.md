@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Edge Case: Many Tags'
+date: '2009-06-01'
 categories:
     - Edge Case
 tags:

@@ -6,7 +6,8 @@ tags:
     - Post Formats
     - quote
 title: 'Post: Quote'
-slug: '/pi/post_quote/'
+date: '2010-02-05'
+slug: '/pi/post-quote/'
 ---
 
 > Only one thing is impossible for God: To find any sense in any copyright law

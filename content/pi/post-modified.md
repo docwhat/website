@@ -1,7 +1,8 @@
 ---
 title: 'Post: Modified Date'
 test: true
-last_modified_at: 2016-03-09T16:20:02-05:00
+date: 2011-01-01
+last_modified_at: 2016-03-09
 categories:
     - Post Formats
 tags:

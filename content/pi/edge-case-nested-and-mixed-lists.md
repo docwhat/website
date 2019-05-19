@@ -1,6 +1,7 @@
 ---
 test: true
 title: 'Edge Case: Nested and Mixed Lists'
+date: '2009-05-15'
 categories:
     - edge-case
 tags:
