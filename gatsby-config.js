@@ -82,6 +82,13 @@ module.exports = {
           `gatsby-remark-abbr`,
           `gatsby-remark-smartypants`,
           'gatsby-remark-source-name',
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: null,
+              rel: `noopener`,
+            },
+          },
           `gatsby-remark-autolink-headers`,
           {
             // This must go before prismjs.

@@ -147,6 +147,7 @@
     "eslint-plugin-simple-import-sort": "3.1.1",
     "eslint-plugin-standard": "4.0.0",
     "flow-bin": "0.98.1",
+    "gatsby-remark-external-links": "^0.0.4",
     "husky": "2.3.0",
     "inquirer": "6.3.1",
     "inquirer-datepicker-prompt": "0.4.2",
