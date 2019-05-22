@@ -1,6 +1,6 @@
 ---
 title: User credentials in a Jenkins pipeline
-date: 2019-05-20
+date: 2019-05-22
 id: d7402a4d-5fd9-49c0-92fb-6d56ad0cdd04
 banner:
     sourceUrl: 'https://unsplash.com/photos/mhUsz2ezlXQ'
