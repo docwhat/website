@@ -12,6 +12,7 @@ import PageHeader from '../components/PageHeader'
 // Components
 import PostPaginator from '../components/PostPaginator'
 import Seo from '../components/Seo.jsx'
+import SmallPrint from '../components/SmallPrint.jsx'
 import { siteTitle, siteUrl } from '../utils/constants'
 
 type Props = {
@@ -42,15 +43,16 @@ type Props = {
 }
 
 const PostActions = (props: { editLink: string }) => (
-  <div
+  <SmallPrint
     css={css`
       text-align: right;
+      display: block;
     `}
   >
     <a target="_blank" rel="noopener noreferrer" href={props.editLink}>
       Edit on GitHub
     </a>
-  </div>
+  </SmallPrint>
 )
 
 const PostTemplate = (props: Props) => {
