@@ -45,12 +45,12 @@ const onPostBuild = async ({ graphql }) => {
     title: siteTitle,
     description: siteDescription,
     link: siteUrl,
-    id: siteUrl,
+    id: `${siteUrl}/`,
     language: 'en',
     image: `${siteUrl}/favicon.png`,
     favicon: `${siteUrl}/favicon.ico`,
     feedLinks: {
-      atom: `${siteUrl}/atom.xml`,
+      atom: `${siteUrl}/feed.atom`,
       json: `${siteUrl}/feed.json`,
     },
     author: {
