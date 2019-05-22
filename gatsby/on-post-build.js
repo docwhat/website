@@ -6,17 +6,19 @@ const pify = require(`pify`)
 const pathlib = require(`path`)
 const moment = require(`moment`)
 const Feed = require(`feed`).Feed
-const {
-  siteUrl,
-  authorName,
-  siteTitle,
-  siteDescription,
-} = require(`../src/utils/constants`)
 
 const onPostBuild = async ({ graphql }) => {
   const results = await runQuery(
     graphql,
     `{
+      site {
+        meta: siteMetadata {
+          url
+          author
+          title
+          description
+        }
+      }
       posts: allMarkdownRemark(
         limit: 20
         sort: { fields: [fields___date], order: DESC }
@@ -29,11 +31,16 @@ const onPostBuild = async ({ graphql }) => {
       ) {
         edges {
           node {
-            html
+            html: excerpt(format: HTML)
             fields {
               slug
               title
               date
+              banner {
+                image {
+                  publicURL
+                }
+              }
             }
           }
         }
@@ -41,35 +48,40 @@ const onPostBuild = async ({ graphql }) => {
     }`
   )
 
+  const meta = results.site.meta
+
   const feed = new Feed({
-    title: siteTitle,
-    description: siteDescription,
-    link: siteUrl,
-    id: `${siteUrl}/`,
+    title: meta.title,
+    description: meta.description,
+    link: `${meta.url}/`,
+    id: `${meta.url}/`,
     language: 'en',
-    image: `${siteUrl}/favicon.png`,
-    favicon: `${siteUrl}/favicon.ico`,
+    image: `${meta.url}/favicon.png`,
+    favicon: `${meta.url}/favicon.ico`,
     feedLinks: {
-      atom: `${siteUrl}/feed.atom`,
-      json: `${siteUrl}/feed.json`,
+      atom: `${meta.url}/feed.atom`,
+      json: `${meta.url}/feed.json`,
     },
     author: {
-      name: authorName,
-      link: siteUrl,
+      name: meta.author,
+      link: `${meta.url}/`,
     },
   })
 
   results.posts.edges.forEach(({ node }) => {
     feed.addItem({
       title: node.fields.title,
-      id: `${siteUrl}${node.fields.slug}`,
-      link: `${siteUrl}${node.fields.slug}`,
+      id: `${meta.url}${node.fields.slug}`,
+      link: `${meta.url}${node.fields.slug}`,
       date: moment(node.fields.date).toDate(),
-      content: node.html.replace(/\b(href|src)="\//g, `$1="${siteUrl}/`),
+      content: node.html,
+      image: node.fields.banner.image
+        ? `${meta.url}${node.fields.banner.image.publicURL}`
+        : null,
       author: [
         {
-          name: authorName,
-          link: siteUrl,
+          name: meta.author,
+          link: `${meta.url}/`,
         },
       ],
     })
