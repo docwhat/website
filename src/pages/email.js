@@ -6,7 +6,9 @@ import React from 'react'
 
 import Layout from '../components/Layout.jsx'
 import StyledButton from '../components/StyledButton.jsx'
-import { rhythm } from '../utils/style.js'
+import { shevy } from '../utils/style.js'
+
+const { baseSpacing: bs } = shevy
 
 const MyLabel = styled.label`
   display: inline-block;
@@ -53,7 +55,7 @@ const ContactForm = (props: { location: Location }) => (
           flexDirection: 'row',
           flexWrap: 'wrap',
           '& > *': {
-            margin: `${rhythm(1 / 2)} 0`,
+            margin: `${bs(1 / 2)} 0`,
           },
         }}
       >

@@ -3,7 +3,7 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 
-import { rhythm } from '../utils/style.js'
+import { shevy } from '../utils/style.js'
 import CalendarPage from './CalendarPage.jsx'
 import Date from './Date.jsx'
 import SmallPrint from './SmallPrint.jsx'
@@ -13,6 +13,8 @@ type Props = {
   ymdDate: string,
   ymdUpdate: string,
 }
+
+const { baseSpacing: bs } = shevy
 
 const PageHeader = (props: Props): React.Node => {
   const { title, ymdDate, ymdUpdate } = props
@@ -45,8 +47,8 @@ const PageHeader = (props: Props): React.Node => {
         css={{
           display: `flex`,
           border: `1.0px solid hsla(0, 0%, 0%, 0)`,
-          minHeight: calendarIcon === `` ? `unset` : rhythm(7 / 2),
-          marginBottom: rhythm(1),
+          minHeight: calendarIcon === `` ? `unset` : bs(7 / 2),
+          marginBottom: bs(1),
         }}
       >
         <h1
@@ -56,7 +58,7 @@ const PageHeader = (props: Props): React.Node => {
             marginRight: `auto`,
             marginLeft: 0,
             marginBottom: 0,
-            paddingRight: rhythm(1 / 5),
+            paddingRight: bs(1 / 5),
             borderBottom: `none`,
           }}
         >

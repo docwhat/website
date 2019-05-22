@@ -5,8 +5,9 @@ import styled from '@emotion/styled'
 import Link from 'gatsby-link'
 
 import { heroColor } from '../utils/colors.js'
-import { rhythm } from '../utils/style.js'
+import { shevy } from '../utils/style.js'
 
+const { baseSpacing: bs } = shevy
 const color = heroColor.negate()
 const background = heroColor
 
@@ -15,7 +16,7 @@ export default styled(Link)`
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: ${rhythm(1 / 2)};
+  font-size: ${bs(1 / 2)};
   background-color: ${background
     .desaturate(0.3)
     .lighten(0.3)
@@ -26,10 +27,10 @@ export default styled(Link)`
     .string()};
   user-select: none;
   cursor: pointer;
-  height: ${rhythm(1 + 1 / 4)};
-  line-height: ${rhythm(1 + 1 / 4)};
-  width: ${rhythm(5)};
-  border-radius: ${rhythm(1)};
+  height: ${bs(1 + 1 / 4)};
+  line-height: ${bs(1 + 1 / 4)};
+  width: ${bs(5)};
+  border-radius: ${bs(1)};
   &:hover {
     text-decoration: none;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);

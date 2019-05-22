@@ -2,10 +2,11 @@
 // @flow
 import { css } from '@emotion/core'
 import Img from 'gatsby-image'
-import Link from 'gatsby-link'
 import * as React from 'react'
 
-import { rhythm } from '../utils/style'
+import { shevy } from '../utils/style'
+
+const { baseSpacing: bs } = shevy
 
 const Caption = (props: { credits: string, sourceUrl: string }) => {
   const { credits, sourceUrl } = props
@@ -14,12 +15,14 @@ const Caption = (props: { credits: string, sourceUrl: string }) => {
     <figcaption
       css={css`
         font-style: oblique;
-        font-size: ${rhythm(1 / 3)};
+        font-size: ${bs(1 / 3)};
       `}
     >
       {credits}{' '}
       <code>
-        <Link to={sourceUrl}>source</Link>
+        <a href={sourceUrl} rel="noopener">
+          source
+        </a>
       </code>
     </figcaption>
   )

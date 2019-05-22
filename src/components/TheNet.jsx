@@ -5,16 +5,18 @@ import { css } from '@emotion/core'
 import Link from 'gatsby-link'
 import React from 'react'
 
-import { rhythm } from '../utils/style'
+import { serifFonts, shevy } from '../utils/style'
+
+const { baseSpacing: bs } = shevy
 
 const theCss = css({
-  fontSize: rhythm(1 / 2),
-  fontFamily: `Quattrocento, serif`,
+  fontSize: bs(1 / 2),
+  fontFamily: serifFonts,
   color: `hsla(0, 0%, 0%, 0.4)`,
 
   position: `fixed`,
-  bottom: rhythm(1 / 2),
-  right: rhythm(1),
+  bottom: bs(1 / 2),
+  right: bs(1),
   zIndex: 200,
 })
 

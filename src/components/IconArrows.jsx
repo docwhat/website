@@ -2,7 +2,9 @@
 // @format
 import React from 'react'
 
-import { rhythm } from '../utils/style.js'
+import { shevy } from '../utils/style.js'
+
+const { baseSpacing: bs } = shevy
 
 // eslint-disable-next-line react/display-name
 const IconArrow = overrideCss => () => (
@@ -12,10 +14,10 @@ const IconArrow = overrideCss => () => (
     css={{
       display: `inline-block`,
       position: `relative`,
-      top: `-0.05em`,
-      width: rhythm(2 / 3),
-      height: rhythm(2 / 3),
-      lineHeight: 1,
+      top: bs(-1 / 10),
+      width: shevy.content.fontSize,
+      height: shevy.content.fontSize,
+      lineHeight: shevy.content.lineHeight,
       verticalAlign: `middle`,
       fill: `currentColor`,
       ...overrideCss,

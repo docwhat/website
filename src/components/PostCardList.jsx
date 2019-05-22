@@ -3,8 +3,10 @@
 import { css } from '@emotion/core'
 import * as React from 'react'
 
-import { rhythm } from '../utils/style.js'
+import { shevy } from '../utils/style.js'
 import PostCard from './PostCard.jsx'
+
+const { baseSpacing: bs } = shevy
 
 type PostCardEdge = {
   node: {
@@ -29,9 +31,9 @@ const PostCardList = (props: Props): React.Node => (
       flex-wrap: wrap;
       justify-content: space-between;
       overflow: auto;
-      margin: 0 ${rhythm(-1 / 2)};
+      margin: 0 ${bs(-1 / 2)};
       & > * {
-        margin: ${rhythm(1 / 2)};
+        margin: ${bs(1 / 2)};
       }
     `}
   >

@@ -1,7 +1,7 @@
 // @flow
 // @format
 import { css } from '@emotion/core'
-import VerticalRhythm from 'compass-vertical-rhythm'
+import Shevy from 'shevyjs'
 
 import reboot from './bootstrap-reboot.css'
 import {
@@ -12,52 +12,66 @@ import {
   lightBackground,
   mellowColor,
 } from './colors'
-import { MOBILE_MEDIA_QUERY, TABLET_MEDIA_QUERY } from './media-queries'
+import { MOBILE_MEDIA_QUERY } from './media-queries'
 
 const base = {
-  baseFontSize: '21px',
+  baseFontSize: '20px',
   baseLineHeight: '1.5',
+  baseFontScale: 'minorThird',
+  proximity: true,
 }
-const vr = VerticalRhythm(base)
+const leading =
+  parseInt(base.baseFontSize, 10) * parseFloat(base.baseLineHeight)
 
-export const rhythm = vr.rhythm
-export const adjustFontSizeTo = vr.adjustFontSizeTo
+export const serifFonts = `"Hoefler Text", Constantia, Georgia, serif`
 
-export const scale = (value: number) => {
-  const pixels = Math.pow(2, value) * parseInt(base.baseFontSize, 10)
-  return adjustFontSizeTo(`${pixels}px`)
-}
+export const shevy = new Shevy(base)
+
+const {
+  baseSpacing: bs,
+  // lineHeightSpacing: lhs,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  body,
+  // content,
+} = shevy
 
 const globalCss = css`
   ${reboot};
 
   html {
     background-color: ${lightBackground.string()};
-    font-size: 1.3rem;
+    font-size: ${body.fontSize};
+    line-height: ${body.lineHeight};
   }
 
-  ${TABLET_MEDIA_QUERY} {
-    html {
-      font-size: 1rem;
-    }
+  html.grid {
+    background-image: url(//basehold.it/i/${leading});
+    background-size: 4px ${leading}px;
+    background-repeat: repeat;
   }
 
   body {
+    background: none;
     color: ${grey(20)};
     margin: 0 auto;
     max-width: 70ch;
     min-width: 320px;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
+    padding: 0 ${bs(3 / 2)};
+  }
+  ${MOBILE_MEDIA_QUERY} {
+    body {
+      padding: 0 ${bs(1 / 4)};
+    }
   }
 
-
-  body > * {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  mark{
+  mark {
     background-color: ${heroColor
       .saturationl(100)
       .lightness(80)
@@ -74,15 +88,39 @@ const globalCss = css`
     content: close-quote;
   }
 
-  h1 { font-size: ${scale(5 / 5).fontSize}; }
-  h2 { font-size: ${scale(3 / 5).fontSize}; }
-  h3 { font-size: ${scale(2 / 5).fontSize}; }
-  h4 { font-size: ${scale(0 / 5).fontSize}; }
-  h5 { font-size: ${scale(-1 / 5).fontSize}; }
-  h6 { font-size: ${scale(-1.5 / 5).fontSize}; }
+  h1 {
+    font-size: ${h1.fontSize};
+    line-height: ${h1.lineHeight};
+    margin-bottom: ${h1.marginBottom};
+  }
+  h2 {
+    font-size: ${h2.fontSize};
+    line-height: ${h2.lineHeight};
+    margin-bottom: ${h2.marginBottom};
+  }
+  h3 {
+    font-size: ${h3.fontSize};
+    line-height: ${h3.lineHeight};
+    margin-bottom: ${h3.marginBottom};
+  }
+  h4 {
+    font-size: ${h4.fontSize};
+    line-height: ${h4.lineHeight};
+    margin-bottom: ${h4.marginBottom};
+  }
+  h5 {
+    font-size: ${h5.fontSize};
+    line-height: ${h5.lineHeight};
+    margin-bottom: ${h5.marginBottom};
+  }
+  h6 {
+    font-size: ${h6.fontSize};
+    line-height: ${h6.lineHeight};
+    margin-bottom: ${h6.marginBottom};
+  }
   h1 {
     padding-top: 0;
-    padding-bottom: calc(${rhythm(1 / 4)} - 1px);
+    padding-bottom: calc(${bs(1 / 4)} - 1px);
     padding-left: 0;
     padding-right: 0;
 
@@ -90,14 +128,27 @@ const globalCss = css`
   }
   h2 {
     border-bottom: 1px solid ${heroColor.string()};
-    padding-bottom: calc(${rhythm(1 / 4)} - 1px);
+    padding-bottom: calc(${bs(1 / 4)} - 1px);
   }
   h6 {
     color: ${grey(47)};
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    & a {
+      color: inherit;
+    }
+  }
+
   hr {
     color: ${heroColor.string()};
+    background-color: ${heroColor.string()};
+    border: 1px solid transparent;
   }
 
   p {
@@ -114,42 +165,36 @@ const globalCss = css`
       .string()};
   }
 
-  .qq p *:last-child {
-    margin-bottom: 0;
-  }
-  .qq li > *:last-child {
-    margin-bottom: 0;
+  a:hover {
+    color: inherit;
   }
 
-
-  li, li > p {
+  li,
+  li > p {
     margin-bottom: 0.25rem;
   }
 
   blockquote {
-    ${scale(1 / 5)}
-
     color: ${grey(45)};
     background-color: ${heroColor
       .fade(0.8)
       .desaturate(0.3)
       .string()};
-    padding-bottom: ${rhythm(1 / 2)};
-    padding-left: ${rhythm(18 / 16)};
-    padding-right: ${rhythm(1 / 2)};
-    padding-top: ${rhythm(1 / 2)};
+    padding: ${bs(1 / 2)};
     position: relative;
   }
-  blockquote:before {
-    ${scale(5 / 2)}
 
-    line-height: 1;
-    padding: 0;
-    margin: 0;
+  blockquote > *:first-child {
+    text-indent: ${bs(1)};
+  }
+
+  blockquote:before {
+    font-size: 3.75em;
+    font-family: ${serifFonts};
     content: '“';
     position: absolute;
-    left: -0.10ex;
-    top: -0.25ex;
+    left: 0.06em;
+    top: -0.12em;
     color: ${heroColor.darken(0.5).string()};
   }
   blockquote > blockquote:before {
@@ -167,15 +212,13 @@ const globalCss = css`
   }
   ${MOBILE_MEDIA_QUERY} {
     blockquote {
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: ${rhythm(9 / 16)};
+      padding-right: ${bs(1 / 4)};
     }
   }
 
   figcaption {
     text-align: right;
-    font-size: ${rhythm(1 / 2)};
+    font-size: ${bs(1 / 2)};
     color: ${grey(40)};
   }
 
@@ -195,10 +238,12 @@ const globalCss = css`
     user-select: none;
     vertical-align: text-bottom;
   }
-  kbd:hover, kbd:hover * {
+  kbd:hover,
+  kbd:hover * {
     color: black;
   }
-  kbd:active, kbd:active * {
+  kbd:active,
+  kbd:active * {
     color: black;
     box-shadow: 0.1em 0.1em 0 ${grey(81)} inset;
   }
@@ -225,13 +270,14 @@ const globalCss = css`
   table {
     border-collapse: collapse;
     margin: 1rem 0;
-    table-layout:fixed;
+    table-layout: fixed;
     width: 100%;
   }
 
-  td, th {
+  td,
+  th {
     border-bottom: 1px solid ${grey(88)};
-    font-feature-settings: "tnum";
+    font-feature-settings: 'tnum';
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -239,11 +285,13 @@ const globalCss = css`
     padding-bottom: calc(0.75rem - 1px);
   }
 
-  th:first-child,td:first-child {
+  th:first-child,
+  td:first-child {
     padding-left: 0;
   }
 
-  th:last-child,td:last-child {
+  th:last-child,
+  td:last-child {
     padding-right: 0;
   }
 
@@ -254,12 +302,12 @@ const globalCss = css`
       .string()};
   }
 
-  legend{
+  legend {
     width: fit-content;
   }
-  fieldset{
-    border: 1px solid silver;
-    padding: ${rhythm(1 / 4)} ${rhythm(1 / 2)} ${rhythm(1 / 2)};
+  fieldset {
+    border: 2px solid silver;
+    padding: ${bs(1 / 4)} ${bs(1 / 2)} ${bs(1 / 2)};
   }
 `
 

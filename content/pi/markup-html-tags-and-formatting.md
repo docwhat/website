@@ -1,21 +1,51 @@
 ---
 title: 'Markup: HTML Tags and Formatting'
-date: 2013-01-11
+date: 2017-01-11
 ---
 
 A variety of common markup showing how the theme styles them.
 
 # Header one
 
+Lorem ipsum dolor sit amet, sed lorem iisque cu, salutatus conclusionemque vis
+cu. Ea per magna partiendo, at ridens minimum vivendum mei, te vix iudico
+labore omnesque. Autem porro usu at, per aeque cetero in. Te indoctum
+maluisset gubergren eos. Sed probatus scripserit ea, pri in lorem ocurreret.
+
 ## Header two
+
+Lorem ipsum dolor sit amet, sed lorem iisque cu, salutatus conclusionemque vis
+cu. Ea per magna partiendo, at ridens minimum vivendum mei, te vix iudico
+labore omnesque. Autem porro usu at, per aeque cetero in. Te indoctum
+maluisset gubergren eos. Sed probatus scripserit ea, pri in lorem ocurreret.
 
 ### Header three
 
+Lorem ipsum dolor sit amet, sed lorem iisque cu, salutatus conclusionemque vis
+cu. Ea per magna partiendo, at ridens minimum vivendum mei, te vix iudico
+labore omnesque. Autem porro usu at, per aeque cetero in. Te indoctum
+maluisset gubergren eos. Sed probatus scripserit ea, pri in lorem ocurreret.
+
 #### Header four
+
+Lorem ipsum dolor sit amet, sed lorem iisque cu, salutatus conclusionemque vis
+cu. Ea per magna partiendo, at ridens minimum vivendum mei, te vix iudico
+labore omnesque. Autem porro usu at, per aeque cetero in. Te indoctum
+maluisset gubergren eos. Sed probatus scripserit ea, pri in lorem ocurreret.
 
 ##### Header five
 
+Lorem ipsum dolor sit amet, sed lorem iisque cu, salutatus conclusionemque vis
+cu. Ea per magna partiendo, at ridens minimum vivendum mei, te vix iudico
+labore omnesque. Autem porro usu at, per aeque cetero in. Te indoctum
+maluisset gubergren eos. Sed probatus scripserit ea, pri in lorem ocurreret.
+
 ###### Header six
+
+Lorem ipsum dolor sit amet, sed lorem iisque cu, salutatus conclusionemque vis
+cu. Ea per magna partiendo, at ridens minimum vivendum mei, te vix iudico
+labore omnesque. Autem porro usu at, per aeque cetero in. Te indoctum
+maluisset gubergren eos. Sed probatus scripserit ea, pri in lorem ocurreret.
 
 ## Blockquotes
 

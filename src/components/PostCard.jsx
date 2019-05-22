@@ -6,10 +6,12 @@ import Link from 'gatsby-link'
 import * as React from 'react'
 
 import { lightBackground } from '../utils/colors.js'
-import { rhythm } from '../utils/style.js'
+import { shevy } from '../utils/style.js'
 import Date from './Date.jsx'
 import ReadMore from './ReadMore.jsx'
 import SmallPrint from './SmallPrint.jsx'
+
+const { baseSpacing: bs } = shevy
 
 const Title = ({
   to,
@@ -23,7 +25,7 @@ const Title = ({
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 0;
-      margin-top: ${rhythm(1 / 4)};
+      margin-top: ${bs(1 / 4)};
     `}
   >
     <Link style={{ boxShadow: `none` }} to={to}>
@@ -65,15 +67,15 @@ const PostCard = ({
       css={css`
         position: relative;
         vertical-align: top;
-        min-height: ${rhythm(3)};
-        max-height: ${rhythm(12)};
+        min-height: ${bs(3)};
+        max-height: ${bs(12)};
         z-index: 1;
         overflow: hidden;
         :before {
           content: '';
           z-index: 2;
           width: 100%;
-          height: ${rhythm(4)};
+          height: ${bs(4)};
           position: absolute;
           left: 0;
           bottom: 0;

@@ -85,7 +85,6 @@
     "caniuse-db": "1.0.30000969",
     "chalk": "2.4.2",
     "color": "3.1.1",
-    "compass-vertical-rhythm": "1.4.5",
     "eslint-plugin-emotion": "^10.0.7",
     "feed": "2.0.4",
     "gatsby": "2.6.0",
@@ -128,6 +127,7 @@
     "react-gist": "1.2.1",
     "react-gravatar": "2.6.3",
     "react-helmet": "5.2.1",
+    "shevyjs": "^1.1.0",
     "uuid": "3.3.2"
   },
   "devDependencies": {
