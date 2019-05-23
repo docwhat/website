@@ -4,6 +4,16 @@ set -eEuo pipefail
 
 cd "$(dirname "$(dirname "$0")")"
 
+# Fallback if running in Alpine (e.g., github actions)
+if ! command -v pigz >/dev/null 2>&1; then
+  if [[ -x /sbin/apk ]]; then
+    apk --no-cache add pigz
+  else
+    echo "Unable to find compressor 'pigz'" 1>&2
+    exit 10
+  fi
+fi
+
 find public -type f \
   -iname '*.gz' \
   -print0 |
