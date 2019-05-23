@@ -27,13 +27,13 @@ const Layout = (props: Props) => {
           font-size: ${bs(2)};
           font-weight: 700;
           line-height: 1;
-          margin: 0 0 ${bs(1 / 2)};
+          margin: 0 0 ${bs(1)};
           text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
             1px 1px 0 #fff;
           text-rendering: optimizeLegibility;
 
           ${MOBILE_MEDIA_QUERY} {
-            margin: ${bs(1)} 0 ${bs(3 / 4)};
+            margin: ${bs(1)} 0 ${bs(1 / 2)};
             font-size: ${bs(1)};
             text-align: center;
           }
@@ -44,6 +44,9 @@ const Layout = (props: Props) => {
             box-shadow: none;
             text-decoration: none;
             color: inherit;
+            &:hover {
+              text-decoration: none;
+            }
           `}
           to="/"
         >
@@ -61,12 +64,8 @@ const Layout = (props: Props) => {
         </Link>
         <hr
           css={css`
-            margin: ${bs(-1 / 4)} 0 ${bs(1 / 2)};
+            margin: ${bs(-1 / 4)} 0 0;
             height: ${bs(1 / 2)};
-            ${MOBILE_MEDIA_QUERY} {
-              margin-bottom: ${bs(3 / 4)};
-              height: ${bs(1 / 4)};
-            }
           `}
         />
       </header>

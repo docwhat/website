@@ -29,7 +29,7 @@ export const shevy = new Shevy(base)
 
 const {
   baseSpacing: bs,
-  // lineHeightSpacing: lhs,
+  lineHeightSpacing: lhs,
   h1,
   h2,
   h3,
@@ -37,8 +37,10 @@ const {
   h5,
   h6,
   body,
-  // content,
+  content,
 } = shevy
+
+console.log('nanrf', shevy)
 
 const globalCss = css`
   ${reboot};
@@ -50,8 +52,8 @@ const globalCss = css`
   }
 
   html.grid {
-    background-image: url(//basehold.it/i/${leading});
-    background-size: 4px ${leading}px;
+    background-image: url(//basehold.it/i/${leading / 2});
+    background-size: 4px ${leading / 2}px;
     background-repeat: repeat;
   }
 
@@ -63,11 +65,11 @@ const globalCss = css`
     min-width: 320px;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
-    padding: 0 ${bs(3 / 2)};
+    padding: 0 ${lhs(1.5)};
   }
   ${MOBILE_MEDIA_QUERY} {
     body {
-      padding: 0 ${bs(1 / 4)};
+      padding: 0 ${lhs(1 / 8)};
     }
   }
 
@@ -91,12 +93,14 @@ const globalCss = css`
   h1 {
     font-size: ${h1.fontSize};
     line-height: ${h1.lineHeight};
-    margin-bottom: ${h1.marginBottom};
+    margin-bottom: calc(${h1.marginBottom} - 2px);
+    border-bottom: 2px solid ${heroColor.string()};
   }
   h2 {
     font-size: ${h2.fontSize};
     line-height: ${h2.lineHeight};
-    margin-bottom: ${h2.marginBottom};
+    margin-bottom: calc(${h2.marginBottom} - 2px);
+    border-bottom: 2px solid ${heroColor.string()};
   }
   h3 {
     font-size: ${h3.fontSize};
@@ -118,18 +122,6 @@ const globalCss = css`
     line-height: ${h6.lineHeight};
     margin-bottom: ${h6.marginBottom};
   }
-  h1 {
-    padding-top: 0;
-    padding-bottom: calc(${bs(1 / 4)} - 1px);
-    padding-left: 0;
-    padding-right: 0;
-
-    border-bottom: 1px solid ${heroColor.string()};
-  }
-  h2 {
-    border-bottom: 1px solid ${heroColor.string()};
-    padding-bottom: calc(${bs(1 / 4)} - 1px);
-  }
   h6 {
     color: ${grey(47)};
   }
@@ -140,6 +132,7 @@ const globalCss = css`
   h4,
   h5,
   h6 {
+    padding: 0;
     & a {
       color: inherit;
     }
@@ -152,10 +145,10 @@ const globalCss = css`
   }
 
   p {
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+    padding: 0;
+    margin: 0 0 ${content.marginBottom};
+    line-height: ${content.lineHeight};
+    font-size: ${content.fontSize};
   }
 
   a {

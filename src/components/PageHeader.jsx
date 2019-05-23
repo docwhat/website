@@ -14,7 +14,7 @@ type Props = {
   ymdUpdate: string,
 }
 
-const { baseSpacing: bs } = shevy
+const { lineHeightSpacing: lhs, h2 } = shevy
 
 const PageHeader = (props: Props): React.Node => {
   const { title, ymdDate, ymdUpdate } = props
@@ -33,6 +33,9 @@ const PageHeader = (props: Props): React.Node => {
           css={{
             display: 'block',
             textAlign: 'right',
+            fontSize: lhs(1 / 2),
+            marginTop: lhs(1 / 2),
+            marginBottom: 0,
           }}
         >
           last updated <Date date={ymdUpdate} />
@@ -46,20 +49,16 @@ const PageHeader = (props: Props): React.Node => {
       <header
         css={{
           display: `flex`,
-          border: `1.0px solid hsla(0, 0%, 0%, 0)`,
-          minHeight: calendarIcon === `` ? `unset` : bs(7 / 2),
-          marginBottom: bs(1),
         }}
       >
         <h1
           css={{
-            lineHeight: 1,
-            marginTop: 0,
             marginRight: `auto`,
-            marginLeft: 0,
-            marginBottom: 0,
-            paddingRight: bs(1 / 5),
-            borderBottom: `none`,
+            marginBottom: h2.marginBottom,
+            paddingRight: lhs(1 / 4),
+            lineHeight: 1,
+            fontSize: h2.fontSize,
+            border: 'none',
           }}
         >
           {title}

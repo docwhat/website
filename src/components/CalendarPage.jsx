@@ -8,7 +8,7 @@ import { heroColor } from '../utils/colors.js'
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
 import { shevy } from '../utils/style.js'
 
-const { baseSpacing: bs } = shevy
+const { baseSpacing: bs, lineHeightSpacing: lhs } = shevy
 
 type State = {
   monthName: string,
@@ -46,7 +46,7 @@ class CalendarPage extends React.Component<Props, State> {
     const monthName = date.toLocaleDateString('en-US', { month: 'short' })
 
     const Wrapper = styled.time`
-      background-color: #ffffff;
+      background-color: #fff;
       border-radius: ${bs(1 / 4)};
       box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff,
         0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
@@ -55,7 +55,7 @@ class CalendarPage extends React.Component<Props, State> {
 
       /* change icon size */
       height: ${bs(3)};
-      margin: ${bs(1 / 2)} 0 ${bs(1 / 2)};
+      margin: 0 0 ${lhs(1 / 2)};
       overflow: hidden;
       position: relative;
       width: ${bs(3)};
