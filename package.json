@@ -128,6 +128,7 @@
     "react-gravatar": "2.6.3",
     "react-helmet": "5.2.1",
     "shevyjs": "^1.1.0",
+    "strip-markdown": "^3.0.3",
     "uuid": "3.3.2"
   },
   "devDependencies": {

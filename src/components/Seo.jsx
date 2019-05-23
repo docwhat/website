@@ -3,6 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import remark from 'remark'
+import strip from 'strip-markdown'
 
 const Seo = ({ title, description, image, pathname, article }) => (
   <StaticQuery
@@ -21,7 +23,11 @@ const Seo = ({ title, description, image, pathname, article }) => (
     }) => {
       const seo = {
         title: title || defaultTitle,
-        description: description || defaultDescription,
+        description: remark()
+          .use(strip)
+          .processSync(description || defaultDescription)
+          .toString()
+          .trimRight(),
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
       }
