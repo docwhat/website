@@ -87,7 +87,7 @@
     "color": "3.1.1",
     "eslint-plugin-emotion": "^10.0.7",
     "feed": "2.0.4",
-    "gatsby": "2.6.3",
+    "gatsby": "2.7.0",
     "gatsby-cli": "2.6.2",
     "gatsby-image": "^2.0.41",
     "gatsby-pagination": "1.2.0",
