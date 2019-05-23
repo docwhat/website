@@ -26,7 +26,7 @@ action "Lint" {
 action "Build" {
   uses = "Borales/actions-yarn@master"
   needs = ["Install"]
-  args = "build"
+  args = "docker:build"
   env = {
     GATSBY_URL = "https://next.docwhat.org/"
     GATSBY_ENV = "staging"
