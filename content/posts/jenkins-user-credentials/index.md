@@ -26,7 +26,11 @@ In this post, I'll show you how to:
 
 <!-- more -->
 
-## Setup
+## Setup Jenkins
+
+As a normal user you shouldn't have to worry about this part. If the steps
+below don't work, then you may have to bring this to the attention of your
+Jenkins administrator.
 
 To use _user credentials_ the user kicking off the build needs to have the
 `Credentials/UseOwn` permission.
@@ -38,20 +42,22 @@ This means that if "MyGroup" has the permission `Item/Build` then the user
 isn't given `Credentials/UseOwn`. You have to give the user `Item/Build`
 directly.
 
-Managing permissions without groups is hard. Instead, you can run this groovy
-(via the Script Console or via the CLI):
+Managing permissions without groups is hard. Instead, the administrator can
+run this groovy (via the Script Console or via the CLI):
 
 ```groovy
 // Give everyone "Credentials/UseOwn"
 System.setProperty("com.cloudbees.plugins.credentials.UseOwnPermission", "true")
 ```
 
-To make it permanent put it in an `init.groovy.d` file.
+To make it permanent the administrator should put it in an `init.groovy.d`
+file.
 
 ## Steps
 
-In a
-[_declarative pipeline_](https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline):
+As a normal end user of Jenkins, you can put these steps in your
+[_declarative pipeline_](https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline)
+(e.g., `Jenkinsfile`):
 
 1.  Add a
     [`parameters`](https://jenkins.io/doc/book/pipeline/syntax/#parameters)
