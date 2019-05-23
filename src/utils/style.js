@@ -40,8 +40,6 @@ const {
   content,
 } = shevy
 
-console.log('nanrf', shevy)
-
 const globalCss = css`
   ${reboot};
 
