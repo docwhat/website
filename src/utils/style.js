@@ -18,7 +18,7 @@ const base = {
   baseFontSize: '20px',
   baseLineHeight: '1.5',
   baseFontScale: 'minorThird',
-  proximity: true,
+  proximity: false,
 }
 const leading =
   parseInt(base.baseFontSize, 10) * parseFloat(base.baseLineHeight)
@@ -156,10 +156,9 @@ const globalCss = css`
       .saturationl(50)
       .lightness(50)
       .string()};
-  }
-
-  a:hover {
-    color: inherit;
+    &:hover {
+      color: inherit;
+    }
   }
 
   li,
@@ -261,21 +260,31 @@ const globalCss = css`
   }
 
   table {
-    border-collapse: collapse;
-    margin: 1rem 0;
+    margin: ${lhs(1 / 2)} 0;
     table-layout: fixed;
     width: 100%;
   }
 
   td,
   th {
-    border-bottom: 1px solid ${grey(88)};
     font-feature-settings: 'tnum';
+    line-height: 1;
 
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: calc(0.75rem - 1px);
+    padding-left: ${lhs(1)};
+    padding-right: ${lhs(1)};
+    padding-top: ${lhs(1 / 2)};
+
+    border-bottom: 1px solid ${grey(50)};
+    padding-bottom: calc(${lhs(1 / 2)} - 1px);
+    &[align='right'] {
+      text-align: right;
+    }
+    &[align='center'] {
+      text-align: center;
+    }
+    &[align='left'] {
+      text-align: left;
+    }
   }
 
   th:first-child,
@@ -288,11 +297,21 @@ const globalCss = css`
     padding-right: 0;
   }
 
-  tbody tr:nth-of-type(odd) {
-    background-color: ${deemphasisColor
-      .saturationl(30)
-      .alpha(0.09)
-      .string()};
+  tbody tr {
+    &:nth-of-type(even) {
+      &:hover {
+        background-color: ${emphasisColor.alpha(0.09).string()};
+      }
+    }
+    &:nth-of-type(odd) {
+      background-color: ${deemphasisColor
+        .saturationl(30)
+        .alpha(0.09)
+        .string()};
+      &:hover {
+        background-color: ${deemphasisColor.alpha(0.09).string()};
+      }
+    }
   }
 
   legend {
