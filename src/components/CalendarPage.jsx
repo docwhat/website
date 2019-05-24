@@ -87,7 +87,7 @@ class CalendarPage extends React.Component<Props, State> {
       position: absolute;
     `
     const Body = styled.div`
-      color: #2f2f2f;
+      color: ${fontColor.string()};
       font-size: ${bs(1)};
       letter-spacing: ${bs(1 / 50)};
       padding-top: ${bs(1)};
