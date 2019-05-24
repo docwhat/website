@@ -29,7 +29,11 @@ describe('NGiNX', () => {
   itShouldPermanentlyRedirect('/mail/', '/email')
 
   itShouldRedirect('/blog', '/')
+  itShouldRedirect('/blog/', '/')
   itShouldRedirect('/blog/spore', '/spore')
+
+  itShouldRedirect('/reward', '/')
+  itShouldRedirect('/reward/', '/')
 
   itShouldPermanentlyRedirect('/spore-drm/feed', '/spore-drm')
   itShouldPermanentlyRedirect('/spore-drm/feed/', '/spore-drm')

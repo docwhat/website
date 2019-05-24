@@ -7,8 +7,6 @@ import * as React from 'react'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Envelope } from '../icons/envelope.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
-import { ReactComponent as Gift } from '../icons/gift.svg'
-// $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as GithubLogo } from '../icons/github.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Key } from '../icons/key.svg'
@@ -74,11 +72,6 @@ const Bio = () => (
         <Envelope />{' '}
         <Link to="/email" title="Contact me!">
           contact
-        </Link>
-      </Reference>
-      <Reference>
-        <Link to="/reward" title="Send me a gift!">
-          <Gift />
         </Link>
       </Reference>
       <Reference>
