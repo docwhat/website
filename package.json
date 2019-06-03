@@ -84,7 +84,7 @@
     "bluebird": "3.5.5",
     "caniuse-db": "1.0.30000971",
     "chalk": "2.4.2",
-    "color": "3.1.1",
+    "color": "3.1.2",
     "eslint-plugin-emotion": "^10.0.7",
     "feed": "3.0.0",
     "gatsby": "2.8.2",
