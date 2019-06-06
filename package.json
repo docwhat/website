@@ -31,7 +31,7 @@
     "docker:build": "yarn build && script/compress && script/build",
     "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
     "docker:stop": "docker container rm -f docwhat.org",
-    "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md && yarn run lint:text",
+    "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md",
     "lint:css": "stylelint './src/**/*.{js,jsx,css}'",
     "lint:css:fix": "stylelint --fix './src/**/*.{js,jsx,css}'",
     "lint:fix": "yarn run lint:js:fix && yarn run lint:css:fix && yarn run lint:md:fix && yarn run lint:text:fix",
