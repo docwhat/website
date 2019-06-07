@@ -8,8 +8,7 @@ tags:
 archived: true
 ---
 
-I started this blog for a
-[couple of reasons](http://docwhat.org/2006/09/moving-to-a-blog/). One of the
+I started this blog for a [couple of reasons](/moving-to-a-blog/). One of the
 reasons is that I wanted to get better at writing.
 
 IRL[^1], I'm not good at explaining thoughts as they pop up. I tend to think

@@ -19,8 +19,8 @@ via one of the open source libraries out there that work.~~
 ~~In the past, it never worked because it's delegation support was broken.~~
 
 ~~Delegation is the handy feature that lets you use one host name (such as
-docwhat.org) as your id, but the provider could be someplace else (like
-myopenid.com). Or even multiple places!~~
+<docwhat.org>) as your id, but the provider could be someplace else (like
+<myopenid.com>). Or even multiple places!~~
 
 ~~I reported that
 [bug](https://sourceforge.net/tracker2/?func=detail&aid=1955438&group_id=1&atid=200001)
