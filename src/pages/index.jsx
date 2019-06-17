@@ -2,6 +2,7 @@
 // @flow
 // @ts-ignore
 // @ts-nocheck
+import { css } from '@emotion/core'
 import Link from 'gatsby-link'
 import * as React from 'react'
 import Helmet from 'react-helmet'
@@ -14,6 +15,9 @@ import TheNet from '../components/TheNet'
 import useAllPosts from '../components/useAllPosts'
 import { siteTitle } from '../utils/constants'
 import { blogJsonLD } from '../utils/ldjson'
+import { shevy } from '../utils/style.js'
+
+const { baseSpacing: bs } = shevy
 
 // https://jsonld-examples.com/schema.org/code/blog-markup.php
 const jsonLdData = {
@@ -74,9 +78,16 @@ const SiteIndex = (props: { location: Location }) => {
           />
         </Helmet>
         <PostCardList postcards={posts} />
-        <h3 css={{ textAlign: `right` }}>
-          <Link to="/all">See all blog posts&hellip;</Link>
-        </h3>
+        <Link
+          css={css`
+            text-align: right;
+            display: block;
+            font-size: ${bs(1)};
+          `}
+          to="/all"
+        >
+          See all blog posts&hellip;
+        </Link>
         <JsonLd data={jsonLdData} />
         <TheNet />
         <Bio />
