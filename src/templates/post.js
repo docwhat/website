@@ -94,6 +94,7 @@ const PostTemplate = (props: Props) => {
           title={pageTitle}
           description={excerpt}
           pathname={props.location.pathname}
+          image={banner.image.publicURL}
           article={true}
         />
         <PageHeader title={pageTitle} ymdUpdate={ymdUpdate} ymdDate={ymdDate} />
@@ -133,6 +134,7 @@ export const postQuery = graphql`
           credits
           sourceUrl
           image {
+            publicURL
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid_withWebp
