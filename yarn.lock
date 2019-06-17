@@ -14668,10 +14668,10 @@ strip-json-comments@^3.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
   integrity sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
 
-strip-markdown@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/strip-markdown/-/strip-markdown-3.0.3.tgz#93b4526abe32a1d69e5ca943f4d9ba25c01a4d48"
-  integrity sha512-G2DSM9wy3PWxY3miAibWpsTqZgXLXgRoq0yVyaVs9O7FDGEwPO6pmSE8CyzHhU88Z2w1dkFqFmWUklFNsQKwqg==
+strip-markdown@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/strip-markdown/-/strip-markdown-3.0.4.tgz#6241e6bc19c3ba81436485389f25505d8036f019"
+  integrity sha512-O+0DAu96wofH82JPZN4RkGdi3Lruo0yveDCeXUg0uRNWztPcn/s1AD85584OYUsAcjW0qR4pBlh8OBl/hH4Erw==
 
 strip-outer@^1.0.0:
   version "1.0.1"
