@@ -10,8 +10,8 @@ import SmallPrint from './SmallPrint.jsx'
 
 type Props = {
   title: string,
-  ymdDate: string,
-  ymdUpdate: string,
+  ymdDate?: string,
+  ymdUpdate?: string,
 }
 
 const { lineHeightSpacing: lhs, h2 } = shevy
@@ -27,7 +27,12 @@ const PageHeader = (props: Props): React.Node => {
         <CalendarPage ymdDate={ymdDate} />
       </>
     )
-    if (ymdUpdate !== 'Invalid date' && ymdUpdate > ymdDate) {
+    if (
+      ymdUpdate &&
+      ymdDate &&
+      ymdUpdate !== 'Invalid date' &&
+      ymdUpdate > ymdDate
+    ) {
       updateBlurb = (
         <SmallPrint
           css={{
