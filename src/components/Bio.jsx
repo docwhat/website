@@ -54,10 +54,10 @@ const Bio = () => (
           display: inline-block;
           white-space: nowrap;
         }
-        & > *:first-child {
+        & > *:first-of-type {
           margin-left: 0;
         }
-        & > *:last-child {
+        & > *:last-of-type {
           margin-right: 0;
         }
       `}

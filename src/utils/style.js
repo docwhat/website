@@ -174,7 +174,7 @@ const globalCss = css`
     position: relative;
   }
 
-  blockquote > *:first-child {
+  blockquote > *:first-of-type {
     text-indent: ${bs(1)};
   }
 
@@ -285,13 +285,13 @@ const globalCss = css`
     }
   }
 
-  th:first-child,
-  td:first-child {
+  th > *:first-of-type,
+  td > *:first-of-type {
     padding-left: 0;
   }
 
-  th:last-child,
-  td:last-child {
+  th > *:last-of-type,
+  td > *:last-of-type {
     padding-right: 0;
   }
 
