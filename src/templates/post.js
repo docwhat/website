@@ -94,7 +94,7 @@ const PostTemplate = (props: Props) => {
           title={pageTitle}
           description={excerpt}
           pathname={props.location.pathname}
-          image={banner.image.publicURL}
+          image={banner && banner.image && banner.image.publicURL}
           article={true}
         />
         <PageHeader title={pageTitle} ymdUpdate={ymdUpdate} ymdDate={ymdDate} />
