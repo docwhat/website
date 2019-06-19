@@ -14,8 +14,13 @@ env:
   global:
     - DOCKER_BUILDKIT=1
     - DOCKER_USERNAME=docwhat
+    # DOCKER_PASSWORD
     - secure: H15XDKoyFzVdeciTVddgJiWm6LYPUeFLDwODj2pMqZJ7DgvtlL1HL+y/g/csQ+0a1MbH83Mn64opEih2s62W4q4F+Uea948FoDfPLIbwqO/ilfqPuR4+r3ZV4axPwOsEpdv0Od3IanN+2f5I0wHe4Ioh0bJbvW9EiQUyaDvgMZU=
-    - secure: Tu9PBkOV1FOewm0PBxN1XfGnfvlnr2qysXIegiMcoQGrR6qcIGn2J2ZoXbcIdOpVU0xwty8eLQCPj/oamBUYX6D2h5fbu+puRs7UB81Y1t5RzNc6Y7XqjagGLni2HbDSltKdNDQydtA1Nuz1ugsZNm9G2+jc54En4SM5dgKBaxA=
+addons:
+  apt:
+    packages:
+      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
+      - libgconf-2-4
 
 before_install:
   - npm install -g yarn
