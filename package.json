@@ -150,7 +150,7 @@
     "flow-bin": "0.101.0",
     "gatsby-remark-external-links": "0.0.4",
     "husky": "2.4.1",
-    "inquirer": "6.4.0",
+    "inquirer": "6.4.1",
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "8.2.1",
     "prettier": "1.18.2",
