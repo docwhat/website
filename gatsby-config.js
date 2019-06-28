@@ -127,6 +127,13 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: siteUrl,
+        noTrailingSlash: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-emotion`,
       options: {},
     },
