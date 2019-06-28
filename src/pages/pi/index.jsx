@@ -36,12 +36,6 @@ const SiteIndex = (props: { location: Location }) => {
           </thead>
           <tbody>
             <tr>
-              <th>SITE_BRANCH</th>
-              <td>
-                <code>{site.branch}</code>
-              </td>
-            </tr>
-            <tr>
               <th>SITE_COMMIT</th>
               <td>
                 <code>{site.commit}</code>
@@ -51,12 +45,6 @@ const SiteIndex = (props: { location: Location }) => {
               <th>SITE_VERSION</th>
               <td>
                 <code>{site.version}</code>
-              </td>
-            </tr>
-            <tr>
-              <th>GATSBY_ENV</th>
-              <td>
-                <code>{site.gatsby_env}</code>
               </td>
             </tr>
             <tr>

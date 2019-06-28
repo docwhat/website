@@ -3,11 +3,9 @@
 const process = require('process')
 
 // In dev mode, environment variables can only be gotten here:
-const gatsbyEnv = process.env.GATSBY_ENV || 'development'
-const siteUrl = process.env.GATSBY_URL || 'https://docwhat.org'
+const siteUrl = 'https://docwhat.org'
 const siteVersion = process.env.SITE_VERSION || 'unknown'
 const siteCommit = process.env.SITE_COMMIT || 'unknown'
-const siteBranch = process.env.SITE_BRANCH || 'unknown'
 const nodeEnv = process.env.NODE_ENV || 'development'
 
 const {
@@ -29,9 +27,7 @@ module.exports = {
     url: siteUrl,
     version: siteVersion,
     commit: siteCommit,
-    branch: siteBranch,
     node_env: nodeEnv,
-    gatsby_env: gatsbyEnv,
     sourceUrl,
     image: '/favicon.png',
     twitterUsername: twitterUsername,

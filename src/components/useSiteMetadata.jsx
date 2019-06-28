@@ -14,8 +14,6 @@ const useSiteMetadata = () => {
             siteUrl
             version
             commit
-            branch
-            gatsby_env
             node_env
             sourceUrl
           }
