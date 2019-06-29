@@ -35,9 +35,9 @@ declare -ra docker_build_args=(
   "--target=final"
   "--tag=${tag}"
   "--pull"
-  "--label=org.label-schema.vcs-ref=${gitsha}"
-  "--label=org.label-schema.vcs-url=${repo_url}"
-  "--label=org.label-schema.build-date=${build_date}"
+  "--label=org.opencontainers.image.revision=${gitsha}"
+  "--label=org.opencontainers.image.source=${repo_url}"
+  "--label=org.opencontainers.image.build-date=${build_date}"
   "${top_dir}"
 )
 
