@@ -20,6 +20,7 @@
   "scripts": {
     "build": "NODE_ENV=production script/env gatsby build",
     "clean": "gatsby clean",
+    "compress": "script/compress",
     "cypress:open": "cypress open",
     "cypress:run": "wait-on http://localhost:8000 && cypress run",
     "cypress:run:chrome": "yarn run cypress:run --browser chrome",
@@ -28,7 +29,7 @@
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
     "develop": "NODE_ENV=development script/env gatsby develop",
-    "docker:build": "yarn build && script/compress && script/build",
+    "docker:build": "yarn build && yarn compress && script/build",
     "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
     "docker:stop": "docker container rm -f docwhat.org",
     "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md",

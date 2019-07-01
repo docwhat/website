@@ -1,0 +1,35 @@
+#!/bin/bash
+
+set -eu
+
+declare -r tag="${IMAGE_NAME:-docwhat:local}"
+declare -r top_dir="$(git rev-parse --show-toplevel)"
+declare -r repo_url="$(git ls-remote --get-url)"
+
+if buildctl du >/dev/null 2>&1; then
+  echo "Using existing buildkit daemon..."
+else
+  export BUILDKIT_HOST=tcp://0.0.0.0:1234
+  if buildctl du >/dev/null 2>&1; then
+    echo "Using existing buildkit daemon on port 1234..."
+  else
+    docker run -d \
+      --privileged \
+      -p 1234:1234 \
+      --name=buildkit \
+      moby/buildkit:latest \
+      --addr tcp://0.0.0.0:1234
+  fi
+fi
+
+buildctl build \
+  "--frontend=dockerfile.v0" \
+  "--local=context=." \
+  "--local=dockerfile=." \
+  "--export-cache=type=registry,mode=max,ref=docker.io/docwhat/docwhat:cache" \
+  "--import-cache=type=registry,ref=docker.io/docwhat/docwhat:cache" \
+  "--output=type=docker,name=docker/docker:local" \
+  "$@" |
+  docker load
+
+# EOF

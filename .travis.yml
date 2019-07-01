@@ -1,7 +1,5 @@
 sudo: required
-language: node_js
-node_js:
-  - "10"
+dist: xenial
 cache:
   directories:
     - node_modules
@@ -14,24 +12,34 @@ env:
   global:
     - DOCKER_BUILDKIT=1
     - DOCKER_USERNAME=docwhat
+    - BUILDKIT_HOST=tcp://0.0.0.0:1234
+    - PREFER_BUILDCTL="1"
     # DOCKER_PASSWORD
     - secure: H15XDKoyFzVdeciTVddgJiWm6LYPUeFLDwODj2pMqZJ7DgvtlL1HL+y/g/csQ+0a1MbH83Mn64opEih2s62W4q4F+Uea948FoDfPLIbwqO/ilfqPuR4+r3ZV4axPwOsEpdv0Od3IanN+2f5I0wHe4Ioh0bJbvW9EiQUyaDvgMZU=
 addons:
   apt:
+    source:
+      - docker-xenial
     packages:
       # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
       - libgconf-2-4
+      - docker-ce
 
-before_install:
-  - npm install -g yarn
-
-install: true noop
-
-before_script:
-  - sudo apt-get install -y pigz
+install:
+  - docker version
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq apt-transport-https ca-certificates curl libgconf-2-4
+  - curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | sudo apt-key add -qq -
+  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq --no-install-recommends docker-ce
+  - docker version
+  - docker run -d --privileged -p 1234:1234 --name=buildkit moby/buildkit:latest --addr tcp://0.0.0.0:1234
+  - sudo docker cp buildkit:/usr/bin/buildctl /usr/bin/
+  -
 
 script:
-  - yarn run travis
+  - ./script/buildkit
 
 deploy:
   skip_cleanup: true
@@ -56,4 +64,5 @@ notifications:
       - "  %{build_url}"
     users:
       secure: QFycDr2Xncye5QsFFHJs7nSd2sek0ntb7d/PthDAGkpxrfW9ebqkvrpjGSBDQiytqTBKOiUOkKwAFFNz7csukCdZ1mdjgQNoKmTzIgQvakUjZUsLZC/rPGHMveRdoaCNgiUwxWIRUCxpAHtlOFiYEdeJFuO5ju4vgmYP0gF/hXY=
-  webhooks: https://www.travisbuddy.com/
+  webhooks:
+    - "https://www.travisbuddy.com/"
