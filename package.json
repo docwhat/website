@@ -47,7 +47,9 @@
     "serve": "gatsby serve",
     "setup": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
+    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -130,7 +132,8 @@
     "react-helmet": "5.2.1",
     "shevyjs": "^1.1.0",
     "strip-markdown": "^3.0.4",
-    "uuid": "3.3.2"
+    "uuid": "3.3.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@testing-library/cypress": "4.0.4",
@@ -189,5 +192,6 @@
       "remark-frontmatter",
       "remark-abbr"
     ]
-  }
+  },
+  "snyk": true
 }
