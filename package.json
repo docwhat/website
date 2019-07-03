@@ -44,8 +44,10 @@
     "lint:text": "textlint 'content/**/*.md' '*.md'",
     "lint:text:fix": "textlint --fix 'content/**/*.md' '*.md'",
     "new": "node src/utils/newpost.js",
+    "prepublish": "yarn run snyk-protect",
     "serve": "gatsby serve",
     "setup": "yarn install",
+    "snyk-protect": "snyk protect",
     "test": "echo \"Error: no test specified\" && exit 1",
     "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
   },
@@ -55,27 +57,24 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "**/*.md": [
-        "prettier --write",
-        "remark",
-        "git add"
-      ],
-      "**/*.{js,jsx}": [
-        "prettier --write",
-        "eslint",
-        "stylelint",
-        "git add"
-      ],
-      "**/*.css": [
-        "stylelint"
-      ],
-      "package.json": [
-        "sort-package-json",
-        "git add"
-      ]
-    },
-    "relative": true
+    "**/*.css": [
+      "stylelint"
+    ],
+    "**/*.md": [
+      "prettier --write",
+      "remark",
+      "git add"
+    ],
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint",
+      "stylelint",
+      "git add"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
   },
   "dependencies": {
     "@babel/core": "7.5.0",
@@ -129,6 +128,7 @@
     "react-gravatar": "2.6.3",
     "react-helmet": "5.2.1",
     "shevyjs": "^1.1.0",
+    "snyk": "^1.189.0",
     "strip-markdown": "^3.0.4",
     "uuid": "3.3.2"
   },
@@ -189,5 +189,6 @@
       "remark-frontmatter",
       "remark-abbr"
     ]
-  }
+  },
+  "snyk": true
 }
