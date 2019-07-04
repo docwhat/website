@@ -78,7 +78,7 @@
     "relative": true
   },
   "dependencies": {
-    "@babel/core": "7.4.5",
+    "@babel/core": "7.5.0",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
     "@svgr/webpack": "4.3.1",
