@@ -10,7 +10,7 @@ FROM node AS buildenv
 RUN mkdir /workdir
 WORKDIR /workdir
 
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .snyk ./
 RUN --mount=type=cache,id=docwhat-yarn,target=/usr/local/share/.cache/yarn \
   yarn install --frozen-lockfile
 COPY ./ ./
