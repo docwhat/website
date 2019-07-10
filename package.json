@@ -44,7 +44,6 @@
     "lint:text": "textlint 'content/**/*.md' '*.md'",
     "lint:text:fix": "textlint --fix 'content/**/*.md' '*.md'",
     "new": "node src/utils/newpost.js",
-    "prepublish": "yarn run snyk-protect",
     "serve": "gatsby serve",
     "setup": "yarn install",
     "snyk-protect": "snyk protect",
@@ -190,5 +189,5 @@
       "remark-abbr"
     ]
   },
-  "snyk": true
+  "snyk": false
 }
