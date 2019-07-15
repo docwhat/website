@@ -79,7 +79,7 @@
     "@babel/core": "7.5.4",
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
-    "@svgr/webpack": "4.3.1",
+    "@svgr/webpack": "4.3.2",
     "bluebird": "3.5.5",
     "caniuse-db": "1.0.30000984",
     "chalk": "2.4.2",
