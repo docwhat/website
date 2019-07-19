@@ -115,7 +115,7 @@
     "gatsby-transformer-remark": "2.6.7",
     "gatsby-transformer-sharp": "2.2.4",
     "gatsby-transformer-yaml": "2.2.3",
-    "lodash": "4.17.14",
+    "lodash": "4.17.15",
     "moment": "2.24.0",
     "pify": "4.0.1",
     "prismjs": "1.16.0",
