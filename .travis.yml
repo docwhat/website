@@ -36,7 +36,6 @@ install:
   - docker version
   - docker run -d --privileged -p 1234:1234 --name=buildkit moby/buildkit:latest --addr tcp://0.0.0.0:1234
   - sudo docker cp buildkit:/usr/bin/buildctl /usr/bin/
-  -
 
 script:
   - ./script/buildkit
