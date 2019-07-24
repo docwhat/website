@@ -70,7 +70,7 @@ LABEL org.opencontainers.image.source="${GIT_URL}#${GIT_BRANCH}"
 LABEL org.opencontainers.image.version="${GIT_VERSION}"
 LABEL org.opencontainers.image.revision="${SITE_VERSION}"
 
-HEALTHCHECK --interval=5m --timeout=5s CMD wget http://localhost/nginx-health -q -O - > /dev/null 2>&1
+HEALTHCHECK --interval=5s --timeout=5s CMD wget http://localhost/nginx-health -q -O - > /dev/null 2>&1
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=lint /workdir/package.json /etc/docwhat.json
