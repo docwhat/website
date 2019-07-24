@@ -1814,21 +1814,22 @@
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
 
-"@testing-library/cypress@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-4.0.4.tgz#9063d86a5aba2a3133a1ab8aee3aaf080f88374b"
-  integrity sha512-dKdz9dczm2WhLGOWjdxizsfMyQu+u2caW0Ej+gAucz26z/KF6Y5lC+7ANy5Ol0DRa5cA0sMTUtgCSY2g9ZN8AA==
+"@testing-library/cypress@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-4.0.5.tgz#9015eea19f732a72dc44cc9d439479a039455870"
+  integrity sha512-xmtvi647OZuUNmUOg2oUuew89PKwsKGSLIQeK8+WVmfbtMhit2km4we2Lf/XliMQHfKIHrtnRL7yqpHjWaasuQ==
   dependencies:
     "@babel/runtime" "^7.4.5"
-    "@testing-library/dom" "^5.0.1"
+    "@testing-library/dom" "^5.6.0"
 
-"@testing-library/dom@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-5.0.1.tgz#1673a56f27fd9748576495958a27b0e5a408db5d"
-  integrity sha512-HmyN4b/PmSaSB1ku0tWjgnTtyrwNBXEpp44wgfNaDhyj6IJTCWp1GAf4AANoLGItgMsYjepwWOdMyuJ/8iyStQ==
+"@testing-library/dom@^5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-5.6.0.tgz#18a7c162a6a79964e731ad7b810022a28218047c"
+  integrity sha512-nAsRvQLr/b6TGNjuHMEbWXCNPLrQYnzqa/KKQZL7wBOtfptUxsa4Ah9aqkHW0ZmCSFmUDj4nFUxWPVTeMu0iCw==
   dependencies:
     "@babel/runtime" "^7.4.5"
     "@sheerun/mutationobserver-shim" "^0.3.2"
+    aria-query "3.0.0"
     pretty-format "^24.8.0"
     wait-for-expect "^1.2.0"
 
@@ -2590,7 +2591,7 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-aria-query@^3.0.0:
+aria-query@3.0.0, aria-query@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-3.0.0.tgz#65b3fcc1ca1155a8c9ae64d6eee297f15d5133cc"
   integrity sha1-ZbP8wcoRVajJrmTW7uKX8V1RM8w=
