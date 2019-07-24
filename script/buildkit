@@ -2,7 +2,24 @@
 
 set -eu
 
-declare -r tag="${IMAGE_NAME:-docwhat:local}"
+top_dir="$(git rev-parse --show-toplevel)"
+declare -r top_dir
+
+tag="${IMAGE_NAME:-docwhat:local}"
+declare -r tag
+
+node_version=$(cat "${top_dir}/.node-version")
+declare -r node_version
+
+build_date="$(env TZ='America/New_York' date '+%Y-%m-%dT%H:%M:%SZ')"
+declare -r build_date
+
+git_url="$(git ls-remote --get-url)"
+git_branch="$(git rev-parse --abbrev-ref HEAD)"
+git_sha=${GIT_SHA1:-$(git rev-parse HEAD)}
+git_commit=${GIT_COMMIT:-$(git log -1 --date=short --format='%h %ad %s')}
+git_version=${GIT_VERSION:-$(git describe --always --tags)}
+declare -r git_url git_branch git_sha git_commit git_version
 
 if buildctl du >/dev/null 2>&1; then
   echo "Using existing buildkit daemon..."
@@ -20,14 +37,29 @@ else
   fi
 fi
 
+declare -ra buildctl_args=(
+  # How to build
+  "--frontend=dockerfile.v0"
+  # What to build
+  "--local=context=${top_dir}"
+  "--local=dockerfile=${top_dir}"
+  # Various options
+  "--opt=build-arg:NODE_VERSION=${node_version}"
+  "--opt=build-arg:SITE_COMMIT=${git_commit}"
+  "--opt=build-arg:SITE_VERSION=${git_sha}"
+  "--opt=build-arg:GIT_URL=${git_url}"
+  "--opt=build-arg:GIT_BRANCH=${git_branch}"
+  "--opt=build-arg:GIT_VERSION=${git_version}"
+  # Target
+  "--opt=target=final"
+  # Cache
+  "--export-cache=type=registry,mode=max,ref=docker.io/docwhat/docwhat:cache"
+  "--import-cache=type=registry,ref=docker.io/docwhat/docwhat:cache"
+)
+
 buildctl build \
-  "--frontend=dockerfile.v0" \
-  "--local=context=." \
-  "--local=dockerfile=." \
-  "--export-cache=type=registry,mode=max,ref=docker.io/docwhat/docwhat:cache" \
-  "--import-cache=type=registry,ref=docker.io/docwhat/docwhat:cache" \
-  "--output=type=docker,name=${tag}" \
-  "$@" |
+  "${buildctl_args[@]}" \
+  "--output=type=docker,name=${tag}" |
   docker load
 
 # EOF

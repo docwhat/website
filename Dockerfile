@@ -4,6 +4,16 @@ ARG NODE_VERSION=10
 
 FROM node:$NODE_VERSION     AS node
 FROM nginx:stable-alpine    AS nginx
+ARG GIT_BRANCH
+ARG GIT_URL
+ARG GIT_VERSION
+ARG SITE_COMMIT
+ARG SITE_VERSION
+ENV SITE_COMMIT ${SITE_COMMIT}
+ENV SITE_VERSION ${SITE_VERSION}
+ENV GIT_BRANCH ${GIT_BRANCH}
+ENV GIT_URL ${GIT_URL}
+ENV GIT_VERSION ${GIT_VERSION}
 
 #############################
 FROM node AS buildenv
@@ -47,10 +57,18 @@ RUN yarn run compress
 #################################
 FROM nginx AS final
 
-LABEL maintainer="Christian Höltje <https://docwhat.org>" \
-  org.opencontainers.image.title="Website for docwhat.org" \
-  org.opencontainers.image.url="https://docwhat.org/" \
-  org.opencontainers.image.schema-version="1.0"
+ARG GIT_BRANCH
+ARG GIT_URL
+ARG GIT_VERSION
+ARG SITE_VERSION
+
+LABEL maintainer="Christian Höltje <https://docwhat.org>"
+LABEL org.opencontainers.image.authors="Christian Höltje <https://docwhat.org>"
+LABEL org.opencontainers.image.title="Website for docwhat.org"
+LABEL org.opencontainers.image.url="https://docwhat.org/"
+LABEL org.opencontainers.image.source="${GIT_URL}#${GIT_BRANCH}"
+LABEL org.opencontainers.image.version="${GIT_VERSION}"
+LABEL org.opencontainers.image.revision="${SITE_VERSION}"
 
 HEALTHCHECK --interval=5m --timeout=5s CMD wget http://localhost/nginx-health -q -O - > /dev/null 2>&1
 
