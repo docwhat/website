@@ -58,9 +58,10 @@ declare -ra buildctl_args=(
   "--import-cache=type=registry,ref=docker.io/docwhat/docwhat:cache"
 )
 
-buildctl build \
-  "${buildctl_args[@]}" \
-  "--output=type=docker,name=${tag}" |
-  docker load
+if [[ ${1:-} == "push" ]]; then
+  buildctl build "${buildctl_args[@]}" "--output=type=image,push=true,name=${tag}"
+else
+  buildctl build "${buildctl_args[@]}" "--output=type=docker,name=${tag}" | docker load
+fi
 
 # EOF
