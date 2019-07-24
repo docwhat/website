@@ -28,6 +28,7 @@ else
   if buildctl du >/dev/null 2>&1; then
     echo "Using existing buildkit daemon on port 1234..."
   else
+    docker container rm --force buildkit >/dev/null 2>&1 || :
     docker run -d \
       --privileged \
       -p 1234:1234 \
