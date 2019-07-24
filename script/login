@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -eEuo pipefail
+
+function docker_username() {
+  local oldstate
+  if [[ -n ${DOCKER_USERNAME:-} ]]; then
+    echo "$DOCKER_USERNAME"
+  else
+    lpass show --username --sync=auto docker.com
+  fi
+}
+
+function docker_password() {
+  local -r oldstate="$(shopt -po xtrace)"
+  set +x
+
+  if [[ -n ${DOCKER_PASSWORD:-} ]]; then
+    echo "$DOCKER_PASSWORD"
+  else
+    lpass show --password --sync=auto docker.com
+  fi
+  eval "$oldstate" 1>&2
+}
+
+## Main
+
+docker_password | docker login --username="$(docker_username)" --password-stdin
+
+# EOF

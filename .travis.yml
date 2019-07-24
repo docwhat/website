@@ -44,7 +44,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: "./script/buildkit push"
+  script: "./script/login && ./script/buildkit push"
   on:
     branch: master
 

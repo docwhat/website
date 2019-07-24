@@ -2,30 +2,8 @@
 
 set -eEuo pipefail
 
-function docker_username() {
-  local oldstate
-  if [[ -n ${DOCKER_USERNAME:-} ]]; then
-    echo "$DOCKER_USERNAME"
-  else
-    lpass show --username --sync=auto docker.com
-  fi
-}
-
-function docker_password() {
-  local -r oldstate="$(shopt -po xtrace)"
-  set +x
-
-  if [[ -n ${DOCKER_PASSWORD:-} ]]; then
-    echo "$DOCKER_PASSWORD"
-  else
-    lpass show --password --sync=auto docker.com
-  fi
-  eval "$oldstate" 1>&2
-}
-
-function docker_login() {
-  docker_password | docker login --username="$(docker_username)" --password-stdin
-}
+top_dir="$(git rev-parse --show-toplevel)"
+declare -r top_dir
 
 function push_tag() {
   local -r push_tag="docwhat/docwhat:${1}"
@@ -42,7 +20,7 @@ function push_tag() {
 
 ## Main
 
-docker_login
+"${top_dir}/script/login"
 
 for tag in "$@"; do
   push_tag "$tag"
