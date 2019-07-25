@@ -4,16 +4,19 @@ ARG NODE_VERSION=10
 
 FROM node:$NODE_VERSION     AS node
 FROM nginx:stable-alpine    AS nginx
+ARG CI=true
 ARG GIT_BRANCH
 ARG GIT_URL
 ARG GIT_VERSION
 ARG SITE_COMMIT
 ARG SITE_VERSION
-ENV SITE_COMMIT ${SITE_COMMIT}
-ENV SITE_VERSION ${SITE_VERSION}
+ENV CI ${CI}
+ENV GATSBY_TELEMETRY_DISABLED=1
 ENV GIT_BRANCH ${GIT_BRANCH}
 ENV GIT_URL ${GIT_URL}
 ENV GIT_VERSION ${GIT_VERSION}
+ENV SITE_COMMIT ${SITE_COMMIT}
+ENV SITE_VERSION ${SITE_VERSION}
 
 #############################
 FROM node AS buildenv
@@ -34,7 +37,7 @@ RUN yarn run lint
 
 ###################
 FROM setup AS build
-RUN yarn run build
+RUN yarn run build </dev/null 2>&1 | cat
 
 ###################
 FROM node AS compress

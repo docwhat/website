@@ -59,6 +59,8 @@ declare -ra buildctl_args=(
 )
 
 if [[ ${1:-} == "push" ]]; then
+  echo 1>&2
+  echo "Pushing to ${tag}..." 1>&2
   buildctl build "${buildctl_args[@]}" "--output=type=image,push=true,name=${tag}"
 else
   buildctl build "${buildctl_args[@]}" "--output=type=docker,name=${tag}" | docker load
