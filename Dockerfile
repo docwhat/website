@@ -4,6 +4,10 @@ ARG NODE_VERSION=10
 
 FROM node:$NODE_VERSION     AS node
 FROM nginx:stable-alpine    AS nginx
+
+#############################
+FROM node AS buildenv
+
 ARG CI=true
 ARG GIT_BRANCH
 ARG GIT_URL
@@ -18,8 +22,6 @@ ENV GIT_VERSION ${GIT_VERSION}
 ENV SITE_COMMIT ${SITE_COMMIT}
 ENV SITE_VERSION ${SITE_VERSION}
 
-#############################
-FROM node AS buildenv
 RUN mkdir /workdir
 WORKDIR /workdir
 
