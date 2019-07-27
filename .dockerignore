@@ -5,7 +5,7 @@ cypress*
 node_modules
 public
 script/build*
-.travis.yaml
+.travis.yml
 
 *.log
 *.temp
