@@ -60,7 +60,8 @@ else
   fi
 fi
 
-declare -ra buildctl_args=(
+## Build args
+declare -a buildctl_args=(
   # How to build
   "--frontend=dockerfile.v0"
   # What to build
@@ -86,6 +87,7 @@ if ! ((ignore_cache)); then
   )
 fi
 
+## Run
 if ((do_push)); then
   {
     echo
