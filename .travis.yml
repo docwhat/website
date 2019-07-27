@@ -14,7 +14,6 @@ env:
     - DOCKER_USERNAME=docwhat
     - BUILDKIT_HOST=tcp://0.0.0.0:1234
     - PREFER_BUILDCTL="1"
-    - "IMAGE_NAME=docwhat/docwhat:${TRAVIS_BRANCH}"
     # DOCKER_PASSWORD
     - secure: H15XDKoyFzVdeciTVddgJiWm6LYPUeFLDwODj2pMqZJ7DgvtlL1HL+y/g/csQ+0a1MbH83Mn64opEih2s62W4q4F+Uea948FoDfPLIbwqO/ilfqPuR4+r3ZV4axPwOsEpdv0Od3IanN+2f5I0wHe4Ioh0bJbvW9EiQUyaDvgMZU=
 addons:
@@ -44,7 +43,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: "./script/login && ./script/buildkit push"
+  script: "./script/login && env IMAGE_NAME="docwhat/docwhat:${TRAVIS_BRANCH}" script/buildkit push"
   on:
     branch: master
 
