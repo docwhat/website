@@ -60,6 +60,13 @@ COPY --from=build /workdir/public/ ./public/
 RUN yarn run compress
 
 #################################
+FROM nginx AS dependencies
+
+# Ensure all the requirements are finished
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=lint /workdir/package.json /etc/docwhat.json
+
+#################################
 FROM nginx AS final
 
 ARG GIT_BRANCH
@@ -77,6 +84,5 @@ LABEL org.opencontainers.image.revision="${SITE_VERSION}"
 
 HEALTHCHECK --interval=5s --timeout=5s CMD wget http://localhost/nginx-health -q -O - > /dev/null 2>&1
 
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=lint /workdir/package.json /etc/docwhat.json
+COPY --from=dependencies /etc/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=compress /workdir/public/ /html/
