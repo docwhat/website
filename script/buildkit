@@ -5,13 +5,20 @@ set -eu
 top_dir="$(git rev-parse --show-toplevel)"
 declare -r top_dir
 
-declare do_push=0 ignore_cache=0
+declare do_push=0 ignore_cache=0 no_local=0
 while (($# > 0)); do
   case "$1" in
   push)
     do_push=1
     ;;
-  ignore-cache | ignore_cache | ignorecache | --ignore-cache | -i)
+  ignore-cache | ignore_cache | ignorecache | --ignore-cache | -I)
+    ignore_cache=1
+    ;;
+  no-local | --no-local | -L)
+    no_local=1
+    ;;
+  ci | --ci)
+    no_local=1
     ignore_cache=1
     ;;
   *)
@@ -94,6 +101,8 @@ if ((do_push)); then
     echo "Pushing to ${tag}..."
   } 1>&2
   buildctl build "${buildctl_args[@]}" "--output=type=image,push=true,name=${tag}"
+elif ((no_local)); then
+  buildctl build "${buildctl_args[@]}"
 else
   buildctl build "${buildctl_args[@]}" "--output=type=docker,name=${tag}" | docker load
 fi
