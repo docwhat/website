@@ -62,7 +62,7 @@ else
       "--privileged" \
       "--publish=1234:1234" \
       "--name=buildkit" \
-      "moby/buildkit:latest" \
+      "moby/buildkit:master" \
       --addr tcp://0.0.0.0:1234
   fi
 fi
