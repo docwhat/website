@@ -38,7 +38,7 @@ install:
   - sudo docker cp buildkit:/usr/bin/buildctl /usr/bin/
 
 script:
-  - ./script/buildkit
+  - ./script/buildkit --ci
 
 deploy:
   skip_cleanup: true
