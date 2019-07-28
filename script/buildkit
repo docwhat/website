@@ -5,7 +5,7 @@ set -eu
 top_dir="$(git rev-parse --show-toplevel)"
 declare -r top_dir
 
-declare do_push=0 ignore_cache=0 no_local=0
+declare do_push=0 ignore_cache=0 no_local=0 start_only=0
 while (($# > 0)); do
   case "$1" in
   push)
@@ -21,6 +21,9 @@ while (($# > 0)); do
     no_local=1
     ignore_cache=1
     ;;
+  start-only | --start-only | -s)
+    start_only=1
+    ;;
   *)
     echo "Unknown argument: $1" 1>&2
     exit 2
@@ -28,7 +31,7 @@ while (($# > 0)); do
   esac
   shift
 done
-declare -r do_push ignore_cache
+declare -r do_push ignore_cache no_local start_only
 
 if ((do_push)); then
   tag="${IMAGE_NAME:-docwhat:local}"
@@ -65,6 +68,10 @@ else
       "moby/buildkit:master" \
       --addr tcp://0.0.0.0:1234
   fi
+fi
+
+if ((start_only)); then
+  exit 0
 fi
 
 ## Build args
