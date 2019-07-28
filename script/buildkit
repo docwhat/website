@@ -88,6 +88,11 @@ declare -a buildctl_args=(
 )
 
 if ! ((ignore_cache)); then
+  {
+    echo
+    echo "I will publish the cache..."
+  } 1>&2
+
   buildctl_args=(
     "${buildctl_args[@]}"
     "--export-cache=type=registry,mode=max,ref=docker.io/docwhat/docwhat:cache"
