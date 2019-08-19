@@ -130,7 +130,7 @@
     "shevyjs": "^1.1.0",
     "snyk": "^1.199.2",
     "strip-markdown": "^3.0.4",
-    "uuid": "3.3.2"
+    "uuid": "3.3.3"
   },
   "devDependencies": {
     "@testing-library/cypress": "4.1.1",
