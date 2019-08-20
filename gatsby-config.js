@@ -214,7 +214,7 @@ module.exports = {
 }
 
 if (module.exports.siteMetadata.gatsby_env === 'production') {
-  module.exports['plugins'] = module.exports.plugins.concat([
+  module.exports.plugins = module.exports.plugins.concat([
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
