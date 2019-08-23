@@ -6,6 +6,12 @@ FROM node:$NODE_VERSION     AS node
 FROM nginx:stable-alpine    AS nginx
 
 #############################
+FROM node AS files
+WORKDIR /x
+COPY ./ ./
+RUN rm -f nginx.conf
+
+#############################
 FROM node AS buildenv
 
 ARG CI=true
@@ -25,11 +31,12 @@ ENV SITE_VERSION ${SITE_VERSION}
 RUN mkdir /workdir
 WORKDIR /workdir
 
-COPY package.json yarn.lock .snyk ./
+COPY --from=files /x/package.json /x/yarn.lock /x/.snyk ./
 RUN --mount=type=cache,id=docwhat-yarn,target=/usr/local/share/.cache/yarn \
   yarn install --frozen-lockfile
-COPY ./ ./
+COPY --from=files /x/ ./
 
+###################
 FROM buildenv AS setup
 RUN yarn run setup
 
