@@ -1,8 +1,3 @@
-[![](https://images.microbadger.com/badges/version/docwhat/docwhat:stable.svg)](https://microbadger.com/images/docwhat/docwhat:stable)
-[![](https://images.microbadger.com/badges/image/docwhat/docwhat:stable.svg)](https://microbadger.com/images/docwhat/docwhat:stable)
-[![](https://images.microbadger.com/badges/commit/docwhat/docwhat:stable.svg)](https://microbadger.com/images/docwhat/docwhat:stable)
-[![](https://travis-ci.org/docwhat/docwhat.svg?branch=stable)](https://travis-ci.org/docwhat/docwhat)
-
 [![](https://images.microbadger.com/badges/version/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
 [![](https://images.microbadger.com/badges/image/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
 [![](https://images.microbadger.com/badges/commit/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
