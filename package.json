@@ -113,7 +113,7 @@
     "gatsby-remark-smartypants": "2.1.6",
     "gatsby-remark-source-name": "^1.0.0",
     "gatsby-source-filesystem": "2.1.19",
-    "gatsby-transformer-remark": "2.6.20",
+    "gatsby-transformer-remark": "2.6.21",
     "gatsby-transformer-sharp": "2.2.13",
     "gatsby-transformer-yaml": "2.2.8",
     "lodash": "4.17.15",
