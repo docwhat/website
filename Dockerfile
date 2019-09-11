@@ -8,9 +8,7 @@ FROM nginx:stable-alpine    AS nginx
 #############################
 FROM node AS files
 WORKDIR /x
-RUN \
-  --mount=type=cache,target=/var/cache/apt \
-  --mount=type=cache,target=/var/lib/apt \
+RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=locked --mount=id=docwhat-var-lib/apt,target=/var/lib/apt,type=cache,sharing=locked \
   apt update && \
   apt upgrade -y && \
   apt install --no-install-recommends -y rsync
@@ -39,7 +37,7 @@ RUN mkdir /workdir
 WORKDIR /workdir
 
 COPY --from=files /x/package.json /x/yarn.lock /x/.snyk ./
-RUN --mount=type=cache,id=docwhat-yarn,target=/usr/local/share/.cache/yarn \
+RUN --mount=id=docwhat-yarn,target=/usr/local/share/.cache/yarn,type=cache,sharing=locked \
   yarn install --frozen-lockfile
 COPY --from=files /x/ ./
 
@@ -58,9 +56,7 @@ RUN yarn run build </dev/null 2>&1 | cat
 ###################
 FROM node AS compress
 RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' > /etc/apt/apt.conf.d/keep-cache
-RUN \
-  --mount=type=cache,target=/var/cache/apt \
-  --mount=type=cache,target=/var/lib/apt \
+RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=locked --mount=id=docwhat-var-lib/apt,target=/var/lib/apt,type=cache,sharing=locked \
   apt update && \
   apt upgrade -y && \
   apt install --no-install-recommends -y pigz
