@@ -8,8 +8,15 @@ FROM nginx:stable-alpine    AS nginx
 #############################
 FROM node AS files
 WORKDIR /x
-COPY ./ ./
-RUN rm -f nginx.conf
+RUN \
+  --mount=type=cache,target=/var/cache/apt \
+  --mount=type=cache,target=/var/lib/apt \
+  apt update && \
+  apt upgrade -y && \
+  apt install --no-install-recommends -y rsync
+RUN --mount=type=bind,target=/s \
+      rsync --archive --inplace --exclude=nginx.conf \
+      /s/ /x/
 
 #############################
 FROM node AS buildenv
