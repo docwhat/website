@@ -7,7 +7,7 @@ const itShouldPermanentlyRedirect = (initialPath, finalPath) =>
       })
       .then(resp => {
         expect(resp.status).to.eq(301)
-        expect(resp.redirectedToUrl).to.eq(`http://localhost${finalPath}`)
+        expect(resp.headers.location).to.eq(finalPath)
       }))
 
 const itShouldRedirect = (initialPath, finalPath) =>
@@ -19,7 +19,7 @@ const itShouldRedirect = (initialPath, finalPath) =>
       })
       .then(resp => {
         expect(resp.status).to.eq(302)
-        expect(resp.redirectedToUrl).to.eq(`http://localhost${finalPath}`)
+        expect(resp.headers.location).to.eq(finalPath)
       }))
 
 const itShouldReturnHttpStatus = (path, httpStatus = 200) =>
@@ -82,4 +82,8 @@ describe('NGiNX', () => {
   itShouldBeUtf8('/feed.atom')
   itShouldBeUtf8('/feed.rss')
   itShouldBeUtf8('/feed.json')
+
+  itShouldPermanentlyRedirect('/macos-dns-and-go/', '/macos-dns-and-go')
+  itShouldPermanentlyRedirect('/macos-dns-and-go//', '/macos-dns-and-go')
+  itShouldReturnHttpStatus('/macos-dns-and-go', 200)
 })
