@@ -76,7 +76,7 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "7.6.0",
+    "@babel/core": "7.6.2",
     "@babel/preset-env": "^7.6.0",
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
