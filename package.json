@@ -48,7 +48,8 @@
     "setup": "yarn install",
     "snyk-protect": "snyk protect",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
+    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -128,7 +129,7 @@
     "react-gravatar": "2.6.3",
     "react-helmet": "5.2.1",
     "shevyjs": "^1.1.0",
-    "snyk": "^1.226.1",
+    "snyk": "^1.230.5",
     "strip-markdown": "^3.0.4",
     "uuid": "3.3.3"
   },
@@ -191,5 +192,5 @@
       "remark-abbr"
     ]
   },
-  "snyk": false
+  "snyk": true
 }
