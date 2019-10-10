@@ -12,6 +12,7 @@ script/build*
 *.tmp
 .DS_Store
 .gatsby-context.js
+.hadolint.yaml
 .intermediate-representation
 .tern-port
 .vscode

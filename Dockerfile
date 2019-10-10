@@ -13,7 +13,7 @@ RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=lo
   apt-get install --no-install-recommends -y rsync && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
-  RUN --mount=type=bind,target=/s \
+RUN --mount=type=bind,target=/s \
       rsync --archive --inplace --exclude=nginx.conf \
       /s/ /x/
 
