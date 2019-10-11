@@ -1,11 +1,13 @@
 {
-    "extends": [
-        "config:base",
-        "group:monorepos",
-        "group:recommended",
-        ":assignee(docwhat)",
-        ":automergeLinters",
-        ":automergeMinor"
-    ],
-    "timezone": "America/New_York"
+  "extends": [
+    "config:base",
+    ":assignAndReview(docwhat)",
+    ":automergeAll",
+    ":automergeBranchPush",
+    ":enableVulnerabilityAlertsWithLabel(security vulnerability)",
+    ":label(dependencies)",
+    "group:monorepos",
+    "group:recommended"
+  ],
+  "timezone": "America/New_York"
 }
