@@ -133,7 +133,7 @@
     "webpack": "4.41.1"
   },
   "devDependencies": {
-    "@testing-library/cypress": "5.0.1",
+    "@testing-library/cypress": "5.0.2",
     "babel-eslint": "10.0.3",
     "cypress": "3.4.1",
     "eslint": "6.5.1",
