@@ -3,7 +3,6 @@ title: For those upgrading to macOS Catalina
 date: '2019-10-23'
 slug: upgrading-to-catalina
 id: abac4191-831e-402d-9f71-f21fdb9435f5
-draft: true
 banner:
     credits: 'Photo by Tania Miron'
     image: 'tania-miron-nOl7TYYFnkU-unsplash.jpg'
