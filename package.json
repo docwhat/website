@@ -150,7 +150,7 @@
     "eslint-plugin-react": "7.16.0",
     "eslint-plugin-simple-import-sort": "4.0.0",
     "eslint-plugin-standard": "4.0.1",
-    "flow-bin": "0.110.1",
+    "flow-bin": "0.111.0",
     "gatsby-plugin-react-helmet-canonical-urls": "1.3.0",
     "gatsby-remark-external-links": "0.0.4",
     "husky": "3.0.9",
