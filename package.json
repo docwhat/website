@@ -165,7 +165,7 @@
     "remark-cli": "7.0.0",
     "remark-frontmatter": "1.3.2",
     "remark-preset-github": "0.0.16",
-    "snyk": "1.240.3",
+    "snyk": "1.241.0",
     "sort-package-json": "1.22.1",
     "stylelint": "11.1.1",
     "stylelint-config-recommended": "3.0.0",
