@@ -52,7 +52,7 @@ const prismCss = css`
 
   ${MOBILE_MEDIA_QUERY} {
     pre[class*='language-'] {
-      font-size: 80%;
+      font-size: 85%;
     }
   }
 
