@@ -23,7 +23,10 @@ const base = {
 const leading =
   parseInt(base.baseFontSize, 10) * parseFloat(base.baseLineHeight)
 
-export const serifFonts = `"Hoefler Text", Constantia, Georgia, serif`
+export const sansSerifFonts = `'Fira Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji'`
+export const serifFonts = `'Playfair Display', serif`
+export const monospaceFonts = `'Fira Mono', monospace`
 
 export const shevy = new Shevy(base)
 
@@ -42,6 +45,18 @@ const {
 
 const globalCss = css`
   ${reboot};
+
+  html,
+  body {
+    font-family: ${sansSerifFonts};
+  }
+
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: ${monospaceFonts};
+  }
 
   html {
     background-color: ${lightBackground.string()};
@@ -130,6 +145,7 @@ const globalCss = css`
   h4,
   h5,
   h6 {
+    font-family: ${serifFonts};
     padding: 0;
     & a {
       color: inherit;

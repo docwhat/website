@@ -120,6 +120,22 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Fira Mono`,
+          },
+          {
+            family: `Fira Sans`,
+          },
+          {
+            family: `Playfair Display`,
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-favicon`,
