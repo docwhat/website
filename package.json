@@ -156,7 +156,7 @@
     "husky": "3.0.9",
     "inquirer": "7.0.0",
     "inquirer-datepicker-prompt": "0.4.2",
-    "lint-staged": "9.4.2",
+    "lint-staged": "9.4.3",
     "object-assign": "4.1.1",
     "prettier": "1.19.1",
     "prettier-eslint-cli": "5.0.0",
