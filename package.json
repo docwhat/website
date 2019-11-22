@@ -101,7 +101,7 @@
     "gatsby-plugin-sharp": "2.3.2",
     "gatsby-plugin-sitemap": "2.2.21",
     "gatsby-plugin-svgr": "2.0.2",
-    "gatsby-remark-abbr": "1.0.0",
+    "gatsby-remark-abbr": "2.0.0",
     "gatsby-remark-autolink-headers": "2.1.18",
     "gatsby-remark-copy-linked-files": "2.1.30",
     "gatsby-remark-embed-snippet": "4.1.15",
