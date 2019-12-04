@@ -15,7 +15,8 @@ to use
 [Java](http://en.wikipedia.org/wiki/Java_%28programming_language%29 'Wikipedia article for Java').
 
 I've been looking around for something like
-[Dive Into Python](http://diveintopython.org/) but for Java. So far, no luck.
+[Dive Into Python](https://web.archive.org/web/20110410000756/http://diveintopython.org/)
+but for Java. So far, no luck.
 
 Any recommendations would be very welcome.<!-- more -->
 
@@ -37,7 +38,7 @@ not enough about what makes Java different than, say, Python or C++.
 
 Ciao!
 
-\[UPDATES\]
+\[UPDATES]
 
 1.  [Essential Java Resources](http://www.ibm.com/developerworks/java/library/j-javaresources.html?ca=dgr-lnxw04JavaList)
     ... in honor of Java's 14th anniversary.
