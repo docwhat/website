@@ -82,7 +82,7 @@
     "@emotion/styled": "10.0.23",
     "@svgr/webpack": "4.3.3",
     "bluebird": "3.7.2",
-    "caniuse-db": "1.0.30001015",
+    "caniuse-db": "1.0.30001016",
     "chalk": "3.0.0",
     "color": "3.1.2",
     "fbjs": "1.0.0",
