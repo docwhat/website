@@ -27,12 +27,7 @@ const PageHeader = (props: Props): React.Node => {
         <CalendarPage ymdDate={ymdDate} />
       </>
     )
-    if (
-      ymdUpdate &&
-      ymdDate &&
-      ymdUpdate !== 'Invalid date' &&
-      ymdUpdate > ymdDate
-    ) {
+    if (ymdUpdate && ymdUpdate !== 'Invalid date' && ymdUpdate > ymdDate) {
       updateBlurb = (
         <SmallPrint
           css={{
