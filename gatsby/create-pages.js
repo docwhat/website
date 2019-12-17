@@ -8,10 +8,11 @@ const createPages = ({ graphql, actions }) => {
   const pageTemplate = pathlib.resolve(`./src/templates/page.js`)
   const postTemplate = pathlib.resolve(`./src/templates/post.js`)
 
-  const createPosts = posts => {
-    posts.forEach(({ node }, index) => {
-      const newer = index === 0 ? null : posts[index - 1].node
-      const older = index === posts.length - 1 ? null : posts[index + 1].node
+  const createPosts = newPosts => {
+    newPosts.forEach(({ node }, index) => {
+      const newer = index === 0 ? null : newPosts[index - 1].node
+      const older =
+        index === newPosts.length - 1 ? null : newPosts[index + 1].node
 
       createPage({
         path: node.fields.slug,
