@@ -21,7 +21,7 @@ const Reference = (props: {
   children: React.Node,
 }): React.Node => (
   <ClassNames>
-    {({ css, cx }) => (
+    {({ cx }) => (
       <span className={cx('u-url', props.className)}>{props.children}</span>
     )}
   </ClassNames>
