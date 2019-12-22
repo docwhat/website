@@ -140,7 +140,7 @@
     "eslint-config-prettier": "6.7.0",
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-cypress": "2.8.1",
-    "eslint-plugin-emotion": "10.0.14",
+    "eslint-plugin-emotion": "10.0.27",
     "eslint-plugin-flowtype": "4.5.2",
     "eslint-plugin-import": "2.19.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
