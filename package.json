@@ -80,7 +80,7 @@
     "@babel/preset-env": "7.7.7",
     "@emotion/core": "10.0.27",
     "@emotion/styled": "10.0.27",
-    "@svgr/webpack": "4.3.3",
+    "@svgr/webpack": "5.0.0",
     "bluebird": "3.7.2",
     "caniuse-db": "1.0.30001016",
     "chalk": "3.0.0",
