@@ -16548,10 +16548,10 @@ regjsparser@^0.6.0:
   dependencies:
     jsesc "~0.5.0"
 
-remark-abbr@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/remark-abbr/-/remark-abbr-1.3.2.tgz#332fc6cdf33f75af0d313d9e4d308bd5844988e0"
-  integrity sha512-Ek2eCRgvsz9uE/P383gcts4KbXm4zhovfpuAqZg2uqoJ/3dRPtdldZyFcud44Sgc0WVuKXeWITWa2BC4nfBofw==
+remark-abbr@1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/remark-abbr/-/remark-abbr-1.3.5.tgz#3722739975f773e26e8f6a4eda3e4f89a0c4e137"
+  integrity sha512-98okXB2sE1N0c3T+0Y8Z1btLVYkCK08p4QFMcYEOne9GGocdy5bhRvZkQ1WoYhQZOOCDj5uUQ41ehXltpHNtAg==
   dependencies:
     unist-util-visit "^1.3.1"
 
