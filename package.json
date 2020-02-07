@@ -171,7 +171,7 @@
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.9.0",
-    "textlint": "11.6.2",
+    "textlint": "11.6.3",
     "textlint-filter-rule-comments": "1.2.2",
     "textlint-rule-date-weekday-mismatch": "1.0.5",
     "textlint-rule-diacritics": "1.0.0",
