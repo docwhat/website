@@ -118,7 +118,7 @@
     "gatsby-transformer-yaml": "2.2.25",
     "lodash": "4.17.15",
     "moment": "2.24.0",
-    "pify": "4.0.1",
+    "pify": "5.0.0",
     "prismjs": "1.19.0",
     "prop-types": "15.7.2",
     "react": "16.12.0",
