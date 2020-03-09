@@ -167,7 +167,7 @@
     "remark-preset-github": "0.0.16",
     "snyk": "1.298.1",
     "sort-package-json": "1.40.0",
-    "stylelint": "13.2.0",
+    "stylelint": "13.2.1",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0",
