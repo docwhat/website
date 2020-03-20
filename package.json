@@ -138,7 +138,7 @@
     "cypress": "3.8.3",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
-    "eslint-config-standard": "14.1.0",
+    "eslint-config-standard": "14.1.1",
     "eslint-plugin-cypress": "2.10.3",
     "eslint-plugin-emotion": "10.0.27",
     "eslint-plugin-flowtype": "4.6.0",
