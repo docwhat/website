@@ -107,7 +107,7 @@ const calculateTitle = (node, getNode) => {
     .replace(/-+/g, ' ')
     .replace(
       /^\w.*/,
-      txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+      (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
     )
 
   return protoTitle
@@ -140,16 +140,16 @@ const runAndReturnStdout = (cmd, ...args) =>
   new Promise((resolve, reject) => {
     const command = childProcess.spawn(cmd, ...args)
     var result = ''
-    command.stdout.on('data', data => {
+    command.stdout.on('data', (data) => {
       result += data.toString()
     })
-    command.on('close', code => resolve(result))
-    command.on('error', err => {
+    command.on('close', (code) => resolve(result))
+    command.on('error', (err) => {
       reject(err)
     })
   })
 
-const calculateUpdatedDate = filePath =>
+const calculateUpdatedDate = (filePath) =>
   runAndReturnStdout('git', [
     'log',
     '-1',
@@ -158,7 +158,7 @@ const calculateUpdatedDate = filePath =>
     filePath,
   ])
 
-const calculateUpdatedHash = filePath =>
+const calculateUpdatedHash = (filePath) =>
   runAndReturnStdout('git', ['log', '-1', '--pretty=format:%h', '--', filePath])
 
 const calculateSlugFromPath = (node, getNode) => {
@@ -182,7 +182,7 @@ const calculateSlug = (node, getNode) => {
 
   return baseSlug
 }
-const replacePath = _path =>
+const replacePath = (_path) =>
   _path === `/` ? _path : `/${_path.replace(/^\/|\/$/, '')}`
 
 module.exports = onCreateNode

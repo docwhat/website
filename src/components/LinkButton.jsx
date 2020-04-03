@@ -17,14 +17,8 @@ export default styled(Link)`
   margin-left: auto;
   margin-right: auto;
   font-size: ${bs(1 / 2)};
-  background-color: ${background
-    .desaturate(0.3)
-    .lighten(0.3)
-    .string()};
-  color: ${color
-    .desaturate(0.3)
-    .lighten(0.3)
-    .string()};
+  background-color: ${background.desaturate(0.3).lighten(0.3).string()};
+  color: ${color.desaturate(0.3).lighten(0.3).string()};
   user-select: none;
   cursor: pointer;
   height: ${bs(1 + 1 / 4)};

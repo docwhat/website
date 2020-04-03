@@ -8,7 +8,7 @@ const yaml = require(`js-yaml`)
 
 inquirer.registerPrompt(`datetime`, require(`inquirer-datepicker-prompt`))
 
-const normalizeSlug = slug =>
+const normalizeSlug = (slug) =>
   slug
     .trim()
     .replace(/\W+/g, `-`)
@@ -32,10 +32,10 @@ inquirer
       type: `input`,
       name: `slug`,
       message: `Slug? `,
-      default: answers => normalizeSlug(answers.title),
+      default: (answers) => normalizeSlug(answers.title),
     },
   ])
-  .then(answers => {
+  .then((answers) => {
     const frontmatter = _.clone(answers)
     frontmatter.id = uuidv4()
     frontmatter.draft = true
@@ -56,7 +56,7 @@ inquirer
 
     inquirer
       .prompt([{ type: `confirm`, name: `go`, message: `Create? ` }])
-      .then(confirm => {
+      .then((confirm) => {
         if (confirm.go) {
           fs.mkdirSync(directory)
           fs.writeFileSync(filepath, contents)

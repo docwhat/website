@@ -35,7 +35,7 @@ const StyledButton = styled.button(
       transform: `translateY(1.0px)`,
     },
   },
-  props => ({
+  (props) => ({
     backgroundColor: (colors[props.type] || colors.primary).string(),
   })
 )

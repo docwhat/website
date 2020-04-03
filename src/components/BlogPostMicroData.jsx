@@ -5,7 +5,7 @@ import React from 'react'
 import { authorJsonLD } from '../utils/ldjson'
 import JsonLd from './JsonLd'
 
-const BlogPostMicroData = props => {
+const BlogPostMicroData = (props) => {
   const { postTitle, postUrl, ymdDate, ymdUpdate, wordCount } = props
 
   // https://jsonld-examples.com/schema.org/code/article/socialmediaposting/blogposting-markup.php

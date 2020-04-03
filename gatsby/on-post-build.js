@@ -90,7 +90,7 @@ const onPostBuild = async ({ graphql }) => {
   const publicPath = pathlib.resolve(`./public/`)
 
   const writeFeed = (filename, content) =>
-    writeFile(pathlib.join(publicPath, filename), content, `utf8`).catch(r =>
+    writeFile(pathlib.join(publicPath, filename), content, `utf8`).catch((r) =>
       // eslint-disable-next-line no-console
       console.error(`Failed to write feed '${filename}': `, r)
     )
@@ -105,7 +105,7 @@ const onPostBuild = async ({ graphql }) => {
 const writeFile = pify(fs.writeFile)
 
 const runQuery = (handler, query) =>
-  handler(query).then(r => {
+  handler(query).then((r) => {
     if (r.errors) {
       throw new Error(r.errors.join(`, `))
     }

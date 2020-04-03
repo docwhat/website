@@ -72,10 +72,7 @@ const globalCss = css`
   }
 
   mark {
-    background-color: ${heroColor
-      .saturationl(100)
-      .lightness(80)
-      .string()};
+    background-color: ${heroColor.saturationl(100).lightness(80).string()};
   }
 
   q {
@@ -150,10 +147,7 @@ const globalCss = css`
   }
 
   a {
-    color: ${mellowColor
-      .saturationl(50)
-      .lightness(50)
-      .string()};
+    color: ${mellowColor.saturationl(50).lightness(50).string()};
     &:hover {
       color: inherit;
     }
@@ -166,10 +160,7 @@ const globalCss = css`
 
   blockquote {
     color: ${grey(45)};
-    background-color: ${heroColor
-      .fade(0.8)
-      .desaturate(0.3)
-      .string()};
+    background-color: ${heroColor.fade(0.8).desaturate(0.3).string()};
     padding: ${bs(1 / 2)};
     position: relative;
   }
@@ -302,10 +293,7 @@ const globalCss = css`
       }
     }
     &:nth-of-type(odd) {
-      background-color: ${deemphasisColor
-        .saturationl(30)
-        .alpha(0.09)
-        .string()};
+      background-color: ${deemphasisColor.saturationl(30).alpha(0.09).string()};
       &:hover {
         background-color: ${deemphasisColor.alpha(0.09).string()};
       }

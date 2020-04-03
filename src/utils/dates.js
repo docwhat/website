@@ -5,7 +5,7 @@ export const ymdString2Date = (dateString: string) =>
   new Date(
     ...dateString
       .split('-')
-      .map(part => parseInt(part, 10))
+      .map((part) => parseInt(part, 10))
       .map((num, idx) => num - (idx === 1 ? 1 : 0))
   )
 

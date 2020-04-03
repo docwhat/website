@@ -8,7 +8,7 @@ const createPages = ({ graphql, actions }) => {
   const pageTemplate = pathlib.resolve(`./src/templates/page.js`)
   const postTemplate = pathlib.resolve(`./src/templates/post.js`)
 
-  const createPosts = newPosts => {
+  const createPosts = (newPosts) => {
     newPosts.forEach(({ node }, index) => {
       const newer = index === 0 ? null : newPosts[index - 1].node
       const older =
@@ -42,7 +42,7 @@ const createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(results => {
+  `).then((results) => {
     if (results.errors) {
       Promise.reject(results.errors)
     }
@@ -77,7 +77,7 @@ const createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(results => {
+  `).then((results) => {
     if (results.errors) {
       Promise.reject(results.errors)
     }
@@ -104,7 +104,7 @@ const createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(results => {
+  `).then((results) => {
     if (results.errors) {
       Promise.reject(results.errors)
     }

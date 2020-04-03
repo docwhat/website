@@ -8,6 +8,6 @@ exports.onPostBuild = require('./gatsby/on-post-build')
 // Throw something if we mis-handle a rejection.
 const Promise = require(`bluebird`)
 
-Promise.onPossiblyUnhandledRejection(error => {
+Promise.onPossiblyUnhandledRejection((error) => {
   throw error
 })

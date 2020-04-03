@@ -5,7 +5,7 @@ const itShouldPermanentlyRedirect = (initialPath, finalPath) =>
         url: initialPath,
         followRedirect: false, // turn off following redirects
       })
-      .then(resp => {
+      .then((resp) => {
         expect(resp.status).to.eq(301)
         expect(resp.headers.location).to.eq(finalPath)
       }))
@@ -17,26 +17,26 @@ const itShouldRedirect = (initialPath, finalPath) =>
         url: initialPath,
         followRedirect: false, // turn off following redirects
       })
-      .then(resp => {
+      .then((resp) => {
         expect(resp.status).to.eq(302)
         expect(resp.headers.location).to.eq(finalPath)
       }))
 
 const itShouldReturnHttpStatus = (path, httpStatus = 200) =>
   it(`${path} returns HTTP ${httpStatus}`, () =>
-    cy.request({ url: path }).then(resp => {
+    cy.request({ url: path }).then((resp) => {
       expect(resp.status).to.eq(200)
     }))
 
 const itShouldBeMimeType = (path, mimeType) =>
   it(`${path} is MIME type ${mimeType}`, () =>
-    cy.request({ url: path }).then(resp => {
+    cy.request({ url: path }).then((resp) => {
       expect(resp.headers['content-type']).to.include(mimeType)
     }))
 
-const itShouldBeUtf8 = path =>
+const itShouldBeUtf8 = (path) =>
   it(`${path} is utf-8`, () => {
-    cy.request({ url: path }).then(resp => {
+    cy.request({ url: path }).then((resp) => {
       expect(resp.headers['content-type']).to.include('charset=utf-8')
     })
   })

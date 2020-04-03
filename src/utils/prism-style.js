@@ -34,10 +34,7 @@ const prismCss = css`
   /* Code blocks */
   pre[class*='language-'] {
     padding: 0.75rem;
-    background-color: ${deemphasisColor
-      .saturationl(29)
-      .lightness(97)
-      .string()};
+    background-color: ${deemphasisColor.saturationl(29).lightness(97).string()};
     border-radius: 0.19em;
     white-space: pre;
     word-spacing: normal;
@@ -73,10 +70,7 @@ const prismCss = css`
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: ${deemphasisColor
-      .saturationl(20)
-      .lightness(10)
-      .string()};
+    color: ${deemphasisColor.saturationl(20).lightness(10).string()};
     font-style: italic;
   }
 
@@ -86,20 +80,14 @@ const prismCss = css`
 
   .token.string,
   .token.attr-value {
-    color: ${deemphasisColor
-      .saturationl(86)
-      .lightness(48)
-      .string()};
+    color: ${deemphasisColor.saturationl(86).lightness(48).string()};
   }
 
   .token.punctuation,
   .token.operator,
   .token.command {
     /* no highlight */
-    color: ${deemphasisColor
-      .saturationl(5.5)
-      .lightness(21.6)
-      .string()};
+    color: ${deemphasisColor.saturationl(5.5).lightness(21.6).string()};
     font-weight: bold;
   }
 
@@ -113,10 +101,7 @@ const prismCss = css`
   .token.property,
   .token.regex,
   .token.inserted {
-    color: ${emphasisColor
-      .saturationl(95)
-      .lightness(40)
-      .string()};
+    color: ${emphasisColor.saturationl(95).lightness(40).string()};
   }
 
   .token.atrule,
@@ -124,36 +109,24 @@ const prismCss = css`
   .token.attr-name,
   .language-autohotkey .token.selector,
   .token.coord {
-    color: ${mellowColor
-      .saturationl(100)
-      .lightness(43)
-      .string()};
+    color: ${mellowColor.saturationl(100).lightness(43).string()};
   }
 
   .token.function,
   .token.deleted,
   .language-autohotkey .token.tag,
   .token.commit_sha1 {
-    color: ${heroColor
-      .saturationl(94)
-      .lightness(31)
-      .string()};
+    color: ${heroColor.saturationl(94).lightness(31).string()};
   }
 
   .token.tag,
   .token.selector,
   .language-autohotkey .token.keyword {
-    color: ${mellowColor
-      .saturationl(100)
-      .lightness(31)
-      .string()};
+    color: ${mellowColor.saturationl(100).lightness(31).string()};
   }
 
   .gatsby-highlight-code-line {
-    background-color: ${heroColor
-      .saturationl(100)
-      .lightness(93)
-      .string()};
+    background-color: ${heroColor.saturationl(100).lightness(93).string()};
     display: block;
     margin: 0 -1ch;
     padding: 0 1ch;

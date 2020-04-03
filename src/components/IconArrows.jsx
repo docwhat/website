@@ -7,7 +7,7 @@ import { shevy } from '../utils/style.js'
 const { baseSpacing: bs } = shevy
 
 // eslint-disable-next-line react/display-name
-const IconArrow = overrideCss => () => (
+const IconArrow = (overrideCss) => () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="50.4 -114.8 16 16"

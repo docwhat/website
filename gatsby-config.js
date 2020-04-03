@@ -176,14 +176,14 @@ module.exports = {
           `,
         serialize: ({ allSitePage }) =>
           allSitePage.edges
-            .map(edge => ({
+            .map((edge) => ({
               url: siteUrl + edge.node.fields.slug,
               changefreq: edge.node.frontmatter.changefreq || `weekly`,
               priority: parseFloat(edge.node.frontmatter.priority) || 0.5,
               lastmod:
                 edge.node.fields.lastmod || edge.node.fields.created || null,
             }))
-            .filter(item => item.priority >= 0.0)
+            .filter((item) => item.priority >= 0.0)
             .concat([
               // TODO: I don't know how to get "frontmatter" from .js
               {
