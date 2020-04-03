@@ -1,9 +1,37 @@
 # syntax = docker/dockerfile:1-experimental
 
-ARG NODE_VERSION=10
+ARG NODE_VERSION=12
 
 FROM node:$NODE_VERSION     AS node
 FROM nginx:stable-alpine    AS nginx
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-$NODE_VERSION AS devnode
+
+#############################
+FROM devnode AS development
+
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+ARG USERNAME=node
+
+RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
+  groupmod --gid $USER_GID $USERNAME \
+  && usermod --uid $USER_UID --gid $USER_GID $USERNAME \
+  && chown -R $USER_UID:$USER_GID /home/$USERNAME; \
+  fi
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update \
+  && apt-get -y install --no-install-recommends \
+  less \
+  tree \
+  #
+  # Clean up
+  && apt-get autoremove -y \
+  && apt-get clean -y \
+  && rm -rf /var/lib/apt/lists/*
+ENV DEBIAN_FRONTEND=dialog
+
+USER $USER_UID
 
 #############################
 FROM node AS files
@@ -14,8 +42,8 @@ RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=lo
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 RUN --mount=type=bind,target=/s \
-      rsync --archive --inplace --exclude=nginx.conf \
-      /s/ /x/
+  rsync --archive --inplace --exclude=nginx.conf \
+  /s/ /x/
 
 #############################
 FROM node AS buildenv
@@ -63,7 +91,7 @@ RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=lo
   apt-get install --no-install-recommends -y pigz && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
-  RUN mkdir /workdir
+RUN mkdir /workdir
 WORKDIR /workdir
 
 COPY package.json ./

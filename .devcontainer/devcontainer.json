@@ -1,0 +1,33 @@
+{
+  // vim:set ft=jsonc:
+  "name": "Dockerfile",
+  "dockerFile": "../Dockerfile",
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  "extensions": [
+	"dbaeumer.vscode-eslint",
+	"kumar-harsh.graphql-for-vscode",
+	"exiasr.hadolint",
+	"bierner.markdown-emoji",
+	"bierner.markdown-preview-github-styles",
+	"esbenp.prettier-vscode",
+	"editorconfig.editorconfig",
+	"orta.vscode-jest",
+	"nickytonline.gatsby-extension-pack"
+],
+
+  "forwardPort": [3000],
+  "remoteUser": "node",
+  "build": {
+    "target": "development"
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
+  "mounts": [
+    "src=docwhat-docwhat-node_modules,dst=/workspace/node_modules,type=volume"
+  ],
+  "postCreateCommand": "sudo chown node node_modules"
+}
