@@ -158,7 +158,7 @@
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "10.1.2",
     "object-assign": "4.1.1",
-    "prettier": "2.0.2",
+    "prettier": "2.0.3",
     "prettier-eslint-cli": "5.0.0",
     "prettier-stylelint": "0.4.2",
     "remark-abbr": "1.4.0",
