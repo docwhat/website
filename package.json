@@ -61,19 +61,26 @@
     ],
     "**/*.md": [
       "prettier --write",
-      "remark",
-      "git add"
+      "remark"
     ],
     "**/*.{js,jsx}": [
       "prettier --write",
       "eslint",
-      "stylelint",
-      "git add"
+      "stylelint"
     ],
     "package.json": [
-      "sort-package-json",
-      "git add"
+      "sort-package-json"
     ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-github",
+      "remark-frontmatter",
+      "remark-abbr"
+    ],
+    "settings": {
+      "footnotes": true
+    }
   },
   "dependencies": {
     "@babel/core": "7.9.0",
@@ -184,16 +191,6 @@
   "jshintConfig": {
     "esversion": 6,
     "asi": true
-  },
-  "remarkConfig": {
-    "settings": {
-      "footnotes": true
-    },
-    "plugins": [
-      "remark-github",
-      "remark-frontmatter",
-      "remark-abbr"
-    ]
   },
   "snyk": false
 }
