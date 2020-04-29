@@ -16,7 +16,8 @@
 	"esbenp.prettier-vscode",
 	"editorconfig.editorconfig",
 	"orta.vscode-jest",
-	"nickytonline.gatsby-extension-pack"
+	"nickytonline.gatsby-extension-pack",
+	"eliostruyf.vscode-front-matter"
 ],
 
   "forwardPort": [3000],

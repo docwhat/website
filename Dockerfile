@@ -24,11 +24,12 @@ RUN apt-get update \
   && apt-get -y install --no-install-recommends \
   less \
   tree \
-  #
-  # Clean up
-  && apt-get autoremove -y \
-  && apt-get clean -y \
-  && rm -rf /var/lib/apt/lists/*
+  # #
+  # # Clean up
+  # && apt-get autoremove -y \
+  # && apt-get clean -y \
+  # && rm -rf /var/lib/apt/lists/* \
+  && true
 ENV DEBIAN_FRONTEND=dialog
 
 USER $USER_UID
