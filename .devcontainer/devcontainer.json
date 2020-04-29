@@ -8,17 +8,16 @@
   },
 
   "extensions": [
-	"dbaeumer.vscode-eslint",
-	"kumar-harsh.graphql-for-vscode",
-	"exiasr.hadolint",
-	"bierner.markdown-emoji",
-	"bierner.markdown-preview-github-styles",
-	"esbenp.prettier-vscode",
-	"editorconfig.editorconfig",
-	"orta.vscode-jest",
-	"nickytonline.gatsby-extension-pack",
-	"eliostruyf.vscode-front-matter"
-],
+    "dbaeumer.vscode-eslint",
+    "kumar-harsh.graphql-for-vscode",
+    "exiasr.hadolint",
+    "bierner.markdown-emoji",
+    "bierner.markdown-preview-github-styles",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "nickytonline.gatsby-extension-pack",
+    "eliostruyf.vscode-front-matter"
+  ],
 
   "forwardPort": [3000],
   "remoteUser": "node",
