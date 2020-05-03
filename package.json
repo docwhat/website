@@ -173,7 +173,7 @@
     "remark-frontmatter": "2.0.0",
     "remark-preset-github": "1.0.0",
     "snyk": "1.316.2",
-    "sort-package-json": "1.42.1",
+    "sort-package-json": "1.42.2",
     "stylelint": "13.3.3",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
