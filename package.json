@@ -48,7 +48,8 @@
     "setup": "yarn install",
     "snyk-protect": "snyk protect",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
+    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -137,7 +138,8 @@
     "shevyjs": "1.1.0",
     "strip-markdown": "3.1.2",
     "uuid": "8.0.0",
-    "webpack": "4.43.0"
+    "webpack": "4.43.0",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "@testing-library/cypress": "6.0.0",
@@ -172,7 +174,6 @@
     "remark-cli": "8.0.0",
     "remark-frontmatter": "2.0.0",
     "remark-preset-github": "1.0.0",
-    "snyk": "1.319.0",
     "sort-package-json": "1.42.2",
     "stylelint": "13.3.3",
     "stylelint-config-recommended": "3.0.0",
@@ -192,5 +193,5 @@
     "esversion": 6,
     "asi": true
   },
-  "snyk": false
+  "snyk": true
 }
