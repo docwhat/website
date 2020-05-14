@@ -17042,16 +17042,15 @@ remark-comment-config@^5.1.1:
   dependencies:
     mdast-comment-marker "^1.0.1"
 
-remark-contributors@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/remark-contributors/-/remark-contributors-5.0.0.tgz#e36db150281f1b0e917a5d13dde87e42ffdaf68c"
-  integrity sha512-yU6/hvUwZ9hVcQQ8T7Quh8916IhKsFyO1t5HdZ3JIGvpqxwjoGuNjOruXirXBOqHD2j57dXrXzFxcS1wpO5BEQ==
+remark-contributors@4.x:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/remark-contributors/-/remark-contributors-4.0.1.tgz#f28269adb91f7ca6c95bb14ce1e08a9822ac9dad"
+  integrity sha512-5G76tKfpRl/TrOljvD1KZvA53S+jm0DeL2HDwFgdkxTexUdv8A0EG2JQNxGWXEVmOhch3yJ4tF2QlsiRf8SXWg==
   dependencies:
     is-url "^1.2.2"
     mdast-util-heading-range "^2.1.2"
     parse-author "^2.0.0"
-    unist-builder "^2.0.0"
-    vfile-find-up "^5.0.0"
+    unist-builder "^1.0.3"
 
 remark-footnotes@1.0.0:
   version "1.0.0"
@@ -17724,13 +17723,13 @@ remark-parse@^8.0.0:
     vfile-location "^3.0.0"
     xtend "^4.0.1"
 
-remark-preset-github@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-1.0.0.tgz#a1709411045ba247a196c70cbb9e14003330ec7c"
-  integrity sha512-xPupJHBJTqu23VJ9VpEhxHqAppe7qSaD3BzR5M+JUgyeC7xnlCCXO/+mhejWWZ/BpkC2uCXFerG7BkwSnG+jcA==
+remark-preset-github@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-1.0.1.tgz#b3d3822d764e3bf126230d791387bb15a57a3151"
+  integrity sha512-cIGl/8Kl56I6qEgaiNsF0mzjYI0EL8dM4XdB8RBqOl6+JOaM1NJxKw18QPdSRgnOJlplPmpmW9II0gpa9t/8ew==
   dependencies:
     remark-comment-config "^5.1.1"
-    remark-contributors "^5.0.0"
+    remark-contributors "4.x"
     remark-github "^9.0.0"
     remark-heading-gap "^3.1.2"
     remark-license niftylettuce/remark-license
@@ -21148,6 +21147,13 @@ unist-builder@^1.0.1:
   dependencies:
     object-assign "^4.1.0"
 
+unist-builder@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/unist-builder/-/unist-builder-1.0.4.tgz#e1808aed30bd72adc3607f25afecebef4dd59e17"
+  integrity sha512-v6xbUPP7ILrT15fHGrNyHc1Xda8H3xVhP7/HAIotHOhVPjH5dCXA097C3Rry1Q2O+HbOLCao4hfPB+EYEjHgVg==
+  dependencies:
+    object-assign "^4.1.0"
+
 unist-util-find-after@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/unist-util-find-after/-/unist-util-find-after-2.0.4.tgz#3fcccf0df3a2e7291fa119224c0f22158357cc10"
@@ -21622,13 +21628,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-vfile-find-up@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/vfile-find-up/-/vfile-find-up-5.0.1.tgz#2d3d855e99013b852c604b18a0e559acf6fd385e"
-  integrity sha512-YWx8fhWQNYpHxFkR5fDO4lCdvPcY4jfCG7qUMHVvSp14vRfkEYxFG/vUEV0eJuXoKFfiAmMkAS8dekOYnpAJ+A==
-  dependencies:
-    to-vfile "^6.0.0"
 
 vfile-location@^2.0.0:
   version "2.0.4"
