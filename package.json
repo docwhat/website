@@ -90,7 +90,7 @@
     "@svgr/webpack": "5.4.0",
     "bluebird": "3.7.2",
     "caniuse-db": "1.0.30001051",
-    "chalk": "4.0.0",
+    "chalk": "4.1.0",
     "color": "3.1.2",
     "fbjs": "1.0.0",
     "feed": "4.2.0",
