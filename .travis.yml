@@ -43,7 +43,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: './script/login && script/buildkit push'
+  script: "./script/login && script/buildkit push"
   on:
     branch: master
 
@@ -63,4 +63,6 @@ notifications:
     users:
       secure: QFycDr2Xncye5QsFFHJs7nSd2sek0ntb7d/PthDAGkpxrfW9ebqkvrpjGSBDQiytqTBKOiUOkKwAFFNz7csukCdZ1mdjgQNoKmTzIgQvakUjZUsLZC/rPGHMveRdoaCNgiUwxWIRUCxpAHtlOFiYEdeJFuO5ju4vgmYP0gF/hXY=
   webhooks:
-    - "https://www.travisbuddy.com/"
+    urls:
+      - "https://www.travisbuddy.com/"
+    on_success: change
