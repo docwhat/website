@@ -46,7 +46,6 @@
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
     "setup": "yarn install",
-    "snyk-protect": "snyk protect",
     "test": "echo \"Error: no test specified\" && exit 1",
     "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
   },
@@ -173,7 +172,6 @@
     "remark-cli": "8.0.0",
     "remark-frontmatter": "2.0.0",
     "remark-preset-github": "1.0.1",
-    "snyk": "1.346.0",
     "sort-package-json": "1.44.0",
     "stylelint": "13.6.1",
     "stylelint-config-recommended": "3.0.0",
@@ -192,6 +190,5 @@
   "jshintConfig": {
     "esversion": 6,
     "asi": true
-  },
-  "snyk": false
+  }
 }

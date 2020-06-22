@@ -66,7 +66,7 @@ ENV SITE_VERSION ${SITE_VERSION}
 RUN mkdir /workdir
 WORKDIR /workdir
 
-COPY --from=files /x/package.json /x/yarn.lock /x/.snyk ./
+COPY --from=files /x/package.json /x/yarn.lock ./
 RUN --mount=id=docwhat-yarn,target=/usr/local/share/.cache/yarn,type=cache,sharing=locked \
   yarn install --frozen-lockfile
 COPY --from=files /x/ ./
