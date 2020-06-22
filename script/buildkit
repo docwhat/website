@@ -5,21 +5,21 @@ set -eu
 top_dir="$(git rev-parse --show-toplevel)"
 declare -r top_dir
 
-declare do_push=0 ignore_cache=0 no_local=0 start_only=0
+declare do_push=0 push_cache=0 no_local=0 start_only=0
 while (($# > 0)); do
   case "$1" in
   push)
     do_push=1
     ;;
-  ignore-cache | ignore_cache | ignorecache | --ignore-cache | -I)
-    ignore_cache=1
+  push-cache | push_cache | pushcache | --push-cache | -p)
+    push_cache=1
     ;;
   no-local | --no-local | -L)
     no_local=1
     ;;
   ci | --ci)
     no_local=1
-    ignore_cache=1
+    push_cache=1
     ;;
   start-only | --start-only | -s)
     start_only=1
@@ -31,7 +31,7 @@ while (($# > 0)); do
   esac
   shift
 done
-declare -r do_push ignore_cache no_local start_only
+declare -r do_push push_cache no_local start_only
 
 if ((do_push)); then
   tag="${IMAGE_NAME:-docwhat:local}"
@@ -53,56 +53,44 @@ git_commit=${GIT_COMMIT:-$(git log -1 --date=short --format='%h %ad %s')}
 git_version=${GIT_VERSION:-$(git describe --always --tags)}
 declare -r git_url git_branch git_sha git_commit git_version
 
-if buildctl du >/dev/null 2>&1; then
-  echo "Using existing buildkit daemon..."
-else
-  export BUILDKIT_HOST=tcp://0.0.0.0:1234
-  if buildctl du >/dev/null 2>&1; then
-    echo "Using existing buildkit daemon on port 1234..."
-  else
-    docker container rm --force buildkit >/dev/null 2>&1 || :
-    docker run -d \
-      "--privileged" \
-      "--publish=1234:1234" \
-      "--name=buildkit" \
-      "moby/buildkit:master" \
-      --addr tcp://0.0.0.0:1234
-  fi
-fi
+# Initialize a builder.
+docker buildx create \
+  --use \
+  --name=docwhat \
+  --driver=docker-container \
+  --node=docwhat
 
 if ((start_only)); then
   exit 0
 fi
 
 ## Build args
-declare -a buildctl_args=(
-  # How to build
-  "--frontend=dockerfile.v0"
+declare -a build_args=(
   # What to build
-  "--local=context=${top_dir}"
-  "--local=dockerfile=${top_dir}"
+  "${top_dir}"
+  "--tag=${tag}"
   # Various options
-  "--opt=build-arg:NODE_VERSION=${node_version}"
-  "--opt=build-arg:SITE_COMMIT=${git_commit}"
-  "--opt=build-arg:SITE_VERSION=${git_sha}"
-  "--opt=build-arg:GIT_URL=${git_url}"
-  "--opt=build-arg:GIT_BRANCH=${git_branch}"
-  "--opt=build-arg:GIT_VERSION=${git_version}"
+  "--progress=plain"
+  "--build-arg=NODE_VERSION=${node_version}"
+  "--build-arg=SITE_COMMIT=${git_commit}"
+  "--build-arg=SITE_VERSION=${git_sha}"
+  "--build-arg=GIT_URL=${git_url}"
+  "--build-arg=GIT_BRANCH=${git_branch}"
+  "--build-arg=GIT_VERSION=${git_version}"
   # Target
-  "--opt=target=final"
+  "--target=final"
   # Cache
-  "--import-cache=type=registry,ref=docker.io/docwhat/docwhat:cache"
+  "--cache-from=type=registry,ref=docker.io/docwhat/docwhat:cache"
 )
 
-if ! ((ignore_cache)); then
+if ! ((push_cache)); then
   {
     echo
     echo "I will publish the cache..."
   } 1>&2
 
-  buildctl_args=(
-    "${buildctl_args[@]}"
-    "--export-cache=type=registry,mode=max,ref=docker.io/docwhat/docwhat:cache"
+  build_args+=(
+    "--cache-to=type=registry,mode=max,ref=docker.io/docwhat/docwhat:cache"
   )
 fi
 
@@ -112,11 +100,15 @@ if ((do_push)); then
     echo
     echo "Pushing to ${tag}..."
   } 1>&2
-  buildctl build "${buildctl_args[@]}" "--output=type=image,push=true,name=${tag}"
-elif ((no_local)); then
-  buildctl build "${buildctl_args[@]}"
-else
-  buildctl build "${buildctl_args[@]}" "--output=type=docker,name=${tag}" | docker load
+  build_args+=(
+    "--push"
+  )
+elif ! ((no_local)); then
+  build_args+=(
+    "--load"
+  )
 fi
+
+docker buildx build "${build_args[@]}"
 
 # EOF
