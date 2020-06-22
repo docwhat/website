@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -eEuo pipefail
+
+echo "Enabling experimental features in docker"
+docker version >/dev/null
+
+if ! [[ -f "${HOME}/.docker/config.json" ]]; then
+  mkdir -p "${HOME}/.docker"
+  echo '{}' >"${HOME}/.docker/config.json"
+fi
+cat <<<$(jq '.+{"experimental":"enabled"}' "${HOME}/.docker/config.json") >"${HOME}/.docker/config.json"
