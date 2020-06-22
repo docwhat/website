@@ -134,6 +134,7 @@
     "react-gist": "1.2.1",
     "react-gravatar": "2.6.3",
     "react-helmet": "6.1.0",
+    "react-refresh": "^0.8.2",
     "shevyjs": "1.1.0",
     "strip-markdown": "3.1.2",
     "uuid": "8.1.0",
