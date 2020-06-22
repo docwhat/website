@@ -15,7 +15,7 @@ env:
     - DOCKER_USERNAME=docwhat
     - "IMAGE_NAME=docwhat/docwhat:${TRAVIS_BRANCH}"
     # DOCKER_PASSWORD
-    - secure: H15XDKoyFzVdeciTVddgJiWm6LYPUeFLDwODj2pMqZJ7DgvtlL1HL+y/g/csQ+0a1MbH83Mn64opEih2s62W4q4F+Uea948FoDfPLIbwqO/ilfqPuR4+r3ZV4axPwOsEpdv0Od3IanN+2f5I0wHe4Ioh0bJbvW9EiQUyaDvgMZU=
+    - secure: TBMjuQvAU2rxj6wPsyk9jvkHyz0TVGsGjaQtdHe2gmb9Myh2amrZrQoHv9mBLhOvpc0sJ2jcgdL6G04WFRS1Jdha3Vu6NElxGEEdrOqfh/QxqgqG+UbapFXK2LKnhe+/zDZ8zTlBnWuxWQ+dG6qYDYdj6LMnCfYE/2H5l7GVeKU=
 addons:
   apt:
     source:
