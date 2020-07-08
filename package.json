@@ -185,7 +185,7 @@
     "textlint-rule-no-start-duplicated-conjunction": "2.0.2",
     "textlint-rule-no-todo": "2.0.1",
     "typescript": "3.9.6",
-    "wait-on": "5.0.1"
+    "wait-on": "5.0.3"
   },
   "jshintConfig": {
     "esversion": 6,
