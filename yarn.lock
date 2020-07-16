@@ -17566,10 +17566,10 @@ react-fontawesome@1.7.1:
   dependencies:
     prop-types "^15.5.6"
 
-react-gist@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-gist/-/react-gist-1.2.1.tgz#969ceb706b5503d84f398c5953818ee631a05fd0"
-  integrity sha512-2zxOrdxipjW2KrPTy7FJsYzzOsK84ReufIEnSKypq5pjRKurYzJTtQD4vffWviWWyJiqTniox7kDG+/yEtCs/g==
+react-gist@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-gist/-/react-gist-1.2.2.tgz#d915f59d487132121b17189bf187267df845c3c7"
+  integrity sha512-bS8jkqunrsrUYzSe600zYPI6IvudLFsh68Bln+q8+GRZ2uUnrkOuEAxllWbZwaveqby94YXBBmBCC3qw9ee5hQ==
   dependencies:
     prop-types "^15.6.0"
 
