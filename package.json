@@ -169,7 +169,7 @@
     "prettier-eslint-cli": "5.0.0",
     "prettier-stylelint": "0.4.2",
     "remark-abbr": "1.4.0",
-    "remark-cli": "8.0.0",
+    "remark-cli": "8.0.1",
     "remark-frontmatter": "2.0.0",
     "remark-preset-github": "2.0.2",
     "sort-package-json": "1.44.0",
