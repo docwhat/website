@@ -18796,23 +18796,12 @@ remark-frontmatter@^1.2.0:
     fault "^1.0.1"
     xtend "^4.0.1"
 
-remark-github@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/remark-github/-/remark-github-9.0.1.tgz#82d05783754b9756ae63984a4afd5282318fbab1"
-  integrity sha512-ITzuJ7MBC+uA2+gA4gIzxzBftoO02mWA788ZEJHF3UPSiN5corALwUCN8dpliGmu4VFRFjV8+mojdFAHryMbMg==
-  dependencies:
-    is-alphabetical "^1.0.0"
-    is-decimal "^1.0.0"
-    is-hexadecimal "^1.0.0"
-    mdast-util-to-string "^1.0.0"
-    unist-util-visit "^2.0.0"
-
 remark-heading-gap@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/remark-heading-gap/-/remark-heading-gap-3.1.2.tgz#480b71a655e793848db42b714358b5533d7d5ec3"
   integrity sha512-LNm1B4UveH1BkSLx4OPab0vW/p3KOc+8wV4kd94CHXmhuJ8i+kdroG2AonkUVzbOElc8U8ylxF3WPfmqYbRjJg==
 
-"remark-license@github:niftylettuce/remark-license":
+remark-license@niftylettuce/remark-license:
   version "4.0.1"
   uid "17ecb8f64f8f6082414d14f9267a12764e6ddbfb"
   resolved "https://codeload.github.com/niftylettuce/remark-license/tar.gz/17ecb8f64f8f6082414d14f9267a12764e6ddbfb"
@@ -19490,16 +19479,15 @@ remark-parse@^8.0.0:
     vfile-location "^3.0.0"
     xtend "^4.0.1"
 
-remark-preset-github@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-2.0.2.tgz#bb21458f308f6dc862d835e8ceeed4adbf29c98d"
-  integrity sha512-yGW4TAhqAPvnffILlzlnPZZZQ+RijcG5JgJDIi0XQ1oxI3AGJXCAtH7+2GBCgb7bKhssPpZozU/TTSJq4vlV4A==
+remark-preset-github@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-3.0.0.tgz#a2a0d23bdd8c14895f4c57829b6c078572c373a2"
+  integrity sha512-4UjmPtRMTP7w7OcV+V9VaclH2PE1c4aiasktBYUKamxVpXTS13K8KXFofmXPRCCo3SSvWNFokDcchej/72mccQ==
   dependencies:
     remark-comment-config "^5.1.1"
     remark-contributors "4.x"
-    remark-github "^9.0.1"
     remark-heading-gap "^3.1.2"
-    remark-license "github:niftylettuce/remark-license"
+    remark-license niftylettuce/remark-license
     remark-lint-blockquote-indentation "^2.0.1"
     remark-lint-checkbox-character-style "^2.0.1"
     remark-lint-checkbox-content-indent "^2.0.1"
@@ -19542,7 +19530,7 @@ remark-preset-github@2.0.2:
     remark-toc "^7.0.0"
     retext-english "^3.0.4"
     retext-preset-github "^0.0.6"
-    unified "^9.0.0"
+    unified "^9.1.0"
 
 remark-preset-lint-recommended@^4.0.1:
   version "4.0.1"
@@ -22582,6 +22570,18 @@ unified@^8.4.2:
   dependencies:
     bail "^1.0.0"
     extend "^3.0.0"
+    is-plain-obj "^2.0.0"
+    trough "^1.0.0"
+    vfile "^4.0.0"
+
+unified@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-9.1.0.tgz#7ba82e5db4740c47a04e688a9ca8335980547410"
+  integrity sha512-VXOv7Ic6twsKGJDeZQ2wwPqXs2hM0KNu5Hkg9WgAZbSD1pxhZ7p8swqg583nw1Je2fhwHy6U8aEjiI79x1gvag==
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-buffer "^2.0.0"
     is-plain-obj "^2.0.0"
     trough "^1.0.0"
     vfile "^4.0.0"
