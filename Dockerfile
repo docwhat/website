@@ -37,7 +37,7 @@ USER $USER_UID
 #############################
 FROM node AS files
 WORKDIR /x
-RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=locked --mount=id=docwhat-var-lib/apt,target=/var/lib/apt,type=cache,sharing=locked \
+RUN \
   apt-get update -y && \
   apt-get install --no-install-recommends -y rsync && \
   apt-get clean && \
@@ -62,13 +62,13 @@ ENV GIT_URL ${GIT_URL}
 ENV GIT_VERSION ${GIT_VERSION}
 ENV SITE_COMMIT ${SITE_COMMIT}
 ENV SITE_VERSION ${SITE_VERSION}
+ENV CYPRESS_CACHE_FOLDER /workdir/.cache/Cypress
 
 RUN mkdir /workdir
 WORKDIR /workdir
 
 COPY --from=files /x/package.json /x/yarn.lock ./
-RUN --mount=id=docwhat-yarn,target=/usr/local/share/.cache/yarn,type=cache,sharing=locked \
-  yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile
 COPY --from=files /x/ ./
 
 ###################
@@ -87,7 +87,7 @@ RUN yarn run build </dev/null 2>&1 | cat
 ###################
 FROM node AS compress
 RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' > /etc/apt/apt.conf.d/keep-cache
-RUN --mount=id=docwhat-var-cache-apt,target=/var/cache/apt,type=cache,sharing=locked --mount=id=docwhat-var-lib/apt,target=/var/lib/apt,type=cache,sharing=locked \
+RUN \
   apt-get update && \
   apt-get install --no-install-recommends -y pigz && \
   apt-get clean && \
