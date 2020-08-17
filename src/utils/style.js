@@ -41,7 +41,7 @@ const {
 } = shevy
 
 const globalCss = css`
-  ${reboot};
+  ${reboot}
 
   html {
     background-color: ${lightBackground.string()};

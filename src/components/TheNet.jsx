@@ -11,7 +11,7 @@ const { baseSpacing: bs } = shevy
 
 const theCss = css({
   fontSize: bs(1 / 2),
-  fontFamily: serifFonts,
+  fontFamily: serifFonts /* stylelint-disable-line */,
   color: `hsla(0, 0%, 0%, 0.4)`,
 
   position: `fixed`,
