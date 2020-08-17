@@ -61,7 +61,3 @@ notifications:
       - "  %{build_url}"
     users:
       secure: QFycDr2Xncye5QsFFHJs7nSd2sek0ntb7d/PthDAGkpxrfW9ebqkvrpjGSBDQiytqTBKOiUOkKwAFFNz7csukCdZ1mdjgQNoKmTzIgQvakUjZUsLZC/rPGHMveRdoaCNgiUwxWIRUCxpAHtlOFiYEdeJFuO5ju4vgmYP0gF/hXY=
-  webhooks:
-    urls:
-      - "https://www.travisbuddy.com/"
-    on_success: change
