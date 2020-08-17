@@ -32,17 +32,21 @@
     "docker:build": "yarn build && yarn compress && script/build",
     "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
     "docker:stop": "docker container rm -f docwhat.org",
-    "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md",
+    "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md && yarn run lint:packagejson && yarn run lint:yarnlock",
     "lint:css": "stylelint './src/**/*.{js,jsx,css}'",
     "lint:css:fix": "stylelint --fix './src/**/*.{js,jsx,css}'",
-    "lint:fix": "yarn run lint:js:fix && yarn run lint:css:fix && yarn run lint:md:fix && yarn run lint:text:fix",
+    "lint:fix": "yarn run lint:js:fix && yarn run lint:css:fix && yarn run lint:md:fix && yarn run lint:text:fix && yarn run lint:packagejson:fix && yarn run lint:yarnlock:fix",
     "lint:js": "eslint '**/*.{js,jsx}'",
     "lint:js:fix": "prettier --write '**/*.{js,jsx}'",
     "lint:md": "remark --frail --quiet --no-stdout 'content/**/*.md'",
     "lint:md:fix": "prettier --write 'content/**/*.md'",
     "lint:md:watch": "remark 'content/**/*.md' --watch",
+    "lint:packagejson": "yarn run sort-package-json --check",
+    "lint:packagejson:fix": "yarn run sort-package-json",
     "lint:text": "textlint 'content/**/*.md' '*.md'",
     "lint:text:fix": "textlint --fix 'content/**/*.md' '*.md'",
+    "lint:yarnlock": "yarn run yarn-deduplicate --list --fail",
+    "lint:yarnlock:fix": "yarn run yarn-deduplicate",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
     "setup": "yarn install",
@@ -68,7 +72,10 @@
       "stylelint"
     ],
     "package.json": [
-      "sort-package-json"
+      "yarn lint:packagejson:fix"
+    ],
+    "yarn.lock": [
+      "yarn lint:yarnlock:fix"
     ]
   },
   "remarkConfig": {
@@ -184,7 +191,8 @@
     "textlint-rule-no-start-duplicated-conjunction": "2.0.2",
     "textlint-rule-no-todo": "2.0.1",
     "typescript": "3.9.7",
-    "wait-on": "5.2.0"
+    "wait-on": "5.2.0",
+    "yarn-deduplicate": "^2.1.1"
   },
   "jshintConfig": {
     "esversion": 6,
