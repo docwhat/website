@@ -192,7 +192,7 @@
     "textlint-rule-no-todo": "2.0.1",
     "typescript": "3.9.7",
     "wait-on": "5.2.0",
-    "yarn-deduplicate": "^2.1.1"
+    "yarn-deduplicate": "2.1.1"
   },
   "jshintConfig": {
     "esversion": 6,
