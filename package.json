@@ -178,6 +178,7 @@
     "remark-abbr": "1.4.0",
     "remark-cli": "8.0.1",
     "remark-frontmatter": "2.0.0",
+    "remark-github": "^9.0.1",
     "remark-preset-github": "3.0.0",
     "sort-package-json": "1.44.0",
     "stylelint": "13.6.1",
