@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const chalk = require(`chalk`)
 const inquirer = require(`inquirer`)
-const uuidv4 = require(`uuid/v4`)
+const { v4: uuidv4 } = require(`uuid`)
 const _ = require(`lodash`)
 const fs = require(`fs`)
 const yaml = require(`js-yaml`)
