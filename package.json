@@ -45,7 +45,7 @@
     "lint:packagejson:fix": "yarn run sort-package-json",
     "lint:text": "textlint 'content/**/*.md' '*.md'",
     "lint:text:fix": "textlint --fix 'content/**/*.md' '*.md'",
-    "lint:yarnlock": "yarn run yarn-deduplicate --list --fail",
+    "lint:yarnlock": "yarn run yarn-deduplicate --list",
     "lint:yarnlock:fix": "yarn run yarn-deduplicate",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
