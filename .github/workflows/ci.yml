@@ -49,3 +49,7 @@ jobs:
             NODE_VERSION=${{ steps.prep.outputs.node_version }}
             SITE_COMMIT=${{ steps.prep.outputs.commit }}
             SITE_VERSION=${{ github.sha }}
+          labels: |
+            org.opencontainers.image.created=${{ steps.prep.outputs.now }}
+            org.opencontainers.image.source=https://github.com/${{ github.repository}}
+            org.opencontainers.image.revision=${{ github.sha }}
