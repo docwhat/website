@@ -11,7 +11,8 @@ on:
       - main
 
 jobs:
-  github-cache:
+  build:
+    name: Build Container
     runs-on: ubuntu-latest
     steps:
       - name: Prepare
@@ -43,6 +44,8 @@ jobs:
           registry: docker.pkg.github.com
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
