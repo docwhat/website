@@ -47,5 +47,5 @@ jobs:
           target: final
           build-args: |
             NODE_VERSION=${{ steps.prep.outputs.node_version }}
-            'SITE_COMMIT=${{ steps.prep.outputs.commit }}'
+            SITE_COMMIT=${{ steps.prep.outputs.commit }}
             SITE_VERSION=${{ github.sha }}
