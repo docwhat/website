@@ -57,7 +57,7 @@ const globalCss = css`
 
   body {
     background: none;
-    color: ${grey(20)};
+    color: ${grey(10)};
     margin: 0 auto;
     max-width: 70ch;
     min-width: 320px;
