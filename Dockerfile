@@ -50,18 +50,12 @@ RUN --mount=type=bind,target=/s \
 FROM node AS buildenv
 
 ARG CI=true
-ARG GIT_BRANCH
-ARG GIT_URL
-ARG GIT_VERSION
 ARG SITE_COMMIT
 ARG SITE_VERSION
 ENV CI ${CI}
-ENV GATSBY_TELEMETRY_DISABLED=1
-ENV GIT_BRANCH ${GIT_BRANCH}
-ENV GIT_URL ${GIT_URL}
-ENV GIT_VERSION ${GIT_VERSION}
 ENV SITE_COMMIT ${SITE_COMMIT}
 ENV SITE_VERSION ${SITE_VERSION}
+ENV GATSBY_TELEMETRY_DISABLED=1
 ENV CYPRESS_CACHE_FOLDER /workdir/.cache/Cypress
 
 RUN mkdir /workdir
@@ -104,20 +98,11 @@ RUN yarn run compress
 #################################
 FROM nginx AS final
 
-ARG GIT_BRANCH
-ARG GIT_URL
-ARG GIT_VERSION
-ARG SITE_VERSION
-
 LABEL Maintainer="Christian Höltje <https://docwhat.org>"
-LABEL Name="${SITE_VERSION}"
-LABEL Version="Website for docwhat.org"
+LABEL Name="Website for docwhat.org"
 LABEL org.opencontainers.image.authors="Christian Höltje <https://docwhat.org>"
 LABEL org.opencontainers.image.title="Website for docwhat.org"
 LABEL org.opencontainers.image.url="https://docwhat.org/"
-LABEL org.opencontainers.image.source="${GIT_URL}#${GIT_BRANCH}"
-LABEL org.opencontainers.image.version="${GIT_VERSION}"
-LABEL org.opencontainers.image.revision="${SITE_VERSION}"
 
 HEALTHCHECK --interval=5s --timeout=5s CMD wget http://localhost/nginx-health -q -O - > /dev/null 2>&1
 

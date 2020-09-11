@@ -15,14 +15,6 @@ jobs:
     name: Build Container
     runs-on: ubuntu-latest
     steps:
-      - name: Prepare
-        id: prep
-        run: |
-          set -eu
-          declare -r docker_image='docker.pkg.github.com/${{ github.repository }}/blog'
-          tags="${docker_image}:sha-${GITHUB_SHA::8}"
-          declare -r tags="$tags,${docker_image}:latest"
-          echo "::set-output name=tags::${tags}"
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
       - name: Cache Docker layers
@@ -40,6 +32,21 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Prepare
+        id: prep
+        run: |
+          set -euo pipefail
+
+          docker_image='docker.pkg.github.com/${{ github.repository }}/blog'
+          declare -r docker_image
+
+          tags="${docker_image}:sha-${GITHUB_SHA::8}"
+          tags="$tags,${docker_image}:latest"
+          declare -r tags
+
+          echo "::set-output name=tags::${tags}"
+          echo "::set-output name=node_version::$(cat .node_version)"
+          echo "::set-output name=commit::$(git log -1 --oneline --no-decorate)"
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
@@ -47,3 +54,8 @@ jobs:
           tags: ${{ steps.prep.outputs.tags }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
+          target: final
+          build-args: |
+            NODE_VERSION=${{ steps.prep.outputs.node_version }}
+            SITE_COMMIT=${{ steps.prep.outputs.commit }}
+            SITE_VERSION=${{ github.sha }}
