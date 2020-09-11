@@ -7,7 +7,7 @@ function die() {
   exit 10
 }
 
-declare -r docker_image="${docker_image:=docker.pkg.github.com/docwhat/docwhat/blog}"
+declare -r docker_image="${docker_image:=ghcr.io/docwhat/blog}"
 
 GITHUB_SHA=${GITHUB_SHA:-$(git rev-parse HEAD)}
 tags="${docker_image}:sha-${GITHUB_SHA::8}"
