@@ -28,7 +28,7 @@ jobs:
           else
             push=true
           fi
-          decare -r push
+          declare -r push
           echo "::set-output name=tags::${tags}"
           echo "::set-output name=push::${push}"
       - name: Set up Docker Buildx
