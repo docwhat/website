@@ -21,7 +21,7 @@ declare -r commit
 node_version="$(cat .node-version)"
 declare -r node_version
 
-now="$(date --iso-8601=seconds)"
+now="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
 declare -r now
 
 echo "::set-output name=tags::${tags}"

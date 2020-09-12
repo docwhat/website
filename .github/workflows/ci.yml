@@ -51,5 +51,5 @@ jobs:
             SITE_VERSION=${{ github.sha }}
           labels: |
             org.opencontainers.image.created=${{ steps.prep.outputs.now }}
-            org.opencontainers.image.source=https://github.com/${{ github.repository}}
+            org.opencontainers.image.source=${{ github.repositoryUrl }}
             org.opencontainers.image.revision=${{ github.sha }}
