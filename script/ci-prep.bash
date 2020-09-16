@@ -3,7 +3,7 @@
 set -euo pipefail
 
 function die() {
-  echo "FATAL: $@" 1>&2
+  echo "FATAL: $*" 1>&2
   exit 10
 }
 
@@ -21,7 +21,7 @@ declare -r commit
 node_version="$(cat .node-version)"
 declare -r node_version
 
-now="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+now="$(env TZ='America/New_York' date -u +'%Y-%m-%dT%H:%M:%SZ')"
 declare -r now
 
 echo "::set-output name=tags::${tags}"

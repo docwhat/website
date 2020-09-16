@@ -43,4 +43,5 @@ jobs:
         uses: docker://github/super-linter:v3
         env:
           DISABLE_ERRORS: 'true'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # EOF

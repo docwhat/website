@@ -9,4 +9,12 @@ if ! [[ -f "${HOME}/.docker/config.json" ]]; then
   mkdir -p "${HOME}/.docker"
   echo '{}' >"${HOME}/.docker/config.json"
 fi
-cat <<<$(jq '.+{"experimental":"enabled"}' "${HOME}/.docker/config.json") >"${HOME}/.docker/config.json"
+
+tdir=$(mktemp -d -t bootstrap)
+declare -r tdir
+trap 'rm -rf "$tdir"' EXIT ERR
+
+cat <<<"$(jq '.+{"experimental":"enabled"}' "${HOME}/.docker/config.json")" >"${tdir}/config.json"
+cat "${tdir}/config.json" >"${HOME}/.docker/config.json"
+
+# EOF

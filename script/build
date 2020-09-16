@@ -18,8 +18,7 @@ git_url="$(git ls-remote --get-url)"
 git_branch="$(git rev-parse --abbrev-ref HEAD)"
 git_sha=${GIT_SHA1:-$(git rev-parse HEAD)}
 git_commit=${GIT_COMMIT:-$(git log -1 --date=short --format='%h %ad %s')}
-git_version=${GIT_VERSION:-$(git describe --always --tags)}
-declare -r git_url git_branch git_sha git_commit git_version
+declare -r git_url git_branch git_sha git_commit
 
 cat <<INFO
 On ${build_date}
