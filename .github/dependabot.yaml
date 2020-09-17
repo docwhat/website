@@ -7,12 +7,24 @@ updates:
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
+    allowed_updates:
+      - match:
+          update_type: "all"
+    automerged_updates:
+      - match:
+          dependency_type: "all"
+          update_type: "semver:minor"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-    allow:
-      - dependency-type: "production"
+    allowed_updates:
+      - match:
+          update_type: "all"
+    automerged_updates:
+      - match:
+          dependency_type: "all"
+          update_type: "semver:minor"
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
