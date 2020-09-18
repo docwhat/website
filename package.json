@@ -144,7 +144,7 @@
     "shevyjs": "1.2.0",
     "strip-markdown": "3.1.2",
     "uuid": "8.3.0",
-    "webpack": "4.44.1"
+    "webpack": "4.44.2"
   },
   "devDependencies": {
     "@testing-library/cypress": "6.0.0",
