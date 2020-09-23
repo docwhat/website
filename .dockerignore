@@ -9,6 +9,7 @@ public
 
 script/*
 !script/compress
+!script/env
 
 *.log
 *.temp
