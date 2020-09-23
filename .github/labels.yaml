@@ -1,0 +1,26 @@
+name: labels
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '.github/labels.yaml'
+      - '.github/workflows/labels.yaml'
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        # https://github.com/actions/checkout
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        # https://github.com/crazy-max/ghaction-github-labeler
+        name: Run Labeler
+        if: success()
+        uses: crazy-max/ghaction-github-labeler@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yaml
