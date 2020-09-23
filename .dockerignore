@@ -4,8 +4,11 @@ Dockerfile
 cypress*
 node_modules
 public
-script/build*
 .travis.yml
+.github
+
+script/*
+!script/compress
 
 *.log
 *.temp
