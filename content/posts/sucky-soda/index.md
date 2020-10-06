@@ -6,7 +6,7 @@ tags:
     - food
     - soda
     - taste
-archived: true
+archive: true
 ---
 
 I am not a soda fan.

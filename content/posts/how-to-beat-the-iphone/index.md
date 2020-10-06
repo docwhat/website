@@ -5,7 +5,7 @@ date: '2008-11-12'
 tags:
     - phone
     - wifi
-archived: true
+archive: true
 ---
 
 For all those cell phone companies trying to figure out how to beat AT&T's

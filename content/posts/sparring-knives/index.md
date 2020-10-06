@@ -4,7 +4,7 @@ id: '89'
 tags:
     - fun
 title: Sparring Knives
-archived: true
+archive: true
 ---
 
 [![Completed sparring knives](https://farm4.static.flickr.com/3255/2454731346_c6cd27c8fc_m.jpg%20%22Completed%20sparring%20knives%22)](https://www.flickr.com/photos/docwhat/2454731346/)

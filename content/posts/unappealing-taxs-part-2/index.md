@@ -5,7 +5,7 @@ date: '2008-08-01'
 tags:
     - Pittsburgh
     - home
-archived: true
+archive: true
 ---
 
 I just got the "Disposition of appeal from real estate assessment". This is

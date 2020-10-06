@@ -5,7 +5,7 @@ date: '2008-07-16'
 template: 'post'
 tags:
     - 'sci-fi'
-archived: true
+archive: true
 ---
 
 For those that are fans of [Joss Whedon](http://whedonesque.com/), he has

@@ -7,7 +7,7 @@ tags:
     - magic
     - magician
 title: 'Book: The Secret Life of Houdini'
-archived: true
+archive: true
 ---
 
 [![*The Secret Life of Houdini* on

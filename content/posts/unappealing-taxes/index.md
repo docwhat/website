@@ -5,7 +5,7 @@ date: '2008-05-08'
 template: 'post'
 tags:
     - home
-archived: true
+archive: true
 ---
 
 > Unquestionably, there is progress. The average American now pays out twice

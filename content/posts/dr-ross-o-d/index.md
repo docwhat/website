@@ -4,7 +4,7 @@ id: '1084'
 tags:
     - Squirrel Hill
 title: 'Dr.  Ross, O.D.'
-archived: true
+archive: true
 ---
 
 [Dr. Ross](https://www.yelp.com/biz/edward-ross-od-pittsburgh-3) and his staff

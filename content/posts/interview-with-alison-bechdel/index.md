@@ -7,7 +7,7 @@ tags:
     - art
     - comics
 title: Interview with Alison Bechdel
-archived: true
+archive: true
 ---
 
 If you aren't into comic art, skip this...

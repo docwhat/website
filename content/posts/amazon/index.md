@@ -5,7 +5,7 @@ template: 'post'
 title: 'Amazon Christ!'
 tags:
     - humor
-archived: true
+archive: true
 ---
 
 Amazon redesigned their web-site, shrinking my name even more than

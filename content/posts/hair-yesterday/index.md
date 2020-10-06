@@ -10,7 +10,7 @@ tags:
     - long
     - short
     - strange
-archived: true
+archive: true
 ---
 
 ![This is my hair before I got it

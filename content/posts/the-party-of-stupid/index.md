@@ -8,7 +8,7 @@ categories:
     - docwhat
 tags:
     - politics
-archived: true
+archive: true
 ---
 
 _[Rob Landley](http://landley.net/) has written a very good description of how

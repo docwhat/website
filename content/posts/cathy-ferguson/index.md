@@ -3,7 +3,7 @@ id: '84'
 title: 'Cathy Ferguson: Mortgage Advisor'
 date: '2008-01-19'
 template: 'post'
-archived: true
+archive: true
 ---
 
 I had this idea of this _huge_ post I'd write about how I went about getting a

@@ -5,7 +5,7 @@ id: '113'
 tags:
     - Pittsburgh
 title: '36 Hours in Pittsburgh - NYTimes.com'
-archived: true
+archive: true
 ---
 
 The New York Times has published a good list of fun things to do in

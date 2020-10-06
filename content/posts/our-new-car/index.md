@@ -8,7 +8,7 @@ id: '350'
 tags:
     - car
 title: Our New Car
-archived: true
+archive: true
 ---
 
 [![Our new used 2006 Scion

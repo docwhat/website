@@ -9,7 +9,7 @@ tags:
     - reviews
     - video games
 title: 'Sims 3: Yay!'
-archived: true
+archive: true
 ---
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=thedocwha-20&language=en_US&marketplace=amazon&region=US&placement=B00166N6SA&asins=B00166N6SA&linkId=2da77d78317dc33bf21144e10adf764c&show_border=true&link_opens_in_new_window=true"></iframe>

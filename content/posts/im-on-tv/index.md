@@ -4,7 +4,7 @@ title: "I'm on TV!"
 date: '2009-04-21'
 tags:
     - Pittsburgh
-archived: true
+archive: true
 ---
 
 I'm on TV at KDKA; They did a report on immigration in Pittsburgh and I was

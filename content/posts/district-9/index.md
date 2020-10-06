@@ -9,7 +9,7 @@ tags:
     - movie
     - reviews
 title: District 9
-archived: true
+archive: true
 ---
 
 ![District

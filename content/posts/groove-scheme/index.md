@@ -4,7 +4,7 @@ title: Groove Scheme
 date: '2009-02-28'
 tags:
     - music
-archived: true
+archive: true
 ---
 
 Okay, I just recently discovered

@@ -149,11 +149,11 @@ module.exports = {
                 filter: {
                   fields: {
                     sourceName: { in: ["pages", "posts"] }
-                    draft: { eq: false }
-                    archived: { eq: false }
                   }
                   frontmatter: {
                     test: { ne: true }
+                    draft: { eq: false }
+                    archive: { eq: false }
                   }
                 }
               ) {

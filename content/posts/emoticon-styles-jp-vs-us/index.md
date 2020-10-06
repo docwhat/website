@@ -1,7 +1,7 @@
 ---
 date: '2007-05-25'
 title: 'Emoticon Styles (JP vs US)'
-archived: true
+archive: true
 ---
 
 I found this interesting article about

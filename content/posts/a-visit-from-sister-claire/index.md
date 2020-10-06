@@ -4,7 +4,7 @@ title: A visit from sister Claire
 date: '2007-08-13'
 tags:
     - family
-archived: true
+archive: true
 ---
 
 My little sister, Claire came to visit. I wasn't able to make as much time as

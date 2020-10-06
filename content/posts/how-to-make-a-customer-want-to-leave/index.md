@@ -13,7 +13,7 @@ tags:
     - ISP
     - network
     - speakeasy
-archived: true
+archive: true
 ---
 
 \[<strong>UPDATE</strong>: I have been

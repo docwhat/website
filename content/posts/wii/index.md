@@ -5,7 +5,7 @@ date: '2006-12-27'
 
 tags:
     - video games
-archived: true
+archive: true
 ---
 
 I got me a [Wii](http://en.wikipedia.org/wiki/Wii) for Christmas and it is

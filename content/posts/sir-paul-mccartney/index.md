@@ -11,7 +11,7 @@ tags:
     - concert
     - music
     - New York
-archived: true
+archive: true
 ---
 
 On Tuesday, I saw Paul McCartney at Citi Field.

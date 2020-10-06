@@ -5,7 +5,7 @@ date: '2006-10-11'
 
 tags:
     - Writing
-archived: true
+archive: true
 ---
 
 I started this blog for a [couple of reasons](/moving-to-a-blog/). One of the

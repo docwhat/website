@@ -4,7 +4,7 @@ id: '330'
 tags:
     - video games
 title: XBox 360 avatars
-archived: true
+archive: true
 ---
 
 ![My

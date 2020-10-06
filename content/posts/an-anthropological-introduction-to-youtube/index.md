@@ -5,7 +5,7 @@ date: '2008-08-04'
 tags:
     - technology
     - history
-archived: true
+archive: true
 ---
 
 An excellent presentation on what You Tube is and how it has impacted our

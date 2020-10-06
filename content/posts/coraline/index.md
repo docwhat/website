@@ -4,7 +4,7 @@ title: Coraline
 date: '2009-02-10'
 tags:
     - movie
-archived: true
+archive: true
 ---
 
 Robin and I saw [Coraline](http://coraline.com/) on Saturday, in 2D. It was a

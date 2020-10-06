@@ -5,7 +5,7 @@ date: '2008-07-28'
 tags:
     - home
     - Pittsburgh
-archived: true
+archive: true
 ---
 
 Aaah! There was a

@@ -5,7 +5,7 @@ id: '462'
 tags:
     - Pittsburgh
 title: Another one bites the dust
-archived: true
+archive: true
 ---
 
 [![The motorcycle that crashed in front of our

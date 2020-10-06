@@ -5,7 +5,7 @@ date: '2008-10-10'
 tags:
     - Science
     - Technology
-archived: true
+archive: true
 ---
 
 This is the coolest thing. I remember reading about how the discovered how

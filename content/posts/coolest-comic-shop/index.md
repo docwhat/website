@@ -6,7 +6,7 @@ tags:
     - comics
     - Pittsburgh
     - Squirrel Hill
-archived: true
+archive: true
 ---
 
 **UPDATE**: _[Copacetic Comics](http://www.copaceticcomics.com/) has moved out

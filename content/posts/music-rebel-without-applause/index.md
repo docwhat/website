@@ -9,7 +9,7 @@ categories:
 tags:
     - music
     - recommendations
-archived: true
+archive: true
 ---
 
 Found this lovely video called

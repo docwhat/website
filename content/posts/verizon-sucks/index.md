@@ -5,7 +5,7 @@ date: '2008-02-14'
 tags:
     - home
     - technology
-archived: true
+archive: true
 ---
 
 My server has been down for about a 6 days. The short story of why my site has

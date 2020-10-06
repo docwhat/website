@@ -2,7 +2,7 @@
 id: '168'
 title: 'Everything that Happens will Happen Today'
 date: '2008-08-25'
-archived: true
+archive: true
 ---
 
 [David Byrne](http://www.davidbyrne.com/ "David Byrne's homepage") and

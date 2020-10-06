@@ -6,7 +6,7 @@ tags:
     - iphone
     - programming
     - video games
-archived: true
+archive: true
 ---
 
 Robin (my awesome wife) came up with an idea for an iPhone app.

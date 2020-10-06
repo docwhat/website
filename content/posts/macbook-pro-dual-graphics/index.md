@@ -5,7 +5,7 @@ tags:
     - hardware
     - macbook pro
 title: 'MacBook Pro - Dual Graphics'
-archived: true
+archive: true
 ---
 
 [![graphics](graphics2.png 'From the official mac specs.')](http://www.apple.com/macbookpro/graphics.html)

@@ -11,7 +11,7 @@ tags:
     - ISP
     - network
     - speakeasy
-archived: true
+archive: true
 ---
 
 As I [mentioned before](/how-to-make-a-customer-want-to-leave/) , I have been

@@ -6,7 +6,7 @@ date: '2006-09-11'
 tags:
     - bread
     - cooking
-archived: true
+archive: true
 ---
 
 In today's episode of "As the chef turns" we find that Linda is filled with

@@ -6,7 +6,7 @@ date: '2012-09-11'
 image: /files/2012/09/7967171110_8703fa19b7-250x187.jpg
 tags:
     - home
-archived: true
+archive: true
 ---
 
 I'm looking to replace the windows in my home. I'm fond of the German style

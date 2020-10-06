@@ -4,7 +4,7 @@ id: '77'
 tags:
     - home
 title: 'Weil McLain'
-archived: true
+archive: true
 ---
 
 So, I'm trying to find out how old a boiler is. It's in a house that I made an

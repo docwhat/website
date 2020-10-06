@@ -10,7 +10,7 @@ tags:
     - latin
     - silly
 format: aside
-archived: true
+archive: true
 ---
 
 ![Reese's Peanut Butter Cups](pbcups.png)

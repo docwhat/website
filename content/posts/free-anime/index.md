@@ -10,7 +10,7 @@ tags:
     - anime
     - cool
     - video
-archived: true
+archive: true
 ---
 
 [Funimation](http://funimation.com/video/) -- an importer of Japanese

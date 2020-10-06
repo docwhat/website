@@ -9,7 +9,7 @@ tags:
     - sony
     - Technology
     - toy
-archived: true
+archive: true
 ---
 
 Let's face it: Current digital players suck.
@@ -89,7 +89,6 @@ I'll get that one. :-)
 I hope my music collection fits in 60gigs in two years.
 
 [^1]:
-
     [Ubuntu Forums](http://ubuntuforums.org/) has
     [hints](http://ubuntuforums.org/showthread.php?t=181668) about using iPods
     with Ubuntu.

@@ -2,7 +2,7 @@
 date: '2007-04-28'
 id: '52'
 title: 'What I did at Penguicon 2007'
-archived: true
+archive: true
 ---
 
 Robin and I enjoyed [Penguicon](http://penguicon.org/) 5.0 last weekend. We

@@ -5,7 +5,7 @@ tags:
     - cloud
     - cool
 title: Dropbox
-archived: true
+archive: true
 ---
 
 [![Drop

@@ -6,7 +6,7 @@ author: docwhat
 
 categories:
     - docwhat
-archived: true
+archive: true
 ---
 
 I've been interested in speed reading since I was a kid. I liked books a lot

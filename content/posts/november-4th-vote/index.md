@@ -5,7 +5,7 @@ date: '2008-11-04'
 tags:
     - friends
     - politics
-archived: true
+archive: true
 ---
 
 _[Rob Landley](http://landley.net/) has an awesomely well written reminder of

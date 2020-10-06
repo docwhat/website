@@ -23,9 +23,11 @@ const onPostBuild = async ({ graphql }) => {
         limit: 20
         sort: { fields: [fields___date], order: DESC }
         filter: {
+          frontmatter: {
+            draft: { eq: false }
+          }
           fields: {
             sourceName: { eq: "posts" }
-            hide: { eq: false }
           }
         }
       ) {

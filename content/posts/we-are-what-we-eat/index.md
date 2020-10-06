@@ -6,7 +6,7 @@ date: '2006-09-27'
 tags:
     - waste of time
     - wtf
-archived: true
+archive: true
 ---
 
 I read the [The Daily WTF](http://thedailywtf.com/) regularly. When I read

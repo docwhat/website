@@ -5,7 +5,7 @@ date: '2008-05-12'
 template: 'post'
 tags:
     - robin
-archived: true
+archive: true
 ---
 
 I have been married to Robin, my wonderful wife, for 12 years. I am very lucky

@@ -10,7 +10,7 @@ tags:
     - cicadas
     - photos
 title: Attack of the Cicada
-archived: true
+archive: true
 ---
 
 [![Cicada on front

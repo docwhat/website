@@ -64,7 +64,10 @@ const createPages = ({ graphql, actions }) => {
     {
       posts: allMarkdownRemark(
         sort: { order: DESC, fields: [fields___date] }
-        filter: { fields: { sourceName: { eq: "posts" }, hide: { eq: false } } }
+        filter: {
+          frontmatter: { draft: { eq: false } }
+          fields: { sourceName: { eq: "posts" } }
+        }
       ) {
         edges {
           node {

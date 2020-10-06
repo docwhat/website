@@ -6,7 +6,7 @@ tags:
     - Firefox
     - Google Gears
     - OS X
-archived: true
+archive: true
 ---
 
 If you have OS-X and you installed Firefox 3.5 and discovered that Google

@@ -5,7 +5,7 @@ template: 'post'
 tags:
     - LEGO
 title: 'LEGO guns!'
-archived: true
+archive: true
 ---
 
 [![Broomhandled

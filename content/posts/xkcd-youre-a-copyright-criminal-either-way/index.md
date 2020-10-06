@@ -5,7 +5,7 @@ date: '2008-10-13'
 tags:
     - copyright
     - DRM
-archived: true
+archive: true
 ---
 
 The always witting and intelligent web comic XKCD makes an excellent point

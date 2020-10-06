@@ -7,7 +7,7 @@ tags:
     - cooking
     - yeast
 title: Sourdough Yeast Starter
-archived: true
+archive: true
 ---
 
 In today's episode of "As the chef turns" we find that Lance has blamed Linda

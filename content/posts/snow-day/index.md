@@ -6,7 +6,7 @@ tags:
     - music
     - snow
     - video
-archived: true
+archive: true
 ---
 
 The season is all wrong for this but the song still rocks.

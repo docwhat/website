@@ -9,11 +9,8 @@ const useAllPosts = () => {
         posts: allMarkdownRemark(
           sort: { order: DESC, fields: [fields___date] }
           filter: {
-            fields: {
-              sourceName: { eq: "posts" }
-              archived: { eq: false }
-              hide: { eq: false }
-            }
+            frontmatter: { draft: { eq: false }, archive: { eq: false } }
+            fields: { sourceName: { eq: "posts" } }
           }
         ) {
           edges {

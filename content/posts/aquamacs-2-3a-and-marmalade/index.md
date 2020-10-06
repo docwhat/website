@@ -10,7 +10,7 @@ categories:
 tags:
     - aquamacs
     - emacs
-archived: true
+archive: true
 ---
 
 **Warning**: _Marmalade_ has not been updated since 2014 and seems to be dead.

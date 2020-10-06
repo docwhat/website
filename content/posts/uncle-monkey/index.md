@@ -8,7 +8,7 @@ categories:
     - docwhat
 tags:
     - family
-archived: true
+archive: true
 ---
 
 I'm an Uncle!

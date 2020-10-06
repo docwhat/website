@@ -2,7 +2,7 @@
 id: '519'
 title: MacHeist nanoBundle 2
 date: '2010-03-03'
-archived: true
+archive: true
 ---
 
 There is a new <a href="http://macheist.com/">MacHeist</a> nanoBundle. For

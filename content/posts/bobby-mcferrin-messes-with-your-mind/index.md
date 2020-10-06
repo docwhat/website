@@ -5,7 +5,7 @@ tags:
     - music
     - science
 title: 'Bobby McFerrin messes with your mind'
-archived: true
+archive: true
 ---
 
 This is a lovely little example of how the human brain can actually figure

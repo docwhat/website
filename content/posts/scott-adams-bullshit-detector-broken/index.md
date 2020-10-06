@@ -5,7 +5,7 @@ id: '38'
 tags:
     - Science
 title: Scott Adams Bullshit
-archived: true
+archive: true
 ---
 
 [![The Selfish
