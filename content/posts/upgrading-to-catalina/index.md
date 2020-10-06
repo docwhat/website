@@ -41,14 +41,14 @@ Removing the quarantine flag will fix most problems.
 
 To see the quarantine flag:
 
-```console
+```sh
 $ xattr -p com.apple.quarantine <name-of-executable>
 0082;5db07289;Safari;
 ```
 
 To remove the quarantine flag:
 
-```console
+```sh
 $ xattr -d com.apple.quarantine <name-of-executable>
 # OR for .app bundles
 $ xattr -d -r com.apple.quarantine <name-of-app>.app
@@ -62,15 +62,15 @@ Just in case though...
 
 To see an assessment:
 
-```console
+```sh
 $ spctl --assess <name-of-executable-or-app>
 <name-of-executable-or-app>: rejected
 ```
 
 To approve the executable
 
-```console
-$ spctl --add --label 'Approved' <name-of-executable-or-.app>
+```sh
+$ spctl --add --label 'Approved' <name-of-executable-or-app>
 ```
 
 ## Upgrading X-Code
