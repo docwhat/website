@@ -23,12 +23,26 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   })
 
   createTypes(`
-    type MarkdownRemark implements Node {
+    type MarkdownRemark implements Node @infer {
       frontmatter: Frontmatter
     }
     type Frontmatter {
       draft: Boolean @defaultFalse
       archive: Boolean @defaultFalse
+      banner: Banner
+    }
+    type MarkdownRemarkFields {
+      slug: String
+      title: String
+      date: Date @dateformat
+      editLink: String
+      update_date: Date @dateformat
+      update_hash: String
+    }
+    type Banner {
+      credits: String
+      image: String
+      sourceUrl: String
     }
   `)
 }
