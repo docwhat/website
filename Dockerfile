@@ -76,7 +76,7 @@ RUN yarn run lint
 ###################
 FROM setup AS build
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-RUN yarn run build </dev/null 2>&1 | cat
+RUN yarn run build --verbose
 
 ###################
 FROM node AS compress
