@@ -1,13 +1,12 @@
-[![](https://images.microbadger.com/badges/version/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
-[![](https://images.microbadger.com/badges/image/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
-[![](https://images.microbadger.com/badges/commit/docwhat/docwhat:master.svg)](https://microbadger.com/images/docwhat/docwhat:master)
-[![](https://travis-ci.org/docwhat/docwhat.svg?branch=master)](https://travis-ci.org/docwhat/docwhat)
-
 # Source for docwhat.org
 
-This is the static site source code for [docwhat.org](https://docwhat.org).
+> This is the static site source code for [docwhat.org](https://docwhat.org).
+>
+> It's powered by [Gatsby](https://gatsbyjs.org).
 
-It's powered by [Gatsby](https://gatsbyjs.org).
+![CI](https://github.com/docwhat/docwhat/workflows/CI/badge.svg)
+![Lint Code Base](https://github.com/docwhat/docwhat/workflows/Lint%20Code%20Base/badge.svg)
+![Check Markdown links](https://github.com/docwhat/docwhat/workflows/Check%20Markdown%20links/badge.svg)
 
 ## Developing
 
