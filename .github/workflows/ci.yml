@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - main
+    ignore_paths:
+      - ".github"
+      - ".vscode"
+      - ".devcontainer"
   push:
     branches:
       - master
