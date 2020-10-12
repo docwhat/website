@@ -17,7 +17,7 @@ name: Lint Code Base
 on:
   push:
     branches-ignore:
-      - 'pr/*'
+      - "pr/*"
   pull_request: {}
 
 ###############
@@ -44,8 +44,10 @@ jobs:
       # Run Linter against code base #
       ################################
       - name: Lint Code Base
-        uses: docker://github/super-linter:v3@sha256:1d3c349d648ac288b86b1aa99ddef968744b18905f9effa9d603e3a88d6aafa7
+        uses: docker://github/super-linter:v3
         env:
-          DISABLE_ERRORS: 'true'
+          DISABLE_ERRORS: ${{ github.event_name != 'pull_request' }}
+          DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: ${{ github.event_name != 'pull_request' }}
 # EOF
