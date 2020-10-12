@@ -89,7 +89,7 @@ bomb)
   bomb
   ;;
 badvar)
-  echo "This shouldn't be shown because ${bad_variable} isn't set"
+  echo "This shouldn't be shown because \${bad_variable} isn't set"
   ;;
 false)
   false
