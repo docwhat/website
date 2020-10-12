@@ -5,7 +5,7 @@
     ':automergeAll',
     ':automergeBranchPush',
     ':enableVulnerabilityAlertsWithLabel(security vulnerability)',
-    ':label(dependencies)',
+    ':label(:game_die: dependencies,:robot: bot)',
     'group:monorepos',
     'group:recommended',
   ],
