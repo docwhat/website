@@ -170,7 +170,7 @@
     "husky": "4.3.0",
     "inquirer": "7.3.3",
     "inquirer-datepicker-prompt": "0.4.2",
-    "lint-staged": "10.4.0",
+    "lint-staged": "10.4.1",
     "object-assign": "4.1.1",
     "prettier": "2.1.2",
     "prettier-eslint-cli": "5.0.0",
