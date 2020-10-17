@@ -12888,6 +12888,15 @@ mdast-util-definitions@^3.0.0:
   dependencies:
     unist-util-visit "^2.0.0"
 
+mdast-util-find-and-replace@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-find-and-replace/-/mdast-util-find-and-replace-1.0.0.tgz#ce33ca0e720ce6ba16cf49dea441cd5f277270a1"
+  integrity sha512-3ArHEP8jGEtgcAyM1kUDhsuZwEVfabBjAQz9ohRWKHkheaBFdOElA0uzHKYVpuh6flnDTkg7cqWBs0pHSfPLqQ==
+  dependencies:
+    escape-string-regexp "^4.0.0"
+    unist-util-is "^4.0.0"
+    unist-util-visit-parents "^3.0.0"
+
 mdast-util-frontmatter@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/mdast-util-frontmatter/-/mdast-util-frontmatter-0.2.0.tgz#8bd5cd55e236c03e204a036f7372ebe9e6748240"
@@ -16499,14 +16508,14 @@ remark-frontmatter@^1.2.0:
     fault "^1.0.1"
     xtend "^4.0.1"
 
-remark-github@10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/remark-github/-/remark-github-10.0.0.tgz#470784629b9b9d9a5b384c3c87243e26185705b6"
-  integrity sha512-UQ6IXJalJ629yVXQNm23cl0nlY5B003ph9ESAPeZ+NibZXi2IGCyhtQrZM1Iqy1tEUpDwOziXPHLPn+lcAufTw==
+remark-github@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/remark-github/-/remark-github-10.0.1.tgz#d258d73fb6bf33a9d42e5a8f04931d684bec06cf"
+  integrity sha512-iPF467c+bs4vi+vFyDjZCLlKNmHbWF5uo6IIILsHMbbP3dEqsI+m40zMmxY978Z2dUdl6YKiyf07uZad9bFMmw==
   dependencies:
+    mdast-util-find-and-replace "^1.0.0"
     mdast-util-to-string "^1.0.0"
     unist-util-visit "^2.0.0"
-    unist-util-visit-parents "^3.0.0"
 
 remark-heading-gap@^3.1.2:
   version "3.1.2"
