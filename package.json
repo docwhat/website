@@ -142,7 +142,7 @@
     "react-helmet": "6.1.0",
     "react-refresh": "0.8.3",
     "shevyjs": "1.2.0",
-    "strip-markdown": "3.1.2",
+    "strip-markdown": "4.0.0",
     "uuid": "8.3.1",
     "webpack": "4.44.2"
   },
