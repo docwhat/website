@@ -180,7 +180,7 @@
     "remark-frontmatter": "3.0.0",
     "remark-github": "10.0.1",
     "remark-preset-github": "3.0.3",
-    "sort-package-json": "1.46.0",
+    "sort-package-json": "1.46.1",
     "stylelint": "13.7.2",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
