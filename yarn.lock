@@ -16657,10 +16657,10 @@ remark-comment-config@^6.0.0:
   dependencies:
     mdast-comment-marker "^1.0.1"
 
-remark-contributors@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/remark-contributors/-/remark-contributors-5.0.0.tgz#e36db150281f1b0e917a5d13dde87e42ffdaf68c"
-  integrity sha512-yU6/hvUwZ9hVcQQ8T7Quh8916IhKsFyO1t5HdZ3JIGvpqxwjoGuNjOruXirXBOqHD2j57dXrXzFxcS1wpO5BEQ==
+remark-contributors@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/remark-contributors/-/remark-contributors-5.0.1.tgz#15d505863cb9ec8b6e08c764f687b2b05b24b175"
+  integrity sha512-OToTF0odIYSQc8CE/9WNad724zGvtXpi41GQs/CHfyXpOKAOrq29pfFVo3lW0ti9dLwqvrhCazUksJQJnkvkbQ==
   dependencies:
     is-url "^1.2.2"
     mdast-util-heading-range "^2.1.2"
@@ -17332,13 +17332,13 @@ remark-parse@^6.0.0, remark-parse@^6.0.3:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
-remark-preset-github@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-3.0.3.tgz#981540784fbe778e80407d144328c6921a063a2d"
-  integrity sha512-JteuGHkXg+GdDQwvfDEjTvc9iwiD52OzW8mo/OkGoi8nfXYNbvlfPyDo+KKU9ggCLtPohKg0d+dseqfxTw5Q4w==
+remark-preset-github@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/remark-preset-github/-/remark-preset-github-3.0.4.tgz#0b40bdcea25d947322a3c91287ad505d94c0e480"
+  integrity sha512-+YooreeIFhaBjM9V3smVslDXAilqrnxtAzVFbxZXnrRAb/PjNaNspBvLi38BQ9bBlLUkxA/+sRbEqRofIuxeDA==
   dependencies:
     remark-comment-config "^6.0.0"
-    remark-contributors "^5.0.0"
+    remark-contributors "^5.0.1"
     remark-gfm "^1.0.0"
     remark-heading-gap "^4.0.0"
     remark-license niftylettuce/remark-license
