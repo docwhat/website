@@ -6,23 +6,24 @@ image: '/files/2012/03/view\_git-logo-250x250.png'
 tags:
     - git
     - maintenance
-title: git gc for a bunch of directories
+title: git maintenance run for a bunch of directories
 ---
 
 Every so often, you might want to run
-[`git gc`](http://stackoverflow.com/questions/55729/how-often-should-you-use-git-gc)
+[`git maintenance run --auto`](https://book.git-scm.com/docs/git-maintenance)
 to keep your [`git`](http://git-scm.com/) repositories running fast. Here's an
 easy way to do that.
 
-<!-- more -->
+Using `xargs`:
 
-Assuming you have your git repositories in `~/projects`:
-
-```bash
-find ~/projects -name '.git' -type d -print0 | xargs -0 -Iq env GIT_DIR=q git gc
+```sh
+find ~/ -name '.git' -type d -print0 |
+    xargs -0 -I'{}' git --git-dir='{}' maintenance run --auto
 ```
 
-This works for [`git fsck`](http://book.git-scm.com/4_maintaining_git.html) as
-well.
+Using GNU [`parallel`](https://savannah.gnu.org/projects/parallel/):
 
-Ciao!
+```sh
+find ~/ -name '.git' -type d -print0 |
+    parallel -0 --halt soon,fail=1 "git --git-dir={} maintenance run --auto"
+```
