@@ -122,11 +122,10 @@ felt like I could have.
 Did I mention that this is really not what I like to do?
 
 We walked around a little so I could catch my breath and feel better. We
-visited
-[Nicholas Coffee](http://www.nicholascoffee.net/webstore/storefront/storemain.cfm?CFID=2790669&CFTOKEN=27378734),
-I had some [SoupMan](http://www.originalsoupman.com/ 'The Original SoupMan')
-soup (aka, the [Soup Natzi](http://en.wikipedia.org/wiki/Soup_Nazi) from
-Seinfeld - I paid extra for bread and fruit), which was good. Then we came
-home and I pretty much hid the rest of the day.
+visited [Nicholas Coffee](http://www.nicholascoffee.net/), I had some
+[SoupMan](http://www.originalsoupman.com/ 'The Original SoupMan') soup (aka,
+the [Soup Natzi](http://en.wikipedia.org/wiki/Soup_Nazi) from Seinfeld - I
+paid extra for bread and fruit), which was good. Then we came home and I
+pretty much hid the rest of the day.
 
 Did I mention that I don't like this?

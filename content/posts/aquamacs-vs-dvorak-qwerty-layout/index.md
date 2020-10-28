@@ -41,9 +41,7 @@ didn't think twice about blowing away my
 Whups! This broke all my command keys!
 
 After spending a little time with Time Machine to recover the files and figure
-out what `osxkeys.el` was and finding
-[my old post](http://www.nabble.com/DQ-keyboard-bug-td17180634.html) again I
-decided to find a better solution.
+out what `osxkeys.el` was I decided to find a better solution.
 
 And here it is; A horribly kludgy python script that essentially automates
 davidswelt's workaround: based on a keymap hardcoded in the script it patches
