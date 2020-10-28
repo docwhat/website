@@ -2,8 +2,8 @@
   extends: [
     'config:base',
     ':assignAndReview(docwhat)',
-    ':automergeAll',
-    ':automergeBranchPush',
+    ':automergeMinor',
+    ':automergeBranch',
     ':enableVulnerabilityAlertsWithLabel(security vulnerability)',
     ':label(:game_die: dependencies,:robot: bot)',
     'group:monorepos',
