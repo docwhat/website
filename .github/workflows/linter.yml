@@ -40,7 +40,7 @@ jobs:
       # Run Linter against code base #
       ################################
       - name: Lint Code Base
-        uses: docker://github/super-linter:v3@sha256:b5b43c0f80224919968b1482b48d82c2424cf596e09468917025575a6bf110d2
+        uses: docker://github/super-linter:v3@sha256:1301c3984c07344c5a86ae6bb1111827c0aeec1c6da819db09747480d613b511
         env:
           DISABLE_ERRORS: ${{ github.event_name != 'pull_request' }}
           DEFAULT_BRANCH: "master"
