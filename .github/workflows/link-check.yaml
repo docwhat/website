@@ -18,8 +18,8 @@ on:
       - "content/pi/**.md"
       - "README.md"
   schedule:
-    # https://crontab.guru/every-morning
-    - cron: "0 9 * * *"
+    # https://crontab.guru/every-quarter
+    - cron: "0 0 1 */3 *"
 
 jobs:
   markdown-link-check:
@@ -30,6 +30,6 @@ jobs:
         with:
           use-quiet-mode: "yes"
           use-verbose-mode: "yes"
-          check-modified-files-only: "${{ github.event_name == 'pull_request' }}"
+          check-modified-files-only: "yes"
           folder-path: "content/posts,content/pi"
           file-path: "./README.md"
