@@ -1,6 +1,7 @@
 // @format
 
 const process = require('process')
+const path = require('path')
 
 // In dev mode, environment variables can only be gotten here:
 const siteUrl = 'https://docwhat.org'
@@ -38,21 +39,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/posts`,
+        path: path.join(__dirname, `/content/posts`),
         name: `posts`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: path.join(__dirname, '/src/pages'),
         name: `pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/pi`,
+        path: path.join(__dirname, 'content/pi'),
         name: `pies`,
       },
     },
@@ -98,7 +99,7 @@ module.exports = {
             resolve: `gatsby-remark-embed-snippet`,
             options: {
               classPrefix: `language-`,
-              directory: `${__dirname}/content/embed`,
+              directory: path.join(__dirname, 'content/embed'),
             },
           },
           {

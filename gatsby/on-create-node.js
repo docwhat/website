@@ -119,7 +119,7 @@ const calculateDate = (node, getNode) => {
 const runAndReturnStdout = (cmd, ...args) =>
   new Promise((resolve, reject) => {
     const command = childProcess.spawn(cmd, ...args)
-    var result = ''
+    let result = ''
     command.stdout.on('data', (data) => {
       result += data.toString()
     })
