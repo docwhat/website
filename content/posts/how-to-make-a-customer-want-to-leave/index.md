@@ -170,10 +170,11 @@ I ask to escalate it to his managers. He said a manager will call me back.
 And now we're up to the present. I'm not holding my breath for the manager to
 call me back.
 
-I've already scoped out [the competition](http://www.covad.com/); they have
-essentially the same service for just a little less. I'll have to talk to a
-person to get them to remove the "Professional Installation" fee; I don't need
-someone to install a modem.
+I've already scoped out
+[the competition](https://en.wikipedia.org/wiki/Covad); they have essentially
+the same service for just a little less. I'll have to talk to a person to get
+them to remove the "Professional Installation" fee; I don't need someone to
+install a modem.
 
 I'll loose the tech-savvy support. But I don't see what kind of choice I have;
 I won't accept paying for non-service.
