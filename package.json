@@ -180,7 +180,7 @@
     "remark-cli": "8.0.1",
     "remark-frontmatter": "3.0.0",
     "remark-github": "10.0.1",
-    "remark-preset-github": "3.0.4",
+    "remark-preset-github": "4.0.1",
     "sort-package-json": "1.48.0",
     "stylelint": "13.8.0",
     "stylelint-config-recommended": "3.0.0",
