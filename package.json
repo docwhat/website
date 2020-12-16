@@ -91,8 +91,8 @@
   "dependencies": {
     "@babel/core": "7.12.10",
     "@babel/preset-env": "7.12.11",
-    "@emotion/core": "10.1.1",
-    "@emotion/styled": "10.0.27",
+    "@emotion/core": "11.0.0",
+    "@emotion/styled": "11.0.0",
     "@svgr/webpack": "5.5.0",
     "bluebird": "3.7.2",
     "caniuse-db": "1.0.30001166",
