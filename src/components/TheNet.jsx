@@ -1,7 +1,7 @@
 // @flow
 // @format
 
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import Link from 'gatsby-link'
 import React from 'react'
 

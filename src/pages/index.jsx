@@ -2,7 +2,7 @@
 // @flow
 // @ts-ignore
 // @ts-nocheck
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import Link from 'gatsby-link'
 import * as React from 'react'
 import Helmet from 'react-helmet'

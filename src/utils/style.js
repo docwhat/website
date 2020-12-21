@@ -1,6 +1,6 @@
 // @flow
 // @format
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import Shevy from 'shevyjs'
 
 import reboot from './bootstrap-reboot.css'

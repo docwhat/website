@@ -1,6 +1,6 @@
 // @flow
 // @format
-import { ClassNames, css } from '@emotion/core'
+import { ClassNames, css } from '@emotion/react'
 import Link from 'gatsby-link'
 import * as React from 'react'
 
