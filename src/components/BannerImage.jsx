@@ -1,6 +1,6 @@
 // @format
 // @flow
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import Img from 'gatsby-image'
 import * as React from 'react'
 

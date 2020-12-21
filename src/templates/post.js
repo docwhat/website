@@ -1,6 +1,6 @@
 // @format
 // @flow
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 import * as React from 'react'
 
