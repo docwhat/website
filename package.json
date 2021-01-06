@@ -123,7 +123,7 @@
     "gatsby-remark-responsive-iframe": "2.8.0",
     "gatsby-remark-smartypants": "2.7.0",
     "gatsby-remark-source-name": "1.0.0",
-    "gatsby-source-filesystem": "2.8.1",
+    "gatsby-source-filesystem": "2.9.0",
     "gatsby-transformer-remark": "2.13.1",
     "gatsby-transformer-sharp": "2.9.0",
     "gatsby-transformer-yaml": "2.8.0",
