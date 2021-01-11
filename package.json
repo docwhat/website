@@ -143,7 +143,7 @@
     "shevyjs": "1.2.0",
     "strip-markdown": "4.0.0",
     "uuid": "8.3.2",
-    "webpack": "4.45.0"
+    "webpack": "4.46.0"
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "11.0.0",
