@@ -179,7 +179,7 @@
     "remark-github": "10.0.1",
     "remark-preset-github": "4.0.1",
     "sort-package-json": "1.48.1",
-    "stylelint": "13.8.0",
+    "stylelint": "13.9.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "textlint": "11.7.7",
