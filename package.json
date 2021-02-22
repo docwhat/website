@@ -166,7 +166,7 @@
     "flow-bin": "0.145.0",
     "gatsby-plugin-react-helmet-canonical-urls": "1.4.0",
     "gatsby-remark-external-links": "0.0.4",
-    "husky": "5.0.9",
+    "husky": "5.1.0",
     "inquirer": "7.3.3",
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "10.5.4",
