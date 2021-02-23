@@ -89,7 +89,7 @@
   },
   "dependencies": {
     "@babel/core": "7.12.17",
-    "@babel/preset-env": "7.12.17",
+    "@babel/preset-env": "7.13.0",
     "@emotion/react": "11.1.5",
     "@emotion/styled": "11.1.5",
     "@svgr/webpack": "5.5.0",
