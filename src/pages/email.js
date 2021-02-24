@@ -21,11 +21,7 @@ const MyInput = styled.input`
 
 const ContactForm = (props: { location: Location }) => (
   <Layout location={props.location}>
-    <form
-      action="https://formspree.io/%64%6f%63%77%68%61%74%40%67%65%72%66%2e%6f%72%67"
-      method="POST"
-    >
-      <input type="hidden" name="_subject" value="Contact Form" />
+    <form action="https://formspree.io/f/xleoyeep" method="POST">
       <input name="_next" value={withPrefix(`/thanks`)} type="hidden" />
 
       <div>
