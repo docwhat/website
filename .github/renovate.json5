@@ -1,13 +1,14 @@
 {
   extends: [
     'config:base',
-    ':assignAndReview(docwhat)',
-    ':automergeMinor',
-    ':automergeBranch',
-    ':enableVulnerabilityAlertsWithLabel(security vulnerability)',
     ':label(:game_die: dependencies,:robot: bot)',
     'group:monorepos',
     'group:recommended',
   ],
+  prCreation: 'not-pending', // Notify only after checks finish
+  automerge: true,
+  major: {
+    automerge: false,
+  },
   timezone: 'America/New_York',
 }
