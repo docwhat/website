@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - main
-    ignore_paths:
+    paths-ignore:
       - ".github"
       - ".vscode"
       - ".devcontainer"
