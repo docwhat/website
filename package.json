@@ -149,7 +149,7 @@
     "@emotion/eslint-plugin": "11.2.0",
     "@testing-library/cypress": "7.0.4",
     "babel-eslint": "10.1.0",
-    "cypress": "6.5.0",
+    "cypress": "6.9.1",
     "eslint": "7.22.0",
     "eslint-config-prettier": "7.2.0",
     "eslint-config-standard": "16.0.2",
