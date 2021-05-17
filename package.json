@@ -176,7 +176,7 @@
     "prettier-stylelint": "0.4.2",
     "remark-cli": "9.0.0",
     "remark-frontmatter": "3.0.0",
-    "remark-github": "10.0.1",
+    "remark-github": "10.1.0",
     "remark-preset-github": "4.0.1",
     "sort-package-json": "1.49.0",
     "stylelint": "13.13.1",
