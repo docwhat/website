@@ -6,13 +6,17 @@ on:
       - master
       - main
     paths-ignore:
-      - ".github"
-      - ".vscode"
-      - ".devcontainer"
+      - ".github/**"
+      - ".vscode/**"
+      - ".devcontainer/**"
   push:
     branches:
       - master
       - main
+    paths-ignore:
+      - ".github/**"
+      - ".vscode/**"
+      - ".devcontainer/**"
 
 jobs:
   build:
