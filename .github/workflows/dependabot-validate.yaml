@@ -1,6 +1,10 @@
 name: dependabot validate
 
 on:
+  push:
+    paths:
+      - ".github/dependabot.yaml"
+      - ".github/workflows/dependabot-validate.yaml"
   pull_request:
     paths:
       - ".github/dependabot.yaml"
