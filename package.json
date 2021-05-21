@@ -90,7 +90,7 @@
   "dependencies": {
     "@babel/core": "7.14.3",
     "@babel/preset-env": "7.13.12",
-    "@emotion/react": "11.1.5",
+    "@emotion/react": "11.4.0",
     "@emotion/styled": "11.1.5",
     "@svgr/webpack": "5.5.0",
     "bluebird": "3.7.2",
@@ -153,7 +153,7 @@
     "eslint": "7.22.0",
     "eslint-config-prettier": "7.2.0",
     "eslint-config-standard": "16.0.2",
-    "eslint-plugin-cypress": "2.11.2",
+    "eslint-plugin-cypress": "2.11.3",
     "eslint-plugin-flowtype": "5.2.2",
     "eslint-plugin-import": "2.23.2",
     "eslint-plugin-jsx-a11y": "6.4.1",
