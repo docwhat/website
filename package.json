@@ -91,7 +91,7 @@
     "@babel/core": "7.14.3",
     "@babel/preset-env": "7.13.12",
     "@emotion/react": "11.4.0",
-    "@emotion/styled": "11.1.5",
+    "@emotion/styled": "11.3.0",
     "@svgr/webpack": "5.5.0",
     "bluebird": "3.7.2",
     "caniuse-db": "1.0.30001230",
