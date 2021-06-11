@@ -51,7 +51,7 @@ const PageTemplate = (props: {
 export default PageTemplate
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {

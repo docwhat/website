@@ -98,8 +98,8 @@ the rules given, it was too high.
 
 I had 5 comparable, houses that were similar size and age, averaging at about
 $30,000 less than mine and one outlier, a house that was about double mine in
-all ways, still $10,000
-less than mine. I asked for my house to be lowered by \$24,000.
+all ways, still $10,000 less than mine. I asked for my house to be lowered by
+\$24,000.
 
 My hands started shaking violently almost right away. I had to struggle to not
 speak quickly or make assumptions about what was obvious and jumping around in

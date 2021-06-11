@@ -123,7 +123,7 @@ const PostTemplate = (props: Props) => {
 export default PostTemplate
 
 export const postQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {

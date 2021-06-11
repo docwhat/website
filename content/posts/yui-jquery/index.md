@@ -20,7 +20,7 @@ A couple reasons:
     much easier: Example:
 
 ```javascript
-$('table tbody tr:even').each(function() {
+$('table tbody tr:even').each(function () {
     $(this).addClass('alt')
 })
 ```

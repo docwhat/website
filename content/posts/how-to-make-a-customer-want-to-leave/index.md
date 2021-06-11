@@ -136,11 +136,10 @@ So at this point I consider that the only legit expense I have is the modem.
 The \$150 no-show fee is a non-starter. If they didn't call, they didn't show
 up. Door-hanger notwithstanding.
 
-The
-$200 tech fee, because it was the modem after all, is also null and void.
-  I agreed to have a tech visit with the explicit understanding that the modem
-would be replaced there, on site, for no more cost.   Did the tech replace the
-modem? No.   Was my network up after the tech visited? No.   Basically, the $200
+The $200 tech fee, because it was the modem after all, is also null and void.
+I agreed to have a tech visit with the explicit understanding that the modem
+would be replaced there, on site, for no more cost. Did the tech replace the
+modem? No. Was my network up after the tech visited? No. Basically, the $200
 is for services not rendered.
 
 I consider the modem legit because that is all I got out of this, other than a
@@ -152,10 +151,8 @@ SpaceGhost agrees that the \$150 no-show fee is bogus. Great, no problems
 there.
 
 However, SpaceGhost says he can't waive the $99 modem fee or the $200 tech
-fee. He can give me
-$99 credit, the most he has discretion over, but that
-still leaves me paying $200
-for a tech visit that didn't do anything for me.
+fee. He can give me $99 credit, the most he has discretion over, but that
+still leaves me paying $200 for a tech visit that didn't do anything for me.
 
 So SpaceGhost says he'll talk to his managers and call me back on Monday. He
 doesn't call. I call him, he says he'll talk to his manager tomorrow, etc.

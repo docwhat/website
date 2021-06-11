@@ -71,7 +71,6 @@ others. At first it was a novelty I would never need. Then I started really
 writing.
 
 [^daring-fireball]:
-
     Here is John Gruber's post
     [About the Footnotes](http://daringfireball.net/2005/07/footnotes).
     Besides, what would a post about creating footnotes in HTML be without

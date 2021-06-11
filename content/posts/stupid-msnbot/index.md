@@ -58,7 +58,6 @@ Maybe something like ~~[clusty.com](http://clusty.com/)~~[^1]
 Ciao!
 
 [^1]:
-
     ~~Yup. I work for them.~~ I worked for the company which owned clusty.com
     before clusty was sold off.
 
