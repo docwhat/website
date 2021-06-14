@@ -167,7 +167,7 @@
     "gatsby-plugin-react-helmet-canonical-urls": "1.4.0",
     "gatsby-remark-external-links": "0.0.4",
     "husky": "6.0.0",
-    "inquirer": "8.0.0",
+    "inquirer": "8.1.0",
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "11.0.0",
     "object-assign": "4.1.1",
