@@ -178,7 +178,7 @@
     "remark-frontmatter": "3.0.0",
     "remark-github": "10.1.0",
     "remark-preset-github": "4.0.1",
-    "sort-package-json": "1.49.0",
+    "sort-package-json": "1.50.0",
     "stylelint": "13.13.1",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
