@@ -100,7 +100,7 @@
     "fbjs": "3.0.0",
     "feed": "4.2.2",
     "gatsby": "2.32.13",
-    "gatsby-cli": "3.9.0",
+    "gatsby-cli": "3.10.0",
     "gatsby-image": "3.9.0",
     "gatsby-pagination": "1.2.0",
     "gatsby-plugin-catch-links": "2.10.0",
@@ -141,7 +141,7 @@
     "react-hot-loader": "4.13.0",
     "react-refresh": "0.10.0",
     "shevyjs": "1.2.0",
-    "strip-markdown": "4.0.0",
+    "strip-markdown": "4.1.0",
     "uuid": "8.3.2",
     "webpack": "4.46.0"
   },
