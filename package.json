@@ -141,7 +141,7 @@
     "react-hot-loader": "4.13.0",
     "react-refresh": "0.10.0",
     "shevyjs": "1.2.0",
-    "strip-markdown": "4.0.0",
+    "strip-markdown": "4.1.0",
     "uuid": "8.3.2",
     "webpack": "4.46.0"
   },
