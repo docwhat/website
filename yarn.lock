@@ -1053,10 +1053,10 @@
     core-js "^2.6.5"
     regenerator-runtime "^0.13.2"
 
-"@babel/preset-env@7.14.7", "@babel/preset-env@^7.12.1":
-  version "7.14.7"
-  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.14.7.tgz#5c70b22d4c2d893b03d8c886a5c17422502b932a"
-  integrity sha512-itOGqCKLsSUl0Y+1nSfhbuuOlTs0MJk2Iv7iSH+XT/mR8U1zRLO7NjWlYXB47yhK4J/7j+HYty/EhFZDYKa/VA==
+"@babel/preset-env@7.14.8", "@babel/preset-env@^7.12.1":
+  version "7.14.8"
+  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.14.8.tgz#254942f5ca80ccabcfbb2a9f524c74bca574005b"
+  integrity sha512-a9aOppDU93oArQ51H+B8M1vH+tayZbuBqzjOhntGetZVa+4tTu5jp+XTwqHGG2lxslqomPYVSjIxQkFwXzgnxg==
   dependencies:
     "@babel/compat-data" "^7.14.7"
     "@babel/helper-compilation-targets" "^7.14.5"
@@ -1125,7 +1125,7 @@
     "@babel/plugin-transform-unicode-escapes" "^7.14.5"
     "@babel/plugin-transform-unicode-regex" "^7.14.5"
     "@babel/preset-modules" "^0.1.4"
-    "@babel/types" "^7.14.5"
+    "@babel/types" "^7.14.8"
     babel-plugin-polyfill-corejs2 "^0.2.2"
     babel-plugin-polyfill-corejs3 "^0.2.2"
     babel-plugin-polyfill-regenerator "^0.2.2"
@@ -7848,10 +7848,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.0.tgz#a5d06b4a8b01e3a63771daa5cb7a1903e2e57067"
   integrity sha512-tW+UkmtNg/jv9CSofAKvgVcO7c2URjhTdW1ZTkcAritblu8tajiYy7YisnIflEwtKssCtOxpnBRoCB7iap0/TA==
 
-flow-bin@0.155.1:
-  version "0.155.1"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.155.1.tgz#1263ee3e0f42d11cb13ba56c3851a096213ce5f7"
-  integrity sha512-qy2eXkgngR6u+MYA1ydzPnclhos21BZlpkJ50Y9YOZ4eTMq6txswB3X+gUsg8XUyCteLoMeo7n30k7aY2no2Yw==
+flow-bin@0.156.0:
+  version "0.156.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.156.0.tgz#d60a89d35ae6019fcdce15277d4370fdc15dee95"
+  integrity sha512-KEEsKV7/bePZM3Ja7rYlAaSx8GPiTGr7pt0IJcX5S3GSEIZ2ieayF6JWNjbyLiu7ZUJuWe4ITDnPvyqimUpYww==
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -11433,10 +11433,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-11.0.1.tgz#1b8ae8ed5a52ed87252db95fe008c2618c85f55a"
-  integrity sha512-RkTA1ulE6jAGFskxpGAwxfVRXjHp7D9gFg/+KMARUWMPiVFP0t28Em2u0gL8sA0w3/ck3TC57F2v2RNeQ5XPnw==
+lint-staged@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-11.1.0.tgz#a21d67ffe4516e907635adeaf6d6450d8cffb4e4"
+  integrity sha512-pzwEf+NKbTauAlk7gPPwTfulRXESEPZCSFXYfg20F220UOObebxu5uL5mkr9csQLNOM2Ydfrt3DJXakzAL7aaQ==
   dependencies:
     chalk "^4.1.1"
     cli-truncate "^2.1.0"
