@@ -174,7 +174,7 @@
     "prettier": "2.3.2",
     "prettier-eslint-cli": "5.0.1",
     "prettier-stylelint": "0.4.2",
-    "remark-cli": "9.0.0",
+    "remark-cli": "10.0.0",
     "remark-frontmatter": "3.0.0",
     "remark-github": "10.1.0",
     "remark-preset-github": "4.0.1",
