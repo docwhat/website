@@ -88,7 +88,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "7.14.8",
+    "@babel/core": "7.15.0",
     "@babel/preset-env": "7.15.0",
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
@@ -175,7 +175,7 @@
     "prettier-eslint-cli": "5.0.1",
     "prettier-stylelint": "0.4.2",
     "remark-cli": "9.0.0",
-    "remark-frontmatter": "3.0.0",
+    "remark-frontmatter": "4.0.0",
     "remark-github": "10.1.0",
     "remark-preset-github": "4.0.1",
     "sort-package-json": "1.50.0",
