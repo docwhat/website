@@ -1,14 +1,14 @@
 describe('root page', () => {
   it('has an all posts link', () => {
     cy.visit('/')
-      .findByText(/\ball\b.*\bposts\b/i)
+    cy.findByText(/\ball\b.*\bposts\b/i)
+      .should('exist')
       .click()
-      .findByText(/moving to a blog/i)
+    cy.findByText(/moving to a blog/i)
   })
 
   it('has at least 6 articles', () => {
     cy.visit('/')
-      .findAllByText(/read more/i)
-      .should('have.length.of.at.least', 6)
+    cy.findAllByText(/read more/i).should('have.length.of.at.least', 6)
   })
 })
