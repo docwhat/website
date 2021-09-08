@@ -90,7 +90,6 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-emoji`,
           `gatsby-remark-smartypants`,
-          'gatsby-remark-source-name',
           {
             resolve: `gatsby-remark-external-links`,
             options: {
@@ -128,7 +127,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-favicon`,
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
@@ -150,8 +148,7 @@ module.exports = {
             {
               site { siteMetadata { siteUrl } }
               allSitePage: allMarkdownRemark(
-                limit: 100000,
-                sort: { order: DESC, fields: [fields___date] },
+                sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
                 filter: {
                   fields: {
                     sourceName: { in: ["pages", "posts"] }

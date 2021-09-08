@@ -25,9 +25,15 @@ const onCreateNode = async ({ node, actions, getNode }) => {
     return {}
   }
 
-  const sourceName = node.fields.sourceName
+  const parentNode = getNode(node.parent)
+  const sourceName = parentNode.sourceInstanceName
+  createNodeField({
+    node,
+    name: `sourceName`,
+    value: sourceName,
+  })
 
-  const slug = calculateSlug(node, getNode)
+  const slug = calculateSlug(node, parentNode)
 
   createNodeField({
     node,
@@ -141,19 +147,19 @@ const calculateUpdatedDate = (filePath) =>
 const calculateUpdatedHash = (filePath) =>
   runAndReturnStdout('git', ['log', '-1', '--pretty=format:%h', '--', filePath])
 
-const calculateSlugFromPath = (node, getNode) => {
-  const parent = getNode(node.parent)
-  const name = parent.name
-  const meaningfulName = name === 'index' ? pathlib.basename(parent.dir) : name
+const calculateSlugFromParentPath = (parentNode) => {
+  const name = parentNode.name
+  const meaningfulName =
+    name === 'index' ? pathlib.basename(parentNode.dir) : name
 
   return meaningfulName
     .replace(/.*\/([^/]+)$/, '$1')
     .replace(/[\d]{4}-[\d]{2}-[\d]{2}-/, '')
 }
 
-const calculateSlug = (node, getNode) => {
+const calculateSlug = (node, parentNode) => {
   const baseSlug = replacePath(
-    node.frontmatter.slug || calculateSlugFromPath(node, getNode)
+    node.frontmatter.slug || calculateSlugFromParentPath(parentNode)
   )
 
   if (node.fields.sourceName === 'pies') {
@@ -162,6 +168,7 @@ const calculateSlug = (node, getNode) => {
 
   return baseSlug
 }
+
 const replacePath = (_path) =>
   _path === `/` ? _path : `/${_path.replace(/^\/|\/$/, '')}`
 
