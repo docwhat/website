@@ -35,6 +35,13 @@ module.exports = {
     githubUsername: githubUsername,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-4714126-2`,
+        head: true,
+      },
+    },
     'gatsby-plugin-flow',
     {
       resolve: `gatsby-source-filesystem`,
@@ -211,15 +218,4 @@ module.exports = {
       },
     },
   ],
-}
-
-if (module.exports.siteMetadata.gatsby_env === 'production') {
-  module.exports.plugins = module.exports.plugins.concat([
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-4714126-2`,
-      },
-    },
-  ])
 }
