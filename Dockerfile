@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1-experimental
 
-ARG NODE_VERSION=12
+ARG NODE_VERSION=set-node-version-as-build-arg
 
 FROM node:$NODE_VERSION     AS node
 FROM nginx:stable-alpine    AS nginx
