@@ -63,3 +63,10 @@ jobs:
             org.opencontainers.image.created=${{ steps.prep.outputs.now }}
             org.opencontainers.image.source=${{ github.repositoryUrl }}
             org.opencontainers.image.revision=${{ github.sha }}
+      - name: Trigger hive update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHCR_TOKEN }}
+        run: |
+          gh api \
+            repos/holtje/hive-config/actions/workflows/3279287/dispatches \
+            --field=ref=main
