@@ -64,6 +64,7 @@ jobs:
             org.opencontainers.image.source=${{ github.repositoryUrl }}
             org.opencontainers.image.revision=${{ github.sha }}
       - name: Trigger hive update
+        if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GHCR_TOKEN }}
         run: |
