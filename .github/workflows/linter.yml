@@ -49,5 +49,6 @@ jobs:
           DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: ${{ github.event_name != 'pull_request' }}
+          VALIDATE_MARKDOWN: false
 
 # EOF
