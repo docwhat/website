@@ -145,62 +145,54 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         query: `
-            {
-              site { siteMetadata { siteUrl } }
-              allSitePage: allMarkdownRemark(
-                sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
-                filter: {
-                  fields: {
-                    sourceName: { in: ["pages", "posts"] }
-                  }
-                  frontmatter: {
-                    test: { ne: true }
-                    draft: { eq: false }
-                    archive: { eq: false }
-                  }
-                }
-              ) {
-                edges {
-                  node {
-                    path: fileAbsolutePath
-                    fields {
-                      slug
-                      created: date(formatString: "YYYY-MM-DD")
-                      lastmod: update_date(formatString: "YYYY-MM-DD")
-                    }
-                    frontmatter {
-                      changefreq
-                      priority
-                    }
-                  }
-                }
-              }
-            }
+{
+  allSitePage: allMarkdownRemark(
+    sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
+    filter: {
+      fields: { sourceName: { in: ["pages", "posts"] } }
+      frontmatter: {
+        test: { ne: true }
+        draft: { ne: true }
+        archive: { ne: true }
+      }
+    }
+  ) {
+    nodes {
+      path: fileAbsolutePath
+      fields {
+        slug
+      }
+      frontmatter {
+        changefreq
+        priority
+      }
+    }
+  }
+}
           `,
-        serialize: ({ allSitePage }) =>
-          allSitePage.edges
-            .map((edge) => ({
-              url: siteUrl + edge.node.fields.slug,
-              changefreq: edge.node.frontmatter.changefreq || `weekly`,
-              priority: parseFloat(edge.node.frontmatter.priority) || 0.5,
-              lastmod:
-                edge.node.fields.lastmod || edge.node.fields.created || null,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage }) =>
+          allSitePage.nodes
+            .map((node) => ({
+              path: node.fields.slug,
+              changefreq: node.frontmatter.changefreq || `weekly`,
+              priority: parseFloat(node.frontmatter.priority) || 0.5,
             }))
-            .filter((item) => item.priority >= 0.0)
+            .filter((page) => page.priority >= 0.0)
             .concat([
               // TODO: I don't know how to get "frontmatter" from .js
               {
-                url: `${siteUrl}/`,
+                path: `/`,
                 changefreq: `daily`,
                 priority: 0.8,
               },
               {
-                url: `${siteUrl}/all`,
+                path: `/all`,
                 changefreq: `daily`,
                 priority: 0.4,
               },
               {
-                url: `${siteUrl}/email`,
+                path: `/email`,
                 changefreq: `yearly`,
                 priority: 0.1,
               },
