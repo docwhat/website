@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import * as React from 'react'
 
 import useSiteMetadata from './useSiteMetadata.jsx'

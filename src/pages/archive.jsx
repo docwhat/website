@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 import PostCardList from '../components/PostCardList'
 import useArchivedPosts from '../components/useArchivedPosts.jsx'
 
-const SiteIndex = (props: { location: Location }) => {
+const SiteIndex = (props) => {
   const posts = useArchivedPosts()
   return (
     <Layout location={props.location}>

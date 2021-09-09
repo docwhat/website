@@ -1,6 +1,5 @@
 {
   "extends": [
-    "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "standard",
     "prettier"
@@ -11,7 +10,6 @@
   },
   "plugins": [
     "react",
-    "flowtype",
     "@emotion",
     "simple-import-sort",
     "prettier",
@@ -40,9 +38,6 @@
     "import/no-duplicates": "error"
   },
   "settings": {
-    "flowtype": {
-      "onlyFilesWithFlowAnnotation": false
-    },
     "react": {
       "version": "detect"
     }

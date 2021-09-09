@@ -42,7 +42,6 @@ module.exports = {
         head: true,
       },
     },
-    'gatsby-plugin-flow',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
@@ -13,13 +13,7 @@ import SmallPrint from './SmallPrint.jsx'
 
 const { baseSpacing: bs } = shevy
 
-const Title = ({
-  to,
-  children,
-}: {
-  to: string,
-  children: React.Node,
-}): React.Node => (
+const Title = ({ to, children }) => (
   <h3
     css={css`
       margin-left: 0;
@@ -34,21 +28,7 @@ const Title = ({
   </h3>
 )
 
-type Props = {
-  ymdDate: string,
-  excerpt: string,
-  overrideCss: Object,
-  slug: string,
-  title: string,
-}
-
-const PostCard = ({
-  ymdDate,
-  excerpt,
-  overrideCss,
-  slug,
-  title,
-}: Props): React.Node => (
+const PostCard = ({ ymdDate, excerpt, overrideCss, slug, title }) => (
   <section
     css={{
       ...overrideCss,

@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 
 import styled from '@emotion/styled'

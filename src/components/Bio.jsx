@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import { ClassNames, css } from '@emotion/react'
 import Link from 'gatsby-link'
@@ -16,10 +16,7 @@ import { shevy } from '../utils/style.js'
 
 const { baseSpacing: bs } = shevy
 
-const Reference = (props: {
-  className?: string,
-  children: React.Node,
-}): React.Node => (
+const Reference = (props) => (
   <ClassNames>
     {({ cx }) => (
       <span className={cx('u-url', props.className)}>{props.children}</span>

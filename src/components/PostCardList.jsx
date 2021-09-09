@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import { css } from '@emotion/react'
 import * as React from 'react'
@@ -8,22 +8,7 @@ import PostCard from './PostCard.jsx'
 
 const { baseSpacing: bs } = shevy
 
-type PostCardEdge = {
-  node: {
-    fields: {
-      slug: string,
-      title: string,
-      ymdDate: string,
-    },
-    excerpt: string,
-  },
-}
-
-type Props = {
-  postcards: Array<PostCardEdge>,
-}
-
-const PostCardList = (props: Props): React.Node => (
+const PostCardList = (props) => (
   <div
     css={css`
       display: flex;

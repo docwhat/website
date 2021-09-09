@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import { graphql } from 'gatsby'
 import * as React from 'react'
@@ -8,15 +8,9 @@ import CalendarPage from './CalendarPage.jsx'
 import Date from './Date.jsx'
 import SmallPrint from './SmallPrint.jsx'
 
-type Props = {
-  title: string,
-  ymdDate?: string,
-  ymdUpdate?: string,
-}
-
 const { lineHeightSpacing: lhs, h2 } = shevy
 
-const PageHeader = (props: Props): React.Node => {
+const PageHeader = (props) => {
   const { title, ymdDate, ymdUpdate } = props
 
   let calendarIcon = ``

@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 // @ts-ignore
 // @ts-nocheck
 import { css } from '@emotion/react'
@@ -30,7 +30,7 @@ const jsonLdData = {
   //     },
 }
 
-const SiteIndex = (props: { location: Location }) => {
+const SiteIndex = (props) => {
   const posts = useAllPosts().slice(0, 10)
   return (
     <Layout location={props.location}>

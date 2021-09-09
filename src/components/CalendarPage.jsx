@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
@@ -10,15 +10,7 @@ import { shevy } from '../utils/style.js'
 
 const { baseSpacing: bs, lineHeightSpacing: lhs } = shevy
 
-type State = {
-  monthName: string,
-}
-
-type Props = {
-  ymdDate: string,
-}
-
-class CalendarPage extends React.Component<Props, State> {
+class CalendarPage extends React.Component {
   state = {
     monthName: '',
   }

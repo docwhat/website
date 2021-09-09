@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import { css, Global } from '@emotion/react'
 import Link from 'gatsby-link'
 import * as React from 'react'
@@ -9,13 +9,9 @@ import { MOBILE_MEDIA_QUERY } from '../utils/media-queries.js'
 import prismCss from '../utils/prism-style.js'
 import globalCss, { shevy } from '../utils/style.js'
 
-type Props = {
-  children?: React.Node,
-}
-
 const { baseSpacing: bs } = shevy
 
-const Layout = (props: Props) => {
+const Layout = (props) => {
   const { children } = props
 
   return (

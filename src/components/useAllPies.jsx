@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import { graphql, useStaticQuery } from 'gatsby'
 
 const useAllPies = () => {

@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
@@ -9,15 +9,7 @@ import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import { siteTitle } from '../utils/constants'
 
-const PageTemplate = (props: {
-  location: Location,
-  data: {
-    markdownRemark: {
-      fields: { title: string },
-      html: string,
-    },
-  },
-}) => {
+const PageTemplate = (props) => {
   const {
     data: {
       markdownRemark: {

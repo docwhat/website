@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import Link from 'gatsby-link'
 import * as React from 'react'
 import Helmet from 'react-helmet'
@@ -10,7 +10,7 @@ import SourceLink from '../../components/SourceLink'
 import useAllPies from '../../components/useAllPies'
 import useSiteMetadata from '../../components/useSiteMetadata'
 
-const SiteIndex = (props: { location: Location }) => {
+const SiteIndex = (props) => {
   const pies = useAllPies()
   const site = useSiteMetadata()
 

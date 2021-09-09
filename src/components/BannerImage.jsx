@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import { css } from '@emotion/react'
 import Img from 'gatsby-image'
 import * as React from 'react'
@@ -8,7 +8,7 @@ import { shevy } from '../utils/style'
 
 const { baseSpacing: bs } = shevy
 
-const Caption = (props: { credits: string, sourceUrl: string }) => {
+const Caption = (props) => {
   const { credits, sourceUrl } = props
 
   return (
@@ -28,11 +28,7 @@ const Caption = (props: { credits: string, sourceUrl: string }) => {
   )
 }
 
-const BannerImage = (props: {
-  credits: string,
-  sourceUrl: string,
-  image: any,
-}) => {
+const BannerImage = (props) => {
   const { credits, sourceUrl, image } = props
 
   const caption = credits ? (

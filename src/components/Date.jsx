@@ -1,19 +1,10 @@
-// @flow
+//
 // @format
 import * as React from 'react'
 
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
 
-type Props = {
-  date: string,
-  title?: string,
-}
-
-type State = {
-  dateString: string,
-}
-
-class DateNode extends React.Component<Props, State> {
+class DateNode extends React.Component {
   state = {
     dateString: '',
   }

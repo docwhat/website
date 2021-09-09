@@ -1,7 +1,7 @@
-// @flow
+//
 // @format
 
-export const ymdString2Date = (dateString: string) =>
+export const ymdString2Date = (dateString) =>
   new Date(
     ...dateString
       .split('-')

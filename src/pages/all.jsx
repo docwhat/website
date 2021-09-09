@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 import PostCardList from '../components/PostCardList'
 import useAllPosts from '../components/useAllPosts'
 
-const SiteIndex = (props: { location: Location }) => {
+const SiteIndex = (props) => {
   const allPosts = useAllPosts()
   return (
     <Layout location={props.location}>

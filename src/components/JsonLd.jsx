@@ -1,8 +1,8 @@
-// @flow
+//
 // @format
 import * as React from 'react'
 
-const JsonLd = ({ data }: { data: Object }): React.Node => (
+const JsonLd = ({ data }) => (
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}

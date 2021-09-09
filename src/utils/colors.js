@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import Color from 'color'
 
@@ -26,4 +26,4 @@ export const deemphasisColor = Color.hsl([deemphasisHue, saturation, lightness])
 
 export const lightBackground = Color.rgb(255, 255, 255)
 
-export const grey = (value: number) => `hsla(84,69%,10%,${(100 - value) / 100})`
+export const grey = (value) => `hsla(84,69%,10%,${(100 - value) / 100})`

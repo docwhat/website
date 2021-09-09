@@ -1,4 +1,4 @@
-// @flow
+//
 // @format
 import { css } from '@emotion/react'
 

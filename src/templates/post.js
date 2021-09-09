@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 import * as React from 'react'
@@ -15,34 +15,7 @@ import Seo from '../components/Seo.jsx'
 import SmallPrint from '../components/SmallPrint.jsx'
 import { siteTitle, siteUrl } from '../utils/constants'
 
-type Props = {
-  data: {
-    markdownRemark: {
-      fields: {
-        slug: string,
-        title: string,
-        editLink: string,
-        banner: {
-          credits: string,
-          sourceUrl: string,
-          image: any,
-        },
-        ymdDate: string,
-        ymdUpdate: string,
-      },
-      wordCount: { words: number },
-      html: string,
-      excerpt: string,
-    },
-  },
-  pageContext: {
-    newer?: any,
-    older?: any,
-  },
-  location: Location,
-}
-
-const PostActions = (props: { editLink: string }) => (
+const PostActions = (props) => (
   <SmallPrint
     css={css`
       text-align: right;
@@ -55,7 +28,7 @@ const PostActions = (props: { editLink: string }) => (
   </SmallPrint>
 )
 
-const PostTemplate = (props: Props) => {
+const PostTemplate = (props) => {
   const {
     data: {
       markdownRemark: {

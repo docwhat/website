@@ -1,5 +1,5 @@
 // @format
-// @flow
+//
 import styled from '@emotion/styled'
 import { withPrefix } from 'gatsby'
 import React from 'react'
@@ -19,7 +19,7 @@ const MyInput = styled.input`
   flex: 1 1 75%;
 `
 
-const ContactForm = (props: { location: Location }) => (
+const ContactForm = (props) => (
   <Layout location={props.location}>
     <form action="https://formspree.io/f/xleoyeep" method="POST">
       <input name="_next" value={withPrefix(`/thanks`)} type="hidden" />

@@ -1,4 +1,4 @@
-/* @flow */
+/*       */
 /* @format */
 /* eslint-disable import/prefer-default-export */
 
