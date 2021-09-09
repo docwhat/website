@@ -21,7 +21,7 @@ const onPostBuild = async ({ graphql }) => {
       }
       posts: allMarkdownRemark(
         limit: 20
-        sort: { fields: [fields___date], order: DESC }
+        sort: { fields: [frontmatter___date], order: DESC }
         filter: {
           frontmatter: {
             draft: { eq: false }

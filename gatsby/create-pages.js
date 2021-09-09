@@ -30,7 +30,7 @@ const createPages = ({ graphql, actions }) => {
   const pages = graphql(`
     {
       pages: allMarkdownRemark(
-        sort: { order: DESC, fields: [fields___date] }
+        sort: { order: DESC, fields: [frontmatter___date] }
         filter: { fields: { sourceName: { eq: "pages" } } }
       ) {
         edges {
@@ -63,7 +63,7 @@ const createPages = ({ graphql, actions }) => {
   const posts = graphql(`
     {
       posts: allMarkdownRemark(
-        sort: { order: DESC, fields: [fields___date] }
+        sort: { order: DESC, fields: [frontmatter___date] }
         filter: {
           frontmatter: { draft: { eq: false } }
           fields: { sourceName: { eq: "posts" } }
@@ -93,7 +93,7 @@ const createPages = ({ graphql, actions }) => {
   const pies = graphql(`
     {
       pies: allMarkdownRemark(
-        sort: { order: DESC, fields: [fields___date] }
+        sort: { order: DESC, fields: [frontmatter___date] }
         filter: { fields: { sourceName: { eq: "pies" } } }
       ) {
         edges {
