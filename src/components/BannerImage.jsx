@@ -2,30 +2,32 @@
 //
 import { css } from '@emotion/react'
 import Img from 'gatsby-image'
+import PropTypes from 'prop-types'
 import * as React from 'react'
 
 import { shevy } from '../utils/style'
 
 const { baseSpacing: bs } = shevy
 
-const Caption = (props) => {
-  const { credits, sourceUrl } = props
+const Caption = ({ credits, sourceUrl }) => (
+  <figcaption
+    css={css`
+      font-style: oblique;
+      font-size: ${bs(1 / 3)};
+    `}
+  >
+    {credits}{' '}
+    <code>
+      <a href={sourceUrl} rel="noopener">
+        source
+      </a>
+    </code>
+  </figcaption>
+)
 
-  return (
-    <figcaption
-      css={css`
-        font-style: oblique;
-        font-size: ${bs(1 / 3)};
-      `}
-    >
-      {credits}{' '}
-      <code>
-        <a href={sourceUrl} rel="noopener">
-          source
-        </a>
-      </code>
-    </figcaption>
-  )
+Caption.propTypes = {
+  credits: PropTypes.string.isRequired,
+  sourceUrl: PropTypes.string.isRequired,
 }
 
 const BannerImage = (props) => {
@@ -54,6 +56,12 @@ const BannerImage = (props) => {
   } else {
     return null
   }
+}
+
+BannerImage.propTypes = {
+  credits: PropTypes.string,
+  sourceUrl: PropTypes.string,
+  image: PropTypes.object.isRequired,
 }
 
 export default BannerImage

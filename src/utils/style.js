@@ -3,7 +3,7 @@
 import { css } from '@emotion/react'
 import Shevy from 'shevyjs'
 
-import reboot from './bootstrap-reboot.css'
+import * as reboot from './bootstrap-reboot.css'
 import {
   deemphasisColor,
   emphasisColor,

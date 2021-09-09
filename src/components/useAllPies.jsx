@@ -7,7 +7,7 @@ const useAllPies = () => {
     graphql`
       query {
         posts: allMarkdownRemark(
-          sort: { order: DESC, fields: [fields___date] }
+          sort: { order: DESC, fields: [frontmatter___date] }
           filter: { fields: { sourceName: { eq: "pies" } } }
         ) {
           edges {

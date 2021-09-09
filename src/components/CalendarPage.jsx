@@ -2,6 +2,7 @@
 // @format
 import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
+import PropType from 'prop-types'
 import React from 'react'
 
 import { heroColor } from '../utils/colors.js'
@@ -97,6 +98,10 @@ class CalendarPage extends React.Component {
       </Wrapper>
     )
   }
+}
+
+CalendarPage.propTypes = {
+  ymdDate: PropType.string.isRequired,
 }
 
 export default CalendarPage

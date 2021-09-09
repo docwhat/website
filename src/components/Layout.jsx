@@ -2,6 +2,7 @@
 //
 import { css, Global } from '@emotion/react'
 import Link from 'gatsby-link'
+import PropType from 'prop-types'
 import * as React from 'react'
 
 import logoUrl from '../icons/logo.svg'
@@ -68,6 +69,10 @@ const Layout = (props) => {
       {children}
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropType.node.isRequired,
 }
 
 export default Layout

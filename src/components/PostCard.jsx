@@ -3,6 +3,7 @@
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 import Link from 'gatsby-link'
+import PropType from 'prop-types'
 import * as React from 'react'
 
 import { lightBackground } from '../utils/colors.js'
@@ -27,6 +28,11 @@ const Title = ({ to, children }) => (
     </Link>
   </h3>
 )
+
+Title.propTypes = {
+  to: PropType.string.isRequired,
+  children: PropType.node.isRequired,
+}
 
 const PostCard = ({ ymdDate, excerpt, overrideCss, slug, title }) => (
   <section
@@ -70,6 +76,14 @@ const PostCard = ({ ymdDate, excerpt, overrideCss, slug, title }) => (
     <ReadMore to={slug} />
   </section>
 )
+
+PostCard.propTypes = {
+  ymdDate: PropType.string.isRequired,
+  excerpt: PropType.string.isRequired,
+  overrideCss: PropType.object,
+  slug: PropType.string.isRequired,
+  title: PropType.string.isRequired,
+}
 
 export default PostCard
 

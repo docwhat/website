@@ -1,5 +1,6 @@
 //
 // @format
+import PropType from 'prop-types'
 import * as React from 'react'
 
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
@@ -32,6 +33,11 @@ class DateNode extends React.Component {
       </time>
     )
   }
+}
+
+DateNode.propTypes = {
+  date: PropType.string.isRequired,
+  title: PropType.string,
 }
 
 export default DateNode

@@ -2,6 +2,7 @@
 // @format
 import { ClassNames, css } from '@emotion/react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 import * as React from 'react'
 
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
@@ -23,6 +24,11 @@ const Reference = (props) => (
     )}
   </ClassNames>
 )
+
+Reference.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+}
 
 const Bio = () => (
   <div
