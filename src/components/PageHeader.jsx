@@ -1,6 +1,7 @@
 //
 // @format
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import * as React from 'react'
 
 import { shevy } from '../utils/style.js'
@@ -62,6 +63,12 @@ const PageHeader = (props) => {
       {updateBlurb}
     </>
   )
+}
+
+PageHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  ymdDate: PropTypes.string,
+  ymdUpdate: PropTypes.string,
 }
 
 export default PageHeader

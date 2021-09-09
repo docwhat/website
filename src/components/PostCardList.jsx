@@ -1,6 +1,7 @@
 //
 // @format
 import { css } from '@emotion/react'
+import PropType from 'prop-types'
 import * as React from 'react'
 
 import { shevy } from '../utils/style.js'
@@ -45,5 +46,9 @@ const PostCardList = (props) => (
     })}
   </div>
 )
+
+PostCardList.propTypes = {
+  postcards: PropType.arrayOf(PropType.node).isRequired,
+}
 
 export default PostCardList

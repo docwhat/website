@@ -7,7 +7,7 @@ const useArchivedPosts = () => {
     graphql`
       query {
         posts: allMarkdownRemark(
-          sort: { order: DESC, fields: [fields___date] }
+          sort: { order: DESC, fields: [frontmatter___date] }
           filter: {
             frontmatter: { draft: { eq: false }, archive: { eq: true } }
             fields: { sourceName: { eq: "posts" } }
