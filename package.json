@@ -53,12 +53,8 @@
     "serve": "gatsby serve",
     "setup": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.css": [
@@ -75,10 +71,10 @@
       "stylelint --fix"
     ],
     "package.json": [
-      "yarn lint:packagejson:fix"
+      "yarn format:packagejson:fix"
     ],
     "yarn.lock": [
-      "yarn lint:yarnlock:fix"
+      "yarn format:yarnlock:fix"
     ]
   },
   "dependencies": {
@@ -158,7 +154,7 @@
     "eslint-plugin-standard": "5.0.0",
     "gatsby-plugin-react-helmet-canonical-urls": "1.4.0",
     "gatsby-remark-external-links": "0.0.4",
-    "husky": "7.0.2",
+    "husky": "^7.0.0",
     "inquirer": "8.1.2",
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "11.1.2",

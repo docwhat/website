@@ -13,4 +13,3 @@ tags
 *.tmp
 *.temp
 tmp/
-/.husky/
