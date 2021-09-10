@@ -1,18 +1,18 @@
 # https://docs.github.com/en/github/administering-a-repository/keeping-your-dependencies-updated-automatically
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
     labels:
-      - ":game_die: dependencies"
-      - ":robot: bot"
+      - ':game_die: dependencies'
+      - ':robot: bot'
 
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
     labels:
-      - ":game_die: dependencies"
-      - ":robot: bot"
+      - ':game_die: dependencies'
+      - ':robot: bot'

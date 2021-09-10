@@ -14,7 +14,7 @@ name: Lint Code Base
 #############################
 # Start the job on all push #
 #############################
-on: ["push", "pull_request"]
+on: ['push', 'pull_request']
 
 ###############
 # Set the Job #
@@ -46,9 +46,8 @@ jobs:
         uses: github/super-linter/slim@v4
         env:
           DISABLE_ERRORS: ${{ github.event_name != 'pull_request' }}
-          DEFAULT_BRANCH: "master"
+          DEFAULT_BRANCH: 'master'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: ${{ github.event_name != 'pull_request' }}
           VALIDATE_MARKDOWN: false
-
 # EOF

@@ -9,18 +9,16 @@ on:
       - '.github/labels.yaml'
       - '.github/workflows/labels.yaml'
   schedule:
-    - cron:  '53 1 * * 0'
+    - cron: '53 1 * * 0'
 
 jobs:
   labeler:
     runs-on: ubuntu-latest
     steps:
-      -
-        # https://github.com/actions/checkout
+      - # https://github.com/actions/checkout
         name: Checkout
         uses: actions/checkout@v2
-      -
-        # https://github.com/crazy-max/ghaction-github-labeler
+      - # https://github.com/crazy-max/ghaction-github-labeler
         name: Run Labeler
         if: success()
         uses: crazy-max/ghaction-github-labeler@v3

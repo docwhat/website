@@ -7,27 +7,27 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "url", "message"]
+  allowedFields: ['name', 'email', 'url', 'message']
 
   # Names of required fields. If any of these isn't in the request or is
   # empty, an error will be thrown.
-  requiredFields: ["name", "email", "message"]
+  requiredFields: ['name', 'email', 'message']
 
-  commitMessage: "New comment by {fields.name}"
+  commitMessage: 'New comment by {fields.name}'
 
   # (*) REQUIRED
   #
   # Name of the branch being used. Must match the one sent in the URL of the
   # request.
-  branch: "master"
+  branch: 'master'
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
-  format: "frontmatter"
+  format: 'frontmatter'
 
-  path: "comments/p-{options.slugdir}"
-  filename: "entry{@timestamp}"
-  extension: "md"
+  path: 'comments/p-{options.slugdir}'
+  filename: 'entry{@timestamp}'
+  extension: 'md'
 
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
@@ -35,12 +35,12 @@ comments:
   # to be used directly (e.g. a string, number or array)
   generatedFields:
     template: comment
-    slugdir: "{options.slugdir}"
-    slug: "{options.slug}"
+    slugdir: '{options.slugdir}'
+    slug: '{options.slug}'
     date:
       type: date
       options:
-        format: "iso8601"
+        format: 'iso8601'
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your
@@ -49,7 +49,7 @@ comments:
   moderation: true
 
   # Name of the site. Used in notification emails.
-  name: "docwhat.org"
+  name: 'docwhat.org'
 
   # Notification settings. When enabled, users can choose to receive
   # notifications via email when someone adds a reply or a new comment. This
@@ -62,12 +62,12 @@ comments:
     # 🔐 RSA encrypted field
     #
     # Mailgun API key
-    apiKey: "Ls8GU1BCXfbOymDS7XIo243+i6AsAoaCUfTGgJiCwTrkWXm4om4I6JKf2s/srb8CyusNhtXTNYTsKErNmn06WLn/HOxEvQnlkNEm7QQ4ed3QLdT9GwNcNfY1cDjnONzmyp5EP7fUpIuKT6n3ij8cfJUtqQ5/b/XFzo6ZvUJNcgM="
+    apiKey: 'Ls8GU1BCXfbOymDS7XIo243+i6AsAoaCUfTGgJiCwTrkWXm4om4I6JKf2s/srb8CyusNhtXTNYTsKErNmn06WLn/HOxEvQnlkNEm7QQ4ed3QLdT9GwNcNfY1cDjnONzmyp5EP7fUpIuKT6n3ij8cfJUtqQ5/b/XFzo6ZvUJNcgM='
 
     # 🔐 RSA encrypted field
     #
     # Mailgun domain (encrypted)
-    domain: "swjkTX9wXI/hVxfvu27TccVXSauw+bIP5Dw1xGbi6P9ZNDgC9RLfbmXVlvdBKZ73QuJdPTFeZIHLsieKOGwSPNL4N5eJAOGdIKmxjbPG2hak6AVxKqOPiVm7hKQrwrY7aPnfAC+ZD30reCpNXYhjMozV1vtuzHouaXHb649bw0Q="
+    domain: 'swjkTX9wXI/hVxfvu27TccVXSauw+bIP5Dw1xGbi6P9ZNDgC9RLfbmXVlvdBKZ73QuJdPTFeZIHLsieKOGwSPNL4N5eJAOGdIKmxjbPG2hak6AVxKqOPiVm7hKQrwrY7aPnfAC+ZD30reCpNXYhjMozV1vtuzHouaXHb649bw0Q='
 
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
@@ -87,5 +87,4 @@ comments:
   #   #
   #   # Encrypted Secret for your reCAPTCHA site registration
   #   secret: "HxjRkHBC9KGoa7rBLWS5L6mmWcIem/aJewy+hvao4gwXNengRVD+Xgjqffkt1JSzVr20wGWc1kG6RDx8y79kUyLGfcrUDro127Hvi+U7A8gnE4snDsXeYUPTnTxR0nbUqO4PmUApmNZf54IOtOyHZHmTFdV19/dvqJopL1jhByo="
-
 # EOF
