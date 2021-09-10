@@ -2,6 +2,7 @@
 //
 import styled from '@emotion/styled'
 import { withPrefix } from 'gatsby'
+import { PropTypes } from 'prop-types'
 import React from 'react'
 
 import Layout from '../components/Layout.jsx'
@@ -83,5 +84,9 @@ const ContactForm = (props) => (
     </form>
   </Layout>
 )
+
+ContactForm.propTypes = {
+  location: PropTypes.object.isRequired,
+}
 
 export default ContactForm

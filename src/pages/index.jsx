@@ -4,6 +4,7 @@
 // @ts-nocheck
 import { css } from '@emotion/react'
 import Link from 'gatsby-link'
+import { PropTypes } from 'prop-types'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -90,6 +91,10 @@ const SiteIndex = (props) => {
       </>
     </Layout>
   )
+}
+
+SiteIndex.propTypes = {
+  location: PropTypes.object.isRequired,
 }
 
 export default SiteIndex

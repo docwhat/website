@@ -2,6 +2,7 @@
 //
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
+import { PropTypes } from 'prop-types'
 import * as React from 'react'
 
 import BannerImage from '../components/BannerImage.jsx'
@@ -27,6 +28,10 @@ const PostActions = (props) => (
     </a>
   </SmallPrint>
 )
+
+PostActions.propTypes = {
+  editLink: PropTypes.string.isRequired,
+}
 
 const PostTemplate = (props) => {
   const {
@@ -91,6 +96,34 @@ const PostTemplate = (props) => {
       </article>
     </Layout>
   )
+}
+
+PostTemplate.propTypes = {
+  pageContext: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      fields: PropTypes.shape({
+        banner: PropTypes.shape({
+          credits: PropTypes.string,
+          sourceUrl: PropTypes.string,
+          image: PropTypes.shape({
+            publicURL: PropTypes.string,
+          }),
+        }),
+        slug: PropTypes.string.isRequired,
+        editLink: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        ymdDate: PropTypes.string.isRequired,
+        ymdUpdate: PropTypes.string.isRequired,
+      }),
+      wordCount: PropTypes.shape({
+        words: PropTypes.number.isRequired,
+      }),
+      html: PropTypes.string.isRequired,
+      excerpt: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
 }
 
 export default PostTemplate

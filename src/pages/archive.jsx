@@ -1,5 +1,6 @@
 // @format
 //
+import { PropTypes } from 'prop-types'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -8,10 +9,10 @@ import Layout from '../components/Layout'
 import PostCardList from '../components/PostCardList'
 import useArchivedPosts from '../components/useArchivedPosts.jsx'
 
-const SiteIndex = (props) => {
+const SiteIndex = ({ location }) => {
   const posts = useArchivedPosts()
   return (
-    <Layout location={props.location}>
+    <Layout location={location}>
       <>
         <Helmet title="Post Archive" />
         <h1>Post Archive</h1>
@@ -21,6 +22,10 @@ const SiteIndex = (props) => {
       </>
     </Layout>
   )
+}
+
+SiteIndex.propTypes = {
+  location: PropTypes.object.isRequired,
 }
 
 export default SiteIndex
