@@ -1,6 +1,7 @@
 // @format
 //
 import { graphql } from 'gatsby'
+import { PropTypes } from 'prop-types'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
@@ -38,6 +39,20 @@ const PageTemplate = (props) => {
       </article>
     </Layout>
   )
+}
+
+PageTemplate.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      fields: PropTypes.shape({
+        title: PropTypes.string,
+      }),
+      html: PropTypes.string,
+    }),
+  }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }).isRequired,
 }
 
 export default PageTemplate
