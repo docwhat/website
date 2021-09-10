@@ -7,12 +7,10 @@ import PropType from 'prop-types'
 import * as React from 'react'
 
 import { lightBackground } from '../utils/colors.js'
-import { shevy } from '../utils/style.js'
+import { bs } from '../utils/shevy.js'
 import Date from './Date.jsx'
 import ReadMore from './ReadMore.jsx'
 import SmallPrint from './SmallPrint.jsx'
-
-const { baseSpacing: bs } = shevy
 
 const Title = ({ to, children }) => (
   <h3

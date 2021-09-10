@@ -7,9 +7,7 @@ import React from 'react'
 
 import Layout from '../components/Layout.jsx'
 import StyledButton from '../components/StyledButton.jsx'
-import { shevy } from '../utils/style.js'
-
-const { baseSpacing: bs } = shevy
+import { bs } from '../utils/shevy.js'
 
 const MyLabel = styled.label`
   display: inline-block;

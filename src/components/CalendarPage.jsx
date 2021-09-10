@@ -7,10 +7,7 @@ import React from 'react'
 
 import { heroColor } from '../utils/colors.js'
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
-import { shevy } from '../utils/style.js'
-
-const { baseSpacing: bs, lineHeightSpacing: lhs } = shevy
-
+import { bs, lhs } from '../utils/shevy.js'
 class CalendarPage extends React.Component {
   state = {
     monthName: '',

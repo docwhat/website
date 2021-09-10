@@ -4,9 +4,7 @@ import styled from '@emotion/styled'
 // eslint-disable-next-line no-unused-vars
 import * as React from 'react'
 
-import { shevy } from '../utils/style'
-
-const { baseSpacing: bs } = shevy
+import { bs } from '../utils/shevy.js'
 
 export default styled.small`
   font-size: 65%;

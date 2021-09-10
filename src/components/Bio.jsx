@@ -13,9 +13,7 @@ import { ReactComponent as GithubLogo } from '../icons/github.svg'
 import { ReactComponent as Key } from '../icons/key.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
-import { shevy } from '../utils/style.js'
-
-const { baseSpacing: bs } = shevy
+import { bs } from '../utils/shevy.js'
 
 const Reference = (props) => (
   <ClassNames>

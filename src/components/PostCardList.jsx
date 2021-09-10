@@ -4,10 +4,8 @@ import { css } from '@emotion/react'
 import PropType from 'prop-types'
 import * as React from 'react'
 
-import { shevy } from '../utils/style.js'
+import { bs } from '../utils/shevy.js'
 import PostCard from './PostCard.jsx'
-
-const { baseSpacing: bs } = shevy
 
 const PostCardList = (props) => (
   <div
@@ -48,7 +46,7 @@ const PostCardList = (props) => (
 )
 
 PostCardList.propTypes = {
-  postcards: PropType.arrayOf(PropType.node).isRequired,
+  postcards: PropType.arrayOf(PropType.object).isRequired,
 }
 
 export default PostCardList

@@ -3,7 +3,7 @@
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 import { PropTypes } from 'prop-types'
-import * as React from 'react'
+import React from 'react'
 
 import BannerImage from '../components/BannerImage.jsx'
 import Bio from '../components/Bio'
@@ -142,9 +142,7 @@ export const postQuery = graphql`
           image {
             publicURL
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }

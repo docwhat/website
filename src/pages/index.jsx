@@ -16,9 +16,7 @@ import TheNet from '../components/TheNet'
 import useAllPosts from '../components/useAllPosts'
 import { siteTitle } from '../utils/constants'
 import { blogJsonLD } from '../utils/ldjson'
-import { shevy } from '../utils/style.js'
-
-const { baseSpacing: bs } = shevy
+import { bs } from '../utils/shevy.js'
 
 // https://jsonld-examples.com/schema.org/code/blog-markup.php
 const jsonLdData = {

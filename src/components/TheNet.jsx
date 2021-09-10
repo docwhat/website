@@ -5,9 +5,8 @@ import { css } from '@emotion/react'
 import Link from 'gatsby-link'
 import React from 'react'
 
-import { serifFonts, shevy } from '../utils/style'
-
-const { baseSpacing: bs } = shevy
+import { serifFonts } from '../utils/style.js'
+import { bs } from '../utils/shevy.js'
 
 const theCss = css({
   fontSize: bs(1 / 2),

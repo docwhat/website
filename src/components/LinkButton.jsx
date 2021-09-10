@@ -5,9 +5,8 @@ import styled from '@emotion/styled'
 import Link from 'gatsby-link'
 
 import { heroColor } from '../utils/colors.js'
-import { shevy } from '../utils/style.js'
+import { bs } from '../utils/shevy.js'
 
-const { baseSpacing: bs } = shevy
 const color = heroColor.negate()
 const background = heroColor
 

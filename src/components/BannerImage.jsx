@@ -1,13 +1,11 @@
 // @format
 //
 import { css } from '@emotion/react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 import * as React from 'react'
 
-import { shevy } from '../utils/style'
-
-const { baseSpacing: bs } = shevy
+import { bs } from '../utils/shevy.js'
 
 const Caption = ({ credits, sourceUrl }) => (
   <figcaption
@@ -30,23 +28,17 @@ Caption.propTypes = {
   sourceUrl: PropTypes.string.isRequired,
 }
 
-const BannerImage = (props) => {
-  const { credits, sourceUrl, image } = props
-
+const BannerImage = ({ credits, sourceUrl, image }) => {
   const caption = credits ? (
     <Caption credits={credits} sourceUrl={sourceUrl} />
   ) : (
     ''
   )
-  if (
-    props.image &&
-    props.image.childImageSharp &&
-    props.image.childImageSharp.fluid
-  ) {
+  if (image && image.childImageSharp) {
     return (
       <figure>
-        <Img
-          fluid={image.childImageSharp.fluid}
+        <GatsbyImage
+          image={image.childImageSharp.gatsbyImageData}
           title={credits || null}
           alt=""
         />
@@ -61,7 +53,7 @@ const BannerImage = (props) => {
 BannerImage.propTypes = {
   credits: PropTypes.string,
   sourceUrl: PropTypes.string,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.object,
 }
 
 export default BannerImage

@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import * as React from 'react'
 
-import { shevy } from '../utils/style.js'
+import { shevy } from '../utils/shevy.js'
 import CalendarPage from './CalendarPage.jsx'
 import Date from './Date.jsx'
 import SmallPrint from './SmallPrint.jsx'

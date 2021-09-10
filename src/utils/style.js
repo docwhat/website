@@ -1,7 +1,7 @@
 //
 // @format
 import { css } from '@emotion/react'
-import Shevy from 'shevyjs'
+import { shevy } from './shevy.js'
 
 import * as reboot from './bootstrap-reboot.css'
 import {
@@ -14,22 +14,13 @@ import {
 } from './colors'
 import { MOBILE_MEDIA_QUERY } from './media-queries'
 
-const base = {
-  baseFontSize: '20px',
-  baseLineHeight: '1.5',
-  baseFontScale: 'minorThird',
-  proximity: false,
-}
-const leading =
-  parseInt(base.baseFontSize, 10) * parseFloat(base.baseLineHeight)
-
 export const serifFonts = `"Hoefler Text", Constantia, Georgia, serif`
 
-export const shevy = new Shevy(base)
+const { lineHeightSpacing: lhs, baseSpacing: bs } = shevy // Destructure and alias methods
 
 const {
-  baseSpacing: bs,
-  lineHeightSpacing: lhs,
+  // baseSpacing: bs,
+  // lineHeightSpacing: lhs,
   h1,
   h2,
   h3,
@@ -39,6 +30,8 @@ const {
   body,
   content,
 } = shevy
+
+const leading = parseFloat(content.fontSize) * parseFloat(content.lineHeight)
 
 const globalCss = css`
   ${reboot}

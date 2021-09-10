@@ -9,8 +9,7 @@ import logoUrl from '../icons/logo.svg'
 import { MOBILE_MEDIA_QUERY } from '../utils/media-queries.js'
 import prismCss from '../utils/prism-style.js'
 import globalCss, { shevy } from '../utils/style.js'
-
-const { baseSpacing: bs } = shevy
+import { bs } from '../utils/shevy.js'
 
 const Layout = (props) => {
   const { children } = props
