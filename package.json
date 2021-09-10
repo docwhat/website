@@ -162,7 +162,7 @@
     "inquirer-datepicker-prompt": "0.4.2",
     "lint-staged": "11.1.2",
     "object-assign": "4.1.1",
-    "prettier": "2.3.2",
+    "prettier": "2.4.0",
     "remark-cli": "10.0.0",
     "remark-frontmatter": "4.0.0",
     "remark-github": "11.1.0",
