@@ -133,7 +133,7 @@
     "react-helmet": "6.1.0",
     "react-hot-loader": "4.13.0",
     "react-refresh": "0.10.0",
-    "shevyjs": "1.2.0",
+    "shevyjs": "2.1.0",
     "strip-markdown": "5.0.0",
     "uuid": "8.3.2",
     "webpack": "4.46.0"

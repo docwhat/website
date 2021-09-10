@@ -16496,10 +16496,10 @@ shell-quote@1.6.1:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
-shevyjs@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/shevyjs/-/shevyjs-1.2.0.tgz#5c66e5b2a9d01a658635badeffae802d27b99def"
-  integrity sha512-OT45CwnWQKYOwbyLU5iw/mKrKUUxJSzuC+rjI8mUvJcswCzGqV4t/p2q03eo3CKsbfYOSIyG6mHU8z0cpZnYcA==
+shevyjs@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/shevyjs/-/shevyjs-2.1.0.tgz#c4889d23e7054543124fa07623a4da2e1098e944"
+  integrity sha512-hiisabQM39SFgrJAQWHgix8nzcCPPyrZu8vEXayJf/hOIW4IKSoiZ2hlsWYaUYiX+7k0+HUPNcaPbhxSfl1BCg==
 
 side-channel@^1.0.4:
   version "1.0.4"
