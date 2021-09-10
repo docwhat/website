@@ -1,3 +1,14 @@
-/package.json
+# npm/yarn
+/node_modules/
+
+# gatsby
 /public/
 /.cache/
+
+/package.json
+
+# keys and verification files
+/static/*.html
+
+# third-party files
+/src/utils/bootstrap-reboot.css
