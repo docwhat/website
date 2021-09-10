@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "remark-github",
+    "remark-frontmatter"
+  ],
+  "settings": {
+    "footnotes": true
+  }
+}

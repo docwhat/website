@@ -33,21 +33,20 @@
     "docker:build": "yarn build && yarn compress && script/build",
     "docker:run": "docker container run --rm --detach --publish=8000:80 --name=docwhat.org docwhat:local",
     "docker:stop": "docker container rm -f docwhat.org",
-    "lint": "yarn run lint:js && yarn run lint:css && yarn run lint:md && yarn run lint:packagejson && yarn run lint:yarnlock",
-    "lint:css": "stylelint './src/**/*.{js,jsx,css}'",
-    "lint:css:fix": "stylelint --fix './src/**/*.{js,jsx,css}'",
-    "lint:fix": "yarn run lint:js:fix && yarn run lint:css:fix && yarn run lint:md:fix && yarn run lint:text:fix && yarn run lint:packagejson:fix && yarn run lint:yarnlock:fix",
-    "lint:js": "eslint '**/*.{js,jsx}'",
-    "lint:js:fix": "prettier --write '**/*.{js,jsx}'",
-    "lint:md": "remark --frail --quiet --no-stdout 'content/**/*.md'",
-    "lint:md:fix": "prettier --write 'content/**/*.md'",
-    "lint:md:watch": "remark 'content/**/*.md' --watch",
-    "lint:packagejson": "yarn run sort-package-json --check",
-    "lint:packagejson:fix": "yarn run sort-package-json",
-    "lint:text": "textlint 'content/**/*.md' '*.md'",
-    "lint:text:fix": "textlint --fix 'content/**/*.md' '*.md'",
-    "lint:yarnlock": "yarn run yarn-deduplicate --list",
-    "lint:yarnlock:fix": "yarn run yarn-deduplicate",
+    "format": "yarn format:prettier && yarn format:packagejson && yarn format:yarnlock",
+    "format:fix": "yarn format:prettier:fix && yarn format:packagejson:fix && yarn format:yarnlock:fix",
+    "format:prettier": "prettier --check '**/*.{js,jsx,md,yml,yaml,css,graphql,json,json5,html}'",
+    "format:prettier:fix": "prettier --write '**/*.{js,jsx,md,yml,yaml,css,graphql,json,json5,html}'",
+    "format:packagejson": "yarn run sort-package-json --check",
+    "format:packagejson:fix": "yarn run sort-package-json",
+    "format:yarnlock": "yarn run yarn-deduplicate --list",
+    "format:yarnlock:fix": "yarn run yarn-deduplicate",
+    "lint": "yarn lint:eslint && yarn lint:stylelint && yarn lint:textlint",
+    "lint:fix": "yarn lint:eslint:fix && yarn lint:stylelint:fix && yarn lint:textlint:fix",
+    "lint:stylelint": "stylelint './**/*.{js,jsx,html,css}'",
+    "lint:stylelint:fix": "stylelint --fix './**/*.{js,jsx,html,css}'",
+    "lint:eslint": "eslint .",
+    "lint:eslint:fix": "eslint --fix .",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
     "setup": "yarn install",
@@ -61,16 +60,17 @@
   },
   "lint-staged": {
     "**/*.css": [
-      "stylelint"
+      "stylelint --fix"
     ],
     "**/*.md": [
+      "textlint --fix",
       "prettier --write",
       "remark"
     ],
     "**/*.{js,jsx}": [
+      "eslint --fix",
       "prettier --write",
-      "eslint",
-      "stylelint"
+      "stylelint --fix"
     ],
     "package.json": [
       "yarn lint:packagejson:fix"
@@ -78,15 +78,6 @@
     "yarn.lock": [
       "yarn lint:yarnlock:fix"
     ]
-  },
-  "remarkConfig": {
-    "plugins": [
-      "remark-github",
-      "remark-frontmatter"
-    ],
-    "settings": {
-      "footnotes": true
-    }
   },
   "dependencies": {
     "@babel/core": "7.15.0",
@@ -170,14 +161,13 @@
     "lint-staged": "11.1.1",
     "object-assign": "4.1.1",
     "prettier": "2.3.2",
-    "prettier-eslint-cli": "5.0.1",
-    "prettier-stylelint": "0.4.2",
     "remark-cli": "10.0.0",
     "remark-frontmatter": "4.0.0",
     "remark-github": "11.1.0",
     "remark-preset-github": "4.0.1",
     "sort-package-json": "1.50.0",
     "stylelint": "13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "5.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "textlint": "12.0.2",
