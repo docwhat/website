@@ -3,12 +3,12 @@ name: dependabot validate
 on:
   push:
     paths:
-      - ".github/dependabot.yaml"
-      - ".github/workflows/dependabot-validate.yaml"
+      - '.github/dependabot.yaml'
+      - '.github/workflows/dependabot-validate.yaml'
   pull_request:
     paths:
-      - ".github/dependabot.yaml"
-      - ".github/workflows/dependabot-validate.yaml"
+      - '.github/dependabot.yaml'
+      - '.github/workflows/dependabot-validate.yaml'
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
       - uses: marocchino/validate-dependabot@v1
         id: validate
         with:
-          path: ".github/dependabot.yaml"
+          path: '.github/dependabot.yaml'
       - uses: marocchino/sticky-pull-request-comment@v2
         if: always()
         with:

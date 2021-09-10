@@ -1,7 +1,7 @@
 name: Auto-merge Dependabot PRs
 on:
   schedule:
-    - cron: "23 */6 * * *"
+    - cron: '23 */6 * * *'
 jobs:
   auto_merge:
     name: Auto-merge Dependabot PRs
@@ -10,4 +10,4 @@ jobs:
       - uses: akheron/dependabot-cron-action@d020867c009553e279f0200b621459444828a9b0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          merge-method: "squash"
+          merge-method: 'squash'
