@@ -47,6 +47,8 @@
     "lint:stylelint:fix": "stylelint --fix './**/*.{js,jsx,html,css}'",
     "lint:eslint": "eslint .",
     "lint:eslint:fix": "eslint --fix .",
+    "lint:textlint": "textlint .",
+    "lint:textlint:fix": "textlint --fix .",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
     "setup": "yarn install",
