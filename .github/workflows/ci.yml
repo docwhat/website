@@ -10,11 +10,11 @@ on:
       - master
       - main
     paths:
-      - '.github/workflows/ci.yml'
-      - '.github/workflows/ci.yaml'
+      - '**'
       - '!.github/**'
       - '!.vscode/**'
       - '!.devcontainer/**'
+      - '.github/workflows/ci.yml'
 
 jobs:
   build:
