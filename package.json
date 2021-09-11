@@ -78,6 +78,7 @@
     ]
   },
   "resolutions": {
+    "gatsby/**/xmlhttprequest-ssl": "^1.6.2",
     "gatsby/react-dev-utils/browserslist": "^4.16.5"
   },
   "dependencies": {
