@@ -6,9 +6,11 @@ import {
   deemphasisColor,
   emphasisColor,
   heroColor,
+  lightBackground,
   mellowColor,
 } from './colors.js'
 import { MOBILE_MEDIA_QUERY } from './media-queries.js'
+import { bs } from './shevy.js'
 
 /**
  * Based on:
@@ -186,6 +188,51 @@ const prismCss = css`
     .line-numbers-rows > span {
       display: none;
     }
+  }
+
+  .gatsby-highlight[data-language] {
+    margin-top: ${bs(1)};
+    position: relative;
+  }
+
+  .command-line-prompt > span[data-host='localhost']::before {
+    content: '[' attr(data-user) '] $';
+  }
+
+  .command-line-prompt > span[data-user='root'][data-host='localhost']::before {
+    content: '[' attr(data-user) '] #';
+  }
+
+  .gatsby-highlight[data-language]::before {
+    content: attr(data-language);
+    background: ${emphasisColor.string()};
+    border-radius: 4px 4px 0 0;
+    color: ${lightBackground.string()};
+    font-size: 0.6rem;
+    letter-spacing: 0.075em;
+    line-height: 1;
+    padding: 0.25em 1em;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    text-transform: uppercase;
+    top: -1.5em;
+  }
+
+  .gatsby-highlight[data-language='bash']::before {
+    content: 'shell';
+  }
+
+  .gatsby-highlight[data-language='javascript']::before {
+    content: 'js';
+  }
+
+  .gatsby-highlight[data-language='typescript']::before {
+    content: 'ts';
+  }
+
+  .gatsby-highlight[data-language='yml']::before {
+    content: 'yaml';
   }
 `
 

@@ -37,6 +37,8 @@ are supported. To modify styling and highlight colors edit
 }
 ```
 
+### Javascript
+
 ```javascript{1,4-6}
 // Highlighting lines 1 and 4-6
 plugins: [
@@ -49,27 +51,7 @@ plugins: [
 ]
 ```
 
-```html
-{% raw %}
-<nav class="pagination" role="navigation">
-    {% if page.previous %}
-    <a
-        href="{{ site.url }}{{ page.previous.url }}"
-        class="btn"
-        title="{{ page.previous.title }}"
-        >Previous article</a
-    >
-    {% endif %} {% if page.next %}
-    <a
-        href="{{ site.url }}{{ page.next.url }}"
-        class="btn"
-        title="{{ page.next.title }}"
-        >Next article</a
-    >
-    {% endif %}
-</nav>
-<!-- /.pagination -->{% endraw %}
-```
+### Ruby
 
 ```ruby
 module Jekyll
@@ -91,6 +73,115 @@ module Jekyll
 end
 ```
 
+### JSON
+
+```json
+{
+    "name": "John Doe"
+}
+```
+
+```json5
+{
+    // comment
+    name: 'John Doe',
+}
+```
+
+### TypeScript
+
+```typescript
+// Type Guarding is the term where you influence the code
+// flow analysis via code. TypeScript uses existing JavaScript
+// behavior which validates your objects at runtime to influence
+// the code flow. This example assumes you've read example:code-flow
+
+// To run through these examples, we'll create some classes,
+// here's a system for handling internet or telephone orders.
+
+interface Order {
+    address: string
+}
+interface TelephoneOrder extends Order {
+    callerNumber: string
+}
+interface InternetOrder extends Order {
+    email: string
+}
+
+// Then a type which could be one of the two Order subtypes or undefined
+type PossibleOrders = TelephoneOrder | InternetOrder | undefined
+
+// And a function which returns a PossibleOrder
+declare function getOrder(): PossibleOrders
+const possibleOrder = getOrder()
+```
+
+```ts
+// This is also typescript.
+const isTS = true
+```
+
+### YAML
+
+```yaml
+version: 1.0
+stringy: 'now is the time for all good men to come to'
+items:
+    apples: 23
+    oranges: 34
+numbers:
+    - 10
+    - 100
+    - 23
+```
+
+```yml
+also_yaml: true
+```
+
+### Shell & prompts
+
+A fancy prompt on anything with shell or bash:
+
+```sh{promptUser: alice}{promptHost: dev.localhost}{outputLines: 2-14}
+cat -v /etc/hosts
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+```
+
+```bash{promptUser: root}{promptHost: 'localhost'}{outputLines: 2-10}
+gh pr list --label ":robot: bot" --jq '.[] \
+    | select(.mergeStateStatus == "CLEAN")' --json number,mergeStateStatus \
+    | jq -r '"gh pr comment --body \"@dependabot merge\" \(.number)"'
+```
+
+```zsh
+$ echo $SHELL
+zsh
+```
+
+```console
+$ whoami
+docwhat
+```
+
+```shell-session
+$ id
+uid=501(docwhat) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),701(com.apple.sharepoint.group.1),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
+```
+
 ### Code Blocks in Lists
 
 Indentation matters. Be sure the indent of the code block aligns with the
@@ -109,6 +200,27 @@ this will mean indenting 3 spaces instead of 4.
     ```
 
 3)  Now you can do this.
+
+### Diff with language syntax highlighting
+
+```diff-javascript
+diff --git a/gatsby-config.js b/gatsby-config.js
+index 67570ba6..eed27646 100644
+--- a/gatsby-config.js
++++ b/gatsby-config.js
+@@ -120,6 +120,11 @@ module.exports = {
+                 viml: `vim`,
+                 zsh: `bash`,
+               },
++              prompt: {
++                user: 'docwhat',
++                host: 'tardis',
++                global: false,
++              },
+             },
+           },
+         ],
+```
 
 ### inlineCode highligthing
 
@@ -141,8 +253,4 @@ An example of a code file embed below.
 
 `embed:gist-2973488/function.vim`
 
-### GitHub Gist Embed
-
-An example of a Gist embed below.
-
-<script src="https://gist.github.com/mmistakes/77c68fbb07731a456805a7b473f47841.js"></script>
+The above should be some vim code.

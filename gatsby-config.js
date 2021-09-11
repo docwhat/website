@@ -120,6 +120,11 @@ module.exports = {
                 viml: `vim`,
                 zsh: `bash`,
               },
+              prompt: {
+                user: 'docwhat',
+                host: 'tardis',
+                global: false,
+              },
             },
           },
         ],

@@ -1,5 +1,7 @@
 // @format
 //
+import 'prismjs/plugins/command-line/prism-command-line.css'
+
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 import { PropTypes } from 'prop-types'

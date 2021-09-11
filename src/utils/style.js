@@ -1,7 +1,5 @@
-//
 // @format
 import { css } from '@emotion/react'
-import { shevy } from './shevy.js'
 
 import * as reboot from './bootstrap-reboot.css'
 import {
@@ -13,6 +11,7 @@ import {
   mellowColor,
 } from './colors'
 import { MOBILE_MEDIA_QUERY } from './media-queries'
+import { shevy } from './shevy.js'
 
 export const serifFonts = `"Hoefler Text", Constantia, Georgia, serif`
 
