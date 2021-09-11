@@ -78,7 +78,8 @@
     ]
   },
   "resolutions": {
-    "gatsby/**/xmlhttprequest-ssl": "^1.6.2",
+    "**/graphql-config/**/ws": "^7.4.6",
+    "**/remark-parse/trim": "^1.0.0",
     "gatsby/react-dev-utils/browserslist": "^4.16.5"
   },
   "dependencies": {
