@@ -10,7 +10,7 @@
 
 ## Developing
 
-```console
+```sh
 yarn install
 gatsby develop
 ```

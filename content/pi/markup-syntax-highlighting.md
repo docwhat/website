@@ -172,7 +172,7 @@ $ echo $SHELL
 zsh
 ```
 
-```console
+```sh
 $ whoami
 docwhat
 ```
