@@ -119,7 +119,7 @@
     "gatsby-source-filesystem": "^3.13.0",
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^3.13.0",
-    "gatsby-transformer-yaml": "^3.13.0",
+    "gatsby-transformer-yaml": "^3.14.0",
     "lodash": "~4.17.21",
     "moment": "~2.29.1",
     "pify": "~5.0.0",
