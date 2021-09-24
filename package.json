@@ -98,7 +98,7 @@
     "gatsby-cli": "^3.13.0",
     "gatsby-pagination": "^1.2.0",
     "gatsby-plugin-catch-links": "^3.14.0",
-    "gatsby-plugin-emotion": "^6.13.0",
+    "gatsby-plugin-emotion": "^6.14.0",
     "gatsby-plugin-google-analytics": "^3.13.0",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-react-helmet": "^4.13.0",
@@ -132,11 +132,11 @@
     "react-helmet": "~6.1.0",
     "react-hot-loader": "~4.13.0",
     "react-refresh": "0.10.0",
-    "replace-ext": "~1.0.1",
+    "replace-ext": "~2.0.0",
     "shevyjs": "^2.1.0",
     "strip-markdown": "~5.0.0",
     "uuid": "~8.3.2",
-    "vfile": "~4.2.1",
+    "vfile": "~5.1.0",
     "webpack": "~5.52.0"
   },
   "devDependencies": {
