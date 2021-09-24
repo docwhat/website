@@ -116,7 +116,7 @@
     "gatsby-remark-responsive-iframe": "^4.11.0",
     "gatsby-remark-smartypants": "^4.11.0",
     "gatsby-remark-source-name": "^1.0.0",
-    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^3.13.0",
     "gatsby-transformer-yaml": "^3.14.0",
