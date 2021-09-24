@@ -167,7 +167,7 @@
     "remark-frontmatter": "~4.0.0",
     "remark-github": "~11.1.0",
     "remark-preset-github": "~4.0.1",
-    "sort-package-json": "~1.51.0",
+    "sort-package-json": "~1.52.0",
     "stylelint": "~13.13.1",
     "stylelint-config-prettier": "~8.0.2",
     "stylelint-config-recommended": "~5.0.0",
