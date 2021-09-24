@@ -41,7 +41,7 @@
     "format:packagejson:fix": "yarn run sort-package-json",
     "format:yarnlock": "yarn run yarn-deduplicate --list",
     "format:yarnlock:fix": "yarn run yarn-deduplicate",
-    "lint": "yarn lint:eslint && yarn lint:stylelint && yarn lint:textlint",
+    "lint": "node --version && yarn lint:eslint && yarn lint:stylelint && yarn lint:textlint",
     "lint:fix": "yarn lint:eslint:fix && yarn lint:stylelint:fix && yarn lint:textlint:fix",
     "lint:stylelint": "stylelint './**/*.{js,jsx,html,css}'",
     "lint:stylelint:fix": "stylelint --fix './**/*.{js,jsx,html,css}'",
