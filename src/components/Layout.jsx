@@ -4,12 +4,14 @@ import { css, Global } from '@emotion/react'
 import Link from 'gatsby-link'
 import PropType from 'prop-types'
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 
 import logoUrl from '../icons/logo.svg'
+import { heroColor } from '../utils/colors.js'
 import { MOBILE_MEDIA_QUERY } from '../utils/media-queries.js'
 import prismCss from '../utils/prism-style.js'
-import globalCss, { shevy } from '../utils/style.js'
 import { bs } from '../utils/shevy.js'
+import globalCss from '../utils/style.js'
 
 const Layout = (props) => {
   const { children } = props
@@ -18,6 +20,9 @@ const Layout = (props) => {
     <>
       <Global styles={globalCss} />
       <Global styles={prismCss} />
+      <Helmet>
+        <meta name="theme-color" content={heroColor} />
+      </Helmet>
       <header
         css={css`
           font-size: ${bs(2)};
