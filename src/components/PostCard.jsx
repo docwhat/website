@@ -6,7 +6,7 @@ import Link from 'gatsby-link'
 import PropType from 'prop-types'
 import * as React from 'react'
 
-import { lightBackground } from '../utils/colors.js'
+import { darkBackground, lightBackground } from '../utils/colors.js'
 import { bs } from '../utils/shevy.js'
 import Date from './Date.jsx'
 import ReadMore from './ReadMore.jsx'
@@ -67,6 +67,12 @@ const PostCard = ({ ymdDate, excerpt, overrideCss, slug, title }) => (
             ${lightBackground.fade(1).string()},
             ${lightBackground.string()}
           );
+          @media (prefers-color-scheme: dark) {
+            background: linear-gradient(
+              ${darkBackground.fade(1).string()},
+              ${darkBackground.string()}
+            );
+          }
         }
       `}
       dangerouslySetInnerHTML={{ __html: excerpt }}
