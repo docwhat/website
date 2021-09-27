@@ -27,10 +27,10 @@ const prismCss = css`
   }
 
   pre[class*='language-']::selection,
-  pre[class*='language-'] ::selection,
+  pre[class*='language-']::selection,
   code[class*='language-']::selection,
-  code[class*='language-'] ::selection {
-    background-color: ${heroColor.string()};
+  code[class*='language-']::selection {
+    background-color: var(--hero-color);
   }
 
   /* Code blocks */
@@ -129,6 +129,7 @@ const prismCss = css`
 
   .gatsby-highlight-code-line {
     background-color: ${heroColor.saturationl(100).lightness(93).string()};
+    background-color: var(--hero-color);
     display: block;
     margin: 0 -1ch;
     padding: 0 1ch;

@@ -4,33 +4,44 @@
 import styled from '@emotion/styled'
 import Link from 'gatsby-link'
 
-import { heroColor } from '../utils/colors.js'
 import { bs } from '../utils/shevy.js'
 
-const color = heroColor.negate()
-const background = heroColor
-
 export default styled(Link)`
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: ${bs(1 / 2)};
-  background-color: ${background.desaturate(0.3).lighten(0.3).string()};
-  color: ${color.desaturate(0.3).lighten(0.3).string()};
-  user-select: none;
+  background-color: var(--button-bg-color);
+  border-radius: ${bs(1)};
+  color: var(--button-text-color);
   cursor: pointer;
+  display: block;
+  font-size: ${bs(1 / 2)};
   height: ${bs(1 + 1 / 4)};
   line-height: ${bs(1 + 1 / 4)};
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--middle-color);
+  transition: 0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97);
+  user-select: none;
   width: ${bs(5)};
-  border-radius: ${bs(1)};
+  z-index: 100;
+
   &:hover {
+    background-color: var(--button-hover-bg-color);
+    box-shadow: 1px 1px 4px var(--middle-color);
+    color: var(--button-hover-text-color);
     text-decoration: none;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    background-color: ${background.string()};
-    color: ${color.string()};
+    text-shadow: 1px 1px 5px black;
+    transform: translateY(-2px);
   }
+
+  &:focus {
+    outline: 0;
+  }
+
   &:active {
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    box-shadow: none;
+    filter: brightness(1.2);
+    text-shadow: 1px 1px 2px var(--middle-color);
+    transform: translateY(2px);
   }
 `

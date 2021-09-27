@@ -5,9 +5,9 @@ import { graphql } from 'gatsby'
 import PropType from 'prop-types'
 import React from 'react'
 
-import { heroColor } from '../utils/colors.js'
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
 import { bs, lhs } from '../utils/shevy.js'
+
 class CalendarPage extends React.Component {
   state = {
     monthName: '',
@@ -28,18 +28,16 @@ class CalendarPage extends React.Component {
     const { ymdDate } = this.props
     const date = ymdString2Date(ymdDate)
 
-    const bannerColor = heroColor.darken(0.0)
-    const fontColor = bannerColor.negate()
-
     const year = date.getFullYear()
     const dayOfMonth = date.getDate()
     const monthName = date.toLocaleDateString('en-US', { month: 'short' })
 
     const Wrapper = styled.time`
-      background-color: #fff;
+      background-color: var(--bg-color);
       border-radius: ${bs(1 / 4)};
-      box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff,
-        0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+      box-shadow: 0 1px 0 var(--middle-color), 0 2px 0 var(--bg-color),
+        0 3px 0 var(--middle-color), 0 4px 0 var(--bg-color),
+        0 5px 0 var(--middle-color), 0 0 0 1px var(--middle-color);
       display: block;
       font-size: ${bs(1 / 2)};
 
@@ -62,10 +60,10 @@ class CalendarPage extends React.Component {
     `
 
     const Banner = styled.div`
-      background-color: ${bannerColor.string()};
-      border-bottom: 1px dashed ${bannerColor.darken(0.2).string()};
-      box-shadow: 0 2px 0 ${bannerColor.string()};
-      color: ${fontColor.string()};
+      background-color: var(--hero-color);
+      border-bottom: 1px dashed var(--bg-color);
+      box-shadow: 0 2px 0 var(--hero-color);
+      color: var(--anti-hero-color);
       padding: ${bs(1 / 8)} 0;
       position: absolute;
       top: 0;
@@ -73,11 +71,11 @@ class CalendarPage extends React.Component {
 
     const Footer = styled.div`
       bottom: ${bs(1 / 8)};
-      color: ${fontColor.string()};
+      color: var(--text-color);
       position: absolute;
     `
     const Body = styled.div`
-      color: ${fontColor.string()};
+      color: var(--text-color);
       font-size: ${bs(1)};
       letter-spacing: ${bs(1 / 50)};
       padding-top: ${bs(1)};

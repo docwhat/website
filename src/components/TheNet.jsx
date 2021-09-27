@@ -5,13 +5,13 @@ import { css } from '@emotion/react'
 import Link from 'gatsby-link'
 import React from 'react'
 
-import { serifFonts } from '../utils/style.js'
 import { bs } from '../utils/shevy.js'
+import { serifFonts } from '../utils/style.js'
 
 const theCss = css({
   fontSize: bs(1 / 2),
   fontFamily: serifFonts /* stylelint-disable-line */,
-  color: `hsla(0, 0%, 0%, 0.4)`,
+  color: `var(--middle-color)`,
 
   position: `fixed`,
   bottom: bs(1 / 2),

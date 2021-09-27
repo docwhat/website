@@ -2,27 +2,16 @@
 import { css } from '@emotion/react'
 
 import * as reboot from './bootstrap-reboot.css'
-import {
-  darkBackground,
-  darkForeground,
-  deemphasisColor,
-  emphasisColor,
-  grey,
-  heroColor,
-  lightBackground,
-  lightForeground,
-  mellowColor,
-} from './colors'
+import { deemphasisColor, emphasisColor, heroHue } from './colors'
 import { MOBILE_MEDIA_QUERY } from './media-queries'
 import { shevy } from './shevy.js'
 
 export const serifFonts = `"Hoefler Text", Constantia, Georgia, serif`
 
-const { lineHeightSpacing: lhs, baseSpacing: bs } = shevy // Destructure and alias methods
+const { baseSpacing: bs } = shevy // Destructure and alias methods
 
 const {
   // baseSpacing: bs,
-  // lineHeightSpacing: lhs,
   h1,
   h2,
   h3,
@@ -36,47 +25,95 @@ const {
 const leading = parseFloat(content.fontSize) * parseFloat(content.lineHeight)
 
 const globalCss = css`
+  :root {
+    --font-size: ${body.fontSize};
+    --line-height: ${body.lineHeight};
+    --leading: ${leading};
+
+    --serif-fonts: ${serifFonts};
+
+    --h1-font-size: ${h1.fontSize};
+    --h1-line-height: ${h1.lineHeight};
+    --h1-margin-bottom: ${h1.marginBottom};
+
+    --h2-font-size: ${h2.fontSize};
+    --h2-line-height: ${h2.lineHeight};
+    --h2-margin-bottom: ${h2.marginBottom};
+
+    --h3-font-size: ${h3.fontSize};
+    --h3-line-height: ${h3.lineHeight};
+    --h3-margin-bottom: ${h3.marginBottom};
+
+    --h4-font-size: ${h4.fontSize};
+    --h4-line-height: ${h4.lineHeight};
+    --h4-margin-bottom: ${h4.marginBottom};
+
+    --h5-font-size: ${h5.fontSize};
+    --h5-line-height: ${h5.lineHeight};
+    --h5-margin-bottom: ${h5.marginBottom};
+
+    --h6-font-size: ${h6.fontSize};
+    --h6-line-height: ${h6.lineHeight};
+    --h6-margin-bottom: ${h6.marginBottom};
+
+    --hero-hue: ${heroHue}deg;
+    --mellow-hue: calc(var(--hero-hue) + 300deg);
+
+    --text-color: hsl(var(--hero-hue), 69%, 10% / 0.9);
+    --bg-color: hsl(var(--hero-hue), 0%, 100%);
+    --hero-color: hsl(var(--hero-hue), 99%, 62%);
+    --anti-hero-color: hsl(calc(var(--hero-hue) + 180deg), 99%, 62%);
+
+    --middle-color: hsl(var(--hero-hue), 4%, 70%);
+
+    --button-text-color: white;
+    --button-bg-color: hsl(var(--hero-hue), 99%, 43%);
+    --button-hover-text-color: white;
+    --button-hover-bg-color: hsl(var(--hero-hue), 99%, 49%);
+
+    --link-color: hsl(var(--mellow-hue), 50%, 50%);
+    @media (prefers-color-scheme: dark) {
+      --text-color: hsl(var(--hero-hue), 69%, 100%);
+      --bg-color: hsl(var(--hero-hue), 100%, 4.7%);
+      --hero-color: hsl(var(--hero-hue), 99%, 31%);
+      --anti-hero-color: hsl(calc(var(--hero-hue) + 180deg), 99%, 31%);
+
+      --middle-color: hsl(var(--hero-hue), 4%, 60%);
+
+      --button-text-color: white;
+      --button-bg-color: hsl(var(--hero-hue), 99%, 22%);
+      --button-hover-text-color: white;
+      --button-hover-bg-color: hsl(var(--hero-hue), 99%, 25%);
+
+      --link-color: hsl(var(--mellow-hue), 90%, 70%);
+    }
+  }
+
   ${reboot}
 
   html {
-    background-color: ${lightBackground.string()};
-    font-size: ${body.fontSize};
-    line-height: ${body.lineHeight};
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
   }
 
-  html.grid {
-    background-image: url(//basehold.it/i/${leading / 2});
-    background-size: 4px ${leading / 2}px;
-    background-repeat: repeat;
-  }
-
-  body {
+  html body {
     background: none;
-    color: ${lightForeground.string()};
+    color: var(--text-color);
     margin: 0 auto;
     max-width: 70ch;
     min-width: 320px;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
-    padding: 0 ${lhs(1.5)};
-  }
-  ${MOBILE_MEDIA_QUERY} {
-    body {
-      padding: 0 ${lhs(1 / 8)};
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    html {
-      background: ${darkBackground.string()};
-    }
-    body {
-      color: ${darkForeground.string()};
+    padding: 0 calc(var(--font-size) * var(--line-height) * 1.5);
+    ${MOBILE_MEDIA_QUERY} {
+      padding: 0 calc(var(--font-size) * var(--line-height) * 1 / 8);
     }
   }
 
   mark {
-    background-color: ${heroColor.saturationl(100).lightness(80).string()};
+    background-color: var(--hero-color);
+    color: hsl(var(--hero-hue), 4%, 1%);
   }
 
   q {
@@ -90,39 +127,42 @@ const globalCss = css`
   }
 
   h1 {
-    font-size: ${h1.fontSize};
-    line-height: ${h1.lineHeight};
-    margin-bottom: calc(${h1.marginBottom} - 2px);
-    border-bottom: 2px solid ${heroColor.string()};
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+    margin-bottom: calc(var(--h1-margin-bottom) - 2px);
+    border-bottom: 2px solid var(--hero-color);
   }
   h2 {
-    font-size: ${h2.fontSize};
-    line-height: ${h2.lineHeight};
-    margin-bottom: calc(${h2.marginBottom} - 2px);
-    border-bottom: 2px solid ${heroColor.string()};
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+    margin-bottom: calc(var(--h2-margin-bottom) - 2px);
+    border-bottom: 2px solid var(--hero-color);
   }
   h3 {
-    font-size: ${h3.fontSize};
-    line-height: ${h3.lineHeight};
-    margin-bottom: ${h3.marginBottom};
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+    margin-bottom: var(--h3-margin-bottom);
   }
   h4 {
-    font-size: ${h4.fontSize};
-    line-height: ${h4.lineHeight};
-    margin-bottom: ${h4.marginBottom};
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
+    margin-bottom: var(--h4-margin-bottom);
   }
   h5 {
-    font-size: ${h5.fontSize};
-    line-height: ${h5.lineHeight};
-    margin-bottom: ${h5.marginBottom};
+    font-size: var(--h5-font-size);
+    line-height: var(--h5-line-height);
+    margin-bottom: var(--h5-margin-bottom);
   }
   h6 {
-    font-size: ${h6.fontSize};
-    line-height: ${h6.lineHeight};
-    margin-bottom: ${h6.marginBottom};
+    font-size: var(--h6-font-size);
+    line-height: var(--h6-line-height);
+    margin-bottom: var(--h6-margin-bottom);
+  }
+  h5 {
+    color: hsl(var(--hero-hue), 4%, 25%);
   }
   h6 {
-    color: ${grey(47).string()};
+    color: hsl(var(--hero-hue), 4%, 47%);
   }
 
   h1,
@@ -138,8 +178,8 @@ const globalCss = css`
   }
 
   hr {
-    color: ${heroColor.string()};
-    background-color: ${heroColor.string()};
+    color: var(--hero-color);
+    background-color: var(--hero-color);
     border: 1px solid transparent;
   }
 
@@ -151,7 +191,7 @@ const globalCss = css`
   }
 
   a {
-    color: ${mellowColor.saturationl(50).lightness(50).string()};
+    color: var(--link-color);
     &:hover {
       color: inherit;
     }
@@ -163,15 +203,15 @@ const globalCss = css`
   }
 
   blockquote {
-    color: ${lightForeground.string()};
-    background-color: ${lightBackground.darken(0.3).string()};
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-left: 10px solid var(--hero-color);
+    box-shadow: 0.15em 0.15em 0.3em hsl(var(--hero-color), 4%, 43%);
     @media (prefers-color-scheme: dark) {
-      color: ${darkForeground.string()};
-      background-color: ${darkBackground.lighten(0.3).string()};
+      box-shadow: none;
     }
     padding: ${bs(1 / 2)};
     position: relative;
-    border-left: 10px solid ${heroColor.darken(0.5).string()};
     font-style: italic;
   }
 
@@ -181,12 +221,12 @@ const globalCss = css`
 
   blockquote:before {
     font-size: 3.75em;
-    font-family: ${serifFonts};
+    font-family: var(--serif-font);
     content: '“';
     position: absolute;
     left: 0.06em;
     top: -0.12em;
-    color: ${heroColor.darken(0.5).string()};
+    color: var(--hero-color);
   }
   blockquote > blockquote:before {
     content: none;
@@ -210,14 +250,14 @@ const globalCss = css`
   figcaption {
     text-align: right;
     font-size: ${bs(1 / 2)};
-    color: ${grey(40).string()};
+    color: hsl(var(--hero-color), 4%, 40%);
   }
 
   kbd {
-    background: ${grey(93).string()};
+    background: hsl(var(--hero-color), 4%, 93%);
     border-radius: 0.25em;
-    box-shadow: 0.1em 0.1em 0.1em ${grey(43).string()};
-    color: ${grey(31).string()};
+    box-shadow: 0.1em 0.1em 0.1em hsl(var(--hero-color), 4%, 43%);
+    color: hsl(var(--hero-color), 4%, 31%);
     cursor: pointer;
     display: inline-block;
     font-size: 0.9em;
@@ -236,7 +276,7 @@ const globalCss = css`
   kbd:active,
   kbd:active * {
     color: black;
-    box-shadow: 0.1em 0.1em 0 ${grey(81).string()} inset;
+    box-shadow: 0.1em 0.1em 0 hsl(var(--hero-color), 4%, 81%) inset;
   }
 
   iframe {
@@ -259,7 +299,7 @@ const globalCss = css`
   }
 
   table {
-    margin: ${lhs(1 / 2)} 0;
+    margin: calc(var(--font-size) * var(--line-height) / 2) 0;
     table-layout: fixed;
     width: 100%;
   }
@@ -269,12 +309,12 @@ const globalCss = css`
     font-feature-settings: 'tnum';
     line-height: 1;
 
-    padding-left: ${lhs(1)};
-    padding-right: ${lhs(1)};
-    padding-top: ${lhs(1 / 2)};
+    padding-left: cal(var(--font-size) * var(--line-height));
+    padding-right: cal(var(--font-size) * var(--line-height));
+    padding-top: cal(var(--font-size) * var(--line-height) / 2);
 
-    border-bottom: 1px solid ${grey(50).string()};
-    padding-bottom: calc(${lhs(1 / 2)} - 1px);
+    border-bottom: 1px solid hsl(var(--hero-color), 4%, 50%);
+    padding-bottom: calc(var(--font-size) * var(--line-height) / 2 - 1px);
     &[align='right'] {
       text-align: right;
     }
