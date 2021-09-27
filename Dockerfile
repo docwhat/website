@@ -1,4 +1,4 @@
-# syntax = docker/dockerfile:1-experimental
+# syntax = docker/dockerfile:1
 
 ARG NODE_VERSION=set-node-version-as-build-arg
 
