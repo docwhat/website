@@ -4,12 +4,23 @@ import { css, Global } from '@emotion/react'
 import Link from 'gatsby-link'
 import PropType from 'prop-types'
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 
 import logoUrl from '../icons/logo.svg'
+import {
+  darkBackground,
+  darkForeground,
+  heroColor,
+  lightBackground,
+  lightForeground,
+} from '../utils/colors.js'
 import { MOBILE_MEDIA_QUERY } from '../utils/media-queries.js'
 import prismCss from '../utils/prism-style.js'
-import globalCss, { shevy } from '../utils/style.js'
 import { bs } from '../utils/shevy.js'
+import globalCss from '../utils/style.js'
+
+const textShadowCss = (color) =>
+  `text-shadow: -1px -1px 0 ${color.string()}, 1px -1px 0 ${color.string()}, -1px 1px 0 ${color.string()}, 1px 1px 0 ${color.string()};`
 
 const Layout = (props) => {
   const { children } = props
@@ -18,14 +29,19 @@ const Layout = (props) => {
     <>
       <Global styles={globalCss} />
       <Global styles={prismCss} />
+      <Helmet>
+        <meta name="theme-color" content={heroColor} />
+      </Helmet>
       <header
         css={css`
           font-size: ${bs(2)};
           font-weight: 700;
           line-height: 1;
           margin: 0 0 ${bs(1)};
-          text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-            1px 1px 0 #fff;
+          ${textShadowCss(lightBackground)}
+          @media (prefers-color-scheme: dark) {
+            ${textShadowCss(darkBackground)}
+          }
           text-rendering: optimizeLegibility;
 
           ${MOBILE_MEDIA_QUERY} {
@@ -39,9 +55,12 @@ const Layout = (props) => {
           css={css`
             box-shadow: none;
             text-decoration: none;
-            color: inherit;
+            color: ${lightForeground.string()};
             &:hover {
               text-decoration: none;
+            }
+            @media (prefers-color-scheme: dark) {
+              color: ${darkForeground.string()};
             }
           `}
           to="/"

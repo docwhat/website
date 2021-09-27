@@ -9,6 +9,16 @@ import Color from 'color'
 // HSL 84, 99, 62
 // https://www.colorhexa.com/B2FE40
 
+// export const grey = (value) => `hsla(84,69%,10%,${(100 - value) / 100})`
+export const grey = (value) =>
+  Color('hsl(84, 69%, 10%)').alpha((100 - value) / 100)
+
+export const lightForeground = Color('hsl(84, 69%, 10%)').alpha(0.9)
+export const lightBackground = Color('white')
+
+export const darkForeground = Color('white')
+export const darkBackground = Color('#121212')
+
 const saturation = 99
 const lightness = 62
 
@@ -23,7 +33,3 @@ export const emphasisColor = Color.hsl([emphasisHue, saturation, lightness])
 
 const deemphasisHue = 264
 export const deemphasisColor = Color.hsl([deemphasisHue, saturation, lightness])
-
-export const lightBackground = Color.rgb(255, 255, 255)
-
-export const grey = (value) => `hsla(84,69%,10%,${(100 - value) / 100})`

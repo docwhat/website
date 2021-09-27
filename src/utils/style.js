@@ -3,11 +3,14 @@ import { css } from '@emotion/react'
 
 import * as reboot from './bootstrap-reboot.css'
 import {
+  darkBackground,
+  darkForeground,
   deemphasisColor,
   emphasisColor,
   grey,
   heroColor,
   lightBackground,
+  lightForeground,
   mellowColor,
 } from './colors'
 import { MOBILE_MEDIA_QUERY } from './media-queries'
@@ -49,7 +52,7 @@ const globalCss = css`
 
   body {
     background: none;
-    color: ${grey(10)};
+    color: ${lightForeground.string()};
     margin: 0 auto;
     max-width: 70ch;
     min-width: 320px;
@@ -60,6 +63,15 @@ const globalCss = css`
   ${MOBILE_MEDIA_QUERY} {
     body {
       padding: 0 ${lhs(1 / 8)};
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      background: ${darkBackground.string()};
+    }
+    body {
+      color: ${darkForeground.string()};
     }
   }
 
@@ -110,7 +122,7 @@ const globalCss = css`
     margin-bottom: ${h6.marginBottom};
   }
   h6 {
-    color: ${grey(47)};
+    color: ${grey(47).string()};
   }
 
   h1,
@@ -151,10 +163,16 @@ const globalCss = css`
   }
 
   blockquote {
-    color: ${grey(45)};
-    background-color: ${heroColor.fade(0.8).desaturate(0.3).string()};
+    color: ${lightForeground.string()};
+    background-color: ${lightBackground.darken(0.3).string()};
+    @media (prefers-color-scheme: dark) {
+      color: ${darkForeground.string()};
+      background-color: ${darkBackground.lighten(0.3).string()};
+    }
     padding: ${bs(1 / 2)};
     position: relative;
+    border-left: 10px solid ${heroColor.darken(0.5).string()};
+    font-style: italic;
   }
 
   blockquote > *:first-of-type {
@@ -192,14 +210,14 @@ const globalCss = css`
   figcaption {
     text-align: right;
     font-size: ${bs(1 / 2)};
-    color: ${grey(40)};
+    color: ${grey(40).string()};
   }
 
   kbd {
-    background: ${grey(93)};
+    background: ${grey(93).string()};
     border-radius: 0.25em;
-    box-shadow: 0.1em 0.1em 0.1em ${grey(43)};
-    color: ${grey(31)};
+    box-shadow: 0.1em 0.1em 0.1em ${grey(43).string()};
+    color: ${grey(31).string()};
     cursor: pointer;
     display: inline-block;
     font-size: 0.9em;
@@ -218,7 +236,7 @@ const globalCss = css`
   kbd:active,
   kbd:active * {
     color: black;
-    box-shadow: 0.1em 0.1em 0 ${grey(81)} inset;
+    box-shadow: 0.1em 0.1em 0 ${grey(81).string()} inset;
   }
 
   iframe {
@@ -255,7 +273,7 @@ const globalCss = css`
     padding-right: ${lhs(1)};
     padding-top: ${lhs(1 / 2)};
 
-    border-bottom: 1px solid ${grey(50)};
+    border-bottom: 1px solid ${grey(50).string()};
     padding-bottom: calc(${lhs(1 / 2)} - 1px);
     &[align='right'] {
       text-align: right;
