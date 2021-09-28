@@ -8,8 +8,6 @@ import { shevy } from './shevy.js'
 
 export const serifFonts = `"Hoefler Text", Constantia, Georgia, serif`
 
-const { baseSpacing: bs } = shevy // Destructure and alias methods
-
 const {
   // baseSpacing: bs,
   h1,
@@ -210,13 +208,13 @@ const globalCss = css`
     @media (prefers-color-scheme: dark) {
       box-shadow: none;
     }
-    padding: ${bs(1 / 2)};
+    padding: calc(var(--font-size) / 2);
     position: relative;
     font-style: italic;
   }
 
   blockquote > *:first-of-type {
-    text-indent: ${bs(1)};
+    text-indent: var(--font-size);
   }
 
   blockquote:before {
@@ -243,13 +241,13 @@ const globalCss = css`
   }
   ${MOBILE_MEDIA_QUERY} {
     blockquote {
-      padding-right: ${bs(1 / 4)};
+      padding-right: calc(var(--font-size) / 4);
     }
   }
 
   figcaption {
     text-align: right;
-    font-size: ${bs(1 / 2)};
+    font-size: calc(var(--font-size) / 2);
     color: hsl(var(--hero-color), 4%, 40%);
   }
 
@@ -281,7 +279,7 @@ const globalCss = css`
 
   iframe {
     width: 100%;
-    height: ${(100 * 9) / 16}vw;
+    height: calc(100vw * 9 / 16);
   }
 
   ins {
@@ -355,7 +353,8 @@ const globalCss = css`
   }
   fieldset {
     border: 2px solid silver;
-    padding: ${bs(1 / 4)} ${bs(1 / 2)} ${bs(1 / 2)};
+    padding: calc(var(--font-size) / 4) calc(var(--font-size) / 2)
+      calc(var(--font-size) / 2);
   }
 `
 

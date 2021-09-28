@@ -4,17 +4,15 @@
 import styled from '@emotion/styled'
 import Link from 'gatsby-link'
 
-import { bs } from '../utils/shevy.js'
-
 export default styled(Link)`
   background-color: var(--button-bg-color);
-  border-radius: ${bs(1)};
+  border-radius: var(--font-size);
   color: var(--button-text-color);
   cursor: pointer;
   display: block;
-  font-size: ${bs(1 / 2)};
-  height: ${bs(1 + 1 / 4)};
-  line-height: ${bs(1 + 1 / 4)};
+  font-size: calc(var(--font-size) / 2);
+  height: calc(var(--font-size) + var(--font-size) / 4);
+  line-height: calc(var(--font-size) + var(--font-size) / 4);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -22,7 +20,7 @@ export default styled(Link)`
   text-shadow: 1px 1px 2px var(--middle-color);
   transition: 0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97);
   user-select: none;
-  width: ${bs(5)};
+  width: calc(var(--font-size) * 5);
   z-index: 100;
 
   &:hover {

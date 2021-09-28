@@ -7,7 +7,6 @@ import React from 'react'
 
 import Layout from '../components/Layout.jsx'
 import StyledButton from '../components/StyledButton.jsx'
-import { bs } from '../utils/shevy.js'
 
 const MyLabel = styled.label`
   display: inline-block;
@@ -50,7 +49,7 @@ const ContactForm = (props) => (
           flexDirection: 'row',
           flexWrap: 'wrap',
           '& > *': {
-            margin: `${bs(1 / 2)} 0`,
+            margin: `calc(var(--font-size) / 2) 0`,
           },
         }}
       >

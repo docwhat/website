@@ -2,7 +2,7 @@
 // @format
 import React from 'react'
 
-import { shevy, bs } from '../utils/shevy.js'
+import { shevy } from '../../styles/shevy'
 
 // eslint-disable-next-line react/display-name
 const IconArrow = (overrideCss) => () =>
@@ -13,7 +13,7 @@ const IconArrow = (overrideCss) => () =>
       css={{
         display: `inline-block`,
         position: `relative`,
-        top: bs(-1 / 10),
+        top: `calc(var(--font-size) / -10)`,
         width: shevy.content.fontSize,
         height: shevy.content.fontSize,
         lineHeight: shevy.content.lineHeight,

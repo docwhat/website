@@ -10,7 +10,6 @@ import {
   mellowColor,
 } from './colors.js'
 import { MOBILE_MEDIA_QUERY } from './media-queries.js'
-import { bs } from './shevy.js'
 
 /**
  * Based on:
@@ -192,7 +191,7 @@ const prismCss = css`
   }
 
   .gatsby-highlight[data-language] {
-    margin-top: ${bs(1)};
+    margin-top: var(--font-size);
     position: relative;
   }
 

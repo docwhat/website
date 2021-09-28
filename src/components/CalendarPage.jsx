@@ -6,7 +6,6 @@ import PropType from 'prop-types'
 import React from 'react'
 
 import { getNavigatorLanguage, ymdString2Date } from '../utils/dates.js'
-import { bs, lhs } from '../utils/shevy.js'
 
 class CalendarPage extends React.Component {
   state = {
@@ -34,20 +33,20 @@ class CalendarPage extends React.Component {
 
     const Wrapper = styled.time`
       background-color: var(--bg-color);
-      border-radius: ${bs(1 / 4)};
+      border-radius: calc(var(--font-size) / 4);
       box-shadow: 0 1px 0 var(--middle-color), 0 2px 0 var(--bg-color),
         0 3px 0 var(--middle-color), 0 4px 0 var(--bg-color),
         0 5px 0 var(--middle-color), 0 0 0 1px var(--middle-color);
       display: block;
-      font-size: ${bs(1 / 2)};
+      font-size: calc(var(--font-size) / 2);
 
       /* change icon size */
-      height: ${bs(3)};
-      margin: 0 0 ${lhs(1 / 2)};
+      height: calc(var(--font-size) * 3);
+      margin: 0 0 calc(var(--font-size) / 2);
       overflow: hidden;
       position: relative;
-      width: ${bs(3)};
-      min-width: ${bs(2)};
+      width: calc(var(--font-size) * 3);
+      min-width: calc(var(--font-size) * 2);
 
       /* CommonCSS */
       & > * {
@@ -64,21 +63,21 @@ class CalendarPage extends React.Component {
       border-bottom: 1px dashed var(--bg-color);
       box-shadow: 0 2px 0 var(--hero-color);
       color: var(--anti-hero-color);
-      padding: ${bs(1 / 8)} 0;
+      padding: calc(var(--font-size) / 8) 0;
       position: absolute;
       top: 0;
     `
 
     const Footer = styled.div`
-      bottom: ${bs(1 / 8)};
+      bottom: calc(var(--font-size) / 8);
       color: var(--text-color);
       position: absolute;
     `
     const Body = styled.div`
       color: var(--text-color);
-      font-size: ${bs(1)};
-      letter-spacing: ${bs(1 / 50)};
-      padding-top: ${bs(1)};
+      font-size: var(--font-size);
+      letter-spacing: calc(var(--font-size) / 50);
+      padding-top: var(--font-size);
     `
 
     // Original idea from:

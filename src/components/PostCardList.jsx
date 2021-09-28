@@ -4,8 +4,9 @@ import { css } from '@emotion/react'
 import PropType from 'prop-types'
 import * as React from 'react'
 
-import { bs } from '../utils/shevy.js'
 import PostCard from './PostCard.jsx'
+
+const minCardWidth = `24ch`
 
 const PostCardList = (props) => (
   <div
@@ -15,9 +16,15 @@ const PostCardList = (props) => (
       flex-wrap: wrap;
       justify-content: space-between;
       overflow: auto;
-      margin: 0 ${bs(-1 / 2)};
+      margin: 0;
       & > * {
-        margin: ${bs(1 / 2)};
+        margin: calc(var(--font-size) / 2) 0;
+      }
+      @media max-width: calc(2 * ${minCardWidth}) {
+        margin: 0 calc(-1 * var(--font-size) / 2);
+        & > * {
+          margin: calc(var(--font-size) / 2);
+        }
       }
     `}
   >
@@ -31,7 +38,7 @@ const PostCardList = (props) => (
         <PostCard
           overrideCss={{
             flex: `1`,
-            minWidth: `24ch`,
+            minWidth: minCardWidth,
             '&>p': { textAlign: `justify` },
           }}
           key={slug}

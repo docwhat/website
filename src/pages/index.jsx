@@ -16,7 +16,6 @@ import TheNet from '../components/TheNet'
 import useAllPosts from '../components/useAllPosts'
 import { siteTitle } from '../utils/constants'
 import { blogJsonLD } from '../utils/ldjson'
-import { bs } from '../utils/shevy.js'
 
 // https://jsonld-examples.com/schema.org/code/blog-markup.php
 const jsonLdData = {
@@ -77,7 +76,7 @@ const SiteIndex = (props) => {
           css={css`
             text-align: right;
             display: block;
-            font-size: ${bs(1)};
+            font-size: var(--font-size);
           `}
           to="/all"
         >

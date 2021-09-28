@@ -10,7 +10,6 @@ import logoUrl from '../icons/logo.svg'
 import { darkHeroColor, lightHeroColor } from '../utils/colors.js'
 import { MOBILE_MEDIA_QUERY } from '../utils/media-queries.js'
 import prismCss from '../utils/prism-style.js'
-import { bs } from '../utils/shevy.js'
 import globalCss from '../utils/style.js'
 
 const Layout = (props) => {
@@ -34,17 +33,17 @@ const Layout = (props) => {
       </Helmet>
       <header
         css={css`
-          font-size: ${bs(2)};
+          font-size: calc(var(--font-size) * 2);
           font-weight: 700;
           line-height: 1;
-          margin: 0 0 ${bs(1)};
+          margin: 0 0 var(--font-size);
           text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
             -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
           text-rendering: optimizeLegibility;
 
           ${MOBILE_MEDIA_QUERY} {
-            margin: ${bs(1)} 0 ${bs(1 / 2)};
-            font-size: ${bs(1)};
+            margin: var(--font-size) 0 calc(var(--font-size) / 2);
+            font-size: var(--font-size);
             text-align: center;
           }
         `}
@@ -74,8 +73,8 @@ const Layout = (props) => {
         </Link>
         <hr
           css={css`
-            margin: ${bs(-1 / 4)} 0 0;
-            height: ${bs(1 / 2)};
+            margin: calc(var(--font-size) / -4) 0 0;
+            height: calc(var(--font-size) / 2);
           `}
         />
       </header>

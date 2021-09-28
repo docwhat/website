@@ -5,13 +5,11 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 import * as React from 'react'
 
-import { bs } from '../utils/shevy.js'
-
 const Caption = ({ credits, sourceUrl }) => (
   <figcaption
     css={css`
       font-style: oblique;
-      font-size: ${bs(1 / 3)};
+      font-size: calc(var(--font-size) / 3);
     `}
   >
     {credits}{' '}

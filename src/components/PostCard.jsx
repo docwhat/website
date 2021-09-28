@@ -7,7 +7,6 @@ import PropType from 'prop-types'
 import * as React from 'react'
 
 import { darkBackground, lightBackground } from '../utils/colors.js'
-import { bs } from '../utils/shevy.js'
 import Date from './Date.jsx'
 import ReadMore from './ReadMore.jsx'
 import SmallPrint from './SmallPrint.jsx'
@@ -18,7 +17,7 @@ const Title = ({ to, children }) => (
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 0;
-      margin-top: ${bs(1 / 4)};
+      margin-top: calc(var(--font-size) / 4);
     `}
   >
     <Link style={{ boxShadow: `none` }} to={to}>
@@ -51,15 +50,15 @@ const PostCard = ({ ymdDate, excerpt, overrideCss, slug, title }) => (
       css={css`
         position: relative;
         vertical-align: top;
-        min-height: ${bs(3)};
-        max-height: ${bs(12)};
+        min-height: calc(var(--font-size) * 3);
+        max-height: calc(var(--font-size) * 12);
         z-index: 1;
         overflow: hidden;
         :before {
           content: '';
           z-index: 2;
           width: 100%;
-          height: ${bs(4)};
+          height: calc(var(--font-size) * 4);
           position: absolute;
           left: 0;
           bottom: 0;
