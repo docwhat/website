@@ -2,7 +2,7 @@
 // @format
 import React from 'react'
 
-import { shevy } from '../../styles/shevy'
+import { shevy } from '../utils/shevy.js'
 
 // eslint-disable-next-line react/display-name
 const IconArrow = (overrideCss) => () =>
