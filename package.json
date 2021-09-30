@@ -94,7 +94,7 @@
     "color": "^4.0.1",
     "fbjs": "~3.0.0",
     "feed": "~4.2.2",
-    "gatsby": "^3.14.0",
+    "gatsby": "^3.14.1",
     "gatsby-cli": "^3.13.0",
     "gatsby-pagination": "^1.2.0",
     "gatsby-plugin-catch-links": "^3.14.0",
