@@ -84,7 +84,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-env": "^7.16.4",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@svgr/webpack": "^5.5.0",
@@ -179,7 +179,7 @@
     "textlint-rule-editorconfig": "~1.0.3",
     "textlint-rule-no-start-duplicated-conjunction": "~2.0.2",
     "textlint-rule-no-todo": "~2.0.1",
-    "typescript": "~4.4.4",
+    "typescript": "~4.5.3",
     "wait-on": "~6.0.0",
     "yarn-deduplicate": "~3.1.0"
   }
