@@ -131,7 +131,7 @@
     "react-gravatar": "~2.6.3",
     "react-helmet": "~6.1.0",
     "react-hot-loader": "~4.13.0",
-    "react-refresh": "0.10.0",
+    "react-refresh": "0.11.0",
     "replace-ext": "~2.0.0",
     "shevyjs": "^2.1.0",
     "strip-markdown": "~5.0.0",
