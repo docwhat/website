@@ -1,0 +1,23 @@
+{
+  "**/*.css": [
+    "stylelint --fix"
+  ],
+  "**/*.html": [
+    "stylelint --fix"
+  ],
+  "**/*.md": [
+    "textlint --fix",
+    "prettier --write",
+    "remark"
+  ],
+  "**/*.{js,jsx}": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "package.json": [
+    "yarn run format:packagejson:fix"
+  ],
+  "yarn.lock": [
+    "yarn run format:yarnlock:fix"
+  ]
+}

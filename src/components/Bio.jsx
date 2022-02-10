@@ -1,7 +1,7 @@
 //
 // @format
 import { ClassNames, css } from '@emotion/react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import * as React from 'react'
 

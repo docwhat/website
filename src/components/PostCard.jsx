@@ -1,8 +1,7 @@
 //
 // @format
 import { css } from '@emotion/react'
-import { graphql } from 'gatsby'
-import Link from 'gatsby-link'
+import { graphql, Link } from 'gatsby'
 import PropType from 'prop-types'
 import * as React from 'react'
 

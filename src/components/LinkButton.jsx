@@ -2,7 +2,7 @@
 // @format
 
 import styled from '@emotion/styled'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 export default styled(Link)`
   background-color: var(--button-bg-color);

@@ -62,7 +62,7 @@ RUN mkdir /workdir
 WORKDIR /workdir
 
 COPY --from=files /x/package.json /x/yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --immutable
 COPY --from=files /x/ ./
 
 ###################

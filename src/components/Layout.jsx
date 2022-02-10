@@ -1,7 +1,7 @@
 // @format
 //
 import { css, Global } from '@emotion/react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropType from 'prop-types'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
