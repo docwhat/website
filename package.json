@@ -83,7 +83,7 @@
     "gatsby/react-dev-utils/browserslist": "^4.16.5"
   },
   "dependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "^7.17.2",
     "@babel/preset-env": "^7.16.7",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.3.0",
