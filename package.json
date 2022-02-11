@@ -52,9 +52,8 @@
     "lint:textlint:fix": "textlint --fix .",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
-    "setup": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "travis": "yarn setup && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
+    "travis": "yarn install && yarn clean && yarn lint && yarn docker:build && yarn docker:run && yarn cypress:run && yarn docker:stop"
   },
   "dependencies": {
     "@babel/core": "^7.17.2",

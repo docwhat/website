@@ -67,7 +67,7 @@ COPY --from=files /x/ ./
 
 ###################
 FROM buildenv AS setup
-RUN yarn run setup
+RUN yarn install
 
 ###################
 FROM setup AS lint
