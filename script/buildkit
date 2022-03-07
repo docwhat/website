@@ -43,9 +43,6 @@ declare -r tag
 node_version=$(cat "${top_dir}/.node-version")
 declare -r node_version
 
-build_date="$(env TZ='America/New_York' date '+%Y-%m-%dT%H:%M:%SZ')"
-declare -r build_date
-
 git_url="$(git ls-remote --get-url)"
 git_branch="$(git rev-parse --abbrev-ref HEAD)"
 git_sha=${GIT_SHA1:-$(git rev-parse HEAD)}

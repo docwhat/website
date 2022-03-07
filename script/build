@@ -32,6 +32,7 @@ declare -ra docker_build_args=(
   "--build-arg=SITE_COMMIT=${git_commit}"
   "--build-arg=SITE_VERSION=${git_sha}"
   "--platform=linux/amd64"
+  "--progress=plain"
   "--target=final"
   "--tag=${tag}"
   "--pull"
