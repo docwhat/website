@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-SITE_COMMIT="${SITE_COMMIT:-${TRAVIS_COMMIT_MESSAGE:-$(git log -1 --oneline --no-decorate)}}"
-SITE_VERSION="${SITE_VERSION:-${TRAVIS_COMMIT:-$(git rev-parse HEAD)}}"
+SITE_COMMIT="${SITE_COMMIT:-$(git log -1 --oneline --no-decorate)}"
+SITE_VERSION="${SITE_VERSION:-$(git rev-parse HEAD)}"
 
 export SITE_COMMIT SITE_VERSION
 
