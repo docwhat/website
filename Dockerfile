@@ -62,11 +62,13 @@ RUN mkdir /workdir
 WORKDIR /workdir
 
 COPY --from=files /x/package.json /x/yarn.lock ./
+# hadolint ignore=DL3060
 RUN yarn install --immutable
 COPY --from=files /x/ ./
 
 ###################
 FROM buildenv AS setup
+# hadolint ignore=DL3060
 RUN yarn install
 
 ###################
