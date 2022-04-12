@@ -100,8 +100,6 @@ RUN yarn run compress
 #################################
 FROM nginx AS final
 
-LABEL Maintainer="Christian Höltje <https://docwhat.org>"
-LABEL Name="Website for docwhat.org"
 LABEL org.opencontainers.image.authors="Christian Höltje <https://docwhat.org>"
 LABEL org.opencontainers.image.title="Website for docwhat.org"
 LABEL org.opencontainers.image.url="https://docwhat.org/"
