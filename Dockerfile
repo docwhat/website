@@ -2,8 +2,8 @@
 
 ARG NODE_VERSION=set-node-version-as-build-arg
 
-FROM node:$NODE_VERSION     AS node
-FROM nginx:stable-alpine    AS nginx
+FROM node:$NODE_VERSION-bullseye  AS node
+FROM nginx:stable-alpine          AS nginx
 FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-$NODE_VERSION AS devnode
 
 #############################
