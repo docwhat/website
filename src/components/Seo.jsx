@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import remark from 'remark'
+import { remark } from 'remark'
 import strip from 'strip-markdown'
 
 const Seo = ({ title, description, image, pathname, article }) => (
