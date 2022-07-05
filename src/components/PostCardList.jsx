@@ -16,14 +16,15 @@ const PostCardList = (props) => (
       flex-wrap: wrap;
       justify-content: space-between;
       overflow: auto;
-      margin: 0;
+      margin: 0 calc(-1 * var(--base-spacing) / 2);
       & > * {
-        margin: calc(var(--font-size) / 2) 0;
+        margin: calc(var(--base-spacing) / 2);
       }
       @media max-width: calc(2 * ${minCardWidth}) {
-        margin: 0 calc(-1 * var(--font-size) / 2);
+        x-margin: 0 calc(-1 * var(--base-spacing) / 2);
         & > * {
-          margin: calc(var(--font-size) / 2);
+          margin-left: 0;
+          margin-right: 0;
         }
       }
     `}

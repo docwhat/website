@@ -49,7 +49,7 @@ const ContactForm = (props) => (
           flexDirection: 'row',
           flexWrap: 'wrap',
           '& > *': {
-            margin: `calc(var(--font-size) / 2) 0`,
+            margin: `calc(var(--base-spacing) / 2) 0`,
           },
         }}
       >

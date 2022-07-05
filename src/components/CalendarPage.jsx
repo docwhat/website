@@ -33,20 +33,20 @@ class CalendarPage extends React.Component {
 
     const Wrapper = styled.time`
       background-color: var(--bg-color);
-      border-radius: calc(var(--font-size) / 4);
+      border-radius: calc(var(--base-spacing) / 5);
       box-shadow: 0 1px 0 var(--middle-color), 0 2px 0 var(--bg-color),
         0 3px 0 var(--middle-color), 0 4px 0 var(--bg-color),
         0 5px 0 var(--middle-color), 0 0 0 1px var(--middle-color);
       display: block;
-      font-size: calc(var(--font-size) / 2);
+      font-size: calc(var(--base-spacing) / 2);
 
       /* change icon size */
-      height: calc(var(--font-size) * 3);
-      margin: 0 0 calc(var(--font-size) / 2);
+      height: calc(var(--base-spacing) * 3);
+      margin: 0 0 calc(var(--base-spacing) / 2);
       overflow: hidden;
       position: relative;
-      width: calc(var(--font-size) * 3);
-      min-width: calc(var(--font-size) * 2);
+      width: calc(var(--base-spacing) * 3);
+      min-width: calc(var(--base-spacing) * 2);
 
       /* CommonCSS */
       & > * {
@@ -63,21 +63,21 @@ class CalendarPage extends React.Component {
       border-bottom: 1px dashed var(--bg-color);
       box-shadow: 0 2px 0 var(--hero-color);
       color: var(--anti-hero-color);
-      padding: calc(var(--font-size) / 8) 0;
+      padding: calc(var(--base-spacing) / 8) 0;
       position: absolute;
       top: 0;
     `
 
     const Footer = styled.div`
-      bottom: calc(var(--font-size) / 8);
+      bottom: calc(var(--base-spacing) / 8);
       color: var(--text-color);
       position: absolute;
     `
     const Body = styled.div`
       color: var(--text-color);
-      font-size: var(--font-size);
-      letter-spacing: calc(var(--font-size) / 50);
-      padding-top: var(--font-size);
+      font-size: var(--base-spacing);
+      letter-spacing: calc(var(--base-spacing) / 50);
+      padding-top: var(--base-spacing);
     `
 
     // Original idea from:

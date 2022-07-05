@@ -27,6 +27,7 @@ const globalCss = css`
     --font-size: ${body.fontSize};
     --line-height: ${body.lineHeight};
     --leading: ${leading};
+    --base-spacing: calc(var(--font-size) * var(--line-height));
 
     --serif-fonts: ${serifFonts};
 
@@ -103,9 +104,9 @@ const globalCss = css`
     min-width: 320px;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
-    padding: 0 calc(var(--font-size) * var(--line-height) * 1.5);
+    padding: 0 calc(var(--base-spacing) * 1.5);
     ${MOBILE_MEDIA_QUERY} {
-      padding: 0 calc(var(--font-size) * var(--line-height) * 1 / 8);
+      padding: 0 calc(var(--base-spacing) * 1 / 8);
     }
   }
 
@@ -208,13 +209,13 @@ const globalCss = css`
     @media (prefers-color-scheme: dark) {
       box-shadow: none;
     }
-    padding: calc(var(--font-size) / 2);
+    padding: calc(var(--base-spacing) / 2);
     position: relative;
     font-style: italic;
   }
 
   blockquote > *:first-of-type {
-    text-indent: var(--font-size);
+    text-indent: var(--base-spacing);
   }
 
   blockquote:before {
@@ -241,13 +242,13 @@ const globalCss = css`
   }
   ${MOBILE_MEDIA_QUERY} {
     blockquote {
-      padding-right: calc(var(--font-size) / 4);
+      padding-right: calc(var(--base-spacing) / 4);
     }
   }
 
   figcaption {
     text-align: right;
-    font-size: calc(var(--font-size) / 2);
+    font-size: calc(var(--base-spacing) / 2);
     color: hsl(var(--hero-color), 4%, 40%);
   }
 
@@ -297,7 +298,7 @@ const globalCss = css`
   }
 
   table {
-    margin: calc(var(--font-size) * var(--line-height) / 2) 0;
+    margin: calc(var(--base-spacing) / 2) 0;
     table-layout: fixed;
     width: 100%;
   }
@@ -307,12 +308,12 @@ const globalCss = css`
     font-feature-settings: 'tnum';
     line-height: 1;
 
-    padding-left: cal(var(--font-size) * var(--line-height));
-    padding-right: cal(var(--font-size) * var(--line-height));
-    padding-top: cal(var(--font-size) * var(--line-height) / 2);
+    padding-left: var(--base-spacing);
+    padding-right: var(--base-spacing);
+    padding-top: calc(var(--base-spacing) / 2);
 
     border-bottom: 1px solid hsl(var(--hero-color), 4%, 50%);
-    padding-bottom: calc(var(--font-size) * var(--line-height) / 2 - 1px);
+    padding-bottom: calc(var(--base-spacing) / 2 - 1px);
     &[align='right'] {
       text-align: right;
     }
@@ -353,8 +354,8 @@ const globalCss = css`
   }
   fieldset {
     border: 2px solid silver;
-    padding: calc(var(--font-size) / 4) calc(var(--font-size) / 2)
-      calc(var(--font-size) / 2);
+    padding: calc(var(--base-spacing) / 4) calc(var(--base-spacing) / 2)
+      calc(var(--base-spacing) / 2);
   }
 `
 

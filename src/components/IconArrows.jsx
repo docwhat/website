@@ -13,7 +13,7 @@ const IconArrow = (overrideCss) => () =>
       css={{
         display: `inline-block`,
         position: `relative`,
-        top: `calc(var(--font-size) / -10)`,
+        top: `calc(var(--base-spacing) / -10)`,
         width: shevy.content.fontSize,
         height: shevy.content.fontSize,
         lineHeight: shevy.content.lineHeight,

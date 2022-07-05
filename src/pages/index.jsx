@@ -76,7 +76,7 @@ const SiteIndex = (props) => {
           css={css`
             text-align: right;
             display: block;
-            font-size: var(--font-size);
+            font-size: var(--base-spacing);
           `}
           to="/all"
         >

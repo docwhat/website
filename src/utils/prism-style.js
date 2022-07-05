@@ -193,7 +193,7 @@ const prismCss = css`
   }
 
   .gatsby-highlight[data-language] {
-    margin-top: var(--font-size);
+    margin-top: var(--base-spacing);
     position: relative;
   }
 

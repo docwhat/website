@@ -30,12 +30,12 @@ Reference.propTypes = {
 const Bio = () => (
   <div
     css={css`
-      margin: 0 0 var(--font-size);
+      margin: 0 0 var(--base-spacing);
     `}
   >
     <hr
       css={css`
-        margin: calc(var(--font-size) / 2) 0;
+        margin: calc(var(--base-spacing) / 2) 0;
       `}
     />
 

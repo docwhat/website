@@ -18,8 +18,8 @@ export const grey = (value) =>
 export const lightForeground = Color('hsl(84, 69%, 10%)').alpha(0.9)
 export const lightBackground = Color('white')
 
-export const darkForeground = Color('white')
-export const darkBackground = Color('#080808')
+export const darkForeground = Color('white').alpha(0.9)
+export const darkBackground = Color('hsl(84, 100%, 4%)')
 
 const saturation = 99
 const lightness = 62

@@ -33,17 +33,17 @@ const Layout = (props) => {
       </Helmet>
       <header
         css={css`
-          font-size: calc(var(--font-size) * 2);
+          font-size: calc(var(--base-spacing) * 2);
           font-weight: 700;
           line-height: 1;
-          margin: 0 0 var(--font-size);
+          margin: 0 0 var(--base-spacing);
           text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
             -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
           text-rendering: optimizeLegibility;
 
           ${MOBILE_MEDIA_QUERY} {
-            margin: var(--font-size) 0 calc(var(--font-size) / 2);
-            font-size: var(--font-size);
+            margin: var(--base-spacing) 0 calc(var(--base-spacing) / 2);
+            font-size: var(--base-spacing);
             text-align: center;
           }
         `}
@@ -73,8 +73,8 @@ const Layout = (props) => {
         </Link>
         <hr
           css={css`
-            margin: calc(var(--font-size) / -4) 0 0;
-            height: calc(var(--font-size) / 2);
+            margin: calc(var(--base-spacing) / -4) 0 0;
+            height: calc(var(--base-spacing) / 2);
           `}
         />
       </header>

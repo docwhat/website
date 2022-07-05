@@ -16,7 +16,7 @@ const Title = ({ to, children }) => (
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 0;
-      margin-top: calc(var(--font-size) / 4);
+      margin-top: calc(var(--base-spacing) / 4);
     `}
   >
     <Link style={{ boxShadow: `none` }} to={to}>
@@ -49,15 +49,15 @@ const PostCard = ({ ymdDate, excerpt, overrideCss, slug, title }) => (
       css={css`
         position: relative;
         vertical-align: top;
-        min-height: calc(var(--font-size) * 3);
-        max-height: calc(var(--font-size) * 12);
+        min-height: calc(var(--base-spacing) * 3);
+        max-height: calc(var(--base-spacing) * 12);
         z-index: 1;
         overflow: hidden;
         :before {
           content: '';
           z-index: 2;
           width: 100%;
-          height: calc(var(--font-size) * 4);
+          height: calc(var(--base-spacing) * 4);
           position: absolute;
           left: 0;
           bottom: 0;

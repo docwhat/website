@@ -8,13 +8,13 @@ import React from 'react'
 import { serifFonts } from '../utils/style.js'
 
 const theCss = css({
-  fontSize: `calc(var(--font-size) / 2)`,
+  fontSize: `calc(var(--base-spacing) / 2)`,
   fontFamily: serifFonts /* stylelint-disable-line */,
   color: `var(--middle-color)`,
 
   position: `fixed`,
-  bottom: `calc(var(--font-size) / 2)`,
-  right: `var(--font-size)`,
+  bottom: `calc(var(--base-spacing) / 2)`,
+  right: `var(--base-spacing)`,
   zIndex: 200,
 })
 

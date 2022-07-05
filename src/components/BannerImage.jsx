@@ -9,7 +9,7 @@ const Caption = ({ credits, sourceUrl }) => (
   <figcaption
     css={css`
       font-style: oblique;
-      font-size: calc(var(--font-size) / 3);
+      font-size: calc(var(--base-spacing) / 3);
     `}
   >
     {credits}{' '}
