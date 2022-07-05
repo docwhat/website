@@ -80,7 +80,7 @@ declare -a build_args=(
   "--cache-from=type=registry,ref=docker.io/docwhat/docwhat:cache"
 )
 
-if ! ((push_cache)); then
+if ((push_cache)); then
   {
     echo
     echo "I will publish the cache..."
