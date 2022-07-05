@@ -9,12 +9,3 @@
 
 # Detect (Programming) Language
 src/* linguist-vendored
-.yarn/* linguist-vendored
-
-# Prevent diffs of vendored files.
-/.yarn/releases/** -text
-/.yarn/plugins/** -text
-
-# Use LFS for large & binary files
-*.zip filter=lfs diff=lfs merge=lfs binary
-*.gz filter=lfs diff=lfs merge=lfs binary

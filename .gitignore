@@ -5,20 +5,8 @@ public
 .intermediate-representation/
 .cache/
 .tern-port
-
-# We use yarn
-package-lock.json
 *.log
 tags
 *.tmp
 *.temp
 tmp/
-
-# Yarn Berry
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions

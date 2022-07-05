@@ -61,24 +61,24 @@ ENV CYPRESS_CACHE_FOLDER /workdir/.cache/Cypress
 RUN mkdir /workdir
 WORKDIR /workdir
 
-COPY --from=files /x/package.json /x/yarn.lock ./
+COPY --from=files /x/package.json /x/package-lock.json ./
 # hadolint ignore=DL3060
-RUN yarn install --immutable
+RUN npm install --legacy-peer-deps --frozen-lockfile --loglevel=error
 COPY --from=files /x/ ./
 
 ###################
 FROM buildenv AS setup
 # hadolint ignore=DL3060
-RUN yarn install
+RUN npm install --legacy-peer-deps --loglevel=error
 
 ###################
 FROM setup AS lint
-RUN yarn run lint
+RUN npm run lint
 
 ###################
 FROM setup AS build
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-RUN yarn run build --verbose
+RUN npm run build --verbose
 
 ###################
 FROM node AS compress
@@ -95,7 +95,7 @@ COPY package.json ./
 COPY script/ ./script/
 COPY --from=build /workdir/public/ ./public/
 
-RUN yarn run compress
+RUN npm run compress
 
 #################################
 FROM nginx AS final

@@ -11,8 +11,8 @@
 ## Developing
 
 ```sh
-yarn install
-gatsby develop
+npm install
+npm run develop
 ```
 
 ## HOWTO
@@ -29,5 +29,5 @@ convert original.jpg -density 300 -units pixelsperinch new.jpg
 ## Notes
 
 -   [_Made Mistakes_ gatsby-test issue #1](https://github.com/mmistakes/gatsby-test/issues/1)
--   Incorporate this into `yarn develop` some how:
+-   Incorporate this into `npm run develop` some how:
     <https://css-tricks.com/findingfixing-unintended-body-overflow/>

@@ -1,6 +1,5 @@
-# npm/yarn
+# npm
 /node_modules/
-/.yarn/
 
 # gatsby
 /public/

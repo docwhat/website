@@ -20,6 +20,5 @@ script/*
 .intermediate-representation
 .tern-port
 .vscode
-package-lock.json
 tags
 tmp
