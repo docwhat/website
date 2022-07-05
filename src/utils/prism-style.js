@@ -7,6 +7,7 @@ import {
   emphasisColor,
   heroColor,
   lightBackground,
+  lightForeground,
   mellowColor,
 } from './colors.js'
 import { MOBILE_MEDIA_QUERY } from './media-queries.js'
@@ -35,6 +36,7 @@ const prismCss = css`
   /* Code blocks */
   pre[class*='language-'] {
     padding: 0.75rem;
+    color: ${lightForeground.string()};
     background-color: ${deemphasisColor.saturationl(29).lightness(97).string()};
     border-radius: 0.19em;
     white-space: pre;
