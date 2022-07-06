@@ -2,7 +2,7 @@
 'use strict'
 
 const fs = require(`fs`)
-const pify = require(`pify`)
+const util = require(`util`)
 const pathlib = require(`path`)
 const moment = require(`moment`)
 const Feed = require(`feed`).Feed
@@ -104,7 +104,7 @@ const onPostBuild = async ({ graphql }) => {
   ])
 }
 
-const writeFile = pify(fs.writeFile)
+const writeFile = util.promisify(fs.writeFile)
 
 const runQuery = (handler, query) =>
   handler(query).then((r) => {

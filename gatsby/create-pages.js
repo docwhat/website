@@ -5,8 +5,8 @@ const pathlib = require(`path`)
 
 const createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const pageTemplate = pathlib.resolve(`./src/templates/page.js`)
-  const postTemplate = pathlib.resolve(`./src/templates/post.js`)
+  const pageTemplate = pathlib.resolve(`./src/templates/page.jsx`)
+  const postTemplate = pathlib.resolve(`./src/templates/post.jsx`)
 
   const createPosts = (newPosts) => {
     newPosts.forEach(({ node }, index) => {

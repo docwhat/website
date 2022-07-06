@@ -31,8 +31,8 @@ module.exports = {
     node_env: nodeEnv,
     sourceUrl,
     image: '/favicon.png',
-    twitterUsername: twitterUsername,
-    githubUsername: githubUsername,
+    twitterUsername,
+    githubUsername,
   },
   plugins: [
     {
@@ -139,7 +139,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: siteUrl,
+        siteUrl,
         noTrailingSlash: true,
       },
     },
