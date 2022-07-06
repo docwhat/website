@@ -1,21 +1,14 @@
 {
-  "extends": [
-    "plugin:react/recommended",
-    "standard",
-    "prettier"
-  ],
+  "extends": ["plugin:react/recommended", "standard", "prettier"],
   "env": {
     "node": true,
     "es6": true
   },
-  "plugins": [
-    "react",
-    "@emotion",
-    "simple-import-sort",
-    "prettier",
-    "import"
-  ],
-  "parser": "babel-eslint",
+  "plugins": ["react", "@emotion", "simple-import-sort", "prettier", "import"],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false
+  },
   "rules": {
     "prettier/prettier": "error",
     "semi": ["error", "never"],
