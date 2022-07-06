@@ -63,9 +63,7 @@ const PostTemplate = (props) => {
       sourceUrl={banner.sourceUrl}
       image={banner.image}
     />
-  ) : (
-    ''
-  )
+  ) : null
 
   return (
     <Layout location={props.location}>
