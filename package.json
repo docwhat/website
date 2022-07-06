@@ -48,8 +48,8 @@
     "lint:fix": "npm run lint:eslint:fix && npm run lint:stylelint:fix && npm run lint:textlint:fix",
     "lint:stylelint": "stylelint --aei './**/*.{html,css}'",
     "lint:stylelint:fix": "stylelint --aei --fix './**/*.{html,css}'",
-    "lint:textlint": "npx textlint .",
-    "lint:textlint:fix": "npx textlint --fix .",
+    "lint:textlint": "[ -z \"${CI-}\" ] && npx textlint .",
+    "lint:textlint:fix": "[ -z \"${CI-}\" ] && npx textlint --fix .",
     "new": "node src/utils/newpost.js",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
