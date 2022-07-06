@@ -8,7 +8,8 @@
   "**/*.md": [
     "textlint --fix",
     "prettier --write",
-    "remark"
+    "remark",
+    "npx markdown-link-check --config mlc_config.json"
   ],
   "**/*.{js,jsx}": [
     "eslint --fix",
