@@ -212,7 +212,5 @@ module.exports = {
       },
     },
   ],
-  flags: {
-    DEV_SSR: true,
-  },
+  flags: {},
 }
