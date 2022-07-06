@@ -15,10 +15,10 @@ tags:
 title: 'Two ways to improve OS-X...'
 ---
 
-I found this excellent article,
-[Mac OS X SSD tweaks](http://blogs.nullvision.com/?p=275) by Ricardo Gameiro,
-and have stolen two of the ideas for my non-SSD MacBook Pro laptop. I'll cover
-all three, though, since I don't agree with his hibernation trick.
+I found this excellent article, _Mac OS X SSD tweaks_ (defunct as of 2022) by
+Ricardo Gameiro, and have stolen two of the ideas for my non-SSD MacBook Pro
+laptop. I'll cover all three, though, since I don't agree with his hibernation
+trick.
 
 ## Turn off "atime"
 
@@ -82,8 +82,7 @@ worlds.
 ## Storing `/tmp/` in ram
 
 This recipe is nearly the same as Ricardo's suggestion. I just added the code
-from
-[Patrick Gibson's comment](http://blogs.nullvision.com/?p=275#comment-64).
+from _Patrick Gibson's comment_ (defunct).
 
 This is two part; you need to create a shell script and a `.plist` file.
 
