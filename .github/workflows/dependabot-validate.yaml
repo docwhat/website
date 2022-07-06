@@ -17,6 +17,10 @@ jobs:
 
       - uses: marocchino/validate-dependabot@v1
         id: validate
+        with:
+          path: '.github/dependabot.yaml'
+          success_message: '✅dependabot config looks good 👍'
+          failure_message: '🚫 dependabot errors'
 
       - uses: marocchino/sticky-pull-request-comment@v2
         if: always()
