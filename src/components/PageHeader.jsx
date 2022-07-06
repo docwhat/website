@@ -17,11 +17,7 @@ const PageHeader = (props) => {
   let calendarIcon = ``
   let updateBlurb = ``
   if (ymdDate) {
-    calendarIcon = (
-      <>
-        <CalendarPage ymdDate={ymdDate} />
-      </>
-    )
+    calendarIcon = <CalendarPage ymdDate={ymdDate} />
     if (ymdUpdate && ymdUpdate !== 'Invalid date' && ymdUpdate > ymdDate) {
       updateBlurb = (
         <SmallPrint
