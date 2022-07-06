@@ -1,20 +1,16 @@
-// vim:set ft=jsonc:
 {
   "filters": {
     "comments": true
   },
-
-    "rules": {
-      "editorconfig": {
-        "charset": false
-      },
-
-      "date-weekday-mismatch": true,
-      "no-todo": true,
-      "no-start-duplicated-conjunction": {
-        "interval": 2 // interval of sentences
-      },
-      // https://github.com/sapegin/textlint-rule-diacritics/issues/1
-      "diacritics": true
-    }
+  "rules": {
+    "editorconfig": {
+      "charset": false
+    },
+    "date-weekday-mismatch": true,
+    "no-todo": true,
+    "no-start-duplicated-conjunction": {
+      "interval": 2
+    },
+    "diacritics": true
+  }
 }
