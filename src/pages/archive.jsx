@@ -9,23 +9,21 @@ import Layout from '../components/Layout'
 import PostCardList from '../components/PostCardList'
 import useArchivedPosts from '../components/useArchivedPosts.jsx'
 
-const SiteIndex = ({ location }) => {
+const Archive = ({ location }) => {
   const posts = useArchivedPosts()
   return (
     <Layout location={location}>
-      <>
-        <Helmet title="Post Archive" />
-        <h1>Post Archive</h1>
-        <p>Posts that have been retired for one reason or another.</p>
-        <PostCardList postcards={posts} />
-        <Bio />
-      </>
+      <Helmet title="Post Archive" />
+      <h1>Post Archive</h1>
+      <p>Posts that have been retired for one reason or another.</p>
+      <PostCardList postcards={posts} />
+      <Bio />
     </Layout>
   )
 }
 
-SiteIndex.propTypes = {
+Archive.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default SiteIndex
+export default Archive

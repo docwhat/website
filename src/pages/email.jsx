@@ -17,7 +17,7 @@ const MyInput = styled.input`
   flex: 1 1 75%;
 `
 
-const ContactForm = (props) => (
+const PageIndex = (props) => (
   <Layout location={props.location}>
     <form action="https://formspree.io/f/xleoyeep" method="POST">
       <input name="_next" value={withPrefix(`/thanks`)} type="hidden" />
@@ -82,8 +82,8 @@ const ContactForm = (props) => (
   </Layout>
 )
 
-ContactForm.propTypes = {
+PageIndex.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default ContactForm
+export default PageIndex

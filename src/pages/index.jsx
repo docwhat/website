@@ -1,7 +1,4 @@
 // @format
-//
-// @ts-ignore
-// @ts-nocheck
 import { css } from '@emotion/react'
 import { Link } from 'gatsby'
 import { PropTypes } from 'prop-types'
@@ -28,70 +25,68 @@ const jsonLdData = {
   //     },
 }
 
-const SiteIndex = (props) => {
+const PageIndex = (props) => {
   const posts = useAllPosts().slice(0, 10)
   return (
     <Layout location={props.location}>
-      <>
-        <Helmet title={siteTitle}>
-          <link
-            rel="openid2.provider"
-            href="https://openid.stackexchange.com/openid/provider"
-          />
-          <link
-            rel="openid2.local_id"
-            href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
-          />
-          <link
-            rel="openid.server"
-            href="https://openid.stackexchange.com/openid/provider"
-          />
-          <link
-            rel="openid.delegate"
-            href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
-          />
-          <meta
-            httpEquiv="X-XRDS-Location"
-            content="https://openid.stackexchange.com/xrds"
-          />
-          <meta
-            httpEquiv="X-Yadis-Location"
-            content="https://openid.stackexchange.com/xrds"
-          />
-          <link
-            rel="alternate home"
-            type="application/rss+xml"
-            href="/feed.rss"
-            title="Subscribe via RSS"
-          />
-          <link
-            rel="alternate home"
-            type="application/atom+xml"
-            href="/feed.atom"
-            title="Subscribe via Atom"
-          />
-        </Helmet>
-        <PostCardList postcards={posts} />
-        <Link
-          css={css`
-            text-align: right;
-            display: block;
-            font-size: var(--base-spacing);
-          `}
-          to="/all"
-        >
-          See all blog posts&hellip;
-        </Link>
-        <JsonLd data={jsonLdData} />
-        <TheNet />
-        <Bio />
-      </>
+      <Helmet title={siteTitle}>
+        <link
+          rel="openid2.provider"
+          href="https://openid.stackexchange.com/openid/provider"
+        />
+        <link
+          rel="openid2.local_id"
+          href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
+        />
+        <link
+          rel="openid.server"
+          href="https://openid.stackexchange.com/openid/provider"
+        />
+        <link
+          rel="openid.delegate"
+          href="https://openid.stackexchange.com/user/073b6f81-f2a1-4242-8975-3d951089be48"
+        />
+        <meta
+          httpEquiv="X-XRDS-Location"
+          content="https://openid.stackexchange.com/xrds"
+        />
+        <meta
+          httpEquiv="X-Yadis-Location"
+          content="https://openid.stackexchange.com/xrds"
+        />
+        <link
+          rel="alternate home"
+          type="application/rss+xml"
+          href="/feed.rss"
+          title="Subscribe via RSS"
+        />
+        <link
+          rel="alternate home"
+          type="application/atom+xml"
+          href="/feed.atom"
+          title="Subscribe via Atom"
+        />
+      </Helmet>
+      <PostCardList postcards={posts} />
+      <Link
+        css={css`
+          text-align: right;
+          display: block;
+          font-size: var(--base-spacing);
+        `}
+        to="/all"
+      >
+        See all blog posts&hellip;
+      </Link>
+      <JsonLd data={jsonLdData} />
+      <TheNet />
+      <Bio />
     </Layout>
   )
 }
 
-SiteIndex.propTypes = {
+PageIndex.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default SiteIndex
+export default PageIndex
