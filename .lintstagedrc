@@ -16,5 +16,8 @@
   ],
   "package.json": [
     "npm run format:packagejson:fix"
+  ],
+  "package-lock.json": [
+    "npm run format:npmlock:fix"
   ]
 }
