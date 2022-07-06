@@ -4,9 +4,9 @@
 >
 > It's powered by [Gatsby](https://gatsbyjs.org).
 
-![CI](https://github.com/docwhat/docwhat/workflows/CI/badge.svg)
-[![GitHub Super-Linter](https://github.com/docwhat/docwhat/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-![Check Markdown links](https://github.com/docwhat/docwhat/workflows/Check%20Markdown%20links/badge.svg)
+![CI](https://github.com/docwhat/website/workflows/CI/badge.svg)
+[![GitHub Super-Linter](https://github.com/docwhat/website/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+![Check Markdown links](https://github.com/docwhat/website/workflows/Check%20Markdown%20links/badge.svg)
 
 ## Developing
 

@@ -6,13 +6,13 @@
     "blog",
     "gatsby"
   ],
-  "homepage": "https://github.com/docwhat/docwhat#readme",
+  "homepage": "https://github.com/docwhat/website#readme",
   "bugs": {
-    "url": "https://github.com/docwhat/docwhat/issues"
+    "url": "https://github.com/docwhat/website/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/docwhat/docwhat.git"
+    "url": "git+https://github.com/docwhat/website.git"
   },
   "license": "MIT",
   "author": "Christian Höltje (https://docwhat.org/)",

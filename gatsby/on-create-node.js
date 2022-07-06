@@ -14,7 +14,7 @@ const onCreateNode = async ({ node, actions, getNode }) => {
     createNodeField({
       name: 'editLink',
       node,
-      value: `https://github.com/docwhat/docwhat/edit/master${node.fileAbsolutePath.replace(
+      value: `https://github.com/docwhat/website/edit/master${node.fileAbsolutePath.replace(
         TopDir,
         ''
       )}`,
@@ -70,7 +70,7 @@ const onCreateNode = async ({ node, actions, getNode }) => {
     value: await calculateUpdatedHash(node.fileAbsolutePath),
   })
 
-  // https://github.com/docwhat/docwhat/commits/2df6346/content/posts/2006-09-06-my-older-projects-have-been-moved.md
+  // https://github.com/docwhat/website/commits/2df6346/content/posts/2006-09-06-my-older-projects-have-been-moved.md
 
   return node
 }
