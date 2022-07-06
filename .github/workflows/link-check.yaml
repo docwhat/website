@@ -26,10 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: gaurav-nelson/github-action-markdown-link-check@1
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
+          config-file: 'mlc_config.yml'
           use-quiet-mode: 'yes'
           use-verbose-mode: 'yes'
           check-modified-files-only: 'yes'
           folder-path: 'content/posts,content/pi'
           file-path: './README.md'
+          max-depth: -1
+          base-branch: 'master'
+          file-extension: '.md'
