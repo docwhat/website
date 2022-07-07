@@ -6,7 +6,9 @@ import * as React from 'react'
 
 import PostCard from './PostCard.jsx'
 
-const minCardWidth = `24ch`
+// We have to use px or em units because of the media queries.
+const minCardWidth = `14em`
+const minTwoCardWidth = `28em`
 
 const PostCardList = (props) => (
   <div
@@ -20,8 +22,8 @@ const PostCardList = (props) => (
       & > * {
         margin: calc(var(--base-spacing) / 2);
       }
-      @media max-width: calc(2 * ${minCardWidth}) {
-        x-margin: 0 calc(-1 * var(--base-spacing) / 2);
+      @media (max-width: ${minTwoCardWidth}) {
+        margin: 0;
         & > * {
           margin-left: 0;
           margin-right: 0;
