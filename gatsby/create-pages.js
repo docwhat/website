@@ -65,7 +65,7 @@ const createPages = ({ graphql, actions }) => {
       posts: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         filter: {
-          frontmatter: { draft: { eq: false } }
+          frontmatter: { draft: { eq: false }, archive: { eq: false } }
           fields: { sourceName: { eq: "posts" } }
         }
       ) {
@@ -86,6 +86,36 @@ const createPages = ({ graphql, actions }) => {
     }
 
     createPosts(results.data.posts.edges)
+
+    Promise.resolve(results)
+  })
+
+  graphql(`
+    {
+      archivedPosts: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: {
+          frontmatter: { draft: { eq: false }, archive: { eq: true } }
+          fields: { sourceName: { eq: "posts" } }
+        }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+              title
+              date(formatString: "MMMM DD, YYYY")
+            }
+          }
+        }
+      }
+    }
+  `).then((results) => {
+    if (results.errors) {
+      Promise.reject(results.errors)
+    }
+
+    createPosts(results.data.archivedPosts.edges)
 
     Promise.resolve(results)
   })
