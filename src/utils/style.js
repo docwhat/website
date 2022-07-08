@@ -203,13 +203,14 @@ const globalCss = css`
 
   blockquote {
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background-color: hsla(var(--hero-hue), 40%, 35%, 3%);
     border-left: 10px solid var(--hero-color);
-    box-shadow: 0.15em 0.15em 0.3em hsl(var(--hero-color), 4%, 43%);
+    box-shadow: 0.15em 0.15em 0.3em hsl(var(--hero-hue), 23%, 42%, 23%);
     @media (prefers-color-scheme: dark) {
       box-shadow: none;
     }
-    padding: calc(var(--base-spacing) / 2);
+    padding: calc(var(--base-spacing) * 3 / 4) calc(var(--base-spacing) / 2)
+      calc(var(--base-spacing) / 2) calc(var(--base-spacing) * 3 / 4);
     position: relative;
     font-style: italic;
   }
@@ -219,13 +220,16 @@ const globalCss = css`
   }
 
   blockquote:before {
-    font-size: 3.75em;
+    opacity: 35%;
+    font-size: calc(var(--base-spacing) * 5 / 2);
     font-family: var(--serif-font);
+    color: var(--text-color);
     content: '“';
     position: absolute;
-    left: 0.06em;
-    top: -0.12em;
-    color: var(--hero-color);
+    line-height: 1;
+    top: calc(-1 * var(--base-spacing) / 4);
+    left: calc(-1 * var(--base-spacing) / 2);
+    padding-right: 0.5em; /* fix for odd rendering error that cuts off the upper right corner */
   }
   blockquote > blockquote:before {
     content: none;
