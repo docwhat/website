@@ -140,7 +140,7 @@
     "prettier": "~2.7.1",
     "remark-cli": "~11.0.0",
     "remark-frontmatter": "~4.0.1",
-    "remark-github": "~11.2.3",
+    "remark-github": "~11.2.4",
     "remark-preset-github": "~4.0.4",
     "sort-package-json": "~1.57.0",
     "stylelint": "~14.9.1",
