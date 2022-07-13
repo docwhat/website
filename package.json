@@ -132,7 +132,7 @@
     "gatsby-plugin-react-helmet-canonical-urls": "~1.4.0",
     "gatsby-remark-external-links": "0.0.4",
     "husky": "^8.0.1",
-    "inquirer": "~9.0.0",
+    "inquirer": "~9.0.1",
     "inquirer-datepicker-prompt": "0.4.3",
     "lint-staged": "~13.0.3",
     "markdown-link-check": "^3.10.2",
