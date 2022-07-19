@@ -69,7 +69,7 @@
     "gatsby": "^4.18.2",
     "gatsby-cli": "^4.19.0",
     "gatsby-pagination": "^1.2.0",
-    "gatsby-plugin-catch-links": "^4.18.0",
+    "gatsby-plugin-catch-links": "^4.19.0",
     "gatsby-plugin-emotion": "^7.18.0",
     "gatsby-plugin-google-analytics": "^4.19.0",
     "gatsby-plugin-image": "^2.18.1",
