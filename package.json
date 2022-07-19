@@ -67,7 +67,7 @@
     "fbjs": "~3.0.4",
     "feed": "~4.2.2",
     "gatsby": "^4.18.2",
-    "gatsby-cli": "^4.18.0",
+    "gatsby-cli": "^4.19.0",
     "gatsby-pagination": "^1.2.0",
     "gatsby-plugin-catch-links": "^4.18.0",
     "gatsby-plugin-emotion": "^7.18.0",
