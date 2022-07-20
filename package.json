@@ -70,7 +70,7 @@
     "gatsby-cli": "^4.19.0",
     "gatsby-pagination": "^1.2.0",
     "gatsby-plugin-catch-links": "^4.19.0",
-    "gatsby-plugin-emotion": "^7.18.0",
+    "gatsby-plugin-emotion": "^7.19.0",
     "gatsby-plugin-google-analytics": "^4.19.0",
     "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-react-helmet": "^5.19.0",
