@@ -61,7 +61,7 @@
     "@emotion/styled": "^11.10.0",
     "@svgr/webpack": "^6.3.1",
     "bluebird": "~3.7.2",
-    "caniuse-db": "~1.0.30001373",
+    "caniuse-db": "~1.0.30001374",
     "chalk": "^5.0.1",
     "color": "^4.2.3",
     "fbjs": "~3.0.4",
