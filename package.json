@@ -126,7 +126,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "gatsby-plugin-react-helmet-canonical-urls": "~1.4.0",
