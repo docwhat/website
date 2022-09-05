@@ -55,13 +55,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@babel/core": "^7.18.13",
+    "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.18.10",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@svgr/webpack": "^6.3.1",
     "bluebird": "~3.7.2",
-    "caniuse-db": "~1.0.30001388",
+    "caniuse-db": "~1.0.30001390",
     "chalk": "^5.0.1",
     "color": "^4.2.3",
     "fbjs": "~3.0.4",
