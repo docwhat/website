@@ -109,7 +109,7 @@
     "shevyjs": "^2.1.0",
     "strip-markdown": "~5.0.0",
     "uuid": "~8.3.2",
-    "vfile": "~5.3.4",
+    "vfile": "~5.3.5",
     "webpack": "~5.73.0"
   },
   "devDependencies": {
