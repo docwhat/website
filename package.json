@@ -66,7 +66,7 @@
     "color": "^4.2.3",
     "fbjs": "~3.0.4",
     "feed": "~4.2.2",
-    "gatsby": "^4.22.0",
+    "gatsby": "^4.22.1",
     "gatsby-cli": "^4.21.0",
     "gatsby-pagination": "^1.2.0",
     "gatsby-plugin-catch-links": "^4.22.0",
@@ -109,7 +109,7 @@
     "shevyjs": "^2.1.0",
     "strip-markdown": "~5.0.0",
     "uuid": "~8.3.2",
-    "vfile": "~5.3.4",
+    "vfile": "~5.3.5",
     "webpack": "~5.73.0"
   },
   "devDependencies": {
