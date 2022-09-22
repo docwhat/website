@@ -85,7 +85,7 @@
     "gatsby-remark-emoji": "0.0.3",
     "gatsby-remark-images": "^6.22.0",
     "gatsby-remark-prismjs": "^6.22.0",
-    "gatsby-remark-responsive-iframe": "^5.22.0",
+    "gatsby-remark-responsive-iframe": "^5.23.0",
     "gatsby-remark-smartypants": "^5.23.0",
     "gatsby-remark-source-name": "^1.0.0",
     "gatsby-source-filesystem": "^4.23.0",
