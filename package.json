@@ -135,7 +135,7 @@
     "inquirer": "~9.1.2",
     "inquirer-datepicker-prompt": "0.4.3",
     "lint-staged": "~13.0.3",
-    "markdown-link-check": "^3.10.2",
+    "markdown-link-check": "^3.10.3",
     "object-assign": "~4.1.1",
     "prettier": "~2.7.1",
     "remark-cli": "~11.0.0",
