@@ -113,7 +113,7 @@
     "webpack": "~5.73.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.18.9",
+    "@babel/eslint-parser": "^7.19.1",
     "@emotion/eslint-plugin": "~11.10.0",
     "@testing-library/cypress": "~8.0.3",
     "cypress": "~10.8.0",
