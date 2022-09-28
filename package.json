@@ -116,7 +116,7 @@
     "@babel/eslint-parser": "^7.19.1",
     "@emotion/eslint-plugin": "~11.10.0",
     "@testing-library/cypress": "~8.0.3",
-    "cypress": "~10.8.0",
+    "cypress": "~10.9.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
