@@ -142,7 +142,7 @@
     "remark-frontmatter": "~4.0.1",
     "remark-github": "~11.2.4",
     "remark-preset-github": "~4.0.4",
-    "sort-package-json": "~1.57.0",
+    "sort-package-json": "~2.0.0",
     "stylelint": "~14.13.0",
     "stylelint-config-prettier": "~9.0.3",
     "stylelint-config-recommended": "~8.0.0",
