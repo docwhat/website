@@ -117,7 +117,7 @@
     "@emotion/eslint-plugin": "~11.10.0",
     "@testing-library/cypress": "~8.0.3",
     "cypress": "~10.10.0",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-import-resolver-node": "^0.3.6",
