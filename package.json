@@ -57,7 +57,7 @@
   "dependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
-    "@emotion/react": "^11.10.4",
+    "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@svgr/webpack": "^6.5.0",
     "bluebird": "~3.7.2",
