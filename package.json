@@ -59,7 +59,7 @@
     "@babel/preset-env": "^7.19.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@svgr/webpack": "^6.5.0",
+    "@svgr/webpack": "^6.5.1",
     "bluebird": "~3.7.2",
     "caniuse-db": "~1.0.30001425",
     "chalk": "^5.1.2",
