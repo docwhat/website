@@ -145,7 +145,7 @@
     "sort-package-json": "~2.0.0",
     "stylelint": "~14.14.1",
     "stylelint-config-prettier": "~9.0.3",
-    "stylelint-config-recommended": "~8.0.0",
+    "stylelint-config-recommended": "~9.0.0",
     "stylelint-prettier": "~2.0.0",
     "textlint": "~12.2.2",
     "textlint-filter-rule-comments": "~1.2.2",
