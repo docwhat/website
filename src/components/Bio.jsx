@@ -12,7 +12,7 @@ import { ReactComponent as GithubLogo } from '../icons/github.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
 import { ReactComponent as Key } from '../icons/key.svg'
 // $FlowIssue: the gatsby svgr plugin isn't understood by flow.
-import { ReactComponent as TwitterLogo } from '../icons/twitter.svg'
+import { ReactComponent as MastodonLogo } from '../icons/mastodon.svg'
 
 const Reference = (props) => (
   <ClassNames>
@@ -66,7 +66,8 @@ const Bio = () => (
         <GithubLogo /> <a href="https://github.com/docwhat">docwhat</a>
       </Reference>
       <Reference rel="me">
-        <TwitterLogo /> <a href="https://twitter.com/docwhat">docwhat</a>
+        <MastodonLogo />{' '}
+        <a href="https://geekdom.social/@docwhat">@docwhat@geekdom.social</a>
       </Reference>
       <Reference>
         <Envelope />{' '}

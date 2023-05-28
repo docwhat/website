@@ -15,6 +15,7 @@ const {
   siteTitle,
   sourceUrl,
   twitterUsername,
+  mastodonUsername,
   githubUsername,
 } = require(`./src/utils/constants.js`)
 
@@ -32,6 +33,7 @@ module.exports = {
     sourceUrl,
     image: '/favicon.png',
     twitterUsername,
+    mastodonUsername,
     githubUsername,
   },
   plugins: [

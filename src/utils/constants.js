@@ -23,4 +23,5 @@ exports.siteUrl =
 exports.sourceUrl = 'https://github.com/docwhat/website'
 
 exports.twitterUsername = '@docwhat'
+exports.mastodonUsername = '@docwhat@geekdom.social'
 exports.githubUsername = 'docwhat'
