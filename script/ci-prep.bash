@@ -7,7 +7,8 @@ function die() {
   exit 10
 }
 
-declare -r docker_image="${docker_image:=ghcr.io/docwhat/blog}"
+# Ensure docker_image is set
+: "${docker_image?You must set docker image to something like ghcr.io/docwhat/website}"
 
 GITHUB_SHA=${GITHUB_SHA:-$(git rev-parse HEAD)}
 tags="${docker_image}:sha-${GITHUB_SHA::8}"
