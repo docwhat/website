@@ -1,0 +1,6 @@
+[tools]
+node = "16"
+
+[tools."http:trunk"]
+version = "latest"
+url = "https://trunk.io/releases/trunk"
